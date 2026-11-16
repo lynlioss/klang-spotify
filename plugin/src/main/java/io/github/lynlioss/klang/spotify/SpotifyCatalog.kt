@@ -20,9 +20,13 @@ internal class SpotifyCatalog(private val context: Context) {
         require(it.matches(Regex("[A-Za-z0-9]{22}"))) { "Invalid $kind ID" }
     }
     suspend fun call(operation: String, args: JSONObject): JSONObject {
-        if (operation == "accounts") return JSONObject().put("spotify", vault.get("sp_dc") != null)
+        if (operation == "accounts") return JSONObject().put("spotify", vault.get("sp_dc") != null).put("connected", vault.get("sp_dc") != null)
             .put("qobuz", vault.get("qobuz_token") != null).put("profile", vault.get("spotify_profile"))
-            .put("revision", vault.revision("spotify")).put("playbackRevision", vault.revision("qobuz"))
+            .put("revision", vault.revision("spotify")).put("playbackRevision", buildString {
+                val prefs = context.getSharedPreferences("source_preferences", Context.MODE_PRIVATE)
+                append(vault.revision("qobuz")); append(':'); append(playbackPreference(prefs.getString("source", null), vault.get("qobuz_token") != null))
+                append(':'); append(prefs.getInt("qobuzFormat", 27))
+            })
         if (operation == "account.logout") { vault.spotifyLogout(); return JSONObject().put("ok", true) }
         return SpotifySession.use(context) {
             if (args.has("accountRevision")) require(args.getString("accountRevision") == vault.revision("spotify")) {
@@ -68,7 +72,8 @@ internal class SpotifyCatalog(private val context: Context) {
                     when (args.optString("kind", "playlist")) {
                         "track" -> {
                             val page = Spotify.likedSongs(limit, offset).getOrThrow()
-                            CatalogCodec.page("Liked songs", page.items.map { CatalogCodec.track(it.track).put("saved", true) }, offset, page.total, limit)
+                            CatalogCodec.page("Liked songs", page.items.map { CatalogCodec.track(it.track).put("saved", true)
+                                .put("added", runCatching { java.time.Instant.parse(it.addedAt).epochSecond }.getOrDefault(0L)) }, offset, page.total, limit)
                         }
                         "artist" -> {
                             val page = Spotify.myArtists(limit, offset).getOrThrow()

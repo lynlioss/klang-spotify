@@ -14,9 +14,14 @@ import kotlin.math.abs
 
 internal object ImportEngine {
     @Synchronized
+    fun initializePlayback(context: Context) {
+        try { YoutubeDL.init(context.applicationContext) }
+        catch (error: LinkageError) { throw ImportEngineException(error) }
+    }
+    @Synchronized
     fun initialize(context: Context) {
         try {
-            YoutubeDL.init(context.applicationContext)
+            initializePlayback(context)
             FFmpeg.init(context.applicationContext)
         } catch (error: LinkageError) {
             throw ImportEngineException(error)
@@ -28,7 +33,6 @@ internal object ImportEngine {
         catch (_: LinkageError) { /* A failed class initializer cannot own a live process. */ }
     }
 
-    @Synchronized
     fun refreshExtractor(context: Context) {
         val prefs = context.getSharedPreferences("music_import_engine", Context.MODE_PRIVATE)
         val now = System.currentTimeMillis()

@@ -1,4 +1,4 @@
-# Spotify Integration for Klang
+# Spotify Sync for Klang
 
 An independently updated Android plugin for [Klang](https://github.com/lynlioss/klang). Spotify supplies your account, catalog and playlists; matching recordings stream from YouTube Music or your connected Qobuz account. The plugin handles service APIs, account storage, recording matching and audio downloads. Klang supplies playback, its Material 3 Expressive interface and a reusable Plugin API 1 music source host.
 
@@ -19,14 +19,14 @@ Spotify Premium is not required by this plugin for YouTube playback. Qobuz playb
 
 Use a Klang build containing the API 1 music source extension. Both APKs target Android 16 and newer; the plugin currently packages ARM64 only.
 
-1. Open Klang → Settings → Plugins → Recommended plugins → **Spotify Integration** → Install.
+1. Open Klang → Settings → Plugins → Recommended plugins → **Spotify Sync** → Install.
 2. Finish the Android APK installer, return to Klang and enable the plugin.
-3. Open the plugin's detail page → **Accounts & playback settings** → **Log in with Spotify**.
-4. Use the Spotify Integration chip in Home, Search or Your library. Choose YouTube Music, Qobuz, or Qobuz with YouTube Music fallback in account settings.
+3. Open the plugin's detail page → **Accounts & playback settings** → **Connect Spotify**.
+4. Your Spotify music appears in Klang’s Home, Search and Library pages. YouTube Music is the default; connect Qobuz in account settings to use lossless recordings, with optional YouTube fallback.
 
 For Qobuz, enter your email/password and your app ID with its matching secret. Passwords are used to obtain a session token and are not saved. The app pair and token are encrypted; no shared account/token pool is included. Spotify browser cookies and local browser storage are cleared when the login screen closes; only the verified session is retained in the encrypted vault.
 
-Spotify login uses a full-screen browser inside the plugin, including sign-in popups. The header follows Klang's theme, page loading shows progress, and connection failures offer Retry. After signing in, the plugin captures the Spotify session automatically; **Finish login** checks it again if needed.
+Account settings follow Klang’s Material 3 Expressive layout, with Spotify connection first and optional Qobuz settings in an expandable card. Spotify login uses a full-screen browser inside the plugin, including sign-in popups. The header follows Klang's theme, page loading shows progress, and connection failures offer Retry. After signing in, the plugin captures the Spotify session automatically; **Finish login** checks it again if needed.
 
 Tap a song's download button to keep the matched recording on device. Downloads use the source's existing codec and apply Spotify catalog tags and artwork. Available offline songs play from Klang's MediaStore file, including after restarting Klang. The Spotify link remains available from the song menu.
 
@@ -44,6 +44,8 @@ python3 scripts/verify-import-packaging.py plugin/build/outputs/apk/release/plug
 ```
 
 The manual Release workflow requires passing Checks on the same `main` commit and repository secrets `PLUGIN_KEYSTORE_B64` and `PLUGIN_KEYSTORE_PASSWORD`. The alias is `klang-spotify`; preserve the private key for future updates. Release builds require that signing configuration. Update `version` in both manifests and `versionName`/`versionCode` before another release.
+
+Playback prepares a couple of likely songs and the next queue entry. It first races a native YouTube audio request against the bundled extractor, validates direct CDN access and falls back when needed. Stream addresses stay in memory and are scoped to account, playback settings and plugin version. Daily extractor updates run during downloads, outside playback. Cold network requests still take time; Klang shows its expressive loading indicator while preparing or buffering. The APK uses Android’s default application icon; the Spotify mark remains in Klang’s plugin UI.
 
 The tests exercise catalog metadata, playlist identity/permissions, matching, Qobuz signatures and preview rejection. CI checks release ZIP reflection and ARM64 runtime packaging. Authenticated Spotify/Qobuz login, playback, seeking, background playback and airplane-mode downloads still need device verification; passing compilation does not establish current service behavior. Spotify's collaborative/public/cover endpoints also depend on server permissions. This repository makes no claim of Spotify approval or Terms of Service compliance.
 

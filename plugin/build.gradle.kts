@@ -11,8 +11,8 @@ android {
         applicationId = "io.github.lynlioss.klang.spotify"
         minSdk = 36
         targetSdk = 36
-        versionCode = 3
-        versionName = "1.0.2"
+        versionCode = 4
+        versionName = "1.1.0"
         ndk { abiFilters += "arm64-v8a" }
     }
     signingConfigs { create("release") {
@@ -45,6 +45,7 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.13.0")
     implementation("androidx.compose.material3:material3:1.5.0-rc01")
     implementation("androidx.compose.material:material-icons-core")
+    implementation("androidx.compose.material:material-icons-extended")
     implementation("com.materialkolor:material-kolor:4.1.1")
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.json:json:20250517")

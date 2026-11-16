@@ -65,7 +65,7 @@ jobs:
         with:
           tag_name: ${{ env.PLUGIN_TAG }}
           target_commitish: ${{ github.sha }}
-          name: Spotify Integration ${{ env.PLUGIN_TAG }}
+          name: Spotify Sync ${{ env.PLUGIN_TAG }}
           fail_on_unmatched_files: true
           files: |
             plugin.apk
@@ -75,7 +75,7 @@ jobs:
             plugin-source.tar
           generate_release_notes: true
           body: |
-            Install from Klang → Settings → Plugins → Recommended → Spotify Integration.
+            Install from Klang → Settings → Plugins → Recommended → Spotify Sync.
             Requires a Klang build with the API 1 music source extension and Android 16 / ARM64.
 
             Spotify provides the account, metadata and playlists. Audio is matched on YouTube Music or your connected Qobuz account. No Spotify Premium check is required for YouTube playback.
