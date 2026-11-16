@@ -49,6 +49,7 @@ internal object YouTubeAudio {
             if (track != null && !track.optBoolean("audioIsDefault", true)) return@mapNotNull null
             JSONObject().put("format_id", format.getInt("itag").toString()).put("url", url).put("vcodec", "none")
                 .put("acodec", codec).put("abr", format.optLong("bitrate") / 1000.0)
+                .put("filesize", format.optString("contentLength")).put("lastModified", format.optString("lastModified"))
                 .put("http_headers", JSONObject().put("User-Agent", AGENT))
         }.sortedBy { it.optDouble("abr") }
         require(formats.isNotEmpty()) { "The direct player did not return accessible audio." }
@@ -74,4 +75,13 @@ internal object YouTubeAudio {
             }
         })
     }
+}
+
+/** Reuse audio bytes after a URL refresh only when the encoded recording/version is identical. */
+internal fun recordingCacheKey(id: String, format: JSONObject): String? {
+    val query = runCatching { URI(format.getString("url")).rawQuery.orEmpty().split('&')
+        .associate { it.substringBefore('=') to it.substringAfter('=', "") } }.getOrDefault(emptyMap())
+    val length = (query["clen"] ?: format.optString("filesize")).toLongOrNull()?.takeIf { it > 0 } ?: return null
+    val version = (query["lmt"] ?: format.optString("lastModified")).toLongOrNull()?.takeIf { it > 0 } ?: return null
+    return "youtube:$id:${format.getString("format_id")}:$length:$version"
 }

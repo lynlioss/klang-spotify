@@ -50,8 +50,13 @@ internal object ImportEngine {
         addOption("--extractor-retries", 2)
     }
 
-    fun info(url: String, processId: String, flat: Boolean = false): JSONObject {
+    fun info(url: String, processId: String, flat: Boolean = false, playback: Boolean = false): JSONObject {
         val request = request(url).apply {
+            if (playback) {
+                addOption("--socket-timeout", 8)
+                addOption("--retries", 1)
+                addOption("--extractor-retries", 0)
+            }
             addOption("--dump-single-json")
             addOption("--skip-download")
             if (flat) addOption("--flat-playlist")

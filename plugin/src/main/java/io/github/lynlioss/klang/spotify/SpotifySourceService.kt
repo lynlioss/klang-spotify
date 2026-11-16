@@ -37,7 +37,9 @@ class SpotifySourceService : Service() {
                             val request = JSONObject(payload)
                             val operation = request.getString("operation")
                             val args = request.optJSONObject("args") ?: JSONObject()
-                            if (operation == "stream.resolve") sources.resolve(args.getJSONObject("item"), key).also { it.remove("info") }
+                            if (operation == "stream.resolve") withTimeout(50_000) {
+                                sources.resolve(args.getJSONObject("item"), key, args.optBoolean("refresh")).also { it.remove("info") }
+                            }
                             else withTimeout(85_000) { catalog.call(operation, args) }
                         }
                     }

@@ -47,4 +47,12 @@ class YouTubeAudioTest {
         assertEquals("qobuz", playbackPreference("qobuz", true))
         assertEquals("youtube", playbackPreference("qobuz", false))
     }
+    @Test fun audioByteIdentitySurvivesUrlRefreshButChangesWithEncodingVersion() {
+        val first = JSONObject().put("format_id", "251")
+            .put("url", "https://r1.googlevideo.com/file?expire=100&clen=4000000&lmt=12345")
+        val refreshed = JSONObject(first.toString()).put("url", "https://r2.googlevideo.com/file?expire=200&clen=4000000&lmt=12345")
+        assertEquals(recordingCacheKey(videoId, first), recordingCacheKey(videoId, refreshed))
+        assertNotEquals(recordingCacheKey(videoId, first), recordingCacheKey(videoId, JSONObject(first.toString()).put("format_id", "140")))
+        assertNull(recordingCacheKey(videoId, JSONObject(first.toString()).put("url", "https://r1.googlevideo.com/file?expire=100")))
+    }
 }
