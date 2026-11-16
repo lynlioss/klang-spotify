@@ -1,0 +1,12 @@
+
+mft_resumption.protospotify.list_player.proto"¦
+MftResumptionEntry
+skip_to_uid (	R	skipToUid
+skip_to_uri (	R	skipToUri-
+seek_to_position_ms (RseekToPositionMs!
+timestamp_ms (RtimestampMs"Õ
+MftResumptionStateT
+entries (2:.spotify.list_player.proto.MftResumptionState.EntriesEntryRentriesi
+EntriesEntry
+key (	RkeyC
+value (2-.spotify.list_player.proto.MftResumptionEntryRvalue:8BHbproto3

@@ -1,0 +1,21 @@
+// Recovered descriptor. Original file: playback_settings.proto
+syntax = "proto3";
+package spotify.list_player.impl.proto;
+message PlaybackSettings {
+  enum MediaPreference {
+    UNSPECIFIED = 0;
+    AUDIO = 1;
+    VIDEO = 2;
+  }
+  .spotify.list_player.impl.proto.PlaybackSettings.MediaPreference media_preference = 1;
+  bool repeat_item = 3;
+  oneof _legacy_repeat_list {
+    bool legacy_repeat_list = 2;
+  }
+  oneof _search_repeat_list {
+    bool search_repeat_list = 4;
+  }
+  oneof _non_search_repeat_list {
+    bool non_search_repeat_list = 5;
+  }
+}

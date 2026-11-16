@@ -1,0 +1,10 @@
+
+curated_playlist.protospotify.curation_state.proto"h
+CuratedPlaylistItem
+item_uri (	RitemUri
+item_id (RitemId
+
+artist_uri (	R	artistUri"t
+CuratedPlaylistE
+item (21.spotify.curation_state.proto.CuratedPlaylistItemRitem
+revision (RrevisionBHbproto3

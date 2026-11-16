@@ -1,0 +1,26 @@
+Verifies
+Verified using v1 scheme (JAR signing): true
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: true
+Number of signers: 1
+Signer #1 certificate DN: CN=Spotify, OU=Android, O=Spotify, L=Stockholm, ST=Stockholm, C=SE
+Signer #1 certificate SHA-256 digest: 6505b181933344f93893d586e399b94616183f04349cb572a9e81a3335e28ffd
+Signer #1 certificate SHA-1 digest: d6a6dced4a85f24204bf9505ccc1fce114cadb32
+Signer #1 certificate MD5 digest: 861527aece25e8a45e039e76f6d07a12
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: 286db6c20f640ec66e0f2eab85917005dc8d0ae926559236a69c3efd73cc04ae
+Signer #1 public key SHA-1 digest: ebab5c74c4601fd303946b2bfa0a12d79f2d64de
+Signer #1 public key MD5 digest: 2271d144ea1bd633c885d07bd2a0a47d
+Source Stamp Signer certificate DN: CN=Android, OU=Android, O=Google Inc., L=Mountain View, ST=California, C=US
+Source Stamp Signer certificate SHA-256 digest: 3257d599a49d2c961a471ca9843f59d341a405884583fc087df4237b733bbd6d
+Source Stamp Signer certificate SHA-1 digest: b1af3a0bf998aeede1a8716a539e5a59da1d86d6
+Source Stamp Signer certificate MD5 digest: 577b8a9fbc7e308321aec6411169d2fb
+Source Stamp Signer key algorithm: RSA
+Source Stamp Signer key size (bits): 4096
+Source Stamp Signer public key SHA-256 digest: 4c53c1d28f2ecceadcb1351603f0b702615b3454b6e30070de759359f241b802
+Source Stamp Signer public key SHA-1 digest: 188b067a9ee881bde55dabe0f8f7ecb320b1a091
+Source Stamp Signer public key MD5 digest: 965afac83f033aa037a54482eb6922d5

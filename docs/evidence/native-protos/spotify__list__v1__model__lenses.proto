@@ -1,0 +1,31 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/lenses.proto
+syntax = "proto3";
+package spotify.list.v1.model;
+message Lens {
+  oneof _identifier {
+    string identifier = 1;
+  }
+}
+message LensStatus {
+  oneof _http_code {
+    int32 http_code = 1;
+  }
+}
+message LensState {
+  oneof _lens {
+    .spotify.list.v1.model.Lens lens = 1;
+  }
+  oneof _revision {
+    bytes revision = 2;
+  }
+  oneof _status {
+    .spotify.list.v1.model.LensStatus status = 3;
+  }
+}
+message LensOptions {
+  repeated .spotify.list.v1.model.Lens apply_lenses = 1;
+  repeated .spotify.list.v1.model.LensState client_lens_state = 2;
+}
+message AppliedLenses {
+  repeated .spotify.list.v1.model.LensState states = 1;
+}

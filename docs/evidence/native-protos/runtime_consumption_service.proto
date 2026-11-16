@@ -1,0 +1,39 @@
+// Recovered descriptor. Original file: runtime_consumption_service.proto
+syntax = "proto3";
+package spotify.runtime_consumption.esperanto.proto;
+import "orchestration_stack.proto";
+import "playback_stack_v2.proto";
+message GetConsumptionRecordsRequest {
+}
+message ConsumptionRecord {
+  string content_uri = 1;
+  int64 ms_played = 2;
+  int64 ms_played_nominal = 3;
+  int64 wall_timestamp_seconds = 4;
+  string stream_id = 5;
+}
+message GetConsumptionRecordsResponse {
+  repeated .spotify.runtime_consumption.esperanto.proto.ConsumptionRecord records = 1;
+}
+message QueryRuntimeConsumptionRequest {
+  bool exclude_previews = 4;
+  oneof _orchestration_stack {
+    .spotify.stream_reporting_esperanto.proto.OrchestrationStack orchestration_stack = 1;
+  }
+  oneof _playback_stack {
+    .spotify.stream_reporting_esperanto.proto.PlaybackStackV2 playback_stack = 2;
+  }
+  oneof _content_uri {
+    string content_uri = 3;
+  }
+}
+message QueryRuntimeConsumptionResponse {
+  int64 ms_played_local = 1;
+  int64 ms_played_nominal_local = 2;
+  int64 ms_played_sent = 3;
+  int64 ms_played_nominal_sent = 4;
+}
+service RuntimeConsumptionService {
+  rpc GetConsumptionRecords (.spotify.runtime_consumption.esperanto.proto.GetConsumptionRecordsRequest) returns (.spotify.runtime_consumption.esperanto.proto.GetConsumptionRecordsResponse);
+  rpc QueryRuntimeConsumption (.spotify.runtime_consumption.esperanto.proto.QueryRuntimeConsumptionRequest) returns (.spotify.runtime_consumption.esperanto.proto.QueryRuntimeConsumptionResponse);
+}

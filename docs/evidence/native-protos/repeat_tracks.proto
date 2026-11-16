@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: repeat_tracks.proto
+syntax = "proto3";
+package spotify.restrictions.impl.proto;
+import "google/protobuf/timestamp.proto";
+message RepeatTracks {
+  message Entry {
+    .google.protobuf.Timestamp timestamp = 1;
+  }
+  repeated .spotify.restrictions.impl.proto.RepeatTracks.Entry entries = 1;
+}

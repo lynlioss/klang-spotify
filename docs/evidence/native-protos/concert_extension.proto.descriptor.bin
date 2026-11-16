@@ -1,0 +1,12 @@
+
+concert_extension.protospotify.concerts.metadata.v1"W
+DateWithOffset
+date (	Rdate1
+utc_offset_in_minutes (RutcOffsetInMinutes"[
+ConcertTimesK
+
+start_time (2,.spotify.concerts.metadata.v1.DateWithOffsetR	startTime"s
+Concert
+uri (	Ruri
+title (	Rtitle@
+times (2*.spotify.concerts.metadata.v1.ConcertTimesRtimesBHbproto3

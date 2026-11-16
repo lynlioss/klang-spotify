@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: list_tuner_audio_analysis_mdata_extension.proto
+syntax = "proto3";
+package spotify.playlist.tuner.extension;
+message ListTunerAudioAnalysis {
+  int32 start_ms = 1;
+  int32 period_ms = 2;
+  repeated int32 loudness = 3;
+}

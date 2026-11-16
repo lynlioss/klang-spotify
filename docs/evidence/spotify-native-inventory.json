@@ -1,0 +1,278 @@
+[
+  {
+    "library": "libandroidx.graphics.path.so",
+    "bytes": 9952,
+    "sha256": "17ee8d0a8f3c2a7b7b2f0b4e1a93c09e4fbdd1c9bfb335fee238c2767c2c03c1",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "library": "libc++_shared.so",
+    "bytes": 1292904,
+    "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "library": "libcomScore.so",
+    "bytes": 1839240,
+    "sha256": "e10babbd2cc691becae6cddf47dfc71a4a68dbc8090094530eaa864729c10b09",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "library": "libcrashlytics-common.so",
+    "bytes": 755864,
+    "sha256": "db3c33bc6e1c0d049466280c32bd7419f9708f53ca8f5f95d584ef281996918f",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "library": "libcrashlytics-handler.so",
+    "bytes": 185960,
+    "sha256": "810521d2e125c4f87a8bd5fa70e73877dd832494acac9e9f86734258f359935f",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "library": "libcrashlytics-trampoline.so",
+    "bytes": 9584,
+    "sha256": "b3d2d4bd3eb068ed624d406d8626b7300e8f65e7aa6863e08a736984fc0ecea2",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "library": "libcrashlytics.so",
+    "bytes": 195568,
+    "sha256": "cad4bd6e1a6fb97cea9d02ac3f2c9c0e90c62064f7b018cf26b0a806e1489b6e",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "library": "libimage_processing_util_jni.so",
+    "bytes": 29008,
+    "sha256": "3e0071afcdc7e321f839e196d266014182f18d0988e4455acc9857a085b2184e",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "library": "liborbit-jni-spotify.so",
+    "bytes": 25749664,
+    "sha256": "a837f367fb801893eee176c64858371c28222e647db0b865e9cf924d023fbe9e",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "library": "librive-android.so",
+    "bytes": 3957392,
+    "sha256": "6a7c5ac4f3d0948f5c5801ec2ffd23a6dae4170ff025970e99e975760e879699",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "library": "librootChecker.so",
+    "bytes": 6808,
+    "sha256": "b3ab2ce27a14d3835d21d140977693eae16a25110e1f51277413922d743d8765",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  },
+  {
+    "library": "libsurface_util_jni.so",
+    "bytes": 4832,
+    "sha256": "ee3f0d56f81cc0a301db32dc4fd51274c3216733b4c40172768e38bc5049a265",
+    "tools": {
+      "elf": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "symbols": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "strings": {
+        "exitCode": 0,
+        "stderr": ""
+      },
+      "disassembly": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    }
+  }
+]

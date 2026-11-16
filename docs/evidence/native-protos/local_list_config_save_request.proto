@@ -1,0 +1,14 @@
+// Recovered descriptor. Original file: local_list_config_save_request.proto
+syntax = "proto3";
+package spotify.playlist.local_list_config_esperanto.proto;
+message LocalListConfig {
+  string uri = 1;
+  string name = 2;
+  string image_uri = 3;
+  string description = 4;
+}
+message LocalListConfigSaveRequest {
+  repeated .spotify.playlist.local_list_config_esperanto.proto.LocalListConfig configs = 1;
+}
+message LocalListConfigSaveResponse {
+}

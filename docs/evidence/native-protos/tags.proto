@@ -1,0 +1,28 @@
+// Recovered descriptor. Original file: tags.proto
+syntax = "proto3";
+package spotify.list.v1.model.attributes;
+message TagDefinition {
+  string id = 1;
+  string name = 2;
+  repeated .spotify.list.v1.model.attributes.TagDefinition sub_tags = 4;
+  oneof _internal_id {
+    string internal_id = 3;
+  }
+  oneof _tag_id {
+    int32 tag_id = 5;
+  }
+  oneof _count {
+    int32 count = 6;
+  }
+}
+message TagManifest {
+  repeated .spotify.list.v1.model.attributes.TagDefinition tags = 1;
+}
+message Tags {
+  repeated .spotify.list.v1.model.attributes.Tag tags = 1;
+}
+message Tag {
+  oneof _tag_id {
+    int32 tag_id = 1;
+  }
+}

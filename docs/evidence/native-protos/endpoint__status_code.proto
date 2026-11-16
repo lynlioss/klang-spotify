@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: endpoint/status_code.proto
+syntax = "proto3";
+package spotify.read_reporting_esperanto.proto;
+enum StatusCode {
+  INVALID_STATUS_CODE = 0;
+  SUCCESS = 1;
+  ERROR = 2;
+}

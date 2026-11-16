@@ -1,0 +1,14 @@
+
+es_context.protospotify.player.esperanto.protoes_context_page.protoes_restrictions.proto"ñ
+ContextA
+pages (2+.spotify.player.esperanto.proto.ContextPageRpagesQ
+metadata (25.spotify.player.esperanto.proto.Context.MetadataEntryRmetadata
+uri (	Ruri
+url (	Rurl
+
+is_loading (R	isLoadingP
+restrictions (2,.spotify.player.esperanto.proto.RestrictionsRrestrictions;
+MetadataEntry
+key (	Rkey
+value (	Rvalue:8B,
+"com.spotify.player.esperanto.protoH¢ESPbproto3

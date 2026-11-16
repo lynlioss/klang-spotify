@@ -1,0 +1,50 @@
+
+(state_restore/context_player_rules.proto"spotify.player.proto.state_restore+state_restore/ads_rules_inject_tracks.proto!state_restore/automix_rules.proto&state_restore/automix_talk_rules.proto+state_restore/behavior_metadata_rules.proto)state_restore/circuit_breaker_rules.proto*state_restore/explicit_content_rules.proto$state_restore/kitteh_box_rules.proto"state_restore/mft_rules_core.proto)state_restore/music_injection_rules.proto.state_restore/remove_banned_tracks_rules.proto'state_restore/resume_points_rules.proto-state_restore/shuffle_order_event_rules.proto%state_restore/track_error_rules.proto"ˆ
+
+PlayEvents'
+max_consecutive (RmaxConsecutive9
+max_occurrences_in_period (RmaxOccurrencesInPeriod
+period (Rperiod"_
+
+SkipEvents9
+max_occurrences_in_period (RmaxOccurrencesInPeriod
+period (Rperiod"(
+Context
+
+min_tracks (R	minTracks"Ä
+MftConfigurationD
+track (2..spotify.player.proto.state_restore.PlayEventsRtrackD
+album (2..spotify.player.proto.state_restore.PlayEventsRalbumF
+artist (2..spotify.player.proto.state_restore.PlayEventsRartistB
+skip (2..spotify.player.proto.state_restore.SkipEventsRskipE
+context (2+.spotify.player.proto.state_restore.ContextRcontextQ
+social_track (2..spotify.player.proto.state_restore.PlayEventsRsocialTrack"¼
+MftRules
+locked (RlockedL
+config (24.spotify.player.proto.state_restore.MftConfigurationRconfigq
+old_forward_rules (2A.spotify.player.proto.state_restore.MftRules.OldForwardRulesEntryBRoldForwardRules[
+forward_rules (26.spotify.player.proto.state_restore.ContextPlayerRulesRforwardRulesz
+OldForwardRulesEntry
+key (	RkeyL
+value (26.spotify.player.proto.state_restore.ContextPlayerRulesRvalue:8"½
+ContextPlayerRulesq
+behavior_metadata_rules (29.spotify.player.proto.state_restore.BehaviorMetadataRulesRbehaviorMetadataRulesk
+circuit_breaker_rules (27.spotify.player.proto.state_restore.CircuitBreakerRulesRcircuitBreakerRulesn
+explicit_content_rules (28.spotify.player.proto.state_restore.ExplicitContentRulesRexplicitContentRulesk
+music_injection_rules (27.spotify.player.proto.state_restore.MusicInjectionRulesRmusicInjectionRulesx
+remove_banned_tracks_rules (2;.spotify.player.proto.state_restore.RemoveBannedTracksRulesRremoveBannedTracksRulese
+resume_points_rules (25.spotify.player.proto.state_restore.ResumePointsRulesRresumePointsRules_
+track_error_rules (23.spotify.player.proto.state_restore.TrackErrorRulesRtrackErrorRuleso
+ads_rules_inject_tracks	 (28.spotify.player.proto.state_restore.AdsRulesInjectTracksRadsRulesInjectTracksV
+mft_rules_core
+ (20.spotify.player.proto.state_restore.MftRulesCoreRmftRulesCore\
+kitteh_box_rules (22.spotify.player.proto.state_restore.KittehBoxRulesRkittehBoxRulesU
+automix_rules (20.spotify.player.proto.state_restore.AutomixRulesRautomixRulesb
+automix_talk_rules (24.spotify.player.proto.state_restore.AutomixTalkRulesRautomixTalkRulesI
+	mft_rules (2,.spotify.player.proto.state_restore.MftRulesRmftRulesa
+	sub_rules (2D.spotify.player.proto.state_restore.ContextPlayerRules.SubRulesEntryRsubRules&
+is_adaptor_only (RisAdaptorOnlyu
+shuffle_order_event_rules (2:.spotify.player.proto.state_restore.ShuffleOrderEventRulesRshuffleOrderEventRuless
+SubRulesEntry
+key (	RkeyL
+value (26.spotify.player.proto.state_restore.ContextPlayerRulesRvalue:8JBH

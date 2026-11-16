@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: playlist_user_state.proto
+syntax = "proto2";
+package spotify.playlist.cosmos.proto;
+message User {
+  optional string link = 1;
+  optional string username = 2;
+  optional string display_name = 3;
+  optional string image_uri = 4;
+  optional string thumbnail_uri = 5;
+  optional int32 color = 6;
+}

@@ -1,0 +1,9 @@
+
+podcast_paywalls.proto(spotify.podcast_paywalls_esperanto.proto"C
+&PodcastPaywallsShowSubscriptionRequest
+show_uri (	RshowUri"W
+'PodcastPaywallsShowSubscriptionResponse,
+is_user_subscribed (RisUserSubscribed2Î
+PodcastPaywallsº
+PutShowSubscriptionP.spotify.podcast_paywalls_esperanto.proto.PodcastPaywallsShowSubscriptionRequestQ.spotify.podcast_paywalls_esperanto.proto.PodcastPaywallsShowSubscriptionResponseB2
+,com.spotify.podcast_paywalls_esperanto.protoHPbproto3

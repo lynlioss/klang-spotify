@@ -1,0 +1,29 @@
+// Recovered descriptor. Original file: common_messages.proto
+syntax = "proto3";
+package spotify.connect.esperanto.proto;
+enum Status {
+  OK = 0;
+  NOT_FOUND = 1;
+  INVALID_ARGUMENTS = 2;
+  BACKEND_FAILURE = 3;
+  UNIMPLEMENTED = 4;
+}
+message StatusResponse {
+  .spotify.connect.esperanto.proto.Status status = 1;
+}
+message LoggingParams {
+  repeated string page_instance_ids = 3;
+  repeated string interaction_ids = 4;
+  oneof _command_initiated_time {
+    int64 command_initiated_time = 1;
+  }
+  oneof _command_received_time {
+    int64 command_received_time = 2;
+  }
+  oneof _command_id {
+    string command_id = 5;
+  }
+  oneof _feature_identifier {
+    string feature_identifier = 6;
+  }
+}

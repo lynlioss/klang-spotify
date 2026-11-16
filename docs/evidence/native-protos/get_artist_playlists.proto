@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: get_artist_playlists.proto
+syntax = "proto3";
+package spotify.your_library.proto;
+message GetArtistPlaylistsRequest {
+  string artist_uri = 1;
+}
+message ArtistPlaylist {
+  string playlist_uri = 1;
+  uint32 track_count = 2;
+}
+message GetArtistPlaylistsResponse {
+  repeated .spotify.your_library.proto.ArtistPlaylist playlist = 1;
+  uint32 status_code = 98;
+  string error = 99;
+}

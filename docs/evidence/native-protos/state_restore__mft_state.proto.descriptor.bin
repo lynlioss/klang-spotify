@@ -1,0 +1,22 @@
+
+state_restore/mft_state.proto"spotify.player.proto.state_restore",
+	EventList
+event_times (R
+eventTimes"1
+	LastEvent
+uri (	Ruri
+when (Rwhen"ÿ
+HistoryI
+when (25.spotify.player.proto.state_restore.History.WhenEntryRwhenA
+last (2-.spotify.player.proto.state_restore.LastEventRlastf
+	WhenEntry
+key (	RkeyC
+value (2-.spotify.player.proto.state_restore.EventListRvalue:8"—
+MftStateA
+track (2+.spotify.player.proto.state_restore.HistoryRtrackN
+social_track (2+.spotify.player.proto.state_restore.HistoryRsocialTrackA
+album (2+.spotify.player.proto.state_restore.HistoryRalbumC
+artist (2+.spotify.player.proto.state_restore.HistoryRartistA
+skip (2-.spotify.player.proto.state_restore.EventListRskip
+time (Rtime
+did_skip (RdidSkipBH

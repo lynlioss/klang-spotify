@@ -1,0 +1,96 @@
+// Recovered descriptor. Original file: ad_events.proto
+syntax = "proto3";
+package spotify.ads.esperanto.proto;
+import "ad_common.proto";
+import "google/protobuf/empty.proto";
+message EventRequest {
+  string ad_id = 1;
+  string event_type = 2;
+  oneof _playback_position {
+    uint64 playback_position = 3;
+  }
+  oneof _event_reason {
+    string event_reason = 4;
+  }
+  oneof _event_source {
+    string event_source = 5;
+  }
+  oneof _slot_id {
+    string slot_id = 6;
+  }
+  oneof _client_payload {
+    string client_payload = 7;
+  }
+  oneof _playback_duration {
+    uint64 playback_duration = 8;
+  }
+  oneof _asset_id {
+    string asset_id = 9;
+  }
+}
+message EventResponse {
+  enum Status {
+    ACCEPTED = 0;
+    AD_NOT_FOUND = 1;
+  }
+  .spotify.ads.esperanto.proto.EventResponse.Status status = 1;
+}
+message UnmanagedEventRequest {
+  string ad_id = 1;
+  string event_type = 2;
+  string lineitem_id = 5;
+  string creative_id = 6;
+  string request_id = 7;
+  string product_name = 8;
+  string slot_id = 9;
+  repeated string tracking_urls = 12;
+  oneof _playback_position {
+    uint64 playback_position = 3;
+  }
+  oneof _event_reason {
+    string event_reason = 4;
+  }
+  oneof _event_source {
+    string event_source = 10;
+  }
+  oneof _format {
+    .spotify.ads.esperanto.proto.AdFormat format = 11;
+  }
+  oneof _duration_seconds {
+    uint32 duration_seconds = 13;
+  }
+  oneof _asset_id {
+    string asset_id = 14;
+  }
+}
+message SubEventRequest {
+  oneof _event_type {
+    string event_type = 1;
+  }
+  oneof _format {
+    .spotify.ads.esperanto.proto.AdFormat format = 2;
+  }
+  oneof _slot_id {
+    string slot_id = 3;
+  }
+}
+message AdEvent {
+  string event_type = 1;
+  string slot_id = 2;
+  .spotify.ads.esperanto.proto.Ad ad = 3;
+  bool is_managed = 4;
+}
+message SubEventResponse {
+  enum Status {
+    OK = 0;
+    INVALID_SLOT = 1;
+    INVALID_FORMAT = 2;
+  }
+  .spotify.ads.esperanto.proto.SubEventResponse.Status status = 1;
+  .spotify.ads.esperanto.proto.AdEvent adEvent = 2;
+}
+service Events {
+  rpc postEvent (.spotify.ads.esperanto.proto.EventRequest) returns (.spotify.ads.esperanto.proto.EventResponse);
+  rpc postUnmanagedEvent (.spotify.ads.esperanto.proto.UnmanagedEventRequest) returns (.google.protobuf.Empty);
+  rpc subEvent (.spotify.ads.esperanto.proto.SubEventRequest) returns (stream .spotify.ads.esperanto.proto.SubEventResponse);
+}

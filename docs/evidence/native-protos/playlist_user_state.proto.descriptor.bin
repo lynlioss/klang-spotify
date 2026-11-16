@@ -1,0 +1,10 @@
+
+playlist_user_state.protospotify.playlist.cosmos.proto"±
+User
+link (	Rlink
+username (	Rusername!
+display_name (	RdisplayName
+	image_uri (	RimageUri#
+thumbnail_uri (	RthumbnailUri
+color (RcolorB 
+com.spotify.playlist.protoHP

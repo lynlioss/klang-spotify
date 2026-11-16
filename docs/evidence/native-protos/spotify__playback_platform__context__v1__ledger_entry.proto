@@ -1,0 +1,67 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/ledger_entry.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1;
+import "google/protobuf/duration.proto";
+import "spotify/playback_platform/common/v1/duration.proto";
+import "spotify/playback_platform/context/v1/sequence_options.proto";
+import "spotify/playback_platform/timeline/v1/timeline_options.proto";
+message LedgerEntry {
+  message PlayingInfo {
+    .google.protobuf.Duration create_offset = 1;
+    bool paused = 17;
+    .spotify.playback_platform.context.v1.SequenceOptions sequence_options = 25;
+    .spotify.playback_platform.timeline.v1.TimelineOptions timeline_options = 26;
+    oneof _position {
+      .spotify.playback_platform.common.v1.ExtrapolatedDuration position = 2;
+    }
+    oneof _duration {
+      .spotify.playback_platform.common.v1.ExtrapolatedDuration duration = 3;
+    }
+    oneof _playtime {
+      .spotify.playback_platform.common.v1.ExtrapolatedDuration playtime = 4;
+    }
+    oneof _playtime_nominal {
+      .spotify.playback_platform.common.v1.ExtrapolatedDuration playtime_nominal = 5;
+    }
+  }
+  message MoveOnto {
+    enum MoveOntoReason {
+      MOVE_ONTO_REASON_UNSPECIFIED = 0;
+      MOVE_FROM_PLAY = 1;
+      MOVE_FROM_PREV = 2;
+      MOVE_FROM_NEXT = 3;
+      SKIP_FROM_PREV = 4;
+      SKIP_FROM_NEXT = 5;
+      FAIL_FROM_PREV = 6;
+      FAIL_FROM_NEXT = 7;
+    }
+    .spotify.playback_platform.context.v1.LedgerEntry.MoveOnto.MoveOntoReason reason = 1;
+    .google.protobuf.Duration move_offset = 2;
+    bool predicted = 3;
+  }
+  message MovePast {
+    enum MovePastReason {
+      MOVE_PAST_REASON_UNSPECIFIED = 0;
+      MOVE_TO_NEXT = 1;
+      MOVE_TO_PREV = 2;
+      SKIP_TO_NEXT = 3;
+      SKIP_TO_PREV = 4;
+      FAIL_TO_NEXT = 5;
+      FAIL_TO_PREV = 6;
+    }
+    .spotify.playback_platform.context.v1.LedgerEntry.MovePast.MovePastReason reason = 1;
+    .google.protobuf.Duration move_offset = 2;
+    bool predicted = 3;
+  }
+  .spotify.playback_platform.context.v1.LedgerEntry.MoveOnto move_onto = 1;
+  .spotify.playback_platform.context.v1.LedgerEntry.MovePast move_past = 2;
+  repeated .spotify.playback_platform.context.v1.LedgerEntry entries = 3;
+  repeated .spotify.playback_platform.context.v1.LedgerEntry.PlayingInfo playing = 8;
+  repeated uint64 tags = 11;
+  oneof _entry_id {
+    string entry_id = 9;
+  }
+  oneof _uid {
+    string uid = 10;
+  }
+}

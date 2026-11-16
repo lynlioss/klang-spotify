@@ -1,0 +1,13 @@
+
+(collection_get_artist_view_request.protospotify.collection_cosmos.proto"collection_decoration_policy.protocollection_item.protostatus.proto"ž
+CollectionGetArtistViewRequest
+
+artist_uri (	R	artistUri+
+update_throttling (RupdateThrottlingf
+artist_policy (2A.spotify.collection_cosmos.proto.CollectionArtistDecorationPolicyRartistPolicyc
+album_policy (2@.spotify.collection_cosmos.proto.CollectionAlbumDecorationPolicyRalbumPolicyc
+track_policy (2@.spotify.collection_cosmos.proto.CollectionTrackDecorationPolicyRtrackPolicy"­
+CollectionGetArtistViewResponse?
+status (2'.spotify.collection_cosmos.proto.StatusRstatusI
+artist (21.spotify.collection_cosmos.proto.CollectionArtistRartistB.
+"spotify.collection.esperanto.protoHP¢ESPbproto3

@@ -1,0 +1,20 @@
+
+Symbol table '.dynsym' contains 17 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+     4: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND fopen@LIBC (2)
+     5: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+     6: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND fclose@LIBC (2)
+     7: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND fseek@LIBC (2)
+     8: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND ftell@LIBC (2)
+     9: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND calloc@LIBC (2)
+    10: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND fread@LIBC (2)
+    11: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND strstr@LIBC (2)
+    12: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    13: 0000000000000b70    72 FUNC    GLOBAL DEFAULT   14 Java_com_ravelin_core_util_security_RootCheckerNative_setLogDebugMessages
+    14: 0000000000000bb8   188 FUNC    GLOBAL DEFAULT   14 exists
+    15: 0000000000000c74   384 FUNC    GLOBAL DEFAULT   14 Java_com_ravelin_core_util_security_RootCheckerNative_checkForRoot
+    16: 0000000000000df4   440 FUNC    GLOBAL DEFAULT   14 Java_com_ravelin_core_util_security_RootCheckerNative_isMagiskPresent

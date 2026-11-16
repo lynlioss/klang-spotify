@@ -1,0 +1,23 @@
+// Recovered descriptor. Original file: collection_snoozed_recs.proto
+syntax = "proto3";
+package spotify.collection_esperanto.proto;
+import "collection_status.proto";
+message IsSnoozedRequest {
+  string uri = 1;
+}
+message IsSnoozedResponse {
+  bool is_snoozed = 1;
+  .spotify.collection_esperanto.proto.Status status = 2;
+}
+message UnsnoozeRequest {
+  string uri = 1;
+}
+message SnoozeRequest {
+  enum SnoozeDuration {
+    SNOOZE_DURATION_30_DAYS = 0;
+    SNOOZE_DURATION_10_SECS = 99;
+  }
+  string uri = 1;
+  string snooze_context_uri = 2;
+  .spotify.collection_esperanto.proto.SnoozeRequest.SnoozeDuration duration = 3;
+}

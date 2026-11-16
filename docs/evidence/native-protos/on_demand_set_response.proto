@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: on_demand_set_response.proto
+syntax = "proto3";
+package spotify.on_demand_set_esperanto.proto;
+message ResponseStatus {
+  int32 status_code = 1;
+  string reason = 2;
+}

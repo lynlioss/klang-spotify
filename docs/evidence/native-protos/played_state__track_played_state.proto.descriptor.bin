@@ -1,0 +1,7 @@
+
+%played_state/track_played_state.protospotify.cosmos_util.proto*played_state/playability_restriction.proto"¦
+TrackPlayState
+is_playable (R
+isPlayables
+playability_restriction (21.spotify.cosmos_util.proto.PlayabilityRestriction:UNKNOWNRplayabilityRestrictionB#
+com.spotify.cosmos.util.protoHP

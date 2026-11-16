@@ -1,0 +1,153 @@
+Source: analysis/spotify/jadx-dex2/sources/com/spotify/integrity/integrityimpl/proto/VerifyRequest.java
+SHA256: 0c98434a37096811f5f97e97c40e60439d938b9e1f36f5ed5ba287c00af6056c
+Lines: 1-149
+
+1: package com.spotify.integrity.integrityimpl.proto;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes2.dex */
+4: public final class VerifyRequest extends com.google.protobuf.h implements p.qhj0 {
+5:     public static final int CORRELATION_ID_FIELD_NUMBER = 2;
+6:     private static final com.spotify.integrity.integrityimpl.proto.VerifyRequest DEFAULT_INSTANCE = null;
+7:     public static final int PACKAGE_NAME_FIELD_NUMBER = 3;
+8:     private static volatile p.whs0 PARSER = null;
+9:     public static final int TOKEN_FIELD_NUMBER = 1;
+10:     private java.lang.String correlationId_;
+11:     private java.lang.String packageName_;
+12:     private java.lang.String token_;
+13: 
+14:     static {
+15:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r0 = new com.spotify.integrity.integrityimpl.proto.VerifyRequest
+16:             r0.<init>()
+17:             com.spotify.integrity.integrityimpl.proto.VerifyRequest.DEFAULT_INSTANCE = r0
+18:             java.lang.Class<com.spotify.integrity.integrityimpl.proto.VerifyRequest> r1 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.class
+19:             com.google.protobuf.h.registerDefaultInstance(r1, r0)
+20:             return
+21:     }
+22: 
+23:     private VerifyRequest() {
+24:             r1 = this;
+25:             r1.<init>()
+26:             java.lang.String r0 = ""
+27:             r1.token_ = r0
+28:             r1.correlationId_ = r0
+29:             r1.packageName_ = r0
+30:             return
+31:     }
+32: 
+33:     public static p.brj1 n() {
+34:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r0 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.DEFAULT_INSTANCE
+35:             com.google.protobuf.g r0 = r0.createBuilder()
+36:             p.brj1 r0 = (p.brj1) r0
+37:             return r0
+38:     }
+39: 
+40:     public static p.whs0 parser() {
+41:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r0 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.DEFAULT_INSTANCE
+42:             p.whs0 r0 = r0.getParserForType()
+43:             return r0
+44:     }
+45: 
+46:     public final java.lang.Object dynamicMethod(p.lp40 r1, java.lang.Object r2, java.lang.Object r3) {
+47:             r0 = this;
+48:             int r0 = r1.ordinal()
+49:             if (r0 == 0) goto L57
+50:             r1 = 2
+51:             if (r0 == r1) goto L44
+52:             r1 = 3
+53:             if (r0 == r1) goto L3e
+54:             r1 = 4
+55:             if (r0 == r1) goto L36
+56:             r1 = 5
+57:             if (r0 == r1) goto L33
+58:             r1 = 6
+59:             if (r0 != r1) goto L31
+60:             p.whs0 r0 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.PARSER
+61:             if (r0 != 0) goto L30
+62:             java.lang.Class<com.spotify.integrity.integrityimpl.proto.VerifyRequest> r1 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.class
+63:             monitor-enter(r1)
+64:             p.whs0 r0 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.PARSER     // Catch: java.lang.Throwable -> L2a
+65:             if (r0 != 0) goto L2c
+66:             p.dp40 r0 = new p.dp40     // Catch: java.lang.Throwable -> L2a
+67:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r2 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.DEFAULT_INSTANCE     // Catch: java.lang.Throwable -> L2a
+68:             r0.<init>(r2)     // Catch: java.lang.Throwable -> L2a
+69:             com.spotify.integrity.integrityimpl.proto.VerifyRequest.PARSER = r0     // Catch: java.lang.Throwable -> L2a
+70:             goto L2c
+71:         L2a:
+72:             r0 = move-exception
+73:             goto L2e
+74:         L2c:
+75:             monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+76:             return r0
+77:         L2e:
+78:             monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+79:             throw r0
+80:         L30:
+81:             return r0
+82:         L31:
+83:             r0 = 0
+84:             throw r0
+85:         L33:
+86:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r0 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.DEFAULT_INSTANCE
+87:             return r0
+88:         L36:
+89:             p.brj1 r0 = new p.brj1
+90:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r1 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.DEFAULT_INSTANCE
+91:             r0.<init>(r1)
+92:             return r0
+93:         L3e:
+94:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r0 = new com.spotify.integrity.integrityimpl.proto.VerifyRequest
+95:             r0.<init>()
+96:             return r0
+97:         L44:
+98:             java.lang.String r0 = "token_"
+99:             java.lang.String r1 = "correlationId_"
+100:             java.lang.String r2 = "packageName_"
+101:             java.lang.Object[] r0 = new java.lang.Object[]{r0, r1, r2}
+102:             java.lang.String r1 = "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0000\u0000\u0001Ȉ\u0002Ȉ\u0003Ȉ"
+103:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r2 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.DEFAULT_INSTANCE
+104:             java.lang.Object r0 = com.google.protobuf.h.newMessageInfo(r2, r1, r0)
+105:             return r0
+106:         L57:
+107:             r0 = 1
+108:             java.lang.Byte r0 = java.lang.Byte.valueOf(r0)
+109:             return r0
+110:     }
+111: 
+112:     public final /* bridge */ /* synthetic */ p.nhj0 getDefaultInstanceForType() {
+113:             r0 = this;
+114:             com.google.protobuf.h r0 = r0.getDefaultInstanceForType()
+115:             return r0
+116:     }
+117: 
+118:     public final /* bridge */ /* synthetic */ p.mhj0 newBuilderForType() {
+119:             r0 = this;
+120:             com.google.protobuf.g r0 = r0.newBuilderForType()
+121:             return r0
+122:     }
+123: 
+124:     public final void o(java.lang.String r1) {
+125:             r0 = this;
+126:             r1.getClass()
+127:             r0.correlationId_ = r1
+128:             return
+129:     }
+130: 
+131:     public final void p(java.lang.String r1) {
+132:             r0 = this;
+133:             r0.packageName_ = r1
+134:             return
+135:     }
+136: 
+137:     public final void q(java.lang.String r1) {
+138:             r0 = this;
+139:             r1.getClass()
+140:             r0.token_ = r1
+141:             return
+142:     }
+143: 
+144:     public final /* bridge */ /* synthetic */ p.mhj0 toBuilder() {
+145:             r0 = this;
+146:             com.google.protobuf.g r0 = r0.toBuilder()
+147:             return r0
+148:     }
+149: }

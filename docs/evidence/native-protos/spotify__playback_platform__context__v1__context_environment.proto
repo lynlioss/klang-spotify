@@ -1,0 +1,24 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/context_environment.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1;
+import "spotify/playback_platform/context/v1/sequence_options.proto";
+import "spotify/playback_platform/context/v1/sequence_patch.proto";
+message ContextEnvironment {
+  message LegacySkipToTrack {
+    oneof _uid {
+      string uid = 1;
+    }
+    oneof _context_id {
+      string context_id = 2;
+    }
+    oneof _item_index {
+      string item_index = 3;
+    }
+  }
+  .spotify.playback_platform.context.v1.SequenceOptions sequence_options = 1;
+  .spotify.playback_platform.context.v1.ContextEnvironment.LegacySkipToTrack skip_to = 2;
+  int32 iteration = 5;
+  oneof _patch {
+    .spotify.playback_platform.context.v1.SequencePatch patch = 4;
+  }
+}

@@ -1,0 +1,17 @@
+
+include/CacheError.protospotify.event_sender.proto"Ž
+
+CacheError
+
+error_code (R	errorCode"
+os_error_code (RosErrorCode
+realm (	Rrealm
+file_id (RfileId
+
+num_errors (R	numErrors
+
+cache_path (	R	cachePath
+size (Rsize
+range_start (R
+rangeStart
+	range_end	 (RrangeEndBH

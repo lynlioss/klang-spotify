@@ -1,0 +1,967 @@
+[
+  {
+    "dex": "classes.dex",
+    "index": 1773,
+    "value": ", country="
+  },
+  {
+    "dex": "classes.dex",
+    "index": 3680,
+    "value": "COUNTRYCALLINGCODE_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes.dex",
+    "index": 5633,
+    "value": "ISOCOUNTRYCODE_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes.dex",
+    "index": 33160,
+    "value": "country"
+  },
+  {
+    "dex": "classes.dex",
+    "index": 33161,
+    "value": "countryCallingCode_"
+  },
+  {
+    "dex": "classes.dex",
+    "index": 34732,
+    "value": "getCountry"
+  },
+  {
+    "dex": "classes.dex",
+    "index": 34845,
+    "value": "getDisplayCountry"
+  },
+  {
+    "dex": "classes.dex",
+    "index": 35602,
+    "value": "getPublisherCountryCode"
+  },
+  {
+    "dex": "classes.dex",
+    "index": 37013,
+    "value": "isoCountryCode_"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 1265,
+    "value": "CHECKOUT_COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 1379,
+    "value": "COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 1380,
+    "value": "COUNTRY_MISMATCH_ERROR_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 1518,
+    "value": "CountryMismatchError"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 18619,
+    "value": "MESSAGE_WITH_COUNTRY_PICKER_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 18945,
+    "value": "OVERRIDE_COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 19438,
+    "value": "Provides a Country picker page to be used during checkout"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 20468,
+    "value": "VIDEO_COUNTRY_RESTRICTED"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 22720,
+    "value": "checkoutCountry_"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 23150,
+    "value": "country"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 23151,
+    "value": "country_"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 23152,
+    "value": "country_code"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 25049,
+    "value": "messageWithCountryPicker_"
+  },
+  {
+    "dex": "classes10.dex",
+    "index": 25489,
+    "value": "overrideCountry_"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 1255,
+    "value": "COUNTRY_CODE_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 2281,
+    "value": "GEOIP_MISMATCH_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 36173,
+    "value": "Show response playability metadataextension returned an country restricted exception."
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 36573,
+    "value": "USER_COUNTRY_RELEASE_ISO_TIME_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 36574,
+    "value": "USER_COUNTRY_TIMEZONE_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 42801,
+    "value": "countryCode_"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 42802,
+    "value": "country_code"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 42803,
+    "value": "country_item"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 42804,
+    "value": "country_mismatch"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 43779,
+    "value": "geoipMismatch_"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 43878,
+    "value": "getCountry"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 43912,
+    "value": "getDisplayCountry"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 44175,
+    "value": "getSimCountryIso"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 47374,
+    "value": "selected-country-code"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 48900,
+    "value": "userCountryReleaseIsoTime_"
+  },
+  {
+    "dex": "classes11.dex",
+    "index": 48901,
+    "value": "userCountryTimezone_"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 636,
+    "value": "$address_country"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 2146,
+    "value": "BOOTCAMP_TOPCOUNTRYPLAYLIST"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 2467,
+    "value": "CHECKOUT_COUNTRYPICKER"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 2721,
+    "value": "COUNTRY_MISMATCH"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 3465,
+    "value": "EXPERIMENTAL_COUNTRYTOPTEN"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 29479,
+    "value": "WWW_ACCOUNT_PAGES_CHANGE_COUNTRY_CHANGECOUNTRY"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 31348,
+    "value": "bootcamp/topcountryplaylist"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 31627,
+    "value": "checkout/countrypicker"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 31818,
+    "value": "com.spotify.gpb.googlecheckout.GoogleCheckoutPageViewState.Error.CountryMismatch"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 32241,
+    "value": "country_mismatch_dialog"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 32960,
+    "value": "experimental/countrytopten"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 33568,
+    "value": "getCountry"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 35080,
+    "value": "invalid_country"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 36783,
+    "value": "mobile-signup-country-picker-screen"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 40152,
+    "value": "switch_country_dialog"
+  },
+  {
+    "dex": "classes12.dex",
+    "index": 41060,
+    "value": "www-account-pages/change-country/changecountry"
+  },
+  {
+    "dex": "classes13.dex",
+    "index": 2333,
+    "value": "getCountry"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 960,
+    "value": "$address_country"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 3066,
+    "value": "AddressCountry"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 3609,
+    "value": "CHECKOUT_COUNTRY_PICKER"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 4275,
+    "value": "Country"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 35959,
+    "value": "^([Ss][Pp][Oo][Tt][Ii][Ff][Yy]:checkout:country-picker)$"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 36532,
+    "value": "^([Ss][Pp][Oo][Tt][Ii][Ff][Yy]:login:countrypicker)$"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 38685,
+    "value": "checkout/country-picker"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 38690,
+    "value": "checkout_country_picker"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 39816,
+    "value": "country"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 39817,
+    "value": "country_mismatch"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 41700,
+    "value": "getCountry"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 42024,
+    "value": "getNetworkCountryIso"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 42206,
+    "value": "getSimCountryIso"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 44499,
+    "value": "login/countrypicker"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 44528,
+    "value": "login_countrypicker"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 45725,
+    "value": "override_country"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 48511,
+    "value": "spotify:checkout:country-picker"
+  },
+  {
+    "dex": "classes2.dex",
+    "index": 49357,
+    "value": "spotify:login:countrypicker"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 5501,
+    "value": "Country"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 31163,
+    "value": "NET_CAPABILITY_NOT_VPN"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 33657,
+    "value": "TRANSPORT_VPN"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 36117,
+    "value": "VPN"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 38093,
+    "value": "addressCountry"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 40514,
+    "value": "countryCode"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 41076,
+    "value": "data_processing_options_country"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 41971,
+    "value": "fb_country"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 42885,
+    "value": "getCountry"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 43307,
+    "value": "getISO3Country"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 43674,
+    "value": "getNetworkCountryIso"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 47247,
+    "value": "null config.countryCode"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 48221,
+    "value": "phoneCountryCode"
+  },
+  {
+    "dex": "classes3.dex",
+    "index": 52453,
+    "value": "vpn"
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 1102,
+    "value": ", deviceCountry="
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 1267,
+    "value": ", simCountry="
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 2258,
+    "value": "COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 34259,
+    "value": "NetworkInfo(networkCountry="
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 42340,
+    "value": "country_"
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 42615,
+    "value": "deviceCountry"
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 43674,
+    "value": "getCountry"
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 43719,
+    "value": "getDeviceCountry"
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 43720,
+    "value": "getDeviceCountry$annotations"
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 46119,
+    "value": "networkCountry"
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 48404,
+    "value": "simCountry"
+  },
+  {
+    "dex": "classes4.dex",
+    "index": 49480,
+    "value": "video_country_restricted"
+  },
+  {
+    "dex": "classes5.dex",
+    "index": 1401,
+    "value": "COUNTRY_RESTRICTED"
+  },
+  {
+    "dex": "classes5.dex",
+    "index": 1896,
+    "value": "ERROR_COUNTRY_RESTRICTED"
+  },
+  {
+    "dex": "classes5.dex",
+    "index": 36647,
+    "value": "This content is country restricted"
+  },
+  {
+    "dex": "classes5.dex",
+    "index": 41261,
+    "value": "country"
+  },
+  {
+    "dex": "classes5.dex",
+    "index": 41262,
+    "value": "countryAdapter"
+  },
+  {
+    "dex": "classes5.dex",
+    "index": 41263,
+    "value": "country_code"
+  },
+  {
+    "dex": "classes5.dex",
+    "index": 41264,
+    "value": "country_field"
+  },
+  {
+    "dex": "classes5.dex",
+    "index": 41265,
+    "value": "country_row"
+  },
+  {
+    "dex": "classes5.dex",
+    "index": 41288,
+    "value": "createModel(Landroid/os/Bundle;)Lcom/spotify/checkout/countrypickerimpl/domain/CountryPickerModel;"
+  },
+  {
+    "dex": "classes5.dex",
+    "index": 42167,
+    "value": "getCountry"
+  },
+  {
+    "dex": "classes5.dex",
+    "index": 45079,
+    "value": "saveModel(Lcom/spotify/checkout/countrypickerimpl/domain/CountryPickerModel;)Landroid/os/Bundle;"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 889,
+    "value": "CHANGE_COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 1019,
+    "value": "COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 1043,
+    "value": "CURRENT_COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 1091,
+    "value": "Change Country"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 1111,
+    "value": "Choose your country"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 1164,
+    "value": "CountryType"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 1558,
+    "value": "Find your country"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 1615,
+    "value": "GPB_COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 1651,
+    "value": "Google Play is unavailable as your Google Play country or region doesn't match Spotify's."
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 14138,
+    "value": "Selected a country without URL, likely to be the current country"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 16032,
+    "value": "changeCountry_"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 16041,
+    "value": "change_country_cta"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 16554,
+    "value": "countryPickerLauncher"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 16555,
+    "value": "country_"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 16601,
+    "value": "currentCountry_"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 17041,
+    "value": "getCountry"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 17089,
+    "value": "getDisplayCountry"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 17592,
+    "value": "gpbCountry_"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 17890,
+    "value": "https://simplelocalize.io/data/country/"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 17891,
+    "value": "https://simplelocalize.io/data/country/DE/"
+  },
+  {
+    "dex": "classes6.dex",
+    "index": 18093,
+    "value": "launchCountryPicker"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 1660,
+    "value": "COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 1661,
+    "value": "COUNTRY_MISMATCH"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 3390,
+    "value": "GeoIP mismatch"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 3414,
+    "value": "GraduationGeoIpMismatchException"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 3595,
+    "value": "INVALID_COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 33959,
+    "value": "OFFER_COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 34227,
+    "value": "PLAYABILITY_VERDICT_COUNTRY_RESTRICTED"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 34253,
+    "value": "PLAY_STORE_COUNTRY"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 34651,
+    "value": "REGISTRATION_COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 34753,
+    "value": "Received ChangeCountryClicked while args.billingCountry == null"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 34754,
+    "value": "Received ChangeCountryClicked with incompatible state "
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 34756,
+    "value": "Received CountryPicked with incompatible state "
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 35178,
+    "value": "Selected a country without URL, likely to be the current country"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 35350,
+    "value": "TAG_CHANGE_COUNTRY"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 35351,
+    "value": "TAG_COUNTRY_MISMATCH"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 39309,
+    "value": "change_country_cta"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 39310,
+    "value": "change_country_link"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 39583,
+    "value": "com.spotify.gpb.googlecheckout.GoogleCheckoutPageViewState.Error.ChangeCountryDialog"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 39584,
+    "value": "com.spotify.gpb.googlecheckout.GoogleCheckoutPageViewState.Error.CountryMismatch"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 39809,
+    "value": "countryIsoCode"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 39810,
+    "value": "countryName"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 39811,
+    "value": "countryOverride"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 39812,
+    "value": "countryPickerLauncher"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 39813,
+    "value": "country_"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 39814,
+    "value": "country_mismatch_dialog"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 40850,
+    "value": "getCountry"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 42113,
+    "value": "launchCountryPicker"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 42571,
+    "value": "mobile-checkout-gpb-countrypicker"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 42602,
+    "value": "mobile-gen-alpha-graduation-geoip-mismatch-dialog"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 42974,
+    "value": "offerCountry_"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 43170,
+    "value": "override_country"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 43824,
+    "value": "registrationCountry_"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 47348,
+    "value": "switch_country_dialog"
+  },
+  {
+    "dex": "classes7.dex",
+    "index": 47349,
+    "value": "switch_to_country_button"
+  },
+  {
+    "dex": "classes8.dex",
+    "index": 1148,
+    "value": "COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes8.dex",
+    "index": 40067,
+    "value": "country_"
+  },
+  {
+    "dex": "classes8.dex",
+    "index": 40068,
+    "value": "country_code"
+  },
+  {
+    "dex": "classes8.dex",
+    "index": 41053,
+    "value": "getDisplayCountry"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 1863,
+    "value": "COUNTRY_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 1864,
+    "value": "COUNTRY_OF_ORIGIN_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 3520,
+    "value": "INTERPRET_RESTRICTION_USING_GEOIP_FIELD_NUMBER"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 3678,
+    "value": "InvalidCountry"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 42398,
+    "value": "choose_country"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 43078,
+    "value": "country"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 43079,
+    "value": "countryCode"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 43080,
+    "value": "countryName"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 43081,
+    "value": "countryOfOrigin_"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 43082,
+    "value": "countryRestrictionCase_"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 43083,
+    "value": "countryRestriction_"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 43084,
+    "value": "country_"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 43085,
+    "value": "country_code"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 43086,
+    "value": "country_code_button"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 43087,
+    "value": "country_field"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 44491,
+    "value": "getCountry"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 44492,
+    "value": "getCountryCode"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 44493,
+    "value": "getCountryCode$annotations"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 44538,
+    "value": "getDisplayCountry"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 45489,
+    "value": "interpretRestrictionUsingGeoip_"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 45501,
+    "value": "invalid_country"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 46076,
+    "value": "lyricsCountry_"
+  },
+  {
+    "dex": "classes9.dex",
+    "index": 48482,
+    "value": "selected-country-code"
+  }
+]

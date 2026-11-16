@@ -1,0 +1,14 @@
+// Recovered descriptor. Original file: spotify/playback_platform/common/v1/cache_control.proto
+syntax = "proto3";
+package spotify.playback_platform.common.v1;
+import "google/protobuf/timestamp.proto";
+message CacheControl {
+  bool disallow_expired_use_on_failure = 3;
+  bool disallow_expired_use_if_offline = 4;
+  oneof _entity_tag {
+    bytes entity_tag = 1;
+  }
+  oneof _valid_until {
+    .google.protobuf.Timestamp valid_until = 2;
+  }
+}

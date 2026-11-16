@@ -1,0 +1,370 @@
+JADX normal rendering; cross-check ambiguous control flow against smali.
+Source: analysis/spotify/java-focused/p_el4.java
+SHA256: b1074eeaece34636ad368551d64821ef2ea20878e1937628ac94ea6311fb5b5e
+
+package p;
+
+import com.spotify.scrollsita.v1.Section;
+import com.spotify.searchview.proto.AudioEpisode;
+
+/* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes11.dex */
+public final /* synthetic */ class el4 implements fwy0, x440 {
+    public final /* synthetic */ byte a;
+    public final /* synthetic */ xvy0 b;
+
+    public /* synthetic */ el4(xvy0 xvy0Var, byte b) {
+        this.a = b;
+        this.b = xvy0Var;
+    }
+
+    public final xvy0 create(hwy0 hwy0Var) {
+        switch (this.a) {
+            case 0:
+                return new fl4(hwy0Var.c("android-feature-unboxing-hub:auto_open_on_first_eligible", false), (qzk) null);
+            case 1:
+                return new hl4(hwy0Var.c("android-feature-upcoming-releases-hub:is_page_enabled", false), (gl4) hwy0Var.a("android-feature-upcoming-releases-hub:prerelease_card_presave_content", gl4.RANKING), null);
+            case 2:
+                return new jl4(hwy0Var.a("android-feature-version-sunsetting:data_source_behavior", il4.b), hwy0Var.c("android-feature-version-sunsetting:dialog_can_be_blocking", true), hwy0Var.c("android-feature-version-sunsetting:dialog_enabled", false), hwy0Var.c("android-feature-version-sunsetting:player_observer_enabled", false), (qzk) null);
+            case 3:
+                return new ll4(hwy0Var.c("android-feature-video:adaptive_buffering_enabled", false), hwy0Var.c("android-feature-video:core_fetch_data_source_enabled", true), hwy0Var.c("android-feature-video:core_fetch_data_source_enabled_for_audio_browse", false), hwy0Var.c("android-feature-video:core_fetch_data_source_enabled_for_canvas", false), hwy0Var.c("android-feature-video:core_fetch_data_source_enabled_for_watch_feed", false), hwy0Var.a("android-feature-video:core_segmented_fetch_data_source_enabled", kl4.b), hwy0Var.c("android-feature-video:playback_trait_offline_enabled", false), hwy0Var.c("android-feature-video:release_all_players_on_shutdown", false), hwy0Var.b(0, 4000000, 640000, "android-feature-video:video_ad_target_bitrate"), hwy0Var.b(200000, 3000000, 800000, "android-feature-video:video_download_bitrate"), hwy0Var.b(0, 2160, 0, "android-feature-video:video_download_max_resolution"), hwy0Var.b(0, 3650, 30, "android-feature-video:video_offline_license_redownload_threshold_days"), hwy0Var.c("android-feature-video:video_sai_enabled", false), (qzk) null);
+            case 4:
+                return new ml4(hwy0Var.c("android-feature-voice-assistant:disable_loading_content", false), null);
+            case 5:
+                return ql4.e(hwy0Var);
+            case 6:
+                return new sl4((rl4) hwy0Var.a("android-fitness-settings-page:pace_zones_variant", rl4.DISABLED), (qzk) null);
+            case 7:
+                return new fm4(hwy0Var.c("android-free-day-employee:explanation_banner_enabled", false), (qzk) null);
+            case 8:
+                return new gm4(hwy0Var.c("android-freetier-experiments:should_show_premium_badge", false), null);
+            case 9:
+                return new hm4(hwy0Var.c("android-gated-content-flags:enable_play_full_song_context_menu_item", false), null);
+            case 10:
+                return new mm4(hwy0Var.c("android-gen-alpha-account-creation:child_email_collection_enabled", false), hwy0Var.c("android-gen-alpha-account-creation:child_login_options_page_enabled", false), hwy0Var.c("android-gen-alpha-account-creation:enable_compose", false), hwy0Var.c("android-gen-alpha-account-creation:invite_members_parental_consent_flow_enabled", false), hwy0Var.c("android-gen-alpha-account-creation:is_member_details_parent_consent_flow_enabled", false), hwy0Var.c("android-gen-alpha-account-creation:parent_initiated_link_enabled", false), hwy0Var.c("android-gen-alpha-account-creation:parental_consent_flow_enabled", false), hwy0Var.c("android-gen-alpha-account-creation:parental_controls_transition_entry_point_enabled", false), hwy0Var.c("android-gen-alpha-account-creation:teen_initiated_link_enabled", false), hwy0Var.c("android-gen-alpha-account-creation:teen_link_enabled", false), null, null);
+            case 11:
+                return pm4.l(hwy0Var);
+            case 12:
+                return new rm4(hwy0Var.c("android-gen-alpha:enable_login_qr_code_url_decoration", false), hwy0Var.c("android-gen-alpha:fma_upgrade_dialog_enabled", false), hwy0Var.c("android-gen-alpha:is_graduation_banner_in_notifications_section_enabled", false), hwy0Var.c("android-gen-alpha:is_managed_account_details_v2_page_enabled", false), hwy0Var.c("android-gen-alpha:is_managed_teen_account_parent_controls_enabled", false), hwy0Var.c("android-gen-alpha:is_teen_graduation_enabled", false), hwy0Var.c("android-gen-alpha:parent_details_enabled", false), hwy0Var.c("android-gen-alpha:use_kids_view_get_children", false), (jyp0) null, (qzk) null);
+            case 13:
+                return new tm4(hwy0Var.c("android-genalpha-limitedexperienceindicator:enabled", false), (jyp0) null, (qzk) null);
+            case 14:
+                return new um4(hwy0Var.c("android-genui-chromeless:bridge_collection_enabled", true), hwy0Var.c("android-genui-chromeless:bridge_location_enabled", true), hwy0Var.c("android-genui-chromeless:bridge_navigation_enabled", true), hwy0Var.c("android-genui-chromeless:bridge_playback_enabled", true), hwy0Var.c("android-genui-chromeless:bridge_video_playback_enabled", true), hwy0Var.c("android-genui-chromeless:is_enabled", true), null);
+            case 15:
+                return new xm4(hwy0Var.b(0, 30000, 10000, "android-google-device-suggestions:coroutine_timeout_period_ms"), hwy0Var.c("android-google-device-suggestions:enable_feature", false), hwy0Var.c("android-google-device-suggestions:enable_google_device_suggestions_source", false), hwy0Var.a("android-google-device-suggestions:minimum_displayable_confidence_score", vm4.b), hwy0Var.b(0, 600000, 10000, "android-google-device-suggestions:suggestion_cache_ttl_ms"), hwy0Var.b(0, 50000, AudioEpisode.SHOW_URI_FIELD_NUMBER, "android-google-device-suggestions:suggestion_request_timeout_ms"), hwy0Var.c("android-google-device-suggestions:use_spotify_device_suggestion_as_fallback", false), (qzk) null);
+            case 16:
+                return new cn4(hwy0Var.c("android-homeia-settings:kids_family_exclude_visible", false), hwy0Var.c("android-homeia-settings:managed_account_prompt_enabled", false), null);
+            case 17:
+                return new kn4(hwy0Var.c("android-image-loader:clear_memory_cache_on_trim_enabled", false), hwy0Var.b(0, 100, 0, "android-image-loader:image_load_instrumentation_sampling_percentage"), hwy0Var.b(0, 100, 100, "android-image-loader:memory_cache_percent_while_in_background"), (qzk) null);
+            case 18:
+                return new pn4(hwy0Var.c("android-integrity:employee_validation_enabled", false), hwy0Var.c("android-integrity:time_tracking_enabled", false), hwy0Var.c("android-integrity:validation_enabled", true), (qzk) null);
+            case 19:
+                return new qn4(hwy0Var.c("android-inter-app-service:allow_list_access_policy_enabled", false), (qzk) null);
+            case 20:
+                return new un4(hwy0Var.c("android-learning-music-quiz-gameplay:is_quiz_question_reporting_enabled", true), null);
+            case 21:
+                return new yn4(hwy0Var.c("android-legacy-related-track-card:enable_related_card_in_npv", false), null);
+            case 22:
+                return new zn4(hwy0Var.c("android-lib-aligned-curation-flags:curate_transitions_in_ac", false), hwy0Var.c("android-lib-aligned-curation-flags:curation_platform_enabled", false), hwy0Var.c("android-lib-aligned-curation-flags:default_save_location_curation_enabled", false), hwy0Var.c("android-lib-aligned-curation-flags:episode_curation_trait_enabled", false), hwy0Var.c("android-lib-aligned-curation-flags:track_curation_trait_enabled", false), (qzk) null);
+            case 23:
+                return new ao4(hwy0Var.c("android-lib-assisted-curation:episode_preview_enabled", true), hwy0Var.c("android-lib-assisted-curation:episode_search_preview_enabled", true), hwy0Var.c("android-lib-assisted-curation:preview_enabled", true), hwy0Var.c("android-lib-assisted-curation:search_preview_enabled", true), hwy0Var.c("android-lib-assisted-curation:use_improved_cards_sort_order", false), null);
+            case 24:
+                return new bo4(hwy0Var.c("android-libraryimport-settings-impl:settings_entry_point_enabled", false), (qzk) null);
+            case 25:
+                return new co4(hwy0Var.c("android-libs-ads-browser:enable_safe_search", false), null);
+            case 26:
+                return new do4(hwy0Var.c("android-libs-ads-common:ads_android_turn_on_comscore", false), hwy0Var.c("android-libs-ads-common:ads_enable_one_trust_cmp_android", false), hwy0Var.c("android-libs-ads-common:enable_ads_connect_state_observer", true), hwy0Var.c("android-libs-ads-common:enable_image_loading_for_espresso_tests", false), (qzk) null);
+            case Section.SONG_DNA_FIELD_NUMBER /* 27 */:
+                return new eo4(hwy0Var.c("android-libs-allboarding:use_content_stack", false), hwy0Var.c("android-libs-allboarding:use_page_api_flow", false), (qzk) null);
+            case 28:
+                return new fo4(hwy0Var.c("android-libs-appstorage:is_instrumentation_enabled", false), hwy0Var.c("android-libs-appstorage:is_shared_preferences_instrumentation_enabled", false), (qzk) null);
+            default:
+                return new go4(hwy0Var.c("android-libs-audio-record-impl:enable_bluetooth_voice_input", false), null);
+        }
+    }
+
+    public final boolean equals(Object obj) {
+        switch (this.a) {
+            case 0:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 1:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 2:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 3:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 4:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 5:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 6:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 7:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 8:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 9:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 10:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 11:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 12:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 13:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 14:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 15:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 16:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 17:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 18:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 19:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 20:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 21:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 22:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 23:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 24:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 25:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 26:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case Section.SONG_DNA_FIELD_NUMBER /* 27 */:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            case 28:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+            default:
+                if ((obj instanceof fwy0) && (obj instanceof x440)) {
+                    return sk90.m(getFunctionDelegate(), ((x440) obj).getFunctionDelegate());
+                }
+                return false;
+        }
+    }
+
+    public final r440 getFunctionDelegate() {
+        byte b = this.a;
+        fo4 fo4Var = this.b;
+        switch (b) {
+            case 0:
+                return new j540(1, (fl4) fo4Var, fl4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidFeatureUnboxingHubProperties;", 0);
+            case 1:
+                return new j540(1, (hl4) fo4Var, hl4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidFeatureUpcomingReleasesHubProperties;", 0);
+            case 2:
+                return new j540(1, (jl4) fo4Var, jl4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/versionsunsetting/properties/AndroidFeatureVersionSunsettingProperties;", 0);
+            case 3:
+                return new j540(1, (ll4) fo4Var, ll4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidFeatureVideoProperties;", 0);
+            case 4:
+                return new j540(1, (ml4) fo4Var, ml4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidFeatureVoiceAssistantProperties;", 0);
+            case 5:
+                return new j540(1, (ql4) fo4Var, ql4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/fitness/configurationimpl/AndroidFitnessProperties;", 0);
+            case 6:
+                return new j540(1, (sl4) fo4Var, sl4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/fitness/settingspage/rc/AndroidFitnessSettingsPageProperties;", 0);
+            case 7:
+                return new j540(1, (fm4) fo4Var, fm4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/reinventfree/freeemployeeday/AndroidFreeDayEmployeeProperties;", 0);
+            case 8:
+                return new j540(1, (gm4) fo4Var, gm4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidFreetierExperimentsProperties;", 0);
+            case 9:
+                return new j540(1, (hm4) fo4Var, hm4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidGatedContentFlagsProperties;", 0);
+            case 10:
+                return new j540(1, (mm4) fo4Var, mm4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidGenAlphaAccountCreationProperties;", 0);
+            case 11:
+                return new j540(1, (pm4) fo4Var, pm4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidGenAlphaBlockingProperties;", 0);
+            case 12:
+                return new j540(1, (rm4) fo4Var, rm4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidGenAlphaProperties;", 0);
+            case 13:
+                return new j540(1, (tm4) fo4Var, tm4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/genalpha/limitedexperienceindicator/AndroidGenalphaLimitedexperienceindicatorProperties;", 0);
+            case 14:
+                return new j540(1, (um4) fo4Var, um4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidGenuiChromelessProperties;", 0);
+            case 15:
+                return new j540(1, (xm4) fo4Var, xm4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/googledevicesuggestions/AndroidGoogleDeviceSuggestionsProperties;", 0);
+            case 16:
+                return new j540(1, (cn4) fo4Var, cn4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidHomeiaSettingsProperties;", 0);
+            case 17:
+                return new j540(1, (kn4) fo4Var, kn4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidImageLoaderProperties;", 0);
+            case 18:
+                return new j540(1, (pn4) fo4Var, pn4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/integrity/integrityimpl/AndroidIntegrityProperties;", 0);
+            case 19:
+                return new j540(1, (qn4) fo4Var, qn4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/interapp/service/AndroidInterAppServiceProperties;", 0);
+            case 20:
+                return new j540(1, (un4) fo4Var, un4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidLearningMusicQuizGameplayProperties;", 0);
+            case 21:
+                return new j540(1, (yn4) fo4Var, yn4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidLegacyRelatedTrackCardProperties;", 0);
+            case 22:
+                return new j540(1, (zn4) fo4Var, zn4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidLibAlignedCurationFlagsProperties;", 0);
+            case 23:
+                return new j540(1, (ao4) fo4Var, ao4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidLibAssistedCurationProperties;", 0);
+            case 24:
+                return new j540(1, (bo4) fo4Var, bo4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/libraryimport/settings/impl/rc/AndroidLibraryimportSettingsImplProperties;", 0);
+            case 25:
+                return new j540(1, (co4) fo4Var, co4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidLibsAdsBrowserProperties;", 0);
+            case 26:
+                return new j540(1, (do4) fo4Var, do4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidLibsAdsCommonProperties;", 0);
+            case Section.SONG_DNA_FIELD_NUMBER /* 27 */:
+                return new j540(1, (eo4) fo4Var, eo4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidLibsAllboardingProperties;", 0);
+            case 28:
+                return new j540(1, fo4Var, fo4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidLibsAppstorageProperties;", 0);
+            default:
+                return new j540(1, (go4) fo4Var, go4.class, "parse", "parse(Lcom/spotify/remoteconfig/runtime/PropertyParser;)Lcom/spotify/remoteconfig/AndroidLibsAudioRecordImplProperties;", 0);
+        }
+    }
+
+    public final int hashCode() {
+        switch (this.a) {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            case 8:
+                break;
+            case 9:
+                break;
+            case 10:
+                break;
+            case 11:
+                break;
+            case 12:
+                break;
+            case 13:
+                break;
+            case 14:
+                break;
+            case 15:
+                break;
+            case 16:
+                break;
+            case 17:
+                break;
+            case 18:
+                break;
+            case 19:
+                break;
+            case 20:
+                break;
+            case 21:
+                break;
+            case 22:
+                break;
+            case 23:
+                break;
+            case 24:
+                break;
+            case 25:
+                break;
+            case 26:
+                break;
+            case Section.SONG_DNA_FIELD_NUMBER /* 27 */:
+                break;
+            case 28:
+                break;
+        }
+        return getFunctionDelegate().hashCode();
+    }
+}

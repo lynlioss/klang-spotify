@@ -1,0 +1,10 @@
+
+include/CosmosVideoError.protospotify.event_sender.proto"þ
+CosmosVideoError2
+playback_rendering_id (RplaybackRenderingId%
+playback_stack (	RplaybackStack
+
+error_type (	R	errorType!
+error_reason (	RerrorReason#
+error_message (	RerrorMessage(
+ms_position_diff (RmsPositionDiffBH

@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: client_token.proto
+syntax = "proto3";
+package spotify.clienttoken.serialization.v0;
+message TokenDomain {
+  string domain = 1;
+}
+message ClientToken {
+  string token = 1;
+  int64 expires_at_timestamp = 2;
+  int64 refresh_at_timestamp = 3;
+  repeated .spotify.clienttoken.serialization.v0.TokenDomain domains = 4;
+}

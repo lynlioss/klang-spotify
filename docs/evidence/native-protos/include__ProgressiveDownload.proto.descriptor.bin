@@ -1,0 +1,29 @@
+
+!include/ProgressiveDownload.protospotify.event_sender.proto"ý
+ProgressiveDownload
+playback_id (R
+playbackId$
+bytes_from_cdn (RbytesFromCdn(
+bytes_from_cache (RbytesFromCache!
+content_size (RcontentSize!
+content_type (	RcontentType.
+cdn_initial_latency (RcdnInitialLatency
+
+cdn_avg_bw (RcdnAvgBw$
+cdn_uri_scheme (	RcdnUriScheme
+
+cdn_domain	 (	R	cdnDomain,
+bytes_from_carrier
+ (RbytesFromCarrier,
+bytes_from_unknown (RbytesFromUnknown&
+bytes_from_wifi (RbytesFromWifi!
+request_type (	RrequestType
+
+total_time (R	totalTime,
+initial_disk_state (	RinitialDiskState
+file_id (RfileId
+
+session_id (	R	sessionId"
+reqs_from_cdn (RreqsFromCdn$
+error_from_cdn (RerrorFromCdn&
+had_cache_error (RhadCacheErrorBH

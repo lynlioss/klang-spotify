@@ -1,0 +1,24 @@
+
+'include/StreamSubtitleConsumption.protospotify.event_sender.proto"‹
+StreamSubtitleConsumption
+	stream_id (RstreamId
+playback_id (R
+playbackId
+content_uri (	R
+contentUri
+
+timestamps (R
+timestamps
+	positions (R	positions-
+subtitle_languages (	RsubtitleLanguages
+	ms_played (RmsPlayed#
+end_timestamp (RendTimestamp!
+end_position	 (RendPosition%
+end_timestamps
+ (RendTimestamps*
+ms_played_nominal (RmsPlayedNominal
+is_video_on (R	isVideoOn%
+subtitle_types (	RsubtitleTypes:
+subtitle_generation_types (	RsubtitleGenerationTypes-
+subtitle_suppliers (	RsubtitleSuppliers8
+subtitle_closed_captions (	RsubtitleClosedCaptionsBH

@@ -1,0 +1,125 @@
+JADX normal rendering; cross-check ambiguous control flow against smali.
+Source: analysis/spotify/java-focused/p_mog.java
+SHA256: 4172630019d6c136bc882dec19a7463ee06fadf3ea841473c4535c138a1744a9
+
+package p;
+
+import android.text.TextUtils;
+import com.spotify.base.java.logging.Logger;
+import com.spotify.contentdelivery.mediaprocessing.NativeMediaProcessor;
+import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicReference;
+import kotlin.NoWhenBranchMatchedException;
+
+/* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes.dex */
+public final class mog implements qc90 {
+    public final f0c0 a;
+    public final AtomicReference b = new AtomicReference(null);
+    public final boolean c;
+
+    public mog(f0c0 f0c0Var, hnw0 hnw0Var) {
+        this.a = f0c0Var;
+        this.c = ((Boolean) hnw0Var.a).booleanValue();
+    }
+
+    public static fh31 b(kog kogVar, a631 a631Var) {
+        String strN = pm80.n("Could not retrieve access token for a client_token request, received error : ", " with description: ", kogVar.a, kogVar.b);
+        Logger.d(strN.concat(": %s %s"), a631Var.b, a631Var.a);
+        return c(a631Var, NativeMediaProcessor.PROCESS_SAMPLE_RESULT_NULL_SKIP_BYTE_COUNTS, strN);
+    }
+
+    public static fh31 c(a631 a631Var, int i, String str) {
+        fni0 fni0VarY;
+        hi31 hi31Var = ii31.a;
+        ArrayList arrayList = new ArrayList(20);
+        ix11 ix11Var = fni0.e;
+        try {
+            fni0VarY = t3r0.y("plain/text");
+        } catch (IllegalArgumentException unused) {
+            fni0VarY = null;
+        }
+        hi31 hi31VarC = lo5.C(str, fni0VarY);
+        if (i >= 0) {
+            return new fh31(a631Var, i1z0.c, str, i, (n360) null, new hf60((String[]) arrayList.toArray(new String[0])), hi31VarC, (jsa1) null, (fh31) null, (fh31) null, (fh31) null, 0L, 0L, (us61) null, osg1.u0);
+        }
+        dyn0.f(ihj1.c(i, "code < 0: "));
+        return null;
+    }
+
+    /* JADX INFO: Thrown type has an unknown type hierarchy: kotlin.NoWhenBranchMatchedException */
+    public final fh31 a(hy01 hy01Var) throws NoWhenBranchMatchedException {
+        boolean zEquals;
+        int iHashCode;
+        a631 a631Var = hy01Var.e;
+        hf60 hf60Var = a631Var.c;
+        String str = a631Var.b;
+        bf70 bf70Var = a631Var.a;
+        if (!TextUtils.isEmpty(hf60Var.c("client-token")) || !this.c || a631Var.a().j) {
+            return hy01Var.b(a631Var);
+        }
+        Logger.g("Intercepting request: %s %s", str, bf70Var);
+        gl91 gl91Var = (gl91) this.a.get();
+        jog jogVarA = gl91Var.a();
+        if (!(jogVarA instanceof pog)) {
+            if (jogVarA instanceof kog) {
+                return b((kog) jogVarA, a631Var);
+            }
+            eg.o();
+            return null;
+        }
+        Logger.g("Token received: %s %s", str, bf70Var);
+        pog pogVar = (pog) jogVarA;
+        he90<String> he90Var = pogVar.e;
+        if (!he90Var.isEmpty()) {
+            for (String str2 : he90Var) {
+                String str3 = bf70Var.d;
+                if (str3.length() > str2.length()) {
+                    zEquals = true;
+                    if (str3.charAt((str3.length() - str2.length()) - 1) != '.' || !s3d1.b0(str3, str2, false)) {
+                        zEquals = false;
+                    }
+                } else {
+                    zEquals = str3.equals(str2);
+                }
+                if (zEquals) {
+                    AtomicReference atomicReference = this.b;
+                    j4s0 j4s0Var = (j4s0) atomicReference.get();
+                    if (j4s0Var != null) {
+                        return c(a631Var, ((Number) j4s0Var.a).intValue(), (String) j4s0Var.b);
+                    }
+                    fh31 fh31VarR = e2c.r(hy01Var, a631Var, pogVar.a, (fh31) null);
+                    hf60 hf60Var2 = fh31VarR.f;
+                    int i = fh31VarR.d;
+                    if (i == 401) {
+                        String strC = hf60Var2.c("client-token-error");
+                        if (strC == null) {
+                            strC = null;
+                        }
+                        if (strC != null && strC.equals("EXPIRED_CLIENTTOKEN")) {
+                            fh31VarR.g.close();
+                            gl91Var.b();
+                            jog jogVarA2 = gl91Var.a();
+                            if (jogVarA2 instanceof pog) {
+                                return e2c.r(hy01Var, a631Var, ((pog) jogVarA2).a, fh31VarR);
+                            }
+                            if (jogVarA2 instanceof kog) {
+                                return b((kog) jogVarA2, a631Var);
+                            }
+                            eg.o();
+                            return null;
+                        }
+                    }
+                    if (i == 403 || i == 400 || i == 401) {
+                        String strC2 = hf60Var2.c("client-token-error");
+                        String str4 = strC2 != null ? strC2 : null;
+                        if (str4 != null && ((iHashCode = str4.hashCode()) == -1419914618 ? str4.equals("INVALID_CLIENTTOKEN") : !(iHashCode == -837018315 ? !str4.equals("UNSUPPORTED_CLIENT") : !(iHashCode == 482194293 && str4.equals("MISSING_CLIENTTOKEN"))))) {
+                            atomicReference.set(new j4s0(Integer.valueOf(i), str4));
+                        }
+                    }
+                    return fh31VarR;
+                }
+            }
+        }
+        return hy01Var.b(a631Var);
+    }
+}

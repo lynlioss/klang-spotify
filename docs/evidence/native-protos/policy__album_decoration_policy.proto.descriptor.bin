@@ -1,0 +1,17 @@
+
+$policy/album_decoration_policy.protospotify.cosmos_util.proto"‡
+AlbumDecorationPolicy
+link (Rlink
+name (Rname
+covers (Rcovers
+year (RyearJJJJ	J	
+J
+R
+copyrightsR	num_discsR
+num_tracksRplayabilityRis_premium_onlyRcontent_access"h
+AlbumCollectionDecorationPolicyJJJRcollection_linkRnum_tracks_in_collectionRcomplete"ê
+AlbumSyncDecorationPolicy)
+inferred_offline (RinferredOffline#
+offline_state (RofflineState#
+sync_progress (RsyncProgressB*
+$com.spotify.cosmos.util.policy.protoHPbproto3

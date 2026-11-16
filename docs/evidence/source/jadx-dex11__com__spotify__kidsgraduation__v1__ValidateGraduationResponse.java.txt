@@ -1,0 +1,94 @@
+Source: analysis/spotify/jadx-dex11/sources/com/spotify/kidsgraduation/v1/ValidateGraduationResponse.java
+SHA256: f31c025df3d8246400b92bcc6899a6c9d4ec36da3712ec5ae635991e7360915e
+Lines: 1-90
+
+1: package com.spotify.kidsgraduation.v1;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes11.dex */
+4: public final class ValidateGraduationResponse extends com.google.protobuf.h implements p.qhj0 {
+5:     private static final com.spotify.kidsgraduation.v1.ValidateGraduationResponse DEFAULT_INSTANCE = null;
+6:     public static final int GEOIP_MISMATCH_FIELD_NUMBER = 2;
+7:     public static final int GRADUATION_TOKEN_FIELD_NUMBER = 1;
+8:     private static volatile p.whs0 PARSER;
+9:     private boolean geoipMismatch_;
+10:     private java.lang.String graduationToken_;
+11: 
+12:     static {
+13:             com.spotify.kidsgraduation.v1.ValidateGraduationResponse r0 = new com.spotify.kidsgraduation.v1.ValidateGraduationResponse
+14:             r0.<init>()
+15:             com.spotify.kidsgraduation.v1.ValidateGraduationResponse.DEFAULT_INSTANCE = r0
+16:             java.lang.Class<com.spotify.kidsgraduation.v1.ValidateGraduationResponse> r1 = com.spotify.kidsgraduation.v1.ValidateGraduationResponse.class
+17:             com.google.protobuf.h.registerDefaultInstance(r1, r0)
+18:             return
+19:     }
+20: 
+21:     private ValidateGraduationResponse() {
+22:             r1 = this;
+23:             r1.<init>()
+24:             java.lang.String r0 = ""
+25:             r1.graduationToken_ = r0
+26:             return
+27:     }
+28: 
+29:     public static p.whs0 parser() {
+30:             com.spotify.kidsgraduation.v1.ValidateGraduationResponse r0 = com.spotify.kidsgraduation.v1.ValidateGraduationResponse.DEFAULT_INSTANCE
+31:             p.whs0 r0 = r0.getParserForType()
+32:             return r0
+33:     }
+34: 
+35:     public final java.lang.Object dynamicMethod(p.lp40 r1, java.lang.Object r2, java.lang.Object r3) {
+36:             r0 = this;
+37:             int r0 = r1.ordinal()
+38:             if (r0 == 0) goto L56
+39:             r1 = 2
+40:             if (r0 == r1) goto L45
+41:             r1 = 3
+42:             if (r0 == r1) goto L3f
+43:             r1 = 4
+44:             if (r0 == r1) goto L36
+45:             r1 = 5
+46:             if (r0 == r1) goto L33
+47:             r1 = 6
+48:             if (r0 != r1) goto L31
+49:             p.whs0 r0 = com.spotify.kidsgraduation.v1.ValidateGraduationResponse.PARSER
+50:             if (r0 != 0) goto L30
+51:             java.lang.Class<com.spotify.kidsgraduation.v1.ValidateGraduationResponse> r1 = com.spotify.kidsgraduation.v1.ValidateGraduationResponse.class
+52:             monitor-enter(r1)
+53:             p.whs0 r0 = com.spotify.kidsgraduation.v1.ValidateGraduationResponse.PARSER     // Catch: java.lang.Throwable -> L2a
+54:             if (r0 != 0) goto L2c
+55:             p.dp40 r0 = new p.dp40     // Catch: java.lang.Throwable -> L2a
+56:             com.spotify.kidsgraduation.v1.ValidateGraduationResponse r2 = com.spotify.kidsgraduation.v1.ValidateGraduationResponse.DEFAULT_INSTANCE     // Catch: java.lang.Throwable -> L2a
+57:             r0.<init>(r2)     // Catch: java.lang.Throwable -> L2a
+58:             com.spotify.kidsgraduation.v1.ValidateGraduationResponse.PARSER = r0     // Catch: java.lang.Throwable -> L2a
+59:             goto L2c
+60:         L2a:
+61:             r0 = move-exception
+62:             goto L2e
+63:         L2c:
+64:             monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+65:             return r0
+66:         L2e:
+67:             monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+68:             throw r0
+69:         L30:
+70:             return r0
+71:         L31:
+72:             r0 = 0
+73:             throw r0
+74:         L33:
+75:             com.spotify.kidsgraduation.v1.ValidateGraduationResponse r0 = com.spotify.kidsgraduation.v1.ValidateGraduationResponse.DEFAULT_INSTANCE
+76:             return r0
+77:         L36:
+78:             p.mej1 r0 = new p.mej1
+79:             com.spotify.kidsgraduation.v1.ValidateGraduationResponse r1 = com.spotify.kidsgraduation.v1.ValidateGraduationResponse.DEFAULT_INSTANCE
+80:             r2 = 0
+81:             r0.<init>(r1, r2)
+82:             return r0
+83:         L3f:
+84:             com.spotify.kidsgraduation.v1.ValidateGraduationResponse r0 = new com.spotify.kidsgraduation.v1.ValidateGraduationResponse
+85:             r0.<init>()
+86:             return r0
+87:         L45:
+88:             java.lang.String r0 = "graduationToken_"
+89:             java.lang.String r1 = "geoipMismatch_"
+90:             java.lang.Object[] r0 = new java.lang.Object[]{r0, r1}

@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: episode_transcripts_extension.proto
+syntax = "proto3";
+package spotify.corex.transcripts.metadata;
+message EpisodeTranscript {
+  string episode_uri = 1;
+  repeated .spotify.corex.transcripts.metadata.Transcript transcripts = 2;
+  bool disallow_content_layer = 3;
+}
+message Transcript {
+  string uri = 1;
+  string language = 2;
+  bool curated = 3;
+  string cdn_url = 4;
+  bool is_static = 5;
+}

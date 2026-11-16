@@ -1,0 +1,27 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/sorting.proto
+syntax = "proto3";
+package spotify.list.v1.model;
+enum SortingOrder {
+  SORTING_ORDER_UNSPECIFIED = 0;
+  SORTING_ORDER_ASCENDING = 1;
+  SORTING_ORDER_DESCENDING = 2;
+}
+enum SortingType {
+  SORTING_TYPE_UNSPECIFIED = 0;
+  SORTING_TYPE_NONE = 1;
+  SORTING_TYPE_NAME = 2;
+  SORTING_TYPE_CONTRIBUTOR = 3;
+  SORTING_TYPE_CONTENT_HIERARCHY_PARENT = 4;
+  SORTING_TYPE_DURATION = 5;
+  SORTING_TYPE_ADD_TIME = 6;
+  SORTING_TYPE_RECENTLY_PLAYED = 7;
+  SORTING_TYPE_RELEASE_DATE = 8;
+}
+message Sorting {
+  oneof _type {
+    .spotify.list.v1.model.SortingType type = 1;
+  }
+  oneof _order {
+    .spotify.list.v1.model.SortingOrder order = 2;
+  }
+}

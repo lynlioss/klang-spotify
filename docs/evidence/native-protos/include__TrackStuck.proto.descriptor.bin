@@ -1,0 +1,21 @@
+
+include/TrackStuck.protospotify.event_sender.proto"Æ
+
+TrackStuck
+track (	Rtrack
+playback_id (R
+playbackId!
+source_start (	RsourceStart!
+reason_start (	RreasonStart
+offline (Roffline
+position (Rposition
+count (Rcount!
+audio_driver (	RaudioDriver.
+is_processing_audio	 (RisProcessingAudio0
+timeline_instance_id
+ (RtimelineInstanceId,
+audio_driver_state (	RaudioDriverState
+
+key_origin (	R	keyOrigin
+
+key_status (	R	keyStatusBH

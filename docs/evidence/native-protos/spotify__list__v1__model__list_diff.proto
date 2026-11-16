@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/list_diff.proto
+syntax = "proto3";
+package spotify.list.v1.model;
+import "spotify/list/v1/model/ops.proto";
+message ListDiff {
+  repeated .spotify.list.v1.model.Op ops = 1;
+}

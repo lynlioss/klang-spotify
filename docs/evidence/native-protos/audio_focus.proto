@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: audio_focus.proto
+syntax = "proto3";
+package spotify.timeline_conductor.audio_focus.proto;
+message LoseAudioFocusRequest {
+  bool transient = 1;
+}
+message AudioRouteLostRequest {
+}
+message GainAudioFocusRequest {
+  bool automatic_resume_allowed = 1;
+}

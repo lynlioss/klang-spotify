@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/attributes/signals_list.proto
+syntax = "proto3";
+package spotify.list.v1.model.attributes;
+import "spotify/list/v1/model/signals.proto";
+message SignalsList {
+  repeated .spotify.list.v1.model.Signal available_signals = 1;
+}

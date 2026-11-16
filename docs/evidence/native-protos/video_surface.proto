@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: video_surface.proto
+syntax = "proto3";
+package spotify.stream_reporting_esperanto.proto;
+enum VideoSurface {
+  VIDEO_SURFACE_UNKNOWN = 0;
+  VIDEO_SURFACE_FULLSCREEN = 1;
+  VIDEO_SURFACE_NOW_PLAYING_BAR = 2;
+  VIDEO_SURFACE_NOW_PLAYING_SIDEBAR = 3;
+  VIDEO_SURFACE_NOW_PLAYING_VIEW = 4;
+  VIDEO_SURFACE_NOW_PLAYING_VIEW_VERTICAL = 5;
+  VIDEO_SURFACE_PICTURE_IN_PICTURE = 6;
+  VIDEO_SURFACE_CINEMA = 7;
+  VIDEO_SURFACE_EXTERNAL = 8;
+  VIDEO_SURFACE_OTHER = 9;
+}

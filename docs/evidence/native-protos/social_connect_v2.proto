@@ -1,0 +1,50 @@
+// Recovered descriptor. Original file: social_connect_v2.proto
+syntax = "proto3";
+package socialconnect;
+enum SessionUpdateReason {
+  UNKNOWN_UPDATE_TYPE = 0;
+  NEW_SESSION = 1;
+  USER_JOINED = 2;
+  USER_LEFT = 3;
+  SESSION_DELETED = 4;
+  YOU_LEFT = 5;
+  YOU_WERE_KICKED = 6;
+  YOU_JOINED = 7;
+  USER_KICKED = 10;
+  VOLUME_CONTROL_PERMISSIONS_CHANGED = 11;
+  QUEUE_ONLY_MODE_CONTROL_CHANGED = 12;
+  WIFI_BROADCAST_CHANGED = 13;
+  ACTIVE_DEVICE_CHANGED = 14;
+  SESSION_MEMBER_UPDATED = 16;
+  SESSION_ACTIVATED = 17;
+  SESSION_MEMBER_PAUSE_CHANGED = 18;
+  JAM_CAPPING_STATE_CHANGED = 19;
+  YOU_WERE_REMOVED_UNSUPPORTED_CONTENT = 20;
+}
+enum PlaybackControl {
+  UNKNOWN = 0;
+  CONTROL = 1;
+  LISTEN_AND_CONTROL = 2;
+}
+message Session {
+  int64 timestamp = 1;
+  string session_id = 2;
+  repeated .socialconnect.SessionMember session_members = 6;
+  bool is_session_owner = 9;
+  bool active = 17;
+  bool redirect_commands = 25;
+  bool requires_jam_lens = 31;
+}
+message SessionMember {
+  string id = 2;
+  string username = 3;
+  string display_name = 4;
+  string image_url = 5;
+  .socialconnect.PlaybackControl playback_control = 9;
+  bool is_current_user = 10;
+  bool listen_mode = 11;
+}
+message SessionUpdate {
+  .socialconnect.Session session = 1;
+  .socialconnect.SessionUpdateReason reason = 2;
+}

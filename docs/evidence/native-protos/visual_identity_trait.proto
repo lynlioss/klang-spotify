@@ -1,0 +1,20 @@
+// Recovered descriptor. Original file: visual_identity_trait.proto
+syntax = "proto3";
+package spotify.contentagnostic.v2;
+import "image.proto";
+import "video.proto";
+message VisualIdentityTrait {
+  .spotify.contentagnostic.v2.Image square_cover_image = 1;
+  oneof _sixteen_by_nine_cover_image {
+    .spotify.contentagnostic.v2.Image sixteen_by_nine_cover_image = 2;
+  }
+  oneof _nine_by_sixteen_cover_image {
+    .spotify.contentagnostic.v2.Image nine_by_sixteen_cover_image = 3;
+  }
+  oneof _wide_full_bleed_image {
+    .spotify.contentagnostic.v2.Image wide_full_bleed_image = 6;
+  }
+  oneof _nine_by_sixteen_cover_video {
+    .spotify.contentagnostic.v2.Video nine_by_sixteen_cover_video = 4;
+  }
+}

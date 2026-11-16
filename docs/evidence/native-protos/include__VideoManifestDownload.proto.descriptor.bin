@@ -1,0 +1,21 @@
+
+#include/VideoManifestDownload.protospotify.event_sender.proto"ª
+VideoManifestDownload
+playback_id (R
+playbackId
+
+session_id (	R	sessionId
+video_id (	RvideoId!
+content_size (RcontentSize
+
+from_cache (R	fromCache&
+had_cache_error (RhadCacheError
+
+error_code (R	errorCode!
+error_detail (	RerrorDetail
+retries	 (Rretries!
+request_type
+ (	RrequestType.
+cdn_initial_latency (RcdnInitialLatency
+
+total_time (R	totalTimeBH

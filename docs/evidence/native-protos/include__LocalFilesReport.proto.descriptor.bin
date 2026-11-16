@@ -1,0 +1,16 @@
+
+include/LocalFilesReport.protospotify.event_sender.proto"»
+LocalFilesReport!
+total_tracks (RtotalTracks
+
+total_size (R	totalSize!
+owned_tracks (RownedTracks
+
+owned_size (R	ownedSize(
+tracks_not_found (RtracksNotFound*
+tracks_bad_format (RtracksBadFormat0
+tracks_drm_protected (RtracksDrmProtected2
+tracks_unknown_pruned (RtracksUnknownPruned>
+tracks_reallocated_repaired	 (RtracksReallocatedRepaired'
+enabled_sources
+ (RenabledSourcesBH

@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: spotify/audiobookcashier/v1/audiobook_price.proto
+syntax = "proto3";
+package spotify.audiobookcashier.v1;
+message Price {
+  double amount = 1;
+  string currency = 2;
+  string formatted_price = 3;
+}
+message AudiobookPrice {
+  .spotify.audiobookcashier.v1.Price final_price = 1;
+  .spotify.audiobookcashier.v1.Price final_list_price = 2;
+}

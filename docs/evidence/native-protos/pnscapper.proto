@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: pnscapper.proto
+syntax = "proto3";
+package spotify.pnscapper.v1;
+message GetCapInfoResponse {
+  bool enable_pick_and_shuffle_dynamic_cap = 1;
+  int32 pick_and_shuffle_timecap = 2;
+}
+message Empty {
+  bool unused = 1;
+}

@@ -1,0 +1,10 @@
+
+#rootlist_modification_request.proto spotify.playlist_esperanto.protomodification_request.protoresponse_status.proto"Š
+RootlistModificationRequest
+
+folder_uri (	R	folderUriL
+request (22.spotify.playlist.cosmos.proto.ModificationRequestRrequest"¹
+RootlistModificationResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatusO
+response (23.spotify.playlist.cosmos.proto.ModificationResponseRresponseB,
+ spotify.playlist.esperanto.protoHP¢ESPbproto3

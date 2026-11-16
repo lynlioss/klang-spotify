@@ -1,0 +1,13 @@
+// Recovered descriptor. Original file: creation_info.proto
+syntax = "proto2";
+package spotify.playlist.cosmos.proto;
+message CreationInfo {
+  enum OriginType {
+    ORIGIN_TYPE_UNSPECIFIED = 0;
+    ORIGIN_TYPE_FRESH = 1;
+    ORIGIN_TYPE_CLONED = 2;
+    ORIGIN_TYPE_AGENTIC = 3;
+  }
+  optional .spotify.playlist.cosmos.proto.CreationInfo.OriginType origin_type = 1;
+  optional string origin_uri = 2;
+}

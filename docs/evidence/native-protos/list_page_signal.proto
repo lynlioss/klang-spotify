@@ -1,0 +1,18 @@
+// Recovered descriptor. Original file: list_page_signal.proto
+syntax = "proto3";
+package spotify.list_player.list_page_signal_proto;
+message HistoryItem {
+  string uri = 1;
+}
+message CurrentItem {
+  string uri = 1;
+}
+message PlayHistory {
+  repeated .spotify.list_player.list_page_signal_proto.HistoryItem history = 2;
+  oneof _current {
+    .spotify.list_player.list_page_signal_proto.CurrentItem current = 1;
+  }
+}
+message AutoplayClientData {
+  .spotify.list_player.list_page_signal_proto.PlayHistory play_history = 1;
+}

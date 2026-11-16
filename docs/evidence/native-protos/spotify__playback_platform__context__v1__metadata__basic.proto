@@ -1,0 +1,6 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/metadata/basic.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1.metadata;
+message Basic {
+  string title = 1;
+}

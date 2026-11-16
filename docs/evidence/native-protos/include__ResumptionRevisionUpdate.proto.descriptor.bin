@@ -1,0 +1,8 @@
+
+&include/ResumptionRevisionUpdate.protospotify.event_sender.proto"Å
+ResumptionRevisionUpdate
+key (	Rkey
+position (	Rposition
+reason (	Rreason
+playback_id (	R
+playbackIdBH

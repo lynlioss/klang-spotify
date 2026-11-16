@@ -1,0 +1,20 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/ledger_query.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1;
+import "google/protobuf/duration.proto";
+message LedgerQuery {
+  message EntryIdQuery {
+    bool include_ids = 1;
+    oneof _filter_with_prefix {
+      string filter_with_prefix = 2;
+    }
+    oneof _filter_with_suffix {
+      string filter_with_suffix = 3;
+    }
+  }
+  bool enabled = 1;
+  .google.protobuf.Duration window = 2;
+  .spotify.playback_platform.context.v1.LedgerQuery.EntryIdQuery entry_query = 3;
+  bool include_uids = 4;
+  bool include_tags = 5;
+}

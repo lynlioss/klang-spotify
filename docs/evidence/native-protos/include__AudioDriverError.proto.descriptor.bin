@@ -1,0 +1,9 @@
+
+include/AudioDriverError.protospotify.event_sender.proto"—
+AudioDriverError
+
+error_code (R	errorCode
+location (	Rlocation
+driver_name (	R
+driverName'
+additional_data (	RadditionalDataBH

@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: es_websocket_connect_request.proto
+syntax = "proto3";
+package spotify.connectivity.websocket.esperanto.proto;
+message WebSocketConnectRequest {
+  string Url = 1;
+  string AccessToken = 2;
+  bool DisableSslVerification = 3;
+}

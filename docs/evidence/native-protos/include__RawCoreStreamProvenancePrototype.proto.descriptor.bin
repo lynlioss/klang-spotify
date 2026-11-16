@@ -1,0 +1,21 @@
+
+.include/RawCoreStreamProvenancePrototype.protospotify.event_sender.proto"Û
+ RawCoreStreamProvenancePrototype
+playback_id (R
+playbackId
+	stream_id (RstreamId/
+orchestration_stack (	RorchestrationStack%
+playback_stack (	RplaybackStack!
+source_start (	RsourceStart
+referrer (	Rreferrer
+page_id (	RpageId2
+root_specification_id (	RrootSpecificationId2
+leaf_specification_id	 (	RleafSpecificationIdh
+
+provenanceñ (2G.spotify.event_sender.proto.RawCoreStreamProvenancePrototype.ProvenanceR
+provenancew
+
+Provenance!
+source_start (	RsourceStart
+referrer (	Rreferrer*
+event_provenanceñ (	ReventProvenanceBH

@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: podcast_paywalls.proto
+syntax = "proto3";
+package spotify.podcast_paywalls_esperanto.proto;
+message PodcastPaywallsShowSubscriptionRequest {
+  string show_uri = 1;
+}
+message PodcastPaywallsShowSubscriptionResponse {
+  bool is_user_subscribed = 1;
+}
+service PodcastPaywalls {
+  rpc PutShowSubscription (.spotify.podcast_paywalls_esperanto.proto.PodcastPaywallsShowSubscriptionRequest) returns (.spotify.podcast_paywalls_esperanto.proto.PodcastPaywallsShowSubscriptionResponse);
+}

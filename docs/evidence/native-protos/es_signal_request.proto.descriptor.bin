@@ -1,0 +1,10 @@
+
+es_signal_request.protospotify.player.esperanto.protoes_command_options.protoes_logging_params.proto"ì
+SignalRequest
+	signal_id (	RsignalId
+
+parameters (	R
+parametersH
+options (2..spotify.player.esperanto.proto.CommandOptionsRoptionsT
+logging_params (2-.spotify.player.esperanto.proto.LoggingParamsRloggingParamsB,
+"com.spotify.player.esperanto.protoH¢ESPbproto3

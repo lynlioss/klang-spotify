@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: karaoke_status.proto
+syntax = "proto3";
+package spotify.karaoke_esperanto.proto;
+enum KaraokeStatus {
+  ENABLED = 0;
+  DISABLED = 1;
+}

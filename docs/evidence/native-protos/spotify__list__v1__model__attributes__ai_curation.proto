@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/attributes/ai_curation.proto
+syntax = "proto3";
+package spotify.list.v1.model.attributes;
+message AiCuration {
+  oneof _reference_id {
+    bytes reference_id = 1;
+  }
+}

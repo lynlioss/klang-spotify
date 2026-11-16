@@ -1,0 +1,11 @@
+
+9spotify/playback_platform/context/v1/behavior/start.proto-spotify.playback_platform.context.v1.behavior9spotify/playback_platform/context/v1/sequence_start.proto"Ã
+Startb
+move_onto_from_prev (23.spotify.playback_platform.context.v1.SequenceStartRmoveOntoFromPrevb
+move_onto_from_next (23.spotify.playback_platform.context.v1.SequenceStartRmoveOntoFromNextb
+move_onto_from_play (23.spotify.playback_platform.context.v1.SequenceStartRmoveOntoFromPlayb
+skip_onto_from_prev (23.spotify.playback_platform.context.v1.SequenceStartRskipOntoFromPrevb
+skip_onto_from_next (23.spotify.playback_platform.context.v1.SequenceStartRskipOntoFromNextb
+fail_onto_from_prev (23.spotify.playback_platform.context.v1.SequenceStartRfailOntoFromPrevb
+fail_onto_from_next (23.spotify.playback_platform.context.v1.SequenceStartRfailOntoFromNextB3
+-spotify.playback_platform.context.v1.behaviorHPbproto3

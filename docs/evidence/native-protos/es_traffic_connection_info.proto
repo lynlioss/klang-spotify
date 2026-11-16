@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: es_traffic_connection_info.proto
+syntax = "proto3";
+package spotify.connectivity.traffic.esperanto.proto;
+import "es_traffic_bearer.proto";
+message ConnectionInfo {
+  .spotify.connectivity.traffic.esperanto.proto.Bearer bearer = 1;
+}

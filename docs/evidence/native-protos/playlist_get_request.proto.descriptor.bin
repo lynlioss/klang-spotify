@@ -1,0 +1,24 @@
+
+playlist_get_request.proto spotify.playlist_esperanto.protogoogle/protobuf/duration.proto/policy/playlist_request_decoration_policy.protoplaylist_query.protoplaylist_request.protoresponse_status.proto"Å
+PlaylistGetRequest
+uri (	RuriE
+query (2/.spotify.playlist_esperanto.proto.PlaylistQueryRqueryV
+policy (2>.spotify.playlist.cosmos.proto.PlaylistRequestDecorationPolicyRpolicy"
+PlaylistMultiGetSingleRequest
+id (	RidN
+request (24.spotify.playlist_esperanto.proto.PlaylistGetRequestRrequest"«
+PlaylistMultiGetRequest[
+requests (2?.spotify.playlist_esperanto.proto.PlaylistMultiGetSingleRequestRrequests3
+timeout (2.google.protobuf.DurationRtimeout"ô
+PlaylistGetResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatusL
+data (28.spotify.playlist.cosmos.playlist_request.proto.ResponseRdataE
+query (2/.spotify.playlist_esperanto.proto.PlaylistQueryRquery"•
+PlaylistMultiGetSingleResponse
+id (	Rid
+uri (	RuriQ
+response (25.spotify.playlist_esperanto.proto.PlaylistGetResponseRresponse"Ä
+PlaylistMultiGetResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatus^
+	responses (2@.spotify.playlist_esperanto.proto.PlaylistMultiGetSingleResponseR	responsesB,
+ spotify.playlist.esperanto.protoHP¢ESPbproto3

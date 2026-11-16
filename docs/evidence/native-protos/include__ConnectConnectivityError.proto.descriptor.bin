@@ -1,0 +1,8 @@
+
+&include/ConnectConnectivityError.protospotify.event_sender.proto"ß
+ConnectConnectivityError)
+software_version (	RsoftwareVersion
+error (	Rerror6
+connection_type_initial (	RconnectionTypeInitial2
+connection_type_error (	RconnectionTypeError
+reason (	RreasonBH

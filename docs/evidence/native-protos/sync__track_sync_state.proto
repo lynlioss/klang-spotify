@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: sync/track_sync_state.proto
+syntax = "proto2";
+package spotify.cosmos_util.proto;
+message TrackSyncState {
+  optional string offline = 1;
+  optional uint32 sync_progress = 2;
+}

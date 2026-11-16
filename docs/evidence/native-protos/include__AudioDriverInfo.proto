@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: include/AudioDriverInfo.proto
+syntax = "proto2";
+package spotify.event_sender.proto;
+message AudioDriverInfo {
+  optional string driver_name = 1;
+  optional string output_device_name = 2;
+  optional string output_device_category = 3;
+  optional string reason = 4;
+  optional int32 failed_attempts = 5;
+  optional int64 recovery_duration_ms = 6;
+}

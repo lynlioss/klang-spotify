@@ -1,0 +1,16 @@
+
+ include/ExternalDeviceInfo.protospotify.event_sender.proto"´
+ExternalDeviceInfo
+type (	Rtype
+subtype (	Rsubtype
+reason (	Rreason
+
+taken_over (R	takenOver
+
+num_tracks (R	numTracks0
+num_purchased_tracks (RnumPurchasedTracks#
+num_playlists (RnumPlaylists
+error (	Rerror
+full	 (Rfull
+sync_all
+ (RsyncAllBH

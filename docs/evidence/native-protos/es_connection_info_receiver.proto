@@ -1,0 +1,33 @@
+// Recovered descriptor. Original file: es_connection_info_receiver.proto
+syntax = "proto3";
+package spotify.connectivity.reachability.esperanto.proto;
+import "google/protobuf/empty.proto";
+import "es_network_capabilities.proto";
+import "es_connection_type.proto";
+import "es_connection_availability.proto";
+enum OsInternetValidation {
+  OS_INTERNET_VALIDATION_UNKNOWN = 0;
+  OS_INTERNET_VALIDATED = 1;
+  OS_INTERNET_NOT_VALIDATED = 2;
+}
+message ConnectionStatus {
+  oneof type {
+    .spotify.connectivity.reachability.esperanto.proto.Connected connected = 1;
+    .google.protobuf.Empty not_connected = 2;
+    .google.protobuf.Empty unknown = 3;
+  }
+}
+message Connected {
+  repeated .spotify.connectivity.reachability.esperanto.proto.NetworkCapability capabilities = 1;
+  .spotify.connectivity.reachability.esperanto.proto.ConnectionType connection_type = 2;
+  .spotify.connectivity.reachability.esperanto.proto.OsInternetValidation os_internet_validation = 3;
+}
+message ConnectionInfo {
+  bool forced_offline = 1;
+  .spotify.connectivity.reachability.esperanto.proto.ConnectionStatus connection_status = 2;
+  .spotify.connectivity.reachability.esperanto.proto.ConnectionAvailability connection_availability = 3;
+}
+service ConnectionInfoReceiver {
+  rpc reportConnectionInfo (.spotify.connectivity.reachability.esperanto.proto.ConnectionInfo) returns (.google.protobuf.Empty);
+  rpc requestReachabilityCheck (.google.protobuf.Empty) returns (.google.protobuf.Empty);
+}

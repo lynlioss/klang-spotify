@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: es_skip_prev.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+import "es_command_options.proto";
+import "es_logging_params.proto";
+import "es_context_track.proto";
+message SkipPrevRequest {
+  .spotify.player.esperanto.proto.CommandOptions options = 1;
+  bool allow_seeking = 2;
+  .spotify.player.esperanto.proto.LoggingParams logging_params = 3;
+  .spotify.player.esperanto.proto.ContextTrack track = 4;
+}

@@ -1,0 +1,9 @@
+
+include/StreamLocation.protospotify.event_sender.proto"»
+StreamLocation
+playback_id (R
+playbackId
+latitude (Rlatitude
+	longitude (R	longitude
+accuracy (Raccuracy2
+location_timestamp_ms (RlocationTimestampMsBH

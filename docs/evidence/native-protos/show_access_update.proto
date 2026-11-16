@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: show_access_update.proto
+syntax = "proto3";
+package spotify.showaccess.v1;
+message ShowAccessUpdate {
+  repeated string entity_uris = 1;
+}
+message ShowAccessUpdateCacheRotation {
+}

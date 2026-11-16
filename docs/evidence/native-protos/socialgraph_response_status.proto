@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: socialgraph_response_status.proto
+syntax = "proto3";
+package spotify.socialgraph_esperanto.proto;
+message ResponseStatus {
+  int32 status_code = 1;
+  string reason = 2;
+}

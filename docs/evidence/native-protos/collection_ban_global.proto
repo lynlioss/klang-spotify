@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: collection_ban_global.proto
+syntax = "proto3";
+package spotify.collection_esperanto.proto;
+message BanGlobalRequest {
+  string uri = 1;
+}
+message UnbanGlobalRequest {
+  string uri = 1;
+}

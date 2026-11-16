@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: members_request.proto
+syntax = "proto3";
+package spotify.playlist.cosmos.proto;
+message OptionalLimit {
+  uint32 value = 1;
+}
+message PlaylistMembersRequest {
+  string uri = 1;
+  .spotify.playlist.cosmos.proto.OptionalLimit limit = 2;
+}

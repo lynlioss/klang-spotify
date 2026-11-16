@@ -1,0 +1,20 @@
+
+#collection_platform_responses.proto!spotify.collection_platform.protocollection_platform_items.proto":
+"CollectionPlatformContainsResponse
+found (Rfound"4
+Status
+code (Rcode
+reason (	Rreason"Ó
++CollectionPlatformEsperantoContainsResponseA
+status (2).spotify.collection_platform.proto.StatusRstatusa
+contains (2E.spotify.collection_platform.proto.CollectionPlatformContainsResponseRcontains"¾
+(CollectionPlatformEsperantoItemsResponseA
+status (2).spotify.collection_platform.proto.StatusRstatusO
+items (29.spotify.collection_platform.proto.CollectionPlatformItemRitems"Ã
+&CollectionPlatformContextItemsResponseA
+status (2).spotify.collection_platform.proto.StatusRstatusV
+items (2@.spotify.collection_platform.proto.CollectionPlatformContextItemRitems"‰
+.CollectionPlatformContainsContextItemsResponseA
+status (2).spotify.collection_platform.proto.StatusRstatus
+found (RfoundB;
+/com.spotify.collection_platform.esperanto.protoHP¢ESPbproto3

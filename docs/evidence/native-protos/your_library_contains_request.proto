@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: your_library_contains_request.proto
+syntax = "proto3";
+package spotify.your_library.proto;
+import "your_library_config.proto";
+message YourLibraryContainsRequest {
+  repeated string requested_uri = 3;
+  .spotify.your_library.proto.YourLibraryPredefinedPlaylistConfigs predefined_playlist_configs = 4;
+  int32 update_throttling = 5;
+}

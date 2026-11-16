@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: mixability.proto
+syntax = "proto3";
+package spotify.playlistmixing.extensions.mixability;
+message Mixability {
+  bool mixable = 1;
+  double genre_based_beatmatchability = 2;
+}

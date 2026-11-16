@@ -1,0 +1,30 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/signals.proto
+syntax = "proto3";
+package spotify.list.v1.model;
+import "spotify/list/v1/model/lenses.proto";
+message Signal {
+  oneof _identifier {
+    string identifier = 1;
+  }
+  oneof _data {
+    bytes data = 2;
+  }
+  oneof _client_payload {
+    bytes client_payload = 3;
+  }
+}
+message SignalData {
+  oneof target {
+    string identifier = 1;
+    .spotify.list.v1.model.Lens lens = 5;
+  }
+  oneof _uri {
+    string uri = 2;
+  }
+  oneof _item_id {
+    bytes item_id = 3;
+  }
+  oneof _additional_data {
+    bytes additional_data = 4;
+  }
+}

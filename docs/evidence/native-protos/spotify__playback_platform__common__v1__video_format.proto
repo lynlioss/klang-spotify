@@ -1,0 +1,5 @@
+// Recovered descriptor. Original file: spotify/playback_platform/common/v1/video_format.proto
+syntax = "proto3";
+package spotify.playback_platform.common.v1;
+message VideoFormat {
+}

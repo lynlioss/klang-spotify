@@ -1,0 +1,16 @@
+// Recovered descriptor. Original file: puffin_filter_request.proto
+syntax = "proto3";
+package spotify.puffin_esperanto.proto;
+enum Reason {
+  UNKNOWN = 0;
+  USER_INITIATED = 1;
+}
+message PuffinFilterRequest {
+  repeated bytes filters = 2;
+  bool is_o = 3;
+  bool is_v = 4;
+  .spotify.puffin_esperanto.proto.Reason reason = 5;
+}
+message PuffinDisableProcessingRequest {
+  .spotify.puffin_esperanto.proto.Reason reason = 1;
+}

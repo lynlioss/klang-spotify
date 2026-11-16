@@ -1,0 +1,19 @@
+// Recovered descriptor. Original file: spotify/extendedmetadata/v3/extension_config_service.proto
+syntax = "proto3";
+package spotify.extendedmetadata.v3;
+import "google/protobuf/duration.proto";
+import "spotify/extendedmetadata/v3/extension_config.proto";
+message GetAllExtensionConfigsRequest {
+}
+message GetAllExtensionConfigsResponse {
+  message ConfigsEntry {
+    string key = 1;
+    .spotify.extendedmetadata.v3.ExtensionConfig value = 2;
+  }
+  int32 status_code = 1;
+  .google.protobuf.Duration config_cache_ttl = 2;
+  repeated .spotify.extendedmetadata.v3.GetAllExtensionConfigsResponse.ConfigsEntry configs = 3;
+}
+service ExtensionConfigService {
+  rpc GetAllExtensionConfigs (.spotify.extendedmetadata.v3.GetAllExtensionConfigsRequest) returns (.spotify.extendedmetadata.v3.GetAllExtensionConfigsResponse);
+}

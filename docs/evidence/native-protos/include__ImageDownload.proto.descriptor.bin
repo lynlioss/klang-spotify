@@ -1,0 +1,10 @@
+
+include/ImageDownload.protospotify.event_sender.proto"ú
+ImageDownload
+
+cdn_domain (	R	cdnDomain$
+bytes_from_cdn (RbytesFromCdn*
+cdn_total_latency (RcdnTotalLatency.
+cdn_initial_latency (RcdnInitialLatency!
+cdn_protocol (	RcdnProtocol%
+new_connection (RnewConnectionBH

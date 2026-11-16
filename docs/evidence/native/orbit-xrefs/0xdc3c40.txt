@@ -1,0 +1,43 @@
+
+analysis/spotify/native/liborbit-jni-spotify.so:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+0000000000d503ac <_ZN4asio6detail16service_registry6createINS0_23reactive_socket_serviceINS_2ip3udpEEENS_10io_contextEEEPNS_17execution_context7serviceEPv>:
+  dc3c20: 913dbc21     	add	x1, x1, #0xf6f
+  dc3c24: 52800282     	mov	w2, #0x14               // =20
+  dc3c28: 14000004     	b	0xdc3c38 <_ZN4asio6detail16service_registry6createINS0_23reactive_socket_serviceINS_2ip3udpEEENS_10io_contextEEEPNS_17execution_context7serviceEPv+0x7388c>
+  dc3c2c: b0ffac41     	adrp	x1, 0x34c000
+  dc3c30: 9118b821     	add	x1, x1, #0x62e
+  dc3c34: 52800162     	mov	w2, #0xb                // =11
+  dc3c38: 910283e0     	add	x0, sp, #0xa0
+  dc3c3c: 97f5f97a     	bl	0xb42224 <_ZN5boost6detail18core_typeid_lib_idEv+0x2824>
+  dc3c40: d0ffae80     	adrp	x0, 0x395000
+  dc3c44: 9117e400     	add	x0, x0, #0x5f9
+  dc3c48: 9102e3e8     	add	x8, sp, #0xb8
+  dc3c4c: 94231fa3     	bl	0x168bad8 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0xbaf6c>
+  dc3c50: 90ffb521     	adrp	x1, 0x467000 <_ZTSNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE+0xf63c>
+  dc3c54: 9102e821     	add	x1, x1, #0xba
+  dc3c58: 910343e8     	add	x8, sp, #0xd0
+  dc3c5c: 94233ac2     	bl	0x1692764 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0xc1bf8>
+  dc3c60: b9402260     	ldr	w0, [x19, #0x20]
+  dc3c64: 910223e8     	add	x8, sp, #0x88
+  dc3c68: 94235332     	bl	0x1698930 <_ZNSt6__ndk19to_stringEi@plt>
+  dc3c6c: 9103a3e8     	add	x8, sp, #0xe8
+  dc3c70: 910343e0     	add	x0, sp, #0xd0
+  dc3c74: 910223e1     	add	x1, sp, #0x88
+  dc3c78: 97f6c990     	bl	0xb762b8 <_ZN4asio6detail16service_registry6createINS0_9schedulerENS_17execution_contextEEEPNS4_7serviceEPv+0x4280>
+  dc3c7c: 9420e8ab     	bl	0x15fdf28 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x2d3bc>
+  dc3c80: 910403e8     	add	x8, sp, #0x100
+  dc3c84: 9103a3e0     	add	x0, sp, #0xe8
+  dc3c88: 97f5f9a9     	bl	0xb4232c <_ZN5boost6detail18core_typeid_lib_idEv+0x292c>
+  dc3c8c: 910543e0     	add	x0, sp, #0x150
+  dc3c90: 91009261     	add	x1, x19, #0x24
+  dc3c94: 97f695e7     	bl	0xb69430 <_ZN5boost6detail18core_typeid_lib_idEv+0x29a30>
+  dc3c98: 9101c3e0     	add	x0, sp, #0x70
+  dc3c9c: 910543e1     	add	x1, sp, #0x150
+  dc3ca0: 97f95bda     	bl	0xc1ac08 <_ZN4asio6detail16service_registry6createINS0_9schedulerENS_17execution_contextEEEPNS4_7serviceEPv+0xa8bd0>
+  dc3ca4: 910463e8     	add	x8, sp, #0x118
+storage-resolve/v2/files/audio/
+Candidate instruction reference. Review surrounding data flow before assigning function semantics.
+

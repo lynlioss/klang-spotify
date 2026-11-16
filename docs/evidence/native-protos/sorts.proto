@@ -1,0 +1,39 @@
+// Recovered descriptor. Original file: sorts.proto
+syntax = "proto3";
+package spotify.list.v1.model.attributes;
+message SortDefinition {
+  oneof sort_kind {
+    .spotify.list.v1.model.attributes.ProvidedSortKind provided = 1;
+  }
+}
+message ProvidedSortKind {
+  oneof _sort_id {
+    int32 sort_id = 1;
+  }
+  oneof _name {
+    string name = 2;
+  }
+  oneof _internal_id {
+    string internal_id = 3;
+  }
+  oneof _descending {
+    bool descending = 4;
+  }
+  oneof _reversible {
+    bool reversible = 5;
+  }
+}
+message SortManifest {
+  repeated .spotify.list.v1.model.attributes.SortDefinition sorts = 1;
+}
+message SortValues {
+  repeated .spotify.list.v1.model.attributes.SortValue values = 1;
+}
+message SortValue {
+  oneof _sort_id {
+    int32 sort_id = 1;
+  }
+  oneof _index {
+    int32 index = 2;
+  }
+}

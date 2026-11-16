@@ -1,0 +1,170 @@
+Source: analysis/spotify/jadx-dex11/sources/p/el4.java
+SHA256: 48cf3c8f4386939aa0217e11b2c2dba34cb863be211850882a0dbf700212022a
+Lines: 1-166
+
+1: package p;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes11.dex */
+4: public final /* synthetic */ class el4 implements p.fwy0, p.x440 {
+5:     public final /* synthetic */ byte a;
+6:     public final /* synthetic */ p.xvy0 b;
+7: 
+8:     public /* synthetic */ el4(p.xvy0 r1, byte r2) {
+9:             r0 = this;
+10:             r0.a = r2
+11:             r0.b = r1
+12:             r0.<init>()
+13:             return
+14:     }
+15: 
+16:     public final p.xvy0 create(p.hwy0 r21) {
+17:             r20 = this;
+18:             r0 = r20
+19:             r1 = r21
+20:             byte r0 = r0.a
+21:             r2 = 1
+22:             r3 = 0
+23:             r4 = 0
+24:             switch(r0) {
+25:                 case 0: goto L310;
+26:                 case 1: goto L2fa;
+27:                 case 2: goto L2d6;
+28:                 case 3: goto L266;
+29:                 case 4: goto L25a;
+30:                 case 5: goto L255;
+31:                 case 6: goto L245;
+32:                 case 7: goto L239;
+33:                 case 8: goto L22d;
+34:                 case 9: goto L221;
+35:                 case 10: goto L1db;
+36:                 case 11: goto L1d6;
+37:                 case 12: goto L19e;
+38:                 case 13: goto L192;
+39:                 case 14: goto L167;
+40:                 case 15: goto L125;
+41:                 case 16: goto L113;
+42:                 case 17: goto Lf9;
+43:                 case 18: goto Le1;
+44:                 case 19: goto Ld5;
+45:                 case 20: goto Lc9;
+46:                 case 21: goto Lbd;
+47:                 case 22: goto L98;
+48:                 case 23: goto L73;
+49:                 case 24: goto L67;
+50:                 case 25: goto L5b;
+51:                 case 26: goto L3c;
+52:                 case 27: goto L2a;
+53:                 case 28: goto L18;
+54:                 default: goto Lc;
+55:             }
+56:         Lc:
+57:             java.lang.String r0 = "android-libs-audio-record-impl:enable_bluetooth_voice_input"
+58:             boolean r0 = r1.c(r0, r4)
+59:             p.go4 r1 = new p.go4
+60:             r1.<init>(r0, r3)
+61:             return r1
+62:         L18:
+63:             java.lang.String r0 = "android-libs-appstorage:is_instrumentation_enabled"
+64:             boolean r0 = r1.c(r0, r4)
+65:             java.lang.String r2 = "android-libs-appstorage:is_shared_preferences_instrumentation_enabled"
+66:             boolean r1 = r1.c(r2, r4)
+67:             p.fo4 r2 = new p.fo4
+68:             r2.<init>(r0, r1, r3)
+69:             return r2
+70:         L2a:
+71:             java.lang.String r0 = "android-libs-allboarding:use_content_stack"
+72:             boolean r0 = r1.c(r0, r4)
+73:             java.lang.String r2 = "android-libs-allboarding:use_page_api_flow"
+74:             boolean r1 = r1.c(r2, r4)
+75:             p.eo4 r2 = new p.eo4
+76:             r2.<init>(r0, r1, r3)
+77:             return r2
+78:         L3c:
+79:             java.lang.String r0 = "android-libs-ads-common:ads_android_turn_on_comscore"
+80:             boolean r6 = r1.c(r0, r4)
+81:             java.lang.String r0 = "android-libs-ads-common:ads_enable_one_trust_cmp_android"
+82:             boolean r7 = r1.c(r0, r4)
+83:             java.lang.String r0 = "android-libs-ads-common:enable_ads_connect_state_observer"
+84:             boolean r8 = r1.c(r0, r2)
+85:             java.lang.String r0 = "android-libs-ads-common:enable_image_loading_for_espresso_tests"
+86:             boolean r9 = r1.c(r0, r4)
+87:             p.do4 r5 = new p.do4
+88:             r10 = 0
+89:             r5.<init>(r6, r7, r8, r9, r10)
+90:             return r5
+91:         L5b:
+92:             java.lang.String r0 = "android-libs-ads-browser:enable_safe_search"
+93:             boolean r0 = r1.c(r0, r4)
+94:             p.co4 r1 = new p.co4
+95:             r1.<init>(r0, r3)
+96:             return r1
+97:         L67:
+98:             java.lang.String r0 = "android-libraryimport-settings-impl:settings_entry_point_enabled"
+99:             boolean r0 = r1.c(r0, r4)
+100:             p.bo4 r1 = new p.bo4
+101:             r1.<init>(r0, r3)
+102:             return r1
+103:         L73:
+104:             java.lang.String r0 = "android-lib-assisted-curation:episode_preview_enabled"
+105:             boolean r6 = r1.c(r0, r2)
+106:             java.lang.String r0 = "android-lib-assisted-curation:episode_search_preview_enabled"
+107:             boolean r7 = r1.c(r0, r2)
+108:             java.lang.String r0 = "android-lib-assisted-curation:preview_enabled"
+109:             boolean r8 = r1.c(r0, r2)
+110:             java.lang.String r0 = "android-lib-assisted-curation:search_preview_enabled"
+111:             boolean r9 = r1.c(r0, r2)
+112:             java.lang.String r0 = "android-lib-assisted-curation:use_improved_cards_sort_order"
+113:             boolean r10 = r1.c(r0, r4)
+114:             p.ao4 r5 = new p.ao4
+115:             r11 = 0
+116:             r5.<init>(r6, r7, r8, r9, r10, r11)
+117:             return r5
+118:         L98:
+119:             java.lang.String r0 = "android-lib-aligned-curation-flags:curate_transitions_in_ac"
+120:             boolean r6 = r1.c(r0, r4)
+121:             java.lang.String r0 = "android-lib-aligned-curation-flags:curation_platform_enabled"
+122:             boolean r7 = r1.c(r0, r4)
+123:             java.lang.String r0 = "android-lib-aligned-curation-flags:default_save_location_curation_enabled"
+124:             boolean r8 = r1.c(r0, r4)
+125:             java.lang.String r0 = "android-lib-aligned-curation-flags:episode_curation_trait_enabled"
+126:             boolean r9 = r1.c(r0, r4)
+127:             java.lang.String r0 = "android-lib-aligned-curation-flags:track_curation_trait_enabled"
+128:             boolean r10 = r1.c(r0, r4)
+129:             p.zn4 r5 = new p.zn4
+130:             r11 = 0
+131:             r5.<init>(r6, r7, r8, r9, r10, r11)
+132:             return r5
+133:         Lbd:
+134:             java.lang.String r0 = "android-legacy-related-track-card:enable_related_card_in_npv"
+135:             boolean r0 = r1.c(r0, r4)
+136:             p.yn4 r1 = new p.yn4
+137:             r1.<init>(r0, r3)
+138:             return r1
+139:         Lc9:
+140:             java.lang.String r0 = "android-learning-music-quiz-gameplay:is_quiz_question_reporting_enabled"
+141:             boolean r0 = r1.c(r0, r2)
+142:             p.un4 r1 = new p.un4
+143:             r1.<init>(r0, r3)
+144:             return r1
+145:         Ld5:
+146:             java.lang.String r0 = "android-inter-app-service:allow_list_access_policy_enabled"
+147:             boolean r0 = r1.c(r0, r4)
+148:             p.qn4 r1 = new p.qn4
+149:             r1.<init>(r0, r3)
+150:             return r1
+151:         Le1:
+152:             java.lang.String r0 = "android-integrity:employee_validation_enabled"
+153:             boolean r0 = r1.c(r0, r4)
+154:             java.lang.String r5 = "android-integrity:time_tracking_enabled"
+155:             boolean r4 = r1.c(r5, r4)
+156:             java.lang.String r5 = "android-integrity:validation_enabled"
+157:             boolean r1 = r1.c(r5, r2)
+158:             p.pn4 r2 = new p.pn4
+159:             r2.<init>(r0, r4, r1, r3)
+160:             return r2
+161:         Lf9:
+162:             java.lang.String r0 = "android-image-loader:clear_memory_cache_on_trim_enabled"
+163:             boolean r0 = r1.c(r0, r4)
+164:             r2 = 100
+165:             java.lang.String r5 = "android-image-loader:image_load_instrumentation_sampling_percentage"
+166:             int r5 = r1.b(r4, r2, r4, r5)

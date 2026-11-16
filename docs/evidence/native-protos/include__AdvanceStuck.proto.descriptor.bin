@@ -1,0 +1,10 @@
+
+include/AdvanceStuck.protospotify.event_sender.proto"Ñ
+AdvanceStuck
+track (	Rtrack
+playback_id (R
+playbackId!
+source_start (	RsourceStart!
+reason_start (	RreasonStart!
+audio_driver (	RaudioDriver!
+reason_stuck (	RreasonStuckBH

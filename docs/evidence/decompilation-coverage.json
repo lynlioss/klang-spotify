@@ -1,0 +1,152 @@
+{
+  "dexFiles": 15,
+  "dexClasses": 108190,
+  "smaliClasses": 108190,
+  "smali": [
+    {
+      "dex": "classes.dex",
+      "exitCode": 0,
+      "seconds": 9.2,
+      "smaliFiles": 7890,
+      "expectedClasses": 7890,
+      "matches": true
+    },
+    {
+      "dex": "classes10.dex",
+      "exitCode": 0,
+      "seconds": 8.9,
+      "smaliFiles": 6761,
+      "expectedClasses": 6761,
+      "matches": true
+    },
+    {
+      "dex": "classes11.dex",
+      "exitCode": 0,
+      "seconds": 12.7,
+      "smaliFiles": 10712,
+      "expectedClasses": 10712,
+      "matches": true
+    },
+    {
+      "dex": "classes12.dex",
+      "exitCode": 0,
+      "seconds": 8.3,
+      "smaliFiles": 7558,
+      "expectedClasses": 7558,
+      "matches": true
+    },
+    {
+      "dex": "classes13.dex",
+      "exitCode": 0,
+      "seconds": 1.7,
+      "smaliFiles": 281,
+      "expectedClasses": 281,
+      "matches": true
+    },
+    {
+      "dex": "classes14.dex",
+      "exitCode": 0,
+      "seconds": 0.8,
+      "smaliFiles": 11,
+      "expectedClasses": 11,
+      "matches": true
+    },
+    {
+      "dex": "classes15.dex",
+      "exitCode": 0,
+      "seconds": 1.0,
+      "smaliFiles": 55,
+      "expectedClasses": 55,
+      "matches": true
+    },
+    {
+      "dex": "classes2.dex",
+      "exitCode": 0,
+      "seconds": 9.2,
+      "smaliFiles": 8828,
+      "expectedClasses": 8828,
+      "matches": true
+    },
+    {
+      "dex": "classes3.dex",
+      "exitCode": 0,
+      "seconds": 10.7,
+      "smaliFiles": 9437,
+      "expectedClasses": 9437,
+      "matches": true
+    },
+    {
+      "dex": "classes4.dex",
+      "exitCode": 0,
+      "seconds": 13.4,
+      "smaliFiles": 9247,
+      "expectedClasses": 9247,
+      "matches": true
+    },
+    {
+      "dex": "classes5.dex",
+      "exitCode": 0,
+      "seconds": 9.7,
+      "smaliFiles": 11167,
+      "expectedClasses": 11167,
+      "matches": true
+    },
+    {
+      "dex": "classes6.dex",
+      "exitCode": 0,
+      "seconds": 7.2,
+      "smaliFiles": 5502,
+      "expectedClasses": 5502,
+      "matches": true
+    },
+    {
+      "dex": "classes7.dex",
+      "exitCode": 0,
+      "seconds": 9.9,
+      "smaliFiles": 10459,
+      "expectedClasses": 10459,
+      "matches": true
+    },
+    {
+      "dex": "classes8.dex",
+      "exitCode": 0,
+      "seconds": 12.5,
+      "smaliFiles": 10930,
+      "expectedClasses": 10930,
+      "matches": true
+    },
+    {
+      "dex": "classes9.dex",
+      "exitCode": 0,
+      "seconds": 11.1,
+      "smaliFiles": 9352,
+      "expectedClasses": 9352,
+      "matches": true
+    }
+  ],
+  "jadxMode": "fallback",
+  "jadxCompletedDexFiles": 15,
+  "nativeLibraries": 12,
+  "recoveredNativeDescriptors": 881,
+  "tools": [
+    {
+      "path": "analysis/tools/jadx.zip",
+      "sha256": "545ea2be9c242511bc145755cf4bda2485ade42966e096f8b4d3da2a230e8974"
+    },
+    {
+      "path": "analysis/tools/apktool.jar",
+      "sha256": "dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423"
+    },
+    {
+      "path": "analysis/tools/apktool-2.jar",
+      "sha256": "66cf4524a4a45a7f56567d08b2c9b6ec237bcdd78cee69fd4a59c8a0243aeafa"
+    }
+  ],
+  "resourceDecoding": {
+    "base": true,
+    "englishSplit": true,
+    "xxhdpiSplit": true,
+    "separateSplitReferencesMayBeUnresolved": true
+  },
+  "javaFocusedClasses": 10
+}

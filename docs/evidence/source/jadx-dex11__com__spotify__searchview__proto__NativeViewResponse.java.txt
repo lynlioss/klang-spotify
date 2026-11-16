@@ -1,0 +1,441 @@
+Source: analysis/spotify/jadx-dex11/sources/com/spotify/searchview/proto/NativeViewResponse.java
+SHA256: f118fbf4d5772e6903f928b1c635be1dccce7f8e6c3cc976729ae0b1c3297f44
+Lines: 1-437
+
+1: package com.spotify.searchview.proto;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes11.dex */
+4: public final class NativeViewResponse extends com.google.protobuf.h implements p.qhj0 {
+5:     public static final int BANNER_CONTENT_FIELD_NUMBER = 2;
+6:     private static final com.spotify.searchview.proto.NativeViewResponse DEFAULT_INSTANCE = null;
+7:     private static volatile p.whs0 PARSER = null;
+8:     public static final int ROWS_FIELD_NUMBER = 1;
+9:     private com.spotify.searchview.proto.BannerContent bannerContent_;
+10:     private int bitField0_;
+11:     private p.he90 rows_;
+12: 
+13:     public static final class EntityRow extends com.google.protobuf.h implements p.qhj0 {
+14:         private static final com.spotify.searchview.proto.NativeViewResponse.EntityRow DEFAULT_INSTANCE = null;
+15:         private static volatile p.whs0 PARSER = null;
+16:         public static final int RECENT_SEARCH_FIELD_NUMBER = 3;
+17:         public static final int SNIPPET_FIELD_NUMBER = 2;
+18:         public static final int URI_FIELD_NUMBER = 1;
+19:         private int bitField0_;
+20:         private int highlightTypeCase_;
+21:         private java.lang.Object highlightType_;
+22:         private com.spotify.searchview.proto.Snippet snippet_;
+23:         private java.lang.String uri_;
+24: 
+25:         static {
+26:                 com.spotify.searchview.proto.NativeViewResponse$EntityRow r0 = new com.spotify.searchview.proto.NativeViewResponse$EntityRow
+27:                 r0.<init>()
+28:                 com.spotify.searchview.proto.NativeViewResponse.EntityRow.DEFAULT_INSTANCE = r0
+29:                 java.lang.Class<com.spotify.searchview.proto.NativeViewResponse$EntityRow> r1 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.class
+30:                 com.google.protobuf.h.registerDefaultInstance(r1, r0)
+31:                 return
+32:         }
+33: 
+34:         private EntityRow() {
+35:                 r1 = this;
+36:                 r1.<init>()
+37:                 r0 = 0
+38:                 r1.highlightTypeCase_ = r0
+39:                 java.lang.String r0 = ""
+40:                 r1.uri_ = r0
+41:                 return
+42:         }
+43: 
+44:         public static com.spotify.searchview.proto.NativeViewResponse.EntityRow n() {
+45:                 com.spotify.searchview.proto.NativeViewResponse$EntityRow r0 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.DEFAULT_INSTANCE
+46:                 return r0
+47:         }
+48: 
+49:         public static p.whs0 parser() {
+50:                 com.spotify.searchview.proto.NativeViewResponse$EntityRow r0 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.DEFAULT_INSTANCE
+51:                 p.whs0 r0 = r0.getParserForType()
+52:                 return r0
+53:         }
+54: 
+55:         public final java.lang.Object dynamicMethod(p.lp40 r7, java.lang.Object r8, java.lang.Object r9) {
+56:                 r6 = this;
+57:                 int r6 = r7.ordinal()
+58:                 if (r6 == 0) goto L5e
+59:                 r7 = 2
+60:                 if (r6 == r7) goto L45
+61:                 r7 = 3
+62:                 if (r6 == r7) goto L3f
+63:                 r7 = 4
+64:                 if (r6 == r7) goto L37
+65:                 r7 = 5
+66:                 if (r6 == r7) goto L34
+67:                 r7 = 6
+68:                 if (r6 != r7) goto L32
+69:                 p.whs0 r6 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.PARSER
+70:                 if (r6 != 0) goto L31
+71:                 java.lang.Class<com.spotify.searchview.proto.NativeViewResponse$EntityRow> r7 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.class
+72:                 monitor-enter(r7)
+73:                 p.whs0 r6 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.PARSER     // Catch: java.lang.Throwable -> L2a
+74:                 if (r6 != 0) goto L2d
+75:                 p.dp40 r6 = new p.dp40     // Catch: java.lang.Throwable -> L2a
+76:                 com.spotify.searchview.proto.NativeViewResponse$EntityRow r8 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.DEFAULT_INSTANCE     // Catch: java.lang.Throwable -> L2a
+77:                 r6.<init>(r8)     // Catch: java.lang.Throwable -> L2a
+78:                 com.spotify.searchview.proto.NativeViewResponse.EntityRow.PARSER = r6     // Catch: java.lang.Throwable -> L2a
+79:                 goto L2d
+80:             L2a:
+81:                 r0 = move-exception
+82:                 r6 = r0
+83:                 goto L2f
+84:             L2d:
+85:                 monitor-exit(r7)     // Catch: java.lang.Throwable -> L2a
+86:                 return r6
+87:             L2f:
+88:                 monitor-exit(r7)     // Catch: java.lang.Throwable -> L2a
+89:                 throw r6
+90:             L31:
+91:                 return r6
+92:             L32:
+93:                 r6 = 0
+94:                 throw r6
+95:             L34:
+96:                 com.spotify.searchview.proto.NativeViewResponse$EntityRow r6 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.DEFAULT_INSTANCE
+97:                 return r6
+98:             L37:
+99:                 com.spotify.searchview.proto.j r6 = new com.spotify.searchview.proto.j
+100:                 com.spotify.searchview.proto.NativeViewResponse$EntityRow r7 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.DEFAULT_INSTANCE
+101:                 r6.<init>(r7)
+102:                 return r6
+103:             L3f:
+104:                 com.spotify.searchview.proto.NativeViewResponse$EntityRow r6 = new com.spotify.searchview.proto.NativeViewResponse$EntityRow
+105:                 r6.<init>()
+106:                 return r6
+107:             L45:
+108:                 java.lang.String r0 = "highlightType_"
+109:                 java.lang.String r1 = "highlightTypeCase_"
+110:                 java.lang.String r2 = "bitField0_"
+111:                 java.lang.String r3 = "uri_"
+112:                 java.lang.String r4 = "snippet_"
+113:                 java.lang.Class<com.spotify.searchview.proto.HighlightTypeRecentSearch> r5 = com.spotify.searchview.proto.HighlightTypeRecentSearch.class
+114:                 java.lang.Object[] r6 = new java.lang.Object[]{r0, r1, r2, r3, r4, r5}
+115:                 java.lang.String r7 = "\u0000\u0003\u0001\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001Ȉ\u0002ဉ\u0000\u0003<\u0000"
+116:                 com.spotify.searchview.proto.NativeViewResponse$EntityRow r8 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.DEFAULT_INSTANCE
+117:                 java.lang.Object r6 = com.google.protobuf.h.newMessageInfo(r8, r7, r6)
+118:                 return r6
+119:             L5e:
+120:                 r6 = 1
+121:                 java.lang.Byte r6 = java.lang.Byte.valueOf(r6)
+122:                 return r6
+123:         }
+124: 
+125:         public final /* bridge */ /* synthetic */ p.nhj0 getDefaultInstanceForType() {
+126:                 r0 = this;
+127:                 com.google.protobuf.h r0 = r0.getDefaultInstanceForType()
+128:                 return r0
+129:         }
+130: 
+131:         public final java.lang.String getUri() {
+132:                 r0 = this;
+133:                 java.lang.String r0 = r0.uri_
+134:                 return r0
+135:         }
+136: 
+137:         public final /* bridge */ /* synthetic */ p.mhj0 newBuilderForType() {
+138:                 r0 = this;
+139:                 com.google.protobuf.g r0 = r0.newBuilderForType()
+140:                 return r0
+141:         }
+142: 
+143:         public final int o() {
+144:                 r1 = this;
+145:                 int r1 = r1.highlightTypeCase_
+146:                 if (r1 == 0) goto Lb
+147:                 r0 = 3
+148:                 if (r1 == r0) goto L9
+149:                 r1 = 0
+150:                 return r1
+151:             L9:
+152:                 r1 = 1
+153:                 return r1
+154:             Lb:
+155:                 r1 = 2
+156:                 return r1
+157:         }
+158: 
+159:         public final com.spotify.searchview.proto.Snippet p() {
+160:                 r0 = this;
+161:                 com.spotify.searchview.proto.Snippet r0 = r0.snippet_
+162:                 if (r0 != 0) goto L8
+163:                 com.spotify.searchview.proto.Snippet r0 = com.spotify.searchview.proto.Snippet.n()
+164:             L8:
+165:                 return r0
+166:         }
+167: 
+168:         public final /* bridge */ /* synthetic */ p.mhj0 toBuilder() {
+169:                 r0 = this;
+170:                 com.google.protobuf.g r0 = r0.toBuilder()
+171:                 return r0
+172:         }
+173:     }
+174: 
+175:     public static final class SearchRow extends com.google.protobuf.h implements p.qhj0 {
+176:         private static final com.spotify.searchview.proto.NativeViewResponse.SearchRow DEFAULT_INSTANCE = null;
+177:         public static final int ENTITY_ROW_FIELD_NUMBER = 1;
+178:         private static volatile p.whs0 PARSER;
+179:         private int typeCase_;
+180:         private java.lang.Object type_;
+181: 
+182:         static {
+183:                 com.spotify.searchview.proto.NativeViewResponse$SearchRow r0 = new com.spotify.searchview.proto.NativeViewResponse$SearchRow
+184:                 r0.<init>()
+185:                 com.spotify.searchview.proto.NativeViewResponse.SearchRow.DEFAULT_INSTANCE = r0
+186:                 java.lang.Class<com.spotify.searchview.proto.NativeViewResponse$SearchRow> r1 = com.spotify.searchview.proto.NativeViewResponse.SearchRow.class
+187:                 com.google.protobuf.h.registerDefaultInstance(r1, r0)
+188:                 return
+189:         }
+190: 
+191:         private SearchRow() {
+192:                 r1 = this;
+193:                 r1.<init>()
+194:                 r0 = 0
+195:                 r1.typeCase_ = r0
+196:                 return
+197:         }
+198: 
+199:         public static p.whs0 parser() {
+200:                 com.spotify.searchview.proto.NativeViewResponse$SearchRow r0 = com.spotify.searchview.proto.NativeViewResponse.SearchRow.DEFAULT_INSTANCE
+201:                 p.whs0 r0 = r0.getParserForType()
+202:                 return r0
+203:         }
+204: 
+205:         public final java.lang.Object dynamicMethod(p.lp40 r1, java.lang.Object r2, java.lang.Object r3) {
+206:                 r0 = this;
+207:                 int r0 = r1.ordinal()
+208:                 if (r0 == 0) goto L57
+209:                 r1 = 2
+210:                 if (r0 == r1) goto L44
+211:                 r1 = 3
+212:                 if (r0 == r1) goto L3e
+213:                 r1 = 4
+214:                 if (r0 == r1) goto L36
+215:                 r1 = 5
+216:                 if (r0 == r1) goto L33
+217:                 r1 = 6
+218:                 if (r0 != r1) goto L31
+219:                 p.whs0 r0 = com.spotify.searchview.proto.NativeViewResponse.SearchRow.PARSER
+220:                 if (r0 != 0) goto L30
+221:                 java.lang.Class<com.spotify.searchview.proto.NativeViewResponse$SearchRow> r1 = com.spotify.searchview.proto.NativeViewResponse.SearchRow.class
+222:                 monitor-enter(r1)
+223:                 p.whs0 r0 = com.spotify.searchview.proto.NativeViewResponse.SearchRow.PARSER     // Catch: java.lang.Throwable -> L2a
+224:                 if (r0 != 0) goto L2c
+225:                 p.dp40 r0 = new p.dp40     // Catch: java.lang.Throwable -> L2a
+226:                 com.spotify.searchview.proto.NativeViewResponse$SearchRow r2 = com.spotify.searchview.proto.NativeViewResponse.SearchRow.DEFAULT_INSTANCE     // Catch: java.lang.Throwable -> L2a
+227:                 r0.<init>(r2)     // Catch: java.lang.Throwable -> L2a
+228:                 com.spotify.searchview.proto.NativeViewResponse.SearchRow.PARSER = r0     // Catch: java.lang.Throwable -> L2a
+229:                 goto L2c
+230:             L2a:
+231:                 r0 = move-exception
+232:                 goto L2e
+233:             L2c:
+234:                 monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+235:                 return r0
+236:             L2e:
+237:                 monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+238:                 throw r0
+239:             L30:
+240:                 return r0
+241:             L31:
+242:                 r0 = 0
+243:                 throw r0
+244:             L33:
+245:                 com.spotify.searchview.proto.NativeViewResponse$SearchRow r0 = com.spotify.searchview.proto.NativeViewResponse.SearchRow.DEFAULT_INSTANCE
+246:                 return r0
+247:             L36:
+248:                 com.spotify.searchview.proto.k r0 = new com.spotify.searchview.proto.k
+249:                 com.spotify.searchview.proto.NativeViewResponse$SearchRow r1 = com.spotify.searchview.proto.NativeViewResponse.SearchRow.DEFAULT_INSTANCE
+250:                 r0.<init>(r1)
+251:                 return r0
+252:             L3e:
+253:                 com.spotify.searchview.proto.NativeViewResponse$SearchRow r0 = new com.spotify.searchview.proto.NativeViewResponse$SearchRow
+254:                 r0.<init>()
+255:                 return r0
+256:             L44:
+257:                 java.lang.String r0 = "type_"
+258:                 java.lang.String r1 = "typeCase_"
+259:                 java.lang.Class<com.spotify.searchview.proto.NativeViewResponse$EntityRow> r2 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.class
+260:                 java.lang.Object[] r0 = new java.lang.Object[]{r0, r1, r2}
+261:                 java.lang.String r1 = "\u0000\u0001\u0001\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001<\u0000"
+262:                 com.spotify.searchview.proto.NativeViewResponse$SearchRow r2 = com.spotify.searchview.proto.NativeViewResponse.SearchRow.DEFAULT_INSTANCE
+263:                 java.lang.Object r0 = com.google.protobuf.h.newMessageInfo(r2, r1, r0)
+264:                 return r0
+265:             L57:
+266:                 r0 = 1
+267:                 java.lang.Byte r0 = java.lang.Byte.valueOf(r0)
+268:                 return r0
+269:         }
+270: 
+271:         public final /* bridge */ /* synthetic */ p.nhj0 getDefaultInstanceForType() {
+272:                 r0 = this;
+273:                 com.google.protobuf.h r0 = r0.getDefaultInstanceForType()
+274:                 return r0
+275:         }
+276: 
+277:         public final com.spotify.searchview.proto.NativeViewResponse.EntityRow n() {
+278:                 r2 = this;
+279:                 int r0 = r2.typeCase_
+280:                 r1 = 1
+281:                 if (r0 != r1) goto La
+282:                 java.lang.Object r2 = r2.type_
+283:                 com.spotify.searchview.proto.NativeViewResponse$EntityRow r2 = (com.spotify.searchview.proto.NativeViewResponse.EntityRow) r2
+284:                 return r2
+285:             La:
+286:                 com.spotify.searchview.proto.NativeViewResponse$EntityRow r2 = com.spotify.searchview.proto.NativeViewResponse.EntityRow.n()
+287:                 return r2
+288:         }
+289: 
+290:         public final /* bridge */ /* synthetic */ p.mhj0 newBuilderForType() {
+291:                 r0 = this;
+292:                 com.google.protobuf.g r0 = r0.newBuilderForType()
+293:                 return r0
+294:         }
+295: 
+296:         public final /* bridge */ /* synthetic */ p.mhj0 toBuilder() {
+297:                 r0 = this;
+298:                 com.google.protobuf.g r0 = r0.toBuilder()
+299:                 return r0
+300:         }
+301:     }
+302: 
+303:     static {
+304:             com.spotify.searchview.proto.NativeViewResponse r0 = new com.spotify.searchview.proto.NativeViewResponse
+305:             r0.<init>()
+306:             com.spotify.searchview.proto.NativeViewResponse.DEFAULT_INSTANCE = r0
+307:             java.lang.Class<com.spotify.searchview.proto.NativeViewResponse> r1 = com.spotify.searchview.proto.NativeViewResponse.class
+308:             com.google.protobuf.h.registerDefaultInstance(r1, r0)
+309:             return
+310:     }
+311: 
+312:     private NativeViewResponse() {
+313:             r1 = this;
+314:             r1.<init>()
+315:             p.he90 r0 = com.google.protobuf.h.emptyProtobufList()
+316:             r1.rows_ = r0
+317:             return
+318:     }
+319: 
+320:     public static p.whs0 parser() {
+321:             com.spotify.searchview.proto.NativeViewResponse r0 = com.spotify.searchview.proto.NativeViewResponse.DEFAULT_INSTANCE
+322:             p.whs0 r0 = r0.getParserForType()
+323:             return r0
+324:     }
+325: 
+326:     public final java.lang.Object dynamicMethod(p.lp40 r1, java.lang.Object r2, java.lang.Object r3) {
+327:             r0 = this;
+328:             int r0 = r1.ordinal()
+329:             if (r0 == 0) goto L59
+330:             r1 = 2
+331:             if (r0 == r1) goto L44
+332:             r1 = 3
+333:             if (r0 == r1) goto L3e
+334:             r1 = 4
+335:             if (r0 == r1) goto L36
+336:             r1 = 5
+337:             if (r0 == r1) goto L33
+338:             r1 = 6
+339:             if (r0 != r1) goto L31
+340:             p.whs0 r0 = com.spotify.searchview.proto.NativeViewResponse.PARSER
+341:             if (r0 != 0) goto L30
+342:             java.lang.Class<com.spotify.searchview.proto.NativeViewResponse> r1 = com.spotify.searchview.proto.NativeViewResponse.class
+343:             monitor-enter(r1)
+344:             p.whs0 r0 = com.spotify.searchview.proto.NativeViewResponse.PARSER     // Catch: java.lang.Throwable -> L2a
+345:             if (r0 != 0) goto L2c
+346:             p.dp40 r0 = new p.dp40     // Catch: java.lang.Throwable -> L2a
+347:             com.spotify.searchview.proto.NativeViewResponse r2 = com.spotify.searchview.proto.NativeViewResponse.DEFAULT_INSTANCE     // Catch: java.lang.Throwable -> L2a
+348:             r0.<init>(r2)     // Catch: java.lang.Throwable -> L2a
+349:             com.spotify.searchview.proto.NativeViewResponse.PARSER = r0     // Catch: java.lang.Throwable -> L2a
+350:             goto L2c
+351:         L2a:
+352:             r0 = move-exception
+353:             goto L2e
+354:         L2c:
+355:             monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+356:             return r0
+357:         L2e:
+358:             monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+359:             throw r0
+360:         L30:
+361:             return r0
+362:         L31:
+363:             r0 = 0
+364:             throw r0
+365:         L33:
+366:             com.spotify.searchview.proto.NativeViewResponse r0 = com.spotify.searchview.proto.NativeViewResponse.DEFAULT_INSTANCE
+367:             return r0
+368:         L36:
+369:             com.spotify.searchview.proto.i r0 = new com.spotify.searchview.proto.i
+370:             com.spotify.searchview.proto.NativeViewResponse r1 = com.spotify.searchview.proto.NativeViewResponse.DEFAULT_INSTANCE
+371:             r0.<init>(r1)
+372:             return r0
+373:         L3e:
+374:             com.spotify.searchview.proto.NativeViewResponse r0 = new com.spotify.searchview.proto.NativeViewResponse
+375:             r0.<init>()
+376:             return r0
+377:         L44:
+378:             java.lang.String r0 = "bitField0_"
+379:             java.lang.String r1 = "rows_"
+380:             java.lang.Class<com.spotify.searchview.proto.NativeViewResponse$SearchRow> r2 = com.spotify.searchview.proto.NativeViewResponse.SearchRow.class
+381:             java.lang.String r3 = "bannerContent_"
+382:             java.lang.Object[] r0 = new java.lang.Object[]{r0, r1, r2, r3}
+383:             java.lang.String r1 = "\u0000\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0001\u0000\u0001\u001b\u0002ဉ\u0000"
+384:             com.spotify.searchview.proto.NativeViewResponse r2 = com.spotify.searchview.proto.NativeViewResponse.DEFAULT_INSTANCE
+385:             java.lang.Object r0 = com.google.protobuf.h.newMessageInfo(r2, r1, r0)
+386:             return r0
+387:         L59:
+388:             r0 = 1
+389:             java.lang.Byte r0 = java.lang.Byte.valueOf(r0)
+390:             return r0
+391:     }
+392: 
+393:     public final /* bridge */ /* synthetic */ p.nhj0 getDefaultInstanceForType() {
+394:             r0 = this;
+395:             com.google.protobuf.h r0 = r0.getDefaultInstanceForType()
+396:             return r0
+397:     }
+398: 
+399:     public final com.spotify.searchview.proto.BannerContent n() {
+400:             r0 = this;
+401:             com.spotify.searchview.proto.BannerContent r0 = r0.bannerContent_
+402:             if (r0 != 0) goto L8
+403:             com.spotify.searchview.proto.BannerContent r0 = com.spotify.searchview.proto.BannerContent.o()
+404:         L8:
+405:             return r0
+406:     }
+407: 
+408:     public final /* bridge */ /* synthetic */ p.mhj0 newBuilderForType() {
+409:             r0 = this;
+410:             com.google.protobuf.g r0 = r0.newBuilderForType()
+411:             return r0
+412:     }
+413: 
+414:     public final p.he90 o() {
+415:             r0 = this;
+416:             p.he90 r0 = r0.rows_
+417:             return r0
+418:     }
+419: 
+420:     public final boolean p() {
+421:             r1 = this;
+422:             int r1 = r1.bitField0_
+423:             r0 = 1
+424:             r1 = r1 & r0
+425:             if (r1 == 0) goto L7
+426:             return r0
+427:         L7:
+428:             r1 = 0
+429:             return r1
+430:     }
+431: 
+432:     public final /* bridge */ /* synthetic */ p.mhj0 toBuilder() {
+433:             r0 = this;
+434:             com.google.protobuf.g r0 = r0.toBuilder()
+435:             return r0
+436:     }
+437: }

@@ -1,0 +1,11 @@
+
+(collection/artist_collection_state.protospotify.cosmos_util.proto"Ã
+ArtistCollectionState'
+collection_link (	RcollectionLink
+followed (Rfollowed7
+num_tracks_in_collection (RnumTracksInCollection7
+num_albums_in_collection (RnumAlbumsInCollection
+	is_banned (RisBanned
+can_ban (RcanBan=
+num_explicitly_liked_tracks (RnumExplicitlyLikedTracksB#
+com.spotify.cosmos.util.protoHP

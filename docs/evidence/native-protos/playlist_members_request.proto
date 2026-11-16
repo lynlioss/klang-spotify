@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: playlist_members_request.proto
+syntax = "proto3";
+package spotify.playlist_esperanto.proto;
+import "members_response.proto";
+import "response_status.proto";
+message PlaylistMembersResponse {
+  .spotify.playlist_esperanto.proto.ResponseStatus status = 1;
+  .spotify.playlist.cosmos.proto.PlaylistMembersResponse response = 2;
+}

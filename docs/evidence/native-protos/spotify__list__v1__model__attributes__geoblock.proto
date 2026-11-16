@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/attributes/geoblock.proto
+syntax = "proto3";
+package spotify.list.v1.model.attributes;
+enum GeoblockBlockingType {
+  GEOBLOCK_BLOCKING_TYPE_UNSPECIFIED = 0;
+  GEOBLOCK_BLOCKING_TYPE_TITLE = 1;
+  GEOBLOCK_BLOCKING_TYPE_DESCRIPTION = 2;
+  GEOBLOCK_BLOCKING_TYPE_IMAGE = 3;
+}
+message Geoblock {
+  repeated .spotify.list.v1.model.attributes.GeoblockBlockingType blocking_types = 1;
+}

@@ -1,0 +1,6 @@
+
+%es_commit_pending_event_request.proto&spotify.pending_events.esperanto.proto"q
+CommitPendingEventRequest(
+token_event_name (	RtokenEventName*
+token_sequence_no (RtokenSequenceNoB6
+*com.spotify.pending_events.esperanto.protoHP¢ESPbproto3

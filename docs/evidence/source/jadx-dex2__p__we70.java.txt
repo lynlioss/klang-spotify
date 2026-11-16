@@ -1,0 +1,624 @@
+Source: analysis/spotify/jadx-dex2/sources/p/we70.java
+SHA256: 34466c2fdd45b9afc4e3a313aa67835af1d94dc1ea862b9a7fa1b0ce70bb89de
+Lines: 1-620
+
+1: package p;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes2.dex */
+4: public abstract class we70 {
+5:     public final p.g731 a;
+6:     public final p.xyc b;
+7:     public final p.a8n c;
+8: 
+9:     public we70(p.g731 r1, p.xyc r2, p.a8n r3) {
+10:             r0 = this;
+11:             r0.<init>()
+12:             r0.a = r1
+13:             r0.b = r2
+14:             r0.c = r3
+15:             return
+16:     }
+17: 
+18:     public static p.we70 b(p.ev31 r26, java.lang.Class r27, java.lang.reflect.Method r28) {
+19:             r0 = r26
+20:             r1 = r28
+21:             p.f731 r2 = new p.f731
+22:             r3 = r27
+23:             r2.<init>(r0, r3, r1)
+24:             java.lang.annotation.Annotation[] r3 = r2.d
+25:             int r4 = r3.length
+26:             r5 = 0
+27:             r6 = r5
+28:         L10:
+29:             java.lang.String r7 = "HEAD"
+30:             r8 = 1
+31:             r9 = 0
+32:             if (r6 >= r4) goto L15c
+33:             r10 = r3[r6]
+34:             boolean r11 = r10 instanceof p.xzo
+35:             if (r11 == 0) goto L29
+36:             p.xzo r10 = (p.xzo) r10
+37:             java.lang.String r7 = r10.value()
+38:             java.lang.String r8 = "DELETE"
+39:             r2.b(r8, r7, r5)
+40:             goto L158
+41:         L29:
+42:             boolean r11 = r10 instanceof p.x740
+43:             if (r11 == 0) goto L3a
+44:             p.x740 r10 = (p.x740) r10
+45:             java.lang.String r7 = r10.value()
+46:             java.lang.String r8 = "GET"
+47:             r2.b(r8, r7, r5)
+48:             goto L158
+49:         L3a:
+50:             boolean r11 = r10 instanceof p.o260
+51:             if (r11 == 0) goto L49
+52:             p.o260 r10 = (p.o260) r10
+53:             java.lang.String r8 = r10.value()
+54:             r2.b(r7, r8, r5)
+55:             goto L158
+56:         L49:
+57:             boolean r7 = r10 instanceof p.rfr0
+58:             if (r7 == 0) goto L5a
+59:             p.rfr0 r10 = (p.rfr0) r10
+60:             java.lang.String r7 = r10.value()
+61:             java.lang.String r9 = "PATCH"
+62:             r2.b(r9, r7, r8)
+63:             goto L158
+64:         L5a:
+65:             boolean r7 = r10 instanceof p.ngr0
+66:             if (r7 == 0) goto L6b
+67:             p.ngr0 r10 = (p.ngr0) r10
+68:             java.lang.String r7 = r10.value()
+69:             java.lang.String r9 = "POST"
+70:             r2.b(r9, r7, r8)
+71:             goto L158
+72:         L6b:
+73:             boolean r7 = r10 instanceof p.pgr0
+74:             if (r7 == 0) goto L7c
+75:             p.pgr0 r10 = (p.pgr0) r10
+76:             java.lang.String r7 = r10.value()
+77:             java.lang.String r9 = "PUT"
+78:             r2.b(r9, r7, r8)
+79:             goto L158
+80:         L7c:
+81:             boolean r7 = r10 instanceof p.qwp0
+82:             if (r7 == 0) goto L8d
+83:             p.qwp0 r10 = (p.qwp0) r10
+84:             java.lang.String r7 = r10.value()
+85:             java.lang.String r8 = "OPTIONS"
+86:             r2.b(r8, r7, r5)
+87:             goto L158
+88:         L8d:
+89:             boolean r7 = r10 instanceof p.q260
+90:             if (r7 == 0) goto La4
+91:             p.q260 r10 = (p.q260) r10
+92:             java.lang.String r7 = r10.method()
+93:             java.lang.String r8 = r10.path()
+94:             boolean r9 = r10.hasBody()
+95:             r2.b(r7, r8, r9)
+96:             goto L158
+97:         La4:
+98:             boolean r7 = r10 instanceof p.gf60
+99:             if (r7 == 0) goto L12c
+100:             p.gf60 r10 = (p.gf60) r10
+101:             java.lang.String[] r7 = r10.value()
+102:             int r11 = r7.length
+103:             if (r11 == 0) goto L123
+104:             boolean r10 = r10.allowUnsafeNonAsciiValues()
+105:             p.ff60 r11 = new p.ff60
+106:             r11.<init>(r5)
+107:             int r12 = r7.length
+108:             r13 = r5
+109:         Lbc:
+110:             if (r13 >= r12) goto L11c
+111:             r14 = r7[r13]
+112:             r15 = 58
+113:             int r15 = r14.indexOf(r15)
+114:             r27 = r8
+115:             r8 = -1
+116:             if (r15 == r8) goto L111
+117:             if (r15 == 0) goto L111
+118:             int r8 = r14.length()
+119:             int r8 = r8 + (-1)
+120:             if (r15 == r8) goto L111
+121:             java.lang.String r8 = r14.substring(r5, r15)
+122:             int r15 = r15 + 1
+123:             java.lang.String r14 = r14.substring(r15)
+124:             java.lang.String r14 = r14.trim()
+125:             java.lang.String r15 = "Content-Type"
+126:             boolean r15 = r15.equalsIgnoreCase(r8)
+127:             if (r15 == 0) goto L100
+128:             p.ix11 r8 = p.fni0.e     // Catch: java.lang.IllegalArgumentException -> Lf4
+129:             p.fni0 r8 = p.t3r0.y(r14)     // Catch: java.lang.IllegalArgumentException -> Lf4
+130:             r2.u = r8     // Catch: java.lang.IllegalArgumentException -> Lf4
+131:             goto L10c
+132:         Lf4:
+133:             r0 = move-exception
+134:             java.lang.String r2 = "Malformed content type: %s"
+135:             java.lang.Object[] r3 = new java.lang.Object[]{r14}
+136:             java.lang.IllegalArgumentException r0 = p.xsn1.H(r1, r0, r2, r3)
+137:             throw r0
+138:         L100:
+139:             if (r10 == 0) goto L109
+140:             p.aan1.E(r8)
+141:             p.aan1.n(r11, r8, r14)
+142:             goto L10c
+143:         L109:
+144:             r11.a(r8, r14)
+145:         L10c:
+146:             int r13 = r13 + 1
+147:             r8 = r27
+148:             goto Lbc
+149:         L111:
+150:             java.lang.String r0 = "@Headers value must be in the form \"Name: Value\". Found: \"%s\""
+151:             java.lang.Object[] r2 = new java.lang.Object[]{r14}
+152:             java.lang.IllegalArgumentException r0 = p.xsn1.H(r1, r9, r0, r2)
+153:             throw r0
+154:         L11c:
+155:             p.hf60 r7 = p.aan1.o(r11)
+156:             r2.t = r7
+157:             goto L158
+158:         L123:
+159:             java.lang.String r0 = "@Headers annotation is empty."
+160:             java.lang.Object[] r2 = new java.lang.Object[r5]
+161:             java.lang.IllegalArgumentException r0 = p.xsn1.H(r1, r9, r0, r2)
+162:             throw r0
+163:         L12c:
+164:             r27 = r8
+165:             boolean r7 = r10 instanceof p.idn0
+166:             java.lang.String r8 = "Only one encoding annotation is allowed."
+167:             if (r7 == 0) goto L144
+168:             boolean r7 = r2.q
+169:             if (r7 != 0) goto L13d
+170:             r7 = r27
+171:             r2.r = r7
+172:             goto L158
+173:         L13d:
+174:             java.lang.Object[] r0 = new java.lang.Object[r5]
+175:             java.lang.IllegalArgumentException r0 = p.xsn1.H(r1, r9, r8, r0)
+176:             throw r0
+177:         L144:
+178:             r7 = r27
+179:             boolean r10 = r10 instanceof p.fo30
+180:             if (r10 == 0) goto L158
+181:             boolean r10 = r2.r
+182:             if (r10 != 0) goto L151
+183:             r2.q = r7
+184:             goto L158
+185:         L151:
+186:             java.lang.Object[] r0 = new java.lang.Object[r5]
+187:             java.lang.IllegalArgumentException r0 = p.xsn1.H(r1, r9, r8, r0)
+188:             throw r0
+189:         L158:
+190:             int r6 = r6 + 1
+191:             goto L10
+192:         L15c:
+193:             java.lang.String r4 = r2.o
+194:             if (r4 == 0) goto Lae8
+195:             boolean r4 = r2.f31p
+196:             if (r4 != 0) goto L17f
+197:             boolean r4 = r2.r
+198:             if (r4 != 0) goto L176
+199:             boolean r4 = r2.q
+200:             if (r4 != 0) goto L16d
+201:             goto L17f
+202:         L16d:
+203:             java.lang.String r0 = "FormUrlEncoded can only be specified on HTTP methods with request body (e.g., @POST)."
+204:             java.lang.Object[] r2 = new java.lang.Object[r5]
+205:             java.lang.IllegalArgumentException r0 = p.xsn1.H(r1, r9, r0, r2)
+206:             throw r0
+207:         L176:
+208:             java.lang.String r0 = "Multipart can only be specified on HTTP methods with request body (e.g., @POST)."
+209:             java.lang.Object[] r2 = new java.lang.Object[r5]
+210:             java.lang.IllegalArgumentException r0 = p.xsn1.H(r1, r9, r0, r2)
+211:             throw r0
+212:         L17f:
+213:             java.lang.annotation.Annotation[][] r4 = r2.e
+214:             int r6 = r4.length
+215:             p.bep1[] r8 = new p.bep1[r6]
+216:             r2.w = r8
+217:             int r8 = r6 + (-1)
+218:             r10 = r5
+219:         L189:
+220:             if (r10 >= r6) goto L936
+221:             p.bep1[] r11 = r2.w
+222:             java.lang.reflect.Type[] r12 = r2.f
+223:             r12 = r12[r10]
+224:             r13 = r4[r10]
+225:             if (r10 != r8) goto L197
+226:             r14 = 1
+227:             goto L198
+228:         L197:
+229:             r14 = r5
+230:         L198:
+231:             if (r13 == 0) goto L905
+232:             int r15 = r13.length
+233:             r16 = r9
+234:             r9 = r5
+235:         L19e:
+236:             if (r9 >= r15) goto L8f8
+237:             r5 = r13[r9]
+238:             r17 = r4
+239:             boolean r4 = r5 instanceof p.zpi1
+240:             r18 = r4
+241:             java.lang.String r4 = "@Path parameters may not be used with @Url."
+242:             r19 = r6
+243:             java.lang.Class<java.lang.String> r6 = java.lang.String.class
+244:             if (r18 == 0) goto L247
+245:             r2.c(r10, r12)
+246:             boolean r5 = r2.n
+247:             if (r5 != 0) goto L23d
+248:             boolean r5 = r2.j
+249:             if (r5 != 0) goto L235
+250:             boolean r4 = r2.k
+251:             if (r4 != 0) goto L22b
+252:             boolean r4 = r2.l
+253:             if (r4 != 0) goto L221
+254:             boolean r4 = r2.m
+255:             if (r4 != 0) goto L217
+256:             java.lang.String r4 = r2.s
+257:             if (r4 != 0) goto L20a
+258:             r4 = 1
+259:             r2.n = r4
+260:             java.lang.Class<p.bf70> r4 = p.bf70.class
+261:             if (r12 == r4) goto L1f6
+262:             if (r12 == r6) goto L1f6
+263:             java.lang.Class<java.net.URI> r4 = java.net.URI.class
+264:             if (r12 == r4) goto L1f6
+265:             boolean r4 = r12 instanceof java.lang.Class
+266:             if (r4 == 0) goto L1ec
+267:             r4 = r12
+268:             java.lang.Class r4 = (java.lang.Class) r4
+269:             java.lang.String r4 = r4.getName()
+270:             java.lang.String r5 = "android.net.Uri"
+271:             boolean r4 = r5.equals(r4)
+272:             if (r4 == 0) goto L1ec
+273:             goto L1f6
+274:         L1ec:
+275:             java.lang.String r0 = "@Url must be okhttp3.HttpUrl, String, java.net.URI, or android.net.Uri type."
+276:             r2 = 0
+277:             java.lang.Object[] r2 = new java.lang.Object[r2]
+278:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+279:             throw r0
+280:         L1f6:
+281:             p.p7s0 r4 = new p.p7s0
+282:             r5 = 1
+283:             r4.<init>(r1, r10, r5)
+284:             r24 = r7
+285:             r18 = r8
+286:         L200:
+287:             r21 = r9
+288:             r22 = r11
+289:             r20 = r14
+290:             r23 = r15
+291:             goto L8d2
+292:         L20a:
+293:             java.lang.String r0 = r2.o
+294:             java.lang.Object[] r0 = new java.lang.Object[]{r0}
+295:             java.lang.String r2 = "@Url cannot be used with @%s URL"
+296:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r2, r0)
+297:             throw r0
+298:         L217:
+299:             java.lang.String r0 = "A @Url parameter must not come after a @QueryMap."
+300:             r2 = 0
+301:             java.lang.Object[] r2 = new java.lang.Object[r2]
+302:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+303:             throw r0
+304:         L221:
+305:             r2 = 0
+306:             java.lang.String r0 = "A @Url parameter must not come after a @QueryName."
+307:             java.lang.Object[] r2 = new java.lang.Object[r2]
+308:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+309:             throw r0
+310:         L22b:
+311:             r2 = 0
+312:             java.lang.String r0 = "A @Url parameter must not come after a @Query."
+313:             java.lang.Object[] r2 = new java.lang.Object[r2]
+314:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+315:             throw r0
+316:         L235:
+317:             r2 = 0
+318:             java.lang.Object[] r0 = new java.lang.Object[r2]
+319:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r4, r0)
+320:             throw r0
+321:         L23d:
+322:             r2 = 0
+323:             java.lang.String r0 = "Multiple @Url method annotations found."
+324:             java.lang.Object[] r2 = new java.lang.Object[r2]
+325:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+326:             throw r0
+327:         L247:
+328:             r18 = r8
+329:             boolean r8 = r5 instanceof p.brs0
+330:             r20 = r8
+331:             p.ev31 r8 = r2.a
+332:             if (r20 == 0) goto L2e9
+333:             r2.c(r10, r12)
+334:             boolean r6 = r2.k
+335:             if (r6 != 0) goto L2df
+336:             boolean r6 = r2.l
+337:             if (r6 != 0) goto L2d5
+338:             boolean r6 = r2.m
+339:             if (r6 != 0) goto L2cb
+340:             boolean r6 = r2.n
+341:             if (r6 != 0) goto L2c3
+342:             java.lang.String r4 = r2.s
+343:             if (r4 == 0) goto L2b6
+344:             r4 = 1
+345:             r2.j = r4
+346:             p.brs0 r5 = (p.brs0) r5
+347:             java.lang.String r4 = r5.value()
+348:             java.util.regex.Pattern r6 = p.f731.z
+349:             java.util.regex.Matcher r6 = r6.matcher(r4)
+350:             boolean r6 = r6.matches()
+351:             if (r6 == 0) goto L2a5
+352:             java.util.LinkedHashSet r6 = r2.v
+353:             boolean r6 = r6.contains(r4)
+354:             if (r6 == 0) goto L298
+355:             r8.e(r12, r13)
+356:             p.r7s0 r6 = new p.r7s0
+357:             java.lang.reflect.Method r8 = r2.c
+358:             boolean r5 = r5.encoded()
+359:             r6.<init>(r8, r10, r4, r5)
+360:             r4 = r6
+361:             r24 = r7
+362:             goto L200
+363:         L298:
+364:             java.lang.String r0 = r2.s
+365:             java.lang.Object[] r0 = new java.lang.Object[]{r0, r4}
+366:             java.lang.String r2 = "URL \"%s\" does not contain \"{%s}\"."
+367:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r2, r0)
+368:             throw r0
+369:         L2a5:
+370:             java.util.regex.Pattern r0 = p.f731.y
+371:             java.lang.String r0 = r0.pattern()
+372:             java.lang.Object[] r0 = new java.lang.Object[]{r0, r4}
+373:             java.lang.String r2 = "@Path parameter name must match %s. Found: %s"
+374:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r2, r0)
+375:             throw r0
+376:         L2b6:
+377:             java.lang.String r0 = r2.o
+378:             java.lang.Object[] r0 = new java.lang.Object[]{r0}
+379:             java.lang.String r2 = "@Path can only be used with relative url on @%s"
+380:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r2, r0)
+381:             throw r0
+382:         L2c3:
+383:             r2 = 0
+384:             java.lang.Object[] r0 = new java.lang.Object[r2]
+385:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r4, r0)
+386:             throw r0
+387:         L2cb:
+388:             r2 = 0
+389:             java.lang.String r0 = "A @Path parameter must not come after a @QueryMap."
+390:             java.lang.Object[] r2 = new java.lang.Object[r2]
+391:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+392:             throw r0
+393:         L2d5:
+394:             r2 = 0
+395:             java.lang.String r0 = "A @Path parameter must not come after a @QueryName."
+396:             java.lang.Object[] r2 = new java.lang.Object[r2]
+397:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+398:             throw r0
+399:         L2df:
+400:             r2 = 0
+401:             java.lang.String r0 = "A @Path parameter must not come after a @Query."
+402:             java.lang.Object[] r2 = new java.lang.Object[r2]
+403:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+404:             throw r0
+405:         L2e9:
+406:             boolean r4 = r5 instanceof p.hjz0
+407:             r20 = r4
+408:             java.lang.String r4 = "<String>)"
+409:             r21 = r9
+410:             java.lang.String r9 = " must include generic type (e.g., "
+411:             r22 = r11
+412:             java.lang.Class<java.lang.Iterable> r11 = java.lang.Iterable.class
+413:             if (r20 == 0) goto L37b
+414:             r2.c(r10, r12)
+415:             p.hjz0 r5 = (p.hjz0) r5
+416:             java.lang.String r6 = r5.value()
+417:             boolean r5 = r5.encoded()
+418:             r20 = r14
+419:             java.lang.Class r14 = p.xsn1.y(r12)
+420:             r23 = r15
+421:             r15 = 1
+422:             r2.k = r15
+423:             boolean r11 = r11.isAssignableFrom(r14)
+424:             if (r11 == 0) goto L355
+425:             boolean r11 = r12 instanceof java.lang.reflect.ParameterizedType
+426:             if (r11 == 0) goto L333
+427:             r4 = r12
+428:             java.lang.reflect.ParameterizedType r4 = (java.lang.reflect.ParameterizedType) r4
+429:             r9 = 0
+430:             java.lang.reflect.Type r4 = p.xsn1.x(r9, r4)
+431:             r8.e(r4, r13)
+432:             p.o7s0 r4 = new p.o7s0
+433:             r4.<init>(r6, r5, r15)
+434:             p.k7s0 r4 = r4.q()
+435:         L32f:
+436:             r24 = r7
+437:             goto L8d2
+438:         L333:
+439:             java.lang.StringBuilder r0 = new java.lang.StringBuilder
+440:             java.lang.String r2 = r14.getSimpleName()
+441:             r0.<init>(r2)
+442:             r0.append(r9)
+443:             java.lang.String r2 = r14.getSimpleName()
+444:             r0.append(r2)
+445:             r0.append(r4)
+446:             java.lang.String r0 = r0.toString()
+447:             r2 = 0
+448:             java.lang.Object[] r2 = new java.lang.Object[r2]
+449:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+450:             throw r0
+451:         L355:
+452:             boolean r4 = r14.isArray()
+453:             if (r4 == 0) goto L371
+454:             java.lang.Class r4 = r14.getComponentType()
+455:             java.lang.Class r4 = p.f731.a(r4)
+456:             r8.e(r4, r13)
+457:             p.o7s0 r4 = new p.o7s0
+458:             r15 = 1
+459:             r4.<init>(r6, r5, r15)
+460:             p.k7s0 r4 = r4.j()
+461:             goto L32f
+462:         L371:
+463:             r15 = 1
+464:             r8.e(r12, r13)
+465:             p.o7s0 r4 = new p.o7s0
+466:             r4.<init>(r6, r5, r15)
+467:             goto L32f
+468:         L37b:
+469:             r20 = r14
+470:             r23 = r15
+471:             r15 = 1
+472:             boolean r14 = r5 instanceof p.qjz0
+473:             if (r14 == 0) goto L3fb
+474:             r2.c(r10, r12)
+475:             p.qjz0 r5 = (p.qjz0) r5
+476:             boolean r5 = r5.encoded()
+477:             java.lang.Class r6 = p.xsn1.y(r12)
+478:             r2.l = r15
+479:             boolean r11 = r11.isAssignableFrom(r6)
+480:             if (r11 == 0) goto L3d5
+481:             boolean r11 = r12 instanceof java.lang.reflect.ParameterizedType
+482:             if (r11 == 0) goto L3b3
+483:             r4 = r12
+484:             java.lang.reflect.ParameterizedType r4 = (java.lang.reflect.ParameterizedType) r4
+485:             r9 = 0
+486:             java.lang.reflect.Type r4 = p.xsn1.x(r9, r4)
+487:             r8.e(r4, r13)
+488:             p.s7s0 r4 = new p.s7s0
+489:             r4.<init>(r5)
+490:             p.k7s0 r4 = r4.q()
+491:             goto L32f
+492:         L3b3:
+493:             java.lang.StringBuilder r0 = new java.lang.StringBuilder
+494:             java.lang.String r2 = r6.getSimpleName()
+495:             r0.<init>(r2)
+496:             r0.append(r9)
+497:             java.lang.String r2 = r6.getSimpleName()
+498:             r0.append(r2)
+499:             r0.append(r4)
+500:             java.lang.String r0 = r0.toString()
+501:             r2 = 0
+502:             java.lang.Object[] r2 = new java.lang.Object[r2]
+503:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+504:             throw r0
+505:         L3d5:
+506:             boolean r4 = r6.isArray()
+507:             if (r4 == 0) goto L3f1
+508:             java.lang.Class r4 = r6.getComponentType()
+509:             java.lang.Class r4 = p.f731.a(r4)
+510:             r8.e(r4, r13)
+511:             p.s7s0 r4 = new p.s7s0
+512:             r4.<init>(r5)
+513:             p.k7s0 r4 = r4.j()
+514:             goto L32f
+515:         L3f1:
+516:             r8.e(r12, r13)
+517:             p.s7s0 r4 = new p.s7s0
+518:             r4.<init>(r5)
+519:             goto L32f
+520:         L3fb:
+521:             boolean r14 = r5 instanceof p.pjz0
+522:             java.lang.String r15 = "Map must include generic types (e.g., Map<String, String>)"
+523:             r24 = r14
+524:             java.lang.Class<java.util.Map> r14 = java.util.Map.class
+525:             if (r24 == 0) goto L463
+526:             r2.c(r10, r12)
+527:             java.lang.Class r4 = p.xsn1.y(r12)
+528:             r9 = 1
+529:             r2.m = r9
+530:             boolean r11 = r14.isAssignableFrom(r4)
+531:             if (r11 == 0) goto L459
+532:             java.lang.reflect.Type r4 = p.xsn1.B(r12, r4)
+533:             boolean r11 = r4 instanceof java.lang.reflect.ParameterizedType
+534:             if (r11 == 0) goto L451
+535:             java.lang.reflect.ParameterizedType r4 = (java.lang.reflect.ParameterizedType) r4
+536:             r11 = 0
+537:             java.lang.reflect.Type r14 = p.xsn1.x(r11, r4)
+538:             if (r6 != r14) goto L43b
+539:             java.lang.reflect.Type r4 = p.xsn1.x(r9, r4)
+540:             r8.e(r4, r13)
+541:             p.n7s0 r4 = new p.n7s0
+542:             p.pjz0 r5 = (p.pjz0) r5
+543:             boolean r5 = r5.encoded()
+544:             r6 = 2
+545:             r4.<init>(r1, r10, r5, r6)
+546:             goto L32f
+547:         L43b:
+548:             java.lang.StringBuilder r0 = new java.lang.StringBuilder
+549:             java.lang.String r2 = "@QueryMap keys must be of type String: "
+550:             r0.<init>(r2)
+551:             r0.append(r14)
+552:             java.lang.String r0 = r0.toString()
+553:             r2 = 0
+554:             java.lang.Object[] r2 = new java.lang.Object[r2]
+555:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+556:             throw r0
+557:         L451:
+558:             r2 = 0
+559:             java.lang.Object[] r0 = new java.lang.Object[r2]
+560:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r15, r0)
+561:             throw r0
+562:         L459:
+563:             r2 = 0
+564:             java.lang.String r0 = "@QueryMap parameter type must be Map."
+565:             java.lang.Object[] r2 = new java.lang.Object[r2]
+566:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+567:             throw r0
+568:         L463:
+569:             r24 = r7
+570:             boolean r7 = r5 instanceof p.f660
+571:             if (r7 == 0) goto L4eb
+572:             r2.c(r10, r12)
+573:             p.f660 r5 = (p.f660) r5
+574:             java.lang.String r6 = r5.value()
+575:             java.lang.Class r7 = p.xsn1.y(r12)
+576:             boolean r11 = r11.isAssignableFrom(r7)
+577:             if (r11 == 0) goto L4bc
+578:             boolean r11 = r12 instanceof java.lang.reflect.ParameterizedType
+579:             if (r11 == 0) goto L49a
+580:             r4 = r12
+581:             java.lang.reflect.ParameterizedType r4 = (java.lang.reflect.ParameterizedType) r4
+582:             r11 = 0
+583:             java.lang.reflect.Type r4 = p.xsn1.x(r11, r4)
+584:             r8.e(r4, r13)
+585:             p.o7s0 r4 = new p.o7s0
+586:             boolean r5 = r5.allowUnsafeNonAsciiValues()
+587:             r4.<init>(r6, r5, r11)
+588:             p.k7s0 r4 = r4.q()
+589:             goto L8d2
+590:         L49a:
+591:             r11 = 0
+592:             java.lang.StringBuilder r0 = new java.lang.StringBuilder
+593:             java.lang.String r2 = r7.getSimpleName()
+594:             r0.<init>(r2)
+595:             r0.append(r9)
+596:             java.lang.String r2 = r7.getSimpleName()
+597:             r0.append(r2)
+598:             r0.append(r4)
+599:             java.lang.String r0 = r0.toString()
+600:             java.lang.Object[] r2 = new java.lang.Object[r11]
+601:             java.lang.IllegalArgumentException r0 = p.xsn1.K(r1, r10, r0, r2)
+602:             throw r0
+603:         L4bc:
+604:             r11 = 0
+605:             boolean r4 = r7.isArray()
+606:             if (r4 == 0) goto L4dd
+607:             java.lang.Class r4 = r7.getComponentType()
+608:             java.lang.Class r4 = p.f731.a(r4)
+609:             r8.e(r4, r13)
+610:             p.o7s0 r4 = new p.o7s0
+611:             boolean r5 = r5.allowUnsafeNonAsciiValues()
+612:             r4.<init>(r6, r5, r11)
+613:             p.k7s0 r4 = r4.j()
+614:             goto L8d2
+615:         L4dd:
+616:             r8.e(r12, r13)
+617:             p.o7s0 r4 = new p.o7s0
+618:             boolean r5 = r5.allowUnsafeNonAsciiValues()
+619:             r4.<init>(r6, r5, r11)
+620:             goto L8d2

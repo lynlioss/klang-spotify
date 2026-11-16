@@ -1,0 +1,27 @@
+{
+  "sourceUrl": "https://w55wyy38tn.ufs.sh/f/vUReSB6IGaE9Vfn5NKpYxQcTD83Sj1r4ypKio0Ne76CfOWhP",
+  "bytes": 60159314,
+  "sha256": "14fa0de9c6eebdaa623ab7ff6e1963671a6751323a98757af02ccfee7c9745dd",
+  "splits": [
+    {
+      "path": "base.apk",
+      "bytes": 101256400,
+      "sha256": "a6bded836537f252d9e8f280649145d39a5e69d2797d0e7806f8ed504c6e174d"
+    },
+    {
+      "path": "split_config.arm64_v8a.apk",
+      "bytes": 34145588,
+      "sha256": "07960bbada3ceaf6265c54cfcc6bd91f616b71df3eadda28eff6699152b423a0"
+    },
+    {
+      "path": "split_config.en.apk",
+      "bytes": 1069465,
+      "sha256": "1ef18dc9a93b4cdd2ff9cd12865e60257ab4d2b87ba19955b6910b73ce6c2188"
+    },
+    {
+      "path": "split_config.xxhdpi.apk",
+      "bytes": 545870,
+      "sha256": "ba702d247adb1ccecbec1448119e4814d6e1b33cc91792f421b19a48c0e05250"
+    }
+  ]
+}

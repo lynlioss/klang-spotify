@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: lyrics_reporting/lyrics_end_request.proto
+syntax = "proto3";
+package spotify.lyrics_reporting_esperanto.proto;
+import "lyrics_reporting/reason_end.proto";
+message LyricsEndRequest {
+  bytes lyrics_viewing_id = 1;
+  .spotify.lyrics_reporting_esperanto.proto.ReasonEnd reason_end = 4;
+}

@@ -1,0 +1,57 @@
+// Recovered descriptor. Original file: spotify/decipher/agent/v1/client_messages.proto
+syntax = "proto3";
+package spotify.decipher.agent.v1;
+import "spotify/decipher/agent/v1/actions.proto";
+enum ResponseStatus {
+  RESPONSE_STATUS_UNSPECIFIED = 0;
+  RESPONSE_STATUS_OK = 1;
+  RESPONSE_STATUS_ERROR = 2;
+}
+enum NotificationType {
+  NOTIFICATION_TYPE_UNSPECIFIED = 0;
+  SEARCH_RESCUE = 1;
+}
+message ClientSideEventRequest {
+  string event_id = 1;
+  oneof event {
+    .spotify.decipher.agent.v1.SearchBeganEvent search_began = 2;
+    .spotify.decipher.agent.v1.PushNotificationTappedEvent push_notification_tapped = 3;
+    .spotify.decipher.agent.v1.SearchPlayableItemTappedEvent search_playable_item_tapped = 4;
+    .spotify.decipher.agent.v1.SearchRescuePlaybackStartedEvent search_rescue_playback_started = 5;
+  }
+}
+message SearchBeganEvent {
+  string device_id = 1;
+}
+message SearchPlayableItemTappedEvent {
+  string uri = 1;
+  string rescue_session_id = 2;
+  string suggestion_id = 3;
+  string trigger_correlation_id = 4;
+  string message_opportunity_id = 5;
+}
+message SearchRescuePlaybackStartedEvent {
+  string content_uri = 1;
+  string rescue_session_id = 2;
+  string suggestion_id = 3;
+  string trigger_correlation_id = 4;
+  string message_opportunity_id = 5;
+}
+message PushNotificationTappedEvent {
+  .spotify.decipher.agent.v1.NotificationType notification_type = 1;
+  string rescue_session_id = 2;
+  string suggestion_id = 3;
+  string trigger_correlation_id = 4;
+  string message_opportunity_id = 5;
+}
+message ClientSideEventResponse {
+  .spotify.decipher.agent.v1.ResponseStatus status = 1;
+}
+message ActionRequest {
+  repeated .spotify.decipher.agent.v1.Action actions = 1;
+  string action_id = 2;
+  string label = 3;
+}
+message ActionResponse {
+  .spotify.decipher.agent.v1.ResponseStatus status = 1;
+}

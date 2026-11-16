@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: es_service_type.proto
+syntax = "proto3";
+package spotify.connectivity.hosts.esperanto.proto;
+enum ServiceTypeEnum {
+  BACKEND_RPC_GLOBAL = 0;
+  BACKEND_RPC_REGIONAL = 1;
+  BACKEND_STREAMING = 2;
+}
+message ServiceType {
+  .spotify.connectivity.hosts.esperanto.proto.ServiceTypeEnum serviceType = 1;
+}

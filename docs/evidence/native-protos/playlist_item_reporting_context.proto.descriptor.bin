@@ -1,0 +1,15 @@
+
+%playlist_item_reporting_context.protospotify.playlist.proto"stream_reporting_attribution.proto"¢
+ItemReportingContext
+content_uri (	R
+contentUri2
+displayed_content_uri (	RdisplayedContentUri
+provider (	Rprovider
+decision_id	 (	R
+decisionId@
+custom_reporting_attribution
+ (	RcustomReportingAttribution?
+connect_controller_device_id (	RconnectControllerDeviceId%
+interaction_id (	RinteractionId(
+page_instance_id (	RpageInstanceIdh
+attribution (2F.spotify.stream_reporting_attribution.proto.StreamReportingAttributionRattributionJJJJJ	JJJJJBHbproto3

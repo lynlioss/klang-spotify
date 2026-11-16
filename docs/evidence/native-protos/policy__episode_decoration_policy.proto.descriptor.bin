@@ -1,0 +1,45 @@
+
+&policy/episode_decoration_policy.protospotify.cosmos_util.protoextension_kind.proto"¸
+EpisodeDecorationPolicy
+link (Rlink
+length (Rlength
+name (Rname
+manifest_id (R
+manifestId
+
+preview_id (R	previewId.
+preview_manifest_id (RpreviewManifestId 
+description (Rdescription!
+publish_date (RpublishDate
+covers	 (Rcovers#
+freeze_frames
+ (RfreezeFrames
+language (Rlanguage
+	available (R	available&
+media_type_enum (RmediaTypeEnum
+number (Rnumber&
+backgroundable (Rbackgroundable
+is_explicit (R
+isExplicit
+type (Rtype)
+is_music_and_talk (RisMusicAndTalkE
+	extension (2'.spotify.extendedmetadata.ExtensionKindR	extension%
+is_19_plus_only (Ris19PlusOnly&
+is_book_chapter (RisBookChapter(
+is_podcast_short (RisPodcastShort
+
+is_curated (R	isCuratedJJ"“
+!EpisodeCollectionDecorationPolicy*
+is_following_show (RisFollowingShow+
+is_in_listen_later (RisInListenLater
+is_new (RisNew"\
+EpisodeSyncDecorationPolicy
+offline (Roffline#
+sync_progress (RsyncProgress"Ù
+"EpisodePlayedStateDecorationPolicy
+	time_left (RtimeLeft
+	is_played (RisPlayed
+playable (Rplayable7
+playability_restriction (RplayabilityRestriction$
+last_played_at (RlastPlayedAtB*
+$com.spotify.cosmos.util.policy.protoHPbproto3

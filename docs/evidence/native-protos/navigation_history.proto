@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: navigation_history.proto
+syntax = "proto3";
+package spotify.navhistory.v1;
+message Record {
+  uint32 version = 1;
+  uint32 flags = 2;
+  bytes entries = 3;
+  bool short_list = 15;
+}

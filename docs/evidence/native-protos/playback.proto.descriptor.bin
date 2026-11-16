@@ -1,0 +1,10 @@
+
+playback.protospotify.player.proto.transfercontext_track.proto"š
+Playback
+	timestamp (R	timestamp7
+position_as_of_timestamp (RpositionAsOfTimestamp%
+playback_speed (RplaybackSpeed
+	is_paused (RisPausedG
+current_track (2".spotify.player.proto.ContextTrackRcurrentTrack\
+associated_current_track (2".spotify.player.proto.ContextTrackRassociatedCurrentTrackL
+#associated_position_as_of_timestamp (RassociatedPositionAsOfTimestampBH

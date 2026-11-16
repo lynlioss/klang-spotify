@@ -1,0 +1,24 @@
+// Recovered descriptor. Original file: connect_group_event.proto
+syntax = "proto3";
+package spotify.connectgroup.v1;
+import "connect_group.proto";
+message GroupDataEvent {
+  repeated .spotify.connectgroup.v1.GroupData group_data = 1;
+}
+message GroupDeviceVolumeEvent {
+  repeated .spotify.connectgroup.v1.GroupDeviceVolume volumes = 1;
+}
+message GetAllGroupDataResponse {
+  repeated .spotify.connectgroup.v1.GroupData group_data = 1;
+  repeated .spotify.connectgroup.v1.GroupDeviceVolume group_device_volumes = 2;
+}
+message KnownGroupInstance {
+  string spotify_device_id = 1;
+  string group_instance = 2;
+  oneof _timestamp_ms {
+    int64 timestamp_ms = 3;
+  }
+}
+message RefreshGroupDataRequest {
+  repeated .spotify.connectgroup.v1.KnownGroupInstance known_instances = 1;
+}

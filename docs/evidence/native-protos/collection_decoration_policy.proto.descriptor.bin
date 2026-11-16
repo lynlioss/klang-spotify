@@ -1,0 +1,44 @@
+
+"collection_decoration_policy.protospotify.collection_cosmos.proto%policy/artist_decoration_policy.proto$policy/album_decoration_policy.proto$policy/track_decoration_policy.proto#policy/show_decoration_policy.proto&policy/episode_decoration_policy.proto"Ú
+ CollectionArtistDecorationPolicyh
+collection_policy (2;.spotify.cosmos_util.proto.ArtistCollectionDecorationPolicyRcollectionPolicyV
+sync_policy (25.spotify.cosmos_util.proto.ArtistSyncDecorationPolicyR
+syncPolicyV
+artist_policy (21.spotify.cosmos_util.proto.ArtistDecorationPolicyRartistPolicy
+	decorated (R	decorated"Å
+CollectionAlbumDecorationPolicy
+	decorated (R	decorated
+
+album_type (R	albumTypef
+artist_policy (2A.spotify.collection_cosmos.proto.CollectionArtistDecorationPolicyRartistPolicyh
+artists_policy (2A.spotify.collection_cosmos.proto.CollectionArtistDecorationPolicyRartistsPolicyg
+collection_policy (2:.spotify.cosmos_util.proto.AlbumCollectionDecorationPolicyRcollectionPolicyU
+sync_policy (24.spotify.cosmos_util.proto.AlbumSyncDecorationPolicyR
+syncPolicyS
+album_policy (20.spotify.cosmos_util.proto.AlbumDecorationPolicyRalbumPolicy"õ
+CollectionTrackDecorationPolicyg
+collection_policy (2:.spotify.cosmos_util.proto.TrackCollectionDecorationPolicyRcollectionPolicyU
+sync_policy (24.spotify.cosmos_util.proto.TrackSyncDecorationPolicyR
+syncPolicyS
+track_policy (20.spotify.cosmos_util.proto.TrackDecorationPolicyRtrackPolicyk
+played_state_policy (2;.spotify.cosmos_util.proto.TrackPlayedStateDecorationPolicyRplayedStatePolicyc
+album_policy (2@.spotify.collection_cosmos.proto.CollectionAlbumDecorationPolicyRalbumPolicyV
+artist_policy (21.spotify.cosmos_util.proto.ArtistDecorationPolicyRartistPolicy
+	decorated (R	decoratedu
+artist_collection_policy (2;.spotify.cosmos_util.proto.ArtistCollectionDecorationPolicyRartistCollectionPolicy"ä
+CollectionShowDecorationPolicyP
+show_policy (2/.spotify.cosmos_util.proto.ShowDecorationPolicyR
+showPolicyj
+played_state_policy (2:.spotify.cosmos_util.proto.ShowPlayedStateDecorationPolicyRplayedStatePolicyf
+collection_policy (29.spotify.cosmos_util.proto.ShowCollectionDecorationPolicyRcollectionPolicy
+	decorated (R	decorated"±
+!CollectionEpisodeDecorationPolicyY
+episode_policy (22.spotify.cosmos_util.proto.EpisodeDecorationPolicyRepisodePolicyi
+collection_policy (2<.spotify.cosmos_util.proto.EpisodeCollectionDecorationPolicyRcollectionPolicyW
+sync_policy (26.spotify.cosmos_util.proto.EpisodeSyncDecorationPolicyR
+syncPolicym
+played_state_policy (2=.spotify.cosmos_util.proto.EpisodePlayedStateDecorationPolicyRplayedStatePolicy`
+show_policy (2?.spotify.collection_cosmos.proto.CollectionShowDecorationPolicyR
+showPolicy
+	decorated (R	decoratedB.
+"spotify.collection.esperanto.protoHP¢ESPbproto3

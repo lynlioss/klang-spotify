@@ -1,0 +1,14 @@
+
+"include/AdConfigMetricsEvent.protospotify.event_sender.proto"ë
+AdConfigMetricsEvent$
+app_startup_id (	RappStartupId
+
+fetch_type (	R	fetchType-
+fallback_triggered (RfallbackTriggered'
+response_status (RresponseStatusL
+spans (26.spotify.event_sender.proto.AdConfigMetricsEvent.SpansRspans#
+enabled_slots (	RenabledSlotsC
+Spans
+name (	Rname
+start (Rstart
+end (RendBH

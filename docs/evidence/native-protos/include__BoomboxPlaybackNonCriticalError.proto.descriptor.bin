@@ -1,0 +1,16 @@
+
+-include/BoomboxPlaybackNonCriticalError.protospotify.event_sender.proto"»
+BoomboxPlaybackNonCriticalError
+file_id (RfileId
+playback_id (R
+playbackId
+track_id (	RtrackId
+bitrate (Rbitrate
+
+audiocodec (	R
+audiocodec%
+external_track (RexternalTrack
+position_ms (R
+positionMs
+error (Rerror+
+error_description	 (	RerrorDescriptionBH

@@ -1,0 +1,16 @@
+
+!include/AdTransparencyEvent.protospotify.event_sender.proto"Ú
+AdTransparencyEvent#
+info_provider (	RinfoProvider0
+has_skipton_decision (RhasSkiptonDecision
+
+request_id (	R	requestId.
+max_count_remaining (RmaxCountRemaining4
+max_duration_remaining (RmaxDurationRemaining0
+last_played_duration (RlastPlayedDuration/
+position_in_ad_break (RpositionInAdBreak,
+total_ads_estimate (RtotalAdsEstimate"
+played_ad_ids	 (	RplayedAdIds
+slot
+ (	Rslot
+ad_break_id (	R	adBreakIdBH

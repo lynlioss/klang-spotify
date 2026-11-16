@@ -1,0 +1,23 @@
+
+image_resolve.protospotify.imageresolve.proto"ä
+
+Collection
+id (RidS
+projections (21.spotify.imageresolve.proto.Collection.ProjectionRprojectionsq
+
+Projection
+id (Rid%
+metadata_index (RmetadataIndex,
+url_template_index (RurlTemplateIndex"—
+ProjectionMetadata
+width (Rwidth
+height (Rheight!
+fetch_online (RfetchOnline0
+download_for_offline (RdownloadForOffline"Ù
+ProjectionMap#
+url_templates (	RurlTemplatesY
+projection_metas (2..spotify.imageresolve.proto.ProjectionMetadataRprojectionMetasH
+collections (2&.spotify.imageresolve.proto.CollectionRcollections"g
+ProjectionsResponseP
+projection_map (2).spotify.imageresolve.proto.ProjectionMapRprojectionMapBC
+com.spotify.imageresolve.protoBImageResolveProtosHP¢SPTImagebproto3

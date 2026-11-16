@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: signal-model.proto
+syntax = "proto3";
+package spotify.playlist.signal.proto;
+message Signal {
+  string identifier = 1;
+  bytes data = 2;
+  bytes client_payload = 3;
+  string instance_id = 4;
+}
+message SignalData {
+  string lens_identifier = 1;
+  string uri = 2;
+  bytes item_id = 3;
+  bytes additional_data = 4;
+}

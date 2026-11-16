@@ -1,0 +1,12 @@
+
+$collection_ban_in_play_context.proto"spotify.collection_esperanto.proto"q
+BanInPlayContextRequest
+context_uri (	R
+contextUri
+item_uri (	RitemUri
+provider (	Rprovider"W
+UnbanInPlayContextRequest
+context_uri (	R
+contextUri
+item_uri (	RitemUriB2
+&com.spotify.collection_esperanto.protoHP¢ESPbproto3

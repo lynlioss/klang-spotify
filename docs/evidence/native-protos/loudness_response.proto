@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: loudness_response.proto
+syntax = "proto3";
+package spotify.analyzer_esperanto.proto;
+message LoudnessResponse {
+  repeated int32 loudness = 1;
+  string playback_id = 2;
+  uint64 position = 3;
+}

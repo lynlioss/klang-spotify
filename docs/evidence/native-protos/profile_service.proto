@@ -1,0 +1,23 @@
+// Recovered descriptor. Original file: profile_service.proto
+syntax = "proto3";
+package spotify.profile_esperanto.proto.v1;
+import "identity.proto";
+message GetProfilesRequest {
+  repeated string usernames = 1;
+}
+message GetProfilesResponse {
+  repeated .spotify.identity.v3.UserProfile profiles = 1;
+  int32 status_code = 2;
+}
+message ChangeDisplayNameRequest {
+  string username = 1;
+  string display_name = 2;
+}
+message ChangeDisplayNameResponse {
+  int32 status_code = 1;
+}
+service ProfileService {
+  rpc GetProfiles (.spotify.profile_esperanto.proto.v1.GetProfilesRequest) returns (.spotify.profile_esperanto.proto.v1.GetProfilesResponse);
+  rpc SubscribeToProfiles (.spotify.profile_esperanto.proto.v1.GetProfilesRequest) returns (stream .spotify.profile_esperanto.proto.v1.GetProfilesResponse);
+  rpc ChangeDisplayName (.spotify.profile_esperanto.proto.v1.ChangeDisplayNameRequest) returns (.spotify.profile_esperanto.proto.v1.ChangeDisplayNameResponse);
+}

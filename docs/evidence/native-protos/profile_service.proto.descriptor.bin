@@ -1,0 +1,19 @@
+
+profile_service.proto"spotify.profile_esperanto.proto.v1identity.proto"2
+GetProfilesRequest
+	usernames (	R	usernames"t
+GetProfilesResponse<
+profiles (2 .spotify.identity.v3.UserProfileRprofiles
+status_code (R
+statusCode"Y
+ChangeDisplayNameRequest
+username (	Rusername!
+display_name (	RdisplayName"<
+ChangeDisplayNameResponse
+status_code (R
+statusCode2®
+ProfileService~
+GetProfiles6.spotify.profile_esperanto.proto.v1.GetProfilesRequest7.spotify.profile_esperanto.proto.v1.GetProfilesResponseˆ
+SubscribeToProfiles6.spotify.profile_esperanto.proto.v1.GetProfilesRequest7.spotify.profile_esperanto.proto.v1.GetProfilesResponse0
+ChangeDisplayName<.spotify.profile_esperanto.proto.v1.ChangeDisplayNameRequest=.spotify.profile_esperanto.proto.v1.ChangeDisplayNameResponseB%
+spotify.profile_esperanto.protoHPbproto3

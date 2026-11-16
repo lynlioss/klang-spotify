@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: collection_get_bucket_sync_status_request.proto
+syntax = "proto3";
+package spotify.collection_cosmos.proto;
+import "status.proto";
+message CollectionGetBucketSyncStatusRequest {
+  string bucket_name = 1;
+}
+message CollectionGetBucketSyncStatusResponse {
+  .spotify.collection_cosmos.proto.Status status = 1;
+  bool is_synced = 2;
+}

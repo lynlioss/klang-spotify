@@ -1,0 +1,13 @@
+
+!playlist_permission_request.proto spotify.playlist_esperanto.protoplaylist_permission.protoresponse_status.proto"0
+PlaylistGetPermissionRequest
+uri (	Ruri"Á
+PlaylistGetPermissionResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatusV
+base_permission (2-.spotify.playlist_permission.proto.PermissionRbasePermission"+
+PlaylistGetOwnerRequest
+uri (	Ruri"¯
+PlaylistGetOwnerResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatusI
+owner (23.spotify.playlist_permission.proto.GetOwnerResponseRownerB,
+ spotify.playlist.esperanto.protoHP¢ESPbproto3

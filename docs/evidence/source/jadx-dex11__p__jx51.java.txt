@@ -1,0 +1,29 @@
+Source: analysis/spotify/jadx-dex11/sources/p/jx51.java
+SHA256: e2b6c7e6cf60fdb1c339117f543821984dcc9a02662ace33594164b637a7554f
+Lines: 1-25
+
+1: package p;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes11.dex */
+4: @kotlin.Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bg\u0018\u00002\u00020\u0001JA\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00070\u00062\u0014\b\u0001\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u00022\u0014\b\u0001\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0002H'¢\u0006\u0004\b\b\u0010\tJ<\u0010\n\u001a\u00020\u00072\u0014\b\u0001\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u00022\u0014\b\u0001\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0002H§@¢\u0006\u0004\b\n\u0010\u000bJG\u0010\u000e\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\r0\f0\u00062\u0014\b\u0001\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u00022\u0014\b\u0001\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0002H'¢\u0006\u0004\b\u000e\u0010\tJG\u0010\u0010\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000f0\f0\u00062\u0014\b\u0001\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u00022\u0014\b\u0001\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0002H'¢\u0006\u0004\b\u0010\u0010\tJ%\u0010\u0012\u001a\u00020\u00112\u0014\b\u0001\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0002H'¢\u0006\u0004\b\u0012\u0010\u0013ø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001¨\u0006\u0014À\u0006\u0001"}, d2 = {"Lp/jx51;", "", "", "", "params", "headers", "Lio/reactivex/rxjava3/core/Single;", "Lcom/spotify/searchview/proto/MainViewResponse;", "a", "(Ljava/util/Map;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;", "d", "(Ljava/util/Map;Ljava/util/Map;Lp/osm;)Ljava/lang/Object;", "Lp/gh31;", "Lcom/spotify/searchview/proto/AutocompleteViewResponse;", "e", "Lcom/spotify/searchview/proto/NativeViewResponse;", "c", "Lio/reactivex/rxjava3/core/Completable;", "b", "(Ljava/util/Map;)Lio/reactivex/rxjava3/core/Completable;", "src_main_java_com_spotify_search_onlineproto-onlineproto"}, k = 1, mv = {2, 3, 0}, xi = 48)
+5: public interface jx51 {
+6:     @p.gf60({"Accept: application/protobuf"})
+7:     @p.x740("searchview/v3/search")
+8:     io.reactivex.rxjava3.core.Single<com.spotify.searchview.proto.MainViewResponse> a(@p.pjz0 java.util.Map<java.lang.String, java.lang.String> r1, @p.pc60 java.util.Map<java.lang.String, java.lang.String> r2);
+9: 
+10:     @p.ngr0("searchview/v3/delete-recent-query-suggestion")
+11:     @p.gf60({"Accept: application/protobuf"})
+12:     io.reactivex.rxjava3.core.Completable b(@p.pjz0 java.util.Map<java.lang.String, java.lang.String> r1);
+13: 
+14:     @p.gf60({"Accept: application/protobuf"})
+15:     @p.x740("searchview/v3/native")
+16:     io.reactivex.rxjava3.core.Single<p.gh31<com.spotify.searchview.proto.NativeViewResponse>> c(@p.pjz0 java.util.Map<java.lang.String, java.lang.String> r1, @p.pc60 java.util.Map<java.lang.String, java.lang.String> r2);
+17: 
+18:     @p.gf60({"Accept: application/protobuf"})
+19:     @p.x740("searchview/v3/search")
+20:     java.lang.Object d(@p.pjz0 java.util.Map<java.lang.String, java.lang.String> r1, @p.pc60 java.util.Map<java.lang.String, java.lang.String> r2, p.osm<? super com.spotify.searchview.proto.MainViewResponse> r3);
+21: 
+22:     @p.gf60({"Accept: application/protobuf"})
+23:     @p.x740("searchview/v3/autocomplete")
+24:     io.reactivex.rxjava3.core.Single<p.gh31<com.spotify.searchview.proto.AutocompleteViewResponse>> e(@p.pjz0 java.util.Map<java.lang.String, java.lang.String> r1, @p.pc60 java.util.Map<java.lang.String, java.lang.String> r2);
+25: }

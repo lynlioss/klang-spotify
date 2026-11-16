@@ -1,0 +1,24 @@
+// Recovered descriptor. Original file: identity_trait.proto
+syntax = "proto3";
+package spotify.contentagnostic.v2;
+message IdentityTrait {
+  string type = 1;
+  string name = 2;
+  repeated .spotify.contentagnostic.v2.ContributorReference contributors = 5;
+  oneof _description {
+    string description = 3;
+  }
+  oneof _content_hierarchy_parent {
+    .spotify.contentagnostic.v2.EntityReference content_hierarchy_parent = 4;
+  }
+}
+message ContributorReference {
+  string name = 1;
+  oneof _uri {
+    string uri = 2;
+  }
+}
+message EntityReference {
+  string name = 1;
+  string uri = 2;
+}

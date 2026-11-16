@@ -1,0 +1,30 @@
+
+mdata_entities.protospotify.mdata.protogoogle/protobuf/timestamp.proto"ç
+AudiobookSpecifics
+uri (	Ruri6
+credits (2.spotify.mdata.proto.CreditsRcredits
+edition (	Redition
+duration_ms (R
+durationMs=
+publish_date (2.google.protobuf.TimestampRpublishDate
+
+main_title (	R	mainTitle
+subtitle (	Rsubtitle#
+series_number (	RseriesNumber
+series_name	 (	R
+seriesName2
+series_position_label
+ (	RseriesPositionLabel"Ã
+CreditsF
+
+publishers (2&.spotify.mdata.proto.Credits.PublisherR
+publishers=
+authors (2#.spotify.mdata.proto.Credits.AuthorRauthorsC
+	narrators (2%.spotify.mdata.proto.Credits.NarratorR	narrators%
+	Publisher
+name (	RnameJ"
+Author
+name (	RnameJ$
+Narrator
+name (	RnameJJB
+com.spotify.mdata.protoHPbproto3

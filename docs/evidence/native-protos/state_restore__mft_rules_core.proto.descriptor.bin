@@ -1,0 +1,6 @@
+
+"state_restore/mft_rules_core.proto"spotify.player.proto.state_restore,state_restore/mft_context_switch_rules.proto2state_restore/mft_rules_inject_filler_tracks.proto"–
+MftRulesCorep
+inject_filler_tracks (2>.spotify.player.proto.state_restore.MftRulesInjectFillerTracksRinjectFillerTracksk
+context_switch_rules (29.spotify.player.proto.state_restore.MftContextSwitchRulesRcontextSwitchRules'
+feature_classes (	RfeatureClassesBH

@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: es_signal_request.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+import "es_command_options.proto";
+import "es_logging_params.proto";
+message SignalRequest {
+  string signal_id = 1;
+  string parameters = 2;
+  .spotify.player.esperanto.proto.CommandOptions options = 3;
+  .spotify.player.esperanto.proto.LoggingParams logging_params = 4;
+}

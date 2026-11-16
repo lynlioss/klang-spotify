@@ -1,0 +1,9 @@
+
+include/RestrictionsError.protospotify.event_sender.proto"¹
+RestrictionsError
+type (	Rtype
+message (	RmessageF
+data (22.spotify.event_sender.proto.RestrictionsError.DataRdata.
+Data
+key (	Rkey
+value (	RvalueBH

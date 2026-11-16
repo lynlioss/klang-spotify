@@ -1,0 +1,6 @@
+
+-policy/playlist_album_decoration_policy.protospotify.playlist.cosmos.proto$policy/album_decoration_policy.proto%policy/artist_decoration_policy.proto"²
+PlaylistAlbumDecorationPolicyF
+album (20.spotify.cosmos_util.proto.AlbumDecorationPolicyRalbumI
+artist (21.spotify.cosmos_util.proto.ArtistDecorationPolicyRartistB'
+!com.spotify.playlist.policy.protoHPbproto3

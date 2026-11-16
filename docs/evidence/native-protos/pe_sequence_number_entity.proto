@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: pe_sequence_number_entity.proto
+syntax = "proto3";
+package spotify.pending_events.proto;
+message PESequenceNumberEntity {
+  uint32 file_format_version = 1;
+  string event_name = 2;
+  uint64 sequence_number_next = 4;
+}

@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: collection_ban_in_play_context.proto
+syntax = "proto3";
+package spotify.collection_esperanto.proto;
+message BanInPlayContextRequest {
+  string context_uri = 1;
+  string item_uri = 2;
+  string provider = 3;
+}
+message UnbanInPlayContextRequest {
+  string context_uri = 1;
+  string item_uri = 2;
+}

@@ -1,0 +1,8 @@
+
+*include/ClientCoreConnectPlayCommand.protospotify.event_sender.proto"°
+ClientCoreConnectPlayCommand+
+observer_duration (RobserverDuration%
+state_duration (RstateDuration
+	intent_id (	RintentId
+context_url (	R
+contextUrlBH

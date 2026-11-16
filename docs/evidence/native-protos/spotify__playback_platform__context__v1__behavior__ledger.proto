@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/behavior/ledger.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1.behavior;
+message Ledger {
+  oneof _entry_id {
+    string entry_id = 2;
+  }
+  oneof _include_playing_info {
+    bool include_playing_info = 3;
+  }
+}

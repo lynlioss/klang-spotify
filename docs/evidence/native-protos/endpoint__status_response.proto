@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: endpoint/status_response.proto
+syntax = "proto3";
+package spotify.read_reporting_esperanto.proto;
+import "endpoint/status_code.proto";
+message StatusResponse {
+  .spotify.read_reporting_esperanto.proto.StatusCode status_code = 1;
+}

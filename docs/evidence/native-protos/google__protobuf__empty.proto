@@ -1,0 +1,5 @@
+// Recovered descriptor. Original file: google/protobuf/empty.proto
+syntax = "proto3";
+package google.protobuf;
+message Empty {
+}

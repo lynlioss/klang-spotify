@@ -1,0 +1,29 @@
+
+include/AdEvent.protospotify.event_sender.proto"ù
+AdEvent
+
+request_id (	R	requestId$
+app_startup_id (	RappStartupId
+ad_id (	RadId
+lineitem_id (	R
+lineitemId
+creative_id (	R
+creativeId
+slot (	Rslot
+format (	Rformat
+type (	Rtype
+	skippable	 (R	skippable
+event
+ (	Revent!
+event_source (	ReventSource!
+event_reason (	ReventReason,
+event_sequence_num (ReventSequenceNum
+position (Rposition
+duration (Rduration
+in_focus (RinFocus
+volume (Rvolume!
+product_name (	RproductName
+ad_break_id (	R	adBreakId
+asset_id (	RassetId!
+ads_api_ad_id (	R
+adsApiAdIdBH

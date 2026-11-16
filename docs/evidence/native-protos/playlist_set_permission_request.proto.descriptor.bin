@@ -1,0 +1,9 @@
+
+%playlist_set_permission_request.protospotify.playlist.cosmos.protoplaylist_permission.proto"˜
+SetBasePermissionRequest]
+permission_level (22.spotify.playlist_permission.proto.PermissionLevelRpermissionLevel
+
+timeout_ms (R	timeoutMs"s
+SetBasePermissionResponseV
+base_permission (2-.spotify.playlist_permission.proto.PermissionRbasePermissionB 
+com.spotify.playlist.protoHP

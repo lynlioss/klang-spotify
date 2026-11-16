@@ -1,0 +1,9 @@
+
++include/PickAndShuffleCapStateRestore.protospotify.event_sender.proto"ý
+PickAndShuffleCapStateRestore
+cap_day (RcapDay
+	cap_month (RcapMonth!
+stream_count (RstreamCount
+time_cap (RtimeCap8
+cap_configuration_origin (	RcapConfigurationOrigin.
+dynamic_cap_enabled (RdynamicCapEnabledBH

@@ -1,0 +1,18 @@
+// Recovered descriptor. Original file: search_service.proto
+syntax = "proto3";
+package spotify.search_esperanto.proto;
+import "search.proto";
+message OfflineSearchRequest {
+  string query = 1;
+  int32 limit = 2;
+  bool include_chapters = 3;
+}
+message OfflineSearchResponse {
+  repeated .spotify.search.proto.OfflineAlbum albums = 1;
+  repeated .spotify.search.proto.OfflineAudioEpisode audio_episodes = 2;
+  repeated .spotify.search.proto.OfflinePlaylist playlists = 3;
+  repeated .spotify.search.proto.OfflineTrack tracks = 4;
+}
+service OfflineSearchService {
+  rpc Query (.spotify.search_esperanto.proto.OfflineSearchRequest) returns (.spotify.search_esperanto.proto.OfflineSearchResponse);
+}

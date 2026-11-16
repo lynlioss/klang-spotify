@@ -1,0 +1,29 @@
+// Recovered descriptor. Original file: playlist_play_state.proto
+syntax = "proto3";
+package spotify.playlist.proto;
+message NavigationHistory {
+  repeated string prev_items = 1;
+  repeated string next_items = 2;
+}
+message PlayState {
+  message ShuffleState {
+    enum ShuffleType {
+      NONE = 0;
+      NORMAL_SHUFFLE = 1;
+      SMART_SHUFFLE = 2;
+    }
+    .spotify.playlist.proto.PlayState.ShuffleState.ShuffleType type = 1;
+    oneof _head_uid {
+      string head_uid = 3;
+    }
+    oneof _shuffle_seed {
+      string shuffle_seed = 4;
+    }
+    oneof _navigation_history {
+      .spotify.playlist.proto.NavigationHistory navigation_history = 5;
+    }
+  }
+  oneof _shuffle_state {
+    .spotify.playlist.proto.PlayState.ShuffleState shuffle_state = 1;
+  }
+}

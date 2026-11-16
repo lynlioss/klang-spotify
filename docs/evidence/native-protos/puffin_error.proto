@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: puffin_error.proto
+syntax = "proto3";
+package spotify.puffin_esperanto.proto;
+import "puffin_error_code.proto";
+message PuffinError {
+  .spotify.puffin_esperanto.proto.PuffinErrorCode status_code = 1;
+  string reason = 2;
+}

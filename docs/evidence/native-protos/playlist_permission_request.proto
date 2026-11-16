@@ -1,0 +1,19 @@
+// Recovered descriptor. Original file: playlist_permission_request.proto
+syntax = "proto3";
+package spotify.playlist_esperanto.proto;
+import "playlist_permission.proto";
+import "response_status.proto";
+message PlaylistGetPermissionRequest {
+  string uri = 1;
+}
+message PlaylistGetPermissionResponse {
+  .spotify.playlist_esperanto.proto.ResponseStatus status = 1;
+  .spotify.playlist_permission.proto.Permission base_permission = 2;
+}
+message PlaylistGetOwnerRequest {
+  string uri = 1;
+}
+message PlaylistGetOwnerResponse {
+  .spotify.playlist_esperanto.proto.ResponseStatus status = 1;
+  .spotify.playlist_permission.proto.GetOwnerResponse owner = 2;
+}

@@ -1,0 +1,17 @@
+
+/include/AdDetectionTimestampMappingResult.protospotify.event_sender.proto"Ö
+!AdDetectionTimestampMappingResult2
+detection_playback_id (RdetectionPlaybackId
+episode_uri (	R
+episodeUri
+	audio_uri (	RaudioUri
+
+request_id (R	requestId-
+canonical_timeline (	RcanonicalTimeline
+	direction (	R	direction2
+requested_position_ms (RrequestedPositionMs2
+converted_position_ms (RconvertedPositionMs
+outcome	 (	Routcome+
+completion_reason
+ (	RcompletionReason$
+is_best_effort (RisBestEffortBH

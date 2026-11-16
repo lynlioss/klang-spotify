@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: playback_segments.proto
+syntax = "proto3";
+package spotify.podcast_segments.playback;
+import "podcast_segments.proto";
+message PlaybackSegments {
+  repeated .spotify.podcast_segments.PlaybackSegment playback_segments = 1;
+}

@@ -1,0 +1,5 @@
+
+)include/ConnectDiscoveryScanTrigger.protospotify.event_sender.proto"a
+ConnectDiscoveryScanTrigger
+	device_id (	RdeviceId%
+trigger_reason (	RtriggerReasonBH

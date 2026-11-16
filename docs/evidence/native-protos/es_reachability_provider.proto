@@ -1,0 +1,28 @@
+// Recovered descriptor. Original file: es_reachability_provider.proto
+syntax = "proto3";
+package spotify.connectivity.reachability.esperanto.proto;
+import "google/protobuf/empty.proto";
+import "es_network_capabilities.proto";
+import "es_connection_type.proto";
+import "es_connection_availability.proto";
+enum NotReachableReason {
+  FORCED_OFFLINE = 0;
+  NO_INTERNET = 1;
+}
+message Reachable {
+  repeated .spotify.connectivity.reachability.esperanto.proto.NetworkCapability capabilities = 1;
+  .spotify.connectivity.reachability.esperanto.proto.ConnectionType connection_type = 2;
+}
+message ReachabilityState {
+  .spotify.connectivity.reachability.esperanto.proto.ConnectionAvailability connection_availability = 3;
+  oneof type {
+    .spotify.connectivity.reachability.esperanto.proto.Reachable reachable = 1;
+    .spotify.connectivity.reachability.esperanto.proto.NotReachable not_reachable = 2;
+  }
+}
+message NotReachable {
+  repeated .spotify.connectivity.reachability.esperanto.proto.NotReachableReason reasons = 1;
+}
+service ReachabilityProvider {
+  rpc reachabilityState (.google.protobuf.Empty) returns (stream .spotify.connectivity.reachability.esperanto.proto.ReachabilityState);
+}

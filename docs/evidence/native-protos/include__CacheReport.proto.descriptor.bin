@@ -1,0 +1,39 @@
+
+include/CacheReport.protospotify.event_sender.proto"‘
+
+CacheReport
+cache_id (RcacheId
+
+cache_path (	R	cachePath#
+volatile_path (	RvolatilePath$
+max_cache_size (RmaxCacheSize
+
+free_space (R	freeSpace
+total_space (R
+totalSpace.
+volatile_free_space (RvolatileFreeSpace0
+volatile_total_space (RvolatileTotalSpace=
+volatile_on_separate_volume (RvolatileOnSeparateVolume
+	cache_age (RcacheAge@
+num_users_with_locked_entries (RnumUsersWithLockedEntries'
+permanent_files (RpermanentFiles*
+permanent_size_kb (RpermanentSizeKb6
+unknown_permanent_files	 (RunknownPermanentFiles9
+unknown_permanent_size_kb
+ (RunknownPermanentSizeKb%
+volatile_files (RvolatileFiles(
+volatile_size_kb (RvolatileSizeKb4
+unknown_volatile_files (RunknownVolatileFiles7
+unknown_volatile_size_kb (RunknownVolatileSizeKb
+num_entries (R
+numEntries,
+num_locked_entries (RnumLockedEntriesD
+num_locked_entries_current_user (RnumLockedEntriesCurrentUser(
+num_full_entries (RnumFullEntries
+size_kb (RsizeKb$
+locked_size_kb (RlockedSizeKb
+reason (	Rreason#
+missing_files (RmissingFiles&
+missing_size_kb (RmissingSizeKb(
+cache_limit_mode (	RcacheLimitMode(
+user_limit_bytes (RuserLimitBytesBH

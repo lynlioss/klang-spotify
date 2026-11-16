@@ -1,0 +1,24 @@
+
+include/AdError.protospotify.event_sender.proto"„
+AdError!
+request_type (	RrequestType#
+error_message (	RerrorMessage&
+http_error_code (RhttpErrorCode
+request_url (	R
+requestUrl%
+tracking_event (	RtrackingEvent
+
+error_type (	R	errorType
+ad_id (	RadId
+lineitem_id (	R
+lineitemId
+surface	 (	Rsurface*
+ad_content_origin
+ (	RadContentOrigin
+slot (	Rslot
+
+request_id (	R	requestId
+slot_ids (	RslotIds
+type (	Rtype$
+app_startup_id (	RappStartupId
+ad_break_id (	R	adBreakIdBH

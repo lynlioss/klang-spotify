@@ -1,0 +1,16 @@
+
+audio_files_extension.proto#spotify.extendedmetadata.audiofilesmetadata.proto"X
+NormalizationParams
+loudness_db (R
+loudnessDb 
+true_peak_db (R
+truePeakDb"y
+ExtendedAudioFile/
+file (2.spotify.metadata.AudioFileRfile'
+average_bitrate (RaverageBitrateJJ"”
+AudioFilesExtensionResponseL
+files (26.spotify.extendedmetadata.audiofiles.ExtendedAudioFileRfilesƒ
+!default_file_normalization_params (28.spotify.extendedmetadata.audiofiles.NormalizationParamsRdefaultFileNormalizationParams…
+"default_album_normalization_params (28.spotify.extendedmetadata.audiofiles.NormalizationParamsRdefaultAlbumNormalizationParams
+audio_id (RaudioIdB 
+com.spotify.audiophile.protoHbproto3

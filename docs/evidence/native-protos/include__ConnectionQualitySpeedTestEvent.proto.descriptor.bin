@@ -1,0 +1,14 @@
+
+-include/ConnectionQualitySpeedTestEvent.protospotify.event_sender.proto"¦
+ConnectionQualitySpeedTestEvent9
+scored_quality_at_trigger (	RscoredQualityAtTrigger9
+bucket_start_timestamp_ms (RbucketStartTimestampMs$
+url_variant_id (RurlVariantId
+outcome (	Routcome#
+bandwidth_bps (RbandwidthBps
+ttfb_ms (RttfbMs)
+bytes_downloaded (RbytesDownloaded0
+is_reused_connection (RisReusedConnection
+protocol	 (	Rprotocol
+bearer
+ (	RbearerBH

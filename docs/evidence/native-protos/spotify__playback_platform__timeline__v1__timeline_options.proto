@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: spotify/playback_platform/timeline/v1/timeline_options.proto
+syntax = "proto3";
+package spotify.playback_platform.timeline.v1;
+message TimelineOptions {
+  oneof _playback_speed {
+    float playback_speed = 1;
+  }
+}

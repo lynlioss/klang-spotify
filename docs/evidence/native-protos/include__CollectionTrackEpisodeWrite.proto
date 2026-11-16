@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: include/CollectionTrackEpisodeWrite.proto
+syntax = "proto2";
+package spotify.event_sender.proto;
+message CollectionTrackEpisodeWrite {
+  optional int32 track_count = 1;
+  optional int32 episode_count = 2;
+}

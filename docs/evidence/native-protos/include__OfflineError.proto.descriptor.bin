@@ -1,0 +1,8 @@
+
+include/OfflineError.protospotify.event_sender.proto"x
+OfflineError
+
+error_code (R	errorCode
+track (	Rtrack
+cache_id (	RcacheId
+details (	RdetailsBH

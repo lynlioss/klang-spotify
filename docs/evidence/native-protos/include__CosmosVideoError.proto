@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: include/CosmosVideoError.proto
+syntax = "proto2";
+package spotify.event_sender.proto;
+message CosmosVideoError {
+  optional bytes playback_rendering_id = 1;
+  optional string playback_stack = 2;
+  optional string error_type = 3;
+  optional string error_reason = 4;
+  optional string error_message = 5;
+  optional int32 ms_position_diff = 6;
+}

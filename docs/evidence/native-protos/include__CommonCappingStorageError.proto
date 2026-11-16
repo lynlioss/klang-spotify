@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: include/CommonCappingStorageError.proto
+syntax = "proto2";
+package spotify.event_sender.proto;
+message CommonCappingStorageError {
+  optional string operation = 1;
+  optional string error = 2;
+}

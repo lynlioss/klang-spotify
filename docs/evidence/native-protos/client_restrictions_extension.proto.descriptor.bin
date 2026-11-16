@@ -1,0 +1,5 @@
+
+#client_restrictions_extension.protospotify.clientrestrictions.v1"H
+ClientRestrictionsExtensionData%
+restriction_id (	RrestrictionIdBI
+!com.spotify.clientrestrictions.v1B ClientRestrictionsExtensionProtoHPbproto3

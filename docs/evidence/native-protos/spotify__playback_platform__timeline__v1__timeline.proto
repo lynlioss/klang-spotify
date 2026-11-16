@@ -1,0 +1,18 @@
+// Recovered descriptor. Original file: spotify/playback_platform/timeline/v1/timeline.proto
+syntax = "proto3";
+package spotify.playback_platform.timeline.v1;
+import "spotify/playback_platform/timeline/v1/timepoint.proto";
+import "spotify/playback_platform/timeline/v1/timespan.proto";
+message Timeline {
+  repeated .spotify.playback_platform.timeline.v1.Timespan spans = 1;
+  repeated uint64 tags = 4;
+  oneof _duration_override {
+    .spotify.playback_platform.timeline.v1.Timepoint duration_override = 2;
+  }
+  oneof _uid {
+    string uid = 3;
+  }
+  oneof _format_id {
+    string format_id = 5;
+  }
+}

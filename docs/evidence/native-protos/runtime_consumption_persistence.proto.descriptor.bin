@@ -1,0 +1,9 @@
+
+%runtime_consumption_persistence.proto!spotify.runtime_consumption.proto"Ø
+PersistedConsumptionEntry
+content_uri (	R
+contentUri
+	ms_played (RmsPlayed*
+ms_played_nominal (RmsPlayedNominal4
+wall_timestamp_seconds (RwallTimestampSeconds
+	stream_id (	RstreamIdBHbproto3

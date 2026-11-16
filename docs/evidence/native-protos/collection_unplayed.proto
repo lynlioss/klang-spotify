@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: collection_unplayed.proto
+syntax = "proto3";
+package spotify.collection_esperanto.proto;
+import "status.proto";
+message CollectionUnplayedRequest {
+  repeated string uri = 1;
+}
+message CollectionUnplayedResponse {
+  .spotify.collection_cosmos.proto.Status status = 1;
+}

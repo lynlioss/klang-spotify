@@ -1,0 +1,11 @@
+
+$local_list_config_save_request.proto2spotify.playlist.local_list_config_esperanto.proto"v
+LocalListConfig
+uri (	Ruri
+name (	Rname
+	image_uri (	RimageUri 
+description (	Rdescription"{
+LocalListConfigSaveRequest]
+configs (2C.spotify.playlist.local_list_config_esperanto.proto.LocalListConfigRconfigs"
+LocalListConfigSaveResponseB8
+2spotify.playlist.local_list_config_esperanto.protoHPbproto3

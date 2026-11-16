@@ -1,0 +1,14 @@
+
+mix_beats.proto*spotify.playlistmixing.extensions.mixbeats"¦
+Beat
+time (Rtime
+duration (Rduration
+value (Rvalue'
+beat_confidence (RbeatConfidence/
+downbeat_confidence (RdownbeatConfidence"’
+Beats"
+beats_per_bar (RbeatsPerBarF
+beats (20.spotify.playlistmixing.extensions.mixbeats.BeatRbeats
+
+beats_hash (	R	beatsHashBG
+4com.spotify.playlistmixing.extensions.mixbeats.protoBMixBeatsProtoHbproto3

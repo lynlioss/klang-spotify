@@ -1,0 +1,18 @@
+// Recovered descriptor. Original file: playlist_offline_request.proto
+syntax = "proto3";
+package spotify.playlist_esperanto.proto;
+import "playlist_query.proto";
+import "response_status.proto";
+enum PlaylistOfflineAction {
+  NONE = 0;
+  SET_AS_AVAILABLE_OFFLINE = 1;
+  REMOVE_AS_AVAILABLE_OFFLINE = 2;
+}
+message PlaylistOfflineRequest {
+  string uri = 1;
+  .spotify.playlist_esperanto.proto.PlaylistQuery query = 2;
+  .spotify.playlist_esperanto.proto.PlaylistOfflineAction action = 3;
+}
+message PlaylistOfflineResponse {
+  .spotify.playlist_esperanto.proto.ResponseStatus status = 1;
+}

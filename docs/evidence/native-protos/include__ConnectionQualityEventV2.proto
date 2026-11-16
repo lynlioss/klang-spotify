@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: include/ConnectionQualityEventV2.proto
+syntax = "proto2";
+package spotify.event_sender.proto;
+message ConnectionQualityEventV2 {
+  optional string current_quality = 1;
+  optional string scoring_context = 2;
+}

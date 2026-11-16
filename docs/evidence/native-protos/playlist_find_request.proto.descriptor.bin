@@ -1,0 +1,13 @@
+
+playlist_find_request.proto spotify.playlist_esperanto.protoresponse_status.proto"U
+PlaylistFindRequest!
+playlist_uri (	RplaylistUri
+	item_uris (	RitemUris"Z
+ItemUriToRowIds
+uri (	Ruri
+row_ids (	RrowIds
+	positions (R	positions"©
+PlaylistFindResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatusG
+items (21.spotify.playlist_esperanto.proto.ItemUriToRowIdsRitemsB,
+ spotify.playlist.esperanto.protoHP¢ESPbproto3

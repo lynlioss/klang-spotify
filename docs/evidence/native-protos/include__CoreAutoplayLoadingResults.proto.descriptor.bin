@@ -1,0 +1,12 @@
+
+(include/CoreAutoplayLoadingResults.protospotify.event_sender.proto"ª
+CoreAutoplayLoadingResults'
+response_status (RresponseStatus
+context_uri (	R
+contextUri
+endpoint (	Rendpoint
+
+session_id (	R	sessionId'
+request_latency (RrequestLatency2
+autoplay_tracks_count (RautoplayTracksCount*
+client_error_code (RclientErrorCodeBH

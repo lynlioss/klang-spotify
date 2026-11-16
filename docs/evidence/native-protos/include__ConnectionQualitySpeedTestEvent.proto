@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: include/ConnectionQualitySpeedTestEvent.proto
+syntax = "proto2";
+package spotify.event_sender.proto;
+message ConnectionQualitySpeedTestEvent {
+  optional string scored_quality_at_trigger = 1;
+  optional int64 bucket_start_timestamp_ms = 2;
+  optional int32 url_variant_id = 3;
+  optional string outcome = 4;
+  optional int64 bandwidth_bps = 5;
+  optional int64 ttfb_ms = 6;
+  optional int64 bytes_downloaded = 7;
+  optional bool is_reused_connection = 8;
+  optional string protocol = 9;
+  optional string bearer = 10;
+}

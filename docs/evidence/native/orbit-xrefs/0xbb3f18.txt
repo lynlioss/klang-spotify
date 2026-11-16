@@ -1,0 +1,43 @@
+
+analysis/spotify/native/liborbit-jni-spotify.so:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+0000000000b72038 <_ZN4asio6detail16service_registry6createINS0_9schedulerENS_17execution_contextEEEPNS4_7serviceEPv>:
+  bb3ef8: 94295cc4     	bl	0x160b208 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x3a69c>
+  bb3efc: 942a0d35     	bl	0x16373d0 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x66864>
+  bb3f00: aa1303e2     	mov	x2, x19
+  bb3f04: 97ffa79c     	bl	0xb9dd74 <_ZN4asio6detail16service_registry6createINS0_9schedulerENS_17execution_contextEEEPNS4_7serviceEPv+0x2bd3c>
+  bb3f08: 9429b100     	bl	0x1620308 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x4f79c>
+  bb3f0c: 910583e8     	add	x8, sp, #0x160
+  bb3f10: 910263e0     	add	x0, sp, #0x98
+  bb3f14: 97fe3906     	bl	0xb4232c <_ZN5boost6detail18core_typeid_lib_idEv+0x292c>
+  bb3f18: 90ffc061     	adrp	x1, 0x3bf000 <_ZTSN10__cxxabiv121__vmi_class_type_infoE+0x4420>
+  bb3f1c: 9133e021     	add	x1, x1, #0xcf8
+  bb3f20: 9100e3e8     	add	x8, sp, #0x38
+  bb3f24: 910583e0     	add	x0, sp, #0x160
+  bb3f28: 9100e3f3     	add	x19, sp, #0x38
+  bb3f2c: 910583f9     	add	x25, sp, #0x160
+  bb3f30: 97fe38ff     	bl	0xb4232c <_ZN5boost6detail18core_typeid_lib_idEv+0x292c>
+  bb3f34: 942b2229     	bl	0x167c7d8 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0xabc6c>
+  bb3f38: 942b9082     	bl	0x1698140 <_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED2Ev@plt>
+  bb3f3c: 910263e0     	add	x0, sp, #0x98
+  bb3f40: 910263fa     	add	x26, sp, #0x98
+  bb3f44: 942b907f     	bl	0x1698140 <_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEED2Ev@plt>
+  bb3f48: 9428c9fe     	bl	0x15e6740 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x15bd4>
+  bb3f4c: 9428c8a4     	bl	0x15e61dc <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x15670>
+  bb3f50: 9428c853     	bl	0x15e609c <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x15530>
+  bb3f54: 3940e3e8     	ldrb	w8, [sp, #0x38]
+  bb3f58: b94043e9     	ldr	w9, [sp, #0x40]
+  bb3f5c: 910263e0     	add	x0, sp, #0x98
+  bb3f60: f94027eb     	ldr	x11, [sp, #0x48]
+  bb3f64: 2a1f03e1     	mov	w1, wzr
+  bb3f68: 52801902     	mov	w2, #0xc8               // =200
+  bb3f6c: 9428db53     	bl	0x15eacb8 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x1a14c>
+  bb3f70: b2400268     	orr	x8, x19, #0x1
+  bb3f74: 9a8b0114     	csel	x20, x8, x11, eq
+  bb3f78: 1a890153     	csel	w19, w10, w9, eq
+  bb3f7c: 942b939d     	bl	0x1698df0 <memset@plt>
+https://login5.spotify.com/v4/login
+Candidate instruction reference. Review surrounding data flow before assigning function semantics.
+

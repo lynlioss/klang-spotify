@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: autodownload_episode_limit.proto
+syntax = "proto3";
+package spotify.autodownload_esperanto.proto;
+message EpisodeLimitRequest {
+  int32 update_throttling = 1;
+}
+message EpisodeLimitResponse {
+  bool theres_no_limit = 1;
+  int32 limit = 2;
+  string error = 3;
+}

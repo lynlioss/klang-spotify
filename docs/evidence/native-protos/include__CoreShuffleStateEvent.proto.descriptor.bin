@@ -1,0 +1,25 @@
+
+#include/CoreShuffleStateEvent.protospotify.event_sender.proto"œ
+CoreShuffleStateEvent!
+event_reason (	ReventReason
+cmd_id (	RcmdId
+cmd_type (	RcmdType
+cmd_shuffle (R
+cmdShuffle 
+cmd_sms_mode (	R
+cmdSmsMode.
+cmd_url_has_sms_lens (RcmdUrlHasSmsLens%
+state_shuffled (RstateShuffled$
+state_sms_mode (	RstateSmsMode2
+state_url_has_sms_lens	 (RstateUrlHasSmsLens9
+state_context_is_enhanced
+ (RstateContextIsEnhanced1
+state_first_rec_index (RstateFirstRecIndex;
+state_first_autoplay_index (RstateFirstAutoplayIndex*
+state_decision_id (	RstateDecisionId$
+state_uri_type (	RstateUriType*
+state_format_type (	RstateFormatType4
+state_internal_shuffle (	RstateInternalShuffle`
+.state_is_enhance_lens_applied_context_metadata (R(stateIsEnhanceLensAppliedContextMetadata<
+playback_settings_shuffled (RplaybackSettingsShuffled;
+playback_settings_sms_mode (	RplaybackSettingsSmsModeBH

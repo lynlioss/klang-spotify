@@ -1,0 +1,19 @@
+
+;spotify/playback_platform/context/v1/context_behavior.proto$spotify.playback_platform.context.v1;spotify/playback_platform/context/v1/behavior/disable.proto:spotify/playback_platform/context/v1/behavior/events.proto:spotify/playback_platform/context/v1/behavior/ledger.proto>spotify/playback_platform/context/v1/behavior/navigation.proto9spotify/playback_platform/context/v1/behavior/queue.protoEspotify/playback_platform/context/v1/behavior/shuffle_algorithm.protoEspotify/playback_platform/context/v1/behavior/shuffle_placement.proto;spotify/playback_platform/context/v1/behavior/signals.proto9spotify/playback_platform/context/v1/behavior/skips.proto9spotify/playback_platform/context/v1/behavior/start.proto<spotify/playback_platform/context/v1/behavior/timeline.proto:spotify/playback_platform/context/v1/behavior/timers.proto"˜
+ContextBehaviorM
+events (25.spotify.playback_platform.context.v1.behavior.EventsReventsM
+timers (25.spotify.playback_platform.context.v1.behavior.TimersRtimersP
+signals (26.spotify.playback_platform.context.v1.behavior.SignalsRsignalsP
+disable (26.spotify.playback_platform.context.v1.behavior.DisableRdisableY
+
+navigation (29.spotify.playback_platform.context.v1.behavior.NavigationR
+navigationJ
+start (24.spotify.playback_platform.context.v1.behavior.StartRstartJ
+skips (24.spotify.playback_platform.context.v1.behavior.SkipsRskipsJ
+queue (24.spotify.playback_platform.context.v1.behavior.QueueRqueueS
+timeline	 (27.spotify.playback_platform.context.v1.behavior.TimelineRtimelineM
+ledger
+ (25.spotify.playback_platform.context.v1.behavior.LedgerRledgerl
+shuffle_algorithm (2?.spotify.playback_platform.context.v1.behavior.ShuffleAlgorithmRshuffleAlgorithml
+shuffle_placement (2?.spotify.playback_platform.context.v1.behavior.ShufflePlacementRshufflePlacementJB*
+$spotify.playback_platform.context.v1HPbproto3

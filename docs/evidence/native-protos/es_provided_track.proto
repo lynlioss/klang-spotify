@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: es_provided_track.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+import "es_context_track.proto";
+message ProvidedTrack {
+  .spotify.player.esperanto.proto.ContextTrack context_track = 1;
+  repeated string removed = 2;
+  repeated string blocked = 3;
+  string provider = 4;
+}

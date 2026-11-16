@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: autodownload_show_state.proto
+syntax = "proto3";
+package spotify.autodownload_esperanto.proto;
+message ShowStateRequest {
+  string uri = 1;
+  int32 update_throttling = 2;
+}
+message ShowStateResponse {
+  string uri = 1;
+  bool enabled = 2;
+  string error = 3;
+}

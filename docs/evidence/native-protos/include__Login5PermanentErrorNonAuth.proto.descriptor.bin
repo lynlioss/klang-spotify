@@ -1,0 +1,7 @@
+
+)include/Login5PermanentErrorNonAuth.protospotify.event_sender.proto"~
+Login5PermanentErrorNonAuth
+
+error_code (R	errorCode#
+error_message (	RerrorMessage
+	from_core (RfromCoreBH

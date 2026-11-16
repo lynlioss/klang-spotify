@@ -1,0 +1,13 @@
+
+(include/PodcastAdSegmentDifference.protospotify.event_sender.proto"ï
+PodcastAdSegmentDifference
+episode_uri (	R
+episodeUri
+lhs_segment (	R
+lhsSegment
+	lhs_start (RlhsStart
+lhs_stop (RlhsStop
+rhs_segment (	R
+rhsSegment
+	rhs_start (RrhsStart
+rhs_stop (RrhsStopBH

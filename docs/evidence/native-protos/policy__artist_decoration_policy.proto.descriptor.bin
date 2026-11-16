@@ -1,0 +1,21 @@
+
+%policy/artist_decoration_policy.protospotify.cosmos_util.proto"Œ
+ArtistDecorationPolicy
+link (Rlink
+name (Rname,
+is_various_artists (RisVariousArtists
+	portraits (R	portraits"Ó
+ ArtistCollectionDecorationPolicy'
+collection_link (RcollectionLink
+is_followed (R
+isFollowed7
+num_tracks_in_collection (RnumTracksInCollection7
+num_albums_in_collection (RnumAlbumsInCollection
+	is_banned (RisBanned
+can_ban (RcanBan=
+num_explicitly_liked_tracks (RnumExplicitlyLikedTracks"‘
+ArtistSyncDecorationPolicy)
+inferred_offline (RinferredOffline#
+offline_state (RofflineState#
+sync_progress (RsyncProgressB*
+$com.spotify.cosmos.util.policy.protoHPbproto3

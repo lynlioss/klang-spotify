@@ -1,0 +1,6 @@
+
+local_list_config.proto(spotify.playlist.local_list_config.proto"d
+LocalListConfig
+name (	Rname
+	image_uri (	RimageUri 
+description (	RdescriptionBHbproto3

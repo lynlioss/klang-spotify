@@ -1,0 +1,9 @@
+
+0spotify/playback_platform/common/v1/locale.proto#spotify.playback_platform.common.v1"m
+Locale!
+language_tag (	RlanguageTag
+date_format (	R
+dateFormat
+time_format (	R
+timeFormatB)
+#spotify.playback_platform.common.v1HPbproto3

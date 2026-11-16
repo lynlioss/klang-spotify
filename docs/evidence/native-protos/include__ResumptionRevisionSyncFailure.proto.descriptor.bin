@@ -1,0 +1,5 @@
+
++include/ResumptionRevisionSyncFailure.protospotify.event_sender.proto"t
+ResumptionRevisionSyncFailure)
+number_revisions (RnumberRevisions(
+http_status_code (RhttpStatusCodeBH

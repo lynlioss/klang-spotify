@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: played_state/episode_played_state.proto
+syntax = "proto2";
+package spotify.cosmos_util.proto;
+import "played_state/playability_restriction.proto";
+message EpisodePlayState {
+  optional uint32 time_left = 1;
+  optional bool is_playable = 2;
+  optional bool is_played = 3;
+  optional uint32 last_played_at = 4;
+  optional .spotify.cosmos_util.proto.PlayabilityRestriction playability_restriction = 5;
+}

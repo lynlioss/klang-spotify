@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: es_traffic_bearer.proto
+syntax = "proto3";
+package spotify.connectivity.traffic.esperanto.proto;
+enum Bearer {
+  BEARER_WIFI = 0;
+  BEARER_CELLULAR = 1;
+  BEARER_UNKNOWN = 2;
+}

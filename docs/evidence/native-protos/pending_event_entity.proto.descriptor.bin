@@ -1,0 +1,7 @@
+
+pending_event_entity.protospotify.pending_events.proto"i
+PendingEventEntity
+
+event_name (	R	eventName
+payload (Rpayload
+username (	RusernameBHbproto3

@@ -1,0 +1,9 @@
+
+recently_played_backend.proto%spotify.recently_played_backend.proto"C
+Context
+uri (	Ruri&
+lastPlayedTime (RlastPlayedTime"Š
+RecentlyPlayedJ
+contexts (2..spotify.recently_played_backend.proto.ContextRcontexts
+offset (Roffset
+total (RtotalBH

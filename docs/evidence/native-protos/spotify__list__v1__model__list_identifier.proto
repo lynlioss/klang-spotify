@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/list_identifier.proto
+syntax = "proto3";
+package spotify.list.v1.model;
+message ListIdentifier {
+  oneof _uri {
+    string uri = 1;
+  }
+  oneof _revision {
+    bytes revision = 2;
+  }
+}

@@ -1,0 +1,68 @@
+
+'include/ContextPlayerCommandEvent.protospotify.event_sender.proto"ä
+ContextPlayerCommandEvent
+command (	Rcommand%
+command_source (	RcommandSource
+
+command_id (	R	commandId+
+device_identifier (	RdeviceIdentifier)
+system_initiated (RsystemInitiated4
+command_initiated_time (RcommandInitiatedTime-
+feature_identifier (	RfeatureIdentifierm
+current_context (2D.spotify.event_sender.proto.ContextPlayerCommandEvent.CurrentContextRcurrentContextj
+command_params	 (2C.spotify.event_sender.proto.ContextPlayerCommandEvent.CommandParamsRcommandParams(
+page_instance_id
+ (	RpageInstanceId%
+interaction_id (	RinteractionId»
+CurrentContext
+context_uri (	R
+contextUri
+	track_uri (	RtrackUri
+	track_uid (	RtrackUid
+
+is_playing (R	isPlaying
+	is_paused (RisPaused!
+is_buffering (RisBuffering(
+next_track_count (RnextTrackCount(
+prev_track_count (RprevTrackCount7
+position_as_of_timestamp	 (RpositionAsOfTimestamp
+	timestamp
+ (R	timestamp%
+playback_speed (RplaybackSpeed
+duration (Rduration+
+shuffling_context (RshufflingContext+
+repeating_context (RrepeatingContext'
+repeating_track (RrepeatingTrack¿
+CommandParams
+context_uri (	R
+contextUri
+	track_uri (	RtrackUri
+	track_uid (	RtrackUid
+position (Rposition<
+creator_timestamp_position (RcreatorTimestampPosition#
+seek_relative (	RseekRelative)
+initially_paused (RinitiallyPaused
+reason (	Rreason'
+repeating_track	 (RrepeatingTrack+
+repeating_context
+ (RrepeatingContext+
+shuffling_context (RshufflingContext%
+playback_speed (RplaybackSpeed(
+next_track_count (RnextTrackCount(
+prev_track_count (RprevTrackCount
+
+timer_type (	R	timerType%
+timer_duration (RtimerDuration
+	signal_id (	RsignalId#
+allow_seeking (RallowSeekingh
+transfer (2L.spotify.event_sender.proto.ContextPlayerCommandEvent.CommandParams.TransferRtransfer
+
+session_id (	R	sessionId%
+queue_revision (	RqueueRevisionÚ
+Transfer%
+restore_paused (	RrestorePaused)
+restore_position (	RrestorePosition#
+restore_track (	RrestoreTrack%
+retain_session (	RretainSession
+reason (	Rreason
+license (	RlicenseBH

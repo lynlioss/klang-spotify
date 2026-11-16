@@ -1,0 +1,20 @@
+
+"include/SegmentTransferStats.protospotify.event_sender.proto"Ï
+SegmentTransferStatsR
+segment (28.spotify.event_sender.proto.SegmentTransferStats.SegmentRsegment
+
+session_id (	R	sessionId
+
+cdn_domain (	R	cdnDomain&
+errors_from_cdn (RerrorsFromCdn
+	media_url (	RmediaUrlß
+Segment.
+cdn_initial_latency (RcdnInitialLatency
+
+cdn_avg_bw (RcdnAvgBw
+
+total_time (R	totalTime#
+profile_index (RprofileIndex
+time_offset (R
+timeOffset!
+content_type (RcontentTypeBH

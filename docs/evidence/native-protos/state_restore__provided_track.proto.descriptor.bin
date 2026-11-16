@@ -1,0 +1,17 @@
+
+"state_restore/provided_track.proto"spotify.player.proto.state_restorerestrictions.proto" 
+ProvidedTrack
+uid (	Ruid
+uri (	Ruri[
+metadata (2?.spotify.player.proto.state_restore.ProvidedTrack.MetadataEntryRmetadata
+provider (	Rprovider
+removed (	Rremoved
+blocked (	Rblockedt
+internal_metadata (2G.spotify.player.proto.state_restore.ProvidedTrack.InternalMetadataEntryRinternalMetadataF
+restrictions (2".spotify.player.proto.RestrictionsRrestrictions;
+MetadataEntry
+key (	Rkey
+value (	Rvalue:8C
+InternalMetadataEntry
+key (	Rkey
+value (	Rvalue:8BH

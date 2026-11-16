@@ -1,0 +1,19 @@
+
+<include/ExtHostedPlaybackAdPositionAdjustmentException.protospotify.event_sender.proto"„
+.ExtHostedPlaybackAdPositionAdjustmentException
+playback_id (R
+playbackId
+position_ms (R
+positionMs'
+mapping_timeout (RmappingTimeout+
+seek_interruption (RseekInterruption8
+track_close_interruption (RtrackCloseInterruption#
+mapping_error (RmappingError1
+position_out_of_range (RpositionOutOfRange.
+creator_position_ms (RcreatorPositionMs2
+converted_position_ms	 (RconvertedPositionMs'
+playback_failed
+ (RplaybackFailed0
+fallback_position_ms (RfallbackPositionMs:
+fallback_position_invalid (RfallbackPositionInvalid-
+canonical_timeline (	RcanonicalTimelineBH

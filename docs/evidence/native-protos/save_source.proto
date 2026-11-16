@@ -1,0 +1,19 @@
+// Recovered descriptor. Original file: save_source.proto
+syntax = "proto3";
+package spotify.list_collection.save_source.proto;
+enum SourceTool {
+  SOURCE_TOOL_UNSPECIFIED = 0;
+  SOURCE_TOOL_PROMPT = 1;
+  SOURCE_TOOL_STUDIO_AGENT = 2;
+}
+message SaveSource {
+  oneof _original_uri {
+    string original_uri = 1;
+  }
+  oneof _interaction_id {
+    string interaction_id = 2;
+  }
+  oneof _source_tool {
+    .spotify.list_collection.save_source.proto.SourceTool source_tool = 3;
+  }
+}

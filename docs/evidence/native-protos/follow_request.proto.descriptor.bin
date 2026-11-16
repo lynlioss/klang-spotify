@@ -1,0 +1,11 @@
+
+follow_request.proto#spotify.socialgraph_esperanto.proto!socialgraph_response_status.proto"C
+FollowRequest
+username (	Rusername
+follow (Rfollow"E
+FollowRequestV4
+username (	Rusername
+follow (Rfollow"]
+FollowResponseK
+status (23.spotify.socialgraph_esperanto.proto.ResponseStatusRstatusB/
+#spotify.socialgraph.esperanto.protoHP¢ESPbproto3

@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: es_get_queue_request.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+message GetQueueRequest {
+  oneof _logical_playback_identifier {
+    string logical_playback_identifier = 1;
+  }
+}

@@ -1,0 +1,22 @@
+
+include/Stutter.protospotify.event_sender.proto"Ž
+Stutter
+file_id (RfileId
+playback_id (R
+playbackId
+track (	Rtrack
+buffer_size (R
+bufferSize&
+max_buffer_size (RmaxBufferSize(
+file_byte_offset (RfileByteOffset&
+file_byte_total (RfileByteTotal#
+target_buffer (RtargetBuffer!
+audio_driver	 (	RaudioDriver0
+estimated_frame_loss
+ (RestimatedFrameLoss
+position_ms (R
+positionMs,
+total_prebuffer_ms (RtotalPrebufferMs.
+driver_prebuffer_ms (RdriverPrebufferMs
+buffered_ms (R
+bufferedMsBH

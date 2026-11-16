@@ -1,0 +1,44 @@
+
+product_state.proto%spotify.product_state.esperanto.proto"
+GetValuesRequest"
+SubValuesRequest"¸
+PutOverridesValuesRequesta
+pairs (2K.spotify.product_state.esperanto.proto.PutOverridesValuesRequest.PairsEntryRpairs8
+
+PairsEntry
+key (	Rkey
+value (	Rvalue:8"/
+DelOverridesValuesRequest
+keys (	Rkeys"¦
+PutValuesRequestX
+pairs (2B.spotify.product_state.esperanto.proto.PutValuesRequest.PairsEntryRpairs8
+
+PairsEntry
+key (	Rkey
+value (	Rvalue:8"
+PutValuesResponse"®
+PutValuesSyncRequest\
+pairs (2F.spotify.product_state.esperanto.proto.PutValuesSyncRequest.PairsEntryRpairs8
+
+PairsEntry
+key (	Rkey
+value (	Rvalue:8"6
+PutValuesSyncResponse
+
+error_code (R	errorCode"¨
+GetValuesResponseY
+pairs (2C.spotify.product_state.esperanto.proto.GetValuesResponse.PairsEntryRpairs8
+
+PairsEntry
+key (	Rkey
+value (	Rvalue:8"
+PutOverridesValuesResponse"
+DelOverridesValuesResponse2Ö
+ProductState~
+	GetValues7.spotify.product_state.esperanto.proto.GetValuesRequest8.spotify.product_state.esperanto.proto.GetValuesResponse€
+	SubValues7.spotify.product_state.esperanto.proto.SubValuesRequest8.spotify.product_state.esperanto.proto.GetValuesResponse0~
+	PutValues7.spotify.product_state.esperanto.proto.PutValuesRequest8.spotify.product_state.esperanto.proto.PutValuesResponseŠ
+PutValuesSync;.spotify.product_state.esperanto.proto.PutValuesSyncRequest<.spotify.product_state.esperanto.proto.PutValuesSyncResponse™
+PutOverridesValues@.spotify.product_state.esperanto.proto.PutOverridesValuesRequestA.spotify.product_state.esperanto.proto.PutOverridesValuesResponse™
+DelOverridesValues@.spotify.product_state.esperanto.proto.DelOverridesValuesRequestA.spotify.product_state.esperanto.proto.DelOverridesValuesResponseB<
+6com.spotify.connectivity.product_state.esperanto.protoHPbproto3

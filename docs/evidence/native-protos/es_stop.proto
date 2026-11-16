@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: es_stop.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+import "es_command_options.proto";
+import "es_logging_params.proto";
+message StopRequest {
+  enum Reason {
+    INTERACTIVE = 0;
+    REMOTE_TRANSFER = 1;
+    SHUTDOWN = 2;
+  }
+  .spotify.player.esperanto.proto.CommandOptions options = 1;
+  .spotify.player.esperanto.proto.StopRequest.Reason reason = 2;
+  .spotify.player.esperanto.proto.LoggingParams logging_params = 3;
+}

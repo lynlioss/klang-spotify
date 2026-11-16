@@ -1,0 +1,10 @@
+
+'perf_metrics/perf_metrics_service.proto$spotify.perf_metrics.esperanto.proto"j
+PerfMetricsRequest%
+terminal_state (	RterminalState-
+foreground_startup (RforegroundStartup"/
+PerfMetricsResponse
+success (Rsuccess2œ
+PerfMetricsService…
+TerminateState8.spotify.perf_metrics.esperanto.proto.PerfMetricsRequest9.spotify.perf_metrics.esperanto.proto.PerfMetricsResponseB,
+(com.spotify.performance.perfmetricsprotoHbproto3

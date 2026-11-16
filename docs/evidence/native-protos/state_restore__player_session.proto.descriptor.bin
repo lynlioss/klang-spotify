@@ -1,0 +1,27 @@
+
+"state_restore/player_session.proto"spotify.player.proto.state_restorecontext_track.protocontext_player_options.protologging_params.protoplay_origin.protoplayer_license.protoprepare_play_options.proto"state_restore/context_loader.proto(state_restore/context_player_rules.proto"state_restore/playback_state.proto'state_restore/player_session_fake.proto"state_restore/provided_track.proto"ô	
+PlayerSessionZ
+prepare_play_options (2(.spotify.player.proto.PreparePlayOptionsRpreparePlayOptionsX
+playback_state (21.spotify.player.proto.state_restore.PlaybackStateRplaybackStateG
+track (21.spotify.player.proto.state_restore.ProvidedTrackRtrackK
+track_to_skip_to (2".spotify.player.proto.ContextTrackRtrackToSkipTo*
+given_playback_id (RgivenPlaybackIdb
+next_command_logging_params (2#.spotify.player.proto.LoggingParamsRnextCommandLoggingParamsb
+curr_command_logging_params (2#.spotify.player.proto.LoggingParamsRcurrCommandLoggingParamsA
+play_origin (2 .spotify.player.proto.PlayOriginR
+playOrigin
+
+is_playing	 (R	isPlaying
+	is_paused
+ (RisPaused.
+is_system_initiated (RisSystemInitiated
+is_finished (R
+isFinishedD
+options (2*.spotify.player.proto.ContextPlayerOptionsRoptions#
+playback_seed (RplaybackSeed!
+num_advances (RnumAdvances"
+did_skip_prev (RdidSkipPrev=
+license (2#.spotify.player.proto.PlayerLicenseRlicenseL
+rules (26.spotify.player.proto.state_restore.ContextPlayerRulesRrulesI
+loader (21.spotify.player.proto.state_restore.ContextLoaderRloaderI
+faked (25.spotify.player.proto.state_restore.PlayerSessionFakeRfakeBH

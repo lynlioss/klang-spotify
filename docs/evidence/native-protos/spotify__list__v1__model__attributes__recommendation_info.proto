@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/attributes/recommendation_info.proto
+syntax = "proto3";
+package spotify.list.v1.model.attributes;
+message RecommendationInfo {
+  oneof _is_recommendation {
+    bool is_recommendation = 1;
+  }
+}

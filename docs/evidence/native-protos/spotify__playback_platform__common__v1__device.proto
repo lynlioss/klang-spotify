@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: spotify/playback_platform/common/v1/device.proto
+syntax = "proto3";
+package spotify.playback_platform.common.v1;
+message Device {
+  string client_id = 1;
+  string device_id = 2;
+}

@@ -1,0 +1,15 @@
+
+$your_library_contains_response.protospotify.your_library.proto"B
+!YourLibraryContainsResponseHeader
+
+is_loading (R	isLoading"Y
+!YourLibraryContainsResponseEntity
+uri (	Ruri"
+is_in_library (RisInLibrary"‚
+YourLibraryContainsResponseU
+header (2=.spotify.your_library.proto.YourLibraryContainsResponseHeaderRheaderU
+entity (2=.spotify.your_library.proto.YourLibraryContainsResponseEntityRentity
+status_codeb (R
+statusCode
+errorc (	RerrorB*
+$spotify.your_library.esperanto.protoHPbproto3

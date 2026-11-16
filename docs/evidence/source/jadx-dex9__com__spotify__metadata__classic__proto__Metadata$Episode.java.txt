@@ -1,0 +1,94 @@
+Source: analysis/spotify/jadx-dex9/sources/com/spotify/metadata/classic/proto/Metadata$Episode.java
+SHA256: b2e191b47893870191cb4ff81489fb889d7c38541569d1d38be336a54cbeb1cb
+Lines: 1-90
+
+1: package com.spotify.metadata.classic.proto;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes9.dex */
+4: public final class Metadata$Episode extends com.google.protobuf.h implements p.qhj0 {
+5:     public static final int ALLOW_BACKGROUND_PLAYBACK_FIELD_NUMBER = 81;
+6:     public static final int AUDIO_FIELD_NUMBER = 12;
+7:     public static final int AUDIO_PREVIEW_FIELD_NUMBER = 74;
+8:     public static final int AVAILABILITY_FIELD_NUMBER = 82;
+9:     public static final int CONTENT_RATINGS_FIELD_NUMBER = 95;
+10:     public static final int COVER_IMAGE_FIELD_NUMBER = 68;
+11:     private static final com.spotify.metadata.classic.proto.Metadata$Episode DEFAULT_INSTANCE = null;
+12:     public static final int DEPRECATED_POPULARITY_FIELD_NUMBER = 67;
+13:     public static final int DESCRIPTION_FIELD_NUMBER = 64;
+14:     public static final int DURATION_FIELD_NUMBER = 7;
+15:     public static final int EMPLOYEE_ONLY_FIELD_NUMBER = 85;
+16:     public static final int EPISODE_NUMBER_FIELD_NUMBER = 89;
+17:     public static final int EXPLICIT_FIELD_NUMBER = 70;
+18:     public static final int EXTERNAL_URL_FIELD_NUMBER = 83;
+19:     public static final int FREEZE_FRAME_FIELD_NUMBER = 76;
+20:     public static final int GID_FIELD_NUMBER = 1;
+21:     public static final int INTERPRET_RESTRICTION_USING_GEOIP_FIELD_NUMBER = 78;
+22:     public static final int IS_AUDIOBOOK_CHAPTER_FIELD_NUMBER = 96;
+23:     public static final int KEYWORD_FIELD_NUMBER = 77;
+24:     public static final int LANGUAGE_FIELD_NUMBER = 69;
+25:     public static final int LOCALIZED_NAME_FIELD_NUMBER = 23;
+26:     public static final int MUSIC_AND_TALK_FIELD_NUMBER = 91;
+27:     public static final int NAME_FIELD_NUMBER = 2;
+28:     public static final int NUMBER_FIELD_NUMBER = 65;
+29:     public static final int ORIGINAL_AUDIO_FIELD_NUMBER = 84;
+30:     private static volatile p.whs0 PARSER = null;
+31:     public static final int PUBLISH_TIME_FIELD_NUMBER = 66;
+32:     public static final int RESTRICTION_FIELD_NUMBER = 75;
+33:     public static final int RSS_GUID_FIELD_NUMBER = 86;
+34:     public static final int SALE_PERIOD_FIELD_NUMBER = 80;
+35:     public static final int SEASON_NUMBER_FIELD_NUMBER = 88;
+36:     public static final int SHOW_FIELD_NUMBER = 71;
+37:     public static final int SUPPRESS_MONETIZATION_FIELD_NUMBER = 79;
+38:     public static final int TYPE_FIELD_NUMBER = 87;
+39:     public static final int VIDEO_FIELD_NUMBER = 72;
+40:     public static final int VIDEO_PREVIEW_FIELD_NUMBER = 73;
+41:     private boolean allowBackgroundPlayback_;
+42:     private p.he90 audioPreview_;
+43:     private p.he90 audio_;
+44:     private p.he90 availability_;
+45:     private int bitField0_;
+46:     private p.he90 contentRatings_;
+47:     private com.spotify.metadata.classic.proto.Metadata$ImageGroup coverImage_;
+48:     private int deprecatedPopularity_;
+49:     private java.lang.String description_;
+50:     private int duration_;
+51:     private boolean employeeOnly_;
+52:     private int episodeNumber_;
+53:     private boolean explicit_;
+54:     private java.lang.String externalUrl_;
+55:     private com.spotify.metadata.classic.proto.Metadata$ImageGroup freezeFrame_;
+56:     private p.jjc gid_;
+57:     private boolean interpretRestrictionUsingGeoip_;
+58:     private boolean isAudiobookChapter_;
+59:     private p.he90 keyword_;
+60:     private java.lang.String language_;
+61:     private p.he90 localizedName_;
+62:     private boolean musicAndTalk_;
+63:     private java.lang.String name_;
+64:     private int number_;
+65:     private com.spotify.metadata.classic.proto.Metadata$Audio originalAudio_;
+66:     private com.spotify.metadata.classic.proto.Metadata$Date publishTime_;
+67:     private p.he90 restriction_;
+68:     private java.lang.String rssGuid_;
+69:     private p.he90 salePeriod_;
+70:     private int seasonNumber_;
+71:     private com.spotify.metadata.classic.proto.Metadata$Show show_;
+72:     private boolean suppressMonetization_;
+73:     private int type_;
+74:     private p.he90 videoPreview_;
+75:     private p.he90 video_;
+76: 
+77:     static {
+78:             com.spotify.metadata.classic.proto.Metadata$Episode r0 = new com.spotify.metadata.classic.proto.Metadata$Episode
+79:             r0.<init>()
+80:             com.spotify.metadata.classic.proto.Metadata$Episode.DEFAULT_INSTANCE = r0
+81:             java.lang.Class<com.spotify.metadata.classic.proto.Metadata$Episode> r1 = com.spotify.metadata.classic.proto.Metadata$Episode.class
+82:             com.google.protobuf.h.registerDefaultInstance(r1, r0)
+83:             return
+84:     }
+85: 
+86:     private Metadata$Episode() {
+87:             r2 = this;
+88:             r2.<init>()
+89:             p.bjc r0 = p.jjc.b
+90:             r2.gid_ = r0

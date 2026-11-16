@@ -1,0 +1,7931 @@
+[
+  {
+    "name": "audio_sink_chain_wrapper_esperanto.proto",
+    "package": "spotify.audio_sink_chain_wrapper_esperanto.proto",
+    "offset": 5876692,
+    "offsetHex": "0x59abd4",
+    "bytes": 1284,
+    "messages": 12,
+    "services": 0
+  },
+  {
+    "name": "spotify/decipher/agent/v1/client_messages.proto",
+    "package": "spotify.decipher.agent.v1",
+    "offset": 5878388,
+    "offsetHex": "0x59b274",
+    "bytes": 2044,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "spotify/decipher/agent/v1/actions.proto",
+    "package": "spotify.decipher.agent.v1",
+    "offset": 5880640,
+    "offsetHex": "0x59bb40",
+    "bytes": 1002,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "client_token.proto",
+    "package": "spotify.clienttoken.serialization.v0",
+    "offset": 5881756,
+    "offsetHex": "0x59bf9c",
+    "bytes": 364,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "connectivity.proto",
+    "package": "spotify.clienttoken.data.v0",
+    "offset": 5882852,
+    "offsetHex": "0x59c3e4",
+    "bytes": 3983,
+    "messages": 12,
+    "services": 0
+  },
+  {
+    "name": "spotify/client_token/v0/client_token_http.proto",
+    "package": "spotify.clienttoken.http.v0",
+    "offset": 5887484,
+    "offsetHex": "0x59d5fc",
+    "bytes": 3310,
+    "messages": 16,
+    "services": 0
+  },
+  {
+    "name": "es_connection_info_receiver.proto",
+    "package": "spotify.connectivity.reachability.esperanto.proto",
+    "offset": 5891020,
+    "offsetHex": "0x59e3cc",
+    "bytes": 1507,
+    "messages": 3,
+    "services": 1
+  },
+  {
+    "name": "es_reachability_provider.proto",
+    "package": "spotify.connectivity.reachability.esperanto.proto",
+    "offset": 5892632,
+    "offsetHex": "0x59ea18",
+    "bytes": 1173,
+    "messages": 3,
+    "services": 1
+  },
+  {
+    "name": "es_connection_availability.proto",
+    "package": "spotify.connectivity.reachability.esperanto.proto",
+    "offset": 5893860,
+    "offsetHex": "0x59eee4",
+    "bytes": 266,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_connection_type.proto",
+    "package": "spotify.connectivity.reachability.esperanto.proto",
+    "offset": 5894164,
+    "offsetHex": "0x59f014",
+    "bytes": 535,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_network_capabilities.proto",
+    "package": "spotify.connectivity.reachability.esperanto.proto",
+    "offset": 5894708,
+    "offsetHex": "0x59f234",
+    "bytes": 231,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "es_not_reachable.proto",
+    "package": "spotify.connectivity.reachability.esperanto.proto",
+    "offset": 5894992,
+    "offsetHex": "0x59f350",
+    "bytes": 520,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "es_reachability.proto",
+    "package": "spotify.connectivity.reachability.esperanto.proto",
+    "offset": 5895560,
+    "offsetHex": "0x59f588",
+    "bytes": 426,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_reachable.proto",
+    "package": "spotify.connectivity.reachability.esperanto.proto",
+    "offset": 5896004,
+    "offsetHex": "0x59f744",
+    "bytes": 294,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_client_token.proto",
+    "package": "spotify.connectivity.auth.client_token.esperanto.proto",
+    "offset": 5896428,
+    "offsetHex": "0x59f8ec",
+    "bytes": 705,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "es_connection_quality_service.proto",
+    "package": "spotify.connectivity.connection_quality.esperanto.proto",
+    "offset": 5897196,
+    "offsetHex": "0x59fbec",
+    "bytes": 701,
+    "messages": 1,
+    "services": 1
+  },
+  {
+    "name": "product_state.proto",
+    "package": "spotify.product_state.esperanto.proto",
+    "offset": 5898100,
+    "offsetHex": "0x59ff74",
+    "bytes": 1917,
+    "messages": 11,
+    "services": 1
+  },
+  {
+    "name": "es_connectivity_policy.proto",
+    "package": "spotify.connectivity.esperanto.proto",
+    "offset": 5900384,
+    "offsetHex": "0x5a0860",
+    "bytes": 2760,
+    "messages": 11,
+    "services": 1
+  },
+  {
+    "name": "es_host.proto",
+    "package": "spotify.connectivity.hosts.esperanto.proto",
+    "offset": 5903256,
+    "offsetHex": "0x5a1398",
+    "bytes": 147,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_hosts.proto",
+    "package": "spotify.connectivity.hosts.esperanto.proto",
+    "offset": 5903448,
+    "offsetHex": "0x5a1458",
+    "bytes": 290,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_service_type.proto",
+    "package": "spotify.connectivity.hosts.esperanto.proto",
+    "offset": 5903768,
+    "offsetHex": "0x5a1598",
+    "bytes": 329,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "proto/connection_metrics.proto",
+    "package": "spotify.connectivity.http.proto",
+    "offset": 5904300,
+    "offsetHex": "0x5a17ac",
+    "bytes": 1401,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_connection_id.proto",
+    "package": "spotify.connectivity.pubsub.esperanto.proto",
+    "offset": 5905740,
+    "offsetHex": "0x5a1d4c",
+    "bytes": 162,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_ident.proto",
+    "package": "spotify.connectivity.pubsub.esperanto.proto",
+    "offset": 5905932,
+    "offsetHex": "0x5a1e0c",
+    "bytes": 153,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_ident_filter.proto",
+    "package": "spotify.connectivity.pubsub.esperanto.proto",
+    "offset": 5906116,
+    "offsetHex": "0x5a1ec4",
+    "bytes": 168,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_pushed_message.proto",
+    "package": "spotify.connectivity.pubsub.esperanto.proto",
+    "offset": 5906368,
+    "offsetHex": "0x5a1fc0",
+    "bytes": 520,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_key.proto",
+    "package": "spotify.connectivity.pubsub.esperanto.proto",
+    "offset": 5906928,
+    "offsetHex": "0x5a21f0",
+    "bytes": 145,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_auth_storage_result.proto",
+    "package": "spotify.connectivity.auth.storage.esperanto.proto",
+    "offset": 5907104,
+    "offsetHex": "0x5a22a0",
+    "bytes": 335,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_stored_user_info.proto",
+    "package": "spotify.connectivity.auth.storage.esperanto.proto",
+    "offset": 5907496,
+    "offsetHex": "0x5a2428",
+    "bytes": 532,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_auth_blob.proto",
+    "package": "spotify.connectivity.auth.common.esperanto.proto",
+    "offset": 5908084,
+    "offsetHex": "0x5a2674",
+    "bytes": 531,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_encrypted_stored_credentials.proto",
+    "package": "spotify.connectivity.auth.common.esperanto.proto",
+    "offset": 5908660,
+    "offsetHex": "0x5a28b4",
+    "bytes": 290,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_unencrypted_stored_credentials.proto",
+    "package": "spotify.connectivity.auth.common.esperanto.proto",
+    "offset": 5908988,
+    "offsetHex": "0x5a29fc",
+    "bytes": 282,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_traffic_events.proto",
+    "package": "spotify.connectivity.traffic.esperanto.proto",
+    "offset": 5909576,
+    "offsetHex": "0x5a2c48",
+    "bytes": 2378,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "es_traffic_connection_info.proto",
+    "package": "spotify.connectivity.traffic.esperanto.proto",
+    "offset": 5912040,
+    "offsetHex": "0x5a35e8",
+    "bytes": 263,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_traffic_bearer.proto",
+    "package": "spotify.connectivity.traffic.esperanto.proto",
+    "offset": 5912312,
+    "offsetHex": "0x5a36f8",
+    "bytes": 201,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "es_traffic_connection_metrics.proto",
+    "package": "spotify.connectivity.traffic.esperanto.proto",
+    "offset": 5912568,
+    "offsetHex": "0x5a37f8",
+    "bytes": 527,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_traffic_failure_reason.proto",
+    "package": "spotify.connectivity.traffic.esperanto.proto",
+    "offset": 5913104,
+    "offsetHex": "0x5a3a10",
+    "bytes": 285,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "es_traffic_request_info.proto",
+    "package": "spotify.connectivity.traffic.esperanto.proto",
+    "offset": 5913508,
+    "offsetHex": "0x5a3ba4",
+    "bytes": 718,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_traffic_http_method.proto",
+    "package": "spotify.connectivity.traffic.esperanto.proto",
+    "offset": 5914252,
+    "offsetHex": "0x5a3e8c",
+    "bytes": 388,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "es_traffic_response_info.proto",
+    "package": "spotify.connectivity.traffic.esperanto.proto",
+    "offset": 5914672,
+    "offsetHex": "0x5a4030",
+    "bytes": 228,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_traffic_transaction_metrics.proto",
+    "package": "spotify.connectivity.traffic.esperanto.proto",
+    "offset": 5915052,
+    "offsetHex": "0x5a41ac",
+    "bytes": 1285,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_traffic_fetch_type.proto",
+    "package": "spotify.connectivity.traffic.esperanto.proto",
+    "offset": 5916348,
+    "offsetHex": "0x5a46bc",
+    "bytes": 226,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "es_session.proto",
+    "package": "spotify.connectivity.auth.esperanto.proto",
+    "offset": 5916660,
+    "offsetHex": "0x5a47f4",
+    "bytes": 1120,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "counters_storage.proto",
+    "package": "spotify.pending_events.proto",
+    "offset": 5917860,
+    "offsetHex": "0x5a4ca4",
+    "bytes": 373,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "pe_sequence_number_entity.proto",
+    "package": "spotify.pending_events.proto",
+    "offset": 5918296,
+    "offsetHex": "0x5a4e58",
+    "bytes": 231,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "pending_event_entity.proto",
+    "package": "spotify.pending_events.proto",
+    "offset": 5918572,
+    "offsetHex": "0x5a4f6c",
+    "bytes": 177,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "trace_output.proto",
+    "package": "spotify.perf_metrics.impl.proto",
+    "offset": 5919116,
+    "offsetHex": "0x5a518c",
+    "bytes": 1934,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "parametric_eq_esperanto.proto",
+    "package": "spotify.parametric_eq_esperanto.proto",
+    "offset": 5921208,
+    "offsetHex": "0x5a59b8",
+    "bytes": 799,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "puffin_error.proto",
+    "package": "spotify.puffin_esperanto.proto",
+    "offset": 5922060,
+    "offsetHex": "0x5a5d0c",
+    "bytes": 252,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "puffin_error_code.proto",
+    "package": "spotify.puffin_esperanto.proto",
+    "offset": 5922324,
+    "offsetHex": "0x5a5e14",
+    "bytes": 227,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "puffin_filter_request.proto",
+    "package": "spotify.puffin_esperanto.proto",
+    "offset": 5922616,
+    "offsetHex": "0x5a5f38",
+    "bytes": 408,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "puffin_library_version_response.proto",
+    "package": "spotify.puffin_esperanto.proto",
+    "offset": 5923064,
+    "offsetHex": "0x5a60f8",
+    "bytes": 183,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "puffin_processing_compatibility.proto",
+    "package": "spotify.puffin_esperanto.proto",
+    "offset": 5923276,
+    "offsetHex": "0x5a61cc",
+    "bytes": 195,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_automix_bundle.proto",
+    "package": "spotify.automix.bundle.esperanto.proto",
+    "offset": 5923504,
+    "offsetHex": "0x5a62b0",
+    "bytes": 449,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "mixing_bundle.proto",
+    "package": "spotify.automix.bundle.proto",
+    "offset": 5924780,
+    "offsetHex": "0x5a67ac",
+    "bytes": 4899,
+    "messages": 23,
+    "services": 0
+  },
+  {
+    "name": "es_automix.proto",
+    "package": "spotify.automix.esperanto.proto",
+    "offset": 5930416,
+    "offsetHex": "0x5a7db0",
+    "bytes": 5668,
+    "messages": 25,
+    "services": 1
+  },
+  {
+    "name": "automation_value_semantics.proto",
+    "package": "spotify.automix.proto",
+    "offset": 5936612,
+    "offsetHex": "0x5a95e4",
+    "bytes": 2865,
+    "messages": 11,
+    "services": 0
+  },
+  {
+    "name": "collection_ban_global.proto",
+    "package": "spotify.collection_esperanto.proto",
+    "offset": 5939608,
+    "offsetHex": "0x5aa198",
+    "bytes": 203,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "collection_ban_in_play_context.proto",
+    "package": "spotify.collection_esperanto.proto",
+    "offset": 5939892,
+    "offsetHex": "0x5aa2b4",
+    "bytes": 338,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "collection_snoozed_recs.proto",
+    "package": "spotify.collection_esperanto.proto",
+    "offset": 5940352,
+    "offsetHex": "0x5aa480",
+    "bytes": 599,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "collection_status.proto",
+    "package": "spotify.collection_esperanto.proto",
+    "offset": 5941012,
+    "offsetHex": "0x5aa714",
+    "bytes": 175,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "collection_unplayed.proto",
+    "package": "spotify.collection_esperanto.proto",
+    "offset": 5941224,
+    "offsetHex": "0x5aa7e8",
+    "bytes": 279,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "collection_add_remove_items_request.proto",
+    "package": "spotify.collection_cosmos.proto",
+    "offset": 5941580,
+    "offsetHex": "0x5aa94c",
+    "bytes": 541,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "collection_ban_request.proto",
+    "package": "spotify.collection_cosmos.proto",
+    "offset": 5942204,
+    "offsetHex": "0x5aabbc",
+    "bytes": 330,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "collection_contains_request.proto",
+    "package": "spotify.collection_cosmos.proto",
+    "offset": 5942624,
+    "offsetHex": "0x5aad60",
+    "bytes": 410,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "collection_decorate_request.proto",
+    "package": "spotify.collection_cosmos.proto",
+    "offset": 5943188,
+    "offsetHex": "0x5aaf94",
+    "bytes": 1296,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "collection_decoration_policy.proto",
+    "package": "spotify.collection_cosmos.proto",
+    "offset": 5944796,
+    "offsetHex": "0x5ab5dc",
+    "bytes": 2933,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "collection_get_artist_view_request.proto",
+    "package": "spotify.collection_cosmos.proto",
+    "offset": 5947852,
+    "offsetHex": "0x5ac1cc",
+    "bytes": 797,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "collection_get_bucket_sync_status_request.proto",
+    "package": "spotify.collection_cosmos.proto",
+    "offset": 5948716,
+    "offsetHex": "0x5ac52c",
+    "bytes": 361,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "collection_get_unplayed_episodes_request.proto",
+    "package": "spotify.collection_cosmos.proto",
+    "offset": 5949244,
+    "offsetHex": "0x5ac73c",
+    "bytes": 948,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "collection_item.proto",
+    "package": "spotify.collection_cosmos.proto",
+    "offset": 5950568,
+    "offsetHex": "0x5acc68",
+    "bytes": 3097,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "collection_offline_track_list_request.proto",
+    "package": "spotify.collection_cosmos.proto",
+    "offset": 5953764,
+    "offsetHex": "0x5ad8e4",
+    "bytes": 348,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "status.proto",
+    "package": "spotify.collection_cosmos.proto",
+    "offset": 5954160,
+    "offsetHex": "0x5ada70",
+    "bytes": 113,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "collection_platform_items.proto",
+    "package": "spotify.collection_platform.proto",
+    "offset": 5954364,
+    "offsetHex": "0x5adb3c",
+    "bytes": 522,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "collection_platform_requests.proto",
+    "package": "spotify.collection_platform.proto",
+    "offset": 5955068,
+    "offsetHex": "0x5addfc",
+    "bytes": 1549,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "collection_platform_responses.proto",
+    "package": "spotify.collection_platform.proto",
+    "offset": 5956808,
+    "offsetHex": "0x5ae4c8",
+    "bytes": 1033,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "common_capping.proto",
+    "package": "spotify.common_capping.impl.common_capping_proto",
+    "offset": 5958248,
+    "offsetHex": "0x5aea68",
+    "bytes": 3594,
+    "messages": 15,
+    "services": 1
+  },
+  {
+    "name": "cappingapi.proto",
+    "package": "spotify.cappingapi.v1",
+    "offset": 5962244,
+    "offsetHex": "0x5afa04",
+    "bytes": 2069,
+    "messages": 9,
+    "services": 0
+  },
+  {
+    "name": "storage.proto",
+    "package": "spotify.cappingapi.storage",
+    "offset": 5964544,
+    "offsetHex": "0x5b0300",
+    "bytes": 1035,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "es_image.proto",
+    "package": "spotify.image.esperanto.proto",
+    "offset": 5965788,
+    "offsetHex": "0x5b07dc",
+    "bytes": 1271,
+    "messages": 6,
+    "services": 1
+  },
+  {
+    "name": "request_failure.proto",
+    "package": "spotify.image.proto",
+    "offset": 5967168,
+    "offsetHex": "0x5b0d40",
+    "bytes": 162,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "image_resolve.proto",
+    "package": "spotify.imageresolve.proto",
+    "offset": 5967484,
+    "offsetHex": "0x5b0e7c",
+    "bytes": 836,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "es_media_prefetch.proto",
+    "package": "spotify.prefetch_esperanto.proto",
+    "offset": 5968536,
+    "offsetHex": "0x5b1298",
+    "bytes": 1755,
+    "messages": 7,
+    "services": 1
+  },
+  {
+    "name": "es_prefetch.proto",
+    "package": "spotify.prefetch_esperanto.proto",
+    "offset": 5970420,
+    "offsetHex": "0x5b19f4",
+    "bytes": 734,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "es_storage.proto",
+    "package": "spotify.storage.esperanto.proto",
+    "offset": 5971556,
+    "offsetHex": "0x5b1e64",
+    "bytes": 2811,
+    "messages": 11,
+    "services": 1
+  },
+  {
+    "name": "loudness_response.proto",
+    "package": "spotify.analyzer_esperanto.proto",
+    "offset": 5974500,
+    "offsetHex": "0x5b29e4",
+    "bytes": 224,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_download.proto",
+    "package": "spotify.download.esperanto.proto",
+    "offset": 5975412,
+    "offsetHex": "0x5b2d74",
+    "bytes": 5842,
+    "messages": 17,
+    "services": 1
+  },
+  {
+    "name": "audio_focus.proto",
+    "package": "spotify.timeline_conductor.audio_focus.proto",
+    "offset": 5981452,
+    "offsetHex": "0x5b450c",
+    "bytes": 297,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "curated_playlist.proto",
+    "package": "spotify.curation_state.proto",
+    "offset": 5981840,
+    "offsetHex": "0x5b4690",
+    "bytes": 290,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_send_event_request.proto",
+    "package": "spotify.event_sender.esperanto.proto",
+    "offset": 5982184,
+    "offsetHex": "0x5b47e8",
+    "bytes": 272,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_send_event_response.proto",
+    "package": "spotify.event_sender.esperanto.proto",
+    "offset": 5982504,
+    "offsetHex": "0x5b4928",
+    "bytes": 717,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "provenance_prototype_esperanto.proto",
+    "package": "spotify.event_sender.provenance_prototype.proto",
+    "offset": 5983264,
+    "offsetHex": "0x5b4c20",
+    "bytes": 559,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "provenanced.proto",
+    "package": "spotify.event_sender.provenanced.proto",
+    "offset": 5983876,
+    "offsetHex": "0x5b4e84",
+    "bytes": 298,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "mdata_observe_request.proto",
+    "package": "spotify.mdata_esperanto.proto",
+    "offset": 5984256,
+    "offsetHex": "0x5b5000",
+    "bytes": 528,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "mdata_observe_response.proto",
+    "package": "spotify.mdata_esperanto.proto",
+    "offset": 5984912,
+    "offsetHex": "0x5b5290",
+    "bytes": 970,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "mdata_cosmos.proto",
+    "package": "spotify.mdata_cosmos.proto",
+    "offset": 5985940,
+    "offsetHex": "0x5b5694",
+    "bytes": 284,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "mdata_debug.proto",
+    "package": "spotify.mdata_debug_esperanto.proto",
+    "offset": 5986440,
+    "offsetHex": "0x5b5888",
+    "bytes": 1279,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "spotify/extendedmetadata/v3/extension_config.proto",
+    "package": "spotify.extendedmetadata.v3",
+    "offset": 5987832,
+    "offsetHex": "0x5b5df8",
+    "bytes": 372,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "spotify/extendedmetadata/v3/extension_config_service.proto",
+    "package": "spotify.extendedmetadata.v3",
+    "offset": 5988292,
+    "offsetHex": "0x5b5fc4",
+    "bytes": 773,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "metadata_esperanto.proto",
+    "package": "spotify.metadata_esperanto.proto",
+    "offset": 5989132,
+    "offsetHex": "0x5b630c",
+    "bytes": 513,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "metadata_cosmos.proto",
+    "package": "spotify.metadata_cosmos.proto",
+    "offset": 5989716,
+    "offsetHex": "0x5b6554",
+    "bytes": 545,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "show_access_update.proto",
+    "package": "spotify.showaccess.v1",
+    "offset": 5990300,
+    "offsetHex": "0x5b679c",
+    "bytes": 199,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "podcast_paywalls.proto",
+    "package": "spotify.podcast_paywalls_esperanto.proto",
+    "offset": 5990556,
+    "offsetHex": "0x5b689c",
+    "bytes": 493,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "parental_controls_pubsub.proto",
+    "package": "spotify.parental_controls.proto",
+    "offset": 5991104,
+    "offsetHex": "0x5b6ac0",
+    "bytes": 218,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_issue_reporter.proto",
+    "package": "spotify.issue_reporter.proto",
+    "offset": 5991464,
+    "offsetHex": "0x5b6c28",
+    "bytes": 614,
+    "messages": 3,
+    "services": 1
+  },
+  {
+    "name": "social_connect_v2.proto",
+    "package": "socialconnect",
+    "offset": 5992268,
+    "offsetHex": "0x5b6f4c",
+    "bytes": 1463,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "playback_esperanto.proto",
+    "package": "spotify.playback_esperanto.proto",
+    "offset": 5994380,
+    "offsetHex": "0x5b778c",
+    "bytes": 3382,
+    "messages": 15,
+    "services": 0
+  },
+  {
+    "name": "karaoke_get_status_request.proto",
+    "package": "spotify.karaoke_esperanto.proto",
+    "offset": 5997916,
+    "offsetHex": "0x5b855c",
+    "bytes": 273,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "karaoke_get_vocal_volume_request.proto",
+    "package": "spotify.karaoke_esperanto.proto",
+    "offset": 5998232,
+    "offsetHex": "0x5b8698",
+    "bytes": 219,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "karaoke_post_status_request.proto",
+    "package": "spotify.karaoke_esperanto.proto",
+    "offset": 5998508,
+    "offsetHex": "0x5b87ac",
+    "bytes": 302,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "karaoke_post_vocal_volume_request.proto",
+    "package": "spotify.karaoke_esperanto.proto",
+    "offset": 5998868,
+    "offsetHex": "0x5b8914",
+    "bytes": 248,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "karaoke_status.proto",
+    "package": "spotify.karaoke_esperanto.proto",
+    "offset": 5999136,
+    "offsetHex": "0x5b8a20",
+    "bytes": 156,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "karaoke_sub_events_request.proto",
+    "package": "spotify.karaoke_esperanto.proto",
+    "offset": 5999344,
+    "offsetHex": "0x5b8af0",
+    "bytes": 388,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_local_files.proto",
+    "package": "spotify.local_files_esperanto.proto",
+    "offset": 6000192,
+    "offsetHex": "0x5b8e40",
+    "bytes": 4753,
+    "messages": 18,
+    "services": 1
+  },
+  {
+    "name": "lfs_secret_provider.proto",
+    "package": "spotify.lfssecretprovider.proto",
+    "offset": 6005112,
+    "offsetHex": "0x5ba178",
+    "bytes": 117,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "local_sync_state.proto",
+    "package": "spotify.local_sync_state.proto",
+    "offset": 6005260,
+    "offsetHex": "0x5ba20c",
+    "bytes": 146,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "net-fortune.proto",
+    "package": "spotify.netfortune.proto",
+    "offset": 6005480,
+    "offsetHex": "0x5ba2e8",
+    "bytes": 480,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "storage-resolve.proto",
+    "package": "spotify.download.proto",
+    "offset": 6006016,
+    "offsetHex": "0x5ba500",
+    "bytes": 261,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "download_session_record.proto",
+    "package": "spotify.offline.internal",
+    "offset": 6006348,
+    "offsetHex": "0x5ba64c",
+    "bytes": 310,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_playability.proto",
+    "package": "spotify.playability.esperanto.proto",
+    "offset": 6006712,
+    "offsetHex": "0x5ba7b8",
+    "bytes": 681,
+    "messages": 3,
+    "services": 1
+  },
+  {
+    "name": "on_demand_set_response.proto",
+    "package": "spotify.on_demand_set_esperanto.proto",
+    "offset": 6007448,
+    "offsetHex": "0x5baa98",
+    "bytes": 197,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "perf_metrics/perf_metrics_service.proto",
+    "package": "spotify.perf_metrics.esperanto.proto",
+    "offset": 6007704,
+    "offsetHex": "0x5bab98",
+    "bytes": 449,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "playback_settings_esperanto_service.proto",
+    "package": "spotify.playback_settings.esperanto.proto",
+    "offset": 6009108,
+    "offsetHex": "0x5bb114",
+    "bytes": 8507,
+    "messages": 26,
+    "services": 1
+  },
+  {
+    "name": "es_context_resolve_mock.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6017944,
+    "offsetHex": "0x5bd398",
+    "bytes": 746,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "es_sequence_rules.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6018780,
+    "offsetHex": "0x5bd6dc",
+    "bytes": 740,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "playback_experience_trait.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6019592,
+    "offsetHex": "0x5bda08",
+    "bytes": 786,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "extracted_colors.proto",
+    "package": "spotify.context_track_color",
+    "offset": 6020460,
+    "offsetHex": "0x5bdd6c",
+    "bytes": 469,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "sms_play_history.proto",
+    "package": "spotify.enhancedplaylistlens",
+    "offset": 6021100,
+    "offsetHex": "0x5bdfec",
+    "bytes": 836,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "time_measurement_builder_snapshot.proto",
+    "package": "spotify.timekeeper_proto",
+    "offset": 6022212,
+    "offsetHex": "0x5be444",
+    "bytes": 1447,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "mft_play_history.proto",
+    "package": "spotify.playlist.proto.mft_lens_poc",
+    "offset": 6023816,
+    "offsetHex": "0x5bea88",
+    "bytes": 570,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "local_list_config_save_request.proto",
+    "package": "spotify.playlist.local_list_config_esperanto.proto",
+    "offset": 6024468,
+    "offsetHex": "0x5bed14",
+    "bytes": 432,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "autodownload_backend_service.proto",
+    "package": "spotify.autodownloadservice.v1.proto",
+    "offset": 6025160,
+    "offsetHex": "0x5befc8",
+    "bytes": 1402,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "autodownload_decorated_followed_shows.proto",
+    "package": "spotify.autodownload_esperanto.proto",
+    "offset": 6026768,
+    "offsetHex": "0x5bf610",
+    "bytes": 656,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "autodownload_disable_all_enabled_shows.proto",
+    "package": "spotify.autodownload_esperanto.proto",
+    "offset": 6027476,
+    "offsetHex": "0x5bf8d4",
+    "bytes": 231,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "autodownload_enabled_shows_count.proto",
+    "package": "spotify.autodownload_esperanto.proto",
+    "offset": 6027772,
+    "offsetHex": "0x5bf9fc",
+    "bytes": 282,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "autodownload_episode_limit.proto",
+    "package": "spotify.autodownload_esperanto.proto",
+    "offset": 6028128,
+    "offsetHex": "0x5bfb60",
+    "bytes": 306,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "autodownload_set_episode_limit.proto",
+    "package": "spotify.autodownload_esperanto.proto",
+    "offset": 6028500,
+    "offsetHex": "0x5bfcd4",
+    "bytes": 271,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "autodownload_set_show_state.proto",
+    "package": "spotify.autodownload_esperanto.proto",
+    "offset": 6028836,
+    "offsetHex": "0x5bfe24",
+    "bytes": 244,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "autodownload_show_state.proto",
+    "package": "spotify.autodownload_esperanto.proto",
+    "offset": 6029164,
+    "offsetHex": "0x5bff6c",
+    "bytes": 297,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_prefs.proto",
+    "package": "spotify.prefs.esperanto.proto",
+    "offset": 6029660,
+    "offsetHex": "0x5c015c",
+    "bytes": 1457,
+    "messages": 8,
+    "services": 1
+  },
+  {
+    "name": "profile_service.proto",
+    "package": "spotify.profile_esperanto.proto.v1",
+    "offset": 6031292,
+    "offsetHex": "0x5c07bc",
+    "bytes": 878,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "get_recently_played.proto",
+    "package": "spotify.recently_played_esperanto.proto",
+    "offset": 6032508,
+    "offsetHex": "0x5c0c7c",
+    "bytes": 2934,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "get_recently_played_tracks.proto",
+    "package": "spotify.recently_played_esperanto.proto",
+    "offset": 6035632,
+    "offsetHex": "0x5c18b0",
+    "bytes": 1199,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "recently_played_decoration_policy.proto",
+    "package": "spotify.recently_played_esperanto.proto",
+    "offset": 6037352,
+    "offsetHex": "0x5c1f68",
+    "bytes": 3370,
+    "messages": 10,
+    "services": 0
+  },
+  {
+    "name": "recently_played_item.proto",
+    "package": "spotify.recently_played_esperanto.proto",
+    "offset": 6041252,
+    "offsetHex": "0x5c2ea4",
+    "bytes": 3015,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "repeat_tracks.proto",
+    "package": "spotify.restrictions.impl.proto",
+    "offset": 6044360,
+    "offsetHex": "0x5c3ac8",
+    "bytes": 262,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "skip_nexts.proto",
+    "package": "spotify.restrictions.impl.proto",
+    "offset": 6044668,
+    "offsetHex": "0x5c3bfc",
+    "bytes": 262,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "permissions_esperanto.proto",
+    "package": "spotify.restrictions.permissions.permissions_proto",
+    "offset": 6045204,
+    "offsetHex": "0x5c3e14",
+    "bytes": 4108,
+    "messages": 10,
+    "services": 1
+  },
+  {
+    "name": "permissions_state.proto",
+    "package": "spotify.restrictions.proto",
+    "offset": 6049432,
+    "offsetHex": "0x5c4e98",
+    "bytes": 315,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playback_observer.proto",
+    "package": "spotify.restrictions.proto",
+    "offset": 6049856,
+    "offsetHex": "0x5c5040",
+    "bytes": 506,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "resumption_progress_esperanto.proto",
+    "package": "spotify.resumption_progress_esperanto.proto",
+    "offset": 6051568,
+    "offsetHex": "0x5c56f0",
+    "bytes": 10614,
+    "messages": 34,
+    "services": 1
+  },
+  {
+    "name": "navigation_history.proto",
+    "package": "spotify.navhistory.v1",
+    "offset": 6062508,
+    "offsetHex": "0x5c81ac",
+    "bytes": 176,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "resumption_boundaries.proto",
+    "package": "spotify.resumptionboundaries.v1",
+    "offset": 6062748,
+    "offsetHex": "0x5c829c",
+    "bytes": 542,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "chapter_specifics.proto",
+    "package": "spotify.chapterspecifics",
+    "offset": 6063356,
+    "offsetHex": "0x5c84fc",
+    "bytes": 324,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "progress_playback_esperanto.proto",
+    "package": "spotify.progress_playback_esperanto.proto",
+    "offset": 6063796,
+    "offsetHex": "0x5c86b4",
+    "bytes": 1835,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "scrobble.proto",
+    "package": "spotify.scrobble.esperanto.proto",
+    "offset": 6065696,
+    "offsetHex": "0x5c8e20",
+    "bytes": 730,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "curation_experience_trait.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6066576,
+    "offsetHex": "0x5c9190",
+    "bytes": 939,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "search_service.proto",
+    "package": "spotify.search_esperanto.proto",
+    "offset": 6067620,
+    "offsetHex": "0x5c95a4",
+    "bytes": 690,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "search.proto",
+    "package": "spotify.search.proto",
+    "offset": 6068544,
+    "offsetHex": "0x5c9940",
+    "bytes": 714,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "show_service.proto",
+    "package": "spotify.show_esperanto.proto",
+    "offset": 6070016,
+    "offsetHex": "0x5c9f00",
+    "bytes": 6810,
+    "messages": 13,
+    "services": 1
+  },
+  {
+    "name": "decorate_request.proto",
+    "package": "spotify.show_cosmos.decorate_request.proto",
+    "offset": 6077064,
+    "offsetHex": "0x5cba88",
+    "bytes": 1334,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "entity_popularity.proto",
+    "package": "spotify.contentpopularity.v1",
+    "offset": 6078444,
+    "offsetHex": "0x5cbfec",
+    "bytes": 166,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "next_best_episode.proto",
+    "package": "spotify.nextepisode",
+    "offset": 6078684,
+    "offsetHex": "0x5cc0dc",
+    "bytes": 301,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "show_episode_state.proto",
+    "package": "spotify.show_cosmos.proto",
+    "offset": 6079076,
+    "offsetHex": "0x5cc264",
+    "bytes": 293,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "show_offline_state.proto",
+    "package": "spotify.show_cosmos.proto",
+    "offset": 6079416,
+    "offsetHex": "0x5cc3b8",
+    "bytes": 151,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "show_request.proto",
+    "package": "spotify.show_cosmos.proto",
+    "offset": 6079916,
+    "offsetHex": "0x5cc5ac",
+    "bytes": 2762,
+    "messages": 9,
+    "services": 0
+  },
+  {
+    "name": "show_show_state.proto",
+    "package": "spotify.show_cosmos.proto",
+    "offset": 6082772,
+    "offsetHex": "0x5cd0d4",
+    "bytes": 135,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "unfinished_episodes_request.proto",
+    "package": "spotify.show_cosmos.unfinished_episodes_request.proto",
+    "offset": 6082976,
+    "offsetHex": "0x5cd1a0",
+    "bytes": 754,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "follow_request.proto",
+    "package": "spotify.socialgraph_esperanto.proto",
+    "offset": 6083824,
+    "offsetHex": "0x5cd4f0",
+    "bytes": 386,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "followed_users_request.proto",
+    "package": "spotify.socialgraph_esperanto.proto",
+    "offset": 6084284,
+    "offsetHex": "0x5cd6bc",
+    "bytes": 342,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "socialgraph_response_status.proto",
+    "package": "spotify.socialgraph_esperanto.proto",
+    "offset": 6084672,
+    "offsetHex": "0x5cd840",
+    "bytes": 204,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "lyrics_reporting/lyrics_end_request.proto",
+    "package": "spotify.lyrics_reporting_esperanto.proto",
+    "offset": 6084916,
+    "offsetHex": "0x5cd934",
+    "bytes": 335,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "lyrics_reporting/lyrics_start_request.proto",
+    "package": "spotify.lyrics_reporting_esperanto.proto",
+    "offset": 6085352,
+    "offsetHex": "0x5cdae8",
+    "bytes": 756,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "lyrics_reporting/lyrics_start_response.proto",
+    "package": "spotify.lyrics_reporting_esperanto.proto",
+    "offset": 6086148,
+    "offsetHex": "0x5cde04",
+    "bytes": 345,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "lyrics_reporting/lyrics_update_request.proto",
+    "package": "spotify.lyrics_reporting_esperanto.proto",
+    "offset": 6086640,
+    "offsetHex": "0x5cdff0",
+    "bytes": 1254,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "lyrics_reporting/reason_end.proto",
+    "package": "spotify.lyrics_reporting_esperanto.proto",
+    "offset": 6087928,
+    "offsetHex": "0x5ce4f8",
+    "bytes": 235,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "lyrics_reporting/reason_start.proto",
+    "package": "spotify.lyrics_reporting_esperanto.proto",
+    "offset": 6088164,
+    "offsetHex": "0x5ce5e4",
+    "bytes": 209,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "lyrics_reporting/status_code.proto",
+    "package": "spotify.lyrics_reporting_esperanto.proto",
+    "offset": 6088374,
+    "offsetHex": "0x5ce6b6",
+    "bytes": 207,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "lyrics_reporting/status_response.proto",
+    "package": "spotify.lyrics_reporting_esperanto.proto",
+    "offset": 6088604,
+    "offsetHex": "0x5ce79c",
+    "bytes": 289,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "endpoint/read_end_request.proto",
+    "package": "spotify.read_reporting_esperanto.proto",
+    "offset": 6088948,
+    "offsetHex": "0x5ce8f4",
+    "bytes": 394,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "endpoint/read_interval.proto",
+    "package": "spotify.read_reporting_esperanto.proto",
+    "offset": 6089380,
+    "offsetHex": "0x5ceaa4",
+    "bytes": 222,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "endpoint/read_start_request.proto",
+    "package": "spotify.read_reporting_esperanto.proto",
+    "offset": 6089680,
+    "offsetHex": "0x5cebd0",
+    "bytes": 606,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "endpoint/read_start_response.proto",
+    "package": "spotify.read_reporting_esperanto.proto",
+    "offset": 6090324,
+    "offsetHex": "0x5cee54",
+    "bytes": 306,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "endpoint/read_update_request.proto",
+    "package": "spotify.read_reporting_esperanto.proto",
+    "offset": 6090700,
+    "offsetHex": "0x5cefcc",
+    "bytes": 514,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "endpoint/reason_end.proto",
+    "package": "spotify.read_reporting_esperanto.proto",
+    "offset": 6091224,
+    "offsetHex": "0x5cf1d8",
+    "bytes": 219,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "endpoint/reason_start.proto",
+    "package": "spotify.read_reporting_esperanto.proto",
+    "offset": 6091444,
+    "offsetHex": "0x5cf2b4",
+    "bytes": 225,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "endpoint/status_code.proto",
+    "package": "spotify.read_reporting_esperanto.proto",
+    "offset": 6091670,
+    "offsetHex": "0x5cf396",
+    "bytes": 195,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "endpoint/status_response.proto",
+    "package": "spotify.read_reporting_esperanto.proto",
+    "offset": 6091888,
+    "offsetHex": "0x5cf470",
+    "bytes": 267,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "runtime_consumption_service.proto",
+    "package": "spotify.runtime_consumption.esperanto.proto",
+    "offset": 6092316,
+    "offsetHex": "0x5cf61c",
+    "bytes": 1573,
+    "messages": 5,
+    "services": 1
+  },
+  {
+    "name": "debug_tracer.proto",
+    "package": "spotify.debug_tracer.proto",
+    "offset": 6094028,
+    "offsetHex": "0x5cfccc",
+    "bytes": 6562,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "orchestration_stack.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6100624,
+    "offsetHex": "0x5d1690",
+    "bytes": 339,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "playback_stack_v2.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6100964,
+    "offsetHex": "0x5d17e4",
+    "bytes": 355,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "status_response.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6101340,
+    "offsetHex": "0x5d195c",
+    "bytes": 253,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "status_code.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6101604,
+    "offsetHex": "0x5d1a64",
+    "bytes": 268,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "stream_end_request.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6101928,
+    "offsetHex": "0x5d1ba8",
+    "bytes": 621,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "audio_format.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6102560,
+    "offsetHex": "0x5d1e20",
+    "bytes": 777,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "play_reason.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6103338,
+    "offsetHex": "0x5d212a",
+    "bytes": 815,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "stream_handle.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6104184,
+    "offsetHex": "0x5d2478",
+    "bytes": 209,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "stream_initiate_request.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6104680,
+    "offsetHex": "0x5d2668",
+    "bytes": 2687,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "media_type.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6107376,
+    "offsetHex": "0x5d30f0",
+    "bytes": 231,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "playback_stack.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6107608,
+    "offsetHex": "0x5d31d8",
+    "bytes": 184,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "stream_progress_request.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6107944,
+    "offsetHex": "0x5d3328",
+    "bytes": 1345,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playback_state.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6109300,
+    "offsetHex": "0x5d3874",
+    "bytes": 212,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "stream_seek_request.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6109568,
+    "offsetHex": "0x5d3980",
+    "bytes": 526,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "stream_start_request.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6110460,
+    "offsetHex": "0x5d3cfc",
+    "bytes": 2968,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "stream_start_response.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6113468,
+    "offsetHex": "0x5d48bc",
+    "bytes": 378,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "stream_start_v2_request.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6114172,
+    "offsetHex": "0x5d4b7c",
+    "bytes": 2459,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "streaming_rule.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6116640,
+    "offsetHex": "0x5d5520",
+    "bytes": 320,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "timestamp_response.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6116984,
+    "offsetHex": "0x5d5678",
+    "bytes": 183,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "video_surface.proto",
+    "package": "spotify.stream_reporting_esperanto.proto",
+    "offset": 6117176,
+    "offsetHex": "0x5d5738",
+    "bytes": 473,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "es_offline_playable_cache.proto",
+    "package": "spotify.offline_playable_cache_esperanto.proto",
+    "offset": 6118200,
+    "offsetHex": "0x5d5b38",
+    "bytes": 4709,
+    "messages": 13,
+    "services": 1
+  },
+  {
+    "name": "track-content-filter.proto",
+    "package": "spotify.bumblebee.trackcontentfilter.v1",
+    "offset": 6123024,
+    "offsetHex": "0x5d6e10",
+    "bytes": 789,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "also_available_offline_request.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6123844,
+    "offsetHex": "0x5d7144",
+    "bytes": 204,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "also_available_offline_response.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6124360,
+    "offsetHex": "0x5d7348",
+    "bytes": 2437,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "get_artist_playlists.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6126932,
+    "offsetHex": "0x5d7d54",
+    "bytes": 412,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "get_keys_request.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6127444,
+    "offsetHex": "0x5d7f54",
+    "bytes": 357,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "is_curated_request.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6127944,
+    "offsetHex": "0x5d8148",
+    "bytes": 614,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "pin_request.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6128768,
+    "offsetHex": "0x5d8480",
+    "bytes": 745,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "set_filter_order.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6129584,
+    "offsetHex": "0x5d87b0",
+    "bytes": 201,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "transfer_progress.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6129896,
+    "offsetHex": "0x5d88e8",
+    "bytes": 585,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "your_library_contains_request.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6130544,
+    "offsetHex": "0x5d8b70",
+    "bytes": 388,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "your_library_contains_response.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6131036,
+    "offsetHex": "0x5d8d5c",
+    "bytes": 538,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "your_library_decorate_request.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6131636,
+    "offsetHex": "0x5d8fb4",
+    "bytes": 388,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "your_library_decorate_response.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6132100,
+    "offsetHex": "0x5d9184",
+    "bytes": 477,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "your_library_response.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6132760,
+    "offsetHex": "0x5d9418",
+    "bytes": 1115,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "your_library_request.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6134184,
+    "offsetHex": "0x5d99a8",
+    "bytes": 1763,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "tags_data.proto",
+    "package": "spotify.your_library_tags.proto",
+    "offset": 6136036,
+    "offsetHex": "0x5da0e4",
+    "bytes": 226,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "your_library_tags_request.proto",
+    "package": "spotify.your_library_tags_esperanto.proto",
+    "offset": 6136380,
+    "offsetHex": "0x5da23c",
+    "bytes": 586,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "concert_campaign_user_state_extension.proto",
+    "package": "spotify.concertcampaignextension.v1",
+    "offset": 6137208,
+    "offsetHex": "0x5da578",
+    "bytes": 2008,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "concert_extension.proto",
+    "package": "spotify.concerts.metadata.v1",
+    "offset": 6139368,
+    "offsetHex": "0x5dade8",
+    "bytes": 366,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "concert_location_extension.proto",
+    "package": "spotify.concerts.metadata.v1",
+    "offset": 6139816,
+    "offsetHex": "0x5dafa8",
+    "bytes": 267,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "concert_marketing_extension.proto",
+    "package": "spotify.concerts.metadata.v1",
+    "offset": 6140172,
+    "offsetHex": "0x5db10c",
+    "bytes": 560,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "concert_performers_extension.proto",
+    "package": "spotify.concerts.metadata.v1",
+    "offset": 6140804,
+    "offsetHex": "0x5db384",
+    "bytes": 363,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "prerelease_extension.proto",
+    "package": "spotify.prerelease.extension",
+    "offset": 6141344,
+    "offsetHex": "0x5db5a0",
+    "bytes": 650,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "spotify/venueextendedmetadata/v1/venueextendedmetadata.proto",
+    "package": "spotify.venueextendedmetadata.v1",
+    "offset": 6142132,
+    "offsetHex": "0x5db8b4",
+    "bytes": 451,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "recently_played_playlist.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6142620,
+    "offsetHex": "0x5dba9c",
+    "bytes": 131,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "your_library_entity.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6142812,
+    "offsetHex": "0x5dbb5c",
+    "bytes": 957,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "your_library_index.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6144464,
+    "offsetHex": "0x5dc1d0",
+    "bytes": 3264,
+    "messages": 9,
+    "services": 0
+  },
+  {
+    "name": "your_library_config.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6148032,
+    "offsetHex": "0x5dcfc0",
+    "bytes": 2637,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "your_library_decorated_entity.proto",
+    "package": "spotify.your_library.proto",
+    "offset": 6151564,
+    "offsetHex": "0x5ddd8c",
+    "bytes": 5429,
+    "messages": 17,
+    "services": 0
+  },
+  {
+    "name": "concept_metadata.proto",
+    "package": "spotify.conceptmetadata",
+    "offset": 6157188,
+    "offsetHex": "0x5df384",
+    "bytes": 279,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "your_library_tags_backend.proto",
+    "package": "spotify.your_library_tags.proto",
+    "offset": 6157604,
+    "offsetHex": "0x5df524",
+    "bytes": 470,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "atv_remote_service.proto",
+    "package": "spotify.atv_remote.esperanto.proto",
+    "offset": 6158456,
+    "offsetHex": "0x5df878",
+    "bytes": 3030,
+    "messages": 11,
+    "services": 1
+  },
+  {
+    "name": "ad_locations.proto",
+    "package": "spotify.ads.formats",
+    "offset": 6161656,
+    "offsetHex": "0x5e04f8",
+    "bytes": 772,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "entity_capping.proto",
+    "package": "spotify.capping.metadata.v1",
+    "offset": 6162468,
+    "offsetHex": "0x5e0824",
+    "bytes": 251,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "mft_resumption.proto",
+    "package": "spotify.list_player.proto",
+    "offset": 6162808,
+    "offsetHex": "0x5e0978",
+    "bytes": 446,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "play_history.proto",
+    "package": "spotify.list_player.proto",
+    "offset": 6163356,
+    "offsetHex": "0x5e0b9c",
+    "bytes": 449,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "play_request_state.proto",
+    "package": "spotify.list_player.proto",
+    "offset": 6163844,
+    "offsetHex": "0x5e0d84",
+    "bytes": 150,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "list_page_signal.proto",
+    "package": "spotify.list_player.list_page_signal_proto",
+    "offset": 6164092,
+    "offsetHex": "0x5e0e7c",
+    "bytes": 459,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "speed_preview.proto",
+    "package": "spotify.speedpreview.proto",
+    "offset": 6164644,
+    "offsetHex": "0x5e10a4",
+    "bytes": 408,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "mft_state.proto",
+    "package": "spotify.list_player.proto",
+    "offset": 6165272,
+    "offsetHex": "0x5e1318",
+    "bytes": 1638,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "list_player_state.proto",
+    "package": "spotify.list_player.proto",
+    "offset": 6166996,
+    "offsetHex": "0x5e19d4",
+    "bytes": 298,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "resumption_platform_core_persistent.proto",
+    "package": "spotify.resumption.core.persistent",
+    "offset": 6167552,
+    "offsetHex": "0x5e1c00",
+    "bytes": 1761,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "resumption_platform.proto",
+    "package": "spotify.resumption.v1",
+    "offset": 6170004,
+    "offsetHex": "0x5e2594",
+    "bytes": 4113,
+    "messages": 17,
+    "services": 0
+  },
+  {
+    "name": "rec_pool_loader.proto",
+    "package": "spotify.list_player.impl.proto",
+    "offset": 6174368,
+    "offsetHex": "0x5e36a0",
+    "bytes": 480,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playback_settings.proto",
+    "package": "spotify.list_player.impl.proto",
+    "offset": 6174928,
+    "offsetHex": "0x5e38d0",
+    "bytes": 527,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "remote.proto",
+    "package": "spotify.player.shuffle.remote",
+    "offset": 6175508,
+    "offsetHex": "0x5e3b14",
+    "bytes": 231,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "on_demand_set_cosmos_request.proto",
+    "package": "spotify.on_demand_set_cosmos.proto",
+    "offset": 6175800,
+    "offsetHex": "0x5e3c38",
+    "bytes": 224,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "socialgraph-v4.proto",
+    "package": "spotify.socialgraph.v4",
+    "offset": 6176100,
+    "offsetHex": "0x5e3d64",
+    "bytes": 389,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "socialgraphv2.proto",
+    "package": "spotify.socialgraph.proto",
+    "offset": 6176708,
+    "offsetHex": "0x5e3fc4",
+    "bytes": 963,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "playlist_find_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6177796,
+    "offsetHex": "0x5e4404",
+    "bytes": 491,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "playlist_get_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6178504,
+    "offsetHex": "0x5e46c8",
+    "bytes": 1367,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "rootlist_modification_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6179976,
+    "offsetHex": "0x5e4c88",
+    "bytes": 505,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "local_list_config.proto",
+    "package": "spotify.playlist.local_list_config.proto",
+    "offset": 6180536,
+    "offsetHex": "0x5e4eb8",
+    "bytes": 181,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playlist_play_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6180816,
+    "offsetHex": "0x5e4fd0",
+    "bytes": 1027,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "popcount2_external.proto",
+    "package": "spotify.popcount2.proto",
+    "offset": 6182016,
+    "offsetHex": "0x5e5480",
+    "bytes": 541,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "mdata_entities.proto",
+    "package": "spotify.mdata.proto",
+    "offset": 6182768,
+    "offsetHex": "0x5e5770",
+    "bytes": 850,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "byom_eligibility_extension.proto",
+    "package": "spotify.byom.v1",
+    "offset": 6183680,
+    "offsetHex": "0x5e5b00",
+    "bytes": 142,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "client_restrictions_extension.proto",
+    "package": "spotify.clientrestrictions.v1",
+    "offset": 6183840,
+    "offsetHex": "0x5e5ba0",
+    "bytes": 225,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "user_queue.proto",
+    "package": "spotify.queue.proto",
+    "offset": 6184336,
+    "offsetHex": "0x5e5d90",
+    "bytes": 1342,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "item_reporting_context.proto",
+    "package": "spotify.timeline_reporter.proto",
+    "offset": 6185836,
+    "offsetHex": "0x5e636c",
+    "bytes": 671,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "episode_ad_placements_extension.proto",
+    "package": "spotify.fingerprintfilterservice",
+    "offset": 6186640,
+    "offsetHex": "0x5e6690",
+    "bytes": 823,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "fingerprint_audio.proto",
+    "package": "spotify.fingerprintfilterservice",
+    "offset": 6187576,
+    "offsetHex": "0x5e6a38",
+    "bytes": 502,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "content_markers_extension.proto",
+    "package": "spotify.scdcontentmarkers",
+    "offset": 6188168,
+    "offsetHex": "0x5e6c88",
+    "bytes": 540,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "exclusive_mode.proto",
+    "package": "spotify.exclusive_mode_esperanto.proto",
+    "offset": 6188932,
+    "offsetHex": "0x5e6f84",
+    "bytes": 1055,
+    "messages": 7,
+    "services": 0
+  },
+  {
+    "name": "ad_detection.proto",
+    "package": "spotify.ad_detection.impl.ad_detection_proto",
+    "offset": 6190580,
+    "offsetHex": "0x5e75f4",
+    "bytes": 4581,
+    "messages": 11,
+    "services": 1
+  },
+  {
+    "name": "es_add_pending_event_request.proto",
+    "package": "spotify.pending_events.esperanto.proto",
+    "offset": 6195304,
+    "offsetHex": "0x5e8868",
+    "bytes": 228,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_add_pending_event_response.proto",
+    "package": "spotify.pending_events.esperanto.proto",
+    "offset": 6195588,
+    "offsetHex": "0x5e8984",
+    "bytes": 394,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_commit_pending_event_request.proto",
+    "package": "spotify.pending_events.esperanto.proto",
+    "offset": 6196020,
+    "offsetHex": "0x5e8b34",
+    "bytes": 258,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_commit_pending_event_response.proto",
+    "package": "spotify.pending_events.esperanto.proto",
+    "offset": 6196316,
+    "offsetHex": "0x5e8c5c",
+    "bytes": 314,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_pending_events_error.proto",
+    "package": "spotify.pending_events.esperanto.proto",
+    "offset": 6196640,
+    "offsetHex": "0x5e8da0",
+    "bytes": 695,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "es_replace_pending_event_request.proto",
+    "package": "spotify.pending_events.esperanto.proto",
+    "offset": 6197380,
+    "offsetHex": "0x5e9084",
+    "bytes": 323,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_replace_pending_event_response.proto",
+    "package": "spotify.pending_events.esperanto.proto",
+    "offset": 6197740,
+    "offsetHex": "0x5e91ec",
+    "bytes": 316,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "ad_capabilities.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6198088,
+    "offsetHex": "0x5e9348",
+    "bytes": 493,
+    "messages": 1,
+    "services": 1
+  },
+  {
+    "name": "ad_events.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6198928,
+    "offsetHex": "0x5e9690",
+    "bytes": 2283,
+    "messages": 6,
+    "services": 1
+  },
+  {
+    "name": "ad_formats.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6201300,
+    "offsetHex": "0x5e9fd4",
+    "bytes": 420,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "ad_opportunity.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6201892,
+    "offsetHex": "0x5ea224",
+    "bytes": 1126,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "ad_preview.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6203092,
+    "offsetHex": "0x5ea6d4",
+    "bytes": 297,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "ad_settings.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6203756,
+    "offsetHex": "0x5ea96c",
+    "bytes": 3075,
+    "messages": 13,
+    "services": 1
+  },
+  {
+    "name": "ad_slots.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6207236,
+    "offsetHex": "0x5eb704",
+    "bytes": 2017,
+    "messages": 13,
+    "services": 1
+  },
+  {
+    "name": "ad_state.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6209472,
+    "offsetHex": "0x5ebfc0",
+    "bytes": 852,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "ad_targeting.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6210468,
+    "offsetHex": "0x5ec3a4",
+    "bytes": 1121,
+    "messages": 5,
+    "services": 1
+  },
+  {
+    "name": "ad_testing.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6211728,
+    "offsetHex": "0x5ec890",
+    "bytes": 747,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "ads.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6212628,
+    "offsetHex": "0x5ecc14",
+    "bytes": 688,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "device_state.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6213416,
+    "offsetHex": "0x5ecf28",
+    "bytes": 667,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "in_stream.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6214160,
+    "offsetHex": "0x5ed210",
+    "bytes": 521,
+    "messages": 3,
+    "services": 1
+  },
+  {
+    "name": "podcast_ad_testing.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6214784,
+    "offsetHex": "0x5ed480",
+    "bytes": 830,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "ad_common.proto",
+    "package": "spotify.ads.esperanto.proto",
+    "offset": 6216620,
+    "offsetHex": "0x5edbac",
+    "bytes": 4872,
+    "messages": 19,
+    "services": 0
+  },
+  {
+    "name": "content_capability_trait.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6221800,
+    "offsetHex": "0x5eefe8",
+    "bytes": 1074,
+    "messages": 7,
+    "services": 0
+  },
+  {
+    "name": "content_experience_trait.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6222952,
+    "offsetHex": "0x5ef468",
+    "bytes": 366,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "entity_type_trait.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6223348,
+    "offsetHex": "0x5ef5f4",
+    "bytes": 628,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "media_manifest.proto",
+    "package": "spotify.media_manifest.proto",
+    "offset": 6224184,
+    "offsetHex": "0x5ef938",
+    "bytes": 1250,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "client-tts.proto",
+    "package": "spotify.narration.proto",
+    "offset": 6225580,
+    "offsetHex": "0x5efeac",
+    "bytes": 607,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "tts-resolve.proto",
+    "package": "spotify.narration.proto",
+    "offset": 6226384,
+    "offsetHex": "0x5f01d0",
+    "bytes": 2769,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "volume_messages.proto",
+    "package": "spotify.connect.esperanto.proto",
+    "offset": 6229372,
+    "offsetHex": "0x5f0d7c",
+    "bytes": 1358,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "artisanal_cast_debug_messages.proto",
+    "package": "spotify.connect.discovery.cast.esperanto.proto",
+    "offset": 6231496,
+    "offsetHex": "0x5f15c8",
+    "bytes": 8912,
+    "messages": 11,
+    "services": 0
+  },
+  {
+    "name": "cast_messages.proto",
+    "package": "spotify.connect.discovery.cast.esperanto.proto",
+    "offset": 6240632,
+    "offsetHex": "0x5f3978",
+    "bytes": 1370,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "connect_group_event.proto",
+    "package": "spotify.connectgroup.v1",
+    "offset": 6242116,
+    "offsetHex": "0x5f3f44",
+    "bytes": 731,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "connect_group.proto",
+    "package": "spotify.connectgroup.v1",
+    "offset": 6243300,
+    "offsetHex": "0x5f43e4",
+    "bytes": 2329,
+    "messages": 10,
+    "services": 0
+  },
+  {
+    "name": "es_websocket_connect_request.proto",
+    "package": "spotify.connectivity.websocket.esperanto.proto",
+    "offset": 6245772,
+    "offsetHex": "0x5f4d8c",
+    "bytes": 284,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_websocket_disconnect.proto",
+    "package": "spotify.connectivity.websocket.esperanto.proto",
+    "offset": 6246076,
+    "offsetHex": "0x5f4ebc",
+    "bytes": 204,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_websocket_event.proto",
+    "package": "spotify.connectivity.websocket.esperanto.proto",
+    "offset": 6246360,
+    "offsetHex": "0x5f4fd8",
+    "bytes": 701,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_websocket_send_request.proto",
+    "package": "spotify.connectivity.websocket.esperanto.proto",
+    "offset": 6247132,
+    "offsetHex": "0x5f52dc",
+    "bytes": 306,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "playback-settings-storage.proto",
+    "package": "spotify.playbacksettingsinternal",
+    "offset": 6247532,
+    "offsetHex": "0x5f546c",
+    "bytes": 643,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "artisanal_cast_group_control_messages.proto",
+    "package": "spotify.connect.discovery.cast.esperanto.proto",
+    "offset": 6248528,
+    "offsetHex": "0x5f5850",
+    "bytes": 3843,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "device_location_service.proto",
+    "package": "spotify.device_location_service.proto",
+    "offset": 6252488,
+    "offsetHex": "0x5f67c8",
+    "bytes": 687,
+    "messages": 1,
+    "services": 1
+  },
+  {
+    "name": "headphone_service.proto",
+    "package": "spotify.headphone_service.proto",
+    "offset": 6253204,
+    "offsetHex": "0x5f6a94",
+    "bytes": 452,
+    "messages": 1,
+    "services": 1
+  },
+  {
+    "name": "connect_messages.proto",
+    "package": "spotify.connect.esperanto.proto",
+    "offset": 6255252,
+    "offsetHex": "0x5f7294",
+    "bytes": 11894,
+    "messages": 35,
+    "services": 0
+  },
+  {
+    "name": "es_pull_type.proto",
+    "package": "spotify.connect.esperanto.proto",
+    "offset": 6267452,
+    "offsetHex": "0x5fa23c",
+    "bytes": 200,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "common_messages.proto",
+    "package": "spotify.connect.esperanto.proto",
+    "offset": 6267736,
+    "offsetHex": "0x5fa358",
+    "bytes": 682,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "local_files.proto",
+    "package": "spotify.local_files.proto",
+    "offset": 6268524,
+    "offsetHex": "0x5fa66c",
+    "bytes": 501,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "settings/settings.proto",
+    "package": "spotify.settings.esperanto.proto",
+    "offset": 6269272,
+    "offsetHex": "0x5fa958",
+    "bytes": 3200,
+    "messages": 1,
+    "services": 1
+  },
+  {
+    "name": "companion_ad.proto",
+    "package": "spotify.ads.proto",
+    "offset": 6273076,
+    "offsetHex": "0x5fb834",
+    "bytes": 2556,
+    "messages": 14,
+    "services": 0
+  },
+  {
+    "name": "verification_ad.proto",
+    "package": "spotify.ads.proto",
+    "offset": 6275856,
+    "offsetHex": "0x5fc310",
+    "bytes": 647,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "pending_tracking.proto",
+    "package": "spotify.ads.proto",
+    "offset": 6276604,
+    "offsetHex": "0x5fc5fc",
+    "bytes": 358,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "unified_config.proto",
+    "package": "spotify.ads.proto",
+    "offset": 6277248,
+    "offsetHex": "0x5fc880",
+    "bytes": 1384,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "es_remote_config_dummy.proto",
+    "package": "spotify.remote_config.esperanto.proto",
+    "offset": 6278732,
+    "offsetHex": "0x5fce4c",
+    "bytes": 373,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "es_remote_config.proto",
+    "package": "spotify.remote_config.esperanto.proto",
+    "offset": 6279212,
+    "offsetHex": "0x5fd02c",
+    "bytes": 761,
+    "messages": 4,
+    "services": 1
+  },
+  {
+    "name": "property_definition.proto",
+    "package": "spotify.remote_config.ucs.proto",
+    "offset": 6280372,
+    "offsetHex": "0x5fd4b4",
+    "bytes": 888,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "rcs.proto",
+    "package": "spotify.remote_config.proto",
+    "offset": 6281808,
+    "offsetHex": "0x5fda50",
+    "bytes": 2435,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "resolve.proto",
+    "package": "spotify.remote_config.ucs.proto",
+    "offset": 6284812,
+    "offsetHex": "0x5fe60c",
+    "bytes": 2984,
+    "messages": 7,
+    "services": 0
+  },
+  {
+    "name": "automix_mode.proto",
+    "package": "spotify.automix.proto",
+    "offset": 6287948,
+    "offsetHex": "0x5ff24c",
+    "bytes": 347,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "cuepoints.proto",
+    "package": "spotify.automix.proto",
+    "offset": 6288392,
+    "offsetHex": "0x5ff408",
+    "bytes": 610,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "list_tuner_audio_analysis_mdata_extension.proto",
+    "package": "spotify.playlist.tuner.extension",
+    "offset": 6289056,
+    "offsetHex": "0x5ff6a0",
+    "bytes": 205,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "mix_audio_attributes_v2.proto",
+    "package": "spotify.playlistmixing.extensions.audio_attributes.v2",
+    "offset": 6289364,
+    "offsetHex": "0x5ff7d4",
+    "bytes": 658,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "mix_beats.proto",
+    "package": "spotify.playlistmixing.extensions.mixbeats",
+    "offset": 6290136,
+    "offsetHex": "0x5ffad8",
+    "bytes": 460,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "mix_state.proto",
+    "package": "spotify.playlistmixing.extensions.mixstate",
+    "offset": 6290636,
+    "offsetHex": "0x5ffccc",
+    "bytes": 181,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "mix_vocal_activity.proto",
+    "package": "spotify.playlistmixing.extensions.mixvocalactivity",
+    "offset": 6290880,
+    "offsetHex": "0x5ffdc0",
+    "bytes": 477,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "mixability.proto",
+    "package": "spotify.playlistmixing.extensions.mixability",
+    "offset": 6291396,
+    "offsetHex": "0x5fffc4",
+    "bytes": 255,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "preview.proto",
+    "package": "spotify.automix.proto",
+    "offset": 6291792,
+    "offsetHex": "0x600150",
+    "bytes": 823,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "transition_metadata_extension.proto",
+    "package": "spotify.timbrefademetadata.v1",
+    "offset": 6292740,
+    "offsetHex": "0x600504",
+    "bytes": 923,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "transition.proto",
+    "package": "spotify.automix.proto",
+    "offset": 6294728,
+    "offsetHex": "0x600cc8",
+    "bytes": 8263,
+    "messages": 23,
+    "services": 0
+  },
+  {
+    "name": "bucket_data_sync_state.proto",
+    "package": "spotify.collection.proto",
+    "offset": 6303204,
+    "offsetHex": "0x602de4",
+    "bytes": 151,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "collection2v2.proto",
+    "package": "spotify.collection.proto.v2",
+    "offset": 6303660,
+    "offsetHex": "0x602fac",
+    "bytes": 1207,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "collection_write_count.proto",
+    "package": "spotify.collection.proto",
+    "offset": 6304960,
+    "offsetHex": "0x6034c0",
+    "bytes": 162,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "play_context_bans_storage.proto",
+    "package": "spotify.collection.proto.storage",
+    "offset": 6305152,
+    "offsetHex": "0x603580",
+    "bytes": 129,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "collection_index.proto",
+    "package": "spotify.collection.proto",
+    "offset": 6305760,
+    "offsetHex": "0x6037e0",
+    "bytes": 1644,
+    "messages": 9,
+    "services": 0
+  },
+  {
+    "name": "content_type_trait.proto",
+    "package": "spotify.contentagnostic",
+    "offset": 6307508,
+    "offsetHex": "0x603eb4",
+    "bytes": 534,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "publishing_metadata_trait.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6308204,
+    "offsetHex": "0x60416c",
+    "bytes": 909,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "es_offline.proto",
+    "package": "spotify.offline_esperanto.proto",
+    "offset": 6310532,
+    "offsetHex": "0x604a84",
+    "bytes": 12216,
+    "messages": 47,
+    "services": 1
+  },
+  {
+    "name": "es_offline_debug.proto",
+    "package": "spotify.offline_esperanto.proto",
+    "offset": 6323216,
+    "offsetHex": "0x607c10",
+    "bytes": 628,
+    "messages": 2,
+    "services": 1
+  },
+  {
+    "name": "es_offline_plugin.proto",
+    "package": "spotify.offline.proto.v2",
+    "offset": 6324400,
+    "offsetHex": "0x6080b0",
+    "bytes": 3247,
+    "messages": 9,
+    "services": 1
+  },
+  {
+    "name": "apiv1.proto",
+    "package": "spotify.offline.proto",
+    "offset": 6328680,
+    "offsetHex": "0x609168",
+    "bytes": 4199,
+    "messages": 26,
+    "services": 0
+  },
+  {
+    "name": "offline.proto",
+    "package": "spotify.offline.proto",
+    "offset": 6333516,
+    "offsetHex": "0x60a44c",
+    "bytes": 2340,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "plugin.proto",
+    "package": "spotify.offline.proto",
+    "offset": 6336608,
+    "offsetHex": "0x60b060",
+    "bytes": 3479,
+    "messages": 14,
+    "services": 0
+  },
+  {
+    "name": "resource_type.proto",
+    "package": "spotify.offline.proto",
+    "offset": 6340288,
+    "offsetHex": "0x60bec0",
+    "bytes": 125,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "recently_played.proto",
+    "package": "spotify.recently_played.proto",
+    "offset": 6340444,
+    "offsetHex": "0x60bf5c",
+    "bytes": 128,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "recently_played_backend.proto",
+    "package": "spotify.recently_played_backend.proto",
+    "offset": 6340648,
+    "offsetHex": "0x60c028",
+    "bytes": 284,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "identity.proto",
+    "package": "spotify.identity.v3",
+    "offset": 6341224,
+    "offsetHex": "0x60c268",
+    "bytes": 1886,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "track_descriptor.proto",
+    "package": "spotify.descriptorextension",
+    "offset": 6343204,
+    "offsetHex": "0x60ca24",
+    "bytes": 840,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/list_read_service.proto",
+    "package": "spotify.list.v1",
+    "offset": 6344296,
+    "offsetHex": "0x60ce68",
+    "bytes": 1874,
+    "messages": 9,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/attributes.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6346512,
+    "offsetHex": "0x60d710",
+    "bytes": 3339,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/attribute_extension.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6349860,
+    "offsetHex": "0x60e424",
+    "bytes": 896,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/attributes/ai_curation.proto",
+    "package": "spotify.list.v1.model.attributes",
+    "offset": 6350780,
+    "offsetHex": "0x60e7bc",
+    "bytes": 226,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/attributes/capabilities.proto",
+    "package": "spotify.list.v1.model.attributes",
+    "offset": 6351408,
+    "offsetHex": "0x60ea30",
+    "bytes": 4100,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/attribute_kinds.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6355576,
+    "offsetHex": "0x60fa78",
+    "bytes": 941,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/attributes/format_list_attributes.proto",
+    "package": "spotify.list.v1.model.attributes",
+    "offset": 6356556,
+    "offsetHex": "0x60fe4c",
+    "bytes": 368,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/attributes/geoblock.proto",
+    "package": "spotify.list.v1.model.attributes",
+    "offset": 6356952,
+    "offsetHex": "0x60ffd8",
+    "bytes": 442,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/attributes/item_id_algorithm.proto",
+    "package": "spotify.list.v1.model.attributes",
+    "offset": 6357404,
+    "offsetHex": "0x61019c",
+    "bytes": 242,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/attributes/picture_size.proto",
+    "package": "spotify.list.v1.model.attributes",
+    "offset": 6357684,
+    "offsetHex": "0x6102b4",
+    "bytes": 356,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/attributes/recommendation_info.proto",
+    "package": "spotify.list.v1.model.attributes",
+    "offset": 6358080,
+    "offsetHex": "0x610440",
+    "bytes": 265,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/attributes/signals_list.proto",
+    "package": "spotify.list.v1.model.attributes",
+    "offset": 6358364,
+    "offsetHex": "0x61055c",
+    "bytes": 285,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/lenses.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6358756,
+    "offsetHex": "0x6106e4",
+    "bytes": 666,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/list_diff.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6359472,
+    "offsetHex": "0x6109b0",
+    "bytes": 204,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/list_entity.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6359844,
+    "offsetHex": "0x610b24",
+    "bytes": 1117,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/list_identifier.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6361040,
+    "offsetHex": "0x610fd0",
+    "bytes": 225,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/ops.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6361484,
+    "offsetHex": "0x61118c",
+    "bytes": 1596,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/request_error.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6363392,
+    "offsetHex": "0x611900",
+    "bytes": 1695,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/request_info.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6365236,
+    "offsetHex": "0x612034",
+    "bytes": 1373,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/additional_responses_options.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6366656,
+    "offsetHex": "0x6125c0",
+    "bytes": 247,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/pagination.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6366968,
+    "offsetHex": "0x6126f8",
+    "bytes": 371,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/list_sync_reason.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6367384,
+    "offsetHex": "0x612898",
+    "bytes": 1649,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/parameters.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6369064,
+    "offsetHex": "0x612f28",
+    "bytes": 192,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/requested_fields.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6369456,
+    "offsetHex": "0x6130b0",
+    "bytes": 1563,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/response_info.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6371128,
+    "offsetHex": "0x613738",
+    "bytes": 618,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/caching.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6371840,
+    "offsetHex": "0x613a00",
+    "bytes": 697,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/signals.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6372660,
+    "offsetHex": "0x613d34",
+    "bytes": 564,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "spotify/list/v1/model/sorting.proto",
+    "package": "spotify.list.v1.model",
+    "offset": 6373272,
+    "offsetHex": "0x613f98",
+    "bytes": 661,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "attributes_cache.proto",
+    "package": "spotify.playlist_cache.proto",
+    "offset": 6374208,
+    "offsetHex": "0x614340",
+    "bytes": 1813,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playlist_cache.proto",
+    "package": "spotify.playlist_cache.proto",
+    "offset": 6376284,
+    "offsetHex": "0x614b5c",
+    "bytes": 2430,
+    "messages": 7,
+    "services": 0
+  },
+  {
+    "name": "associations_extension.proto",
+    "package": "spotify.assoc.v1",
+    "offset": 6378828,
+    "offsetHex": "0x61554c",
+    "bytes": 421,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "audio_associations.proto",
+    "package": "spotify.bumblebee.audio_associations.v1",
+    "offset": 6379356,
+    "offsetHex": "0x61575c",
+    "bytes": 744,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "canvaz.proto",
+    "package": "spotify.canvaz.cache",
+    "offset": 6380276,
+    "offsetHex": "0x615af4",
+    "bytes": 614,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "comment_count.proto",
+    "package": "spotify.extendedmetadata.commentcount.v1",
+    "offset": 6380936,
+    "offsetHex": "0x615d88",
+    "bytes": 132,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "companion_content_extension.proto",
+    "package": "spotify.figs.companion_content.v0",
+    "offset": 6381248,
+    "offsetHex": "0x615ec0",
+    "bytes": 1068,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "episode_transcripts_extension.proto",
+    "package": "spotify.corex.transcripts.metadata",
+    "offset": 6382440,
+    "offsetHex": "0x616368",
+    "bytes": 490,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "highlightability.proto",
+    "package": "spotify.bookmarks.entity.v1",
+    "offset": 6382968,
+    "offsetHex": "0x616578",
+    "bytes": 161,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "podcast_cta_cards.proto",
+    "package": "spotify.context_mdata.podcastctacards",
+    "offset": 6383160,
+    "offsetHex": "0x616638",
+    "bytes": 113,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "podcast_poll.proto",
+    "package": "spotify.polls",
+    "offset": 6383440,
+    "offsetHex": "0x616750",
+    "bytes": 797,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "podcast_qna.proto",
+    "package": "spotify.qanda",
+    "offset": 6384336,
+    "offsetHex": "0x616ad0",
+    "bytes": 511,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "podcast_sponsored_content.proto",
+    "package": "spotify.sponsoredcontentlistener.v1",
+    "offset": 6384884,
+    "offsetHex": "0x616cf4",
+    "bytes": 179,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "podcastextensions.proto",
+    "package": "spotify.podcast.extensions",
+    "offset": 6385140,
+    "offsetHex": "0x616df4",
+    "bytes": 436,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "reactions.proto",
+    "package": "spotify.reactions.v1",
+    "offset": 6385676,
+    "offsetHex": "0x61700c",
+    "bytes": 437,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "storylines.proto",
+    "package": "spotify.storylines.v1",
+    "offset": 6386256,
+    "offsetHex": "0x617250",
+    "bytes": 498,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "video_associations.proto",
+    "package": "spotify.bumblebee.video_associations.v1",
+    "offset": 6386868,
+    "offsetHex": "0x6174b4",
+    "bytes": 744,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "podcast_ad_segments.proto",
+    "package": "spotify.ads.formats",
+    "offset": 6387728,
+    "offsetHex": "0x617810",
+    "bytes": 642,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "display_segments_esperanto_request.proto",
+    "package": "spotify.display_segments_esperanto.proto.v1",
+    "offset": 6388532,
+    "offsetHex": "0x617b34",
+    "bytes": 1438,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "display_segments_esperanto_response.proto",
+    "package": "spotify.display_segments_esperanto.proto.v1",
+    "offset": 6390208,
+    "offsetHex": "0x6181c0",
+    "bytes": 1205,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "display_segments_extension.proto",
+    "package": "spotify.displaysegments.v1",
+    "offset": 6391620,
+    "offsetHex": "0x618744",
+    "bytes": 1227,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "consumption_experience_trait.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6392952,
+    "offsetHex": "0x618c78",
+    "bytes": 752,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "visual_identity_trait.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6393776,
+    "offsetHex": "0x618fb0",
+    "bytes": 753,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "video.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6394624,
+    "offsetHex": "0x619300",
+    "bytes": 685,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "audio.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6395364,
+    "offsetHex": "0x6195e4",
+    "bytes": 291,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "transcript.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6395684,
+    "offsetHex": "0x619724",
+    "bytes": 190,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "image.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6396080,
+    "offsetHex": "0x6198b0",
+    "bytes": 1425,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "runtime_consumption_persistence.proto",
+    "package": "spotify.runtime_consumption.proto",
+    "offset": 6397600,
+    "offsetHex": "0x619ea0",
+    "bytes": 305,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "client_taxonomy.proto",
+    "package": "spotify.ubiquity.v1",
+    "offset": 6398040,
+    "offsetHex": "0x61a058",
+    "bytes": 1297,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "pnscapper.proto",
+    "package": "spotify.pnscapper.v1",
+    "offset": 6399412,
+    "offsetHex": "0x61a5b4",
+    "bytes": 269,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "state_restore/automix_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6399728,
+    "offsetHex": "0x61a6f0",
+    "bytes": 161,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/automix_talk_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6399928,
+    "offsetHex": "0x61a7b8",
+    "bytes": 272,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/behavior_metadata_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6400224,
+    "offsetHex": "0x61a8e0",
+    "bytes": 195,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/circuit_breaker_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6400464,
+    "offsetHex": "0x61a9d0",
+    "bytes": 253,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/context_loader.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6400748,
+    "offsetHex": "0x61aaec",
+    "bytes": 165,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/context_player_restorable.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6401008,
+    "offsetHex": "0x61abf0",
+    "bytes": 1059,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/context_player_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6402460,
+    "offsetHex": "0x61b19c",
+    "bytes": 3534,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "state_restore/ads_rules_inject_tracks.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6406088,
+    "offsetHex": "0x61bfc8",
+    "bytes": 255,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/explicit_content_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6406380,
+    "offsetHex": "0x61c0ec",
+    "bytes": 232,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/explicit_filter_bypass.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6406632,
+    "offsetHex": "0x61c1e8",
+    "bytes": 128,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/kitteh_box_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6406860,
+    "offsetHex": "0x61c2cc",
+    "bytes": 690,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/mft_context_history.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6407640,
+    "offsetHex": "0x61c5d8",
+    "bytes": 477,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "state_restore/mft_context_switch_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6408172,
+    "offsetHex": "0x61c7ec",
+    "bytes": 179,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/mft_fallback_page_history.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6408396,
+    "offsetHex": "0x61c8cc",
+    "bytes": 318,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "state_restore/mft_rules_core.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6408768,
+    "offsetHex": "0x61ca40",
+    "bytes": 455,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/mft_rules_inject_filler_tracks.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6409312,
+    "offsetHex": "0x61cc60",
+    "bytes": 696,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "state_restore/mft_state.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6410188,
+    "offsetHex": "0x61cfcc",
+    "bytes": 836,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "state_restore/music_injection_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6411176,
+    "offsetHex": "0x61d3a8",
+    "bytes": 525,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "state_restore/play_history.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6411772,
+    "offsetHex": "0x61d5fc",
+    "bytes": 368,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "state_restore/playback_quality.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6412284,
+    "offsetHex": "0x61d7fc",
+    "bytes": 1625,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/playback_state.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6413988,
+    "offsetHex": "0x61dea4",
+    "bytes": 547,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/player_model.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6414648,
+    "offsetHex": "0x61e138",
+    "bytes": 1196,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/player_session.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6416036,
+    "offsetHex": "0x61e6a4",
+    "bytes": 1680,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/player_session_fake.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6417764,
+    "offsetHex": "0x61ed64",
+    "bytes": 354,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/context_player_state.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6418480,
+    "offsetHex": "0x61f030",
+    "bytes": 2446,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/player_session_queue.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6421024,
+    "offsetHex": "0x61fa20",
+    "bytes": 605,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "state_restore/pns_capper.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6421708,
+    "offsetHex": "0x61fccc",
+    "bytes": 299,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/provided_track.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6422148,
+    "offsetHex": "0x61fe84",
+    "bytes": 643,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/random_source.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6422844,
+    "offsetHex": "0x62013c",
+    "bytes": 145,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/remove_banned_tracks_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6423056,
+    "offsetHex": "0x620210",
+    "bytes": 522,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "state_restore/repeat_settings_node.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6423632,
+    "offsetHex": "0x620450",
+    "bytes": 211,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/resume_points_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6423924,
+    "offsetHex": "0x620574",
+    "bytes": 440,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "state_restore/shuffle_order_event_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6424412,
+    "offsetHex": "0x62075c",
+    "bytes": 259,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/track_error_rules.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6424716,
+    "offsetHex": "0x62088c",
+    "bytes": 219,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "state_restore/video_persistence_state.proto",
+    "package": "spotify.player.proto.state_restore",
+    "offset": 6424972,
+    "offsetHex": "0x62098c",
+    "bytes": 499,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "ad_break_context.proto",
+    "package": "spotify.player.proto",
+    "offset": 6425516,
+    "offsetHex": "0x620bac",
+    "bytes": 247,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "audiobooks_common_capping.proto",
+    "package": "spotify.player.proto",
+    "offset": 6425792,
+    "offsetHex": "0x620cc0",
+    "bytes": 134,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "autoplay_node.proto",
+    "package": "spotify.player.proto",
+    "offset": 6426008,
+    "offsetHex": "0x620d98",
+    "bytes": 405,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "context_index.proto",
+    "package": "spotify.player.proto",
+    "offset": 6426460,
+    "offsetHex": "0x620f5c",
+    "bytes": 105,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "context_node.proto",
+    "package": "spotify.player.proto",
+    "offset": 6426660,
+    "offsetHex": "0x621024",
+    "bytes": 792,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "context_processor.proto",
+    "package": "spotify.player.proto",
+    "offset": 6427516,
+    "offsetHex": "0x62137c",
+    "bytes": 400,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "context_view.proto",
+    "package": "spotify.player.context_view.proto",
+    "offset": 6427992,
+    "offsetHex": "0x621558",
+    "bytes": 461,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "context_view_cyclic_list.proto",
+    "package": "spotify.player.context_view.cyclic_list.proto",
+    "offset": 6428572,
+    "offsetHex": "0x62179c",
+    "bytes": 598,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "context_view_entry.proto",
+    "package": "spotify.player.context_view.proto",
+    "offset": 6429248,
+    "offsetHex": "0x621a40",
+    "bytes": 451,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "context_view_entry_key.proto",
+    "package": "spotify.player.context_view.proto",
+    "offset": 6429736,
+    "offsetHex": "0x621c28",
+    "bytes": 194,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "global_node.proto",
+    "package": "spotify.player.proto",
+    "offset": 6430020,
+    "offsetHex": "0x621d44",
+    "bytes": 547,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "logging_params.proto",
+    "package": "spotify.player.proto",
+    "offset": 6430652,
+    "offsetHex": "0x621fbc",
+    "bytes": 508,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "music_video_node.proto",
+    "package": "spotify.player.proto",
+    "offset": 6431272,
+    "offsetHex": "0x622228",
+    "bytes": 712,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "play_queue_node.proto",
+    "package": "spotify.player.proto",
+    "offset": 6432056,
+    "offsetHex": "0x622538",
+    "bytes": 445,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "player_license.proto",
+    "package": "spotify.player.proto",
+    "offset": 6432532,
+    "offsetHex": "0x622714",
+    "bytes": 97,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "prepare_play_options.proto",
+    "package": "spotify.player.proto",
+    "offset": 6432792,
+    "offsetHex": "0x622818",
+    "bytes": 1135,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "route_switcher_node.proto",
+    "package": "spotify.player.proto",
+    "offset": 6433964,
+    "offsetHex": "0x622cac",
+    "bytes": 176,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "seek_to_position.proto",
+    "package": "spotify.player.proto",
+    "offset": 6434180,
+    "offsetHex": "0x622d84",
+    "bytes": 118,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "segment_switch_node.proto",
+    "package": "spotify.player.proto",
+    "offset": 6434344,
+    "offsetHex": "0x622e28",
+    "bytes": 304,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "sequence_player_node.proto",
+    "package": "spotify.player.proto",
+    "offset": 6434748,
+    "offsetHex": "0x622fbc",
+    "bytes": 858,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "shuffle_played_tracks_order.proto",
+    "package": "spotify.player.proto",
+    "offset": 6435696,
+    "offsetHex": "0x623370",
+    "bytes": 360,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "skip_to_track.proto",
+    "package": "spotify.player.proto",
+    "offset": 6436128,
+    "offsetHex": "0x623520",
+    "bytes": 212,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "track_instance.proto",
+    "package": "spotify.player.proto",
+    "offset": 6436420,
+    "offsetHex": "0x623644",
+    "bytes": 480,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "track_instantiator.proto",
+    "package": "spotify.player.proto",
+    "offset": 6436948,
+    "offsetHex": "0x623854",
+    "bytes": 147,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "transition_map.proto",
+    "package": "spotify.player.proto",
+    "offset": 6437144,
+    "offsetHex": "0x623918",
+    "bytes": 380,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "video_switch_node.proto",
+    "package": "spotify.player.proto",
+    "offset": 6437572,
+    "offsetHex": "0x623ac4",
+    "bytes": 262,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "autoplay_context_request.proto",
+    "package": "spotify.player.proto",
+    "offset": 6437880,
+    "offsetHex": "0x623bf8",
+    "bytes": 186,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "autopodcast_familiar_show_request.proto",
+    "package": "spotify.player.proto",
+    "offset": 6438104,
+    "offsetHex": "0x623cd8",
+    "bytes": 282,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "player_sequence/player/state/context_stack.proto",
+    "package": "spotify.player.sequence.proto",
+    "offset": 6438404,
+    "offsetHex": "0x623e04",
+    "bytes": 237,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "player_sequence/player/state/context_stack_entry.proto",
+    "package": "spotify.player.sequence.proto",
+    "offset": 6438672,
+    "offsetHex": "0x623f10",
+    "bytes": 194,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "player_sequence/player/state/context_tree.proto",
+    "package": "spotify.player.sequence.proto",
+    "offset": 6438980,
+    "offsetHex": "0x624044",
+    "bytes": 800,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "player_sequence/player/state/session_context_state.proto",
+    "package": "spotify.player.sequence.proto",
+    "offset": 6439852,
+    "offsetHex": "0x6243ac",
+    "bytes": 410,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "context.proto",
+    "package": "spotify.player.proto",
+    "offset": 6440360,
+    "offsetHex": "0x6245a8",
+    "bytes": 418,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "context_page.proto",
+    "package": "spotify.player.proto",
+    "offset": 6440876,
+    "offsetHex": "0x6247ac",
+    "bytes": 370,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "context_player_options.proto",
+    "package": "spotify.player.proto",
+    "offset": 6441424,
+    "offsetHex": "0x6249d0",
+    "bytes": 732,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "context_track.proto",
+    "package": "spotify.player.proto",
+    "offset": 6442272,
+    "offsetHex": "0x624d20",
+    "bytes": 427,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "instrumentation_params.proto",
+    "package": "spotify.player.proto.transfer",
+    "offset": 6442728,
+    "offsetHex": "0x624ee8",
+    "bytes": 175,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "pause_resume_origin.proto",
+    "package": "spotify.player.proto",
+    "offset": 6442932,
+    "offsetHex": "0x624fb4",
+    "bytes": 121,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "play_history_entry.proto",
+    "package": "spotify.player.proto.transfer",
+    "offset": 6443148,
+    "offsetHex": "0x62508c",
+    "bytes": 1177,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "play_origin.proto",
+    "package": "spotify.player.proto",
+    "offset": 6444420,
+    "offsetHex": "0x625584",
+    "bytes": 410,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playback.proto",
+    "package": "spotify.player.proto.transfer",
+    "offset": 6444908,
+    "offsetHex": "0x62576c",
+    "bytes": 485,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "queue.proto",
+    "package": "spotify.player.proto.transfer",
+    "offset": 6445440,
+    "offsetHex": "0x625980",
+    "bytes": 304,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "restrictions.proto",
+    "package": "spotify.player.proto",
+    "offset": 6446016,
+    "offsetHex": "0x625bc0",
+    "bytes": 3799,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "session.proto",
+    "package": "spotify.player.proto.transfer",
+    "offset": 6449956,
+    "offsetHex": "0x626b24",
+    "bytes": 876,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "sleep_timer.proto",
+    "package": "spotify.player.proto.transfer",
+    "offset": 6450896,
+    "offsetHex": "0x626ed0",
+    "bytes": 393,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "stream_reporting_attribution_transfer.proto",
+    "package": "spotify.player.proto.transfer",
+    "offset": 6451368,
+    "offsetHex": "0x6270a8",
+    "bytes": 272,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "suppressions.proto",
+    "package": "spotify.player.proto",
+    "offset": 6451660,
+    "offsetHex": "0x6271cc",
+    "bytes": 92,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "transfer_state.proto",
+    "package": "spotify.player.proto.transfer",
+    "offset": 6451832,
+    "offsetHex": "0x627278",
+    "bytes": 719,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "player_filter_counts.proto",
+    "package": "spotify.playlist.proto",
+    "offset": 6452616,
+    "offsetHex": "0x627588",
+    "bytes": 280,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playlist_item_reporting_context.proto",
+    "package": "spotify.playlist.proto",
+    "offset": 6453000,
+    "offsetHex": "0x627708",
+    "bytes": 660,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playlist_play.proto",
+    "package": "spotify.playlist.proto",
+    "offset": 6454028,
+    "offsetHex": "0x627b0c",
+    "bytes": 3503,
+    "messages": 7,
+    "services": 0
+  },
+  {
+    "name": "playlist_play_options.proto",
+    "package": "spotify.playlist.proto",
+    "offset": 6457800,
+    "offsetHex": "0x6289c8",
+    "bytes": 1529,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playlist_play_state.proto",
+    "package": "spotify.playlist.proto",
+    "offset": 6459432,
+    "offsetHex": "0x629028",
+    "bytes": 655,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "playlist_resolved_list.proto",
+    "package": "spotify.playlist.proto",
+    "offset": 6460508,
+    "offsetHex": "0x62945c",
+    "bytes": 2670,
+    "messages": 7,
+    "services": 0
+  },
+  {
+    "name": "auxiliary_media.proto",
+    "package": "spotify.playlist.proto",
+    "offset": 6463660,
+    "offsetHex": "0x62a0ac",
+    "bytes": 2492,
+    "messages": 10,
+    "services": 0
+  },
+  {
+    "name": "es_context_player_state.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6466712,
+    "offsetHex": "0x62ac98",
+    "bytes": 4478,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "es_ad_break_context.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6471268,
+    "offsetHex": "0x62be64",
+    "bytes": 310,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_add_to_queue_request.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6471624,
+    "offsetHex": "0x62bfc8",
+    "bytes": 442,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_command_options.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6472128,
+    "offsetHex": "0x62c1c0",
+    "bytes": 428,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_context.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6472656,
+    "offsetHex": "0x62c3d0",
+    "bytes": 522,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_context_page.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6473276,
+    "offsetHex": "0x62c63c",
+    "bytes": 461,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_context_player_error.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6473820,
+    "offsetHex": "0x62c85c",
+    "bytes": 1808,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_context_player_options.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6475808,
+    "offsetHex": "0x62d020",
+    "bytes": 1029,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_context_track.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6476936,
+    "offsetHex": "0x62d488",
+    "bytes": 312,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_delete_session.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6477300,
+    "offsetHex": "0x62d5f4",
+    "bytes": 293,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_get_error_request.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6477632,
+    "offsetHex": "0x62d740",
+    "bytes": 234,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_get_play_history.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6477904,
+    "offsetHex": "0x62d850",
+    "bytes": 359,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_get_position_state.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6478344,
+    "offsetHex": "0x62da08",
+    "bytes": 487,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_get_queue_request.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6478868,
+    "offsetHex": "0x62dc14",
+    "bytes": 234,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_get_state_request.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6479148,
+    "offsetHex": "0x62dd2c",
+    "bytes": 428,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_logging_params.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6479656,
+    "offsetHex": "0x62df28",
+    "bytes": 704,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_optional.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6480432,
+    "offsetHex": "0x62e230",
+    "bytes": 225,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "es_pause.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6480720,
+    "offsetHex": "0x62e350",
+    "bytes": 445,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_pauseresume_origin.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6481196,
+    "offsetHex": "0x62e52c",
+    "bytes": 183,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_play.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6481492,
+    "offsetHex": "0x62e654",
+    "bytes": 1149,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "es_play_as_next_in_queue_request.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6482696,
+    "offsetHex": "0x62eb08",
+    "bytes": 460,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_play_options.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6483212,
+    "offsetHex": "0x62ed0c",
+    "bytes": 625,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_play_origin.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6483924,
+    "offsetHex": "0x62efd4",
+    "bytes": 473,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_prepare_play.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6484452,
+    "offsetHex": "0x62f1e4",
+    "bytes": 526,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_prepare_play_options.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6485140,
+    "offsetHex": "0x62f494",
+    "bytes": 1324,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_provided_track.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6486528,
+    "offsetHex": "0x62fa00",
+    "bytes": 316,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_queue.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6486900,
+    "offsetHex": "0x62fb74",
+    "bytes": 405,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_response_with_reasons.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6487344,
+    "offsetHex": "0x62fd30",
+    "bytes": 310,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_restrictions.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6487924,
+    "offsetHex": "0x62ff74",
+    "bytes": 3937,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "es_resume.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6491948,
+    "offsetHex": "0x630f2c",
+    "bytes": 449,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_seek_to.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6492460,
+    "offsetHex": "0x63112c",
+    "bytes": 627,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_session_response.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6493116,
+    "offsetHex": "0x6313bc",
+    "bytes": 163,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_set_options.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6493384,
+    "offsetHex": "0x6314c8",
+    "bytes": 843,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_set_queue_request.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6494296,
+    "offsetHex": "0x631858",
+    "bytes": 569,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_set_repeating_context.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6494912,
+    "offsetHex": "0x631ac0",
+    "bytes": 405,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_set_repeating_track.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6495364,
+    "offsetHex": "0x631c84",
+    "bytes": 397,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_set_shuffling_context.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6495808,
+    "offsetHex": "0x631e40",
+    "bytes": 405,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_set_sleep_timer_request.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6496312,
+    "offsetHex": "0x632038",
+    "bytes": 770,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_signal_request.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6497160,
+    "offsetHex": "0x632388",
+    "bytes": 401,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_skip_next.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6497608,
+    "offsetHex": "0x632548",
+    "bytes": 429,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_skip_prev.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6498092,
+    "offsetHex": "0x63272c",
+    "bytes": 466,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_skip_to_track.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6498620,
+    "offsetHex": "0x63293c",
+    "bytes": 388,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_sleep_timer.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6499072,
+    "offsetHex": "0x632b00",
+    "bytes": 450,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_stop.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6499592,
+    "offsetHex": "0x632d08",
+    "bytes": 466,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "es_update.proto",
+    "package": "spotify.player.esperanto.proto",
+    "offset": 6500244,
+    "offsetHex": "0x632f94",
+    "bytes": 1431,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "playlist_clear_token_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6501748,
+    "offsetHex": "0x633574",
+    "bytes": 298,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "playlist_contains_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6502120,
+    "offsetHex": "0x6336e8",
+    "bytes": 467,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "playlist_copy_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6502724,
+    "offsetHex": "0x633944",
+    "bytes": 770,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "playlist_invalidate_revisions_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6503540,
+    "offsetHex": "0x633c74",
+    "bytes": 269,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playlist_lens_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6503904,
+    "offsetHex": "0x633de0",
+    "bytes": 469,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "playlist_members_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6504428,
+    "offsetHex": "0x633fec",
+    "bytes": 353,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playlist_modification_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6504848,
+    "offsetHex": "0x634190",
+    "bytes": 446,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "playlist_offline_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6505368,
+    "offsetHex": "0x634398",
+    "bytes": 561,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "playlist_permission_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6506044,
+    "offsetHex": "0x63463c",
+    "bytes": 642,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "playlist_resync_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6506740,
+    "offsetHex": "0x6348f4",
+    "bytes": 242,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playlist_set_base_permission_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6507040,
+    "offsetHex": "0x634a20",
+    "bytes": 445,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "playlist_set_member_permission_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6507524,
+    "offsetHex": "0x634c04",
+    "bytes": 270,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playlist_set_token_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6507852,
+    "offsetHex": "0x634d4c",
+    "bytes": 314,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "playlist_signal_request.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6508456,
+    "offsetHex": "0x634fa8",
+    "bytes": 1433,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "contains_request.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6509972,
+    "offsetHex": "0x635594",
+    "bytes": 180,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "creation_info.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6510200,
+    "offsetHex": "0x635678",
+    "bytes": 338,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "members_request.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6510596,
+    "offsetHex": "0x635804",
+    "bytes": 247,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "members_response.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6510972,
+    "offsetHex": "0x63597c",
+    "bytes": 895,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "modification_request.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6512112,
+    "offsetHex": "0x635df0",
+    "bytes": 1909,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "playlist_request.proto",
+    "package": "spotify.playlist.cosmos.playlist_request.proto",
+    "offset": 6514952,
+    "offsetHex": "0x636908",
+    "bytes": 6881,
+    "messages": 16,
+    "services": 0
+  },
+  {
+    "name": "playlist_set_permission_request.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6522012,
+    "offsetHex": "0x63849c",
+    "bytes": 403,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "set_member_permission_request.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6522476,
+    "offsetHex": "0x63866c",
+    "bytes": 349,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "sync_request.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6522844,
+    "offsetHex": "0x6387dc",
+    "bytes": 159,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "podcast_subscription.proto",
+    "package": "spotify.podcast_paywalls",
+    "offset": 6523056,
+    "offsetHex": "0x6388b0",
+    "bytes": 529,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "show_access.proto",
+    "package": "spotify.podcast_paywalls",
+    "offset": 6524248,
+    "offsetHex": "0x638d58",
+    "bytes": 3299,
+    "messages": 15,
+    "services": 0
+  },
+  {
+    "name": "spotify/audiobookcashier/v1/audiobook_price.proto",
+    "package": "spotify.audiobookcashier.v1",
+    "offset": 6527732,
+    "offsetHex": "0x639af4",
+    "bytes": 395,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "on_demand_in_free_reason.proto",
+    "package": "spotify.on_demand_set.proto",
+    "offset": 6528144,
+    "offsetHex": "0x639c90",
+    "bytes": 196,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "playlist_playlist_state.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6528744,
+    "offsetHex": "0x639ee8",
+    "bytes": 2028,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "playlist_track_state.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6530888,
+    "offsetHex": "0x63a748",
+    "bytes": 326,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "playlist_user_state.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6531292,
+    "offsetHex": "0x63a8dc",
+    "bytes": 272,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "metadata/album_metadata.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6531656,
+    "offsetHex": "0x63aa48",
+    "bytes": 517,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "metadata/artist_metadata.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6532236,
+    "offsetHex": "0x63ac8c",
+    "bytes": 298,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "metadata/episode_metadata.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6532792,
+    "offsetHex": "0x63aeb8",
+    "bytes": 1505,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "metadata/extension.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6534344,
+    "offsetHex": "0x63b4c8",
+    "bytes": 225,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "metadata/image_group.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6534624,
+    "offsetHex": "0x63b5e0",
+    "bytes": 239,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "metadata/show_metadata.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6535056,
+    "offsetHex": "0x63b790",
+    "bytes": 951,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "metadata/track_metadata.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6536340,
+    "offsetHex": "0x63bc94",
+    "bytes": 1535,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "collection/album_collection_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6537920,
+    "offsetHex": "0x63c2c0",
+    "bytes": 200,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "collection/artist_collection_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6538200,
+    "offsetHex": "0x63c3d8",
+    "bytes": 432,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "collection/episode_collection_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6538680,
+    "offsetHex": "0x63c5b8",
+    "bytes": 262,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "collection/show_collection_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6538972,
+    "offsetHex": "0x63c6dc",
+    "bytes": 169,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "collection/track_collection_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6539196,
+    "offsetHex": "0x63c7bc",
+    "bytes": 277,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "played_state/episode_played_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6539536,
+    "offsetHex": "0x63c910",
+    "bytes": 416,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "played_state/playability_restriction.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6539964,
+    "offsetHex": "0x63cabc",
+    "bytes": 277,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "played_state/show_played_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6540312,
+    "offsetHex": "0x63cc18",
+    "bytes": 664,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "played_state/track_played_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6541016,
+    "offsetHex": "0x63ced8",
+    "bytes": 316,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "sync/album_sync_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6541380,
+    "offsetHex": "0x63d044",
+    "bytes": 217,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "sync/artist_sync_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6541644,
+    "offsetHex": "0x63d14c",
+    "bytes": 219,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "sync/episode_sync_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6541900,
+    "offsetHex": "0x63d24c",
+    "bytes": 189,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "sync/track_sync_state.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6542128,
+    "offsetHex": "0x63d330",
+    "bytes": 174,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playback_segments.proto",
+    "package": "spotify.podcast_segments.playback",
+    "offset": 6542320,
+    "offsetHex": "0x63d3f0",
+    "bytes": 279,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "podcast_segments.proto",
+    "package": "spotify.podcast_segments",
+    "offset": 6542804,
+    "offsetHex": "0x63d5d4",
+    "bytes": 1018,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "playlist_api.proto",
+    "package": "spotify.playlist4.proto",
+    "offset": 6545760,
+    "offsetHex": "0x63e160",
+    "bytes": 11301,
+    "messages": 42,
+    "services": 0
+  },
+  {
+    "name": "pubsub.proto",
+    "package": "spotify.playlist4.proto",
+    "offset": 6557672,
+    "offsetHex": "0x640fe8",
+    "bytes": 1233,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "cache_hint.proto",
+    "package": "spotify.playlist.messages",
+    "offset": 6558976,
+    "offsetHex": "0x641500",
+    "bytes": 233,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "lens-model.proto",
+    "package": "spotify.lens.proto",
+    "offset": 6559296,
+    "offsetHex": "0x641640",
+    "bytes": 308,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "playlist_sync_reason.proto",
+    "package": "spotify.playlist4.proto",
+    "offset": 6559660,
+    "offsetHex": "0x6417ac",
+    "bytes": 1629,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "signal-model.proto",
+    "package": "spotify.playlist.signal.proto",
+    "offset": 6561388,
+    "offsetHex": "0x641e6c",
+    "bytes": 397,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "sorts.proto",
+    "package": "spotify.list.v1.model.attributes",
+    "offset": 6561916,
+    "offsetHex": "0x64207c",
+    "bytes": 690,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "tags.proto",
+    "package": "spotify.list.v1.model.attributes",
+    "offset": 6562744,
+    "offsetHex": "0x6423b8",
+    "bytes": 519,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "collection_itemdata.proto",
+    "package": "spotify.collection.itemdata",
+    "offset": 6563636,
+    "offsetHex": "0x642734",
+    "bytes": 2780,
+    "messages": 11,
+    "services": 0
+  },
+  {
+    "name": "save_source.proto",
+    "package": "spotify.list_collection.save_source.proto",
+    "offset": 6566552,
+    "offsetHex": "0x643298",
+    "bytes": 464,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playlist_permission.proto",
+    "package": "spotify.playlist_permission.proto",
+    "offset": 6568332,
+    "offsetHex": "0x64398c",
+    "bytes": 10441,
+    "messages": 41,
+    "services": 0
+  },
+  {
+    "name": "playlist_query.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6579320,
+    "offsetHex": "0x646478",
+    "bytes": 2589,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "policy/playlist_request_decoration_policy.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6582224,
+    "offsetHex": "0x646fd0",
+    "bytes": 2024,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "policy/playlist_album_decoration_policy.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6584328,
+    "offsetHex": "0x647808",
+    "bytes": 385,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "policy/playlist_decoration_policy.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6585292,
+    "offsetHex": "0x647bcc",
+    "bytes": 3319,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "policy/playlist_episode_decoration_policy.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6588744,
+    "offsetHex": "0x648948",
+    "bytes": 949,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "policy/playlist_track_decoration_policy.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6589844,
+    "offsetHex": "0x648d94",
+    "bytes": 1046,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "policy/user_decoration_policy.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6591048,
+    "offsetHex": "0x649248",
+    "bytes": 705,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "policy/album_decoration_policy.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6591864,
+    "offsetHex": "0x649578",
+    "bytes": 597,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "policy/artist_decoration_policy.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6592636,
+    "offsetHex": "0x64987c",
+    "bytes": 751,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "policy/episode_decoration_policy.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6593724,
+    "offsetHex": "0x649cbc",
+    "bytes": 1432,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "policy/show_decoration_policy.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6595456,
+    "offsetHex": "0x64a380",
+    "bytes": 1279,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "policy/track_decoration_policy.proto",
+    "package": "spotify.cosmos_util.proto",
+    "offset": 6597048,
+    "offsetHex": "0x64a9b8",
+    "bytes": 1420,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "policy/supported_link_types_in_playlists.proto",
+    "package": "spotify.playlist.cosmos.proto",
+    "offset": 6598504,
+    "offsetHex": "0x64af68",
+    "bytes": 310,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "response_status.proto",
+    "package": "spotify.playlist_esperanto.proto",
+    "offset": 6598852,
+    "offsetHex": "0x64b0c4",
+    "bytes": 229,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "stream_reporting_attribution.proto",
+    "package": "spotify.stream_reporting_attribution.proto",
+    "offset": 6599136,
+    "offsetHex": "0x64b1e0",
+    "bytes": 437,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "playback-settings.proto",
+    "package": "spotify.playbacksettings",
+    "offset": 6600256,
+    "offsetHex": "0x64b640",
+    "bytes": 6253,
+    "messages": 22,
+    "services": 1
+  },
+  {
+    "name": "playback-settings-pubsub.proto",
+    "package": "spotify.playbacksettings.pubsub",
+    "offset": 6606776,
+    "offsetHex": "0x64cfb8",
+    "bytes": 571,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "connect.proto",
+    "package": "spotify.connectstate",
+    "offset": 6609332,
+    "offsetHex": "0x64d9b4",
+    "bytes": 14042,
+    "messages": 28,
+    "services": 0
+  },
+  {
+    "name": "connect-service.proto",
+    "package": "spotify.connectstate",
+    "offset": 6624072,
+    "offsetHex": "0x651348",
+    "bytes": 2626,
+    "messages": 12,
+    "services": 0
+  },
+  {
+    "name": "devices.proto",
+    "package": "spotify.connectstate.devices",
+    "offset": 6626840,
+    "offsetHex": "0x651e18",
+    "bytes": 540,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "media.proto",
+    "package": "spotify.common.media",
+    "offset": 6627392,
+    "offsetHex": "0x652040",
+    "bytes": 183,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "player.proto",
+    "package": "spotify.connectstate",
+    "offset": 6628620,
+    "offsetHex": "0x65250c",
+    "bytes": 8722,
+    "messages": 12,
+    "services": 0
+  },
+  {
+    "name": "settingsapi.proto",
+    "package": "spotify.settingsapi.v1",
+    "offset": 6637592,
+    "offsetHex": "0x654818",
+    "bytes": 312,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "include/AdConfigMetricsEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6638036,
+    "offsetHex": "0x6549d4",
+    "bytes": 434,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdContext.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6638656,
+    "offsetHex": "0x654c40",
+    "bytes": 871,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdDecisionEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6639604,
+    "offsetHex": "0x654ff4",
+    "bytes": 291,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6640044,
+    "offsetHex": "0x6551ac",
+    "bytes": 574,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6640808,
+    "offsetHex": "0x6554a8",
+    "bytes": 691,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdRequestEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6641600,
+    "offsetHex": "0x6557c0",
+    "bytes": 464,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdRequestMetricsEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6642292,
+    "offsetHex": "0x655a74",
+    "bytes": 1102,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdOpportunityEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6643560,
+    "offsetHex": "0x655f68",
+    "bytes": 704,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdTransparencyEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6644376,
+    "offsetHex": "0x656298",
+    "bytes": 544,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/SAIMetadataReceived.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6645000,
+    "offsetHex": "0x656508",
+    "bytes": 334,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdSlotEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6645444,
+    "offsetHex": "0x6566c4",
+    "bytes": 380,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ApPermanentErrorNonAuth.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6645856,
+    "offsetHex": "0x656860",
+    "bytes": 152,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AudioDriverError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6646064,
+    "offsetHex": "0x656930",
+    "bytes": 218,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AudioDriverInfo.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6646352,
+    "offsetHex": "0x656a50",
+    "bytes": 331,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AudioIndexRepairReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6646784,
+    "offsetHex": "0x656c00",
+    "bytes": 653,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AudioOffliningSettingsReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6647500,
+    "offsetHex": "0x656ecc",
+    "bytes": 379,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AudioSettingsReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6648116,
+    "offsetHex": "0x657134",
+    "bytes": 1424,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AudioStreamingSettingsReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6649612,
+    "offsetHex": "0x65770c",
+    "bytes": 470,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CanPlayContentPermissionsMissingMetadataEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6650144,
+    "offsetHex": "0x657920",
+    "bytes": 430,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ClientCoreConnectCommand.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6650740,
+    "offsetHex": "0x657b74",
+    "bytes": 831,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ClientCoreConnectGroupCommand.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6651736,
+    "offsetHex": "0x657f58",
+    "bytes": 838,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ClientCoreConnectPlayCommand.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6652628,
+    "offsetHex": "0x6582d4",
+    "bytes": 255,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ClientCoreConnectPullOperation.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6652996,
+    "offsetHex": "0x658444",
+    "bytes": 541,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CollectionTrackEpisodeWrite.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6653584,
+    "offsetHex": "0x658690",
+    "bytes": 176,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CommonCappingFallback.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6653800,
+    "offsetHex": "0x658768",
+    "bytes": 169,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CommonCappingInitRetry.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6654024,
+    "offsetHex": "0x658848",
+    "bytes": 259,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CommonCappingStorageError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6654320,
+    "offsetHex": "0x658970",
+    "bytes": 154,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ContextPlayerCommandEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6654956,
+    "offsetHex": "0x658bec",
+    "bytes": 2352,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectAuthCodeGrantFailure.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6657388,
+    "offsetHex": "0x65956c",
+    "bytes": 238,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectAuthCodeGrantSuccess.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6657664,
+    "offsetHex": "0x659680",
+    "bytes": 169,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectConnectivityError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6657896,
+    "offsetHex": "0x659768",
+    "bytes": 298,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectCredentialsRequest.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6658232,
+    "offsetHex": "0x6598b8",
+    "bytes": 162,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectDeviceDiscovered.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6658528,
+    "offsetHex": "0x6599e0",
+    "bytes": 842,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectDiscoveryScanTrigger.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6659408,
+    "offsetHex": "0x659d50",
+    "bytes": 174,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectInstallationResult.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6659684,
+    "offsetHex": "0x659e64",
+    "bytes": 484,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectTransferIncarnation.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6660240,
+    "offsetHex": "0x65a090",
+    "bytes": 421,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectTransferResult.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6660892,
+    "offsetHex": "0x65a31c",
+    "bytes": 1172,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectUnmappedAudioOutputType.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6662096,
+    "offsetHex": "0x65a7d0",
+    "bytes": 170,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectionInfo.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6662352,
+    "offsetHex": "0x65a8d0",
+    "bytes": 379,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectionQualityEventV2.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6662768,
+    "offsetHex": "0x65aa70",
+    "bytes": 182,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectionQualityInstrumentationBuckets.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6662968,
+    "offsetHex": "0x65ab38",
+    "bytes": 187,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectionQualitySpeedTestEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6663256,
+    "offsetHex": "0x65ac58",
+    "bytes": 504,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CoreAutoplayLoadingResults.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6663840,
+    "offsetHex": "0x65aea0",
+    "bytes": 375,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CoreShuffleStateEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6664388,
+    "offsetHex": "0x65b0c4",
+    "bytes": 996,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/DatabaseStatsDebugEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6665416,
+    "offsetHex": "0x65b4c8",
+    "bytes": 155,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ExternalDeviceInfo.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6665672,
+    "offsetHex": "0x65b5c8",
+    "bytes": 377,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ImageDownload.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6666120,
+    "offsetHex": "0x65b788",
+    "bytes": 314,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/LocalFileSyncError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6666464,
+    "offsetHex": "0x65b8e0",
+    "bytes": 110,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/LocalFileSyncMigrationEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6666628,
+    "offsetHex": "0x65b984",
+    "bytes": 224,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/LocalFilesError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6666900,
+    "offsetHex": "0x65ba94",
+    "bytes": 159,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/LocalFilesImport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6667128,
+    "offsetHex": "0x65bb78",
+    "bytes": 291,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/LocalFilesReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6667520,
+    "offsetHex": "0x65bd00",
+    "bytes": 510,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/LocalFilesSourceEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6668068,
+    "offsetHex": "0x65bf24",
+    "bytes": 132,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/LocalFilesSourceReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6668240,
+    "offsetHex": "0x65bfd0",
+    "bytes": 136,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/Login5PermanentErrorNonAuth.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6668424,
+    "offsetHex": "0x65c088",
+    "bytes": 203,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/Login5TaskNonAuth.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6668696,
+    "offsetHex": "0x65c198",
+    "bytes": 331,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/Offline2ClientError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6669072,
+    "offsetHex": "0x65c310",
+    "bytes": 168,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/Offline2ClientEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6669288,
+    "offsetHex": "0x65c3e8",
+    "bytes": 168,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/OfflineError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6669512,
+    "offsetHex": "0x65c4c8",
+    "bytes": 182,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/OfflineEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6669740,
+    "offsetHex": "0x65c5ac",
+    "bytes": 145,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/OfflinePlayableCacheReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6669980,
+    "offsetHex": "0x65c69c",
+    "bytes": 481,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/OfflinePruneReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6670556,
+    "offsetHex": "0x65c8dc",
+    "bytes": 571,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/OfflineReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6671436,
+    "offsetHex": "0x65cc4c",
+    "bytes": 1614,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PendingEventsInternalErrorNonAuth.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6673144,
+    "offsetHex": "0x65d2f8",
+    "bytes": 298,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PendingEventsStatsNonAuth.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6673516,
+    "offsetHex": "0x65d46c",
+    "bytes": 998,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PickAndShuffleCapStateRestore.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6674584,
+    "offsetHex": "0x65d898",
+    "bytes": 333,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PickAndShuffleCapStateSave.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6675012,
+    "offsetHex": "0x65da44",
+    "bytes": 504,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PlaybackSettingsCoreOperation.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6675612,
+    "offsetHex": "0x65dc9c",
+    "bytes": 392,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PlaylistSyncEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6676076,
+    "offsetHex": "0x65de6c",
+    "bytes": 291,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PodcastAdSegmentReceived.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6676460,
+    "offsetHex": "0x65dfec",
+    "bytes": 377,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PodcastAdSegmentDifference.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6676916,
+    "offsetHex": "0x65e1b4",
+    "bytes": 316,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PrefetchError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6677272,
+    "offsetHex": "0x65e318",
+    "bytes": 140,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ProvenancePrototype.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6677496,
+    "offsetHex": "0x65e3f8",
+    "bytes": 395,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/RestrictionsError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6677972,
+    "offsetHex": "0x65e5d4",
+    "bytes": 253,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionContentResumed.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6678312,
+    "offsetHex": "0x65e728",
+    "bytes": 316,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionProgressUpdate.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6678732,
+    "offsetHex": "0x65e8cc",
+    "bytes": 406,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionProgressUpdateError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6679224,
+    "offsetHex": "0x65eab8",
+    "bytes": 381,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionRevisionsRestored.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6679708,
+    "offsetHex": "0x65ec9c",
+    "bytes": 628,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionRevisionsStored.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6680400,
+    "offsetHex": "0x65ef50",
+    "bytes": 296,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionRevisionRejected.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6680744,
+    "offsetHex": "0x65f0a8",
+    "bytes": 174,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionRevisionSynced.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6680988,
+    "offsetHex": "0x65f19c",
+    "bytes": 282,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionRevisionSyncFailure.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6681308,
+    "offsetHex": "0x65f2dc",
+    "bytes": 195,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionRevisionUpdate.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6681556,
+    "offsetHex": "0x65f3d4",
+    "bytes": 204,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionSmartResumptionApplied.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6681832,
+    "offsetHex": "0x65f4e8",
+    "bytes": 375,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionSmartResumptionSkipped.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6682268,
+    "offsetHex": "0x65f69c",
+    "bytes": 317,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ResumptionTraitResolutionFailure.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6682640,
+    "offsetHex": "0x65f810",
+    "bytes": 240,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/SegmentTransferStats.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6683004,
+    "offsetHex": "0x65f97c",
+    "bytes": 534,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ShuffleAlgorithmEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6683576,
+    "offsetHex": "0x65fbb8",
+    "bytes": 139,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ShuffleContextEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6683832,
+    "offsetHex": "0x65fcb8",
+    "bytes": 653,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ShuffleSequenceEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6684628,
+    "offsetHex": "0x65ffd4",
+    "bytes": 838,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/SlowLoadingListEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6685632,
+    "offsetHex": "0x6603c0",
+    "bytes": 1113,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/StriderSetup.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6686808,
+    "offsetHex": "0x660858",
+    "bytes": 194,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/TimeMeasurement.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6687244,
+    "offsetHex": "0x660a0c",
+    "bytes": 1113,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/TimeMeasurementErrorNonAuth.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6688756,
+    "offsetHex": "0x660ff4",
+    "bytes": 1832,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/TracksClusterReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6690748,
+    "offsetHex": "0x6617bc",
+    "bytes": 405,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/TrafficStats.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6691296,
+    "offsetHex": "0x6619e0",
+    "bytes": 553,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/TrafficStatsNonAuth.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6691992,
+    "offsetHex": "0x661c98",
+    "bytes": 567,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdDetectionMappingVerification.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6692684,
+    "offsetHex": "0x661f4c",
+    "bytes": 686,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdDetectionResult.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6693592,
+    "offsetHex": "0x6622d8",
+    "bytes": 1376,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdDetectionTimestampMappingResult.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6695080,
+    "offsetHex": "0x6628a8",
+    "bytes": 554,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AdvanceStuck.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6695704,
+    "offsetHex": "0x662b18",
+    "bytes": 272,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AudioFileSelection.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6696056,
+    "offsetHex": "0x662c78",
+    "bytes": 331,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AudioRateLimit.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6696472,
+    "offsetHex": "0x662e18",
+    "bytes": 414,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AudioResolve.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6696948,
+    "offsetHex": "0x662ff4",
+    "bytes": 245,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AudioSessionEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6697320,
+    "offsetHex": "0x663168",
+    "bytes": 597,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AudioStartFrameMissed.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6697956,
+    "offsetHex": "0x6633e4",
+    "bytes": 161,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/AutoTransition.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6698236,
+    "offsetHex": "0x6634fc",
+    "bytes": 511,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/BoomboxPlaybackNonCriticalError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6698840,
+    "offsetHex": "0x663758",
+    "bytes": 397,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/BoomboxPlaybackSession.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6699452,
+    "offsetHex": "0x6639bc",
+    "bytes": 1056,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/BoomboxTimelineContents.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6700548,
+    "offsetHex": "0x663e04",
+    "bytes": 211,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/BrokenObject.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6700812,
+    "offsetHex": "0x663f0c",
+    "bytes": 176,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CacheError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6701084,
+    "offsetHex": "0x66401c",
+    "bytes": 331,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CachePruningReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6701556,
+    "offsetHex": "0x6641f4",
+    "bytes": 944,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CacheRealmPruningReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6702628,
+    "offsetHex": "0x664624",
+    "bytes": 834,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CacheRealmReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6703548,
+    "offsetHex": "0x6649bc",
+    "bytes": 393,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CacheReport.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6704204,
+    "offsetHex": "0x664c4c",
+    "bytes": 1359,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConductorErrorEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6705664,
+    "offsetHex": "0x665200",
+    "bytes": 404,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConductorEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6706236,
+    "offsetHex": "0x66543c",
+    "bytes": 694,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ConnectStateRestoreResult.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6707064,
+    "offsetHex": "0x665778",
+    "bytes": 790,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CorePlaybackCommandCorrelation.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6707892,
+    "offsetHex": "0x665ab4",
+    "bytes": 176,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/CosmosVideoError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6708140,
+    "offsetHex": "0x665bac",
+    "bytes": 321,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/Download.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6708868,
+    "offsetHex": "0x665e84",
+    "bytes": 1976,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/EndAd.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6711060,
+    "offsetHex": "0x666714",
+    "bytes": 838,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ExtHostedPlaybackAdPositionAdjustmentException.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6712024,
+    "offsetHex": "0x666ad8",
+    "bytes": 741,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/HeadFileDownload.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6712924,
+    "offsetHex": "0x666e5c",
+    "bytes": 693,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ListPlayerErrorEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6713712,
+    "offsetHex": "0x667170",
+    "bytes": 412,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ListPlayerEvent.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6714256,
+    "offsetHex": "0x667390",
+    "bytes": 561,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/MediaPrefetch.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6714896,
+    "offsetHex": "0x667610",
+    "bytes": 273,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/MetadataExtensionClientStatistic.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6715404,
+    "offsetHex": "0x66780c",
+    "bytes": 1383,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/MidtrackDowngrade.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6716840,
+    "offsetHex": "0x667da8",
+    "bytes": 184,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PlaybackError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6717136,
+    "offsetHex": "0x667ed0",
+    "bytes": 430,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PlaybackRetry.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6717660,
+    "offsetHex": "0x6680dc",
+    "bytes": 312,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/Prefetch.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6718052,
+    "offsetHex": "0x668264",
+    "bytes": 303,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/ProgressiveDownload.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6718536,
+    "offsetHex": "0x668448",
+    "bytes": 835,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PuffinError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6719472,
+    "offsetHex": "0x6687f0",
+    "bytes": 368,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/PuffinStreamV2.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6719904,
+    "offsetHex": "0x6689a0",
+    "bytes": 270,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/RawCoreReadPrototype.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6720300,
+    "offsetHex": "0x668b2c",
+    "bytes": 532,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/RawCoreStream.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6721568,
+    "offsetHex": "0x669020",
+    "bytes": 3867,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/RawCoreStreamProvenancePrototype.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6725588,
+    "offsetHex": "0x669fd4",
+    "bytes": 686,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/RawCoreStreamSegment.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6727040,
+    "offsetHex": "0x66a580",
+    "bytes": 4352,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/RawLyrics.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6731512,
+    "offsetHex": "0x66b6f8",
+    "bytes": 422,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/SegmentedDownload.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6732068,
+    "offsetHex": "0x66b924",
+    "bytes": 639,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/StreamLocation.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6732768,
+    "offsetHex": "0x66bbe0",
+    "bytes": 252,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/StreamReportingApiDebug.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6733308,
+    "offsetHex": "0x66bdfc",
+    "bytes": 1442,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/StreamReportingError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6734852,
+    "offsetHex": "0x66c404",
+    "bytes": 459,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/StreamReportingDebugTracerTest.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6735444,
+    "offsetHex": "0x66c654",
+    "bytes": 652,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/StreamReportingProbe.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6736168,
+    "offsetHex": "0x66c928",
+    "bytes": 273,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/StreamReportingRCSCopy.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6737140,
+    "offsetHex": "0x66ccf4",
+    "bytes": 3726,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/StreamReportingStrictModeViolation.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6740968,
+    "offsetHex": "0x66dbe8",
+    "bytes": 500,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/StreamSubtitleConsumption.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6741620,
+    "offsetHex": "0x66de74",
+    "bytes": 727,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/TimelineReporterError.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6742504,
+    "offsetHex": "0x66e1e8",
+    "bytes": 702,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/Stutter.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6743340,
+    "offsetHex": "0x66e52c",
+    "bytes": 584,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/TrackErrorBypass.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6744076,
+    "offsetHex": "0x66e80c",
+    "bytes": 634,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/TrackNotPlayed.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6744844,
+    "offsetHex": "0x66eb0c",
+    "bytes": 563,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/TrackStuck.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6745532,
+    "offsetHex": "0x66edbc",
+    "bytes": 515,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "include/VideoManifestDownload.proto",
+    "package": "spotify.event_sender.proto",
+    "offset": 6746164,
+    "offsetHex": "0x66f034",
+    "bytes": 498,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "mdata_storage.proto",
+    "package": "spotify.mdata.proto.storage",
+    "offset": 6746856,
+    "offsetHex": "0x66f2e8",
+    "bytes": 706,
+    "messages": 6,
+    "services": 0
+  },
+  {
+    "name": "entity_extension_data.proto",
+    "package": "spotify.extendedmetadata",
+    "offset": 6747740,
+    "offsetHex": "0x66f65c",
+    "bytes": 747,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "extended_metadata.proto",
+    "package": "spotify.extendedmetadata",
+    "offset": 6748760,
+    "offsetHex": "0x66fa58",
+    "bytes": 1521,
+    "messages": 8,
+    "services": 0
+  },
+  {
+    "name": "mdata.proto",
+    "package": "spotify.mdata.proto",
+    "offset": 6750524,
+    "offsetHex": "0x67013c",
+    "bytes": 1162,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "extension_kind.proto",
+    "package": "spotify.extendedmetadata",
+    "offset": 6751736,
+    "offsetHex": "0x6705f8",
+    "bytes": 6922,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "audio_files_extension.proto",
+    "package": "spotify.extendedmetadata.audiofiles",
+    "offset": 6758760,
+    "offsetHex": "0x672168",
+    "bytes": 744,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "generated_audio.proto",
+    "package": "spotify.playback_metadata.proto",
+    "offset": 6759560,
+    "offsetHex": "0x672488",
+    "bytes": 281,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "identity_trait.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6759960,
+    "offsetHex": "0x672618",
+    "bytes": 564,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "metadata.proto",
+    "package": "spotify.metadata",
+    "offset": 6762196,
+    "offsetHex": "0x672ed4",
+    "bytes": 9242,
+    "messages": 29,
+    "services": 0
+  },
+  {
+    "name": "spotify/metadata/contentratings/v1/content_ratings.proto",
+    "package": "spotify.metadata.contentratings.v1",
+    "offset": 6771716,
+    "offsetHex": "0x675404",
+    "bytes": 776,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "context_stack.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6772556,
+    "offsetHex": "0x67574c",
+    "bytes": 460,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "preloaded.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6773072,
+    "offsetHex": "0x675950",
+    "bytes": 353,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "platform_media.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6774124,
+    "offsetHex": "0x675d6c",
+    "bytes": 4511,
+    "messages": 20,
+    "services": 0
+  },
+  {
+    "name": "playback_trait.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6779272,
+    "offsetHex": "0x677188",
+    "bytes": 3265,
+    "messages": 11,
+    "services": 0
+  },
+  {
+    "name": "playback_trait_v2.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6782772,
+    "offsetHex": "0x677f34",
+    "bytes": 939,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "playback_trait_v2_transition_map.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6783844,
+    "offsetHex": "0x678364",
+    "bytes": 677,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "shared_enums.proto",
+    "package": "spotify.audiophile",
+    "offset": 6784548,
+    "offsetHex": "0x678624",
+    "bytes": 1101,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "flat_file.proto",
+    "package": "spotify.contentagnostic.v2",
+    "offset": 6785672,
+    "offsetHex": "0x678a88",
+    "bytes": 128,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/action.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6786208,
+    "offsetHex": "0x678ca0",
+    "bytes": 4688,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/disable.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6791036,
+    "offsetHex": "0x679f7c",
+    "bytes": 321,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/events.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6792004,
+    "offsetHex": "0x67a344",
+    "bytes": 5115,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/handler.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6797260,
+    "offsetHex": "0x67b7cc",
+    "bytes": 961,
+    "messages": 2,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/navigation.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6798312,
+    "offsetHex": "0x67bbe8",
+    "bytes": 1465,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/queue.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6799880,
+    "offsetHex": "0x67c208",
+    "bytes": 741,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/shuffle_algorithm.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6800772,
+    "offsetHex": "0x67c584",
+    "bytes": 1297,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/shuffle_placement.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6802296,
+    "offsetHex": "0x67cb78",
+    "bytes": 1437,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/context.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6803852,
+    "offsetHex": "0x67d18c",
+    "bytes": 1300,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/context_behavior.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6805272,
+    "offsetHex": "0x67d718",
+    "bytes": 1949,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/timers.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6807428,
+    "offsetHex": "0x67df84",
+    "bytes": 1853,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/signals.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6809368,
+    "offsetHex": "0x67e718",
+    "bytes": 643,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/start.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6810060,
+    "offsetHex": "0x67e9cc",
+    "bytes": 936,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/skips.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6811044,
+    "offsetHex": "0x67eda4",
+    "bytes": 447,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/timeline.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6811536,
+    "offsetHex": "0x67ef90",
+    "bytes": 293,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/behavior/ledger.proto",
+    "package": "spotify.playback_platform.context.v1.behavior",
+    "offset": 6811868,
+    "offsetHex": "0x67f0dc",
+    "bytes": 319,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/context_environment.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6812276,
+    "offsetHex": "0x67f274",
+    "bytes": 809,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/context_metadata.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6813160,
+    "offsetHex": "0x67f5e8",
+    "bytes": 469,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/context_state.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6813692,
+    "offsetHex": "0x67f7fc",
+    "bytes": 468,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/ledger_query.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6814260,
+    "offsetHex": "0x67fa34",
+    "bytes": 637,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/metadata/basic.proto",
+    "package": "spotify.playback_platform.context.v1.metadata",
+    "offset": 6814936,
+    "offsetHex": "0x67fcd8",
+    "bytes": 202,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/requests.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6815772,
+    "offsetHex": "0x68001c",
+    "bytes": 4928,
+    "messages": 7,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/ledger.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6820892,
+    "offsetHex": "0x68141c",
+    "bytes": 380,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/ledger_entry.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6821500,
+    "offsetHex": "0x68167c",
+    "bytes": 2358,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/sequence_child.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6823960,
+    "offsetHex": "0x682018",
+    "bytes": 976,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/sequence_options.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6824992,
+    "offsetHex": "0x682420",
+    "bytes": 471,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/sequence_patch.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6825532,
+    "offsetHex": "0x68263c",
+    "bytes": 425,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/sequence_query.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6826028,
+    "offsetHex": "0x68282c",
+    "bytes": 503,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/sequence_start.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6826568,
+    "offsetHex": "0x682a48",
+    "bytes": 471,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/context/v1/sequences.proto",
+    "package": "spotify.playback_platform.context.v1",
+    "offset": 6827128,
+    "offsetHex": "0x682c78",
+    "bytes": 729,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/media/v1/manifests.proto",
+    "package": "spotify.playback_platform.media.v1",
+    "offset": 6828192,
+    "offsetHex": "0x6830a0",
+    "bytes": 2476,
+    "messages": 9,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/media/v1/requests.proto",
+    "package": "spotify.playback_platform.media.v1",
+    "offset": 6830880,
+    "offsetHex": "0x683b20",
+    "bytes": 1490,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/behavior/reporting.proto",
+    "package": "spotify.playback_platform.timeline.v1.behavior",
+    "offset": 6832468,
+    "offsetHex": "0x684154",
+    "bytes": 567,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/behavior/restrictions.proto",
+    "package": "spotify.playback_platform.timeline.v1.behavior",
+    "offset": 6833148,
+    "offsetHex": "0x6843fc",
+    "bytes": 2258,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/timeline.proto",
+    "package": "spotify.playback_platform.timeline.v1",
+    "offset": 6835468,
+    "offsetHex": "0x684d0c",
+    "bytes": 560,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/timeline_behavior.proto",
+    "package": "spotify.playback_platform.timeline.v1",
+    "offset": 6836100,
+    "offsetHex": "0x684f84",
+    "bytes": 1044,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/behavior/seek_skip.proto",
+    "package": "spotify.playback_platform.timeline.v1.behavior",
+    "offset": 6837184,
+    "offsetHex": "0x6853c0",
+    "bytes": 452,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/behavior/seek_snap.proto",
+    "package": "spotify.playback_platform.timeline.v1.behavior",
+    "offset": 6837704,
+    "offsetHex": "0x6855c8",
+    "bytes": 593,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/behavior/seek_into.proto",
+    "package": "spotify.playback_platform.timeline.v1.behavior",
+    "offset": 6838368,
+    "offsetHex": "0x685860",
+    "bytes": 856,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/timeline_match.proto",
+    "package": "spotify.playback_platform.timeline.v1",
+    "offset": 6839256,
+    "offsetHex": "0x685bd8",
+    "bytes": 310,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/timeline_metadata.proto",
+    "package": "spotify.playback_platform.timeline.v1",
+    "offset": 6839640,
+    "offsetHex": "0x685d58",
+    "bytes": 638,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/metadata/artist.proto",
+    "package": "spotify.playback_platform.timeline.v1.metadata",
+    "offset": 6840332,
+    "offsetHex": "0x68600c",
+    "bytes": 533,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/timeline_options.proto",
+    "package": "spotify.playback_platform.timeline.v1",
+    "offset": 6840896,
+    "offsetHex": "0x686240",
+    "bytes": 236,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/timeline_query.proto",
+    "package": "spotify.playback_platform.timeline.v1",
+    "offset": 6841164,
+    "offsetHex": "0x68634c",
+    "bytes": 310,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/timepoint.proto",
+    "package": "spotify.playback_platform.timeline.v1",
+    "offset": 6841612,
+    "offsetHex": "0x68650c",
+    "bytes": 1035,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/timeline/v1/timespan.proto",
+    "package": "spotify.playback_platform.timeline.v1",
+    "offset": 6843316,
+    "offsetHex": "0x686bb4",
+    "bytes": 4919,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/transition/v1/transition_maps.proto",
+    "package": "spotify.playback_platform.transition.v1",
+    "offset": 6848460,
+    "offsetHex": "0x687fcc",
+    "bytes": 1328,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/common/v1/audio_format.proto",
+    "package": "spotify.playback_platform.common.v1",
+    "offset": 6849836,
+    "offsetHex": "0x68852c",
+    "bytes": 159,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/common/v1/cache_control.proto",
+    "package": "spotify.playback_platform.common.v1",
+    "offset": 6850048,
+    "offsetHex": "0x688600",
+    "bytes": 468,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/common/v1/client.proto",
+    "package": "spotify.playback_platform.common.v1",
+    "offset": 6850556,
+    "offsetHex": "0x6887fc",
+    "bytes": 387,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/common/v1/device.proto",
+    "package": "spotify.playback_platform.common.v1",
+    "offset": 6850980,
+    "offsetHex": "0x6889a4",
+    "bytes": 206,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/common/v1/duration.proto",
+    "package": "spotify.playback_platform.common.v1",
+    "offset": 6851340,
+    "offsetHex": "0x688b0c",
+    "bytes": 716,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/common/v1/locale.proto",
+    "package": "spotify.playback_platform.common.v1",
+    "offset": 6852128,
+    "offsetHex": "0x688e20",
+    "bytes": 249,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/common/v1/request_error.proto",
+    "package": "spotify.playback_platform.common.v1",
+    "offset": 6852512,
+    "offsetHex": "0x688fa0",
+    "bytes": 1144,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/common/v1/restriction.proto",
+    "package": "spotify.playback_platform.common.v1",
+    "offset": 6853724,
+    "offsetHex": "0x68945c",
+    "bytes": 669,
+    "messages": 0,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/common/v1/video_format.proto",
+    "package": "spotify.playback_platform.common.v1",
+    "offset": 6854400,
+    "offsetHex": "0x689700",
+    "bytes": 159,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "spotify/playback_platform/external/legacy/v1/legacy_metadata.proto",
+    "package": "spotify.playback_platform.external.legacy.v1",
+    "offset": 6854780,
+    "offsetHex": "0x68987c",
+    "bytes": 1441,
+    "messages": 4,
+    "services": 0
+  },
+  {
+    "name": "google/protobuf/empty.proto",
+    "package": "google.protobuf",
+    "offset": 6856268,
+    "offsetHex": "0x689e4c",
+    "bytes": 190,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "google/protobuf/struct.proto",
+    "package": "google.protobuf",
+    "offset": 6856548,
+    "offsetHex": "0x689f64",
+    "bytes": 638,
+    "messages": 3,
+    "services": 0
+  },
+  {
+    "name": "google/protobuf/field_mask.proto",
+    "package": "google.protobuf",
+    "offset": 6857228,
+    "offsetHex": "0x68a20c",
+    "bytes": 223,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "google/protobuf/duration.proto",
+    "package": "google.protobuf",
+    "offset": 6857488,
+    "offsetHex": "0x68a310",
+    "bytes": 235,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "google/protobuf/timestamp.proto",
+    "package": "google.protobuf",
+    "offset": 6857760,
+    "offsetHex": "0x68a420",
+    "bytes": 239,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "google/protobuf/type.proto",
+    "package": "google.protobuf",
+    "offset": 6858292,
+    "offsetHex": "0x68a634",
+    "bytes": 1647,
+    "messages": 5,
+    "services": 0
+  },
+  {
+    "name": "google/protobuf/any.proto",
+    "package": "google.protobuf",
+    "offset": 6860008,
+    "offsetHex": "0x68ace8",
+    "bytes": 212,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "google/protobuf/source_context.proto",
+    "package": "google.protobuf",
+    "offset": 6860252,
+    "offsetHex": "0x68addc",
+    "bytes": 240,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "google/protobuf/wrappers.proto",
+    "package": "google.protobuf",
+    "offset": 6860684,
+    "offsetHex": "0x68af8c",
+    "bytes": 455,
+    "messages": 9,
+    "services": 0
+  },
+  {
+    "name": "google/protobuf/cpp_features.proto",
+    "package": "pb",
+    "offset": 6861248,
+    "offsetHex": "0x68b1c0",
+    "bytes": 645,
+    "messages": 1,
+    "services": 0
+  },
+  {
+    "name": "google/protobuf/descriptor.proto",
+    "package": "google.protobuf",
+    "offset": 6863716,
+    "offsetHex": "0x68bb64",
+    "bytes": 10908,
+    "messages": 23,
+    "services": 0
+  }
+]

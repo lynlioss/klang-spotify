@@ -1,0 +1,19 @@
+// Recovered descriptor. Original file: resumption_boundaries.proto
+syntax = "proto3";
+package spotify.resumptionboundaries.v1;
+enum Strategy {
+  STRATEGY_UNSPECIFIED = 0;
+  STRATEGY_SENTENCE = 1;
+}
+message ResumptionBoundaries {
+  repeated .spotify.resumptionboundaries.v1.Segmentation segmentations = 1;
+}
+message Segmentation {
+  .spotify.resumptionboundaries.v1.Strategy strategy = 1;
+  oneof boundaries {
+    .spotify.resumptionboundaries.v1.DeltaBoundaries deltas = 2;
+  }
+}
+message DeltaBoundaries {
+  repeated uint32 deltas_ms = 1;
+}

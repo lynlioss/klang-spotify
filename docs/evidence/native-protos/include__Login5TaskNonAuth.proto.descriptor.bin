@@ -1,0 +1,9 @@
+
+include/Login5TaskNonAuth.protospotify.event_sender.proto"‡
+Login5TaskNonAuth)
+credentials_type (	RcredentialsType)
+protocol_version (	RprotocolVersion#
+http_response (RhttpResponse'
+login5_response (	Rlogin5Response+
+response_duration (RresponseDuration!
+client_error (	RclientErrorBH

@@ -1,0 +1,26 @@
+
+mdata_storage.protospotify.mdata.proto.storageextension_kind.protogoogle/protobuf/any.proto"Ü
+
+CacheEntry;
+kind (2'.spotify.extendedmetadata.ExtensionKindRkind;
+extension_data (2.google.protobuf.AnyRextensionData"0
+Vary
+name (	Rname
+value (	Rvalue"ç
+	CacheInfo
+status_code (R
+statusCode
+is_empty (RisEmpty!
+cache_expiry (RcacheExpiry%
+offline_expiry (RofflineExpiry
+etag (	Retag#
+last_modified (RlastModified5
+vary	 (2!.spotify.mdata.proto.storage.VaryRvaryJJ".
+OfflineLock
+lock_expiry (R
+lockExpiry"%
+
+AudioFiles
+file_id (	RfileId",
+TrackDescriptor
+track_id (RtrackIdBH¯bproto3

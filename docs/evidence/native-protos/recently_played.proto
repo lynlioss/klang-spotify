@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: recently_played.proto
+syntax = "proto3";
+package spotify.recently_played.proto;
+message Item {
+  string uri = 1;
+  int64 timestamp = 2;
+}

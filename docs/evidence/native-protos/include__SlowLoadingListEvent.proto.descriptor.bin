@@ -1,0 +1,23 @@
+
+"include/SlowLoadingListEvent.protospotify.event_sender.proto"’
+SlowLoadingListEvent
+list_uri (	RlistUri
+
+feature_id (R	featureId3
+synchronization_state (RsynchronizationState!
+cache_exists (RcacheExists*
+cache_read_status (	RcacheReadStatus,
+cache_has_revision (RcacheHasRevision9
+cache_has_pending_changes (RcacheHasPendingChanges;
+cache_has_requested_lenses (RcacheHasRequestedLenses+
+num_items_in_cache	 (RnumItemsInCache3
+esperanto_waited_for_s
+ (ResperantoWaitedForSB
+esperanto_waiting_to_load_list (ResperantoWaitingToLoadListL
+#esperanto_waiting_for_list_metadata (ResperantoWaitingForListMetadataD
+esperanto_waiting_for_list_rows (ResperantoWaitingForListRowsQ
+%esperanto_waiting_for_recommendations (R"esperantoWaitingForRecommendationsL
+#esperanto_waiting_for_item_metadata (ResperantoWaitingForItemMetadataa
+.esperanto_waiting_for_item_metadata_extensions (R)esperantoWaitingForItemMetadataExtensions3
+list_is_in_transaction (RlistIsInTransaction#
+offline_state (RofflineStateBH

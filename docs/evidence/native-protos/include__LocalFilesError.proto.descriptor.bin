@@ -1,0 +1,7 @@
+
+include/LocalFilesError.protospotify.event_sender.proto"^
+LocalFilesError
+
+error_code (R	errorCode
+context (	Rcontext
+info (	RinfoBH

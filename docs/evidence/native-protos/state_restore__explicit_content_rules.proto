@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: state_restore/explicit_content_rules.proto
+syntax = "proto2";
+package spotify.player.proto.state_restore;
+message ExplicitContentRules {
+  required bool filter_explicit_content = 1;
+  required bool filter_age_restricted_content = 2;
+}

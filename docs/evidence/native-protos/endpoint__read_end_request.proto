@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: endpoint/read_end_request.proto
+syntax = "proto3";
+package spotify.read_reporting_esperanto.proto;
+import "endpoint/reason_end.proto";
+message ReadEndRequest {
+  bytes session_id = 1;
+  int64 wall_timestamp_ms = 2;
+  int64 monotonic_timestamp_ms = 3;
+  .spotify.read_reporting_esperanto.proto.ReasonEnd reason_end = 4;
+}

@@ -1,0 +1,34 @@
+// Recovered descriptor. Original file: prerelease_extension.proto
+syntax = "proto3";
+package spotify.prerelease.extension;
+import "google/protobuf/timestamp.proto";
+message Entity {
+  string uri = 1;
+  string name = 3;
+  repeated .spotify.prerelease.extension.Agent agents = 4;
+  repeated .spotify.prerelease.extension.Image covers = 5;
+  oneof _type {
+    string type = 2;
+  }
+}
+message Prerelease {
+  string uri = 1;
+  .google.protobuf.Timestamp release_time = 2;
+  .spotify.prerelease.extension.Entity entity = 3;
+}
+message Image {
+  string uri = 1;
+  string size = 2;
+  oneof _width {
+    sint32 width = 3;
+  }
+  oneof _height {
+    sint32 height = 4;
+  }
+}
+message Agent {
+  string name = 2;
+  oneof _uri {
+    string uri = 1;
+  }
+}

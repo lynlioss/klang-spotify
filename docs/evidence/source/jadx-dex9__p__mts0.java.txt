@@ -1,0 +1,67 @@
+Source: analysis/spotify/jadx-dex9/sources/p/mts0.java
+SHA256: a8dd8df5fadbbda33509c34a0d1fc70e534e45cf04a7b9e71fbf09380138417d
+Lines: 1046-1110
+
+1046:     public java.lang.Object n(java.lang.String r5, java.lang.String r6, p.ssm r7) {
+1047:             r4 = this;
+1048:             boolean r0 = r7 instanceof p.cmt0
+1049:             if (r0 == 0) goto L13
+1050:             r0 = r7
+1051:             p.cmt0 r0 = (p.cmt0) r0
+1052:             int r1 = r0.c
+1053:             r2 = -2147483648(0xffffffff80000000, float:-0.0)
+1054:             r3 = r1 & r2
+1055:             if (r3 == 0) goto L13
+1056:             int r1 = r1 - r2
+1057:             r0.c = r1
+1058:             goto L18
+1059:         L13:
+1060:             p.cmt0 r0 = new p.cmt0
+1061:             r0.<init>(r4, r7)
+1062:         L18:
+1063:             java.lang.Object r7 = r0.a
+1064:             int r1 = r0.c
+1065:             r2 = 1
+1066:             if (r1 == 0) goto L2c
+1067:             if (r1 != r2) goto L25
+1068:             p.po5.Q(r7)     // Catch: java.lang.Exception -> L61
+1069:             goto L55
+1070:         L25:
+1071:             java.lang.String r4 = "call to 'resume' before 'invoke' with coroutine"
+1072:             p.eg.m(r4)
+1073:             r4 = 0
+1074:             return r4
+1075:         L2c:
+1076:             p.po5.Q(r7)
+1077:             java.lang.Object r7 = r4.c     // Catch: java.lang.Exception -> L61
+1078:             p.dmt0 r7 = (p.dmt0) r7     // Catch: java.lang.Exception -> L61
+1079:             p.brj1 r1 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.n()     // Catch: java.lang.Exception -> L61
+1080:             r1.r(r5)     // Catch: java.lang.Exception -> L61
+1081:             r1.n(r6)     // Catch: java.lang.Exception -> L61
+1082:             java.lang.Object r4 = r4.b     // Catch: java.lang.Exception -> L61
+1083:             java.lang.String r4 = (java.lang.String) r4     // Catch: java.lang.Exception -> L61
+1084:             r1.q(r4)     // Catch: java.lang.Exception -> L61
+1085:             com.google.protobuf.h r4 = r1.build()     // Catch: java.lang.Exception -> L61
+1086:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r4 = (com.spotify.integrity.integrityimpl.proto.VerifyRequest) r4     // Catch: java.lang.Exception -> L61
+1087:             r0.c = r2     // Catch: java.lang.Exception -> L61
+1088:             java.lang.Object r7 = r7.a(r4, r0)     // Catch: java.lang.Exception -> L61
+1089:             p.men r4 = p.men.a
+1090:             if (r7 != r4) goto L55
+1091:             return r4
+1092:         L55:
+1093:             com.spotify.integrity.integrityimpl.proto.VerifyResponse r7 = (com.spotify.integrity.integrityimpl.proto.VerifyResponse) r7     // Catch: java.lang.Exception -> L61
+1094:             p.drj1 r4 = new p.drj1     // Catch: java.lang.Exception -> L61
+1095:             java.lang.String r5 = r7.o()     // Catch: java.lang.Exception -> L61
+1096:             r4.<init>(r5)     // Catch: java.lang.Exception -> L61
+1097:             return r4
+1098:         L61:
+1099:             r4 = move-exception
+1100:             p.crj1 r5 = new p.crj1
+1101:             java.lang.String r4 = r4.getMessage()
+1102:             if (r4 != 0) goto L6c
+1103:             java.lang.String r4 = "Unknown error"
+1104:         L6c:
+1105:             r5.<init>(r4)
+1106:             return r5
+1107:     }
+1108: }

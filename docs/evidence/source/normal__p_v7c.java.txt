@@ -1,0 +1,117 @@
+JADX normal rendering; cross-check ambiguous control flow against smali.
+Source: analysis/spotify/java-focused/p_v7c.java
+SHA256: 5e15f557c14e4a0ad043c2d3a2cc92841ac6c0b258dc4f8c4cdafc680ddca9f6
+
+package p;
+
+import com.spotify.base.java.logging.Logger;
+import com.spotify.contentdelivery.mediaprocessing.NativeMediaProcessor;
+import io.reactivex.rxjava3.core.Single;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
+import kotlin.NoWhenBranchMatchedException;
+
+/* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes.dex */
+public final class v7c implements qc90 {
+    public final /* synthetic */ byte a = 1;
+    public final Object b;
+
+    public v7c(ky01 ky01Var) {
+        this.b = ky01Var;
+    }
+
+    public final fh31 a(hy01 hy01Var) {
+        switch (this.a) {
+            case 0:
+                a631 a631Var = hy01Var.e;
+                try {
+                    return hy01Var.b(a631Var);
+                } catch (IllegalArgumentException unused) {
+                    ky01 ky01Var = (ky01) this.b;
+                    lrc lrcVar = ky01Var.c;
+                    if (lrcVar != null) {
+                        try {
+                            lrcVar.a();
+                        } catch (IOException unused2) {
+                            Logger.d("Could not clear cache, %s", ky01Var.a.getAbsolutePath());
+                        }
+                        break;
+                    }
+                    return hy01Var.b(a631Var);
+                }
+            default:
+                a631 a631Var2 = hy01Var.e;
+                if (a631Var2.c.c("No-Webgate-Authentication") != null) {
+                    ne neVarB = a631Var2.b();
+                    ((ff60) neVarB.c).w("No-Webgate-Authentication");
+                    return hy01Var.b(new a631(neVarB));
+                }
+                if (a631Var2.a().j) {
+                    return hy01Var.b(a631Var2);
+                }
+                bf70 bf70Var = a631Var2.a;
+                boolean zF = bf70Var.f();
+                String str = bf70Var.d;
+                if (zF && ("spclient.wg.spotify.com".equals(str) || "exp.wg.spotify.com".equals(str) || "wgint.spotify.net".equals(str) || "image-upload.spotify.com".equals(str) || "api.spotify.com".equals(str) || "api-partner.spotify.com".equals(str) || "partnerapi.spotify.net".equals(str) || (a631Var2.c(tr90.class) != null && s3d1.b0(str, ".spotify.com", false)))) {
+                    xwa0 xwa0VarB = jv11.a.b(Object.class);
+                    ((ahg) xwa0VarB).n().cast(a631Var2.e.J(xwa0VarB));
+                    String strC = a631Var2.c.c("Authorization");
+                    if (strC == null || strC.length() == 0) {
+                        return b(hy01Var, a631Var2, false);
+                    }
+                }
+                return hy01Var.b(a631Var2);
+        }
+    }
+
+    /* JADX INFO: Thrown type has an unknown type hierarchy: kotlin.NoWhenBranchMatchedException */
+    public fh31 b(hy01 hy01Var, a631 a631Var, boolean z) throws NoWhenBranchMatchedException {
+        pj8 pj8Var = (pj8) ((ef20) this.b).x().timeout(10000L, TimeUnit.MILLISECONDS, Single.just(new lj8(new ai8(null, "Timed out")))).blockingGet();
+        if (pj8Var instanceof oj8) {
+            wd wdVar = ((oj8) pj8Var).a.b;
+            if (wdVar == null) {
+                eg.m("Received null access token");
+                return null;
+            }
+            String str = wdVar.b;
+            ne neVarB = a631Var.b();
+            ((ff60) neVarB.c).a("Authorization", k3d.m("Bearer ", str));
+            fh31 fh31VarB = hy01Var.b(new a631(neVarB));
+            if (fh31VarB.d == 401 && !z) {
+                String strC = fh31VarB.f.c("client-token-error");
+                if ((strC != null ? strC : null) == null) {
+                    fh31VarB.g.close();
+                    return b(hy01Var, a631Var, true);
+                }
+            }
+            return fh31VarB;
+        }
+        boolean z2 = pj8Var instanceof lj8;
+        i1z0 i1z0Var = i1z0.c;
+        dp01 dp01Var = osg1.u0;
+        if (!z2) {
+            if (pj8Var instanceof kj8) {
+                hi31 hi31Var = ii31.a;
+                ArrayList arrayList = new ArrayList(20);
+                ix11 ix11Var = fni0.e;
+                return new fh31(a631Var, i1z0Var, "the credentials used are invalid", 401, (n360) null, new hf60((String[]) arrayList.toArray(new String[0])), lo5.C("the credentials used are invalid", t3r0.y("plain/text")), (jsa1) null, (fh31) null, (fh31) null, (fh31) null, 0L, 0L, (us61) null, dp01Var);
+            }
+            if (pj8Var instanceof mj8) {
+                dyn0.A(pj8Var, "Unexpected error while requesting access token: ");
+                return null;
+            }
+            eg.o();
+            return null;
+        }
+        String str2 = "network error while attempting to make a request: " + ((lj8) pj8Var).a.b + " for url " + a631Var.a;
+        hi31 hi31Var2 = ii31.a;
+        ArrayList arrayList2 = new ArrayList(20);
+        ix11 ix11Var2 = fni0.e;
+        return new fh31(a631Var, i1z0Var, str2, NativeMediaProcessor.PROCESS_SAMPLE_RESULT_NULL_SKIP_BYTE_COUNTS, (n360) null, new hf60((String[]) arrayList2.toArray(new String[0])), lo5.C(str2, t3r0.y("plain/text")), (jsa1) null, (fh31) null, (fh31) null, (fh31) null, 0L, 0L, (us61) null, dp01Var);
+    }
+
+    public v7c(dp01 dp01Var, ef20 ef20Var) {
+        this.b = ef20Var;
+    }
+}

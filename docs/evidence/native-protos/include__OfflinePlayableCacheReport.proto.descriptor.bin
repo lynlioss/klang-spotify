@@ -1,0 +1,16 @@
+
+(include/OfflinePlayableCacheReport.protospotify.event_sender.proto"”
+OfflinePlayableCacheReport
+
+num_tracks (R	numTracks*
+num_missing_files (RnumMissingFiles(
+num_missing_keys (RnumMissingKeys0
+num_missing_metadata (RnumMissingMetadata
+num_expired (R
+numExpired:
+num_missing_in_audio_index (RnumMissingInAudioIndex
+
+total_time (R	totalTime
+num_batches (R
+numBatches2
+num_previously_played	 (RnumPreviouslyPlayedBH

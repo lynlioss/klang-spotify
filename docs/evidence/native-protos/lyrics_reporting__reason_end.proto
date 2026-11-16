@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: lyrics_reporting/reason_end.proto
+syntax = "proto3";
+package spotify.lyrics_reporting_esperanto.proto;
+enum ReasonEnd {
+  INVALID_REASON_END = 0;
+  REASON_END_DISMISS = 1;
+  REASON_END_CONTEXT_CHANGE = 2;
+}

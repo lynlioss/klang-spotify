@@ -1,0 +1,29 @@
+
+search.protospotify.search.proto"t
+OfflineAlbum
+name (	Rname
+uri (	Ruri
+	image_uri (	RimageUri!
+artist_names (	RartistNames"«
+OfflineAudioEpisode
+name (	Rname
+uri (	Ruri
+	image_uri (	RimageUri
+	show_name (	RshowName
+explicit (Rexplicit
+mogef19 (Rmogef19"T
+OfflinePlaylist
+name (	Rname
+uri (	Ruri
+	image_uri (	RimageUri"ì
+OfflineTrack
+name (	Rname
+uri (	Ruri
+	image_uri (	RimageUri
+
+album_name (	R	albumName!
+artist_names (	RartistNames
+explicit (Rexplicit
+mogef19 (Rmogef19!
+premium_only (RpremiumOnlyB3
+com.spotify.search.protoHP¢SPTSearchCoreProtobproto3

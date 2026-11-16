@@ -1,0 +1,20 @@
+// Recovered descriptor. Original file: es_connection_type.proto
+syntax = "proto3";
+package spotify.connectivity.reachability.esperanto.proto;
+import "google/protobuf/empty.proto";
+enum CellularSubtype {
+  GPRS = 0;
+  EDGE = 1;
+  THREE_G = 2;
+  FOUR_G = 3;
+  FIVE_G = 4;
+  UNKNOWN_SUBTYPE = 5;
+}
+message ConnectionType {
+  oneof type {
+    .google.protobuf.Empty none = 1;
+    .google.protobuf.Empty wlan = 2;
+    .spotify.connectivity.reachability.esperanto.proto.CellularSubtype cellular = 3;
+    .google.protobuf.Empty other = 4;
+  }
+}

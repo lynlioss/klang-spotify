@@ -1,0 +1,18 @@
+// Recovered descriptor. Original file: scrobble.proto
+syntax = "proto3";
+package spotify.scrobble.esperanto.proto;
+message GetIncognitoModeRequest {
+}
+message GetIncognitoModeResponse {
+  bool incognito_mode = 1;
+}
+message PutIncognitoModeRequest {
+  bool incognito_mode = 1;
+}
+message SubIncognitoModeRequest {
+}
+service Scrobble {
+  rpc GetIncognitoMode (.spotify.scrobble.esperanto.proto.GetIncognitoModeRequest) returns (.spotify.scrobble.esperanto.proto.GetIncognitoModeResponse);
+  rpc PutIncognitoMode (.spotify.scrobble.esperanto.proto.PutIncognitoModeRequest) returns (.spotify.scrobble.esperanto.proto.GetIncognitoModeResponse);
+  rpc SubIncognitoMode (.spotify.scrobble.esperanto.proto.SubIncognitoModeRequest) returns (stream .spotify.scrobble.esperanto.proto.GetIncognitoModeResponse);
+}

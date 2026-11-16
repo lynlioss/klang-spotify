@@ -1,0 +1,10 @@
+
+endpoint/read_end_request.proto&spotify.read_reporting_esperanto.protoendpoint/reason_end.proto"ã
+ReadEndRequest
+
+session_id (R	sessionId*
+wall_timestamp_ms (RwallTimestampMs4
+monotonic_timestamp_ms (RmonotonicTimestampMsP
+
+reason_end (21.spotify.read_reporting_esperanto.proto.ReasonEndR	reasonEndB6
+*com.spotify.read_reporting_esperanto.protoHP¢ESPbproto3

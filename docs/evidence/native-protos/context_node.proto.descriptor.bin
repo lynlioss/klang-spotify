@@ -1,0 +1,15 @@
+
+context_node.protospotify.player.protocontext_processor.protoplay_origin.protoprepare_play_options.prototrack_instance.prototrack_instantiator.protocontext_track.proto"Ú
+ContextNodeH
+current_track (2#.spotify.player.proto.TrackInstanceRcurrentTrackI
+instantiate (2'.spotify.player.proto.TrackInstantiatorRinstantiateQ
+prepare_options (2(.spotify.player.proto.PreparePlayOptionsRprepareOptionsA
+play_origin (2 .spotify.player.proto.PlayOriginR
+playOriginS
+context_processor (2&.spotify.player.proto.ContextProcessorRcontextProcessor
+
+session_id (	R	sessionId
+	iteration (R	iteration#
+pending_pause	 (RpendingPausei
+injected_connect_transfer_track
+ (2".spotify.player.proto.ContextTrackRinjectedConnectTransferTrackBH

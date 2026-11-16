@@ -1,0 +1,41 @@
+// Recovered descriptor. Original file: es_traffic_transaction_metrics.proto
+syntax = "proto3";
+package spotify.connectivity.traffic.esperanto.proto;
+import "es_traffic_fetch_type.proto";
+import "es_traffic_bearer.proto";
+message TransactionMetrics {
+  int64 bytes_sent = 1;
+  int64 body_bytes_sent = 2;
+  int64 bytes_received = 3;
+  .spotify.connectivity.traffic.esperanto.proto.Bearer bearer = 13;
+  bool is_proxy_connection = 14;
+  bool is_reused_connection = 15;
+  .spotify.connectivity.traffic.esperanto.proto.FetchType fetch_type = 16;
+  oneof _request_url {
+    string request_url = 4;
+  }
+  oneof _response_status {
+    int32 response_status = 5;
+  }
+  oneof _protocol {
+    string protocol = 6;
+  }
+  oneof _connect_start_timestamp {
+    int64 connect_start_timestamp = 7;
+  }
+  oneof _connect_end_timestamp {
+    int64 connect_end_timestamp = 8;
+  }
+  oneof _request_start_timestamp {
+    int64 request_start_timestamp = 9;
+  }
+  oneof _request_end_timestamp {
+    int64 request_end_timestamp = 10;
+  }
+  oneof _response_start_timestamp {
+    int64 response_start_timestamp = 11;
+  }
+  oneof _response_end_timestamp {
+    int64 response_end_timestamp = 12;
+  }
+}

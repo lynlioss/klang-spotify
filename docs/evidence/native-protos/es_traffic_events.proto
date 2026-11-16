@@ -1,0 +1,56 @@
+// Recovered descriptor. Original file: es_traffic_events.proto
+syntax = "proto3";
+package spotify.connectivity.traffic.esperanto.proto;
+import "es_traffic_response_info.proto";
+import "es_traffic_request_info.proto";
+import "es_traffic_connection_metrics.proto";
+import "es_traffic_connection_info.proto";
+import "es_traffic_failure_reason.proto";
+message TrafficEvent {
+  string id = 1;
+  int64 timestamp = 2;
+  oneof event {
+    .spotify.connectivity.traffic.esperanto.proto.StartedEvent started = 3;
+    .spotify.connectivity.traffic.esperanto.proto.RequestReadyEvent request_ready = 4;
+    .spotify.connectivity.traffic.esperanto.proto.BytesSentEvent bytes_sent = 5;
+    .spotify.connectivity.traffic.esperanto.proto.BytesReceivedEvent bytes_received = 6;
+    .spotify.connectivity.traffic.esperanto.proto.ResponseReceivedEvent response_received = 7;
+    .spotify.connectivity.traffic.esperanto.proto.FinishedEvent finished = 8;
+    .spotify.connectivity.traffic.esperanto.proto.FailedEvent failed = 9;
+  }
+}
+message StartedEvent {
+  string url = 1;
+}
+message RequestReadyEvent {
+  .spotify.connectivity.traffic.esperanto.proto.RequestInfo request = 1;
+  .spotify.connectivity.traffic.esperanto.proto.ConnectionInfo connection_info = 2;
+}
+message BytesSentEvent {
+  int64 amount_of_bytes = 1;
+}
+message BytesReceivedEvent {
+  int64 amount_of_bytes = 1;
+}
+message ResponseReceivedEvent {
+  .spotify.connectivity.traffic.esperanto.proto.RequestInfo request = 1;
+  .spotify.connectivity.traffic.esperanto.proto.ResponseInfo response = 2;
+  oneof _metrics {
+    .spotify.connectivity.traffic.esperanto.proto.ConnectionMetrics metrics = 3;
+  }
+}
+message FinishedEvent {
+  .spotify.connectivity.traffic.esperanto.proto.RequestInfo request = 1;
+  .spotify.connectivity.traffic.esperanto.proto.ResponseInfo response = 2;
+  oneof _metrics {
+    .spotify.connectivity.traffic.esperanto.proto.ConnectionMetrics metrics = 3;
+  }
+}
+message FailedEvent {
+  .spotify.connectivity.traffic.esperanto.proto.RequestInfo request = 1;
+  string failure_message = 2;
+  .spotify.connectivity.traffic.esperanto.proto.FailureReason failure_reason = 5;
+  oneof _metrics {
+    .spotify.connectivity.traffic.esperanto.proto.ConnectionMetrics metrics = 4;
+  }
+}

@@ -1,0 +1,10 @@
+
+autodownload_show_state.proto$spotify.autodownload_esperanto.proto"Q
+ShowStateRequest
+uri (	Ruri+
+update_throttling (RupdateThrottling"U
+ShowStateResponse
+uri (	Ruri
+enabled (Renabled
+error (	RerrorB0
+$spotify.autodownload.esperanto.protoHP¢ESPbproto3

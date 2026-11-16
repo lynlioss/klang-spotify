@@ -1,0 +1,57 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/requested_fields.proto
+syntax = "proto3";
+package spotify.list.v1.model;
+import "spotify/list/v1/model/attribute_kinds.proto";
+message AttributesRequestedFields {
+  repeated .spotify.list.v1.model.AttributeKind requested_field = 1;
+}
+message ItemRequestedFields {
+  oneof _id {
+    bool id = 1;
+  }
+  oneof _attributes {
+    .spotify.list.v1.model.AttributesRequestedFields attributes = 2;
+  }
+}
+message MetaItemsRequestedFields {
+  oneof _attributes {
+    .spotify.list.v1.model.AttributesRequestedFields attributes = 1;
+  }
+}
+message LensRemovedItemsRequestedFields {
+  oneof _items {
+    .spotify.list.v1.model.ItemRequestedFields items = 1;
+  }
+}
+message LensEffectRequestedFields {
+  oneof _lens_removed_items {
+    .spotify.list.v1.model.LensRemovedItemsRequestedFields lens_removed_items = 1;
+  }
+}
+message ListEntityRequestedFields {
+  oneof _attributes {
+    .spotify.list.v1.model.AttributesRequestedFields attributes = 1;
+  }
+  oneof _items {
+    .spotify.list.v1.model.ItemRequestedFields items = 2;
+  }
+  oneof _meta_items {
+    .spotify.list.v1.model.MetaItemsRequestedFields meta_items = 3;
+  }
+  oneof _lens_effect {
+    .spotify.list.v1.model.LensEffectRequestedFields lens_effect = 4;
+  }
+}
+message ListResponseRequestedFields {
+  oneof _entity {
+    .spotify.list.v1.model.ListEntityRequestedFields entity = 1;
+  }
+}
+message RequestedFields {
+  oneof _all {
+    bool all = 1;
+  }
+  oneof _list_response {
+    .spotify.list.v1.model.ListResponseRequestedFields list_response = 2;
+  }
+}

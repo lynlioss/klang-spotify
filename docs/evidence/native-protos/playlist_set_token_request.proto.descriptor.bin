@@ -1,0 +1,8 @@
+
+ playlist_set_token_request.proto spotify.playlist_esperanto.protoresponse_status.proto"A
+PlaylistSetTokenRequest
+uri (	Ruri
+token (	Rtoken"d
+PlaylistSetTokenResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatusB,
+ spotify.playlist.esperanto.protoHP¢ESPbproto3

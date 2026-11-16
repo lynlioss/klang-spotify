@@ -1,0 +1,26 @@
+
+include/AdContext.protospotify.event_sender.proto"«
+	AdContext2
+preceding_content_uri (	RprecedingContentUri2
+preceding_playback_id (	RprecedingPlaybackId4
+preceding_end_position (RprecedingEndPosition
+ad_ids (	RadIds"
+ad_request_id (	RadRequestId4
+succeeding_content_uri (	RsucceedingContentUri4
+succeeding_playback_id (	RsucceedingPlaybackId:
+succeeding_start_position (RsucceedingStartPosition-
+preceding_duration	 (RprecedingDuration
+ad_slot_ids
+ (	R	adSlotIds$
+app_startup_id (	RappStartupId
+context_uri (	R
+contextUriN
+
+played_ads (2/.spotify.event_sender.proto.AdContext.PlayedAdsR	playedAds¶
+	PlayedAds
+ad_id (	RadId2
+playback_rendering_id (	RplaybackRenderingId"
+ad_request_id (	RadRequestId
+
+ad_slot_id (	RadSlotId
+ad_break_id (	R	adBreakIdBH

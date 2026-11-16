@@ -1,0 +1,15 @@
+
+pending_tracking.protospotify.ads.proto"Ï
+SavedTrackingRequest
+
+event_type (	R	eventType
+url (	Rurl
+ad_id (	RadId
+
+request_id (	R	requestId
+slot_id (	RslotId
+lineitem_id (	R
+lineitemId
+payload (	Rpayload"[
+SavedPendingTrackingC
+requests (2'.spotify.ads.proto.SavedTrackingRequestRrequestsBHbproto3

@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: include/LocalFilesSourceReport.proto
+syntax = "proto2";
+package spotify.event_sender.proto;
+message LocalFilesSourceReport {
+  optional string id = 1;
+  optional int64 tracks = 2;
+}

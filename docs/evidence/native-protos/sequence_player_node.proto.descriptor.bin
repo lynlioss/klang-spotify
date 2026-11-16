@@ -1,0 +1,13 @@
+
+sequence_player_node.protospotify.player.protocontext.protologging_params.protoplay_origin.protoprepare_play_options.prototrack_instantiator.proto8player_sequence/player/state/session_context_state.proto"ù
+SequencePlayerNode7
+context (2.spotify.player.proto.ContextRcontextc
+sequence_session (28.spotify.player.proto.SequencePlayerNode.SequenceSessionRsequenceSessionI
+instantiate (2'.spotify.player.proto.TrackInstantiatorRinstantiateA
+play_origin (2 .spotify.player.proto.PlayOriginR
+playOriginQ
+prepare_options (2(.spotify.player.proto.PreparePlayOptionsRprepareOptionsJ
+logging_params (2#.spotify.player.proto.LoggingParamsRloggingParams—
+SequenceSessionf
+session_context_state (22.spotify.player.sequence.proto.SessionContextStateRsessionContextState
+	iteration (R	iterationBH

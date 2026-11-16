@@ -1,0 +1,11 @@
+
+'state_restore/resume_points_rules.proto"spotify.player.proto.state_restore"o
+ResumePoint&
+is_fully_played (RisFullyPlayed
+position (Rposition
+	timestamp (R	timestamp"ó
+ResumePointsRulesl
+resume_points (2G.spotify.player.proto.state_restore.ResumePointsRules.ResumePointsEntryRresumePointsp
+ResumePointsEntry
+key (	RkeyE
+value (2/.spotify.player.proto.state_restore.ResumePointRvalue:8BH

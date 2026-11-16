@@ -1,0 +1,22 @@
+
+context_player_options.protospotify.player.proto"Ç
+ContextPlayerOptions+
+shuffling_context (RshufflingContext+
+repeating_context (RrepeatingContext'
+repeating_track (RrepeatingTrack%
+playback_speed (RplaybackSpeedK
+modes (25.spotify.player.proto.ContextPlayerOptions.ModesEntryRmodes8
+
+ModesEntry
+key (	Rkey
+value (	Rvalue:8"×
+ContextPlayerOptionOverrides+
+shuffling_context (RshufflingContext+
+repeating_context (RrepeatingContext'
+repeating_track (RrepeatingTrack%
+playback_speed (RplaybackSpeedS
+modes (2=.spotify.player.proto.ContextPlayerOptionOverrides.ModesEntryRmodes8
+
+ModesEntry
+key (	Rkey
+value (	Rvalue:8BH

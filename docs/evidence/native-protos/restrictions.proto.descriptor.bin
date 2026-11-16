@@ -1,0 +1,56 @@
+
+restrictions.protospotify.player.proto"Ã
+ModeRestrictionsJ
+values (22.spotify.player.proto.ModeRestrictions.ValuesEntryRvaluesc
+ValuesEntry
+key (	Rkey>
+value (2(.spotify.player.proto.RestrictionReasonsRvalue:8".
+RestrictionReasons
+reasons (	Rreasons"°
+Restrictions8
+disallow_pausing_reasons (	RdisallowPausingReasons:
+disallow_resuming_reasons (	RdisallowResumingReasons8
+disallow_seeking_reasons (	RdisallowSeekingReasonsA
+disallow_peeking_prev_reasons (	RdisallowPeekingPrevReasonsA
+disallow_peeking_next_reasons (	RdisallowPeekingNextReasonsC
+disallow_skipping_prev_reasons (	RdisallowSkippingPrevReasonsC
+disallow_skipping_next_reasons (	RdisallowSkippingNextReasonsV
+(disallow_toggling_repeat_context_reasons (	R$disallowTogglingRepeatContextReasonsR
+&disallow_toggling_repeat_track_reasons	 (	R"disallowTogglingRepeatTrackReasonsI
+!disallow_toggling_shuffle_reasons
+ (	RdisallowTogglingShuffleReasons;
+disallow_set_queue_reasons (	RdisallowSetQueueReasonsS
+&disallow_interrupting_playback_reasons (	R#disallowInterruptingPlaybackReasonsS
+&disallow_transferring_playback_reasons (	R#disallowTransferringPlaybackReasonsE
+disallow_remote_control_reasons (	RdisallowRemoteControlReasons[
++disallow_inserting_into_next_tracks_reasons (	R&disallowInsertingIntoNextTracksReasonsa
+.disallow_inserting_into_context_tracks_reasons (	R)disallowInsertingIntoContextTracksReasonsY
+*disallow_reordering_in_next_tracks_reasons (	R%disallowReorderingInNextTracksReasons_
+-disallow_reordering_in_context_tracks_reasons (	R(disallowReorderingInContextTracksReasonsY
+*disallow_removing_from_next_tracks_reasons (	R%disallowRemovingFromNextTracksReasons_
+-disallow_removing_from_context_tracks_reasons (	R(disallowRemovingFromContextTracksReasonsI
+!disallow_updating_context_reasons (	RdisallowUpdatingContextReasons@
+disallow_add_to_queue_reasons (	RdisallowAddToQueueReasonsE
+disallow_setting_playback_speed (	RdisallowSettingPlaybackSpeedt
+disallow_setting_modes (2<.spotify.player.proto.Restrictions.DisallowSettingModesEntryRdisallow_setting_modesc
+disallow_signals (27.spotify.player.proto.Restrictions.DisallowSignalsEntryRdisallow_signalsP
+&disallow_play_as_next_in_queue_reasons (	R disallowPlayAsNextInQueueReasonsJ
+"disallow_sleep_timer_clear_reasons (	RdisallowSleepTimerClearReasonsP
+%disallow_sleep_timer_duration_reasons (	R!disallowSleepTimerDurationReasonsV
+)disallow_sleep_timer_end_of_track_reasons (	R#disallowSleepTimerEndOfTrackReasonsK
+#disallow_add_to_queue_track_reasons (	RdisallowAddToQueueTrackReasonsd
+1disallow_tap_to_play_track_in_next_tracks_reasons  (	R)disallowTapToPlayTrackInNextTracksReasonsd
+0disallow_reordering_track_in_next_tracks_reasons! (	R*disallowReorderingTrackInNextTracksReasonsh
+2disallow_reordering_episode_in_next_tracks_reasons" (	R,disallowReorderingEpisodeInNextTracksReasonsu
+9disallow_reordering_enqueued_track_in_next_tracks_reasons# (	R2disallowReorderingEnqueuedTrackInNextTracksReasonsy
+;disallow_reordering_enqueued_episode_in_next_tracks_reasons$ (	R4disallowReorderingEnqueuedEpisodeInNextTracksReasonsC
+disallow_viewing_queue_reasons% (	RdisallowViewingQueueReasonso
+6disallow_viewing_ordered_tracks_in_next_tracks_reasons& (	R/disallowViewingOrderedTracksInNextTracksReasons=
+disallow_swipe_next_reasons' (	RdisallowSwipeNextReasons=
+disallow_swipe_prev_reasons( (	RdisallowSwipePrevReasonso
+DisallowSettingModesEntry
+key (	Rkey<
+value (2&.spotify.player.proto.ModeRestrictionsRvalue:8l
+DisallowSignalsEntry
+key (	Rkey>
+value (2(.spotify.player.proto.RestrictionReasonsRvalue:8JBH

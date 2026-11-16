@@ -1,0 +1,6 @@
+// Recovered descriptor. Original file: byom_eligibility_extension.proto
+syntax = "proto3";
+package spotify.byom.v1;
+message ByomEligibilityExtension {
+  bool eligible = 1;
+}

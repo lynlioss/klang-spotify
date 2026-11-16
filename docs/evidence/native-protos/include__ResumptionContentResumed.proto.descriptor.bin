@@ -1,0 +1,12 @@
+
+&include/ResumptionContentResumed.protospotify.event_sender.proto"ñ
+ResumptionContentResumed
+playback_id (	R
+playbackId
+key (	Rkey)
+client_timestamp (RclientTimestamp#
+play_position (	RplayPosition
+item_uri (	RitemUri
+position_ms (R
+positionMs
+source (	RsourceBH

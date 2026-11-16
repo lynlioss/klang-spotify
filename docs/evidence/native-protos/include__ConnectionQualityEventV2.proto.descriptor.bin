@@ -1,0 +1,5 @@
+
+&include/ConnectionQualityEventV2.protospotify.event_sender.proto"l
+ConnectionQualityEventV2'
+current_quality (	RcurrentQuality'
+scoring_context (	RscoringContextBH

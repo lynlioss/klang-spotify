@@ -1,0 +1,38 @@
+
+Aspotify/playback_platform/timeline/v1/behavior/restrictions.proto.spotify.playback_platform.timeline.v1.behavior5spotify/playback_platform/common/v1/restriction.proto"ç
+RestrictionsR
+peek_at_prev (20.spotify.playback_platform.common.v1.RestrictionR
+peekAtPrevR
+peek_at_next (20.spotify.playback_platform.common.v1.RestrictionR
+peekAtNextF
+pause (20.spotify.playback_platform.common.v1.RestrictionRpauseH
+resume (20.spotify.playback_platform.common.v1.RestrictionRresumeH
+signal (20.spotify.playback_platform.common.v1.RestrictionRsignalZ
+seek_by_duration (20.spotify.playback_platform.common.v1.RestrictionRseekByDurationZ
+seek_to_position (20.spotify.playback_platform.common.v1.RestrictionRseekToPositionR
+seek_to_live (20.spotify.playback_platform.common.v1.RestrictionR
+seekToLiveR
+seek_to_prev	 (20.spotify.playback_platform.common.v1.RestrictionR
+seekToPrevR
+seek_to_next
+ (20.spotify.playback_platform.common.v1.RestrictionR
+seekToNextR
+auto_to_prev (20.spotify.playback_platform.common.v1.RestrictionR
+autoToPrevR
+auto_to_next (20.spotify.playback_platform.common.v1.RestrictionR
+autoToNextR
+skip_to_prev (20.spotify.playback_platform.common.v1.RestrictionR
+skipToPrevR
+skip_to_next (20.spotify.playback_platform.common.v1.RestrictionR
+skipToNextb
+set_sequence_options  (20.spotify.playback_platform.common.v1.RestrictionRsetSequenceOptionsd
+set_shuffling_context! (20.spotify.playback_platform.common.v1.RestrictionRsetShufflingContextd
+set_repeating_context" (20.spotify.playback_platform.common.v1.RestrictionRsetRepeatingContextd
+set_repeating_current# (20.spotify.playback_platform.common.v1.RestrictionRsetRepeatingCurrentb
+set_timeline_options$ (20.spotify.playback_platform.common.v1.RestrictionRsetTimelineOptions^
+set_playback_speed% (20.spotify.playback_platform.common.v1.RestrictionRsetPlaybackSpeedM
+	set_queue0 (20.spotify.playback_platform.common.v1.RestrictionRsetQueueR
+add_to_queue1 (20.spotify.playback_platform.common.v1.RestrictionR
+addToQueueL
+transfer2 (20.spotify.playback_platform.common.v1.RestrictionRtransferJ&0B4
+.spotify.playback_platform.timeline.v1.behaviorHPbproto3

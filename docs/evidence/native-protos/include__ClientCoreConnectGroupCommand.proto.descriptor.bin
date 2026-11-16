@@ -1,0 +1,27 @@
+
++include/ClientCoreConnectGroupCommand.protospotify.event_sender.proto"ö
+ClientCoreConnectGroupCommand!
+command_type (	RcommandType
+	device_id (	RdeviceId(
+target_device_id (	RtargetDeviceId%
+group_instance (	RgroupInstance6
+group_device_identifier (	RgroupDeviceIdentifier
+
+resolution (	R
+resolution
+duration_ms (R
+durationMs.
+first_acceptance_ms (RfirstAcceptanceMs#
+command_count	 (RcommandCount-
+commands_truncated
+ (RcommandsTruncated
+command_ids (	R
+commandIds)
+command_outcomes (	RcommandOutcomes'
+interaction_ids (	RinteractionIds!
+apply_source (	RapplySource0
+push_connection_lost (RpushConnectionLost
+
+group_size (R	groupSize.
+target_device_brand (	RtargetDeviceBrand.
+target_device_model (	RtargetDeviceModelBH

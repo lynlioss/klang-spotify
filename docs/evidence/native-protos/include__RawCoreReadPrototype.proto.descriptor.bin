@@ -1,0 +1,23 @@
+
+"include/RawCoreReadPrototype.protospotify.event_sender.proto"Í
+RawCoreReadPrototype$
+start_char_pos (RstartCharPos 
+end_char_pos (R
+endCharPos'
+start_timestamp (RstartTimestamp#
+end_timestamp (RendTimestamp
+
+time_spent (R	timeSpent
+content_uri (	R
+contentUri!
+reason_start (	RreasonStart
+
+reason_end (	R	reasonEnd
+
+session_id	 (R	sessionId
+sequence_id
+ (R
+sequenceId
+is_last (RisLast!
+core_version (RcoreVersion!
+total_length (RtotalLengthBH

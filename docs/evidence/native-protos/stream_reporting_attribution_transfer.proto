@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: stream_reporting_attribution_transfer.proto
+syntax = "proto2";
+package spotify.player.proto.transfer;
+message StreamReportingAttribution {
+  optional string provenance = 1;
+  optional string page_id = 2;
+  optional string root_specification_id = 3;
+  optional string leaf_specification_id = 4;
+}

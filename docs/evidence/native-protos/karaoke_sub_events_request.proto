@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: karaoke_sub_events_request.proto
+syntax = "proto3";
+package spotify.karaoke_esperanto.proto;
+message KaraokeSubEventsRequest {
+}
+message KaraokeSubEventsResponse {
+  enum Id {
+    MASK_READY = 0;
+    ERROR = 1;
+  }
+  .spotify.karaoke_esperanto.proto.KaraokeSubEventsResponse.Id id = 1;
+  string track_uri = 2;
+  string error_message = 3;
+  int32 error_code = 4;
+}

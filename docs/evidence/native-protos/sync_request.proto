@@ -1,0 +1,6 @@
+// Recovered descriptor. Original file: sync_request.proto
+syntax = "proto3";
+package spotify.playlist.cosmos.proto;
+message SyncRequest {
+  repeated string playlist_uris = 1;
+}

@@ -1,0 +1,105 @@
+
+"include/RawCoreStreamSegment.protospotify.event_sender.proto"¹!
+RawCoreStreamSegment
+playback_id (R
+playbackId%
+start_position (RstartPosition!
+end_position (RendPosition
+	ms_played (RmsPlayed!
+reason_start (	RreasonStart
+
+reason_end (	R	reasonEnd%
+playback_speed (RplaybackSpeed'
+start_timestamp (RstartTimestamp#
+end_timestamp	 (RendTimestamp
+is_seek
+ (RisSeek
+is_pause (RisPause
+sequence_id (R
+sequenceId
+
+media_type (	R	mediaType!
+core_version (RcoreVersion
+content_uri (	R
+contentUri:
+start_monotonic_timestamp (RstartMonotonicTimestamp6
+end_monotonic_timestamp (RendMonotonicTimestamp
+is_last (RisLast
+provider (	Rprovider%
+playback_stack (	RplaybackStack!
+feature_uuid (	RfeatureUuid
+	stream_id (RstreamId(
+page_instance_id (	RpageInstanceId%
+interaction_id (	RinteractionId!
+play_context (	RplayContext8
+start_timestamp_internal (RstartTimestampInternal4
+end_timestamp_internal (RendTimestampInternal0
+sequence_id_internal (RsequenceIdInternal
+is_audio_on (R	isAudioOn
+is_video_on (R	isVideoOn#
+video_surface (	RvideoSurface$
+is_system_seek  (RisSystemSeek2
+ms_played_accumulated! (RmsPlayedAccumulatedA
+ms_played_nominal_accumulated" (RmsPlayedNominalAccumulated4
+preview_impression_uri# (	RpreviewImpressionUri%
+incognito_mode$ (RincognitoMode$
+jam_session_id% (	RjamSessionId(
+clip_playback_id& (RclipPlaybackId/
+orchestration_stack' (	RorchestrationStack
+list_uri( (	RlistUri!
+output_brand) (	RoutputBrand!
+output_model* (	RoutputModel'
+output_category+ (	RoutputCategory4
+output_connection_type, (	RoutputConnectionTypeI
+!ms_played_overlapping_accumulated- (RmsPlayedOverlappingAccumulatedX
+)ms_played_nominal_overlapping_accumulated. (R%msPlayedNominalOverlappingAccumulatedO
+$ms_narration_overlapping_accumulated/ (R!msNarrationOverlappingAccumulated=
+ms_played_video_accumulated0 (RmsPlayedVideoAccumulatedG
+ ms_played_background_accumulated1 (RmsPlayedBackgroundAccumulatedG
+ ms_played_fullscreen_accumulated2 (RmsPlayedFullscreenAccumulatedC
+ms_played_external_accumulated3 (RmsPlayedExternalAccumulatedD
+ms_played_post_seek_accumulated6 (RmsPlayedPostSeekAccumulated­
+'ms_played_video_per_surface_accumulated7 (2X.spotify.event_sender.proto.RawCoreStreamSegment.MsPlayedVideoPerSurfaceAccumulatedEntryR"msPlayedVideoPerSurfaceAccumulated!
+audio_format8 (	RaudioFormat%
+streaming_rule: (	RstreamingRule
+referrer; (	Rreferrer!
+source_start> (	RsourceStart
+
+source_end? (	R	sourceEnd*
+player_session_id@ (	RplayerSessionId
+decision_idA (	R
+decisionId7
+play_context_decision_idB (	RplayContextDecisionId@
+custom_reporting_attributionC (	RcustomReportingAttribution0
+agentic_product_typeD (	RagenticProductType$
+on_demand_typeE (	RonDemandType
+shuffleF (Rshuffle,
+is_repeating_trackG (RisRepeatingTrack0
+is_repeating_contextH (RisRepeatingContext.
+playback_start_timeI (RplaybackStartTimeB
+client_offline_at_stream_startJ (RclientOfflineAtStreamStart2
+sequence_provider_idsK (	RsequenceProviderIds2
+content_is_downloadedL (RcontentIsDownloaded)
+social_listeningM (RsocialListening?
+last_consumption_sequence_idN (RlastConsumptionSequenceId8
+controlling_device_brandO (	RcontrollingDeviceBrand8
+controlling_device_modelP (	RcontrollingDeviceModel6
+controlling_device_typeQ (	RcontrollingDeviceType2
+displayed_content_uriR (	RdisplayedContentUri&
+user_intent_uriS (	RuserIntentUriD
+connect_controller_device_id_v2T (	RconnectControllerDeviceIdV2*
+local_content_uriU (	RlocalContentUri=
+ms_played_muted_accumulatedV (RmsPlayedMutedAccumulated.
+stream_reason_startW (	RstreamReasonStart=
+streaming_device_connect_idX (	RstreamingDeviceConnectId\
+
+provenanceñ (2;.spotify.event_sender.proto.RawCoreStreamSegment.ProvenanceR
+provenanceU
+'MsPlayedVideoPerSurfaceAccumulatedEntry
+key (	Rkey
+value (Rvalue:8{
+
+Provenance%
+interaction_id (	RinteractionId
+referrer; (	Rreferrer*
+event_provenanceñ (	ReventProvenanceBH

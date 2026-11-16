@@ -1,0 +1,14 @@
+
+es_offline_debug.protospotify.offline_esperanto.protogoogle/protobuf/empty.protoextension_kind.proto"\
+KeyStatsResponse
+cached (Rcached
+offline (Roffline
+memory (Rmemory"ˆ
+"SetLinkAdditionalExtensionsRequest
+uri (	RuriP
+extension_kinds (2'.spotify.extendedmetadata.ExtensionKindRextensionKinds2å
+OfflineDebugY
+
+OnKeyStats.google.protobuf.Empty1.spotify.offline_esperanto.proto.KeyStatsResponse0z
+SetLinkAdditionalExtensionsC.spotify.offline_esperanto.proto.SetLinkAdditionalExtensionsRequest.google.protobuf.EmptyB-
+#com.spotify.offline_esperanto.protoH¢ESPbproto3

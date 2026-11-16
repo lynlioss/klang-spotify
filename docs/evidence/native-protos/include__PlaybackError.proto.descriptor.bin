@@ -1,0 +1,20 @@
+
+include/PlaybackError.protospotify.event_sender.proto"î
+PlaybackError
+file_id (RfileId
+playback_id (R
+playbackId
+track_id (	RtrackId
+bitrate (Rbitrate
+
+error_code (R	errorCode
+fatal (Rfatal
+
+audiocodec (	R
+audiocodec%
+external_track (RexternalTrack
+position_ms	 (R
+positionMs!
+key_checksum
+ (RkeyChecksum.
+error_category_name (	RerrorCategoryNameBH

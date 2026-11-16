@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: karaoke_get_status_request.proto
+syntax = "proto3";
+package spotify.karaoke_esperanto.proto;
+import "karaoke_status.proto";
+message KaraokeGetStatusRequest {
+}
+message KaraokeGetStatusResponse {
+  .spotify.karaoke_esperanto.proto.KaraokeStatus status = 1;
+}

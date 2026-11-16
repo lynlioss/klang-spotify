@@ -1,0 +1,628 @@
+JADX normal rendering; cross-check ambiguous control flow against smali.
+Source: analysis/spotify/java-focused/p_we70.java
+SHA256: 728e69ee668323fe56dc604fd63c0e27b8333908e8012d15d606f58f4a59baef
+
+package p;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.lang.reflect.WildcardType;
+import java.net.URI;
+import java.util.Map;
+
+/* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes2.dex */
+public abstract class we70 {
+    public final g731 a;
+    public final xyc b;
+    public final a8n c;
+
+    public we70(g731 g731Var, xyc xycVar, a8n a8nVar) {
+        this.a = g731Var;
+        this.b = xycVar;
+        this.c = a8nVar;
+    }
+
+    /* JADX WARN: Code duplicated, block: B:384:0x08d5 A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:385:0x08d7  */
+    /* JADX WARN: Code duplicated, block: B:587:0x08ee A[SYNTHETIC] */
+    /* JADX WARN: Code duplicated, block: B:594:0x08d9 A[SYNTHETIC] */
+    /* JADX WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$ArrayArg
+    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+     */
+    public static we70 b(ev31 ev31Var, Class cls, Method method) {
+        Type genericReturnType;
+        boolean z;
+        boolean z2;
+        boolean z3;
+        p7s0 p7s0Var;
+        int i;
+        int i2;
+        bep1[] bep1VarArr;
+        int i3;
+        int i4;
+        p7s0 u7s0Var;
+        p7s0 p7s0VarJ;
+        f731 f731Var = new f731(ev31Var, cls, method);
+        Annotation[] annotationArr = f731Var.d;
+        int length = annotationArr.length;
+        int i5 = 0;
+        int i6 = 0;
+        while (true) {
+            String str = "HEAD";
+            boolean z4 = true;
+            p7s0 p7s0Var2 = null;
+            if (i6 >= length) {
+                if (f731Var.o == null) {
+                    throw xsn1.H(method, (Exception) null, "HTTP method annotation is required (e.g., @GET, @POST, etc.).", new Object[0]);
+                }
+                if (!f731Var.f31p) {
+                    if (f731Var.r) {
+                        throw xsn1.H(method, (Exception) null, "Multipart can only be specified on HTTP methods with request body (e.g., @POST).", new Object[0]);
+                    }
+                    if (f731Var.q) {
+                        throw xsn1.H(method, (Exception) null, "FormUrlEncoded can only be specified on HTTP methods with request body (e.g., @POST).", new Object[0]);
+                    }
+                }
+                Annotation[][] annotationArr2 = f731Var.e;
+                int length2 = annotationArr2.length;
+                f731Var.w = new bep1[length2];
+                int i7 = length2 - 1;
+                int i8 = 0;
+                while (i8 < length2) {
+                    bep1[] bep1VarArr2 = f731Var.w;
+                    Type type = f731Var.f[i8];
+                    Annotation[] annotationArr3 = annotationArr2[i8];
+                    int i9 = i8 == i7 ? 1 : i5;
+                    if (annotationArr3 != null) {
+                        int length3 = annotationArr3.length;
+                        p7s0Var = p7s0Var2;
+                        int i10 = i5;
+                        while (i10 < length3) {
+                            Annotation annotation = annotationArr3[i10];
+                            Annotation[][] annotationArr4 = annotationArr2;
+                            int i11 = length2;
+                            if (annotation instanceof zpi1) {
+                                f731Var.c(i8, type);
+                                if (f731Var.n) {
+                                    throw xsn1.K(method, i8, "Multiple @Url method annotations found.", new Object[0]);
+                                }
+                                if (f731Var.j) {
+                                    throw xsn1.K(method, i8, "@Path parameters may not be used with @Url.", new Object[0]);
+                                }
+                                if (f731Var.k) {
+                                    throw xsn1.K(method, i8, "A @Url parameter must not come after a @Query.", new Object[0]);
+                                }
+                                if (f731Var.l) {
+                                    throw xsn1.K(method, i8, "A @Url parameter must not come after a @QueryName.", new Object[0]);
+                                }
+                                if (f731Var.m) {
+                                    throw xsn1.K(method, i8, "A @Url parameter must not come after a @QueryMap.", new Object[0]);
+                                }
+                                if (f731Var.s != null) {
+                                    throw xsn1.K(method, i8, "@Url cannot be used with @%s URL", new Object[]{f731Var.o});
+                                }
+                                f731Var.n = true;
+                                if (type != bf70.class && type != String.class && type != URI.class && (!(type instanceof Class) || !"android.net.Uri".equals(((Class) type).getName()))) {
+                                    throw xsn1.K(method, i8, "@Url must be okhttp3.HttpUrl, String, java.net.URI, or android.net.Uri type.", new Object[0]);
+                                }
+                                u7s0Var = new p7s0(method, i8, (byte) 1);
+                                i = i7;
+                            } else {
+                                i = i7;
+                                boolean z5 = annotation instanceof brs0;
+                                ev31 ev31Var2 = f731Var.a;
+                                if (z5) {
+                                    f731Var.c(i8, type);
+                                    if (f731Var.k) {
+                                        throw xsn1.K(method, i8, "A @Path parameter must not come after a @Query.", new Object[0]);
+                                    }
+                                    if (f731Var.l) {
+                                        throw xsn1.K(method, i8, "A @Path parameter must not come after a @QueryName.", new Object[0]);
+                                    }
+                                    if (f731Var.m) {
+                                        throw xsn1.K(method, i8, "A @Path parameter must not come after a @QueryMap.", new Object[0]);
+                                    }
+                                    if (f731Var.n) {
+                                        throw xsn1.K(method, i8, "@Path parameters may not be used with @Url.", new Object[0]);
+                                    }
+                                    if (f731Var.s == null) {
+                                        throw xsn1.K(method, i8, "@Path can only be used with relative url on @%s", new Object[]{f731Var.o});
+                                    }
+                                    f731Var.j = true;
+                                    brs0 brs0Var = (brs0) annotation;
+                                    String strValue = brs0Var.value();
+                                    if (!f731.z.matcher(strValue).matches()) {
+                                        throw xsn1.K(method, i8, "@Path parameter name must match %s. Found: %s", new Object[]{f731.y.pattern(), strValue});
+                                    }
+                                    if (!f731Var.v.contains(strValue)) {
+                                        throw xsn1.K(method, i8, "URL \"%s\" does not contain \"{%s}\".", new Object[]{f731Var.s, strValue});
+                                    }
+                                    ev31Var2.e(type, annotationArr3);
+                                    u7s0Var = new r7s0(f731Var.c, i8, strValue, brs0Var.encoded());
+                                } else {
+                                    i2 = i10;
+                                    bep1VarArr = bep1VarArr2;
+                                    if (annotation instanceof hjz0) {
+                                        f731Var.c(i8, type);
+                                        hjz0 hjz0Var = (hjz0) annotation;
+                                        String strValue2 = hjz0Var.value();
+                                        boolean zEncoded = hjz0Var.encoded();
+                                        i3 = i9;
+                                        Class clsY = xsn1.y(type);
+                                        i4 = length3;
+                                        f731Var.k = true;
+                                        if (Iterable.class.isAssignableFrom(clsY)) {
+                                            if (!(type instanceof ParameterizedType)) {
+                                                throw xsn1.K(method, i8, clsY.getSimpleName() + " must include generic type (e.g., " + clsY.getSimpleName() + "<String>)", new Object[0]);
+                                            }
+                                            ev31Var2.e(xsn1.x(0, (ParameterizedType) type), annotationArr3);
+                                            u7s0Var = new o7s0(strValue2, zEncoded, (byte) 1).q();
+                                        } else if (clsY.isArray()) {
+                                            ev31Var2.e(f731.a(clsY.getComponentType()), annotationArr3);
+                                            u7s0Var = new o7s0(strValue2, zEncoded, (byte) 1).j();
+                                        } else {
+                                            ev31Var2.e(type, annotationArr3);
+                                            u7s0Var = new o7s0(strValue2, zEncoded, (byte) 1);
+                                        }
+                                    } else {
+                                        i3 = i9;
+                                        i4 = length3;
+                                        if (annotation instanceof qjz0) {
+                                            f731Var.c(i8, type);
+                                            boolean zEncoded2 = ((qjz0) annotation).encoded();
+                                            Class clsY2 = xsn1.y(type);
+                                            f731Var.l = true;
+                                            if (Iterable.class.isAssignableFrom(clsY2)) {
+                                                if (!(type instanceof ParameterizedType)) {
+                                                    throw xsn1.K(method, i8, clsY2.getSimpleName() + " must include generic type (e.g., " + clsY2.getSimpleName() + "<String>)", new Object[0]);
+                                                }
+                                                ev31Var2.e(xsn1.x(0, (ParameterizedType) type), annotationArr3);
+                                                u7s0Var = new s7s0(zEncoded2).q();
+                                            } else if (clsY2.isArray()) {
+                                                ev31Var2.e(f731.a(clsY2.getComponentType()), annotationArr3);
+                                                u7s0Var = new s7s0(zEncoded2).j();
+                                            } else {
+                                                ev31Var2.e(type, annotationArr3);
+                                                u7s0Var = new s7s0(zEncoded2);
+                                            }
+                                        } else if (annotation instanceof pjz0) {
+                                            f731Var.c(i8, type);
+                                            Class clsY3 = xsn1.y(type);
+                                            f731Var.m = true;
+                                            if (!Map.class.isAssignableFrom(clsY3)) {
+                                                throw xsn1.K(method, i8, "@QueryMap parameter type must be Map.", new Object[0]);
+                                            }
+                                            Type typeB = xsn1.B(type, clsY3);
+                                            if (!(typeB instanceof ParameterizedType)) {
+                                                throw xsn1.K(method, i8, "Map must include generic types (e.g., Map<String, String>)", new Object[0]);
+                                            }
+                                            ParameterizedType parameterizedType = (ParameterizedType) typeB;
+                                            Type typeX = xsn1.x(0, parameterizedType);
+                                            if (String.class != typeX) {
+                                                throw xsn1.K(method, i8, "@QueryMap keys must be of type String: " + typeX, new Object[0]);
+                                            }
+                                            ev31Var2.e(xsn1.x(1, parameterizedType), annotationArr3);
+                                            u7s0Var = new n7s0(method, i8, ((pjz0) annotation).encoded(), (byte) 2);
+                                        } else {
+                                            str = str;
+                                            if (annotation instanceof f660) {
+                                                f731Var.c(i8, type);
+                                                f660 f660Var = (f660) annotation;
+                                                String strValue3 = f660Var.value();
+                                                Class clsY4 = xsn1.y(type);
+                                                if (Iterable.class.isAssignableFrom(clsY4)) {
+                                                    if (!(type instanceof ParameterizedType)) {
+                                                        throw xsn1.K(method, i8, clsY4.getSimpleName() + " must include generic type (e.g., " + clsY4.getSimpleName() + "<String>)", new Object[0]);
+                                                    }
+                                                    ev31Var2.e(xsn1.x(0, (ParameterizedType) type), annotationArr3);
+                                                    u7s0Var = new o7s0(strValue3, f660Var.allowUnsafeNonAsciiValues(), (byte) 0).q();
+                                                } else if (clsY4.isArray()) {
+                                                    ev31Var2.e(f731.a(clsY4.getComponentType()), annotationArr3);
+                                                    u7s0Var = new o7s0(strValue3, f660Var.allowUnsafeNonAsciiValues(), (byte) 0).j();
+                                                } else {
+                                                    ev31Var2.e(type, annotationArr3);
+                                                    u7s0Var = new o7s0(strValue3, f660Var.allowUnsafeNonAsciiValues(), (byte) 0);
+                                                }
+                                            } else if (annotation instanceof pc60) {
+                                                if (type == hf60.class) {
+                                                    u7s0Var = new p7s0(method, i8, (byte) 0);
+                                                } else {
+                                                    f731Var.c(i8, type);
+                                                    Class clsY5 = xsn1.y(type);
+                                                    if (!Map.class.isAssignableFrom(clsY5)) {
+                                                        throw xsn1.K(method, i8, "@HeaderMap parameter type must be Map or Headers.", new Object[0]);
+                                                    }
+                                                    Type typeB2 = xsn1.B(type, clsY5);
+                                                    if (!(typeB2 instanceof ParameterizedType)) {
+                                                        throw xsn1.K(method, i8, "Map must include generic types (e.g., Map<String, String>)", new Object[0]);
+                                                    }
+                                                    ParameterizedType parameterizedType2 = (ParameterizedType) typeB2;
+                                                    Type typeX2 = xsn1.x(0, parameterizedType2);
+                                                    if (String.class != typeX2) {
+                                                        throw xsn1.K(method, i8, "@HeaderMap keys must be of type String: " + typeX2, new Object[0]);
+                                                    }
+                                                    ev31Var2.e(xsn1.x(1, parameterizedType2), annotationArr3);
+                                                    u7s0Var = new n7s0(method, i8, ((pc60) annotation).allowUnsafeNonAsciiValues(), (byte) 1);
+                                                }
+                                            } else if (annotation instanceof nb20) {
+                                                f731Var.c(i8, type);
+                                                if (!f731Var.q) {
+                                                    throw xsn1.K(method, i8, "@Field parameters can only be used with form encoding.", new Object[0]);
+                                                }
+                                                nb20 nb20Var = (nb20) annotation;
+                                                String strValue4 = nb20Var.value();
+                                                boolean zEncoded3 = nb20Var.encoded();
+                                                f731Var.g = true;
+                                                Class clsY6 = xsn1.y(type);
+                                                if (Iterable.class.isAssignableFrom(clsY6)) {
+                                                    if (!(type instanceof ParameterizedType)) {
+                                                        throw xsn1.K(method, i8, clsY6.getSimpleName() + " must include generic type (e.g., " + clsY6.getSimpleName() + "<String>)", new Object[0]);
+                                                    }
+                                                    ev31Var2.e(xsn1.x(0, (ParameterizedType) type), annotationArr3);
+                                                    u7s0Var = new m7s0(strValue4, zEncoded3).q();
+                                                } else if (clsY6.isArray()) {
+                                                    ev31Var2.e(f731.a(clsY6.getComponentType()), annotationArr3);
+                                                    u7s0Var = new m7s0(strValue4, zEncoded3).j();
+                                                } else {
+                                                    ev31Var2.e(type, annotationArr3);
+                                                    u7s0Var = new m7s0(strValue4, zEncoded3);
+                                                }
+                                            } else if (annotation instanceof hc20) {
+                                                f731Var.c(i8, type);
+                                                if (!f731Var.q) {
+                                                    throw xsn1.K(method, i8, "@FieldMap parameters can only be used with form encoding.", new Object[0]);
+                                                }
+                                                Class clsY7 = xsn1.y(type);
+                                                if (!Map.class.isAssignableFrom(clsY7)) {
+                                                    throw xsn1.K(method, i8, "@FieldMap parameter type must be Map.", new Object[0]);
+                                                }
+                                                Type typeB3 = xsn1.B(type, clsY7);
+                                                if (!(typeB3 instanceof ParameterizedType)) {
+                                                    throw xsn1.K(method, i8, "Map must include generic types (e.g., Map<String, String>)", new Object[0]);
+                                                }
+                                                ParameterizedType parameterizedType3 = (ParameterizedType) typeB3;
+                                                Type typeX3 = xsn1.x(0, parameterizedType3);
+                                                if (String.class != typeX3) {
+                                                    throw xsn1.K(method, i8, "@FieldMap keys must be of type String: " + typeX3, new Object[0]);
+                                                }
+                                                ev31Var2.e(xsn1.x(1, parameterizedType3), annotationArr3);
+                                                f731Var.g = true;
+                                                u7s0Var = new n7s0(method, i8, ((hc20) annotation).encoded(), (byte) 0);
+                                            } else if (annotation instanceof cis0) {
+                                                f731Var.c(i8, type);
+                                                if (!f731Var.r) {
+                                                    throw xsn1.K(method, i8, "@Part parameters can only be used with multipart encoding.", new Object[0]);
+                                                }
+                                                cis0 cis0Var = (cis0) annotation;
+                                                f731Var.h = true;
+                                                String strValue5 = cis0Var.value();
+                                                Class clsY8 = xsn1.y(type);
+                                                if (strValue5.isEmpty()) {
+                                                    boolean zIsAssignableFrom = Iterable.class.isAssignableFrom(clsY8);
+                                                    p7s0 p7s0Var3 = t7s0.e;
+                                                    if (zIsAssignableFrom) {
+                                                        if (!(type instanceof ParameterizedType)) {
+                                                            throw xsn1.K(method, i8, clsY8.getSimpleName() + " must include generic type (e.g., " + clsY8.getSimpleName() + "<String>)", new Object[0]);
+                                                        }
+                                                        if (!kdn0.class.isAssignableFrom(xsn1.y(xsn1.x(0, (ParameterizedType) type)))) {
+                                                            throw xsn1.K(method, i8, "@Part annotation must supply a name or use MultipartBody.Part parameter type.", new Object[0]);
+                                                        }
+                                                        u7s0Var = p7s0Var3.q();
+                                                    } else if (clsY8.isArray()) {
+                                                        if (!kdn0.class.isAssignableFrom(clsY8.getComponentType())) {
+                                                            throw xsn1.K(method, i8, "@Part annotation must supply a name or use MultipartBody.Part parameter type.", new Object[0]);
+                                                        }
+                                                        u7s0Var = p7s0Var3.j();
+                                                    } else {
+                                                        if (!kdn0.class.isAssignableFrom(clsY8)) {
+                                                            throw xsn1.K(method, i8, "@Part annotation must supply a name or use MultipartBody.Part parameter type.", new Object[0]);
+                                                        }
+                                                        u7s0Var = p7s0Var3;
+                                                    }
+                                                } else {
+                                                    hf60 hf60VarT = lo5.T(new String[]{"Content-Disposition", ihj1.f("form-data; name=\"", strValue5, "\""), "Content-Transfer-Encoding", cis0Var.encoding()});
+                                                    if (Iterable.class.isAssignableFrom(clsY8)) {
+                                                        if (!(type instanceof ParameterizedType)) {
+                                                            throw xsn1.K(method, i8, clsY8.getSimpleName() + " must include generic type (e.g., " + clsY8.getSimpleName() + "<String>)", new Object[0]);
+                                                        }
+                                                        Type typeX4 = xsn1.x(0, (ParameterizedType) type);
+                                                        if (kdn0.class.isAssignableFrom(xsn1.y(typeX4))) {
+                                                            throw xsn1.K(method, i8, "@Part parameters using the MultipartBody.Part must not include a part name in the annotation.", new Object[0]);
+                                                        }
+                                                        p7s0VarJ = new q7s0(method, i8, hf60VarT, ev31Var2.c(typeX4, annotationArr3, annotationArr)).q();
+                                                    } else if (clsY8.isArray()) {
+                                                        Class clsA = f731.a(clsY8.getComponentType());
+                                                        if (kdn0.class.isAssignableFrom(clsA)) {
+                                                            throw xsn1.K(method, i8, "@Part parameters using the MultipartBody.Part must not include a part name in the annotation.", new Object[0]);
+                                                        }
+                                                        p7s0VarJ = new q7s0(method, i8, hf60VarT, ev31Var2.c(clsA, annotationArr3, annotationArr)).j();
+                                                    } else {
+                                                        if (kdn0.class.isAssignableFrom(clsY8)) {
+                                                            throw xsn1.K(method, i8, "@Part parameters using the MultipartBody.Part must not include a part name in the annotation.", new Object[0]);
+                                                        }
+                                                        u7s0Var = new q7s0(method, i8, hf60VarT, ev31Var2.c(type, annotationArr3, annotationArr));
+                                                    }
+                                                    u7s0Var = p7s0VarJ;
+                                                }
+                                            } else if (annotation instanceof dis0) {
+                                                f731Var.c(i8, type);
+                                                if (!f731Var.r) {
+                                                    throw xsn1.K(method, i8, "@PartMap parameters can only be used with multipart encoding.", new Object[0]);
+                                                }
+                                                f731Var.h = true;
+                                                Class clsY9 = xsn1.y(type);
+                                                if (!Map.class.isAssignableFrom(clsY9)) {
+                                                    throw xsn1.K(method, i8, "@PartMap parameter type must be Map.", new Object[0]);
+                                                }
+                                                Type typeB4 = xsn1.B(type, clsY9);
+                                                if (!(typeB4 instanceof ParameterizedType)) {
+                                                    throw xsn1.K(method, i8, "Map must include generic types (e.g., Map<String, String>)", new Object[0]);
+                                                }
+                                                ParameterizedType parameterizedType4 = (ParameterizedType) typeB4;
+                                                Type typeX5 = xsn1.x(0, parameterizedType4);
+                                                if (String.class != typeX5) {
+                                                    throw xsn1.K(method, i8, "@PartMap keys must be of type String: " + typeX5, new Object[0]);
+                                                }
+                                                Type typeX6 = xsn1.x(1, parameterizedType4);
+                                                if (kdn0.class.isAssignableFrom(xsn1.y(typeX6))) {
+                                                    throw xsn1.K(method, i8, "@PartMap values cannot be MultipartBody.Part. Use @Part List<Part> or a different value type instead.", new Object[0]);
+                                                }
+                                                u7s0Var = new q7s0(method, i8, ev31Var2.c(typeX6, annotationArr3, annotationArr), ((dis0) annotation).encoding());
+                                            } else if (annotation instanceof xmb) {
+                                                f731Var.c(i8, type);
+                                                if (f731Var.q || f731Var.r) {
+                                                    throw xsn1.K(method, i8, "@Body parameters cannot be used with form or multi-part encoding.", new Object[0]);
+                                                }
+                                                if (f731Var.i) {
+                                                    throw xsn1.K(method, i8, "Multiple @Body method annotations found.", new Object[0]);
+                                                }
+                                                try {
+                                                    a8n a8nVarC = ev31Var2.c(type, annotationArr3, annotationArr);
+                                                    f731Var.i = true;
+                                                    u7s0Var = new l7s0(method, i8, a8nVarC);
+                                                } catch (RuntimeException e) {
+                                                    throw xsn1.L(method, e, i8, "Unable to create @Body converter for %s", new Object[]{type});
+                                                }
+                                            } else if (annotation instanceof ibe1) {
+                                                f731Var.c(i8, type);
+                                                Class clsA2 = f731.a(xsn1.y(type));
+                                                for (int i12 = i8 - 1; i12 >= 0; i12--) {
+                                                    bep1 bep1Var = f731Var.w[i12];
+                                                    if ((bep1Var instanceof u7s0) && ((u7s0) bep1Var).e.equals(clsA2)) {
+                                                        throw xsn1.K(method, i8, "@Tag type " + clsA2.getName() + " is duplicate of " + bvt0.b.e(method, i12) + " and would always overwrite its value.", new Object[0]);
+                                                    }
+                                                }
+                                                u7s0Var = new u7s0(clsA2);
+                                            } else {
+                                                u7s0Var = null;
+                                            }
+                                        }
+                                    }
+                                    str = str;
+                                }
+                                if (u7s0Var != null) {
+                                    if (p7s0Var == null) {
+                                        throw xsn1.K(method, i8, "Multiple Retrofit annotations found, only one allowed.", new Object[0]);
+                                    }
+                                    p7s0Var = u7s0Var;
+                                }
+                                i10 = i2 + 1;
+                                annotationArr2 = annotationArr4;
+                                i7 = i;
+                                length2 = i11;
+                                i9 = i3;
+                                bep1VarArr2 = bep1VarArr;
+                                length3 = i4;
+                                str = str;
+                            }
+                            i2 = i10;
+                            bep1VarArr = bep1VarArr2;
+                            i3 = i9;
+                            i4 = length3;
+                            if (u7s0Var != null) {
+                                if (p7s0Var == null) {
+                                    throw xsn1.K(method, i8, "Multiple Retrofit annotations found, only one allowed.", new Object[0]);
+                                }
+                                p7s0Var = u7s0Var;
+                            }
+                            i10 = i2 + 1;
+                            annotationArr2 = annotationArr4;
+                            i7 = i;
+                            length2 = i11;
+                            i9 = i3;
+                            bep1VarArr2 = bep1VarArr;
+                            length3 = i4;
+                            str = str;
+                        }
+                    } else {
+                        p7s0Var = null;
+                    }
+                    Annotation[][] annotationArr5 = annotationArr2;
+                    int i13 = length2;
+                    String str2 = str;
+                    int i14 = i7;
+                    bep1[] bep1VarArr3 = bep1VarArr2;
+                    int i15 = i9;
+                    if (p7s0Var == null) {
+                        if (i15 != 0) {
+                            try {
+                                if (xsn1.y(type) == osm.class) {
+                                    f731Var.x = true;
+                                    p7s0Var = null;
+                                }
+                            } catch (NoClassDefFoundError unused) {
+                            }
+                        }
+                        throw xsn1.K(method, i8, "No Retrofit annotation found.", new Object[0]);
+                    }
+                    bep1VarArr3[i8] = p7s0Var;
+                    i8++;
+                    annotationArr2 = annotationArr5;
+                    i7 = i14;
+                    length2 = i13;
+                    str = str2;
+                    i5 = 0;
+                    p7s0Var2 = null;
+                }
+                String str3 = str;
+                if (f731Var.s == null && !f731Var.n) {
+                    throw xsn1.H(method, (Exception) null, "Missing either @%s URL or @Url parameter.", new Object[]{f731Var.o});
+                }
+                boolean z6 = f731Var.q;
+                if (!z6 && !f731Var.r && !f731Var.f31p && f731Var.i) {
+                    throw xsn1.H(method, (Exception) null, "Non-body HTTP method cannot contain @Body.", new Object[0]);
+                }
+                if (z6 && !f731Var.g) {
+                    throw xsn1.H(method, (Exception) null, "Form-encoded method must contain at least one @Field.", new Object[0]);
+                }
+                if (f731Var.r && !f731Var.h) {
+                    throw xsn1.H(method, (Exception) null, "Multipart method must contain at least one @Part.", new Object[0]);
+                }
+                g731 g731Var = new g731(f731Var);
+                Type genericReturnType2 = method.getGenericReturnType();
+                if (xsn1.D(genericReturnType2)) {
+                    throw xsn1.H(method, (Exception) null, "Method return type must not include a type variable or wildcard: %s", new Object[]{genericReturnType2});
+                }
+                if (genericReturnType2 == Void.TYPE) {
+                    throw xsn1.H(method, (Exception) null, "Service methods cannot return void.", new Object[0]);
+                }
+                Annotation[] annotations = method.getAnnotations();
+                boolean z7 = g731Var.l;
+                if (z7) {
+                    Type[] genericParameterTypes = method.getGenericParameterTypes();
+                    Type typeX7 = ((ParameterizedType) genericParameterTypes[genericParameterTypes.length - 1]).getActualTypeArguments()[0];
+                    if (typeX7 instanceof WildcardType) {
+                        typeX7 = ((WildcardType) typeX7).getLowerBounds()[0];
+                    }
+                    if (xsn1.y(typeX7) == gh31.class && (typeX7 instanceof ParameterizedType)) {
+                        typeX7 = xsn1.x(0, (ParameterizedType) typeX7);
+                        z2 = true;
+                        z3 = false;
+                    } else {
+                        if (xsn1.y(typeX7) == yyc.class) {
+                            throw xsn1.H(method, (Exception) null, "Suspend functions should not return Call, as they already execute asynchronously.\nChange its return type to %s", new Object[]{xsn1.x(0, (ParameterizedType) typeX7)});
+                        }
+                        z3 = xsn1.g && typeX7 == l5i1.class;
+                        z2 = false;
+                    }
+                    genericReturnType = new mcj1(null, yyc.class, typeX7);
+                    if (!xsn1.E(annotations, wr91.class)) {
+                        Annotation[] annotationArr6 = new Annotation[annotations.length + 1];
+                        annotationArr6[0] = xr91.a;
+                        System.arraycopy(annotations, 0, annotationArr6, 1, annotations.length);
+                        annotations = annotationArr6;
+                    }
+                    z = z3;
+                } else {
+                    genericReturnType = method.getGenericReturnType();
+                    z = false;
+                    z2 = false;
+                }
+                try {
+                    azc azcVarA = ev31Var.a(genericReturnType, annotations);
+                    Type typeB5 = azcVarA.b();
+                    if (typeB5 == fh31.class) {
+                        throw xsn1.H(method, (Exception) null, "'" + xsn1.y(typeB5).getName() + "' is not a valid response body type. Did you mean ResponseBody?", new Object[0]);
+                    }
+                    if (typeB5 == gh31.class) {
+                        throw xsn1.H(method, (Exception) null, "Response must include generic type (e.g., Response<String>)", new Object[0]);
+                    }
+                    if (g731Var.d.equals(str3) && !Void.class.equals(typeB5) && (!xsn1.g || typeB5 != l5i1.class)) {
+                        throw xsn1.H(method, (Exception) null, "HEAD method must use Void or Unit as response type.", new Object[0]);
+                    }
+                    try {
+                        a8n a8nVarD = ev31Var.d(typeB5, method.getAnnotations());
+                        xyc xycVar = ev31Var.b;
+                        if (z7) {
+                            return z2 ? new ue70(g731Var, xycVar, a8nVarD, azcVarA, (byte) 1) : new ve70(g731Var, xycVar, a8nVarD, azcVarA, z);
+                        }
+                        return new ue70(g731Var, xycVar, a8nVarD, azcVarA, (byte) 0);
+                    } catch (RuntimeException e2) {
+                        throw xsn1.H(method, e2, "Unable to create converter for %s", new Object[]{typeB5});
+                    }
+                } catch (RuntimeException e3) {
+                    throw xsn1.H(method, e3, "Unable to create call adapter for %s", new Object[]{genericReturnType});
+                }
+            }
+            Annotation annotation2 = annotationArr[i6];
+            if (annotation2 instanceof xzo) {
+                f731Var.b("DELETE", ((xzo) annotation2).value(), false);
+            } else if (annotation2 instanceof x740) {
+                f731Var.b("GET", ((x740) annotation2).value(), false);
+            } else if (annotation2 instanceof o260) {
+                f731Var.b("HEAD", ((o260) annotation2).value(), false);
+            } else if (annotation2 instanceof rfr0) {
+                f731Var.b("PATCH", ((rfr0) annotation2).value(), true);
+            } else if (annotation2 instanceof ngr0) {
+                f731Var.b("POST", ((ngr0) annotation2).value(), true);
+            } else if (annotation2 instanceof pgr0) {
+                f731Var.b("PUT", ((pgr0) annotation2).value(), true);
+            } else if (annotation2 instanceof qwp0) {
+                f731Var.b("OPTIONS", ((qwp0) annotation2).value(), false);
+            } else if (annotation2 instanceof q260) {
+                q260 q260Var = (q260) annotation2;
+                f731Var.b(q260Var.method(), q260Var.path(), q260Var.hasBody());
+            } else if (annotation2 instanceof gf60) {
+                gf60 gf60Var = (gf60) annotation2;
+                String[] strArrValue = gf60Var.value();
+                if (strArrValue.length == 0) {
+                    throw xsn1.H(method, (Exception) null, "@Headers annotation is empty.", new Object[0]);
+                }
+                boolean zAllowUnsafeNonAsciiValues = gf60Var.allowUnsafeNonAsciiValues();
+                ff60 ff60Var = new ff60((byte) 0);
+                int length4 = strArrValue.length;
+                int i16 = 0;
+                while (i16 < length4) {
+                    String str4 = strArrValue[i16];
+                    int iIndexOf = str4.indexOf(58);
+                    boolean z8 = z4;
+                    if (iIndexOf == -1 || iIndexOf == 0 || iIndexOf == str4.length() - 1) {
+                        throw xsn1.H(method, (Exception) null, "@Headers value must be in the form \"Name: Value\". Found: \"%s\"", new Object[]{str4});
+                    }
+                    String strSubstring = str4.substring(0, iIndexOf);
+                    String strTrim = str4.substring(iIndexOf + 1).trim();
+                    if ("Content-Type".equalsIgnoreCase(strSubstring)) {
+                        try {
+                            ix11 ix11Var = fni0.e;
+                            f731Var.u = t3r0.y(strTrim);
+                        } catch (IllegalArgumentException e4) {
+                            throw xsn1.H(method, e4, "Malformed content type: %s", new Object[]{strTrim});
+                        }
+                    } else if (zAllowUnsafeNonAsciiValues) {
+                        aan1.E(strSubstring);
+                        aan1.n(ff60Var, strSubstring, strTrim);
+                    } else {
+                        ff60Var.a(strSubstring, strTrim);
+                    }
+                    i16++;
+                    z4 = z8;
+                }
+                f731Var.t = aan1.o(ff60Var);
+            } else if (annotation2 instanceof idn0) {
+                if (f731Var.q) {
+                    throw xsn1.H(method, (Exception) null, "Only one encoding annotation is allowed.", new Object[0]);
+                }
+                f731Var.r = true;
+            } else if (!(annotation2 instanceof fo30)) {
+                continue;
+            } else {
+                if (f731Var.r) {
+                    throw xsn1.H(method, (Exception) null, "Only one encoding annotation is allowed.", new Object[0]);
+                }
+                f731Var.q = true;
+            }
+            i6++;
+        }
+    }
+
+    public abstract Object a(ngq0 ngq0Var, Object[] objArr);
+}

@@ -1,0 +1,10 @@
+
+metadata_esperanto.proto spotify.metadata_esperanto.protometadata_cosmos.proto"$
+GetEntityRequest
+uri (	Ruri"T
+GetEntityResponse?
+item (2+.spotify.metadata_cosmos.proto.MetadataItemRitem2û
+ClassicMetadataServicet
+	GetEntity2.spotify.metadata_esperanto.proto.GetEntityRequest3.spotify.metadata_esperanto.proto.GetEntityResponsek
+MultigetEntity+.spotify.metadata_cosmos.proto.MultiRequest,.spotify.metadata_cosmos.proto.MultiResponseB*
+$com.spotify.metadata.esperanto.protoHPbproto3

@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: google/protobuf/any.proto
+syntax = "proto3";
+package google.protobuf;
+message Any {
+  string type_url = 1;
+  bytes value = 2;
+}

@@ -1,0 +1,22 @@
+// Recovered descriptor. Original file: local_files.proto
+syntax = "proto3";
+package spotify.local_files.proto;
+message LocalFile {
+  message Metadata {
+    enum ImageState {
+      UNKNOWN = 0;
+      AVAILABLE = 1;
+      UNAVAILABLE = 2;
+    }
+    string title = 1;
+    string album = 2;
+    string artist = 3;
+    int32 duration = 4;
+    .spotify.local_files.proto.LocalFile.Metadata.ImageState image_state = 5;
+  }
+  string path = 1;
+  .spotify.local_files.proto.LocalFile.Metadata metadata = 2;
+}
+message QueryResult {
+  repeated .spotify.local_files.proto.LocalFile files = 1;
+}

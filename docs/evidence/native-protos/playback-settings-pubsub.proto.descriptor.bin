@@ -1,0 +1,14 @@
+
+playback-settings-pubsub.protospotify.playbacksettings.pubsubplayback-settings.proto"®
+ DeviceSettingsFieldsChangedEvent
+	device_id (	RdeviceId
+device_name (	R
+deviceNameF
+changed_fields (2.spotify.playbacksettings.FieldRchangedFieldsJ"Š
+ContentSettingsChangedEvent
+
+content_id (	R	contentIdF
+changed_fields (2.spotify.playbacksettings.FieldRchangedFieldsJ"h
+UserSettingsChangedEventF
+changed_fields (2.spotify.playbacksettings.FieldRchangedFieldsJB/
+)com.spotify.playbacksettings.model.pubsubHPbproto3

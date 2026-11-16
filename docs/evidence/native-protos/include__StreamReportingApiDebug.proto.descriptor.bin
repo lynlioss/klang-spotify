@@ -1,0 +1,42 @@
+
+%include/StreamReportingApiDebug.protospotify.event_sender.proto"Ø
+
+StreamReportingApiDebug
+playback_id (R
+playbackId,
+parent_playback_id (RparentPlaybackId(
+video_session_id (	RvideoSessionId
+media_id (RmediaId
+
+media_type (	R	mediaType!
+source_start (	RsourceStart!
+reason_start (	RreasonStart
+live (Rlive
+shuffle	 (Rshuffle!
+play_context
+ (	RplayContext
+content_uri (	R
+contentUri2
+displayed_content_uri (	RdisplayedContentUri2
+content_is_downloaded (RcontentIsDownloaded
+provider (	Rprovider
+referrer (	Rreferrer%
+streaming_rule (	RstreamingRule?
+connect_controller_device_id (	RconnectControllerDeviceId(
+page_instance_id (	RpageInstanceId%
+interaction_id (	RinteractionId!
+core_version (RcoreVersion,
+ms_played_external (RmsPlayedExternal*
+local_content_uri (	RlocalContentUriB
+client_offline_at_stream_start (RclientOfflineAtStreamStart%
+playback_stack (	RplaybackStack@
+custom_reporting_attribution (	RcustomReportingAttribution
+decision_id (	R
+decisionId7
+play_context_decision_id (	RplayContextDecisionId!
+feature_uuid (	RfeatureUuid
+	stream_id (RstreamId,
+is_repeating_track (RisRepeatingTrack0
+is_repeating_context (RisRepeatingContext!
+request_type  (	RrequestType2
+sequence_provider_ids! (	RsequenceProviderIdsBH

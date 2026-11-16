@@ -1,0 +1,83 @@
+[
+  {
+    "literal": "wss://dealer.g2.spotify.com:443",
+    "fileOffset": "0x393317",
+    "stringAddress": "0x393317",
+    "adrpAddress": "0xb5b148",
+    "addAddress": "0xb5b14c",
+    "register": 1,
+    "status": "candidate-needs-disassembly-review"
+  },
+  {
+    "literal": "https://clienttoken.spotify.com/v1/clienttoken",
+    "fileOffset": "0x3bf698",
+    "stringAddress": "0x3bf698",
+    "adrpAddress": "0xb871f4",
+    "addAddress": "0xb871f8",
+    "register": 1,
+    "status": "candidate-needs-disassembly-review"
+  },
+  {
+    "literal": "https://login5.spotify.com/v3/login",
+    "fileOffset": "0x3bfcae",
+    "stringAddress": "0x3bfcae",
+    "adrpAddress": "0xbae6d0",
+    "addAddress": "0xbae6d4",
+    "register": 1,
+    "status": "candidate-needs-disassembly-review"
+  },
+  {
+    "literal": "https://login5.spotify.com/v4/login",
+    "fileOffset": "0x3bfcf8",
+    "stringAddress": "0x3bfcf8",
+    "adrpAddress": "0xbaeaf0",
+    "addAddress": "0xbaeaf4",
+    "register": 1,
+    "status": "candidate-needs-disassembly-review"
+  },
+  {
+    "literal": "https://login5.spotify.com/v4/login",
+    "fileOffset": "0x3bfcf8",
+    "stringAddress": "0x3bfcf8",
+    "adrpAddress": "0xbb3f18",
+    "addAddress": "0xbb3f1c",
+    "register": 1,
+    "status": "candidate-needs-disassembly-review"
+  },
+  {
+    "literal": "sessiontransfer/v1/token",
+    "fileOffset": "0x3c0080",
+    "stringAddress": "0x3c0080",
+    "adrpAddress": "0xbcbd00",
+    "addAddress": "0xbcbd04",
+    "register": 1,
+    "status": "candidate-needs-disassembly-review"
+  },
+  {
+    "literal": "sessiontransfer/v1/token",
+    "fileOffset": "0x3c0080",
+    "stringAddress": "0x3c0080",
+    "adrpAddress": "0xbcbfb0",
+    "addAddress": "0xbcbfb4",
+    "register": 1,
+    "status": "candidate-needs-disassembly-review"
+  },
+  {
+    "literal": "storage-resolve/v2/files/audio/",
+    "fileOffset": "0x3955f9",
+    "stringAddress": "0x3955f9",
+    "adrpAddress": "0xdc3c40",
+    "addAddress": "0xdc3c44",
+    "register": 0,
+    "status": "candidate-needs-disassembly-review"
+  },
+  {
+    "literal": "https://apresolve.spotify.com/v2",
+    "fileOffset": "0x396d5a",
+    "stringAddress": "0x396d5a",
+    "adrpAddress": "0x139154c",
+    "addAddress": "0x1391550",
+    "register": 1,
+    "status": "candidate-needs-disassembly-review"
+  }
+]

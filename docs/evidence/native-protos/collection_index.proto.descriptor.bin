@@ -1,0 +1,72 @@
+
+collection_index.protospotify.collection.proto"|
+IndexRepairerState(
+last_checked_uri (RlastCheckedUri<
+last_full_check_finished_at (RlastFullCheckFinishedAt"'
+AddTime
+	timestamp (R	timestamp"Î
+CollectionTrackEntry
+uri (	Ruri
+
+track_name (	R	trackName
+	album_uri (	RalbumUri
+
+album_name (	R	albumName
+disc_number (R
+discNumber!
+track_number (RtrackNumber*
+artist_uri_legacy (	RartistUriLegacy
+artist_name (	R
+artistName
+add_time	 (RaddTime
+
+artist_uri
+ (	R	artistUri"æ
+CollectionAlbumEntry
+uri (	Ruri
+
+album_name (	R	albumName
+
+artist_uri (	R	artistUri
+artist_name (	R
+artistName
+add_time (RaddTime
+last_played (R
+lastPlayed!
+release_date	 (RreleaseDate"Æ
+CollectionShowEntry
+uri (	Ruri
+	show_name (	RshowName!
+creator_name (	RcreatorName
+add_time (RaddTime!
+publish_date (RpublishDate
+last_played (R
+lastPlayed"¡
+CollectionBookEntry
+uri (	Ruri
+	book_name (	RbookName
+author_name (	R
+authorName
+add_time (RaddTime
+last_played (R
+lastPlayed"°
+CollectionArtistEntry
+uri (	Ruri
+artist_name (	R
+artistName
+add_time (RaddTime
+last_played (R
+lastPlayed(
+last_modified_at	 (RlastModifiedAt"e
+CollectionAuthorEntry
+uri (	Ruri
+author_name (	R
+authorName
+add_time (RaddTime"Ã
+CollectionEpisodeEntry
+uri (	Ruri!
+episode_name (	RepisodeName
+show_uri (	RshowUri
+	show_name (	RshowName
+add_time (RaddTime!
+publish_time (RpublishTimeBHbproto3

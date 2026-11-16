@@ -1,0 +1,17 @@
+
+<spotify/venueextendedmetadata/v1/venueextendedmetadata.proto spotify.venueextendedmetadata.v1"/
+VenueArtistsPreview
+artists (	Rartists"û
+VenueLocation
+address (	Raddress
+city (	Rcity
+country (	Rcountry
+state (	Rstate
+region (	Rregion
+latitude (Rlatitude
+	longitude (R	longitude
+
+postalcode (	R
+postalcode
+timezone	 (	RtimezoneB*
+$com.spotify.venueextendedmetadata.v1HPbproto3

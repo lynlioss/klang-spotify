@@ -1,0 +1,7 @@
+
+sync/album_sync_state.protospotify.cosmos_util.proto"z
+AlbumSyncState
+offline (	Roffline)
+inferred_offline (	RinferredOffline#
+sync_progress (RsyncProgressB#
+com.spotify.cosmos.util.protoHP

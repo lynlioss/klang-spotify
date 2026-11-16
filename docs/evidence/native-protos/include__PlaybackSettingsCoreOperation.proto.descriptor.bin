@@ -1,0 +1,15 @@
+
++include/PlaybackSettingsCoreOperation.protospotify.event_sender.proto"¸
+PlaybackSettingsCoreOperation
+	operation (	R	operation
+result (	Rresult!
+setting_type (	RsettingType
+retry_count (R
+retryCount
+duration_ms (R
+durationMs#
+error_message (	RerrorMessage
+
+content_id (	R	contentId
+settings (	Rsettings
+	timestamp	 (	R	timestampBH

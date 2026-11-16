@@ -1,0 +1,9 @@
+
+collection_ban_request.protospotify.collection_cosmos.protostatus.proto"O
+CollectionBanRequest%
+context_source (	RcontextSource
+uri (	Ruri"r
+CollectionBanResponse?
+status (2'.spotify.collection_cosmos.proto.StatusRstatus
+success (RsuccessB.
+"spotify.collection.esperanto.protoHP¢ESPbproto3

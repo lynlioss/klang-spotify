@@ -1,0 +1,10 @@
+
+context_view.proto!spotify.player.context_view.protocontext_track.protocontext_view_cyclic_list.proto"Ú
+ContextViewY
+	patch_map (2<.spotify.player.context_view.proto.ContextView.PatchMapEntryRpatchMap%
+iteration_size (RiterationSizeb
+cyclic_list (2A.spotify.player.context_view.cyclic_list.proto.CyclicEntryKeyListR
+cyclicList_
+PatchMapEntry
+key (	Rkey8
+value (2".spotify.player.proto.ContextTrackRvalue:8JBH

@@ -1,0 +1,14 @@
+// Recovered descriptor. Original file: metadata_esperanto.proto
+syntax = "proto3";
+package spotify.metadata_esperanto.proto;
+import "metadata_cosmos.proto";
+message GetEntityRequest {
+  string uri = 1;
+}
+message GetEntityResponse {
+  .spotify.metadata_cosmos.proto.MetadataItem item = 1;
+}
+service ClassicMetadataService {
+  rpc GetEntity (.spotify.metadata_esperanto.proto.GetEntityRequest) returns (.spotify.metadata_esperanto.proto.GetEntityResponse);
+  rpc MultigetEntity (.spotify.metadata_cosmos.proto.MultiRequest) returns (.spotify.metadata_cosmos.proto.MultiResponse);
+}

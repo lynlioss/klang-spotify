@@ -1,0 +1,16 @@
+// Recovered descriptor. Original file: associations_extension.proto
+syntax = "proto3";
+package spotify.assoc.v1;
+message Assoc {
+  enum AssocType {
+    ASSOC_TYPE_UNSPECIFIED = 0;
+    IS_PRIMARILY_ABOUT = 1;
+    HAS_RELATED_CONTENT = 2;
+  }
+  .spotify.assoc.v1.Assoc.AssocType assoc_type = 1;
+  repeated string target_uri = 2;
+}
+message EntityAssociations {
+  string origin_uri = 1;
+  repeated .spotify.assoc.v1.Assoc assoc = 2;
+}

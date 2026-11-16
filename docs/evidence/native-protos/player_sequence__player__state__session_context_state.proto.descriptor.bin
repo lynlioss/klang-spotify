@@ -1,0 +1,6 @@
+
+8player_sequence/player/state/session_context_state.protospotify.player.sequence.proto0player_sequence/player/state/context_stack.proto/player_sequence/player/state/context_tree.proto"Ï
+SessionContextState&
+root_context_id (	RrootContextIdA
+stack (2+.spotify.player.sequence.proto.ContextStackRstackM
+context_tree (2*.spotify.player.sequence.proto.ContextTreeRcontextTreeBHbproto3

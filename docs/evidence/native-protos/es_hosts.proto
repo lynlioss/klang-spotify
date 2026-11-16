@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: es_hosts.proto
+syntax = "proto3";
+package spotify.connectivity.hosts.esperanto.proto;
+message Hosts {
+  string backendStreamingHost = 1;
+  string backendRpcGlobalHost = 3;
+  string backendRpcRegionalHost = 4;
+}

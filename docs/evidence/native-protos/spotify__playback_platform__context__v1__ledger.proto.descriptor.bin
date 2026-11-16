@@ -1,0 +1,7 @@
+
+1spotify/playback_platform/context/v1/ledger.proto$spotify.playback_platform.context.v1google/protobuf/timestamp.proto7spotify/playback_platform/context/v1/ledger_entry.proto"’
+Ledger;
+create_time (2.google.protobuf.TimestampR
+createTimeK
+entries (21.spotify.playback_platform.context.v1.LedgerEntryRentriesB*
+$spotify.playback_platform.context.v1HPbproto3

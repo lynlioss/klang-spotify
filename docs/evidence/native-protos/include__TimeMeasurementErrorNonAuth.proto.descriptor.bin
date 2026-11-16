@@ -1,0 +1,47 @@
+
+)include/TimeMeasurementErrorNonAuth.protospotify.event_sender.proto"⁄
+TimeMeasurementErrorNonAuth
+
+error_code (R	errorCodee
+
+error_data (2F.spotify.event_sender.proto.TimeMeasurementErrorNonAuth.ErrorDataEntryR	errorDataç
+ongoing_point_timestamps (2S.spotify.event_sender.proto.TimeMeasurementErrorNonAuth.OngoingPointTimestampsEntryRongoingPointTimestampsé
+ongoing_point_feature_ids (2S.spotify.event_sender.proto.TimeMeasurementErrorNonAuth.OngoingPointFeatureIdsEntryRongoingPointFeatureIds
+category (	Rcategoryg
+
+dimensions (2G.spotify.event_sender.proto.TimeMeasurementErrorNonAuth.DimensionsEntryR
+dimensionsw
+point_timestamps (2L.spotify.event_sender.proto.TimeMeasurementErrorNonAuth.PointTimestampsEntryRpointTimestampst
+point_durations (2K.spotify.event_sender.proto.TimeMeasurementErrorNonAuth.PointDurationsEntryRpointDurationsx
+point_feature_ids	 (2L.spotify.event_sender.proto.TimeMeasurementErrorNonAuth.PointFeatureIdsEntryRpointFeatureIds
+
+feature_id
+ (	R	featureId%
+measurement_id (	RmeasurementId2
+parent_measurement_id (	RparentMeasurementId.
+parent_epoch_offset (RparentEpochOffseta
+metadata (2E.spotify.event_sender.proto.TimeMeasurementErrorNonAuth.MetadataEntryRmetadata<
+ErrorDataEntry
+key (	Rkey
+value (	Rvalue:8I
+OngoingPointTimestampsEntry
+key (	Rkey
+value (Rvalue:8I
+OngoingPointFeatureIdsEntry
+key (	Rkey
+value (	Rvalue:8=
+DimensionsEntry
+key (	Rkey
+value (	Rvalue:8B
+PointTimestampsEntry
+key (	Rkey
+value (Rvalue:8A
+PointDurationsEntry
+key (	Rkey
+value (Rvalue:8B
+PointFeatureIdsEntry
+key (	Rkey
+value (	Rvalue:8;
+MetadataEntry
+key (	Rkey
+value (	Rvalue:8BH

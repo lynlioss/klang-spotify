@@ -1,0 +1,8 @@
+
+es_remote_config_dummy.proto%spotify.remote_config.esperanto.proto"
+ResolveDummyRequest",
+ResolveDummyResponse
+value (	Rvalue2¨
+RemoteConfigDummyResolveè
+ResolveDummyProperty:.spotify.remote_config.esperanto.proto.ResolveDummyRequest;.spotify.remote_config.esperanto.proto.ResolveDummyResponseB2
+(com.spotify.remoteconfig.esperanto.protoH¢ESPbproto3

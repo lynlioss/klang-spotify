@@ -1,0 +1,12 @@
+
+=spotify/playback_platform/timeline/v1/timeline_behavior.proto%spotify.playback_platform.timeline.v1>spotify/playback_platform/timeline/v1/behavior/reporting.protoAspotify/playback_platform/timeline/v1/behavior/restrictions.proto>spotify/playback_platform/timeline/v1/behavior/seek_into.proto>spotify/playback_platform/timeline/v1/behavior/seek_skip.proto>spotify/playback_platform/timeline/v1/behavior/seek_snap.proto"³
+TimelineBehavior`
+restrictions (2<.spotify.playback_platform.timeline.v1.behavior.RestrictionsRrestrictionsW
+	reporting (29.spotify.playback_platform.timeline.v1.behavior.ReportingR	reportingZ
+seek_to_prev (28.spotify.playback_platform.timeline.v1.behavior.SeekSkipR
+seekToPrevZ
+seek_to_next (28.spotify.playback_platform.timeline.v1.behavior.SeekSkipR
+seekToNextU
+	seek_snap (28.spotify.playback_platform.timeline.v1.behavior.SeekSnapRseekSnapU
+	seek_into (28.spotify.playback_platform.timeline.v1.behavior.SeekIntoRseekIntoB+
+%spotify.playback_platform.timeline.v1HPbproto3

@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: state_restore/automix_talk_rules.proto
+syntax = "proto2";
+package spotify.player.proto.state_restore;
+import "state_restore/provided_track.proto";
+message AutomixTalkRules {
+  optional .spotify.player.proto.state_restore.ProvidedTrack current_track = 1;
+  optional int64 narration_duration = 2;
+}

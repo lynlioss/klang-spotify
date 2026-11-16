@@ -1,0 +1,17 @@
+// Recovered descriptor. Original file: es_connection_quality_service.proto
+syntax = "proto3";
+package spotify.connectivity.connection_quality.esperanto.proto;
+import "google/protobuf/empty.proto";
+enum ConnectionQuality {
+  UNKNOWN = 0;
+  GOOD = 1;
+  POOR = 3;
+  ABSENT = 4;
+}
+message ConnectionQualityEvent {
+  .spotify.connectivity.connection_quality.esperanto.proto.ConnectionQuality connection_quality = 1;
+  .spotify.connectivity.connection_quality.esperanto.proto.ConnectionQuality last_known_quality = 2;
+}
+service ConnectionQualityService {
+  rpc listenToConnectionQualityEvents (.google.protobuf.Empty) returns (stream .spotify.connectivity.connection_quality.esperanto.proto.ConnectionQualityEvent);
+}

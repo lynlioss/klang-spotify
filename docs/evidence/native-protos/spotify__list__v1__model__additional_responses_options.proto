@@ -1,0 +1,6 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/additional_responses_options.proto
+syntax = "proto3";
+package spotify.list.v1.model;
+message AdditionalResponsesOptions {
+  bool allow_additional_responses = 1;
+}

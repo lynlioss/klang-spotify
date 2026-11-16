@@ -1,0 +1,17 @@
+// Recovered descriptor. Original file: socialgraph-v4.proto
+syntax = "proto3";
+package spotify.socialgraph.v4;
+message UsernameUser {
+  oneof _username {
+    string username = 1;
+  }
+  oneof _timestamp {
+    int64 timestamp = 2;
+  }
+}
+message GetRelationsUsernameResponse {
+  repeated .spotify.socialgraph.v4.UsernameUser users = 1;
+  oneof _next_page_token {
+    string next_page_token = 2;
+  }
+}

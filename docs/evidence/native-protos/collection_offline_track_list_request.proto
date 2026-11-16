@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: collection_offline_track_list_request.proto
+syntax = "proto3";
+package spotify.collection_cosmos.proto;
+import "status.proto";
+message CollectionOfflineTrackListRequest {
+  string id = 1;
+  string sort = 2;
+  string filter = 3;
+}
+message CollectionOfflineTrackListResponse {
+  .spotify.collection_cosmos.proto.Status status = 1;
+}

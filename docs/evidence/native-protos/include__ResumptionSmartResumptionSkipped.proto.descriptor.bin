@@ -1,0 +1,10 @@
+
+.include/ResumptionSmartResumptionSkipped.protospotify.event_sender.proto"ê
+ ResumptionSmartResumptionSkipped
+item_uri (	RitemUri
+skip_reason (	R
+skipReason0
+original_position_ms (RoriginalPositionMs7
+resume_point_age_seconds (RresumePointAgeSeconds
+playback_id (	R
+playbackIdBH

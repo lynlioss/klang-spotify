@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: es_get_play_history.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+import "es_context_track.proto";
+message GetPlayHistoryRequest {
+  oneof _logical_playback_identifier {
+    string logical_playback_identifier = 1;
+  }
+}
+message GetPlayHistoryResponse {
+  repeated .spotify.player.esperanto.proto.ContextTrack tracks = 1;
+}

@@ -1,0 +1,12 @@
+
+include/CacheRealmReport.protospotify.event_sender.proto"Æ
+CacheRealmReport
+cache_id (RcacheId
+realm_id (RrealmId
+num_entries (R
+numEntries,
+num_locked_entries (RnumLockedEntriesD
+num_locked_entries_current_user (RnumLockedEntriesCurrentUser(
+num_full_entries (RnumFullEntries
+size_kb (RsizeKb$
+locked_size_kb (RlockedSizeKbBH

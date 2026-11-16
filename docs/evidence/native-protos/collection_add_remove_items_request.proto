@@ -1,0 +1,18 @@
+// Recovered descriptor. Original file: collection_add_remove_items_request.proto
+syntax = "proto3";
+package spotify.collection_cosmos.proto;
+import "status.proto";
+import "collection_itemdata.proto";
+message CollectionAddRemoveItem {
+  string uri = 1;
+  oneof _item_data {
+    .spotify.collection.itemdata.ItemData item_data = 2;
+  }
+}
+message CollectionAddRemoveItemsRequest {
+  repeated string uri = 1;
+  repeated .spotify.collection_cosmos.proto.CollectionAddRemoveItem items = 2;
+}
+message CollectionAddRemoveItemsResponse {
+  .spotify.collection_cosmos.proto.Status status = 1;
+}

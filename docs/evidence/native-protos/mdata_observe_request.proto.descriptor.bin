@@ -1,0 +1,13 @@
+
+mdata_observe_request.protospotify.mdata_esperanto.protoextension_kind.proto"Š
+ObserveRequeste
+extension_query (2<.spotify.mdata_esperanto.proto.ObserveRequest.ExtensionQueryRextensionQuery
+
+feature_id (	R	featureId.
+notify_on_changes (BRnotifyOnChangesÁ
+ExtensionQuery
+
+entity_uri (	R	entityUriN
+extension_kind (2'.spotify.extendedmetadata.ExtensionKindRextensionKind@
+notify_on_local_cache_changes (RnotifyOnLocalCacheChangesB'
+!com.spotify.mdata.esperanto.protoHPbproto3

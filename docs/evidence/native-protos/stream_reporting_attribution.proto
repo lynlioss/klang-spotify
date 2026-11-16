@@ -1,0 +1,17 @@
+// Recovered descriptor. Original file: stream_reporting_attribution.proto
+syntax = "proto3";
+package spotify.stream_reporting_attribution.proto;
+message StreamReportingAttribution {
+  oneof _provenance {
+    string provenance = 1;
+  }
+  oneof _page_id {
+    string page_id = 2;
+  }
+  oneof _root_specification_id {
+    string root_specification_id = 3;
+  }
+  oneof _leaf_specification_id {
+    string leaf_specification_id = 4;
+  }
+}

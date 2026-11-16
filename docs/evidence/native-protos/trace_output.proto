@@ -1,0 +1,64 @@
+// Recovered descriptor. Original file: trace_output.proto
+syntax = "proto2";
+package spotify.perf_metrics.impl.proto;
+message Trace {
+  repeated .spotify.perf_metrics.impl.proto.TracePacket packet = 1;
+}
+message TracePacket {
+  optional uint64 timestamp = 8;
+  optional uint32 trusted_packet_sequence_id = 10;
+  optional .spotify.perf_metrics.impl.proto.TrackEvent track_event = 11;
+  optional uint32 sequence_flags = 13;
+  optional uint32 timestamp_clock_id = 58;
+  optional .spotify.perf_metrics.impl.proto.TrackDescriptor track_descriptor = 60;
+}
+message TrackDescriptor {
+  optional uint64 uuid = 1;
+  optional string name = 2;
+  optional .spotify.perf_metrics.impl.proto.ProcessDescriptor process = 3;
+  optional .spotify.perf_metrics.impl.proto.ThreadDescriptor thread = 4;
+  optional uint64 parent_uuid = 5;
+  optional .spotify.perf_metrics.impl.proto.CounterDescriptor counter = 8;
+}
+message ProcessDescriptor {
+  optional int32 pid = 1;
+  optional string process_name = 6;
+}
+message ThreadDescriptor {
+  optional int32 pid = 1;
+  optional int64 tid = 2;
+  optional string thread_name = 5;
+}
+message CounterDescriptor {
+  enum BuiltinCounterType {
+    COUNTER_UNSPECIFIED = 0;
+    COUNTER_THREAD_TIME_NS = 1;
+  }
+  optional .spotify.perf_metrics.impl.proto.CounterDescriptor.BuiltinCounterType type = 1;
+}
+message TrackEvent {
+  enum Type {
+    TYPE_UNSPECIFIED = 0;
+    TYPE_SLICE_BEGIN = 1;
+    TYPE_SLICE_END = 2;
+    TYPE_INSTANT = 3;
+    TYPE_COUNTER = 4;
+  }
+  repeated .spotify.perf_metrics.impl.proto.DebugAnnotation debug_annotations = 4;
+  optional .spotify.perf_metrics.impl.proto.TrackEvent.Type type = 9;
+  optional uint64 track_uuid = 11;
+  repeated string categories = 22;
+  optional string name = 23;
+  optional int64 counter_value = 30;
+  repeated uint64 extra_counter_track_uuids = 31;
+  repeated int64 extra_counter_values = 12;
+  repeated fixed64 flow_ids = 47;
+  repeated fixed64 terminating_flow_ids = 48;
+}
+message DebugAnnotation {
+  optional bool bool_value = 2;
+  optional uint64 uint_value = 3;
+  optional int64 int_value = 4;
+  optional string string_value = 6;
+  optional string name = 10;
+}

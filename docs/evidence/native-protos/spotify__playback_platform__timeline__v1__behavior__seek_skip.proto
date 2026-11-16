@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: spotify/playback_platform/timeline/v1/behavior/seek_skip.proto
+syntax = "proto3";
+package spotify.playback_platform.timeline.v1.behavior;
+import "spotify/playback_platform/common/v1/duration.proto";
+import "spotify/playback_platform/timeline/v1/timepoint.proto";
+message SeekSkip {
+  repeated .spotify.playback_platform.timeline.v1.Timepoints positions = 1;
+  .spotify.playback_platform.common.v1.StochasticDuration skip = 2;
+}

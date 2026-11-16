@@ -1,0 +1,19 @@
+// Recovered descriptor. Original file: collection_platform_items.proto
+syntax = "proto3";
+package spotify.collection_platform.proto;
+import "collection_itemdata.proto";
+message CollectionPlatformItem {
+  string uri = 1;
+  int64 add_time = 2;
+  oneof _item_data {
+    .spotify.collection.itemdata.ItemData item_data = 3;
+  }
+}
+message CollectionPlatformContextItem {
+  string uri = 1;
+  int64 add_time = 2;
+  string context_uri = 3;
+  oneof _item_data {
+    .spotify.collection.itemdata.ItemData item_data = 4;
+  }
+}

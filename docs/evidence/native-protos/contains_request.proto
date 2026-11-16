@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: contains_request.proto
+syntax = "proto3";
+package spotify.playlist.cosmos.proto;
+message ContainsRequest {
+  repeated string items = 1;
+}
+message ContainsResponse {
+  repeated bool found = 1;
+}

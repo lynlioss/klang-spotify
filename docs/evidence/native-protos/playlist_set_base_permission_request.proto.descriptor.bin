@@ -1,0 +1,8 @@
+
+*playlist_set_base_permission_request.proto spotify.playlist_esperanto.proto%playlist_set_permission_request.protoresponse_status.proto"‰
+ PlaylistSetBasePermissionRequest
+uris (	RurisQ
+request (27.spotify.playlist.cosmos.proto.SetBasePermissionRequestRrequest"m
+!PlaylistSetBasePermissionResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatusB,
+ spotify.playlist.esperanto.protoHP¢ESPbproto3

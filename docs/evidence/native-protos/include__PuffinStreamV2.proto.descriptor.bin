@@ -1,0 +1,9 @@
+
+include/PuffinStreamV2.protospotify.event_sender.proto"Í
+PuffinStreamV2
+playback_id (R
+playbackId)
+specific_enabled (RspecificEnabled#
+specific_type (	RspecificType'
+generic_enabled (RgenericEnabled!
+generic_type (	RgenericTypeBH

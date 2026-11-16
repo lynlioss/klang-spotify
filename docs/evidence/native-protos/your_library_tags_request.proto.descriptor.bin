@@ -1,0 +1,17 @@
+
+your_library_tags_request.proto)spotify.your_library_tags_esperanto.proto"e
+DecoratedTag
+tag_uri (	RtagUri
+tag_name (	RtagName!
+entity_count (RentityCount"—
+DecoratedClass
+	class_uri (	RclassUri
+
+class_name (	R	classNameI
+tag (27.spotify.your_library_tags_esperanto.proto.DecoratedTagRtag"u
+YourLibraryTagsResponseZ
+class_group (29.spotify.your_library_tags_esperanto.proto.DecoratedClassR
+classGroup"E
+YourLibraryTagsRequest+
+update_throttling (RupdateThrottlingB5
+)spotify.your_library_tags_esperanto.protoHP¢ESPbproto3

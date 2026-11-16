@@ -1,0 +1,20 @@
+
+.collection_get_unplayed_episodes_request.protospotify.collection_cosmos.proto"collection_decoration_policy.protostatus.protocollection_item.proto"®
+$CollectionGetUnplayedEpisodesRequesti
+episode_policy (2B.spotify.collection_cosmos.proto.CollectionEpisodeDecorationPolicyRepisodePolicy
+start (Rstart
+length (Rlength
+sort (	Rsort
+filter (	Rfilter
+group (Rgroup+
+update_throttling (RupdateThrottling"{
+UnplayedEpisodeItem
+header (	RheaderL
+episode (22.spotify.collection_cosmos.proto.CollectionEpisodeRepisode"±
+%CollectionGetUnplayedEpisodesResponse?
+status (2'.spotify.collection_cosmos.proto.StatusRstatusH
+item (24.spotify.collection_cosmos.proto.UnplayedEpisodeItemRitem+
+unfiltered_length (RunfilteredLength'
+unranged_length (RunrangedLength'
+loading_content (RloadingContentB.
+"spotify.collection.esperanto.protoHP¢ESPbproto3

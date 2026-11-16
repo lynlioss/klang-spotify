@@ -1,0 +1,20 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/response_info.proto
+syntax = "proto3";
+package spotify.list.v1.model;
+import "spotify/list/v1/model/caching.proto";
+import "spotify/list/v1/model/lenses.proto";
+import "spotify/list/v1/model/request_error.proto";
+message ResponseInfo {
+  oneof _request_error {
+    .spotify.list.v1.model.RequestError request_error = 1;
+  }
+  oneof _cache_hint {
+    .spotify.list.v1.model.CacheHint cache_hint = 3;
+  }
+  oneof _revision {
+    bytes revision = 7;
+  }
+  oneof _applied_lenses {
+    .spotify.list.v1.model.AppliedLenses applied_lenses = 8;
+  }
+}

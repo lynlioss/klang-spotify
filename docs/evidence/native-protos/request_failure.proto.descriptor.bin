@@ -1,0 +1,7 @@
+
+request_failure.protospotify.image.proto"p
+RequestFailure
+request (	Rrequest
+source (	Rsource
+error (	Rerror
+result (RresultBH

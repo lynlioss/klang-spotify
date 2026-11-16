@@ -1,0 +1,9 @@
+
+mix_vocal_activity.proto2spotify.playlistmixing.extensions.mixvocalactivity"«
+VocalActivity1
+source_sample_rate_hz (RsourceSampleRateHz2
+smoothing_window_size (RsmoothingWindowSize9
+first_window_sample_start (RfirstWindowSampleStart6
+samples_between_windows (RsamplesBetweenWindows@
+vocal_activity_probabilities (RvocalActivityProbabilitiesBW
+<com.spotify.playlistmixing.extensions.mixvocalactivity.protoBMixVocalActivityProtoHbproto3

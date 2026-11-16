@@ -1,0 +1,8 @@
+
+*include/AudioOffliningSettingsReport.protospotify.event_sender.proto"¬
+AudioOffliningSettingsReportJ
+"default_sync_bitrate_product_state (	RdefaultSyncBitrateProductState;
+user_selected_sync_bitrate (RuserSelectedSyncBitrate!
+sync_bitrate (RsyncBitrate,
+sync_over_cellular (RsyncOverCellular2
+primary_resource_type (	RprimaryResourceTypeBH

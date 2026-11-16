@@ -1,0 +1,16 @@
+
+your_library_tags_backend.protospotify.your_library_tags.proto"8
+GetSuggestionsRequest
+always_true (R
+alwaysTrue"v
+GetSuggestionsResponse$
+ttl_in_seconds (RttlInSeconds6
+tag (2$.spotify.your_library_tags.proto.TagRtag"ê
+Tag
+tag_uri (	RtagUri!
+playlist_uri (	RplaylistUri9
+item (2%.spotify.your_library_tags.proto.ItemRitem
+rank (Rrank"A
+Item
+uri (	Ruri'
+relevance_score (RrelevanceScoreBHbproto3

@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: transcript.proto
+syntax = "proto3";
+package spotify.contentagnostic.v2;
+import "flat_file.proto";
+message Transcript {
+  .spotify.contentagnostic.v2.FlatFile flat_file = 1;
+}

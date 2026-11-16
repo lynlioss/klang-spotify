@@ -1,0 +1,13 @@
+Source: analysis/spotify/jadx-dex2/sources/p/dmt0.java
+SHA256: 5a24142144d343acf0011970210d3ab2b861dcd644c28dbf70ebcdcb5e123aaa
+Lines: 1-9
+
+1: package p;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes2.dex */
+4: @kotlin.Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\bg\u0018\u00002\u00020\u0001J\u001a\u0010\u0005\u001a\u00020\u00042\b\b\u0001\u0010\u0003\u001a\u00020\u0002H§@¢\u0006\u0004\b\u0005\u0010\u0006ø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001¨\u0006\u0007À\u0006\u0001"}, d2 = {"Lp/dmt0;", "", "Lcom/spotify/integrity/integrityimpl/proto/VerifyRequest;", "verifyRequest", "Lcom/spotify/integrity/integrityimpl/proto/VerifyResponse;", "a", "(Lcom/spotify/integrity/integrityimpl/proto/VerifyRequest;Lp/osm;)Ljava/lang/Object;", "src_main_java_com_spotify_integrity_integrityimpl-integrityimpl"}, k = 1, mv = {2, 3, 0}, xi = 48)
+5: public interface dmt0 {
+6:     @p.ngr0("pitoken/spotify.pitoken.v1.VerifyService/Verify")
+7:     @p.gf60({"Content-Type: application/x-protobuf", "Accept: application/x-protobuf", "Content-Encoding: identity"})
+8:     java.lang.Object a(@p.xmb com.spotify.integrity.integrityimpl.proto.VerifyRequest r1, p.osm<? super com.spotify.integrity.integrityimpl.proto.VerifyResponse> r2);
+9: }

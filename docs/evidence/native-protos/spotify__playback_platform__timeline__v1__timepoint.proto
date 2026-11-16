@@ -1,0 +1,28 @@
+// Recovered descriptor. Original file: spotify/playback_platform/timeline/v1/timepoint.proto
+syntax = "proto3";
+package spotify.playback_platform.timeline.v1;
+import "spotify/playback_platform/common/v1/duration.proto";
+message TimespanAnchor {
+  oneof span {
+    uint32 span_index = 1;
+    string span_uid = 2;
+  }
+}
+message TimelineAnchor {
+}
+message Timepoint {
+  .spotify.playback_platform.common.v1.Duration offset = 4;
+  oneof anchor {
+    .spotify.playback_platform.timeline.v1.TimespanAnchor span_begin = 1;
+    .spotify.playback_platform.timeline.v1.TimespanAnchor span_end = 2;
+    .spotify.playback_platform.timeline.v1.TimelineAnchor timeline_begin = 3;
+  }
+}
+message Timepoints {
+  .spotify.playback_platform.common.v1.Durations offsets = 4;
+  oneof anchor {
+    .spotify.playback_platform.timeline.v1.TimespanAnchor span_begin = 1;
+    .spotify.playback_platform.timeline.v1.TimespanAnchor span_end = 2;
+    .spotify.playback_platform.timeline.v1.TimelineAnchor timeline_begin = 3;
+  }
+}

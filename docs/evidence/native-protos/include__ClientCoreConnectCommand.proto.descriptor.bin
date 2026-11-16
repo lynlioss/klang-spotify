@@ -1,0 +1,24 @@
+
+&include/ClientCoreConnectCommand.protospotify.event_sender.proto"ô
+ClientCoreConnectCommand!
+command_type (	RcommandType
+result (	Rresult
+duration (Rduration'
+interaction_ids (	RinteractionIds#
+http_response (	RhttpResponse(
+http_status_code (RhttpStatusCode?
+context_player_error_message (	RcontextPlayerErrorMessage*
+http_client_error (	RhttpClientError
+	intent_id	 (	RintentId,
+command_size_bytes
+ (RcommandSizeBytes!
+ack_duration (RackDuration(
+target_device_id (	RtargetDeviceId.
+target_device_brand (	RtargetDeviceBrand.
+target_device_model (	RtargetDeviceModel5
+target_device_client_id (	RtargetDeviceClientId
+play_origin (	R
+playOrigin
+
+command_id (	R	commandId-
+feature_identifier (	RfeatureIdentifierBH

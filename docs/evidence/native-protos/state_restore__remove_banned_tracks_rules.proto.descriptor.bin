@@ -1,0 +1,12 @@
+
+.state_restore/remove_banned_tracks_rules.proto"spotify.player.proto.state_restore"#
+Strings
+strings (	Rstrings"Š
+RemoveBannedTracksRules#
+banned_tracks (	RbannedTracks#
+banned_albums (	RbannedAlbums%
+banned_artists (	RbannedArtistsˆ
+banned_context_tracks (2T.spotify.player.proto.state_restore.RemoveBannedTracksRules.BannedContextTracksEntryRbannedContextTrackss
+BannedContextTracksEntry
+key (	RkeyA
+value (2+.spotify.player.proto.state_restore.StringsRvalue:8BH

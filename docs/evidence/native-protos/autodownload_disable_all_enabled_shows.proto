@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: autodownload_disable_all_enabled_shows.proto
+syntax = "proto3";
+package spotify.autodownload_esperanto.proto;
+message DisableAllEnabledShowsRequest {
+}
+message DisableAllEnabledShowsResponse {
+  string error = 1;
+}

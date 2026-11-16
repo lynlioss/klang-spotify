@@ -1,0 +1,9 @@
+
+ad_formats.protospotify.ads.esperanto.protoad_common.proto"Q
+SubFormatRequest=
+format (2%.spotify.ads.esperanto.proto.AdFormatRformat"a
+SubFormatResponseL
+ad_slot_event (2(.spotify.ads.esperanto.proto.AdSlotEventRadSlotEvent2w
+Formatsl
+	SubFormat-.spotify.ads.esperanto.proto.SubFormatRequest..spotify.ads.esperanto.proto.SubFormatResponse0B+
+com.spotify.ads.esperanto.protoHP¢ESPbproto3

@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: es_traffic_response_info.proto
+syntax = "proto3";
+package spotify.connectivity.traffic.esperanto.proto;
+message ResponseInfo {
+  int32 status_code = 1;
+  int64 bytes_received = 2;
+}

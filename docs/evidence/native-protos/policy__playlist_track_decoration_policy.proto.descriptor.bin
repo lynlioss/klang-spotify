@@ -1,0 +1,22 @@
+
+-policy/playlist_track_decoration_policy.protospotify.playlist.cosmos.proto%policy/artist_decoration_policy.proto$policy/track_decoration_policy.proto-policy/playlist_album_decoration_policy.proto#policy/user_decoration_policy.proto"ó
+PlaylistTrackDecorationPolicyF
+track (20.spotify.cosmos_util.proto.TrackDecorationPolicyRtrack
+row_id (RrowId
+add_time (RaddTime#
+in_collection (RinCollection1
+can_add_to_collection (RcanAddToCollection
+	is_banned (RisBanned
+can_ban (RcanBan
+
+local_file (R	localFile
+offline	 (Roffline4
+format_list_attributes
+ (RformatListAttributes%
+display_covers (RdisplayCoversN
+added_by (23.spotify.playlist.cosmos.proto.UserDecorationPolicyRaddedByR
+album (2<.spotify.playlist.cosmos.proto.PlaylistAlbumDecorationPolicyRalbumI
+artist (21.spotify.cosmos_util.proto.ArtistDecorationPolicyRartist
+signals (Rsignals+
+is_recommendation (RisRecommendationB'
+!com.spotify.playlist.policy.protoHPbproto3

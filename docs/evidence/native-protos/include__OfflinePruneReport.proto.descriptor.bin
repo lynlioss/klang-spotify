@@ -1,0 +1,12 @@
+
+ include/OfflinePruneReport.protospotify.event_sender.proto"ö
+OfflinePruneReport,
+track_keys_removed (RtrackKeysRemoved8
+track_keys_moved_to_cache (RtrackKeysMovedToCache0
+episode_keys_removed (RepisodeKeysRemoved<
+episode_keys_moved_to_cache (RepisodeKeysMovedToCache7
+abp_chapter_keys_removed (RabpChapterKeysRemovedC
+abp_chapter_keys_moved_to_cache (RabpChapterKeysMovedToCache5
+keys_removed_from_cache (RkeysRemovedFromCache+
+keys_left_in_cache (RkeysLeftInCache&
+max_cached_keys	 (RmaxCachedKeysBH

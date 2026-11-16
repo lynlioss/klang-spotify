@@ -1,0 +1,11 @@
+
+;spotify/playback_platform/context/v1/behavior/signals.proto-spotify.playback_platform.context.v1.behavior;spotify/playback_platform/context/v1/behavior/handler.proto"š
+Signalsl
+on_receive_signal (2@.spotify.playback_platform.context.v1.behavior.Signals.OnReceiveRonReceiveSignal 
+	OnReceiveP
+trigger (26.spotify.playback_platform.context.v1.behavior.TriggerRtriggerP
+actions (26.spotify.playback_platform.context.v1.behavior.ActionsRactionsP
+publish (26.spotify.playback_platform.context.v1.behavior.EnabledRpublish
+
+signal_ids (	R	signalIdsB3
+-spotify.playback_platform.context.v1.behaviorHPbproto3

@@ -1,0 +1,16 @@
+// Recovered descriptor. Original file: policy/album_decoration_policy.proto
+syntax = "proto3";
+package spotify.cosmos_util.proto;
+message AlbumDecorationPolicy {
+  bool link = 1;
+  bool name = 2;
+  bool covers = 4;
+  bool year = 5;
+}
+message AlbumCollectionDecorationPolicy {
+}
+message AlbumSyncDecorationPolicy {
+  bool inferred_offline = 1;
+  bool offline_state = 2;
+  bool sync_progress = 3;
+}

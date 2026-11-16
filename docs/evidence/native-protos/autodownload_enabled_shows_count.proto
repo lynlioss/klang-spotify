@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: autodownload_enabled_shows_count.proto
+syntax = "proto3";
+package spotify.autodownload_esperanto.proto;
+message EnabledShowsCountRequest {
+  int32 update_throttling = 1;
+}
+message EnabledShowsCountResponse {
+  int32 count = 1;
+  string error = 2;
+}

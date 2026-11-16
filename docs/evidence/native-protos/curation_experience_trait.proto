@@ -1,0 +1,27 @@
+// Recovered descriptor. Original file: curation_experience_trait.proto
+syntax = "proto3";
+package spotify.contentagnostic.v2;
+message CurationExperienceTrait {
+  message Method {
+    message Rootlist {
+    }
+    message Playlist {
+      string uri = 1;
+    }
+    message Collection {
+      string set = 1;
+    }
+    message AnyUserPlaylist {
+      repeated string exclusions = 1;
+    }
+    oneof method {
+      .spotify.contentagnostic.v2.CurationExperienceTrait.Method.Rootlist rootlist = 1;
+      .spotify.contentagnostic.v2.CurationExperienceTrait.Method.Playlist playlist = 2;
+      .spotify.contentagnostic.v2.CurationExperienceTrait.Method.Collection collection = 3;
+      .spotify.contentagnostic.v2.CurationExperienceTrait.Method.AnyUserPlaylist any_playlist = 4;
+    }
+  }
+  string uri_to_curate = 1;
+  .spotify.contentagnostic.v2.CurationExperienceTrait.Method default_method = 2;
+  repeated .spotify.contentagnostic.v2.CurationExperienceTrait.Method allowed_methods = 3;
+}

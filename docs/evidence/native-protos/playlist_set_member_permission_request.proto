@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: playlist_set_member_permission_request.proto
+syntax = "proto3";
+package spotify.playlist_esperanto.proto;
+import "response_status.proto";
+message PlaylistSetMemberPermissionResponse {
+  .spotify.playlist_esperanto.proto.ResponseStatus status = 1;
+}

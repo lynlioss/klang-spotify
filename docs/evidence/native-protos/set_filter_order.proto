@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: set_filter_order.proto
+syntax = "proto3";
+package spotify.your_library.proto;
+message SetFilterOrderRequest {
+  repeated string filter_uri = 1;
+}
+message SetFilterOrderResponse {
+  uint32 status_code = 98;
+  string error = 99;
+}

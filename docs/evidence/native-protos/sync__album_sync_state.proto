@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: sync/album_sync_state.proto
+syntax = "proto2";
+package spotify.cosmos_util.proto;
+message AlbumSyncState {
+  optional string offline = 1;
+  optional string inferred_offline = 2;
+  optional uint32 sync_progress = 3;
+}

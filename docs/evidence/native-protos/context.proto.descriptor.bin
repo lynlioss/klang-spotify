@@ -1,0 +1,12 @@
+
+context.protospotify.player.protocontext_page.protorestrictions.proto"Î
+Context
+uri (	Ruri
+url (	RurlG
+metadata (2+.spotify.player.proto.Context.MetadataEntryRmetadataF
+restrictions (2".spotify.player.proto.RestrictionsRrestrictions7
+pages (2!.spotify.player.proto.ContextPageRpages
+loading (Rloading;
+MetadataEntry
+key (	Rkey
+value (	Rvalue:8BH

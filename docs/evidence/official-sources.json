@@ -1,0 +1,173 @@
+[
+  {
+    "id": "pkce",
+    "url": "https://developer.spotify.com/documentation/web-api/tutorials/code-pkce-flow",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/tutorials/code-pkce-flow",
+    "httpStatus": 200,
+    "bytes": 360537,
+    "sha256": "638e82cc3e3ead150eed07f6ad165de90c60b5bebd1dd8383069a1fa4c2330a8",
+    "retrievedAt": "2026-11-16T14:16:36.357443+00:00"
+  },
+  {
+    "id": "refresh",
+    "url": "https://developer.spotify.com/documentation/web-api/tutorials/refreshing-tokens",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/tutorials/refreshing-tokens",
+    "httpStatus": 200,
+    "bytes": 386808,
+    "sha256": "624cfd9eb040ace1489bdcc9a335c4d57b89eaf5f124304f4c7b1922d00e85a0",
+    "retrievedAt": "2026-11-16T14:16:35.868578+00:00"
+  },
+  {
+    "id": "search",
+    "url": "https://developer.spotify.com/documentation/web-api/reference/search",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/reference/search",
+    "httpStatus": 200,
+    "bytes": 1329673,
+    "sha256": "5981d69da044ff1dedbaa8658bd61d2c565a8bcc611b7cdc307c80a140fdf7cd",
+    "retrievedAt": "2026-11-16T14:16:36.676803+00:00"
+  },
+  {
+    "id": "playback",
+    "url": "https://developer.spotify.com/documentation/web-api/reference/start-a-users-playback",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/reference/start-a-users-playback",
+    "httpStatus": 200,
+    "bytes": 293545,
+    "sha256": "f2f7a532fb17c625ead46d922625d8eaee0f602a9da265987c899e7906e7e04a",
+    "retrievedAt": "2026-11-16T14:16:35.859776+00:00"
+  },
+  {
+    "id": "sdk",
+    "url": "https://developer.spotify.com/documentation/android",
+    "finalUrl": "https://developer.spotify.com/documentation/android",
+    "httpStatus": 200,
+    "bytes": 160460,
+    "sha256": "b03d077d02e3c0e5cd9b04e9df67ce522f1fa2a5ca1b9053df5b24e6d347e86d",
+    "retrievedAt": "2026-11-16T14:16:35.226443+00:00"
+  },
+  {
+    "id": "web-playback",
+    "url": "https://developer.spotify.com/documentation/web-playback-sdk",
+    "finalUrl": "https://developer.spotify.com/documentation/web-playback-sdk",
+    "httpStatus": 200,
+    "bytes": 154116,
+    "sha256": "9867235acef97892be758c41f2acb0b55288d7438dc53c6969a3972deeccaf2c",
+    "retrievedAt": "2026-11-16T14:16:35.432388+00:00"
+  },
+  {
+    "id": "relinking",
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/track-relinking",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/concepts/track-relinking",
+    "httpStatus": 200,
+    "bytes": 275468,
+    "sha256": "2901addefc8b0bf78e090966a5de1d14664f85d1d434d843ec045bbbadcbe641",
+    "retrievedAt": "2026-11-16T14:16:36.227959+00:00"
+  },
+  {
+    "id": "rate-limits",
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/rate-limits",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/concepts/rate-limits",
+    "httpStatus": 200,
+    "bytes": 247294,
+    "sha256": "6d6ebc35624bb9c76f14460b5099ea689408868a3144f8f6453a3075bed33743",
+    "retrievedAt": "2026-11-16T14:16:37.380719+00:00"
+  },
+  {
+    "id": "quota",
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/concepts/quota-modes",
+    "httpStatus": 200,
+    "bytes": 259170,
+    "sha256": "3bc39b854d8a92a13f8e98235007cc5bd5e778d0463bf5bcd87cae271f6bed82",
+    "retrievedAt": "2026-11-16T14:16:37.073096+00:00"
+  },
+  {
+    "id": "scopes",
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/concepts/scopes",
+    "httpStatus": 200,
+    "bytes": 374575,
+    "sha256": "577c65d9a60dbec391f0c0b44a40acf6e173e4f1406e04cbeca9359e77f55b0a",
+    "retrievedAt": "2026-11-16T14:16:37.474405+00:00"
+  },
+  {
+    "id": "policy",
+    "url": "https://developer.spotify.com/policy",
+    "finalUrl": "https://developer.spotify.com/policy",
+    "httpStatus": 200,
+    "bytes": 143784,
+    "sha256": "693480ec9caca6b05f6a59ac5a5e06a276a343661122491152e4a4230ab73408",
+    "retrievedAt": "2026-11-16T14:16:37.054987+00:00"
+  },
+  {
+    "id": "library",
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-users-saved-tracks",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/reference/get-users-saved-tracks",
+    "httpStatus": 200,
+    "bytes": 547154,
+    "sha256": "f319f1ab19af17e5d0c22de4fd70d7c3c0754b3c9e47955603e8e473b119c41d",
+    "retrievedAt": "2026-11-16T14:16:37.800826+00:00"
+  },
+  {
+    "id": "profile",
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-current-users-profile",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/reference/get-current-users-profile",
+    "httpStatus": 200,
+    "bytes": 346786,
+    "sha256": "0e29ae9eb22673056a9d5c3e5adc7e887fb01da8574245f27afaa938f526dd9b",
+    "retrievedAt": "2026-11-16T14:16:37.635639+00:00"
+  },
+  {
+    "id": "overview",
+    "url": "https://developer.spotify.com/documentation/web-api",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api",
+    "httpStatus": 200,
+    "bytes": 251030,
+    "sha256": "2eae4e309e0d39ed398818ae718af7a26e3daa59b012c1a38323f687c1dd4af2",
+    "retrievedAt": "2026-11-16T14:16:37.666629+00:00"
+  },
+  {
+    "id": "redirects",
+    "url": "https://developer.spotify.com/documentation/web-api/concepts/redirect_uri",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/concepts/redirect_uri",
+    "httpStatus": 200,
+    "bytes": 242951,
+    "sha256": "b517834ee534df71c652490b93819a380547883ebea0b396dea9675afd17c1de",
+    "retrievedAt": "2026-11-16T14:20:06.212712+00:00"
+  },
+  {
+    "id": "dev-2026",
+    "url": "https://developer.spotify.com/documentation/web-api/tutorials/february-2026-migration-guide",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/tutorials/february-2026-migration-guide",
+    "httpStatus": 200,
+    "bytes": 376004,
+    "sha256": "77b08a6d86acbc71a156b98c7e646e95fbf002c47b97b45ba4b270c41d327ff6",
+    "retrievedAt": "2026-11-16T14:20:06.316378+00:00"
+  },
+  {
+    "id": "android-getting-started",
+    "url": "https://developer.spotify.com/documentation/android/tutorials/getting-started",
+    "finalUrl": "https://developer.spotify.com/documentation/android/tutorials/getting-started",
+    "httpStatus": 200,
+    "bytes": 549339,
+    "sha256": "03bf577a58ae63eb2f4d575fb4dce5f079ce66c412f1367519f6fc3ba1c84bbd",
+    "retrievedAt": "2026-11-16T14:20:06.364862+00:00"
+  },
+  {
+    "id": "android-fingerprints",
+    "url": "https://developer.spotify.com/documentation/android/tutorials/application-fingerprints",
+    "finalUrl": "https://developer.spotify.com/documentation/android/tutorials/application-fingerprints",
+    "httpStatus": 200,
+    "bytes": 143797,
+    "sha256": "16b6bba9e582beabec9e9ee75655ec2d86092a5a6d61af3b77d784c9531a0f66",
+    "retrievedAt": "2026-11-16T14:20:06.131574+00:00"
+  },
+  {
+    "id": "devices",
+    "url": "https://developer.spotify.com/documentation/web-api/reference/get-a-users-available-devices",
+    "finalUrl": "https://developer.spotify.com/documentation/web-api/reference/get-a-users-available-devices",
+    "httpStatus": 200,
+    "bytes": 291868,
+    "sha256": "4775d11ff4893dc6724e3eb96405fe68a34585e7a1730613bb0fa11dec73f714",
+    "retrievedAt": "2026-11-16T14:20:06.592032+00:00"
+  }
+]

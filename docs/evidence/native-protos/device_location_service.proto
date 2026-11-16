@@ -1,0 +1,21 @@
+// Recovered descriptor. Original file: device_location_service.proto
+syntax = "proto3";
+package spotify.device_location_service.proto;
+import "google/protobuf/empty.proto";
+message DeviceLocationResponse {
+  enum Status {
+    STATUS_UNKNOWN = 0;
+    STATUS_SUCCESS = 1;
+    STATUS_PERMISSION_UNAVAILABLE = 2;
+    STATUS_TIMEOUT = 3;
+    STATUS_FAILED = 4;
+  }
+  .spotify.device_location_service.proto.DeviceLocationResponse.Status status = 1;
+  double latitude = 2;
+  double longitude = 3;
+  double horizontal_accuracy = 4;
+  int64 timestamp_ms = 5;
+}
+service DeviceLocationService {
+  rpc RequestLocationSilently (.google.protobuf.Empty) returns (.spotify.device_location_service.proto.DeviceLocationResponse);
+}

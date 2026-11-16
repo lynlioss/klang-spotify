@@ -1,0 +1,9 @@
+
+include/BrokenObject.protospotify.event_sender.proto"r
+BrokenObject
+type (	Rtype
+id (	Rid
+
+error_code (R	errorCode
+playback_id (R
+playbackIdBH

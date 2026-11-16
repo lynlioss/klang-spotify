@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: lyrics_reporting/lyrics_start_response.proto
+syntax = "proto3";
+package spotify.lyrics_reporting_esperanto.proto;
+import "lyrics_reporting/status_code.proto";
+message LyricsStartResponse {
+  .spotify.lyrics_reporting_esperanto.proto.StatusCode status_code = 1;
+  bytes lyrics_viewing_id = 2;
+}

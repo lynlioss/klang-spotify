@@ -1,0 +1,39 @@
+// Recovered descriptor. Original file: spotify/decipher/agent/v1/actions.proto
+syntax = "proto3";
+package spotify.decipher.agent.v1;
+enum PlaybackControl {
+  PLAYBACK_CONTROL_UNSPECIFIED = 0;
+  PAUSE = 1;
+  RESUME = 2;
+  SKIP_NEXT = 3;
+  SKIP_PREVIOUS = 4;
+  SWITCH_TO_VIDEO = 5;
+  SWITCH_TO_AUDIO = 6;
+}
+message Action {
+  oneof action {
+    .spotify.decipher.agent.v1.PlayAction play = 1;
+    .spotify.decipher.agent.v1.QueryAction query = 2;
+    .spotify.decipher.agent.v1.NavigateAction navigate = 3;
+    .spotify.decipher.agent.v1.PlaybackControlAction playback_control = 4;
+    .spotify.decipher.agent.v1.TransferAction transfer = 5;
+  }
+}
+message PlayAction {
+  string uri = 1;
+  oneof _target_device_id {
+    string target_device_id = 2;
+  }
+}
+message QueryAction {
+  string query = 1;
+}
+message NavigateAction {
+  string uri = 1;
+}
+message PlaybackControlAction {
+  .spotify.decipher.agent.v1.PlaybackControl control = 1;
+}
+message TransferAction {
+  string target_device_id = 1;
+}

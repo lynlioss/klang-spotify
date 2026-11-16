@@ -1,0 +1,20 @@
+
+"include/ShuffleSequenceEvent.protospotify.event_sender.proto"ÿ
+ShuffleSequenceEvent*
+player_session_id (	RplayerSessionId5
+is_first_track_selected (RisFirstTrackSelected+
+shuffled_sequence (	RshuffledSequenceM
+#shuffled_sequence_original_position (R shuffledSequenceOriginalPosition
+context_uri (	R
+contextUri'
+trigger_command (	RtriggerCommand:
+shuffle_algorithm_setting (	RshuffleAlgorithmSetting.
+play_context_length (RplayContextLengthF
+shuffled_sequence_distributions	 (	RshuffledSequenceDistributions!
+shuffle_seed
+ (	RshuffleSeed)
+skip_to_track_uri (	RskipToTrackUri(
+root_seed_number (	RrootSeedNumber,
+chosen_seed_number (	RchosenSeedNumber2
+shuffle_sequence_uuid (	RshuffleSequenceUuid0
+player_major_version (RplayerMajorVersionBH

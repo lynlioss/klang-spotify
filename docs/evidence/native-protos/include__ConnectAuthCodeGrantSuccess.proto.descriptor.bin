@@ -1,0 +1,6 @@
+
+)include/ConnectAuthCodeGrantSuccess.protospotify.event_sender.proto"\
+ConnectAuthCodeGrantSuccess 
+auth_info_id (	R
+authInfoId
+	client_id (	RclientIdBH

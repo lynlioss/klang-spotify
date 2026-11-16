@@ -1,0 +1,11 @@
+
+context_track.protospotify.player.proto+stream_reporting_attribution_transfer.proto"Ì
+ContextTrack
+uri (	Ruri
+uid (	Ruid
+gid (RgidL
+metadata (20.spotify.player.proto.ContextTrack.MetadataEntryRmetadata{
+stream_reporting_attribution (29.spotify.player.proto.transfer.StreamReportingAttributionRstreamReportingAttribution;
+MetadataEntry
+key (	Rkey
+value (	Rvalue:8BH

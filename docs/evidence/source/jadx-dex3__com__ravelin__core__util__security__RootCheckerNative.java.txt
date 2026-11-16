@@ -1,0 +1,60 @@
+Source: analysis/spotify/jadx-dex3/sources/com/ravelin/core/util/security/RootCheckerNative.java
+SHA256: e99f5adf08911c3456c7bf10c8d203a079050299d7b2567dd5d551974e576088
+Lines: 1-56
+
+1: package com.ravelin.core.util.security;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes3.dex */
+4: @kotlin.Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0000\u0018\u0000J\"\u0010\u0005\u001a\u00020\u00042\u0010\u0010\u0003\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0002\u0018\u00010\u0001H\u0082 ¢\u0006\u0004\b\u0005\u0010\u0006J\u0018\u0010\t\u001a\u00020\b2\u0006\u0010\u0007\u001a\u00020\u0004H\u0082 ¢\u0006\u0004\b\t\u0010\n¨\u0006\u000b"}, d2 = {"Lcom/ravelin/core/util/security/RootCheckerNative;", "", "", "pathArray", "", "checkForRoot", "([Ljava/lang/Object;)Z", "logDebugMessages", "Lp/l5i1;", "setLogDebugMessages", "(Z)V", "core_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+5: public final class RootCheckerNative {
+6:     public static final java.lang.String b = null;
+7:     public final boolean a;
+8: 
+9:     static {
+10:             java.lang.Class<com.ravelin.core.util.security.RootCheckerNative> r0 = com.ravelin.core.util.security.RootCheckerNative.class
+11:             java.lang.String r0 = r0.getCanonicalName()
+12:             if (r0 != 0) goto La
+13:             java.lang.String r0 = "RootCheckerNative"
+14:         La:
+15:             com.ravelin.core.util.security.RootCheckerNative.b = r0
+16:             return
+17:     }
+18: 
+19:     public RootCheckerNative() {
+20:             r2 = this;
+21:             r2.<init>()
+22:             java.lang.String r0 = "rootChecker"
+23:             java.lang.System.loadLibrary(r0)
+24:             java.lang.System.loadLibrary(r0)     // Catch: java.lang.UnsatisfiedLinkError -> Lf
+25:             r0 = 1
+26:             r2.a = r0     // Catch: java.lang.UnsatisfiedLinkError -> Lf
+27:             return
+28:         Lf:
+29:             r2 = move-exception
+30:             java.lang.String r2 = r2.getMessage()
+31:             p.bfq0 r0 = p.v6f1.a
+32:             java.lang.String r1 = com.ravelin.core.util.security.RootCheckerNative.b
+33:             r0.A(r1)
+34:             r1 = 0
+35:             java.lang.Object[] r1 = new java.lang.Object[r1]
+36:             r0.s(r2, r1)
+37:             return
+38:     }
+39: 
+40:     private final native boolean checkForRoot(java.lang.Object[] r1);
+41: 
+42:     private final native void setLogDebugMessages(boolean r1);
+43: 
+44:     public final void a() {
+45:             r1 = this;
+46:             r0 = 0
+47:             r1.setLogDebugMessages(r0)
+48:             return
+49:     }
+50: 
+51:     public final boolean b(java.lang.Object[] r1) {
+52:             r0 = this;
+53:             boolean r0 = r0.checkForRoot(r1)
+54:             return r0
+55:     }
+56: }

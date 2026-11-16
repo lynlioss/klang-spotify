@@ -1,0 +1,13 @@
+
+es_play_origin.protospotify.player.esperanto.proto"ê
+
+PlayOrigin-
+feature_identifier (	RfeatureIdentifier'
+feature_version (	RfeatureVersion
+view_uri (	RviewUri+
+external_referrer (	RexternalReferrer/
+referrer_identifier (	RreferrerIdentifier+
+device_identifier (	RdeviceIdentifier'
+feature_classes (	RfeatureClasses5
+restriction_identifier (	RrestrictionIdentifierB,
+"com.spotify.player.esperanto.protoH¢ESPbproto3

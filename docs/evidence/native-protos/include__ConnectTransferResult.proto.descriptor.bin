@@ -1,0 +1,34 @@
+
+#include/ConnectTransferResult.protospotify.event_sender.proto"Ì
+ConnectTransferResult
+result (	Rresult
+device_type (	R
+deviceType'
+discovery_class (	RdiscoveryClass!
+device_model (	RdeviceModel!
+device_brand (	RdeviceBrand6
+device_software_version (	RdeviceSoftwareVersion
+duration (Rduration(
+device_client_id (	RdeviceClientId,
+transfer_intent_id	 (	RtransferIntentId,
+transfer_debug_log
+ (	RtransferDebugLog
+
+error_code (	R	errorCode,
+http_response_code (RhttpResponseCode0
+initial_device_state (	RinitialDeviceState
+retry_count (R
+retryCount*
+login_retry_count (RloginRetryCount%
+login_duration (RloginDuration(
+target_device_id (	RtargetDeviceId3
+target_device_is_local (RtargetDeviceIsLocal,
+final_device_state (	RfinalDeviceState'
+interaction_ids (	RinteractionIds3
+target_device_is_group (RtargetDeviceIsGroup0
+final_transfer_state (	RfinalTransferState*
+login_error_codes (	RloginErrorCodes*
+add_user_duration (RaddUserDuration
+
+command_id (	R	commandId*
+is_proxy_transfer (RisProxyTransferBH

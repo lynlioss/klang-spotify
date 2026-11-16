@@ -1,0 +1,94 @@
+Source: analysis/spotify/jadx-dex9/sources/com/spotify/metadata/classic/proto/Metadata$Show.java
+SHA256: 036ae826adbbb5c2376df11b29f0d873b8fbb2e67c1d12014e0a3bb2d28f3622
+Lines: 1-90
+
+1: package com.spotify.metadata.classic.proto;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes9.dex */
+4: public final class Metadata$Show extends com.google.protobuf.h implements p.qhj0 {
+5:     public static final int AVAILABILITY_FIELD_NUMBER = 78;
+6:     public static final int CATEGORIES_FIELD_NUMBER = 80;
+7:     public static final int CONSUMPTION_ORDER_FIELD_NUMBER = 75;
+8:     public static final int COPYRIGHT_FIELD_NUMBER = 71;
+9:     public static final int COUNTRY_OF_ORIGIN_FIELD_NUMBER = 79;
+10:     public static final int COVER_IMAGE_FIELD_NUMBER = 69;
+11:     private static final com.spotify.metadata.classic.proto.Metadata$Show DEFAULT_INSTANCE = null;
+12:     public static final int DEPRECATED_POPULARITY_FIELD_NUMBER = 65;
+13:     public static final int DESCRIPTION_FIELD_NUMBER = 64;
+14:     public static final int EMPLOYEE_ONLY_FIELD_NUMBER = 82;
+15:     public static final int EXPLICIT_FIELD_NUMBER = 68;
+16:     public static final int GID_FIELD_NUMBER = 1;
+17:     public static final int INTERPRET_RESTRICTION_USING_GEOIP_FIELD_NUMBER = 76;
+18:     public static final int IS_AUDIOBOOK_FIELD_NUMBER = 89;
+19:     public static final int IS_CREATOR_CHANNEL_FIELD_NUMBER = 90;
+20:     public static final int KEYWORD_FIELD_NUMBER = 73;
+21:     public static final int LANGUAGE_FIELD_NUMBER = 67;
+22:     public static final int LOCALIZED_NAME_FIELD_NUMBER = 29;
+23:     public static final int MEDIA_TYPE_FIELD_NUMBER = 74;
+24:     public static final int MUSIC_AND_TALK_FIELD_NUMBER = 85;
+25:     public static final int NAME_FIELD_NUMBER = 2;
+26:     private static volatile p.whs0 PARSER = null;
+27:     public static final int PASSTHROUGH_FIELD_NUMBER = 81;
+28:     public static final int PUBLISHER_FIELD_NUMBER = 66;
+29:     public static final int RESTRICTION_FIELD_NUMBER = 72;
+30:     public static final int SALE_PERIOD_FIELD_NUMBER = 77;
+31:     public static final int TRAILER_URI_FIELD_NUMBER = 83;
+32:     private p.he90 availability_;
+33:     private int bitField0_;
+34:     private p.he90 categories_;
+35:     private int consumptionOrder_;
+36:     private p.he90 copyright_;
+37:     private java.lang.String countryOfOrigin_;
+38:     private com.spotify.metadata.classic.proto.Metadata$ImageGroup coverImage_;
+39:     private int deprecatedPopularity_;
+40:     private java.lang.String description_;
+41:     private boolean employeeOnly_;
+42:     private boolean explicit_;
+43:     private p.jjc gid_;
+44:     private boolean interpretRestrictionUsingGeoip_;
+45:     private boolean isAudiobook_;
+46:     private boolean isCreatorChannel_;
+47:     private p.he90 keyword_;
+48:     private java.lang.String language_;
+49:     private p.he90 localizedName_;
+50:     private int mediaType_;
+51:     private boolean musicAndTalk_;
+52:     private java.lang.String name_;
+53:     private int passthrough_;
+54:     private java.lang.String publisher_;
+55:     private p.he90 restriction_;
+56:     private p.he90 salePeriod_;
+57:     private java.lang.String trailerUri_;
+58: 
+59:     static {
+60:             com.spotify.metadata.classic.proto.Metadata$Show r0 = new com.spotify.metadata.classic.proto.Metadata$Show
+61:             r0.<init>()
+62:             com.spotify.metadata.classic.proto.Metadata$Show.DEFAULT_INSTANCE = r0
+63:             java.lang.Class<com.spotify.metadata.classic.proto.Metadata$Show> r1 = com.spotify.metadata.classic.proto.Metadata$Show.class
+64:             com.google.protobuf.h.registerDefaultInstance(r1, r0)
+65:             return
+66:     }
+67: 
+68:     private Metadata$Show() {
+69:             r2 = this;
+70:             r2.<init>()
+71:             p.bjc r0 = p.jjc.b
+72:             r2.gid_ = r0
+73:             java.lang.String r0 = ""
+74:             r2.name_ = r0
+75:             p.he90 r1 = com.google.protobuf.h.emptyProtobufList()
+76:             r2.localizedName_ = r1
+77:             r2.description_ = r0
+78:             r2.publisher_ = r0
+79:             r2.language_ = r0
+80:             p.he90 r1 = com.google.protobuf.h.emptyProtobufList()
+81:             r2.copyright_ = r1
+82:             p.he90 r1 = com.google.protobuf.h.emptyProtobufList()
+83:             r2.restriction_ = r1
+84:             p.he90 r1 = com.google.protobuf.h.emptyProtobufList()
+85:             r2.keyword_ = r1
+86:             r1 = 1
+87:             r2.consumptionOrder_ = r1
+88:             p.he90 r1 = com.google.protobuf.h.emptyProtobufList()
+89:             r2.salePeriod_ = r1
+90:             p.he90 r1 = com.google.protobuf.h.emptyProtobufList()

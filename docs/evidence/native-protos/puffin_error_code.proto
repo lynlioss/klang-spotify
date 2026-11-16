@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: puffin_error_code.proto
+syntax = "proto3";
+package spotify.puffin_esperanto.proto;
+enum PuffinErrorCode {
+  UNKNOWN_FAILURE = 0;
+  GENERAL_ERROR = 2;
+  INVALID_FILE = 3;
+  NOT_COMPATIBLE_WITH_RUNTIME = 4;
+}

@@ -1,0 +1,9 @@
+
++collection_offline_track_list_request.protospotify.collection_cosmos.protostatus.proto"_
+!CollectionOfflineTrackListRequest
+id (	Rid
+sort (	Rsort
+filter (	Rfilter"e
+"CollectionOfflineTrackListResponse?
+status (2'.spotify.collection_cosmos.proto.StatusRstatusB.
+"spotify.collection.esperanto.protoHP¢ESPbproto3

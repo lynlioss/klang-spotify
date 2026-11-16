@@ -1,0 +1,26 @@
+// Recovered descriptor. Original file: ads.proto
+syntax = "proto3";
+package spotify.ads.esperanto.proto;
+import "ad_common.proto";
+message GetAdsRequest {
+  message TargetingEntry {
+    string key = 1;
+    string value = 2;
+  }
+  string slot_id = 1;
+  repeated .spotify.ads.esperanto.proto.GetAdsRequest.TargetingEntry targeting = 2;
+}
+message GetAdsResponse {
+  message AdPackageEntry {
+    string key = 1;
+    .spotify.ads.esperanto.proto.AdQueue value = 2;
+  }
+  repeated .spotify.ads.esperanto.proto.GetAdsResponse.AdPackageEntry ad_package = 1;
+  string request_id = 3;
+  oneof _error {
+    string error = 2;
+  }
+}
+service Ads {
+  rpc GetAds (.spotify.ads.esperanto.proto.GetAdsRequest) returns (.spotify.ads.esperanto.proto.GetAdsResponse);
+}

@@ -1,0 +1,20 @@
+
+,include/AdDetectionMappingVerification.protospotify.event_sender.proto"Ý
+AdDetectionMappingVerification
+episode_uri (	R
+episodeUri
+playback_id (R
+playbackId0
+creator_timestamp_ms (RcreatorTimestampMs7
+mapped_user_timestamp_ms (RmappedUserTimestampMs2
+ingested_timestamp_ms (RingestedTimestampMs!
+best_matches (RbestMatches!
+total_frames (RtotalFrames
+	offset_ms (RoffsetMsI
+!adjusted_quick_detection_position	 (RadjustedQuickDetectionPosition,
+is_cached_response
+ (RisCachedResponse
+frame_count (R
+frameCount/
+detection_precision (	RdetectionPrecision,
+audio_uri_mismatch (RaudioUriMismatchBH

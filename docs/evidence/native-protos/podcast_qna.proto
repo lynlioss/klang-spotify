@@ -1,0 +1,21 @@
+// Recovered descriptor. Original file: podcast_qna.proto
+syntax = "proto3";
+package spotify.qanda;
+import "google/protobuf/timestamp.proto";
+enum QAndAStatus {
+  DRAFT = 0;
+  SCHEDULED = 1;
+  LIVE = 2;
+  CLOSED = 3;
+  DELETED = 4;
+}
+message PodcastQna {
+  .spotify.qanda.Prompt prompt = 1;
+}
+message Prompt {
+  int32 id = 1;
+  .google.protobuf.Timestamp opening_date = 2;
+  .google.protobuf.Timestamp closing_date = 3;
+  string text = 4;
+  .spotify.qanda.QAndAStatus status = 5;
+}

@@ -1,0 +1,262 @@
+Source: analysis/spotify/jadx-primary/sources/p/mog.java
+SHA256: 53a3406514411f2f3efed1f8c781b74e94c219ef4b96f16786b7e24c8a6def24
+Lines: 1-258
+
+1: package p;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes.dex */
+4: public final class mog implements p.qc90 {
+5:     public final p.f0c0 a;
+6:     public final java.util.concurrent.atomic.AtomicReference b;
+7:     public final boolean c;
+8: 
+9:     public mog(p.f0c0 r2, p.hnw0 r3) {
+10:             r1 = this;
+11:             r1.<init>()
+12:             r1.a = r2
+13:             java.util.concurrent.atomic.AtomicReference r2 = new java.util.concurrent.atomic.AtomicReference
+14:             r0 = 0
+15:             r2.<init>(r0)
+16:             r1.b = r2
+17:             java.lang.Object r2 = r3.a
+18:             java.lang.Boolean r2 = (java.lang.Boolean) r2
+19:             boolean r2 = r2.booleanValue()
+20:             r1.c = r2
+21:             return
+22:     }
+23: 
+24:     public static p.fh31 b(p.kog r3, p.a631 r4) {
+25:             int r0 = r3.a
+26:             java.lang.String r3 = r3.b
+27:             java.lang.String r1 = "Could not retrieve access token for a client_token request, received error : "
+28:             java.lang.String r2 = " with description: "
+29:             java.lang.String r3 = p.pm80.n(r1, r2, r0, r3)
+30:             java.lang.String r0 = ": %s %s"
+31:             java.lang.String r0 = r3.concat(r0)
+32:             java.lang.String r1 = r4.b
+33:             p.bf70 r2 = r4.a
+34:             java.lang.Object[] r1 = new java.lang.Object[]{r1, r2}
+35:             com.spotify.base.java.logging.Logger.d(r0, r1)
+36:             r0 = 503(0x1f7, float:7.05E-43)
+37:             p.fh31 r3 = c(r4, r0, r3)
+38:             return r3
+39:     }
+40: 
+41:     public static p.fh31 c(p.a631 r18, int r19, java.lang.String r20) {
+42:             p.hi31 r0 = p.ii31.a
+43:             java.util.ArrayList r0 = new java.util.ArrayList
+44:             r1 = 20
+45:             r0.<init>(r1)
+46:             p.ix11 r1 = p.fni0.e
+47:             java.lang.String r1 = "plain/text"
+48:             r2 = 0
+49:             p.fni0 r1 = p.t3r0.y(r1)     // Catch: java.lang.IllegalArgumentException -> L15
+50:         L12:
+51:             r3 = r20
+52:             goto L17
+53:         L15:
+54:             r1 = r2
+55:             goto L12
+56:         L17:
+57:             p.hi31 r7 = p.lo5.C(r3, r1)
+58:             if (r19 < 0) goto L44
+59:             p.hf60 r6 = new p.hf60
+60:             r1 = 0
+61:             java.lang.String[] r1 = new java.lang.String[r1]
+62:             java.lang.Object[] r0 = r0.toArray(r1)
+63:             java.lang.String[] r0 = (java.lang.String[]) r0
+64:             r6.<init>(r0)
+65:             p.fh31 r0 = new p.fh31
+66:             p.i1z0 r2 = p.i1z0.c
+67:             r5 = 0
+68:             r8 = 0
+69:             r9 = 0
+70:             r10 = 0
+71:             r11 = 0
+72:             r12 = 0
+73:             r14 = 0
+74:             r16 = 0
+75:             p.dp01 r17 = p.osg1.u0
+76:             r1 = r18
+77:             r4 = r19
+78:             r0.<init>(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r14, r16, r17)
+79:             return r0
+80:         L44:
+81:             r4 = r19
+82:             java.lang.String r0 = "code < 0: "
+83:             java.lang.String r0 = p.ihj1.c(r4, r0)
+84:             p.dyn0.f(r0)
+85:             return r2
+86:     }
+87: 
+88:     public final p.fh31 a(p.hy01 r13) {
+89:             r12 = this;
+90:             p.a631 r0 = r13.e
+91:             p.hf60 r1 = r0.c
+92:             java.lang.String r2 = r0.b
+93:             p.bf70 r3 = r0.a
+94:             java.lang.String r4 = "client-token"
+95:             java.lang.String r1 = r1.c(r4)
+96:             boolean r1 = android.text.TextUtils.isEmpty(r1)
+97:             if (r1 == 0) goto L157
+98:             boolean r1 = r12.c
+99:             if (r1 == 0) goto L157
+100:             p.prc r1 = r0.a()
+101:             boolean r1 = r1.j
+102:             if (r1 == 0) goto L22
+103:             goto L157
+104:         L22:
+105:             java.lang.String r1 = "Intercepting request: %s %s"
+106:             java.lang.Object[] r4 = new java.lang.Object[]{r2, r3}
+107:             com.spotify.base.java.logging.Logger.g(r1, r4)
+108:             p.f0c0 r1 = r12.a
+109:             java.lang.Object r1 = r1.get()
+110:             p.gl91 r1 = (p.gl91) r1
+111:             p.jog r4 = r1.a()
+112:             boolean r5 = r4 instanceof p.pog
+113:             r6 = 0
+114:             if (r5 == 0) goto L148
+115:             java.lang.String r5 = "Token received: %s %s"
+116:             java.lang.Object[] r2 = new java.lang.Object[]{r2, r3}
+117:             com.spotify.base.java.logging.Logger.g(r5, r2)
+118:             p.pog r4 = (p.pog) r4
+119:             p.he90 r2 = r4.e
+120:             boolean r5 = r2.isEmpty()
+121:             if (r5 == 0) goto L51
+122:             goto L143
+123:         L51:
+124:             java.util.Iterator r2 = r2.iterator()
+125:         L55:
+126:             boolean r5 = r2.hasNext()
+127:             if (r5 == 0) goto L143
+128:             java.lang.Object r5 = r2.next()
+129:             java.lang.String r5 = (java.lang.String) r5
+130:             java.lang.String r7 = r3.d
+131:             int r8 = r7.length()
+132:             int r9 = r5.length()
+133:             if (r8 <= r9) goto L8a
+134:             int r8 = r7.length()
+135:             int r9 = r5.length()
+136:             int r8 = r8 - r9
+137:             r9 = 1
+138:             int r8 = r8 - r9
+139:             char r8 = r7.charAt(r8)
+140:             r10 = 46
+141:             r11 = 0
+142:             if (r8 != r10) goto L88
+143:             boolean r5 = p.s3d1.b0(r7, r5, r11)
+144:             if (r5 == 0) goto L88
+145:             goto L8e
+146:         L88:
+147:             r9 = r11
+148:             goto L8e
+149:         L8a:
+150:             boolean r9 = r7.equals(r5)
+151:         L8e:
+152:             if (r9 == 0) goto L55
+153:             java.util.concurrent.atomic.AtomicReference r12 = r12.b
+154:             java.lang.Object r2 = r12.get()
+155:             p.j4s0 r2 = (p.j4s0) r2
+156:             if (r2 == 0) goto Lab
+157:             java.lang.Object r12 = r2.a
+158:             java.lang.Number r12 = (java.lang.Number) r12
+159:             int r12 = r12.intValue()
+160:             java.lang.Object r13 = r2.b
+161:             java.lang.String r13 = (java.lang.String) r13
+162:             p.fh31 r12 = c(r0, r12, r13)
+163:             return r12
+164:         Lab:
+165:             java.lang.String r2 = r4.a
+166:             p.fh31 r2 = p.e2c.r(r13, r0, r2, r6)
+167:             p.hf60 r3 = r2.f
+168:             int r4 = r2.d
+169:             java.lang.String r5 = "client-token-error"
+170:             r7 = 401(0x191, float:5.62E-43)
+171:             if (r4 != r7) goto Lf4
+172:             java.lang.String r8 = r3.c(r5)
+173:             if (r8 != 0) goto Lc2
+174:             r8 = r6
+175:         Lc2:
+176:             if (r8 == 0) goto Lf4
+177:             java.lang.String r9 = "EXPIRED_CLIENTTOKEN"
+178:             boolean r8 = r8.equals(r9)
+179:             if (r8 == 0) goto Lf4
+180:             p.ii31 r12 = r2.g
+181:             r12.close()
+182:             r1.b()
+183:             p.jog r12 = r1.a()
+184:             boolean r1 = r12 instanceof p.pog
+185:             if (r1 == 0) goto Le5
+186:             p.pog r12 = (p.pog) r12
+187:             java.lang.String r12 = r12.a
+188:             p.fh31 r12 = p.e2c.r(r13, r0, r12, r2)
+189:             return r12
+190:         Le5:
+191:             boolean r13 = r12 instanceof p.kog
+192:             if (r13 == 0) goto Lf0
+193:             p.kog r12 = (p.kog) r12
+194:             p.fh31 r12 = b(r12, r0)
+195:             return r12
+196:         Lf0:
+197:             p.eg.o()
+198:             return r6
+199:         Lf4:
+200:             r13 = 403(0x193, float:5.65E-43)
+201:             if (r4 == r13) goto Lfe
+202:             r13 = 400(0x190, float:5.6E-43)
+203:             if (r4 == r13) goto Lfe
+204:             if (r4 != r7) goto L142
+205:         Lfe:
+206:             java.lang.String r13 = r3.c(r5)
+207:             if (r13 != 0) goto L105
+208:             goto L106
+209:         L105:
+210:             r6 = r13
+211:         L106:
+212:             if (r6 == 0) goto L142
+213:             int r13 = r6.hashCode()
+214:             r0 = -1419914618(0xffffffffab5dd286, float:-7.880713E-13)
+215:             if (r13 == r0) goto L12e
+216:             r0 = -837018315(0xffffffffce1c1d35, float:-6.5478995E8)
+217:             if (r13 == r0) goto L125
+218:             r0 = 482194293(0x1cbdb375, float:1.2553359E-21)
+219:             if (r13 == r0) goto L11c
+220:             goto L142
+221:         L11c:
+222:             java.lang.String r13 = "MISSING_CLIENTTOKEN"
+223:             boolean r13 = r6.equals(r13)
+224:             if (r13 != 0) goto L136
+225:             goto L142
+226:         L125:
+227:             java.lang.String r13 = "UNSUPPORTED_CLIENT"
+228:             boolean r13 = r6.equals(r13)
+229:             if (r13 != 0) goto L136
+230:             goto L142
+231:         L12e:
+232:             java.lang.String r13 = "INVALID_CLIENTTOKEN"
+233:             boolean r13 = r6.equals(r13)
+234:             if (r13 == 0) goto L142
+235:         L136:
+236:             p.j4s0 r13 = new p.j4s0
+237:             java.lang.Integer r0 = java.lang.Integer.valueOf(r4)
+238:             r13.<init>(r0, r6)
+239:             r12.set(r13)
+240:         L142:
+241:             return r2
+242:         L143:
+243:             p.fh31 r12 = r13.b(r0)
+244:             return r12
+245:         L148:
+246:             boolean r12 = r4 instanceof p.kog
+247:             if (r12 == 0) goto L153
+248:             p.kog r4 = (p.kog) r4
+249:             p.fh31 r12 = b(r4, r0)
+250:             return r12
+251:         L153:
+252:             p.eg.o()
+253:             return r6
+254:         L157:
+255:             p.fh31 r12 = r13.b(r0)
+256:             return r12
+257:     }
+258: }

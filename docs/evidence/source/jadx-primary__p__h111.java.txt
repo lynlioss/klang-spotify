@@ -1,0 +1,41 @@
+Source: analysis/spotify/jadx-primary/sources/p/h111.java
+SHA256: d8206065f9a83bc59c34bc417e766cc2e5965b6e42880b778239327e81c31ce1
+Lines: 1-37
+
+1: package p;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes.dex */
+4: public final class h111 {
+5:     public final boolean equals(java.lang.Object r1) {
+6:             r0 = this;
+7:             if (r0 != r1) goto L3
+8:             goto L9
+9:         L3:
+10:             boolean r0 = r1 instanceof p.h111
+11:             if (r0 != 0) goto L9
+12:             r0 = 0
+13:             return r0
+14:         L9:
+15:             r0 = 1
+16:             return r0
+17:     }
+18: 
+19:     public final int hashCode() {
+20:             r0 = this;
+21:             r0 = -907686561(0xffffffffc9e5cd5f, float:-1882539.9)
+22:             return r0
+23:     }
+24: 
+25:     public final java.lang.String toString() {
+26:             r1 = this;
+27:             java.lang.String r1 = "mobile_client/authentication"
+28:             int r1 = r1.length()
+29:             java.lang.StringBuilder r0 = new java.lang.StringBuilder
+30:             int r1 = r1 + 24
+31:             r0.<init>(r1)
+32:             java.lang.String r1 = "RecaptchaAction(action=mobile_client/authentication)"
+33:             r0.append(r1)
+34:             java.lang.String r1 = r0.toString()
+35:             return r1
+36:     }
+37: }

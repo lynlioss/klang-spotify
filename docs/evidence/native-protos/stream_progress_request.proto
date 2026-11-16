@@ -1,0 +1,41 @@
+// Recovered descriptor. Original file: stream_progress_request.proto
+syntax = "proto3";
+package spotify.stream_reporting_esperanto.proto;
+import "google/protobuf/timestamp.proto";
+import "audio_format.proto";
+import "stream_handle.proto";
+import "playback_state.proto";
+import "video_surface.proto";
+message StreamProgressRequest {
+  .spotify.stream_reporting_esperanto.proto.StreamHandle stream_handle = 1;
+  uint64 current_position = 2;
+  bool is_paused = 3;
+  bool is_playing_video = 4;
+  bool is_overlapping = 5;
+  bool is_fullscreen = 7;
+  bool is_external = 8;
+  double playback_speed = 9;
+  .google.protobuf.Timestamp client_timestamp = 14;
+  .spotify.stream_reporting_esperanto.proto.PlaybackState playback_state = 15;
+  oneof _is_background {
+    bool is_background = 6;
+  }
+  oneof _media_id {
+    string media_id = 10;
+  }
+  oneof _content_is_downloaded {
+    bool content_is_downloaded = 11;
+  }
+  oneof _audio_format {
+    .spotify.stream_reporting_esperanto.proto.AudioFormat audio_format = 12;
+  }
+  oneof _content_uri {
+    string content_uri = 13;
+  }
+  oneof _is_audio_on {
+    bool is_audio_on = 16;
+  }
+  oneof _video_surface_v2 {
+    .spotify.stream_reporting_esperanto.proto.VideoSurface video_surface_v2 = 18;
+  }
+}

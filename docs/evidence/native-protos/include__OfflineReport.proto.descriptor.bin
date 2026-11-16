@@ -1,0 +1,40 @@
+
+include/OfflineReport.protospotify.event_sender.proto"Ž
+OfflineReport(
+total_num_tracks (RtotalNumTracks2
+num_downloaded_tracks (RnumDownloadedTracksA
+num_downloaded_tracks_keyless (RnumDownloadedTracksKeyless&
+total_num_links (RtotalNumLinks5
+total_num_links_keyless (RtotalNumLinksKeylesst
+context_num_links_map (2A.spotify.event_sender.proto.OfflineReport.ContextNumLinksMapEntryRcontextNumLinksMapz
+linktype_num_tracks_map (2C.spotify.event_sender.proto.OfflineReport.LinktypeNumTracksMapEntryRlinktypeNumTracksMap
+track_limit (R
+trackLimit
+expiry	 (Rexpiry#
+change_reason
+ (	RchangeReason!
+offline_keys (RofflineKeys
+cached_keys (R
+cachedKeys,
+total_num_episodes (RtotalNumEpisodes6
+num_downloaded_episodes (RnumDownloadedEpisodes#
+episode_limit (RepisodeLimit%
+episode_expiry (RepisodeExpiry,
+abp_chapter_expiry (RabpChapterExpirym
+schedule_stats_map (2?.spotify.event_sender.proto.OfflineReport.ScheduleStatsMapEntryRscheduleStatsMapg
+update_stats_map (2=.spotify.event_sender.proto.OfflineReport.UpdateStatsMapEntryRupdateStatsMap/
+num_update_all_lists (RnumUpdateAllLists&
+key_cache_limit (RkeyCacheLimit@
+key_cache_max_offline_seconds (RkeyCacheMaxOfflineSecondsE
+ContextNumLinksMapEntry
+key (	Rkey
+value (Rvalue:8G
+LinktypeNumTracksMapEntry
+key (	Rkey
+value (Rvalue:8C
+ScheduleStatsMapEntry
+key (	Rkey
+value (Rvalue:8A
+UpdateStatsMapEntry
+key (	Rkey
+value (Rvalue:8BH

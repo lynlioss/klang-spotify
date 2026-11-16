@@ -1,0 +1,14 @@
+
+-state_restore/context_player_restorable.proto"spotify.player.proto.state_restore state_restore/play_history.proto state_restore/player_model.protostate_restore/mft_state.proto'state_restore/mft_context_history.proto-state_restore/mft_fallback_page_history.protostate_restore/pns_capper.proto"î
+ContextPlayerRestorable
+version (Rversion%
+version_suffix (	RversionSuffixR
+player_model (2/.spotify.player.proto.state_restore.PlayerModelRplayerModelR
+play_history (2/.spotify.player.proto.state_restore.PlayHistoryRplayHistory]
+mft_can_play_checker (2,.spotify.player.proto.state_restore.MftStateRmftCanPlayCheckere
+mft_context_history (25.spotify.player.proto.state_restore.MftContextHistoryRmftContextHistoryu
+mft_fallback_page_history (2:.spotify.player.proto.state_restore.MftFallbackPageHistoryRmftFallbackPageHistoryL
+
+pns_capper	 (2-.spotify.player.proto.state_restore.PnsCapperR	pnsCapperY
+play_history_v1
+ (21.spotify.player.proto.state_restore.PlayHistoryV1RplayHistoryV1J	BH

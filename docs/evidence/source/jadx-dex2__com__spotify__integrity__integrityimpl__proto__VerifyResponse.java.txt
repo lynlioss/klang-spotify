@@ -1,0 +1,129 @@
+Source: analysis/spotify/jadx-dex2/sources/com/spotify/integrity/integrityimpl/proto/VerifyResponse.java
+SHA256: b3e5b4e377cb8590f0cc025a41f555443e28fc1b179056bdffbfb65787ecdcd3
+Lines: 1-125
+
+1: package com.spotify.integrity.integrityimpl.proto;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes2.dex */
+4: public final class VerifyResponse extends com.google.protobuf.h implements p.qhj0 {
+5:     private static final com.spotify.integrity.integrityimpl.proto.VerifyResponse DEFAULT_INSTANCE = null;
+6:     private static volatile p.whs0 PARSER = null;
+7:     public static final int RESPONSE_FIELD_NUMBER = 1;
+8:     private java.lang.String response_;
+9: 
+10:     static {
+11:             com.spotify.integrity.integrityimpl.proto.VerifyResponse r0 = new com.spotify.integrity.integrityimpl.proto.VerifyResponse
+12:             r0.<init>()
+13:             com.spotify.integrity.integrityimpl.proto.VerifyResponse.DEFAULT_INSTANCE = r0
+14:             java.lang.Class<com.spotify.integrity.integrityimpl.proto.VerifyResponse> r1 = com.spotify.integrity.integrityimpl.proto.VerifyResponse.class
+15:             com.google.protobuf.h.registerDefaultInstance(r1, r0)
+16:             return
+17:     }
+18: 
+19:     private VerifyResponse() {
+20:             r1 = this;
+21:             r1.<init>()
+22:             java.lang.String r0 = ""
+23:             r1.response_ = r0
+24:             return
+25:     }
+26: 
+27:     public static /* bridge */ /* synthetic */ com.spotify.integrity.integrityimpl.proto.VerifyResponse n() {
+28:             com.spotify.integrity.integrityimpl.proto.VerifyResponse r0 = com.spotify.integrity.integrityimpl.proto.VerifyResponse.DEFAULT_INSTANCE
+29:             return r0
+30:     }
+31: 
+32:     public static p.whs0 parser() {
+33:             com.spotify.integrity.integrityimpl.proto.VerifyResponse r0 = com.spotify.integrity.integrityimpl.proto.VerifyResponse.DEFAULT_INSTANCE
+34:             p.whs0 r0 = r0.getParserForType()
+35:             return r0
+36:     }
+37: 
+38:     public final java.lang.Object dynamicMethod(p.lp40 r1, java.lang.Object r2, java.lang.Object r3) {
+39:             r0 = this;
+40:             int r0 = r1.ordinal()
+41:             if (r0 == 0) goto L53
+42:             r1 = 2
+43:             if (r0 == r1) goto L44
+44:             r1 = 3
+45:             if (r0 == r1) goto L3e
+46:             r1 = 4
+47:             if (r0 == r1) goto L36
+48:             r1 = 5
+49:             if (r0 == r1) goto L33
+50:             r1 = 6
+51:             if (r0 != r1) goto L31
+52:             p.whs0 r0 = com.spotify.integrity.integrityimpl.proto.VerifyResponse.PARSER
+53:             if (r0 != 0) goto L30
+54:             java.lang.Class<com.spotify.integrity.integrityimpl.proto.VerifyResponse> r1 = com.spotify.integrity.integrityimpl.proto.VerifyResponse.class
+55:             monitor-enter(r1)
+56:             p.whs0 r0 = com.spotify.integrity.integrityimpl.proto.VerifyResponse.PARSER     // Catch: java.lang.Throwable -> L2a
+57:             if (r0 != 0) goto L2c
+58:             p.dp40 r0 = new p.dp40     // Catch: java.lang.Throwable -> L2a
+59:             com.spotify.integrity.integrityimpl.proto.VerifyResponse r2 = com.spotify.integrity.integrityimpl.proto.VerifyResponse.DEFAULT_INSTANCE     // Catch: java.lang.Throwable -> L2a
+60:             r0.<init>(r2)     // Catch: java.lang.Throwable -> L2a
+61:             com.spotify.integrity.integrityimpl.proto.VerifyResponse.PARSER = r0     // Catch: java.lang.Throwable -> L2a
+62:             goto L2c
+63:         L2a:
+64:             r0 = move-exception
+65:             goto L2e
+66:         L2c:
+67:             monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+68:             return r0
+69:         L2e:
+70:             monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+71:             throw r0
+72:         L30:
+73:             return r0
+74:         L31:
+75:             r0 = 0
+76:             throw r0
+77:         L33:
+78:             com.spotify.integrity.integrityimpl.proto.VerifyResponse r0 = com.spotify.integrity.integrityimpl.proto.VerifyResponse.DEFAULT_INSTANCE
+79:             return r0
+80:         L36:
+81:             p.mej1 r0 = new p.mej1
+82:             r1 = 23
+83:             r0.<init>(r1)
+84:             return r0
+85:         L3e:
+86:             com.spotify.integrity.integrityimpl.proto.VerifyResponse r0 = new com.spotify.integrity.integrityimpl.proto.VerifyResponse
+87:             r0.<init>()
+88:             return r0
+89:         L44:
+90:             java.lang.String r0 = "response_"
+91:             java.lang.Object[] r0 = new java.lang.Object[]{r0}
+92:             java.lang.String r1 = "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001Ȉ"
+93:             com.spotify.integrity.integrityimpl.proto.VerifyResponse r2 = com.spotify.integrity.integrityimpl.proto.VerifyResponse.DEFAULT_INSTANCE
+94:             java.lang.Object r0 = com.google.protobuf.h.newMessageInfo(r2, r1, r0)
+95:             return r0
+96:         L53:
+97:             r0 = 1
+98:             java.lang.Byte r0 = java.lang.Byte.valueOf(r0)
+99:             return r0
+100:     }
+101: 
+102:     public final /* bridge */ /* synthetic */ p.nhj0 getDefaultInstanceForType() {
+103:             r0 = this;
+104:             com.google.protobuf.h r0 = r0.getDefaultInstanceForType()
+105:             return r0
+106:     }
+107: 
+108:     public final /* bridge */ /* synthetic */ p.mhj0 newBuilderForType() {
+109:             r0 = this;
+110:             com.google.protobuf.g r0 = r0.newBuilderForType()
+111:             return r0
+112:     }
+113: 
+114:     public final java.lang.String o() {
+115:             r0 = this;
+116:             java.lang.String r0 = r0.response_
+117:             return r0
+118:     }
+119: 
+120:     public final /* bridge */ /* synthetic */ p.mhj0 toBuilder() {
+121:             r0 = this;
+122:             com.google.protobuf.g r0 = r0.toBuilder()
+123:             return r0
+124:     }
+125: }

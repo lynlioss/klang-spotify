@@ -1,0 +1,26 @@
+
+include/HeadFileDownload.protospotify.event_sender.proto"ò
+HeadFileDownload
+file_id (RfileId
+playback_id (R
+playbackId$
+cdn_uri_scheme (	RcdnUriScheme
+
+cdn_domain (	R	cdnDomain$
+head_file_size (RheadFileSize)
+bytes_downloaded (RbytesDownloaded!
+bytes_wasted (RbytesWasted!
+http_latency (RhttpLatency(
+http_64k_latency	 (Rhttp64kLatency
+
+total_time
+ (R	totalTime
+http_result (R
+httpResult
+
+error_code (R	errorCode!
+cached_bytes (RcachedBytes(
+bytes_from_cache (RbytesFromCache!
+socket_reuse (	RsocketReuse!
+request_type (	RrequestType,
+initial_disk_state (	RinitialDiskStateBH

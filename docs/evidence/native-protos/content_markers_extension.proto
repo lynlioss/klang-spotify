@@ -1,0 +1,18 @@
+// Recovered descriptor. Original file: content_markers_extension.proto
+syntax = "proto3";
+package spotify.scdcontentmarkers;
+enum ContentMarkerType {
+  CONTENT_MARKER_TYPE_UNSPECIFIED = 0;
+  CONTENT_MARKER_TYPE_INTRO = 1;
+  CONTENT_MARKER_TYPE_OUTRO = 2;
+}
+message ContentMarkers {
+  string audio_uri = 1;
+  int32 audio_duration_ms = 2;
+  repeated .spotify.scdcontentmarkers.ContentMarker markers = 3;
+}
+message ContentMarker {
+  int32 start_ms = 1;
+  int32 end_ms = 2;
+  .spotify.scdcontentmarkers.ContentMarkerType type = 3;
+}

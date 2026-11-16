@@ -1,0 +1,20 @@
+
+popcount2_external.protospotify.popcount2.proto"
+PopcountRequest"Ä
+PopcountResult
+count (Rcount
+	truncated (R	truncated
+user (	Ruser
+userid (	Ruserid
+	raw_count (RrawCount5
+count_hidden_from_users (RcountHiddenFromUsers"t
+PopcountUserUpdate
+user (	Ruser
+	timestamp (R	timestamp
+added (Radded
+userid (	Ruserid"T
+PopcountFollowerResult!
+is_truncated (RisTruncated
+user_id (RuserId">
+&PopcountSetFollowerCounterValueRequest
+count (RcountBH

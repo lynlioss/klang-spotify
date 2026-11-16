@@ -1,0 +1,9 @@
+
+show_episode_state.protospotify.show_cosmos.proto"ˆ
+EpisodeCollectionState*
+is_following_show (RisFollowingShow
+is_new (RisNew+
+is_in_listen_later (RisInListenLater"_
+EpisodeOfflineState#
+offline_state (	RofflineState#
+sync_progress (RsyncProgressBH

@@ -1,0 +1,17 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/sequence_patch.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1;
+message SequencePatch {
+  message Change {
+    repeated string select = 1;
+    repeated string insert = 3;
+    repeated string remove = 4;
+    oneof _before {
+      string before = 2;
+    }
+    oneof _iteration {
+      int32 iteration = 5;
+    }
+  }
+  repeated .spotify.playback_platform.context.v1.SequencePatch.Change changes = 1;
+}

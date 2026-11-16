@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: context_track.proto
+syntax = "proto2";
+package spotify.player.proto;
+import "stream_reporting_attribution_transfer.proto";
+message ContextTrack {
+  message MetadataEntry {
+    optional string key = 1;
+    optional string value = 2;
+  }
+  optional string uri = 1;
+  optional string uid = 2;
+  optional bytes gid = 3;
+  repeated .spotify.player.proto.ContextTrack.MetadataEntry metadata = 4;
+  optional .spotify.player.proto.transfer.StreamReportingAttribution stream_reporting_attribution = 5;
+}

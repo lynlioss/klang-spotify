@@ -1,0 +1,13 @@
+
++state_restore/video_persistence_state.proto"spotify.player.proto.state_restore"›
+VideoPersistenceStateq
+current_media_type (2C.spotify.player.proto.state_restore.VideoPersistenceState.MediaTypeRcurrentMediaTypex
+video_context_type (2J.spotify.player.proto.state_restore.VideoPersistenceState.VideoContextTypeRvideoContextType"!
+	MediaType	
+AUDIO	
+VIDEO"r
+VideoContextType
+NONE
+IS_VIDEO_FIRST
+PLAYLIST_VIDEO_TOGGLE%
+IS_SINGLE_TRACK_VIDEO_CONTENTBH

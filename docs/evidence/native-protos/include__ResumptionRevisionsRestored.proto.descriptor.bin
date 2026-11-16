@@ -1,0 +1,15 @@
+
+)include/ResumptionRevisionsRestored.protospotify.event_sender.proto"¦
+ResumptionRevisionsRestored:
+number_of_key_read_success (RnumberOfKeyReadSuccess3
+number_of_key_failures (RnumberOfKeyFailuresD
+number_of_revision_read_success (RnumberOfRevisionReadSuccessH
+!number_of_revision_parse_failures (RnumberOfRevisionParseFailures'
+seconds_reading (RsecondsReading
+
+bytes_read (R	bytesRead(
+cache_total_keys (RcacheTotalKeys2
+cache_total_revisions (RcacheTotalRevisions2
+cache_estimated_bytes	 (RcacheEstimatedBytes,
+leveldb_disk_bytes
+ (RleveldbDiskBytesBH

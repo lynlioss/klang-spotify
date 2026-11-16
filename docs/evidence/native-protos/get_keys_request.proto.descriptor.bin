@@ -1,0 +1,13 @@
+
+get_keys_request.protospotify.your_library.protoyour_library_config.proto"ƒ
+GetKeysRequestO
+
+sort_order (20.spotify.your_library.proto.YourLibrarySortOrderR	sortOrder
+str (	Rstr
+nr (Rnr"Z
+GetKeysResponse
+key (	Rkey
+status_codeb (R
+statusCode
+errorc (	RerrorB*
+$spotify.your_library.esperanto.protoHPbproto3

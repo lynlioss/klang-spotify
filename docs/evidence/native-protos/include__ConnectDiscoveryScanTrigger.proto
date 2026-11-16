@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: include/ConnectDiscoveryScanTrigger.proto
+syntax = "proto2";
+package spotify.event_sender.proto;
+message ConnectDiscoveryScanTrigger {
+  optional string device_id = 1;
+  optional string trigger_reason = 2;
+}

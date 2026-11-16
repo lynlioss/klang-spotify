@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: playback_stack.proto
+syntax = "proto3";
+package spotify.stream_reporting_esperanto.proto;
+enum PlaybackStack {
+  BOOMBOX = 0;
+  BETAMAX = 1;
+  UNKNOWN = 2;
+}

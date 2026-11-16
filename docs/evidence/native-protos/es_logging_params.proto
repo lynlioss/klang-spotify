@@ -1,0 +1,16 @@
+// Recovered descriptor. Original file: es_logging_params.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+import "es_optional.proto";
+import "stream_reporting_attribution.proto";
+message LoggingParams {
+  .spotify.player.esperanto.proto.OptionalInt64 command_initiated_time = 1;
+  .spotify.player.esperanto.proto.OptionalInt64 command_received_time = 2;
+  repeated string page_instance_ids = 3;
+  repeated string interaction_ids = 4;
+  string device_identifier = 5;
+  .spotify.stream_reporting_attribution.proto.StreamReportingAttribution stream_reporting_attribution = 7;
+  oneof _command_id {
+    string command_id = 6;
+  }
+}

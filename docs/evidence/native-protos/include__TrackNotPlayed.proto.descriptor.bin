@@ -1,0 +1,22 @@
+
+include/TrackNotPlayed.protospotify.event_sender.proto"ò
+TrackNotPlayed
+playback_id (R
+playbackId!
+source_start (	RsourceStart!
+reason_start (	RreasonStart
+
+source_end (	R	sourceEnd
+
+reason_end (	R	reasonEnd!
+play_context (	RplayContext
+
+play_track (	R	playTrack#
+display_track (	RdisplayTrack
+provider	 (	Rprovider
+referer
+ (	Rreferer)
+referrer_version (	RreferrerVersion'
+referrer_vendor (	RreferrerVendor
+gaia_dev_id (	R	gaiaDevId*
+reason_not_played (	RreasonNotPlayedBH

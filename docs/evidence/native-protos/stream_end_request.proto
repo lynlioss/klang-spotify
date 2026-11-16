@@ -1,0 +1,16 @@
+// Recovered descriptor. Original file: stream_end_request.proto
+syntax = "proto3";
+package spotify.stream_reporting_esperanto.proto;
+import "google/protobuf/timestamp.proto";
+import "stream_handle.proto";
+import "play_reason.proto";
+import "audio_format.proto";
+message StreamEndRequest {
+  .spotify.stream_reporting_esperanto.proto.StreamHandle stream_handle = 1;
+  string source_end = 2;
+  .spotify.stream_reporting_esperanto.proto.PlayReason reason_end = 3;
+  .google.protobuf.Timestamp client_timestamp = 5;
+  oneof _format {
+    .spotify.stream_reporting_esperanto.proto.AudioFormat format = 4;
+  }
+}

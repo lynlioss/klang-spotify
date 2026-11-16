@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: mdata_cosmos.proto
+syntax = "proto3";
+package spotify.mdata_cosmos.proto;
+import "extension_kind.proto";
+message InvalidateCacheRequest {
+  .spotify.extendedmetadata.ExtensionKind extension_kind = 1;
+  repeated string entity_uri = 2;
+}
+message InvalidateCacheResponse {
+}

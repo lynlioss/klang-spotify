@@ -1,0 +1,26 @@
+
+your_library_response.protospotify.your_library.proto#your_library_decorated_entity.protoyour_library_config.proto"/
+YourLibraryTagInfo
+tag_name (	RtagName"¯
+YourLibraryResponseHeader-
+remaining_entities	 (RremainingEntities
+total_count (R
+totalCount
+	pin_count (RpinCount0
+maximum_pinned_items (RmaximumPinnedItems
+
+is_loading (R	isLoading
+folder_name (	R
+folderName*
+parent_folder_uri (	RparentFolderUri[
+available_filters (2..spotify.your_library.proto.YourLibraryFiltersRavailableFilters_
+available_filters_2 (2/.spotify.your_library.proto.YourLibraryFilters2RavailableFilters2I
+tag_info (2..spotify.your_library.proto.YourLibraryTagInfoRtagInfo"È
+YourLibraryResponseM
+header (25.spotify.your_library.proto.YourLibraryResponseHeaderRheaderN
+entity (26.spotify.your_library.proto.YourLibraryDecoratedEntityRentity[
+pinned_entity (26.spotify.your_library.proto.YourLibraryDecoratedEntityRpinnedEntity
+status_codeb (R
+statusCode
+errorc (	RerrorB*
+$spotify.your_library.esperanto.protoHPbproto3

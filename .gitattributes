@@ -1,0 +1,7 @@
+# Preserve recovered protobuf descriptors as binary evidence.
+*.descriptor.bin binary
+# Generated excerpts retain the decompiler's original whitespace.
+docs/evidence/source/*.txt whitespace=-blank-at-eol,-space-before-tab
+# Native tool output also retains literal strings and formatting.
+docs/evidence/native/**/*.txt whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+docs/evidence/native/*.txt whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab

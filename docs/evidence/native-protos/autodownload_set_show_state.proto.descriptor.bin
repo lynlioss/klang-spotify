@@ -1,0 +1,8 @@
+
+!autodownload_set_show_state.proto$spotify.autodownload_esperanto.proto"A
+SetShowStateRequest
+uri (	Ruri
+enabled (Renabled",
+SetShowStateResponse
+error (	RerrorB0
+$spotify.autodownload.esperanto.protoHP¢ESPbproto3

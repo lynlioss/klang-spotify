@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: endpoint/read_interval.proto
+syntax = "proto3";
+package spotify.read_reporting_esperanto.proto;
+message ReadInterval {
+  int64 start_char_pos = 1;
+  int64 end_char_pos = 2;
+}

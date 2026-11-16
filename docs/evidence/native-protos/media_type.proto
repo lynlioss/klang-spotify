@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: media_type.proto
+syntax = "proto3";
+package spotify.stream_reporting_esperanto.proto;
+enum MediaType {
+  AUDIO = 0;
+  VIDEO = 1;
+  MEDIA_TYPE_AUDIO = 0;
+  MEDIA_TYPE_VIDEO = 1;
+  MEDIA_TYPE_UNKNOWN = 2;
+}

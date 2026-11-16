@@ -1,0 +1,6 @@
+
+(include/ResumptionRevisionRejected.protospotify.event_sender.proto"b
+ResumptionRevisionRejected
+key (	Rkey
+reason (	Rreason
+revision (	RrevisionBH

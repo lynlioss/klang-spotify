@@ -1,0 +1,14 @@
+
+playback_observer.protospotify.restrictions.proto"†
+PlaybackObserverObservedState
+playback_id (	R
+playbackId
+uri (	Ruri
+uid (	Ruidc
+metadata (2G.spotify.restrictions.proto.PlaybackObserverObservedState.MetadataEntryRmetadata;
+MetadataEntry
+key (	Rkey
+value (	Rvalue:8"­
+PlaybackObserver`
+observed_state (29.spotify.restrictions.proto.PlaybackObserverObservedStateRobservedState7
+accumulated_consumption (RaccumulatedConsumptionBHbproto3

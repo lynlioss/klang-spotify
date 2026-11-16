@@ -1,0 +1,18 @@
+// Recovered descriptor. Original file: es_get_position_state.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+message GetPositionStateRequest {
+  oneof _logical_playback_identifier {
+    string logical_playback_identifier = 1;
+  }
+}
+message GetPositionStateResponse {
+  enum Error {
+    OK = 0;
+    NOT_FOUND = 1;
+  }
+  .spotify.player.esperanto.proto.GetPositionStateResponse.Error error = 1;
+  uint64 timestamp = 2;
+  uint64 position = 3;
+  double playback_speed = 4;
+}

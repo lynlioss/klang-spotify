@@ -1,0 +1,11 @@
+
+transfer_state.protospotify.player.proto.transfercontext_player_options.protoplayback.protoplay_history_entry.protosession.protosleep_timer.protoqueue.proto"œ
+TransferStateD
+options (2*.spotify.player.proto.ContextPlayerOptionsRoptionsC
+playback (2'.spotify.player.proto.transfer.PlaybackRplaybackO
+current_session (2&.spotify.player.proto.transfer.SessionRcurrentSession:
+queue (2$.spotify.player.proto.transfer.QueueRqueuea
+play_history_entries (2/.spotify.player.proto.transfer.PlayHistoryEntryRplayHistoryEntriesJ
+sleep_timer (2).spotify.player.proto.transfer.SleepTimerR
+sleepTimer>
+logical_playback_identifier (	RlogicalPlaybackIdentifierJBH

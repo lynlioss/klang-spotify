@@ -1,0 +1,42 @@
+// Recovered descriptor. Original file: playlist_signal_request.proto
+syntax = "proto3";
+package spotify.playlist_esperanto.proto;
+import "response_status.proto";
+message Signal {
+  string identifier = 1;
+  bytes signal_data = 2;
+  bytes client_payload = 3;
+  bool force = 4;
+  string instance_id = 5;
+}
+message PlaylistMultiSignalRequest {
+  string list_uri = 1;
+  repeated .spotify.playlist_esperanto.proto.Signal signals = 2;
+  repeated string lenses = 3;
+}
+message PlaylistMultiItemSignalRequest {
+  string item_id = 1;
+  string list_uri = 2;
+  repeated .spotify.playlist_esperanto.proto.Signal signals = 3;
+}
+message SignalStatusResult {
+  int32 status_code = 1;
+  string status_details = 2;
+  bytes status_payload = 3;
+}
+message PlaylistItemSignalResponse {
+  message SignalResultsEntry {
+    string key = 1;
+    .spotify.playlist_esperanto.proto.SignalStatusResult value = 2;
+  }
+  .spotify.playlist_esperanto.proto.ResponseStatus status = 1;
+  repeated .spotify.playlist_esperanto.proto.PlaylistItemSignalResponse.SignalResultsEntry signal_results = 2;
+}
+message PlaylistSignalResponse {
+  message SignalResultsEntry {
+    string key = 1;
+    .spotify.playlist_esperanto.proto.SignalStatusResult value = 2;
+  }
+  .spotify.playlist_esperanto.proto.ResponseStatus status = 1;
+  repeated .spotify.playlist_esperanto.proto.PlaylistSignalResponse.SignalResultsEntry signal_results = 2;
+}

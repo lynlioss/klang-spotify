@@ -1,0 +1,60 @@
+
+playlist_playlist_state.protospotify.playlist.cosmos.protometadata/extension.protometadata/image_group.protoplaylist_user_state.proto"=
+FormatListAttribute
+key (	Rkey
+value (	Rvalue"e
+Allows
+
+can_insert (R	canInsert
+
+can_remove (R	canRemove
+
+can_delete (R	canDelete"h
+ProvidedSortOrder
+internal_id (	R
+internalId
+name (	Rname
+
+reversible (R
+reversible"h
+ProvidedTagDefinition
+id (	Rid
+name (	Rname
+tag_id (RtagId
+count (Rcount"ç
+
+PlaylistMetadata
+link (	Rlink
+name (	Rname9
+owner (2#.spotify.playlist.cosmos.proto.UserRowner"
+owned_by_self (RownedBySelf$
+collaborative (Rcollaborative!
+total_length (RtotalLength 
+description (	RdescriptionA
+pictures (2%.spotify.cosmos_util.proto.ImageGroupRpictures
+followed	 (Rfollowed
+	published
+ (R	published+
+browsable_offline (RbrowsableOffline:
+description_from_annotate (RdescriptionFromAnnotate2
+picture_from_annotate (RpictureFromAnnotate(
+format_list_type (	RformatListTypeh
+format_list_attributes (22.spotify.playlist.cosmos.proto.FormatListAttributeRformatListAttributes=
+can_report_annotation_abuse (RcanReportAnnotationAbuse
+	is_loaded (RisLoaded=
+allows (2%.spotify.playlist.cosmos.proto.AllowsRallows
+
+load_state (	R	loadState>
+made_for (2#.spotify.playlist.cosmos.proto.UserRmadeForB
+	extension (2$.spotify.cosmos_util.proto.ExtensionR	extension=
+length_ignoring_text_filter (RlengthIgnoringTextFilter7
+ai_curation_reference_id (	RaiCurationReferenceId(
+deleted_by_owner (RdeletedByOwner!
+user_created (RuserCreatedQ
+sort_orders (20.spotify.playlist.cosmos.proto.ProvidedSortOrderR
+sortOrders]
+tag_definitions (24.spotify.playlist.cosmos.proto.ProvidedTagDefinitionRtagDefinitions"U
+PlaylistOfflineState
+offline (	Roffline#
+sync_progress (RsyncProgressB 
+com.spotify.playlist.protoHP

@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: es_traffic_failure_reason.proto
+syntax = "proto3";
+package spotify.connectivity.traffic.esperanto.proto;
+enum FailureReason {
+  FAILURE_REASON_UNSPECIFIED = 0;
+  FAILURE_REASON_TRANSPORT_ERROR = 1;
+  FAILURE_REASON_TIMEOUT = 2;
+  FAILURE_REASON_CANCELLED = 3;
+}

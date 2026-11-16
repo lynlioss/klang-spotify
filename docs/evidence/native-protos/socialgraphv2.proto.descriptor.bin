@@ -1,0 +1,39 @@
+
+socialgraphv2.protospotify.socialgraph.proto"Ã
+SocialGraphEntity
+user_uri (	RuserUri
+
+artist_uri (	R	artistUri'
+followers_count (RfollowersCount'
+following_count (RfollowingCount
+status (Rstatus!
+is_following (RisFollowing
+is_followed (R
+isFollowed!
+is_dismissed (RisDismissed
+
+is_blocked	 (R	isBlocked!
+following_at
+ (RfollowingAt
+followed_at (R
+followedAt!
+dismissed_at (RdismissedAt
+
+blocked_at (R	blockedAt"T
+SocialGraphRequest
+target_uris (	R
+targetUris
+
+source_uri (	R	sourceUri"Š
+SocialGraphReplyH
+entities (2,.spotify.socialgraph.proto.SocialGraphEntityRentities,
+num_total_entities (RnumTotalEntities"£
+ChangeNotificationC
+
+event_type (2$.spotify.socialgraph.proto.EventTypeR	eventTypeH
+entities (2,.spotify.socialgraph.proto.SocialGraphEntityRentities*%
+	EventType
+
+FOLLOW
+UNFOLLOWB
+com.socialgraph.protoHP

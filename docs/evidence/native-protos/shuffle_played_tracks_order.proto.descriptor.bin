@@ -1,0 +1,11 @@
+
+!shuffle_played_tracks_order.protospotify.player.proto"2
+ShuffleTrack
+uid (	Ruid
+uri (	Ruri"ô
+ShufflePlayedTracksOrder
+
+context_id (	R	contextId!
+shuffle_seed (	RshuffleSeedK
+backward_tracks (2".spotify.player.proto.ShuffleTrackRbackwardTracksI
+forward_tracks (2".spotify.player.proto.ShuffleTrackRforwardTracksBH

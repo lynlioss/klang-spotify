@@ -1,0 +1,72 @@
+ 33ea99 Prefetch: looks like new context - resetting window size to %d
+ 33efee Bad range reply
+ 346412 Prefetch: Could not save key, backing off for 1 minute
+ 357c1e MP4_FLAC_24BIT
+ 35fa10 Vorbis 160 kbps
+ 369abf https://spclient.wg.spotify.com/sneaktables/v2/hls/4/{source_id}/master.m3u8
+ 36a5a3 vorbis
+ 36b51a Vorbis 320 kbps
+ 36b802 MP4_FLAC
+ 36b955 download_range_not_satisfiable
+ 36b974 download_http_no_range_response_no_content_length
+ 36e0bb vorbis-config
+ 3727f3 FLAC_FLAC_24BIT
+ 375e22 OGG_VORBIS_96
+ 3774cd Prefetch: Key for %s recently failed, skipping.
+ 3796a9 OGG_VORBIS_160
+ 37e6a0 Prefetch: canceling previous head file download for file : %s
+ 37f9b9 Vorbis fMP4: %d Hz, %d ch, blocksize %d/%d
+ 382476 storage-resolve.proto
+ 385a09 https://spclient.wg.spotify.com/sneaktables/v2/hls/4/{file_id}/audio.m3u8
+ 38bb3a Vorbis 96 kbps
+ 393317 wss://dealer.g2.spotify.com:443
+ 393928 FLAC_FLAC
+ 3952d2 ogg/vorbis
+ 3955f9 storage-resolve/v2/files/audio/
+ 395f94 vorbis_info.bitrate_nominal: %lld
+ 396d5a https://apresolve.spotify.com/v2
+ 39850e Prefetch: canceling previous download for file : %s
+ 3998f5 vorbis_synthesis_init failed
+ 39acd1 OGG_VORBIS_320
+ 39c39f Prefetch: start prefetching head file for track  %s : %s
+ 39c3d8 Prefetch: Key prefetch error %s for file %s
+ 3a37d4 Prefetch: key prefetched for track: %s (file: %s)
+ 3a5a85 FLAC_FLAC_PETREL
+ 3aaa65 widevine
+ 3ab891 vorbis_synthesis_headerin failed for packet %ld
+ 3ade2b Prefetch: start prefetching track  %s : %s
+ 3ade56 Prefetch: looks like a skip or partial context change - halving window size to %d
+ 5ba502 storage-resolve.proto
+ 5d1e86 FORMAT_OGG_VORBIS_96
+ 5d1ea0 FORMAT_OGG_VORBIS_160
+ 5d1ebb FORMAT_OGG_VORBIS_320
+ 5d1ff5 FORMAT_FLAC_FLAC
+ 5d200b FORMAT_MP4_FLAC
+ 5d2095 FORMAT_FLAC_FLAC_24
+ 5d20ae FORMAT_OGG_VORBIS_320_PARROT
+ 5d20d0 FORMAT_FLAC_FLAC_PARROT
+ 5ef989 OGG_VORBIS_96
+ 5ef99c OGG_VORBIS_160
+ 5ef9b0 OGG_VORBIS_320
+ 5efa1f 	FLAC_FLAC
+ 5f0466 VORBIS
+ 65a9f4 apResolveSource
+ 675119 OGG_VORBIS_96
+ 67512c OGG_VORBIS_160
+ 675140 OGG_VORBIS_320
+ 6751af 	FLAC_FLAC
+ 6751ef FLAC_FLAC_24BIT
+ 675234 FLAC_FLAC_PETREL
+ 676b80 widevine
+ 676b8e 2$.spotify.contentagnostic.v2.WidevineH
+ 676bb8 widevine
+ 676ca4 Widevine"
+ 6786b8 OGG_VORBIS_96
+ 6786cb OGG_VORBIS_160
+ 6786df OGG_VORBIS_320
+ 6787b0 	FLAC_FLAC
+ 6787c0 MP4_FLAC
+ 67880d FLAC_FLAC_24BIT
+ 678822 MP4_FLAC_24BIT
+ 678875 OGG_VORBIS_160000_UNENCRYPTED
+ 678a35 FLAC_FLAC_PETREL

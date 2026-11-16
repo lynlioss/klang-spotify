@@ -1,0 +1,32 @@
+
+include/TimeMeasurement.protospotify.event_sender.proto"—
+TimeMeasurement
+category (	Rcategory[
+
+dimensions (2;.spotify.event_sender.proto.TimeMeasurement.DimensionsEntryR
+dimensionsk
+point_timestamps (2@.spotify.event_sender.proto.TimeMeasurement.PointTimestampsEntryRpointTimestampsh
+point_durations (2?.spotify.event_sender.proto.TimeMeasurement.PointDurationsEntryRpointDurationsl
+point_feature_ids (2@.spotify.event_sender.proto.TimeMeasurement.PointFeatureIdsEntryRpointFeatureIds
+
+feature_id (	R	featureId%
+measurement_id (	RmeasurementId2
+parent_measurement_id (	RparentMeasurementId.
+parent_epoch_offset	 (RparentEpochOffsetU
+metadata
+ (29.spotify.event_sender.proto.TimeMeasurement.MetadataEntryRmetadata=
+DimensionsEntry
+key (	Rkey
+value (	Rvalue:8B
+PointTimestampsEntry
+key (	Rkey
+value (Rvalue:8A
+PointDurationsEntry
+key (	Rkey
+value (Rvalue:8B
+PointFeatureIdsEntry
+key (	Rkey
+value (	Rvalue:8;
+MetadataEntry
+key (	Rkey
+value (	Rvalue:8BH

@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: es_play_as_next_in_queue_request.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+import "es_context_track.proto";
+import "es_command_options.proto";
+import "es_logging_params.proto";
+message PlayAsNextInQueueRequest {
+  repeated .spotify.player.esperanto.proto.ContextTrack tracks = 1;
+  .spotify.player.esperanto.proto.CommandOptions options = 2;
+  .spotify.player.esperanto.proto.LoggingParams logging_params = 3;
+}

@@ -1,0 +1,8 @@
+
+-state_restore/mft_fallback_page_history.proto"spotify.player.proto.state_restore"]
+ContextAndPage
+context_uri (	R
+contextUri*
+fallback_page_url (	RfallbackPageUrl"…
+MftFallbackPageHistoryk
+context_to_fallback_page (22.spotify.player.proto.state_restore.ContextAndPageRcontextToFallbackPageBH

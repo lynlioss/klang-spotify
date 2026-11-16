@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: player_filter_counts.proto
+syntax = "proto3";
+package spotify.playlist.proto;
+message FilterInfo {
+  message FilterCountsEntry {
+    string key = 1;
+    uint32 value = 2;
+  }
+  uint32 unfiltered_length = 1;
+  repeated .spotify.playlist.proto.FilterInfo.FilterCountsEntry filter_counts = 2;
+}

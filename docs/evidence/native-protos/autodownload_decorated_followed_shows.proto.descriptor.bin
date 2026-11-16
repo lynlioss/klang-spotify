@@ -1,0 +1,19 @@
+
++autodownload_decorated_followed_shows.proto$spotify.autodownload_esperanto.proto"x
+DecoratedFollowedShowsRequest
+skip (Rskip
+length (Rlength+
+update_throttling (RupdateThrottling"Ù
+DecoratedShow
+uri (	Ruri
+title (	Rtitle
+img_uri (	RimgUri
+	publisher (	R	publisher$
+music_and_talk (RmusicAndTalk
+	has_video (RhasVideo&
+auto_dl_enabled (RautoDlEnabled"ª
+DecoratedFollowedShowsResponseI
+shows (23.spotify.autodownload_esperanto.proto.DecoratedShowRshows'
+remaining_shows (RremainingShows
+errorc (	RerrorB0
+$spotify.autodownload.esperanto.protoHP¢ESPbproto3

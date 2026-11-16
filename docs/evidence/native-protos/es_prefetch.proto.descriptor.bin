@@ -1,0 +1,16 @@
+
+es_prefetch.proto spotify.prefetch_esperanto.protogoogle/protobuf/any.protogoogle/protobuf/empty.protogoogle/protobuf/timestamp.proto"+
+Track
+uri (	Ruri
+uid (	Ruid"m
+Event*
+event (2.google.protobuf.AnyRevent8
+	timestamp (2.google.protobuf.TimestampR	timestamp"S
+GetQueueResponse?
+tracks (2'.spotify.prefetch_esperanto.proto.TrackRtracks"Z
+GetEventHistoryResponse?
+events (2'.spotify.prefetch_esperanto.proto.EventRevents2È
+PrefetchV
+GetQueue.google.protobuf.Empty2.spotify.prefetch_esperanto.proto.GetQueueResponsed
+GetEventHistory.google.protobuf.Empty9.spotify.prefetch_esperanto.proto.GetEventHistoryResponseB.
+$com.spotify.prefetch_esperanto.protoH¢ESPbproto3

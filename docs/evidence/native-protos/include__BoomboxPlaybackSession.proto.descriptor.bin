@@ -1,0 +1,39 @@
+
+$include/BoomboxPlaybackSession.protospotify.event_sender.proto"×
+BoomboxPlaybackSession
+playback_id (R
+playbackId
+
+ms_latency (R	msLatency
+
+ui_latency (R	uiLatency$
+ms_key_latency (RmsKeyLatency$
+ms_rcv_latency (RmsRcvLatency
+
+cached_key (R	cachedKey
+	n_stutter (RnStutter
+
+n_seekback (R	nSeekback
+ms_seekback	 (R
+msSeekback
+	n_seekfwd
+ (RnSeekfwd
+
+ms_seekfwd (R	msSeekfwd 
+ms_total_est (R
+msTotalEst:
+audio_stream_type_at_start (	RaudioStreamTypeAtStart 
+experiments (	Rexperiments
+
+transition (	R
+transition6
+ext_track_ad_pos_mapping (RextTrackAdPosMappingG
+ ever_completed_initial_buffering (ReverCompletedInitialBuffering2
+ended_while_buffering (RendedWhileBuffering%
+exclusive_mode (RexclusiveMode'
+device_selected (RdeviceSelected.
+entry_reset_counter (RentryResetCounterH
+!track_stuck_timer_elapsed_counter (RtrackStuckTimerElapsedCounter
+
+key_origin (	R	keyOrigin
+	resampled (R	resampledBH

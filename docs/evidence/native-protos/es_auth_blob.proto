@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: es_auth_blob.proto
+syntax = "proto3";
+package spotify.connectivity.auth.common.esperanto.proto;
+import "es_encrypted_stored_credentials.proto";
+import "es_unencrypted_stored_credentials.proto";
+message AuthBlob {
+  .spotify.connectivity.auth.common.esperanto.proto.UnencryptedStoredCredentials unencryptedStoredCredentials = 2;
+  oneof blob {
+    .spotify.connectivity.auth.common.esperanto.proto.EncryptedStoredCredentials storedCredentials = 1;
+  }
+}

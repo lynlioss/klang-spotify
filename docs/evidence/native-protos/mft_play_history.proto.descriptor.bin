@@ -1,0 +1,17 @@
+
+mft_play_history.proto#spotify.playlist.proto.mft_lens_pocgoogle/protobuf/timestamp.proto"f
+PlayHistoryItem
+item_uri (	RitemUri8
+	timestamp (2.google.protobuf.TimestampR	timestamp"«
+CurrentContext
+	track_uri (	RtrackUri
+context_uri (	R
+contextUri
+playback_id (	R
+playbackId
+
+session_id (	R	sessionId
+	track_uid (	RtrackUid"·
+PlayHistoryJ
+items (24.spotify.playlist.proto.mft_lens_poc.PlayHistoryItemRitems\
+current_context (23.spotify.playlist.proto.mft_lens_poc.CurrentContextRcurrentContextBHbproto3

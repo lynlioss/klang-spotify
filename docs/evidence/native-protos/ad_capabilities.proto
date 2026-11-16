@@ -1,0 +1,16 @@
+// Recovered descriptor. Original file: ad_capabilities.proto
+syntax = "proto3";
+package spotify.ads.esperanto.proto;
+import "google/protobuf/empty.proto";
+enum Capability {
+  RESERVED = 0;
+  AUDIO_ONLY = 1;
+  DISTRACTED_DRIVER = 2;
+}
+message CapabilityRequest {
+  .spotify.ads.esperanto.proto.Capability capability = 1;
+}
+service Capabilities {
+  rpc addCapability (.spotify.ads.esperanto.proto.CapabilityRequest) returns (.google.protobuf.Empty);
+  rpc removeCapability (.spotify.ads.esperanto.proto.CapabilityRequest) returns (.google.protobuf.Empty);
+}

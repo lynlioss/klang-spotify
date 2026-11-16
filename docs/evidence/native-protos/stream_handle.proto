@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: stream_handle.proto
+syntax = "proto3";
+package spotify.stream_reporting_esperanto.proto;
+message StreamHandle {
+  uint32 raw_handle = 2;
+  bytes stream_id = 3;
+}

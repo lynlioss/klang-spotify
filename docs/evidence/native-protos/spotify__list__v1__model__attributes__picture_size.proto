@@ -1,0 +1,14 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/attributes/picture_size.proto
+syntax = "proto3";
+package spotify.list.v1.model.attributes;
+message PictureSizes {
+  repeated .spotify.list.v1.model.attributes.PictureSize picture_size = 1;
+}
+message PictureSize {
+  oneof _target_name {
+    string target_name = 1;
+  }
+  oneof _url {
+    string url = 2;
+  }
+}

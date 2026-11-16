@@ -1,0 +1,6 @@
+
+!include/Offline2ClientError.protospotify.event_sender.proto"c
+Offline2ClientError
+error (	Rerror
+	device_id (	RdeviceId
+cache_id (	RcacheIdBH

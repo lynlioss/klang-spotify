@@ -1,0 +1,7 @@
+
+)include/LocalFileSyncMigrationEvent.protospotify.event_sender.proto"’
+LocalFileSyncMigrationEvent
+event (	Revent&
+num_moved_files (RnumMovedFiles#
+error_message (	RerrorMessage
+uri (	RuriBH

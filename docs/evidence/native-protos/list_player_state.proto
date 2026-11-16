@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: list_player_state.proto
+syntax = "proto3";
+package spotify.list_player.proto;
+import "google/protobuf/timestamp.proto";
+import "playlist_play.proto";
+message ListPlayerState {
+  .google.protobuf.Timestamp timestamp = 2;
+  oneof _play_request {
+    .spotify.playlist.proto.PlaylistPlayRequest play_request = 1;
+  }
+}

@@ -1,0 +1,7 @@
+
+$include/CommonCappingInitRetry.protospotify.event_sender.proto"º
+CommonCappingInitRetry*
+number_of_retries (RnumberOfRetries3
+local_state_sync_state (	RlocalStateSyncState
+result (	Rresult'
+failed_features (	RfailedFeaturesBH

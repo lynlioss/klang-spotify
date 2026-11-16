@@ -1,0 +1,14 @@
+// Recovered descriptor. Original file: context_stack.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1;
+import "spotify/playback_platform/context/v1/context.proto";
+import "spotify/playback_platform/context/v1/sequence_child.proto";
+message ContextStack {
+  message Entry {
+    .spotify.playback_platform.context.v1.SequenceChild child = 1;
+    oneof _context {
+      .spotify.playback_platform.context.v1.Context context = 2;
+    }
+  }
+  repeated .spotify.playback_platform.context.v1.ContextStack.Entry entries = 1;
+}

@@ -1,0 +1,11 @@
+
+es_skip_to_track.protospotify.player.esperanto.protoes_optional.proto"€
+SkipToTrack
+page_url (	RpageUrlL
+
+page_index (2-.spotify.player.esperanto.proto.OptionalInt64R	pageIndex
+	track_uid (	RtrackUid
+	track_uri (	RtrackUriN
+track_index (2-.spotify.player.esperanto.proto.OptionalInt64R
+trackIndexB,
+"com.spotify.player.esperanto.protoH¢ESPbproto3

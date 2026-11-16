@@ -1,0 +1,12 @@
+
+$your_library_decorate_response.protospotify.your_library.proto#your_library_decorated_entity.proto"B
+!YourLibraryDecorateResponseHeader
+
+is_loading (R	isLoading"û
+YourLibraryDecorateResponseU
+header (2=.spotify.your_library.proto.YourLibraryDecorateResponseHeaderRheaderN
+entity (26.spotify.your_library.proto.YourLibraryDecoratedEntityRentity
+status_codeb (R
+statusCode
+errorc (	RerrorB*
+$spotify.your_library.esperanto.protoHPbproto3

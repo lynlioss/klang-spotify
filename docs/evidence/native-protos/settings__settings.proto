@@ -1,0 +1,61 @@
+// Recovered descriptor. Original file: settings/settings.proto
+syntax = "proto3";
+package spotify.settings.esperanto.proto;
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+message SettingsState {
+  bool offline_mode = 1;
+  bool play_explicit_content = 2;
+  bool private_session = 3;
+  bool download_over_3g = 4;
+  int32 download_quality = 5;
+  int32 stream_quality = 6;
+  int32 stream_non_metered_quality = 7;
+  bool allow_audio_quality_downgrade = 8;
+  bool gapless = 11;
+  bool automix = 12;
+  bool normalize = 13;
+  int32 loudness_environment = 14;
+  bool crossfade = 15;
+  int32 crossfade_time_seconds = 16;
+  bool show_unavailable_tracks = 17;
+  bool local_devices_only = 18;
+  string webgate_url = 19;
+  int32 download_preferred_resource_type = 20;
+  bool trim_silence = 21;
+  bool downmix = 22;
+  bool otfn = 25;
+  int32 playback_speed = 26;
+  bool parrot = 27;
+  string shuffle_mode = 28;
+  bool crossfeed = 29;
+  int32 crossfeed_intensity = 30;
+}
+service Settings {
+  rpc GetState (.google.protobuf.Empty) returns (stream .spotify.settings.esperanto.proto.SettingsState);
+  rpc SetOfflineMode (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetPlayExplicitContext (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetPrivateSession (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetDownloadOver3G (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetDownloadQuality (.google.protobuf.Int32Value) returns (.google.protobuf.Empty);
+  rpc SetStreamQuality (.google.protobuf.Int32Value) returns (.google.protobuf.Empty);
+  rpc SetStreamNonMeteredQuality (.google.protobuf.Int32Value) returns (.google.protobuf.Empty);
+  rpc SetAllowAudioQualityDowngrade (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetAp (.google.protobuf.StringValue) returns (.google.protobuf.Empty);
+  rpc SetGapless (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetAutomix (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetNormalize (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetLoudnessEnvironment (.google.protobuf.Int32Value) returns (.google.protobuf.Empty);
+  rpc SetCrossfade (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetCrossfadeTimeSeconds (.google.protobuf.Int32Value) returns (.google.protobuf.Empty);
+  rpc SetShowUnavailableTracks (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetWebgateUrl (.google.protobuf.StringValue) returns (.google.protobuf.Empty);
+  rpc SetDownloadPreferredResourceType (.google.protobuf.Int32Value) returns (.google.protobuf.Empty);
+  rpc SetDownmix (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetOtfn (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetPlaybackSpeed (.google.protobuf.Int32Value) returns (.google.protobuf.Empty);
+  rpc SetParrot (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetShuffleMode (.google.protobuf.StringValue) returns (.google.protobuf.Empty);
+  rpc SetCrossfeed (.google.protobuf.BoolValue) returns (.google.protobuf.Empty);
+  rpc SetCrossfeedIntensity (.google.protobuf.Int32Value) returns (.google.protobuf.Empty);
+}

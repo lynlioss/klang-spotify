@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: es_not_reachable.proto
+syntax = "proto3";
+package spotify.connectivity.reachability.esperanto.proto;
+message LegacyForcedOffline {
+}
+message LegacyNoInternet {
+  bool wifi_disabled = 1;
+  bool mobile_data_disabled = 2;
+}
+message LegacyNotReachable {
+  oneof type {
+    .spotify.connectivity.reachability.esperanto.proto.LegacyForcedOffline forced_offline = 1;
+    .spotify.connectivity.reachability.esperanto.proto.LegacyNoInternet no_internet = 2;
+  }
+}

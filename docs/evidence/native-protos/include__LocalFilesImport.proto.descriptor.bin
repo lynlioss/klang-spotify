@@ -1,0 +1,9 @@
+
+include/LocalFilesImport.protospotify.event_sender.proto"à
+LocalFilesImport
+tracks (Rtracks)
+duplicate_tracks (RduplicateTracks#
+failed_tracks (RfailedTracks%
+matched_tracks (RmatchedTracks
+source (	Rsource%
+invalid_tracks (RinvalidTracksBH

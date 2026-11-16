@@ -1,0 +1,33 @@
+// Recovered descriptor. Original file: lyrics_reporting/lyrics_update_request.proto
+syntax = "proto3";
+package spotify.lyrics_reporting_esperanto.proto;
+message LyricsOriginalRowMeasurement {
+  uint32 original_row = 1;
+  uint32 visible_glyph_count = 2;
+}
+message LyricsOriginalRowMeasurementResult {
+  message RowMappingFailure {
+    uint32 displayed_row = 1;
+    .spotify.lyrics_reporting_esperanto.proto.LyricsOriginalRowMeasurementResult.Type reason = 2;
+  }
+  enum Type {
+    UNKNOWN = 0;
+    ROWS = 1;
+    MISSING_MAPPING = 2;
+    AMBIGUOUS_MAPPING = 3;
+    INCONSISTENT_LAYOUT = 4;
+  }
+  .spotify.lyrics_reporting_esperanto.proto.LyricsOriginalRowMeasurementResult.Type type = 1;
+  repeated .spotify.lyrics_reporting_esperanto.proto.LyricsOriginalRowMeasurement measurements = 2;
+  repeated .spotify.lyrics_reporting_esperanto.proto.LyricsOriginalRowMeasurementResult.RowMappingFailure mapping_failures = 3;
+}
+message LyricsUpdateRequest {
+  bytes lyrics_viewing_id = 1;
+  .spotify.lyrics_reporting_esperanto.proto.LyricsOriginalRowMeasurementResult original_row_measurement_result = 6;
+  oneof _is_visible {
+    bool is_visible = 4;
+  }
+  oneof _is_background {
+    bool is_background = 5;
+  }
+}

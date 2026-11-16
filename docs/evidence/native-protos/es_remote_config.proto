@@ -1,0 +1,28 @@
+// Recovered descriptor. Original file: es_remote_config.proto
+syntax = "proto3";
+package spotify.remote_config.esperanto.proto;
+import "esperanto_options.proto";
+message LookupRequest {
+  string scope = 1;
+  string name = 2;
+}
+message BoolResponse {
+  oneof _value {
+    bool value = 1;
+  }
+}
+message IntResponse {
+  oneof _value {
+    int32 value = 1;
+  }
+}
+message EnumResponse {
+  oneof _value {
+    string value = 1;
+  }
+}
+service RemoteConfig {
+  rpc lookupBool (.spotify.remote_config.esperanto.proto.LookupRequest) returns (.spotify.remote_config.esperanto.proto.BoolResponse);
+  rpc lookupInt (.spotify.remote_config.esperanto.proto.LookupRequest) returns (.spotify.remote_config.esperanto.proto.IntResponse);
+  rpc lookupEnum (.spotify.remote_config.esperanto.proto.LookupRequest) returns (.spotify.remote_config.esperanto.proto.EnumResponse);
+}

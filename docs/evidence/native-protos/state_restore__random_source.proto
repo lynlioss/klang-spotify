@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: state_restore/random_source.proto
+syntax = "proto2";
+package spotify.player.proto.state_restore;
+message RandomSource {
+  required uint64 random_0 = 1;
+  required uint64 random_1 = 2;
+}

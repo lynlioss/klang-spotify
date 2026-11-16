@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: include/ResumptionTraitResolutionFailure.proto
+syntax = "proto2";
+package spotify.event_sender.proto;
+message ResumptionTraitResolutionFailure {
+  optional string item_uri = 1;
+  optional string trait_name = 2;
+  optional string failure_reason = 3;
+  optional string context = 4;
+}

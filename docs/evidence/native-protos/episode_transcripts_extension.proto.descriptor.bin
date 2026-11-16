@@ -1,0 +1,15 @@
+
+#episode_transcripts_extension.proto"spotify.corex.transcripts.metadata"¼
+EpisodeTranscript
+episode_uri (	R
+episodeUriP
+transcripts (2..spotify.corex.transcripts.metadata.TranscriptRtranscripts4
+disallow_content_layer (RdisallowContentLayer"Š
+
+Transcript
+uri (	Ruri
+language (	Rlanguage
+curated (Rcurated
+cdn_url (	RcdnUrl
+	is_static (RisStaticBK
+,com.spotify.corex.transcripts.metadata.protoBTranscriptMetadataProtoHPbproto3

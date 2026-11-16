@@ -1,0 +1,26 @@
+// Recovered descriptor. Original file: es_play_options.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+message PlayOptions {
+  enum Reason {
+    INTERACTIVE = 0;
+    REMOTE_TRANSFER = 1;
+    LICENSE_CHANGE = 2;
+  }
+  enum Operation {
+    REPLACE = 0;
+    ENQUEUE = 1;
+    PUSH = 2;
+  }
+  enum Trigger {
+    IMMEDIATELY = 0;
+    ADVANCED_PAST_TRACK = 1;
+    ADVANCED_PAST_CONTEXT = 2;
+  }
+  .spotify.player.esperanto.proto.PlayOptions.Reason reason = 1;
+  .spotify.player.esperanto.proto.PlayOptions.Operation operation = 2;
+  .spotify.player.esperanto.proto.PlayOptions.Trigger trigger = 3;
+  oneof _playback_speed {
+    float playback_speed = 4;
+  }
+}

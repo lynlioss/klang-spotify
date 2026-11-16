@@ -1,0 +1,8 @@
+
+'collection/track_collection_state.protospotify.cosmos_util.proto"©
+TrackCollectionState(
+is_in_collection (RisInCollection1
+can_add_to_collection (RcanAddToCollection
+	is_banned (RisBanned
+can_ban (RcanBanB#
+com.spotify.cosmos.util.protoHP

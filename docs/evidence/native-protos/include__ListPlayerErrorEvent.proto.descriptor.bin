@@ -1,0 +1,12 @@
+
+"include/ListPlayerErrorEvent.protospotify.event_sender.proto"Õ
+ListPlayerErrorEvent
+error (	Rerror+
+error_description (	RerrorDescription
+list_uri (	RlistUri
+list_ref (RlistRef(
+list_instance_id (	RlistInstanceId&
+number_of_items (RnumberOfItems!
+error_reason (	RerrorReason(
+page_instance_id (	RpageInstanceId%
+interaction_id	 (	RinteractionIdBH

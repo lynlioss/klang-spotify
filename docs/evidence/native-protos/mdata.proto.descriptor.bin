@@ -1,0 +1,28 @@
+
+mdata.protospotify.mdata.protoextension_kind.protogoogle/protobuf/any.proto"„
+LocalExtensionQueryN
+extension_kind (2'.spotify.extendedmetadata.ExtensionKindRextensionKind
+
+entity_uri (	R	entityUri"n
+LocalBatchedEntityRequestQ
+extension_query (2(.spotify.mdata.proto.LocalExtensionQueryRextensionQuery"®
+LocalBatchedExtensionResponseZ
+	extension (2<.spotify.mdata.proto.LocalBatchedExtensionResponse.ExtensionR	extension—
+ExtensionHeader
+cache_valid (R
+cacheValid#
+offline_valid (RofflineValid
+status_code (R
+statusCode
+is_empty (RisEmpty4
+cache_expiry_timestamp (RcacheExpiryTimestamp8
+offline_expiry_timestamp (RofflineExpiryTimestamp
+etag (	RetagÉ
+EntityExtension
+
+entity_uri (	R	entityUriZ
+header (2B.spotify.mdata.proto.LocalBatchedExtensionResponse.ExtensionHeaderRheader;
+extension_data (2.google.protobuf.AnyRextensionDataÊ
+	ExtensionN
+extension_kind (2'.spotify.extendedmetadata.ExtensionKindRextensionKindm
+entity_extension (2B.spotify.mdata.proto.LocalBatchedExtensionResponse.EntityExtensionRentityExtensionBHøbproto3

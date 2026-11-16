@@ -1,0 +1,14 @@
+
+include/PlaybackRetry.protospotify.event_sender.proto"ø
+PlaybackRetry
+track (	Rtrack
+playback_id (R
+playbackId
+method (	Rmethod
+status (	Rstatus
+reason (	Rreason
+	prev_etag (	RprevEtag
+prev_expiry (R
+prevExpiry
+etag (	Retag
+expiry	 (RexpiryBH

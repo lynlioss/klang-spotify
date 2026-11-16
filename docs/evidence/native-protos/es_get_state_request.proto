@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: es_get_state_request.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+import "es_optional.proto";
+message GetStateRequest {
+  .spotify.player.esperanto.proto.OptionalInt64 prev_tracks_cap = 1;
+  .spotify.player.esperanto.proto.OptionalInt64 next_tracks_cap = 2;
+  oneof _logical_playback_identifier {
+    string logical_playback_identifier = 3;
+  }
+}

@@ -1,0 +1,14 @@
+
+,include/ClientCoreConnectPullOperation.protospotify.event_sender.proto"Ì
+ClientCoreConnectPullOperation
+result (	Rresultw
+failure_reasons (2N.spotify.event_sender.proto.ClientCoreConnectPullOperation.FailureReasonsEntryRfailureReasons
+duration (Rduration'
+interaction_ids (	RinteractionIds
+	intent_id (	RintentId
+	device_id (	RdeviceId(
+active_device_id (	RactiveDeviceId-
+feature_identifier (	RfeatureIdentifierA
+FailureReasonsEntry
+key (	Rkey
+value (	Rvalue:8BH

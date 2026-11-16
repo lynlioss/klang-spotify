@@ -1,0 +1,13 @@
+
+ include/AudioFileSelection.protospotify.event_sender.proto"†
+AudioFileSelection
+playback_id (R
+playbackId#
+strategy_name (	RstrategyName
+bitrate (Rbitrate
+
+predict_id (R	predictId
+file_origin (	R
+fileOrigin%
+target_bitrate (RtargetBitrate)
+downgrade_reason (	RdowngradeReasonBH

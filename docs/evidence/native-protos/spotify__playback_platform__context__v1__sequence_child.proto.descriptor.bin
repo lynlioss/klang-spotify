@@ -1,0 +1,13 @@
+
+9spotify/playback_platform/context/v1/sequence_child.proto$spotify.playback_platform.context.v1;spotify/playback_platform/context/v1/context_behavior.proto;spotify/playback_platform/context/v1/context_metadata.proto=spotify/playback_platform/timeline/v1/timeline_behavior.proto=spotify/playback_platform/timeline/v1/timeline_metadata.proto"À
+SequenceChild
+
+context_id (	R	contextId
+uid (	Ruid
+tags (Rtagsb
+behavior_override (25.spotify.playback_platform.context.v1.ContextBehaviorRbehaviorOverrideb
+metadata_override (25.spotify.playback_platform.context.v1.ContextMetadataRmetadataOverrided
+timeline_behavior (27.spotify.playback_platform.timeline.v1.TimelineBehaviorRtimelineBehaviord
+timeline_metadata	 (27.spotify.playback_platform.timeline.v1.TimelineMetadataRtimelineMetadataJJ
+RbehaviorRmetadataRtimeline_behavior_overrideRtimeline_metadata_overrideB*
+$spotify.playback_platform.context.v1HPbproto3

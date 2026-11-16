@@ -1,0 +1,66 @@
+
+'recently_played_decoration_policy.proto'spotify.recently_played_esperanto.proto%policy/artist_decoration_policy.proto$policy/album_decoration_policy.proto$policy/track_decoration_policy.proto#policy/show_decoration_policy.proto'policy/playlist_decoration_policy.protoextension_kind.proto"Ú
+$RecentlyPlayedArtistDecorationPolicyh
+collection_policy (2;.spotify.cosmos_util.proto.ArtistCollectionDecorationPolicyRcollectionPolicyV
+sync_policy (25.spotify.cosmos_util.proto.ArtistSyncDecorationPolicyR
+syncPolicyV
+artist_policy (21.spotify.cosmos_util.proto.ArtistDecorationPolicyRartistPolicy
+type (Rtype
+	timestamp (R	timestamp"õ
+#RecentlyPlayedAlbumDecorationPolicyU
+sync_policy (24.spotify.cosmos_util.proto.AlbumSyncDecorationPolicyR
+syncPolicyS
+album_policy (20.spotify.cosmos_util.proto.AlbumDecorationPolicyRalbumPolicy#
+in_collection (RinCollection
+type (Rtype
+	timestamp (R	timestampX
+artists_policy	 (21.spotify.cosmos_util.proto.ArtistDecorationPolicyRartistsPolicyJRcollection_policy"ç
+#RecentlyPlayedTrackDecorationPolicyg
+collection_policy (2:.spotify.cosmos_util.proto.TrackCollectionDecorationPolicyRcollectionPolicyS
+track_policy (20.spotify.cosmos_util.proto.TrackDecorationPolicyRtrackPolicy
+type (Rtype
+	timestamp (R	timestampX
+artists_policy	 (21.spotify.cosmos_util.proto.ArtistDecorationPolicyRartistsPolicyS
+album_policy
+ (20.spotify.cosmos_util.proto.AlbumDecorationPolicyRalbumPolicyJJJRsync_policyRplayed_state_policyRalbum_artist_policy"´
+"RecentlyPlayedShowDecorationPolicyP
+show_policy (2/.spotify.cosmos_util.proto.ShowDecorationPolicyR
+showPolicyf
+collection_policy (29.spotify.cosmos_util.proto.ShowCollectionDecorationPolicyRcollectionPolicy
+type (Rtype
+	timestamp (R	timestampJRplayed_state_policy"î
+-RecentlyPlayedEpisodeMetadataDecorationPolicy
+link (Rlink
+length (Rlength
+name (Rname
+covers	 (RcoversE
+	extension (2'.spotify.extendedmetadata.ExtensionKindR	extension&
+is_book_chapter (RisBookChapterJ	J
+JJJ"û
+0RecentlyPlayedEpisodePlayedStateDecorationPolicy
+	time_left (RtimeLeft
+	is_played (RisPlayed$
+last_played_at (RlastPlayedAtJJ"¬
+%RecentlyPlayedEpisodeDecorationPolicy}
+episode_policy (2V.spotify.recently_played_esperanto.proto.RecentlyPlayedEpisodeMetadataDecorationPolicyRepisodePolicyâ
+played_state_policy (2Y.spotify.recently_played_esperanto.proto.RecentlyPlayedEpisodePlayedStateDecorationPolicyRplayedStatePolicyP
+show_policy (2/.spotify.cosmos_util.proto.ShowDecorationPolicyR
+showPolicy
+type (Rtype
+	timestamp (R	timestampJJ"∏
+%RecentlyPlayedProfileDecorationPolicy
+link (Rlink
+name (Rname
+	image_uri (RimageUri
+offline (Roffline
+type (Rtype
+	timestamp (R	timestamp"º
+&RecentlyPlayedPlaylistDecorationPolicy`
+playlist_policy (27.spotify.playlist.cosmos.proto.PlaylistDecorationPolicyRplaylistPolicy
+type (Rtype
+	timestamp (R	timestamp"v
+.RecentlyPlayedCollectionTracksDecorationPolicy
+link (Rlink
+type (Rtype
+	timestamp (R	timestampB7
++com.spotify.recently_played_esperanto.protoHP¢ESPbproto3

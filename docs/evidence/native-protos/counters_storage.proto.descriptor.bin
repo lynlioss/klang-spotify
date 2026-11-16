@@ -1,0 +1,9 @@
+
+counters_storage.protospotify.pending_events.proto"ƒ
+CountersStorage{
+counters_by_event_name (2F.spotify.pending_events.proto.CountersStorage.CountersByEventNameEntryRcountersByEventNames
+CountersByEventNameEntry
+key (	RkeyA
+value (2+.spotify.pending_events.proto.CountersArrayRvalue:8"+
+CountersArray
+counters (RcountersBHbproto3

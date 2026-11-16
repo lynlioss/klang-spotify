@@ -1,0 +1,14 @@
+
+search_service.protospotify.search_esperanto.protosearch.proto"m
+OfflineSearchRequest
+query (	Rquery
+limit (Rlimit)
+include_chapters (RincludeChapters"¦
+OfflineSearchResponse:
+albums (2".spotify.search.proto.OfflineAlbumRalbumsP
+audio_episodes (2).spotify.search.proto.OfflineAudioEpisodeRaudioEpisodesC
+	playlists (2%.spotify.search.proto.OfflinePlaylistR	playlists:
+tracks (2".spotify.search.proto.OfflineTrackRtracks2Œ
+OfflineSearchServicet
+Query4.spotify.search_esperanto.proto.OfflineSearchRequest5.spotify.search_esperanto.proto.OfflineSearchResponseB=
+"com.spotify.search.esperanto.protoHP¢SPTSearchEsperantobproto3

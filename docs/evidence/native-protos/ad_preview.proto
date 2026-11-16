@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: ad_preview.proto
+syntax = "proto3";
+package spotify.ads.esperanto.proto;
+message PreviewRequest {
+  string ad_id = 1;
+}
+message PreviewResponse {
+  bool success = 1;
+}
+service Preview {
+  rpc Preview (.spotify.ads.esperanto.proto.PreviewRequest) returns (.spotify.ads.esperanto.proto.PreviewResponse);
+}

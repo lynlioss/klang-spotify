@@ -1,0 +1,137 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/attributes/capabilities.proto
+syntax = "proto3";
+package spotify.list.v1.model.attributes;
+import "spotify/list/v1/model/attribute_kinds.proto";
+enum PermissionLevel {
+  UNKNOWN = 0;
+  BLOCKED = 1;
+  VIEWER = 2;
+  CONTRIBUTOR = 3;
+  MADE_FOR = 4;
+  ADMIN = 5;
+}
+message Permission {
+  oneof _revision {
+    bytes revision = 1;
+  }
+  oneof _permission_level {
+    .spotify.list.v1.model.attributes.PermissionLevel permission_level = 2;
+  }
+}
+message GrantableLevels {
+  repeated .spotify.list.v1.model.attributes.PermissionLevel base = 1;
+  repeated .spotify.list.v1.model.attributes.PermissionLevel member = 2;
+}
+message AdministratePermissionCapabilities {
+  oneof _can_set {
+    bool can_set = 1;
+  }
+  oneof _can_remove {
+    bool can_remove = 2;
+  }
+  oneof _can_remove_own {
+    bool can_remove_own = 3;
+  }
+}
+message AdministratePermissionKindCapabilities {
+  oneof _base {
+    .spotify.list.v1.model.attributes.AdministratePermissionCapabilities base = 1;
+  }
+  oneof _member {
+    .spotify.list.v1.model.attributes.AdministratePermissionCapabilities member = 2;
+  }
+  oneof _grant {
+    .spotify.list.v1.model.attributes.AdministratePermissionCapabilities grant = 6;
+  }
+}
+message AttributeCapabilities {
+  oneof _can_edit {
+    bool can_edit = 1;
+  }
+}
+message AttributeKindCapabilities {
+  oneof _attribute_kind {
+    .spotify.list.v1.model.AttributeKind attribute_kind = 1;
+  }
+  oneof _capabilities {
+    .spotify.list.v1.model.attributes.AttributeCapabilities capabilities = 2;
+  }
+}
+message ListAttributeCapabilities {
+  oneof _name {
+    .spotify.list.v1.model.attributes.AttributeCapabilities name = 1;
+  }
+  oneof _description {
+    .spotify.list.v1.model.attributes.AttributeCapabilities description = 2;
+  }
+  oneof _picture {
+    .spotify.list.v1.model.attributes.AttributeCapabilities picture = 3;
+  }
+  oneof _collaborative {
+    .spotify.list.v1.model.attributes.AttributeCapabilities collaborative = 4;
+  }
+  oneof _deleted_by_owner {
+    .spotify.list.v1.model.attributes.AttributeCapabilities deleted_by_owner = 6;
+  }
+  oneof _ai_curation_reference_id {
+    .spotify.list.v1.model.attributes.AttributeCapabilities ai_curation_reference_id = 15;
+  }
+}
+message Capabilities {
+  repeated .spotify.list.v1.model.attributes.PermissionLevel grantable_level = 3;
+  repeated .spotify.list.v1.model.attributes.AttributeKindCapabilities attribute_kind_capabilities = 9;
+  oneof _can_view {
+    bool can_view = 1;
+  }
+  oneof _can_administrate_permissions {
+    bool can_administrate_permissions = 2;
+  }
+  oneof _can_edit_metadata {
+    bool can_edit_metadata = 4;
+  }
+  oneof _can_edit_items {
+    bool can_edit_items = 5;
+  }
+  oneof _can_cancel_membership {
+    bool can_cancel_membership = 6;
+  }
+  oneof _grantable_levels {
+    .spotify.list.v1.model.attributes.GrantableLevels grantable_levels = 7;
+  }
+  oneof _list_attribute_capabilities {
+    .spotify.list.v1.model.attributes.ListAttributeCapabilities list_attribute_capabilities = 8;
+  }
+  oneof _can_mix_playlist {
+    bool can_mix_playlist = 10;
+  }
+  oneof _can_send_messages {
+    bool can_send_messages = 11;
+  }
+  oneof _administrate_permission_kind_capabilities {
+    .spotify.list.v1.model.attributes.AdministratePermissionKindCapabilities administrate_permission_kind_capabilities = 12;
+  }
+  oneof _can_delete {
+    bool can_delete = 13;
+  }
+  oneof _can_abuse_report {
+    bool can_abuse_report = 14;
+  }
+  oneof _can_modify_speed_playlist {
+    bool can_modify_speed_playlist = 17;
+  }
+  oneof _can_edit_prompt {
+    bool can_edit_prompt = 19;
+  }
+  oneof _can_add_prompt {
+    bool can_add_prompt = 20;
+  }
+  oneof _can_browse_history {
+    bool can_browse_history = 21;
+  }
+  oneof _can_revert_history {
+    bool can_revert_history = 22;
+  }
+  oneof _can_view_prompt {
+    bool can_view_prompt = 23;
+  }
+}

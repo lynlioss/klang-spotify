@@ -1,0 +1,43 @@
+
+analysis/spotify/native/liborbit-jni-spotify.so:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+0000000000b72038 <_ZN4asio6detail16service_registry6createINS0_9schedulerENS_17execution_contextEEEPNS4_7serviceEPv>:
+  b871d4: a9827f1f     	stp	xzr, xzr, [x24, #0x20]!
+  b871d8: 91004300     	add	x0, x24, #0x10
+  b871dc: 940003bd     	bl	0xb880d0 <_ZN4asio6detail16service_registry6createINS0_9schedulerENS_17execution_contextEEEPNS4_7serviceEPv+0x16098>
+  b871e0: 9429dffc     	bl	0x15ff1d0 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x2e664>
+  b871e4: 942ae35f     	bl	0x163ff60 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x6f3f4>
+  b871e8: 910043e0     	add	x0, sp, #0x10
+  b871ec: 9106e3e1     	add	x1, sp, #0x1b8
+  b871f0: 942543e3     	bl	0x14d817c <_ZN4asio6detail16service_registry6createINS0_22deadline_timer_serviceINS0_18chrono_time_traitsINSt6__ndk16chrono12system_clockENS_11wait_traitsIS7_EEEEEENS_10io_contextEEEPNS_17execution_context7serviceEPv+0x2fb34>
+  b871f4: 90ffc1c1     	adrp	x1, 0x3bf000 <_ZTSN10__cxxabiv121__vmi_class_type_infoE+0x4420>
+  b871f8: 911a6021     	add	x1, x1, #0x698
+  b871fc: 942a0025     	bl	0x1607290 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x36724>
+  b87200: 910043e0     	add	x0, sp, #0x10
+  b87204: 9105c3e1     	add	x1, sp, #0x170
+  b87208: 942543f5     	bl	0x14d81dc <_ZN4asio6detail16service_registry6createINS0_22deadline_timer_serviceINS0_18chrono_time_traitsINSt6__ndk16chrono12system_clockENS_11wait_traitsIS7_EEEEEENS_10io_contextEEEPNS_17execution_context7serviceEPv+0x2fb94>
+  b8720c: 942a4eff     	bl	0x161ae08 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x4a29c>
+  b87210: 9429da00     	bl	0x15fda10 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x2cea4>
+  b87214: 942a092e     	bl	0x16096cc <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x38b60>
+  b87218: 9429a4ad     	bl	0x15f04cc <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x1f960>
+  b8721c: 910043e0     	add	x0, sp, #0x10
+  b87220: 942be0de     	bl	0x167f598 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0xaea2c>
+  b87224: 942a85ab     	bl	0x16288d0 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x57d64>
+  b87228: 9429ad32     	bl	0x15f26f0 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x21b84>
+  b8722c: b0ffc681     	adrp	x1, 0x458000 <_ZTSNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE+0x63c>
+  b87230: 91219821     	add	x1, x1, #0x866
+  b87234: 94298bf9     	bl	0x15ea218 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x196ac>
+  b87238: 910043e0     	add	x0, sp, #0x10
+  b8723c: 942a6caa     	bl	0x16224e4 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x51978>
+  b87240: 90ffc681     	adrp	x1, 0x457000 <_ZTSN5boost17bad_function_callE+0x5d972>
+  b87244: 910a8821     	add	x1, x1, #0x2a2
+  b87248: 94299647     	bl	0x15ecb64 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x1bff8>
+  b8724c: b0ffc1c1     	adrp	x1, 0x3c0000 <_ZTSN4asio22service_already_existsE+0x9e5>
+  b87250: 9102a821     	add	x1, x1, #0xaa
+  b87254: 94298599     	bl	0x15e88b8 <Java_com_spotify_scannables_scannables_tagreader_SPTTagReader_decodeWaveformTag+0x17d4c>
+  b87258: 910043e0     	add	x0, sp, #0x10
+https://clienttoken.spotify.com/v1/clienttoken
+Candidate instruction reference. Review surrounding data flow before assigning function semantics.
+

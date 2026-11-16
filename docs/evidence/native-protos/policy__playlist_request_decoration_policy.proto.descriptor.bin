@@ -1,0 +1,40 @@
+
+/policy/playlist_request_decoration_policy.protospotify.playlist.cosmos.proto'policy/playlist_decoration_policy.proto/policy/playlist_episode_decoration_policy.proto-policy/playlist_track_decoration_policy.proto.policy/supported_link_types_in_playlists.proto#policy/user_decoration_policy.protoextension_kind.proto"¢
+ItemExtensionPolicyD
+	link_type (2'.spotify.playlist.cosmos.proto.LinkTypeRlinkTypeE
+	extension (2'.spotify.extendedmetadata.ExtensionKindR	extension"—
+ ItemOfflineStateDecorationPolicy#
+offline_state (RofflineState#
+sync_progress (RsyncProgress)
+locally_playable (RlocallyPlayable"_
+ItemMetadataPolicy
+name (Rname
+image (Rimage
+is_explicit (R
+isExplicit"8
+ItemCurationStatePolicy
+
+is_curated (R	isCurated"ž
+PlaylistItemDecorationPolicy
+uri (Ruri]
+extension_policy (22.spotify.playlist.cosmos.proto.ItemExtensionPolicyRextensionPolicyd
+offline_state (2?.spotify.playlist.cosmos.proto.ItemOfflineStateDecorationPolicyRofflineState)
+collection_state (RcollectionStateM
+metadata (21.spotify.playlist.cosmos.proto.ItemMetadataPolicyRmetadata]
+curation_state (26.spotify.playlist.cosmos.proto.ItemCurationStatePolicyRcurationState+
+obfuscation_state (RobfuscationState4
+format_list_attributes (RformatListAttributes
+row_id	 (RrowId
+add_time
+ (RaddTimeN
+added_by (23.spotify.playlist.cosmos.proto.UserDecorationPolicyRaddedBy
+signals (Rsignals
+save_source (R
+saveSource.
+video_offline_state (RvideoOfflineState"õ
+PlaylistRequestDecorationPolicyS
+playlist (27.spotify.playlist.cosmos.proto.PlaylistDecorationPolicyRplaylistR
+track (2<.spotify.playlist.cosmos.proto.PlaylistTrackDecorationPolicyRtrackX
+episode (2>.spotify.playlist.cosmos.proto.PlaylistEpisodeDecorationPolicyRepisodeO
+item (2;.spotify.playlist.cosmos.proto.PlaylistItemDecorationPolicyRitemB'
+!com.spotify.playlist.policy.protoHPbproto3

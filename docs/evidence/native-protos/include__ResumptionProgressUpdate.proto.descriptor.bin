@@ -1,0 +1,17 @@
+
+&include/ResumptionProgressUpdate.protospotify.event_sender.proto"Ë
+ResumptionProgressUpdate
+key (	Rkey
+position_ms (R
+positionMs
+duration_ms (R
+durationMs
+reason (	Rreason
+client (	Rclient'
+page_identifier (	RpageIdentifier.
+use_case_identifier (	RuseCaseIdentifier
+playback_id (	R
+playbackId
+item_uri	 (	RitemUri
+source
+ (	RsourceBH

@@ -1,0 +1,16 @@
+
+session.protospotify.player.proto.transfercontext.protocontext_player_options.protoplay_origin.protosuppressions.protoinstrumentation_params.protoplaylist_play.proto"°
+SessionA
+play_origin (2 .spotify.player.proto.PlayOriginR
+playOrigin7
+context (2.spotify.player.proto.ContextRcontext
+current_uid (	R
+currentUid]
+option_overrides (22.spotify.player.proto.ContextPlayerOptionOverridesRoptionOverridesF
+suppressions (2".spotify.player.proto.SuppressionsRsuppressionsk
+instrumentation_params (24.spotify.player.proto.transfer.InstrumentationParamsRinstrumentationParams!
+shuffle_seed (	RshuffleSeed@
+main_context (2.spotify.player.proto.ContextRmainContext.
+original_session_id	 (	RoriginalSessionId_
+playlist_play_request
+ (2+.spotify.playlist.proto.PlaylistPlayRequestRplaylistPlayRequestBH

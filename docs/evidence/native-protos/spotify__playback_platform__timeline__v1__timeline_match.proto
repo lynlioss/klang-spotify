@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: spotify/playback_platform/timeline/v1/timeline_match.proto
+syntax = "proto3";
+package spotify.playback_platform.timeline.v1;
+message TimelineMatch {
+  repeated string include_uids = 1;
+  repeated string exclude_uids = 2;
+  repeated uint64 include_tags = 3;
+  repeated uint64 exclude_tags = 4;
+}

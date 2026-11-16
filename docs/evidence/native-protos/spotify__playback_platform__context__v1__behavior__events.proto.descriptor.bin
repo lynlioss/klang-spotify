@@ -1,0 +1,103 @@
+
+:spotify/playback_platform/context/v1/behavior/events.proto-spotify.playback_platform.context.v1.behavior;spotify/playback_platform/context/v1/behavior/handler.proto"“&
+Eventsb
+on_move_onto (2@.spotify.playback_platform.context.v1.behavior.Events.OnMoveOntoR
+onMoveOntom
+on_move_onto_child (2@.spotify.playback_platform.context.v1.behavior.Events.OnMoveOntoRonMoveOntoChildb
+on_move_past (2@.spotify.playback_platform.context.v1.behavior.Events.OnMovePastR
+onMovePastm
+on_move_past_child (2@.spotify.playback_platform.context.v1.behavior.Events.OnMovePastRonMovePastChildq
+on_enter_timespan (2E.spotify.playback_platform.context.v1.behavior.Events.OnEnterTimespanRonEnterTimespanq
+on_leave_timespan (2E.spotify.playback_platform.context.v1.behavior.Events.OnLeaveTimespanRonLeaveTimespanq
+on_change_playing (2E.spotify.playback_platform.context.v1.behavior.Events.OnChangePlayingRonChangePlayingŠ
+on_change_sequence_options (2M.spotify.playback_platform.context.v1.behavior.Events.OnChangeSequenceOptionsRonChangeSequenceOptionsŠ
+on_change_timeline_options	 (2M.spotify.playback_platform.context.v1.behavior.Events.OnChangeTimelineOptionsRonChangeTimelineOptionsn
+on_change_device (2D.spotify.playback_platform.context.v1.behavior.Events.OnChangeDeviceRonChangeDevicen
+on_change_locale (2D.spotify.playback_platform.context.v1.behavior.Events.OnChangeLocaleRonChangeLocalek
+on_change_queue (2C.spotify.playback_platform.context.v1.behavior.Events.OnChangeQueueRonChangeQueueÀ
+
+OnMoveOntoP
+trigger (26.spotify.playback_platform.context.v1.behavior.TriggerRtriggerP
+actions (26.spotify.playback_platform.context.v1.behavior.ActionsRactions$
+move_from_play (RmoveFromPlay$
+move_from_prev (RmoveFromPrev$
+move_from_next	 (RmoveFromNext$
+skip_from_prev
+ (RskipFromPrev$
+skip_from_next (RskipFromNext$
+fail_from_prev (RfailFromPrev$
+fail_from_next (RfailFromNextJ ‚
+
+OnMovePastP
+trigger (26.spotify.playback_platform.context.v1.behavior.TriggerRtriggerP
+actions (26.spotify.playback_platform.context.v1.behavior.ActionsRactions 
+move_to_next (R
+moveToNext 
+move_to_prev	 (R
+moveToPrev 
+skip_to_next
+ (R
+skipToNext 
+skip_to_prev (R
+skipToPrev 
+fail_to_next (R
+failToNext 
+fail_to_prev (R
+failToPrevJ «
+OnEnterTimespanP
+trigger (26.spotify.playback_platform.context.v1.behavior.TriggerRtriggerP
+actions (26.spotify.playback_platform.context.v1.behavior.ActionsRactions@
+enter_at_beginning_by_playing (RenterAtBeginningByPlaying@
+enter_at_beginning_by_seeking	 (RenterAtBeginningBySeeking4
+enter_at_end_by_playing
+ (RenterAtEndByPlaying4
+enter_at_end_by_seeking (RenterAtEndBySeekingJ «
+OnLeaveTimespanP
+trigger (26.spotify.playback_platform.context.v1.behavior.TriggerRtriggerP
+actions (26.spotify.playback_platform.context.v1.behavior.ActionsRactions4
+leave_at_end_by_playing (RleaveAtEndByPlaying4
+leave_at_end_by_seeking	 (RleaveAtEndBySeeking@
+leave_at_beginning_by_playing
+ (RleaveAtBeginningByPlaying@
+leave_at_beginning_by_seeking (RleaveAtBeginningBySeekingJ Í
+OnChangePlayingP
+trigger (26.spotify.playback_platform.context.v1.behavior.TriggerRtriggerP
+actions (26.spotify.playback_platform.context.v1.behavior.ActionsRactions
+position (Rposition
+duration	 (Rduration
+buffered
+ (Rbuffered
+playtime (Rplaytime
+paused (Rpaused
+resumed (Rresumed6
+stalled_buffering_media (RstalledBufferingMedia6
+stalled_loading_context (RstalledLoadingContextJ ÿ
+OnChangeSequenceOptionsP
+trigger (26.spotify.playback_platform.context.v1.behavior.TriggerRtriggerP
+actions (26.spotify.playback_platform.context.v1.behavior.ActionsRactions-
+shuffling_sequence (RshufflingSequence-
+enhancing_sequence	 (RenhancingSequence-
+repeating_sequence
+ (RrepeatingSequence-
+repeating_timeline (RrepeatingTimelineJ ê
+OnChangeTimelineOptionsP
+trigger (26.spotify.playback_platform.context.v1.behavior.TriggerRtriggerP
+actions (26.spotify.playback_platform.context.v1.behavior.ActionsRactions%
+playback_speed (RplaybackSpeedJ	 º
+OnChangeDeviceP
+trigger (26.spotify.playback_platform.context.v1.behavior.TriggerRtriggerP
+actions (26.spotify.playback_platform.context.v1.behavior.ActionsRactionsJ Ÿ
+OnChangeLocaleP
+trigger (26.spotify.playback_platform.context.v1.behavior.TriggerRtriggerP
+actions (26.spotify.playback_platform.context.v1.behavior.ActionsRactions!
+language_tag (RlanguageTag
+date_format	 (R
+dateFormat
+time_format
+ (R
+timeFormatJ à
+OnChangeQueueP
+trigger (26.spotify.playback_platform.context.v1.behavior.TriggerRtriggerP
+actions (26.spotify.playback_platform.context.v1.behavior.ActionsRactions%
+sequence_patch (RsequencePatchJ	 B3
+-spotify.playback_platform.context.v1.behaviorHPbproto3

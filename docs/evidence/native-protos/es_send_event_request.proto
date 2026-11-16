@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: es_send_event_request.proto
+syntax = "proto3";
+package spotify.event_sender.esperanto.proto;
+message SendEventRequest {
+  string event_name = 1;
+  bytes event_data = 2;
+  oneof _override_owner {
+    string override_owner = 3;
+  }
+}

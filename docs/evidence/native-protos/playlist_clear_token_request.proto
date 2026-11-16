@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: playlist_clear_token_request.proto
+syntax = "proto3";
+package spotify.playlist_esperanto.proto;
+import "response_status.proto";
+message PlaylistClearTokenRequest {
+  string uri = 1;
+}
+message PlaylistClearTokenResponse {
+  .spotify.playlist_esperanto.proto.ResponseStatus status = 1;
+}

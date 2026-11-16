@@ -1,0 +1,43 @@
+
+#policy/show_decoration_policy.protospotify.cosmos_util.protoextension_kind.proto"¡
+ShowDecorationPolicy
+link (Rlink
+name (Rname 
+description (Rdescription
+
+popularity (R
+popularity
+	publisher (R	publisher
+language (Rlanguage
+is_explicit (R
+isExplicit
+covers (Rcovers!
+num_episodes	 (RnumEpisodes+
+consumption_order
+ (RconsumptionOrder&
+media_type_enum (RmediaTypeEnum
+
+copyrights (R
+copyrights
+trailer_uri (R
+trailerUri)
+is_music_and_talk (RisMusicAndTalkE
+	extension (2'.spotify.extendedmetadata.ExtensionKindR	extension
+is_book (RisBook,
+is_creator_channel (RisCreatorChannel4
+format_list_attributes (RformatListAttributesJ"Ÿ
+ShowPlayedStateDecorationPolicy;
+latest_played_episode_link (RlatestPlayedEpisodeLink
+played_time (R
+playedTime
+is_playable (R
+isPlayable7
+playability_restriction (RplayabilityRestriction
+label (Rlabel.
+resume_episode_link (RresumeEpisodeLink"J
+ShowCollectionDecorationPolicy(
+is_in_collection (RisInCollection"a
+ ShowOfflineStateDecorationPolicy
+offline (Roffline#
+sync_progress (RsyncProgressB*
+$com.spotify.cosmos.util.policy.protoHPbproto3

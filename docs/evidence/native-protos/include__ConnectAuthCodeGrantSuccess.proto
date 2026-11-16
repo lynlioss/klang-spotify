@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: include/ConnectAuthCodeGrantSuccess.proto
+syntax = "proto2";
+package spotify.event_sender.proto;
+message ConnectAuthCodeGrantSuccess {
+  optional string auth_info_id = 1;
+  optional string client_id = 2;
+}

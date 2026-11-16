@@ -1,0 +1,12 @@
+
+&include/ResumptionRevisionSynced.protospotify.event_sender.proto"Ï
+ResumptionRevisionSynced
+key (	Rkey!
+resume_point (	RresumePoint
+	sync_type (	RsyncType
+revision_id (	R
+revisionId
+create_time (	R
+createTime
+update_time (	R
+updateTimeBH

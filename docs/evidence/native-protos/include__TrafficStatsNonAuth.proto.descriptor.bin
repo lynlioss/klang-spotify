@@ -1,0 +1,20 @@
+
+!include/TrafficStatsNonAuth.protospotify.event_sender.proto"ñ
+TrafficStatsNonAuth
+type (	Rtype
+
+first_byte (R	firstByte
+	last_byte (RlastByte
+size (Rsize
+	size_sent (RsizeSent
+error (Rerror
+url (	Rurl
+verb (	Rverb*
+payload_size_sent	 (RpayloadSizeSent)
+connection_reuse
+ (RconnectionReuse1
+sampling_probability (RsamplingProbability
+cached (Rcached#
+redirect_time (RredirectTime'
+connection_type (	RconnectionType-
+additional_context (	RadditionalContextBH

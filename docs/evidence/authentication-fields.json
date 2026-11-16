@@ -1,0 +1,253 @@
+[
+  {
+    "className": "EsAuthenticateCredentials$AppleSignInCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$AppleSignInCredentials.java",
+    "sha256": "eda8f76140017ce301646b0f79f629b102e83a0afca5318fdbd38328195d994e",
+    "fieldConstants": [
+      "public static final int AUTH_CODE_FIELD_NUMBER = 1;",
+      "public static final int BUNDLE_ID_FIELD_NUMBER = 3;",
+      "public static final int REDIRECT_URI_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$EmailAddress",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$EmailAddress.java",
+    "sha256": "9a4ad9a01c6cd5437b31d3d30080e5512d031dd3ed88a4e8c01c98cb16626166",
+    "fieldConstants": [
+      "public static final int EMAILADDRESS_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$FacebookAccessToken",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$FacebookAccessToken.java",
+    "sha256": "7ad93a07a33b5a0f861f70d6eb45b934e2c035dccbea4fc4d784bf30c2026390",
+    "fieldConstants": [
+      "public static final int ACCESSTOKEN_FIELD_NUMBER = 2;",
+      "public static final int FBUID_FIELD_NUMBER = 1;",
+      "public static final int IDTOKEN_FIELD_NUMBER = 3;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$GoogleSignInCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$GoogleSignInCredentials.java",
+    "sha256": "d051b52510cf6d4333b57c9f820a5cbdf91035c2b2aec0d11c0b109cf7f25540",
+    "fieldConstants": [
+      "public static final int AUTHCODE_FIELD_NUMBER = 1;",
+      "public static final int IDTOKEN_FIELD_NUMBER = 3;",
+      "public static final int REDIRECTURI_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$NativePassword",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$NativePassword.java",
+    "sha256": "6de84af3496c957adbef74fe1cb5b674bd43a8d6c70731f965bb611526eea4e8",
+    "fieldConstants": [
+      "public static final int ID_FIELD_NUMBER = 1;",
+      "public static final int PASSWORD_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$OneTimeToken",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$OneTimeToken.java",
+    "sha256": "eb63e3a36d3355e693574df22404c2d5cb5e15564c7adef78d4faab2994f2148",
+    "fieldConstants": [
+      "public static final int TOKEN_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$NaverSignInCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$NaverSignInCredentials.java",
+    "sha256": "618631a64da31a68caed2b4af5b254d15a899f9552f98f69b9fe57ef046b05a8",
+    "fieldConstants": [
+      "public static final int AUTHCODE_FIELD_NUMBER = 1;",
+      "public static final int REDIRECTURI_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$Password",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$Password.java",
+    "sha256": "4ef55603838d99db237ea0cb3a227e71ea72cb4b8cb018eae50bc97c0a9a70ae",
+    "fieldConstants": [
+      "public static final int HINT_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$PhoneNumber",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$PhoneNumber.java",
+    "sha256": "e7f967d323317c3b25434ede475d6fa00f9469def0ca3fd67e5c8d64123be308",
+    "fieldConstants": [
+      "public static final int COUNTRYCALLINGCODE_FIELD_NUMBER = 3;",
+      "public static final int ISOCOUNTRYCODE_FIELD_NUMBER = 2;",
+      "public static final int NUMBER_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$SamsungSignInCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$SamsungSignInCredentials.java",
+    "sha256": "96f46e524f0c353b6ca9c679fbc6b3e4334a3221d319356b4bf56791c4609d12",
+    "fieldConstants": [
+      "public static final int AUTHCODE_FIELD_NUMBER = 1;",
+      "public static final int REDIRECTURI_FIELD_NUMBER = 2;",
+      "public static final int TOKENENDPOINTURL_FIELD_NUMBER = 3;"
+    ]
+  },
+  {
+    "className": "EsCodeRequired$CodeRequired",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsCodeRequired$CodeRequired.java",
+    "sha256": "9b24b0dca84fba9d091e11dab578c21d17b3b39db58a9dd3ab3060f807a5b280",
+    "fieldConstants": [
+      "public static final int CHALLENGECODE_FIELD_NUMBER = 2;",
+      "public static final int CONTEXT_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsInteractionRequired$InteractionRequired",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsInteractionRequired$InteractionRequired.java",
+    "sha256": "911ba88588b9045a804c46ef700f13c7967038ef00e880f9c9d69d4e79810864",
+    "fieldConstants": [
+      "public static final int CONTEXT_FIELD_NUMBER = 1;",
+      "public static final int FINISH_URL_FIELD_NUMBER = 3;",
+      "public static final int INTERACTION_URL_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsRecaptchaInfo$RecaptchaInfo",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsRecaptchaInfo$RecaptchaInfo.java",
+    "sha256": "154a4f293a3d24ee39614d62ecab33dc66f9aed2a0dd3c9cd3c93fb901ac5c04",
+    "fieldConstants": [
+      "public static final int SITE_KEY_FIELD_NUMBER = 1;",
+      "public static final int TOKEN_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateResult$AuthenticateFailure",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateResult$AuthenticateFailure.java",
+    "sha256": "5f2ace7e75db31f9b6edff57e03dbbc2d493f753be2718022611e155c58a718b",
+    "fieldConstants": [
+      "public static final int FAILURE_FIELD_NUMBER = 1;",
+      "public static final int UNKNOWNFAILURE_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsSignupRequired$SignupRequired",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsSignupRequired$SignupRequired.java",
+    "sha256": "9cd9a0624811bd8b16d280742e6d12a9783965883ab1df694b4aba5bc61b12a7",
+    "fieldConstants": [
+      "public static final int BIRTHDATE_FIELD_NUMBER = 4;",
+      "public static final int EMAILALREADYREGISTERED_FIELD_NUMBER = 8;",
+      "public static final int EMAIL_FIELD_NUMBER = 2;",
+      "public static final int GENDER_FIELD_NUMBER = 5;",
+      "public static final int IDENTIFIERTOKEN_FIELD_NUMBER = 9;",
+      "public static final int ISEMAILVERIFIED_FIELD_NUMBER = 3;",
+      "public static final int ISPHONENUMBERVERIFIED_FIELD_NUMBER = 7;",
+      "public static final int NAME_FIELD_NUMBER = 1;",
+      "public static final int PHONENUMBER_FIELD_NUMBER = 6;"
+    ]
+  },
+  {
+    "className": "EsAccessToken$AccessToken",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAccessToken$AccessToken.java",
+    "sha256": "ce2ae0ede77340f136693efe622782aef8912644c950fdd247911d4114ae68c3",
+    "fieldConstants": [
+      "public static final int EXPIRESAT_FIELD_NUMBER = 3;",
+      "public static final int TOKEN_FIELD_NUMBER = 1;",
+      "public static final int TYPE_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$LegacyV3Password",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$LegacyV3Password.java",
+    "sha256": "4bb46ba393792993f8a8ee4c52dd48cfd607dc9b203d3de7c88314f1428feddb",
+    "fieldConstants": [
+      "public static final int ID_FIELD_NUMBER = 1;",
+      "public static final int PASSWORD_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$ParentChildCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$ParentChildCredentials.java",
+    "sha256": "708e13074dd384ec589921c0bdebd8f4671504f2efe03333e5321b19b2d3873a",
+    "fieldConstants": [
+      "public static final int CHILDID_FIELD_NUMBER = 1;",
+      "public static final int UNENCRYPTEDPARENTCREDENTIALS_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateResult$AuthenticateSuccess",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateResult$AuthenticateSuccess.java",
+    "sha256": "84469ffbe18c831f584310f7000c8fc55e86d6afeb705de455b3ef139fe88e03",
+    "fieldConstants": [
+      "public static final int ACCESSTOKEN_FIELD_NUMBER = 2;",
+      "public static final int AUTHBLOB_FIELD_NUMBER = 3;",
+      "public static final int USERNAME_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$AuthenticateCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$AuthenticateCredentials.java",
+    "sha256": "b494e19f04f8aad925dc39671ee4bfc04e3ab3dbe07e59960a634691e604f4e4",
+    "fieldConstants": [
+      "public static final int APPLESIGNINCREDENTIALS_FIELD_NUMBER = 8;",
+      "public static final int AUTHNPLATFORMCREDENTIAL_FIELD_NUMBER = 14;",
+      "public static final int EMAILADDRESS_FIELD_NUMBER = 13;",
+      "public static final int FACEBOOKACCESSTOKEN_FIELD_NUMBER = 9;",
+      "public static final int GOOGLESIGNINCREDENTIALS_FIELD_NUMBER = 7;",
+      "public static final int LEGACYV3PASSWORD_FIELD_NUMBER = 10;",
+      "public static final int NATIVEPASSWORD_FIELD_NUMBER = 11;",
+      "public static final int NAVERSIGNINCREDENTIALS_FIELD_NUMBER = 12;",
+      "public static final int ONETIMETOKEN_FIELD_NUMBER = 2;",
+      "public static final int PARENTCHILDCREDENTIALS_FIELD_NUMBER = 6;",
+      "public static final int PASSWORD_FIELD_NUMBER = 1;",
+      "public static final int PHONENUMBER_FIELD_NUMBER = 3;",
+      "public static final int SAMSUNGSIGNINCREDENTIALS_FIELD_NUMBER = 5;",
+      "public static final int UNENCRYPTEDSTOREDCREDENTIALS_FIELD_NUMBER = 4;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateRequest$AuthenticateRequest",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateRequest$AuthenticateRequest.java",
+    "sha256": "af1fba777a3908e0f978067d4940bdf02d8db481549f0de9af39810cfd36cfab",
+    "fieldConstants": [
+      "public static final int CREDENTIALS_FIELD_NUMBER = 1;",
+      "public static final int FLOW_ID_FIELD_NUMBER = 5;",
+      "public static final int INTERACTION_CALLBACK_URI_FIELD_NUMBER = 2;",
+      "public static final int RECAPTCHA_INFO_FIELD_NUMBER = 4;",
+      "public static final int UI_LOCALE_FIELD_NUMBER = 3;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateResult$AuthenticateResult",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateResult$AuthenticateResult.java",
+    "sha256": "a90aaa70b8c5f7f86474ddf065ef7657fbac2534d3e824477b21c5f5a957f1a9",
+    "fieldConstants": [
+      "public static final int AUTHNPLATFORMREQUIRED_FIELD_NUMBER = 6;",
+      "public static final int CODEREQUIRED_FIELD_NUMBER = 3;",
+      "public static final int FAILURE_FIELD_NUMBER = 2;",
+      "public static final int INTERACTIONREQUIRED_FIELD_NUMBER = 5;",
+      "public static final int SIGNUPREQUIRED_FIELD_NUMBER = 4;",
+      "public static final int SUCCESS_FIELD_NUMBER = 1;"
+    ]
+  }
+]

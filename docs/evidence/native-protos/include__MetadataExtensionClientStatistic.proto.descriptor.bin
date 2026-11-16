@@ -1,0 +1,33 @@
+
+.include/MetadataExtensionClientStatistic.protospotify.event_sender.proto"”
+
+ MetadataExtensionClientStatistic
+task_id (RtaskId
+
+feature_id (	R	featureId&
+is_online_param (RisOnlineParam9
+num_extensions_with_etags (RnumExtensionsWithEtags8
+num_extensions_requested (RnumExtensionsRequested2
+num_extensions_needed (RnumExtensionsNeeded,
+num_uris_requested (RnumUrisRequested&
+num_uris_needed (RnumUrisNeeded2
+num_prepared_requests	 (RnumPreparedRequests*
+num_sent_requests
+ (RnumSentRequests*
+refresh_opt_param (RrefreshOptParam8
+num_extensions_coalesced (RnumExtensionsCoalesced;
+num_attached_request_tasks (RnumAttachedRequestTasks9
+num_created_request_tasks (RnumCreatedRequestTasks
+duration_ms (R
+durationMs4
+extension_kinds_needed (RextensionKindsNeeded3
+cache_peek_duration_ms (RcachePeekDurationMs5
+request_task_error_code (RrequestTaskErrorCode3
+cache_peek_duration_ns (RcachePeekDurationNsz
+attribution_stats (2M.spotify.event_sender.proto.MetadataExtensionClientStatistic.AttributionStatsRattributionStatsÞ
+AttributionStats*
+source_feature_id (	RsourceFeatureId!
+page_context (	RpageContext%
+extension_kind (RextensionKind&
+num_uris_needed (RnumUrisNeeded,
+num_uris_requested (RnumUrisRequestedBH

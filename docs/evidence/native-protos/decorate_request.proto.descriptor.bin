@@ -1,0 +1,19 @@
+
+decorate_request.proto*spotify.show_cosmos.decorate_request.protometadata/episode_metadata.protometadata/show_metadata.proto'played_state/episode_played_state.proto$played_state/show_played_state.protoshow_episode_state.protoshow_show_state.protoshow_offline_state.proto"…
+ShowL
+show_metadata (2'.spotify.cosmos_util.proto.ShowMetadataRshowMetadatab
+show_collection_state (2..spotify.show_cosmos.proto.ShowCollectionStateRshowCollectionStateP
+show_play_state (2(.spotify.cosmos_util.proto.ShowPlayStateRshowPlayState
+link (	RlinkY
+show_offline_state (2+.spotify.show_cosmos.proto.ShowOfflineStateRshowOfflineStateJJ"Ð
+EpisodeU
+episode_metadata (2*.spotify.cosmos_util.proto.EpisodeMetadataRepisodeMetadatak
+episode_collection_state (21.spotify.show_cosmos.proto.EpisodeCollectionStateRepisodeCollectionStateb
+episode_offline_state (2..spotify.show_cosmos.proto.EpisodeOfflineStateRepisodeOfflineStateY
+episode_play_state (2+.spotify.cosmos_util.proto.EpisodePlayStateRepisodePlayState
+link (	RlinkJJJ	J	
+J
+JJJ"Ÿ
+ResponseD
+show (20.spotify.show_cosmos.decorate_request.proto.ShowRshowM
+episode (23.spotify.show_cosmos.decorate_request.proto.EpisodeRepisodeBH¢SPTShowCosmosDecorate

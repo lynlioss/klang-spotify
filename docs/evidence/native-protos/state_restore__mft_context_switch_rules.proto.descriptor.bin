@@ -1,0 +1,5 @@
+
+,state_restore/mft_context_switch_rules.proto"spotify.player.proto.state_restore"[
+MftContextSwitchRules(
+has_played_track (RhasPlayedTrack
+enabled (RenabledBH

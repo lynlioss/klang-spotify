@@ -1,0 +1,11 @@
+
+'state_restore/mft_context_history.proto"spotify.player.proto.state_restorecontext_track.proto"Œ
+MftContextHistoryEntry8
+track (2".spotify.player.proto.ContextTrackRtrack
+	timestamp (R	timestamp
+position (Rposition"å
+MftContextHistoryY
+lookup (2A.spotify.player.proto.state_restore.MftContextHistory.LookupEntryRlookupu
+LookupEntry
+key (	RkeyP
+value (2:.spotify.player.proto.state_restore.MftContextHistoryEntryRvalue:8BH

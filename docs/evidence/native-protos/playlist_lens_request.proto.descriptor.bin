@@ -1,0 +1,14 @@
+
+playlist_lens_request.proto spotify.playlist_esperanto.protoresponse_status.proto"r
+LensDefinition
+
+identifier (	R
+identifier
+active (Ractive(
+remove_by_prefix (RremoveByPrefix"q
+PlaylistLensRequest
+uri (	RuriH
+lenses (20.spotify.playlist_esperanto.proto.LensDefinitionRlenses"`
+PlaylistLensResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatusB,
+ spotify.playlist.esperanto.protoHP¢ESPbproto3

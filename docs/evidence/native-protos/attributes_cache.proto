@@ -1,0 +1,73 @@
+// Recovered descriptor. Original file: attributes_cache.proto
+syntax = "proto3";
+package spotify.playlist_cache.proto;
+import "playlist_permission.proto";
+message CachedPlaylistAttributes {
+  message FormatListAttributesEntry {
+    string key = 1;
+    string value = 2;
+  }
+  message PictureSizesEntry {
+    string key = 1;
+    string value = 2;
+  }
+  message NumItemsPerLinkTypeEntry {
+    int32 key = 1;
+    int32 value = 2;
+  }
+  repeated .spotify.playlist_cache.proto.CachedPlaylistAttributes.FormatListAttributesEntry format_list_attributes = 10;
+  repeated .spotify.playlist_cache.proto.CachedPlaylistAttributes.PictureSizesEntry picture_sizes = 11;
+  repeated int32 geoblocked_attributes = 13;
+  repeated .spotify.playlist_cache.proto.CachedPlaylistAttributes.NumItemsPerLinkTypeEntry num_items_per_link_type = 14;
+  oneof _name {
+    string name = 1;
+  }
+  oneof _length {
+    int32 length = 2;
+  }
+  oneof _collaborative {
+    bool collaborative = 3;
+  }
+  oneof _description {
+    string description = 4;
+  }
+  oneof _picture {
+    string picture = 5;
+  }
+  oneof _owner {
+    string owner = 6;
+  }
+  oneof _revision {
+    bytes revision = 7;
+  }
+  oneof _format_list_type {
+    string format_list_type = 8;
+  }
+  oneof _mosaic_uri {
+    string mosaic_uri = 9;
+  }
+  oneof _encoded_capabilities {
+    bytes encoded_capabilities = 12;
+  }
+  oneof _ai_curation_id {
+    string ai_curation_id = 15;
+  }
+  oneof _status_code {
+    int32 status_code = 16;
+  }
+  oneof _item_id_algorithm {
+    int32 item_id_algorithm = 17;
+  }
+  oneof _updated_at_ms {
+    int64 updated_at_ms = 18;
+  }
+  oneof _deleted_by_owner {
+    bool deleted_by_owner = 19;
+  }
+  oneof _is_user_created {
+    bool is_user_created = 20;
+  }
+  oneof _permission_state {
+    .spotify.playlist_permission.proto.PermissionState permission_state = 21;
+  }
+}

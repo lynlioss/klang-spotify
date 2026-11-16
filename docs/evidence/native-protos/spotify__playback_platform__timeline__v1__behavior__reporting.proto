@@ -1,0 +1,18 @@
+// Recovered descriptor. Original file: spotify/playback_platform/timeline/v1/behavior/reporting.proto
+syntax = "proto3";
+package spotify.playback_platform.timeline.v1.behavior;
+message Reporting {
+  message PlayContext {
+    string uri = 1;
+  }
+  repeated .spotify.playback_platform.timeline.v1.behavior.Reporting.PlayContext play_contexts = 1;
+  oneof _decision_id {
+    string decision_id = 2;
+  }
+  oneof _custom_reporting_attribution {
+    string custom_reporting_attribution = 3;
+  }
+  oneof _sequence_provider_id {
+    string sequence_provider_id = 4;
+  }
+}

@@ -1,0 +1,18 @@
+
+include/PuffinError.protospotify.event_sender.proto"²
+PuffinError
+playback_id (R
+playbackId
+
+error_code (R	errorCode
+	dar_md5_0 (	RdarMd50
+	dar_md5_1 (	RdarMd51
+	dar_md5_2 (	RdarMd52
+channels (Rchannels
+sample_rate (R
+sampleRate
+
+block_size (R	blockSize
+api_call	 (	RapiCall
+context
+ (	RcontextBH

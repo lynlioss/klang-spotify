@@ -1,0 +1,48 @@
+[
+  {
+    "path": "artifacts/spotify-smali.zip",
+    "bytes": 168743962,
+    "sha256": "4482c583117f5422b6a499b718751bcf9ae36f8f0f7dba0aeed84ed4b2f22be5",
+    "entries": 15,
+    "crcVerified": true
+  },
+  {
+    "path": "artifacts/spotify-java.zip",
+    "bytes": 127186620,
+    "sha256": "46a791b39b36c16ab871affcb0de4688caa86c77b13889cd5504a5a6056f1a89",
+    "entries": 103987,
+    "crcVerified": true,
+    "javaFilesByDirectory": {
+      "jadx-dex10": 6323,
+      "jadx-dex11": 10666,
+      "jadx-dex12": 7045,
+      "jadx-dex13": 273,
+      "jadx-dex14": 11,
+      "jadx-dex15": 55,
+      "jadx-dex2": 8028,
+      "jadx-dex3": 8421,
+      "jadx-dex4": 8991,
+      "jadx-dex5": 11123,
+      "jadx-dex6": 4989,
+      "jadx-dex7": 10336,
+      "jadx-dex8": 10806,
+      "jadx-dex9": 9197,
+      "jadx-primary": 7712,
+      "java-focused": 11
+    }
+  },
+  {
+    "path": "artifacts/spotify-native-analysis.zip",
+    "bytes": 64555286,
+    "sha256": "11ae9dbf63faec9262fc21a1c8e579e8936d86758540a0def1ed7e47f720febd",
+    "entries": 2695,
+    "crcVerified": true
+  },
+  {
+    "path": "artifacts/spotify-resources.zip",
+    "bytes": 49943413,
+    "sha256": "b329114295917128d300330645e671dfddbade3c046af31c5312667ce918f6b9",
+    "entries": 4342,
+    "crcVerified": true
+  }
+]

@@ -1,0 +1,287 @@
+Source: analysis/spotify/jadx-primary/sources/p/v7c.java
+SHA256: 6b9d058ed99d1dae67bdb22f92919c6ecfb0e9bc56e5068cacc1dcdcbe3a791a
+Lines: 1-283
+
+1: package p;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes.dex */
+4: public final class v7c implements p.qc90 {
+5:     public final /* synthetic */ byte a;
+6:     public final java.lang.Object b;
+7: 
+8:     public v7c(p.dp01 r1, p.ef20 r2) {
+9:             r0 = this;
+10:             r1 = 1
+11:             r0.a = r1
+12:             r0.<init>()
+13:             r0.b = r2
+14:             return
+15:     }
+16: 
+17:     public v7c(p.ky01 r2) {
+18:             r1 = this;
+19:             r0 = 0
+20:             r1.a = r0
+21:             r1.<init>()
+22:             r1.b = r2
+23:             return
+24:     }
+25: 
+26:     public final p.fh31 a(p.hy01 r6) {
+27:             r5 = this;
+28:             byte r0 = r5.a
+29:             switch(r0) {
+30:                 case 0: goto Lbe;
+31:                 default: goto L5;
+32:             }
+33:         L5:
+34:             p.a631 r0 = r6.e
+35:             p.hf60 r1 = r0.c
+36:             java.lang.String r2 = "No-Webgate-Authentication"
+37:             java.lang.String r1 = r1.c(r2)
+38:             if (r1 == 0) goto L27
+39:             p.ne r5 = r0.b()
+40:             java.lang.Object r0 = r5.c
+41:             p.ff60 r0 = (p.ff60) r0
+42:             r0.w(r2)
+43:             p.a631 r0 = new p.a631
+44:             r0.<init>(r5)
+45:             p.fh31 r5 = r6.b(r0)
+46:             goto Lbd
+47:         L27:
+48:             p.prc r1 = r0.a()
+49:             boolean r1 = r1.j
+50:             if (r1 == 0) goto L35
+51:             p.fh31 r5 = r6.b(r0)
+52:             goto Lbd
+53:         L35:
+54:             p.bf70 r1 = r0.a
+55:             boolean r2 = r1.f()
+56:             java.lang.String r1 = r1.d
+57:             if (r2 != 0) goto L41
+58:             goto Lb4
+59:         L41:
+60:             java.lang.String r2 = "spclient.wg.spotify.com"
+61:             boolean r2 = r2.equals(r1)
+62:             r3 = 0
+63:             if (r2 != 0) goto L8b
+64:             java.lang.String r2 = "exp.wg.spotify.com"
+65:             boolean r2 = r2.equals(r1)
+66:             if (r2 != 0) goto L8b
+67:             java.lang.String r2 = "wgint.spotify.net"
+68:             boolean r2 = r2.equals(r1)
+69:             if (r2 != 0) goto L8b
+70:             java.lang.String r2 = "image-upload.spotify.com"
+71:             boolean r2 = r2.equals(r1)
+72:             if (r2 != 0) goto L8b
+73:             java.lang.String r2 = "api.spotify.com"
+74:             boolean r2 = r2.equals(r1)
+75:             if (r2 != 0) goto L8b
+76:             java.lang.String r2 = "api-partner.spotify.com"
+77:             boolean r2 = r2.equals(r1)
+78:             if (r2 != 0) goto L8b
+79:             java.lang.String r2 = "partnerapi.spotify.net"
+80:             boolean r2 = r2.equals(r1)
+81:             if (r2 == 0) goto L7b
+82:             goto L8b
+83:         L7b:
+84:             java.lang.Class<p.tr90> r2 = p.tr90.class
+85:             java.lang.Object r2 = r0.c(r2)
+86:             if (r2 == 0) goto Lb4
+87:             java.lang.String r2 = ".spotify.com"
+88:             boolean r1 = p.s3d1.b0(r1, r2, r3)
+89:             if (r1 == 0) goto Lb4
+90:         L8b:
+91:             java.lang.Class<java.lang.Object> r1 = java.lang.Object.class
+92:             p.zv11 r2 = p.jv11.a
+93:             p.xwa0 r1 = r2.b(r1)
+94:             r2 = r1
+95:             p.ahg r2 = (p.ahg) r2
+96:             java.lang.Class r2 = r2.n()
+97:             p.lo5 r4 = r0.e
+98:             java.lang.Object r1 = r4.J(r1)
+99:             r2.cast(r1)
+100:             java.lang.String r1 = "Authorization"
+101:             p.hf60 r2 = r0.c
+102:             java.lang.String r1 = r2.c(r1)
+103:             if (r1 == 0) goto Lb9
+104:             int r1 = r1.length()
+105:             if (r1 != 0) goto Lb4
+106:             goto Lb9
+107:         Lb4:
+108:             p.fh31 r5 = r6.b(r0)
+109:             goto Lbd
+110:         Lb9:
+111:             p.fh31 r5 = r5.b(r6, r0, r3)
+112:         Lbd:
+113:             return r5
+114:         Lbe:
+115:             p.a631 r0 = r6.e
+116:             p.fh31 r5 = r6.b(r0)     // Catch: java.lang.IllegalArgumentException -> Lc5
+117:             goto Le4
+118:         Lc5:
+119:             java.lang.Object r5 = r5.b
+120:             p.ky01 r5 = (p.ky01) r5
+121:             p.lrc r1 = r5.c
+122:             if (r1 == 0) goto Le0
+123:             r1.a()     // Catch: java.io.IOException -> Ld1
+124:             goto Le0
+125:         Ld1:
+126:             java.io.File r5 = r5.a
+127:             java.lang.String r5 = r5.getAbsolutePath()
+128:             java.lang.Object[] r5 = new java.lang.Object[]{r5}
+129:             java.lang.String r1 = "Could not clear cache, %s"
+130:             com.spotify.base.java.logging.Logger.d(r1, r5)
+131:         Le0:
+132:             p.fh31 r5 = r6.b(r0)
+133:         Le4:
+134:             return r5
+135:     }
+136: 
+137:     public p.fh31 b(p.hy01 r19, p.a631 r20, boolean r21) {
+138:             r18 = this;
+139:             r0 = r18
+140:             r1 = r19
+141:             r2 = r20
+142:             java.lang.Object r3 = r0.b
+143:             p.ef20 r3 = (p.ef20) r3
+144:             io.reactivex.rxjava3.core.Single r3 = r3.x()
+145:             p.lj8 r4 = new p.lj8
+146:             p.ai8 r5 = new p.ai8
+147:             java.lang.String r6 = "Timed out"
+148:             r7 = 0
+149:             r5.<init>(r7, r6)
+150:             r4.<init>(r5)
+151:             io.reactivex.rxjava3.core.Single r4 = io.reactivex.rxjava3.core.Single.just(r4)
+152:             r5 = 10000(0x2710, double:4.9407E-320)
+153:             java.util.concurrent.TimeUnit r8 = java.util.concurrent.TimeUnit.MILLISECONDS
+154:             io.reactivex.rxjava3.core.Single r3 = r3.timeout(r5, r8, r4)
+155:             java.lang.Object r3 = r3.blockingGet()
+156:             p.pj8 r3 = (p.pj8) r3
+157:             boolean r4 = r3 instanceof p.oj8
+158:             if (r4 == 0) goto L7f
+159:             p.oj8 r3 = (p.oj8) r3
+160:             p.jj8 r3 = r3.a
+161:             p.wd r3 = r3.b
+162:             if (r3 == 0) goto L79
+163:             java.lang.String r3 = r3.b
+164:             p.ne r4 = r2.b()
+165:             java.lang.String r5 = "Bearer "
+166:             java.lang.String r3 = p.k3d.m(r5, r3)
+167:             java.lang.Object r5 = r4.c
+168:             p.ff60 r5 = (p.ff60) r5
+169:             java.lang.String r6 = "Authorization"
+170:             r5.a(r6, r3)
+171:             p.a631 r3 = new p.a631
+172:             r3.<init>(r4)
+173:             p.fh31 r3 = r1.b(r3)
+174:             int r4 = r3.d
+175:             r5 = 401(0x191, float:5.62E-43)
+176:             if (r4 != r5) goto L78
+177:             if (r21 != 0) goto L78
+178:             java.lang.String r4 = "client-token-error"
+179:             p.hf60 r5 = r3.f
+180:             java.lang.String r4 = r5.c(r4)
+181:             if (r4 != 0) goto L6a
+182:             goto L6b
+183:         L6a:
+184:             r7 = r4
+185:         L6b:
+186:             if (r7 != 0) goto L78
+187:             p.ii31 r3 = r3.g
+188:             r3.close()
+189:             r3 = 1
+190:             p.fh31 r0 = r0.b(r1, r2, r3)
+191:             return r0
+192:         L78:
+193:             return r3
+194:         L79:
+195:             java.lang.String r0 = "Received null access token"
+196:             p.eg.m(r0)
+197:             return r7
+198:         L7f:
+199:             boolean r0 = r3 instanceof p.lj8
+200:             r1 = 0
+201:             r4 = 20
+202:             java.lang.String r5 = "plain/text"
+203:             p.i1z0 r6 = p.i1z0.c
+204:             p.dp01 r17 = p.osg1.u0
+205:             if (r0 == 0) goto Lde
+206:             p.lj8 r3 = (p.lj8) r3
+207:             p.ai8 r0 = r3.a
+208:             java.lang.String r0 = r0.b
+209:             p.bf70 r3 = r2.a
+210:             java.lang.StringBuilder r7 = new java.lang.StringBuilder
+211:             java.lang.String r8 = "network error while attempting to make a request: "
+212:             r7.<init>(r8)
+213:             r7.append(r0)
+214:             java.lang.String r0 = " for url "
+215:             r7.append(r0)
+216:             r7.append(r3)
+217:             java.lang.String r3 = r7.toString()
+218:             p.hi31 r0 = p.ii31.a
+219:             java.util.ArrayList r0 = new java.util.ArrayList
+220:             r0.<init>(r4)
+221:             p.ix11 r4 = p.fni0.e
+222:             p.fni0 r4 = p.t3r0.y(r5)
+223:             p.hi31 r7 = p.lo5.C(r3, r4)
+224:             r2 = r6
+225:             p.hf60 r6 = new p.hf60
+226:             java.lang.String[] r1 = new java.lang.String[r1]
+227:             java.lang.Object[] r0 = r0.toArray(r1)
+228:             java.lang.String[] r0 = (java.lang.String[]) r0
+229:             r6.<init>(r0)
+230:             p.fh31 r0 = new p.fh31
+231:             r4 = 503(0x1f7, float:7.05E-43)
+232:             r5 = 0
+233:             r8 = 0
+234:             r9 = 0
+235:             r10 = 0
+236:             r11 = 0
+237:             r12 = 0
+238:             r14 = 0
+239:             r16 = 0
+240:             r1 = r20
+241:             r0.<init>(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r14, r16, r17)
+242:             return r0
+243:         Lde:
+244:             r2 = r6
+245:             boolean r0 = r3 instanceof p.kj8
+246:             if (r0 == 0) goto L119
+247:             p.hi31 r0 = p.ii31.a
+248:             java.util.ArrayList r0 = new java.util.ArrayList
+249:             r0.<init>(r4)
+250:             p.ix11 r3 = p.fni0.e
+251:             p.fni0 r3 = p.t3r0.y(r5)
+252:             java.lang.String r4 = "the credentials used are invalid"
+253:             p.hi31 r7 = p.lo5.C(r4, r3)
+254:             p.hf60 r6 = new p.hf60
+255:             java.lang.String[] r1 = new java.lang.String[r1]
+256:             java.lang.Object[] r0 = r0.toArray(r1)
+257:             java.lang.String[] r0 = (java.lang.String[]) r0
+258:             r6.<init>(r0)
+259:             p.fh31 r0 = new p.fh31
+260:             r3 = r4
+261:             r4 = 401(0x191, float:5.62E-43)
+262:             r5 = 0
+263:             r8 = 0
+264:             r9 = 0
+265:             r10 = 0
+266:             r11 = 0
+267:             r12 = 0
+268:             r14 = 0
+269:             r16 = 0
+270:             r1 = r20
+271:             r0.<init>(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r14, r16, r17)
+272:             return r0
+273:         L119:
+274:             boolean r0 = r3 instanceof p.mj8
+275:             if (r0 == 0) goto L123
+276:             java.lang.String r0 = "Unexpected error while requesting access token: "
+277:             p.dyn0.A(r3, r0)
+278:             return r7
+279:         L123:
+280:             p.eg.o()
+281:             return r7
+282:     }
+283: }

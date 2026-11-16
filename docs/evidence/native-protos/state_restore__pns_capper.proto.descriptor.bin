@@ -1,0 +1,9 @@
+
+state_restore/pns_capper.proto"spotify.player.proto.state_restore"à
+	PnsCapper
+cap_day (RcapDay
+	cap_month (RcapMonth!
+stream_count (RstreamCount
+timecap (Rtimecap9
+remote_enable_dynamic_cap (RremoteEnableDynamicCap%
+remote_timecap (RremoteTimecapBH

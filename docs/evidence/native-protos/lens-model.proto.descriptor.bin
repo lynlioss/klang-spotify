@@ -1,0 +1,16 @@
+
+lens-model.protospotify.lens.proto"&
+Lens
+
+identifier (	R
+identifier")
+
+LensStatus
+	http_code (RhttpCode"
+	LensState
+
+identifier (	R
+identifier
+revision (Rrevision6
+status (2.spotify.lens.proto.LensStatusRstatusB0
+com.spotify.lens.model.protoBLensModelProtoHbproto3

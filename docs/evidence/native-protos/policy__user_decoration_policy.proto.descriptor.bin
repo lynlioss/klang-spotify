@@ -1,0 +1,20 @@
+
+#policy/user_decoration_policy.protospotify.playlist.cosmos.proto"¤
+UserDecorationPolicy
+username (Rusername
+link (Rlink
+name (Rname
+image (Rimage
+	thumbnail (R	thumbnail
+color (Rcolor"ø
+CollaboratorPolicyG
+user (23.spotify.playlist.cosmos.proto.UserDecorationPolicyRuser&
+number_of_items (RnumberOfItems(
+number_of_tracks (RnumberOfTracks,
+number_of_episodes (RnumberOfEpisodes
+is_owner (RisOwner"§
+"CollaboratingUsersDecorationPolicy
+count (Rcount
+limit (RlimitU
+collaborator (21.spotify.playlist.cosmos.proto.CollaboratorPolicyRcollaboratorB'
+!com.spotify.playlist.policy.protoHPbproto3

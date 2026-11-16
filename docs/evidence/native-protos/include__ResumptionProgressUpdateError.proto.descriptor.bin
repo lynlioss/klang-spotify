@@ -1,0 +1,15 @@
+
++include/ResumptionProgressUpdateError.protospotify.event_sender.proto"­
+ResumptionProgressUpdateError
+
+error_type (	R	errorType
+item_uri (	RitemUri'
+page_identifier (	RpageIdentifier.
+use_case_identifier (	RuseCaseIdentifier
+position_ms (R
+positionMs
+duration_ms (R
+durationMs
+reason (	Rreason
+playback_id (	R
+playbackIdBH

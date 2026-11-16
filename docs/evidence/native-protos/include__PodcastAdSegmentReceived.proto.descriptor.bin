@@ -1,0 +1,16 @@
+
+&include/PodcastAdSegmentReceived.protospotify.event_sender.proto"®
+PodcastAdSegmentReceived
+episode_uri (	R
+episodeUri
+playback_id (	R
+playbackId
+slots (	Rslots
+is_audio (RisAudio
+asset_id (	RassetId
+source (	Rsource
+
+request_id (	R	requestId.
+metadata_request_id (	RmetadataRequestId
+
+latency_ms	 (R	latencyMsBH

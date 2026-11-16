@@ -1,0 +1,16 @@
+
+)state_restore/music_injection_rules.proto"spotify.player.proto.state_restore"u
+InjectionSegment
+	track_uri (	RtrackUri
+start (Rstart
+stop (Rstop
+duration (Rduration"ª
+InjectionModel
+episode_uri (	R
+episodeUri%
+total_duration (RtotalDurationP
+segments (24.spotify.player.proto.state_restore.InjectionSegmentRsegments"“
+MusicInjectionRules[
+injection_model (22.spotify.player.proto.state_restore.InjectionModelRinjectionModel
+playback_id (R
+playbackIdBH

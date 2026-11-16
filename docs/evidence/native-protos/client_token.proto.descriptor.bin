@@ -1,0 +1,10 @@
+
+client_token.proto$spotify.clienttoken.serialization.v0"%
+TokenDomain
+domain (	Rdomain"Ô
+ClientToken
+token (	Rtoken0
+expires_at_timestamp (RexpiresAtTimestamp0
+refresh_at_timestamp (RrefreshAtTimestampK
+domains (21.spotify.clienttoken.serialization.v0.TokenDomainRdomainsB*
+$spotify.clienttoken.serialization.v0HPbproto3

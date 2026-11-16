@@ -1,0 +1,9 @@
+
+/collection_get_bucket_sync_status_request.protospotify.collection_cosmos.protostatus.proto"G
+$CollectionGetBucketSyncStatusRequest
+bucket_name (	R
+bucketName"…
+%CollectionGetBucketSyncStatusResponse?
+status (2'.spotify.collection_cosmos.proto.StatusRstatus
+	is_synced (RisSyncedB.
+"spotify.collection.esperanto.protoHP¢ESPbproto3

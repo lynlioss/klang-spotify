@@ -1,0 +1,17 @@
+// Recovered descriptor. Original file: policy/supported_link_types_in_playlists.proto
+syntax = "proto3";
+package spotify.playlist.cosmos.proto;
+enum LinkType {
+  EMPTY = 0;
+  ARTIST = 1;
+  ALBUM = 2;
+  TRACK = 4;
+  LOCAL_TRACK = 9;
+  SHOW = 62;
+  EPISODE = 63;
+  CLIP = 92;
+  PODCAST_CHAPTER = 96;
+  KALLAX = 100;
+  USER_HIGHLIGHT = 101;
+  LISTENING_STATS = 107;
+}

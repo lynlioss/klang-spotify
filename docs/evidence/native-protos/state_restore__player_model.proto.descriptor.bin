@@ -1,0 +1,27 @@
+
+ state_restore/player_model.proto"spotify.player.proto.state_restoregoogle/protobuf/timestamp.protocontext_player_options.proto(state_restore/player_session_queue.proto"ö
+PlayerModelD
+options (2*.spotify.player.proto.ContextPlayerOptionsRoptionsh
+configuration (2B.spotify.player.proto.state_restore.PlayerModel.ConfigurationEntryRconfiguration[
+session_queue (26.spotify.player.proto.state_restore.PlayerSessionQueueRsessionQueuem
+last_advance_reason (2=.spotify.player.proto.state_restore.PlayerModel.AdvanceReasonRlastAdvanceReasong
+last_start_reason (2;.spotify.player.proto.state_restore.PlayerModel.StartReasonRlastStartReason"
+prev_state_id (	RprevStateId*
+override_state_id (	RoverrideStateIdd
+!play_queue_expiration_timer_start (2.google.protobuf.TimestampRplayQueueExpirationTimerStart@
+ConfigurationEntry
+key (	Rkey
+value (	Rvalue:8"”
+AdvanceReason
+SKIP_TO_PREV_TRACK
+SKIP_TO_NEXT_TRACK
+EXTERNAL_ADVANCE
+INTERRUPTED
+SWITCHED_TO_VIDEO
+SWITCHED_TO_AUDIO"s
+StartReason
+PLAY_CONTEXT
+PLAY_CONTEXT_TRACK
+STATE_RESTORE
+REMOTE_TRANSFER
+REMOTE_RESTOREBH

@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: streaming_rule.proto
+syntax = "proto3";
+package spotify.stream_reporting_esperanto.proto;
+enum StreamingRule {
+  STREAMING_RULE_NONE = 0;
+  STREAMING_RULE_DMCA_RADIO = 1;
+  STREAMING_RULE_PREVIEW = 2;
+  STREAMING_RULE_WIFI = 3;
+  STREAMING_RULE_SHUFFLE_MODE = 4;
+  STREAMING_RULE_TABLET_FREE = 5;
+}

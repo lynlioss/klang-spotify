@@ -1,0 +1,80 @@
+// Recovered descriptor. Original file: artisanal_cast_group_control_messages.proto
+syntax = "proto3";
+package spotify.connect.discovery.cast.esperanto.proto;
+enum ArtisanalCastGroupControlConnectionState {
+  ARTISANAL_CAST_GROUP_CONTROL_CONNECTION_STATE_IDLE = 0;
+  ARTISANAL_CAST_GROUP_CONTROL_CONNECTION_STATE_CONNECTED = 1;
+  ARTISANAL_CAST_GROUP_CONTROL_CONNECTION_STATE_MIGRATING = 2;
+  ARTISANAL_CAST_GROUP_CONTROL_CONNECTION_STATE_RECOVERING = 3;
+  ARTISANAL_CAST_GROUP_CONTROL_CONNECTION_STATE_ADOPTING = 4;
+}
+enum ArtisanalCastGroupControlMutationOperation {
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_OPERATION_NONE = 0;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_OPERATION_ADD_MEMBER = 1;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_OPERATION_REMOVE_MEMBER = 2;
+}
+enum ArtisanalCastGroupControlMutationStatus {
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_STATUS_IDLE = 0;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_STATUS_PENDING = 1;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_STATUS_ACCEPTED = 2;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_STATUS_MIGRATING = 3;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_STATUS_COMPLETED = 4;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_STATUS_FAILED = 5;
+}
+enum ArtisanalCastGroupControlMutationError {
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_ERROR_NONE = 0;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_ERROR_DISABLED = 1;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_ERROR_NO_ACTIVE_SESSION = 2;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_ERROR_BUSY = 3;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_ERROR_TARGET_NOT_FOUND = 4;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_ERROR_OPERATION_NOT_ALLOWED = 5;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_ERROR_TIMEOUT = 6;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_ERROR_RECEIVER_REJECTED = 7;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_ERROR_MIGRATION_FAILED = 8;
+  ARTISANAL_CAST_GROUP_CONTROL_MUTATION_ERROR_INTERNAL = 9;
+}
+message ArtisanalCastGroupControlDevice {
+  string connect_state_identifier = 1;
+  string raw_endpoint_id = 2;
+  string name = 3;
+  uint64 capabilities = 4;
+  double volume_level = 5;
+  bool muted = 6;
+  bool is_group_member = 7;
+  bool is_groupable = 8;
+  bool is_removable = 9;
+}
+message ArtisanalCastGroupControlMutation {
+  int64 request_id = 1;
+  .spotify.connect.discovery.cast.esperanto.proto.ArtisanalCastGroupControlMutationOperation operation = 2;
+  .spotify.connect.discovery.cast.esperanto.proto.ArtisanalCastGroupControlMutationStatus status = 3;
+  .spotify.connect.discovery.cast.esperanto.proto.ArtisanalCastGroupControlMutationError error = 4;
+  string raw_endpoint_id = 5;
+}
+message ArtisanalCastGroupControlSnapshot {
+  bool available = 1;
+  .spotify.connect.discovery.cast.esperanto.proto.ArtisanalCastGroupControlConnectionState connection_state = 2;
+  uint64 generation = 3;
+  repeated .spotify.connect.discovery.cast.esperanto.proto.ArtisanalCastGroupControlDevice devices = 4;
+  .spotify.connect.discovery.cast.esperanto.proto.ArtisanalCastGroupControlMutation mutation = 5;
+  string active_group_connect_state_identifier = 6;
+}
+message ArtisanalCastGroupControlMutationRequest {
+  string raw_endpoint_id = 1;
+}
+message ArtisanalCastGroupControlMutationStartResult {
+  int64 request_id = 1;
+  .spotify.connect.discovery.cast.esperanto.proto.ArtisanalCastGroupControlMutationError error = 2;
+}
+message ArtisanalCastGroupControlMemberVolumeRequest {
+  string raw_endpoint_id = 1;
+  double volume_level = 2;
+}
+message ArtisanalCastGroupControlMemberMutedRequest {
+  string raw_endpoint_id = 1;
+  bool muted = 2;
+}
+message ArtisanalCastGroupControlVolumeStartResult {
+  int64 request_id = 1;
+  .spotify.connect.discovery.cast.esperanto.proto.ArtisanalCastGroupControlMutationError error = 2;
+}

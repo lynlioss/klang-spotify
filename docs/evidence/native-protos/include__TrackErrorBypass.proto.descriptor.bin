@@ -1,0 +1,27 @@
+
+include/TrackErrorBypass.protospotify.event_sender.proto"·
+TrackErrorBypass
+
+error_code (R	errorCode#
+error_message (	RerrorMessage%
+error_category (	RerrorCategory
+playback_id (R
+playbackId
+track_id (	RtrackId
+file_id (RfileId
+position_ms (R
+positionMs)
+client_timestamp (RclientTimestamp
+
+audiocodec	 (	R
+audiocodec
+bitrate
+ (Rbitrate%
+external_track (RexternalTrack$
+is_retry_event (RisRetryEvent
+retry_count (R
+retryCount!
+retry_reason (	RretryReason
+max_retries (R
+maxRetries+
+retries_exhausted (RretriesExhaustedBH

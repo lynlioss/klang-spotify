@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: es_context_track.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+message ContextTrack {
+  message MetadataEntry {
+    string key = 1;
+    string value = 2;
+  }
+  string uri = 1;
+  string uid = 2;
+  repeated .spotify.player.esperanto.proto.ContextTrack.MetadataEntry metadata = 3;
+}

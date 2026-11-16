@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: es_automix_bundle.proto
+syntax = "proto3";
+package spotify.automix.bundle.esperanto.proto;
+import "mixing_bundle.proto";
+message GetMixingBundleRequest {
+}
+message GetMixingBundleResponse {
+  .spotify.automix.bundle.proto.MixingBundle mixing_bundle = 1;
+}
+service AutomixBundle {
+  rpc GetMixingBundle (.spotify.automix.bundle.esperanto.proto.GetMixingBundleRequest) returns (.spotify.automix.bundle.esperanto.proto.GetMixingBundleResponse);
+}

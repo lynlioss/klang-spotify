@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: play_request_state.proto
+syntax = "proto3";
+package spotify.list_player.proto;
+message PlayRequestState {
+  oneof _play_request_id {
+    string play_request_id = 1;
+  }
+}

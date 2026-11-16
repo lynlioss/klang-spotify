@@ -1,0 +1,16 @@
+
+!include/ShuffleContextEvent.protospotify.event_sender.proto"Ç
+ShuffleContextEvent*
+player_session_id (	RplayerSessionId#
+history_aware (RhistoryAware)
+track_separation (RtrackSeparation+
+artist_separation (RartistSeparation.
+history_track_count (RhistoryTrackCount=
+context_history_track_count (RcontextHistoryTrackCount.
+context_track_count (RcontextTrackCount!
+max_distance (RmaxDistance
+max_size	 (RmaxSize:
+shuffle_algorithm_setting
+ (	RshuffleAlgorithmSetting:
+context_shuffle_algorithm (	RcontextShuffleAlgorithm2
+shuffle_sequence_uuid (	RshuffleSequenceUuidBH

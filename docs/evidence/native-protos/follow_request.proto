@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: follow_request.proto
+syntax = "proto3";
+package spotify.socialgraph_esperanto.proto;
+import "socialgraph_response_status.proto";
+message FollowRequest {
+  repeated string username = 1;
+  bool follow = 2;
+}
+message FollowRequestV4 {
+  string username = 1;
+  bool follow = 2;
+}
+message FollowResponse {
+  .spotify.socialgraph_esperanto.proto.ResponseStatus status = 1;
+}

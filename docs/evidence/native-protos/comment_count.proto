@@ -1,0 +1,6 @@
+// Recovered descriptor. Original file: comment_count.proto
+syntax = "proto3";
+package spotify.extendedmetadata.commentcount.v1;
+message GetCommentCountMetadataResponse {
+  int64 count = 1;
+}

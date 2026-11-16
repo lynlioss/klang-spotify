@@ -1,0 +1,9 @@
+
+)include/ConnectAuthCodeGrantFailure.protospotify.event_sender.proto" 
+ConnectAuthCodeGrantFailure 
+auth_info_id (	R
+authInfoId
+	client_id (	RclientId
+
+error_code (R	errorCode#
+error_message (	RerrorMessageBH

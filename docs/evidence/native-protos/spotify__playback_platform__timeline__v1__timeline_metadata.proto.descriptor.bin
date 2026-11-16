@@ -1,0 +1,10 @@
+
+=spotify/playback_platform/timeline/v1/timeline_metadata.proto%spotify.playback_platform.timeline.v1Bspotify/playback_platform/external/legacy/v1/legacy_metadata.proto;spotify/playback_platform/timeline/v1/metadata/artist.proto"ß
+TimelineMetadataa
+unmapped (2E.spotify.playback_platform.timeline.v1.TimelineMetadata.UnmappedEntryRunmappedP
+artists (26.spotify.playback_platform.timeline.v1.metadata.ArtistRartistsY
+legacy° (2<.spotify.playback_platform.external.legacy.v1.LegacyMetadataBRlegacy;
+UnmappedEntry
+key (	Rkey
+value (	Rvalue:8B+
+%spotify.playback_platform.timeline.v1HPbproto3

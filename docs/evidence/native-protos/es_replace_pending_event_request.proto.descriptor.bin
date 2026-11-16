@@ -1,0 +1,10 @@
+
+&es_replace_pending_event_request.proto&spotify.pending_events.esperanto.proto"°
+ReplacePendingEventRequest(
+token_event_name (	RtokenEventName*
+token_sequence_no (RtokenSequenceNo
+
+proto_name (	R	protoName
+
+proto_data (R	protoDataB6
+*com.spotify.pending_events.esperanto.protoHP¢ESPbproto3

@@ -1,0 +1,16 @@
+
+'include/ConnectInstallationResult.protospotify.event_sender.proto"˜
+ConnectInstallationResult
+result (	Rresult
+device_type (	R
+deviceType!
+device_model (	RdeviceModel!
+device_brand (	RdeviceBrand
+duration (Rduration4
+installation_debug_log (	RinstallationDebugLog(
+target_device_id (	RtargetDeviceId8
+final_installation_state (	RfinalInstallationState
+
+error_code	 (	R	errorCode'
+interaction_ids
+ (	RinteractionIdsBH

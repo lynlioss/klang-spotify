@@ -1,0 +1,12 @@
+
+0include/StreamReportingStrictModeViolation.protospotify.event_sender.proto"Ÿ
+"StreamReportingStrictModeViolation
+	stream_id (RstreamId*
+clip_playback_ids (RclipPlaybackIds/
+orchestration_stack (	RorchestrationStack'
+playback_stacks (	RplaybackStacks!
+core_version (RcoreVersion
+	ms_played (RmsPlayed.
+ms_played_deviation (RmsPlayedDeviation8
+start_position_deviation (RstartPositionDeviation,
+stream_playback_id	 (RstreamPlaybackIdBH

@@ -1,0 +1,15 @@
+
+music_video_node.protospotify.player.prototrack_instance.prototransition_map.proto"ç
+MusicVideoNode
+	video_gid (	RvideoGid)
+associated_audio (	RassociatedAudio)
+associated_video (	RassociatedVideoO
+switched_to_track (2#.spotify.player.proto.TrackInstanceRswitchedToTrackJ
+original_track (2#.spotify.player.proto.TrackInstanceRoriginalTrack[
+original_transition_map (2#.spotify.player.proto.TransitionMapRoriginalTransitionMap;
+unmapped_switched_to_audio (RunmappedSwitchedToAudio
+	did_query (RdidQuery6
+did_transitionmap_query	 (RdidTransitionmapQuery*
+audio_is_filtered
+ (RaudioIsFiltered*
+video_is_filtered (RvideoIsFilteredBH

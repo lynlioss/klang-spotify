@@ -1,0 +1,12 @@
+
+include/PlaylistSyncEvent.protospotify.event_sender.proto"ß
+PlaylistSyncEvent
+playlist_id (	R
+playlistId
+is_playlist (R
+isPlaylist!
+timestamp_ms (RtimestampMs
+
+error_code (R	errorCode+
+event_description (	ReventDescription
+list_uri (	RlistUriBH

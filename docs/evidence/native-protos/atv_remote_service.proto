@@ -1,0 +1,88 @@
+// Recovered descriptor. Original file: atv_remote_service.proto
+syntax = "proto3";
+package spotify.atv_remote.esperanto.proto;
+import "google/protobuf/empty.proto";
+enum AtvPairingError {
+  ATV_PAIRING_ERROR_UNSPECIFIED = 0;
+  ATV_PAIRING_ERROR_INVALID_PIN_FORMAT = 1;
+  ATV_PAIRING_ERROR_HAP_AUTHENTICATION = 2;
+  ATV_PAIRING_ERROR_HAP_BACKOFF = 3;
+  ATV_PAIRING_ERROR_HAP_MAX_PEERS = 4;
+  ATV_PAIRING_ERROR_HAP_MAX_TRIES = 5;
+  ATV_PAIRING_ERROR_HAP_UNAVAILABLE = 6;
+  ATV_PAIRING_ERROR_HAP_BUSY = 7;
+  ATV_PAIRING_ERROR_UNKNOWN_HAP_ERROR = 8;
+  ATV_PAIRING_ERROR_DEVICE_NOT_RESPONDING = 9;
+  ATV_PAIRING_ERROR_CONNECTION_LOST = 10;
+  ATV_PAIRING_ERROR_UNKNOWN = 11;
+}
+enum AtvRequest {
+  ATV_REQUEST_UNSPECIFIED = 0;
+  ATV_REQUEST_FETCH_ATTENTION_STATE = 1;
+  ATV_REQUEST_FETCH_APPLICATIONS = 2;
+  ATV_REQUEST_PLAY_PAUSE = 3;
+  ATV_REQUEST_LAUNCH_SPOTIFY = 4;
+  ATV_REQUEST_LAUNCH_SPOTIFIER = 5;
+}
+message AtvDeviceInfo {
+  message TxtRecordsEntry {
+    string key = 1;
+    string value = 2;
+  }
+  string name = 1;
+  string host = 2;
+  uint32 port = 3;
+  string ip = 4;
+  repeated .spotify.atv_remote.esperanto.proto.AtvDeviceInfo.TxtRecordsEntry txt_records = 5;
+  bool paired = 6;
+}
+message StateRequest {
+  bool hide_paired = 1;
+}
+message StateResponse {
+  repeated .spotify.atv_remote.esperanto.proto.AtvDeviceInfo devices = 1;
+}
+message AtvStartPairingRequest {
+  string ip = 1;
+  uint32 port = 2;
+  string identifier = 3;
+}
+message AtvSubmitPinRequest {
+  uint32 pin = 1;
+}
+message AtvForgetDeviceRequest {
+  string identifier = 1;
+}
+message AtvPairingResponse {
+  bool success = 1;
+  string error_message = 2;
+  .spotify.atv_remote.esperanto.proto.AtvPairingError error = 3;
+}
+message AtvStartSessionRequest {
+  string ip = 1;
+  uint32 port = 2;
+  string identifier = 3;
+}
+message AtvSessionResponse {
+  bool success = 1;
+  string error_message = 2;
+}
+message AtvSendRequestRequest {
+  .spotify.atv_remote.esperanto.proto.AtvRequest request = 1;
+}
+message AtvRequestResponse {
+  bool success = 1;
+  string error_message = 2;
+  string response = 3;
+}
+service AtvRemoteService {
+  rpc StartDiscovery (.google.protobuf.Empty) returns (.google.protobuf.Empty);
+  rpc StopDiscovery (.google.protobuf.Empty) returns (.google.protobuf.Empty);
+  rpc State (.spotify.atv_remote.esperanto.proto.StateRequest) returns (stream .spotify.atv_remote.esperanto.proto.StateResponse);
+  rpc StartPairing (.spotify.atv_remote.esperanto.proto.AtvStartPairingRequest) returns (.spotify.atv_remote.esperanto.proto.AtvPairingResponse);
+  rpc SubmitPin (.spotify.atv_remote.esperanto.proto.AtvSubmitPinRequest) returns (.spotify.atv_remote.esperanto.proto.AtvPairingResponse);
+  rpc ForgetDevice (.spotify.atv_remote.esperanto.proto.AtvForgetDeviceRequest) returns (.spotify.atv_remote.esperanto.proto.AtvPairingResponse);
+  rpc StartSession (.spotify.atv_remote.esperanto.proto.AtvStartSessionRequest) returns (.spotify.atv_remote.esperanto.proto.AtvSessionResponse);
+  rpc SendRequest (.spotify.atv_remote.esperanto.proto.AtvSendRequestRequest) returns (.spotify.atv_remote.esperanto.proto.AtvRequestResponse);
+  rpc StopSession (.google.protobuf.Empty) returns (.spotify.atv_remote.esperanto.proto.AtvSessionResponse);
+}

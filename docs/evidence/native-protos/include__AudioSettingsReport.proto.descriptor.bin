@@ -1,0 +1,34 @@
+
+!include/AudioSettingsReport.protospotify.event_sender.proto"Ê
+
+AudioSettingsReport!
+offline_mode (RofflineModeJ
+"default_play_bitrate_product_state (	RdefaultPlayBitrateProductState2
+user_selected_bitrate (RuserSelectedBitrate!
+play_bitrate (RplayBitrate5
+low_bitrate_on_cellular (RlowBitrateOnCellularJ
+"default_sync_bitrate_product_state (	RdefaultSyncBitrateProductState;
+user_selected_sync_bitrate (RuserSelectedSyncBitrate!
+sync_bitrate (RsyncBitrate,
+sync_over_cellular	 (RsyncOverCellular?
+enable_gapless_product_state
+ (	RenableGaplessProductState%
+enable_gapless (RenableGaplessC
+enable_crossfade_product_state (	RenableCrossfadeProductState)
+enable_crossfade (RenableCrossfade%
+crossfade_time (RcrossfadeTime1
+enable_normalization (RenableNormalization%
+playback_speed (RplaybackSpeed0
+audio_loudness_level (	RaudioLoudnessLevel%
+enable_automix (RenableAutomix4
+enable_silence_trimmer (RenableSilenceTrimmer2
+enable_mono_downmixer (RenableMonoDownmixer
+send_reason (	R
+sendReason
+change_list (	R
+changeList)
+enable_equalizer (RenableEqualizer:
+enable_dynamic_normalizer (RenableDynamicNormalizer2
+enable_exclusive_mode (RenableExclusiveMode.
+audio_output_device (	RaudioOutputDevice3
+audio_output_device_v2 (	RaudioOutputDeviceV2BH

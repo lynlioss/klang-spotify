@@ -1,0 +1,9 @@
+
+#es_traffic_connection_metrics.proto,spotify.connectivity.traffic.esperanto.proto$es_traffic_transaction_metrics.proto"Õ
+ConnectionMetrics)
+duration_seconds (RdurationSeconds%
+redirect_count (RredirectCountE
+connection_task_start_timestamp (RconnectionTaskStartTimestampA
+connection_task_end_timestamp (RconnectionTaskEndTimestampd
+transactions (2@.spotify.connectivity.traffic.esperanto.proto.TransactionMetricsRtransactionsB4
+0com.spotify.connectivity.traffic.esperanto.protoHbproto3

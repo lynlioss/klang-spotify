@@ -1,0 +1,20 @@
+
+'include/PendingEventsStatsNonAuth.protospotify.event_sender.proto"š
+PendingEventsStatsNonAuth
+event_names (	R
+eventNames0
+sequence_number_mins (RsequenceNumberMins2
+sequence_number_nexts (RsequenceNumberNexts#
+storage_sizes (RstorageSizes,
+num_dropped_events (RnumDroppedEvents'
+counter_entered (RcounterEntered>
+counter_add_failed_bad_input (RcounterAddFailedBadInputF
+ counter_add_failed_storage_error (RcounterAddFailedStorageError+
+counter_persisted	 (RcounterPersistedF
+ counter_replace_failed_bad_input
+ (RcounterReplaceFailedBadInputN
+$counter_replace_failed_storage_error (R counterReplaceFailedStorageErrorD
+counter_commit_failed_bad_input (RcounterCommitFailedBadInputL
+#counter_commit_failed_storage_error (RcounterCommitFailedStorageErrorU
+(counter_commit_failed_event_sender_error (R#counterCommitFailedEventSenderErrorB
+counter_passed_to_event_sender (RcounterPassedToEventSenderBH

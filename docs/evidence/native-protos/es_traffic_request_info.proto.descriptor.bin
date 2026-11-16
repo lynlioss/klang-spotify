@@ -1,0 +1,17 @@
+
+es_traffic_request_info.proto,spotify.connectivity.traffic.esperanto.protoes_traffic_http_method.proto"¢
+RequestInfoP
+method (28.spotify.connectivity.traffic.esperanto.proto.HttpMethodRmethod
+url (	Rurl`
+headers (2F.spotify.connectivity.traffic.esperanto.proto.RequestInfo.HeadersEntryRheaders
+
+bytes_sent (R	bytesSent+
+source_identifier (	RsourceIdentifier
+additional_context (2P.spotify.connectivity.traffic.esperanto.proto.RequestInfo.AdditionalContextEntryRadditionalContext:
+HeadersEntry
+key (	Rkey
+value (	Rvalue:8D
+AdditionalContextEntry
+key (	Rkey
+value (	Rvalue:8B4
+0com.spotify.connectivity.traffic.esperanto.protoHbproto3

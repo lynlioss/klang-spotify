@@ -1,0 +1,9 @@
+
+set_filter_order.protospotify.your_library.proto"6
+SetFilterOrderRequest
+
+filter_uri (	R	filterUri"O
+SetFilterOrderResponse
+status_codeb (R
+statusCode
+errorc (	RerrorBHbproto3

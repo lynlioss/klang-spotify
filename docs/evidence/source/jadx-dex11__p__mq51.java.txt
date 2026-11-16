@@ -1,0 +1,24 @@
+Source: analysis/spotify/jadx-dex11/sources/p/mq51.java
+SHA256: 7c7573fd11bfb8a4046fff11dcee9ab34aa6771d32e8780c870d8af4b5b3454c
+Lines: 1-20
+
+1: package p;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes11.dex */
+4: public abstract class mq51 implements p.o3z0 {
+5:     public static p.jx51 A(com.spotify.connectivity.httpretrofit.RetrofitMaker r2, p.ok4 r3) {
+6:             int r3 = r3.Y()
+7:             long r0 = (long) r3
+8:             p.fx51 r3 = new p.fx51
+9:             r3.<init>(r0)
+10:             java.lang.Class<p.jx51> r0 = p.jx51.class
+11:             java.lang.String r1 = "android-search-onlineproto"
+12:             java.lang.Object r2 = r2.createWebgateService(r0, r1, r3)
+13:             p.jx51 r2 = (p.jx51) r2
+14:             return r2
+15:     }
+16: 
+17:     public static p.e9t0 B(android.content.Context r1, p.ve81 r2) {
+18:             p.e9t0 r0 = new p.e9t0
+19:             r0.<init>(r1, r2)
+20:             return r0

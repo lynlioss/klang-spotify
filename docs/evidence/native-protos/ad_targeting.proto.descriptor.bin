@@ -1,0 +1,23 @@
+
+ad_targeting.protospotify.ads.esperanto.proto"»
+TargetingResponsee
+targeting_map (2@.spotify.ads.esperanto.proto.TargetingResponse.TargetingMapEntryRtargetingMap?
+TargetingMapEntry
+key (	Rkey
+value (	Rvalue:8"<
+GetTargetingRequest%
+targeting_keys (	RtargetingKeys"
+GetAllTargetingRequest"¿
+PutTargetingRequestg
+targeting_map (2B.spotify.ads.esperanto.proto.PutTargetingRequest.TargetingMapEntryRtargetingMap?
+TargetingMapEntry
+key (	Rkey
+value (	Rvalue:8"?
+DeleteTargetingRequest%
+targeting_keys (	RtargetingKeys2ß
+	Targetingp
+GetTargeting0.spotify.ads.esperanto.proto.GetTargetingRequest..spotify.ads.esperanto.proto.TargetingResponsev
+GetAllTargeting3.spotify.ads.esperanto.proto.GetAllTargetingRequest..spotify.ads.esperanto.proto.TargetingResponsep
+PutTargeting0.spotify.ads.esperanto.proto.PutTargetingRequest..spotify.ads.esperanto.proto.TargetingResponsev
+DeleteTargeting3.spotify.ads.esperanto.proto.DeleteTargetingRequest..spotify.ads.esperanto.proto.TargetingResponseB+
+com.spotify.ads.esperanto.protoHP¢ESPbproto3

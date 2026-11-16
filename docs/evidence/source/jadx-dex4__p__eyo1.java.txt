@@ -1,0 +1,223 @@
+Source: analysis/spotify/jadx-dex4/sources/p/eyo1.java
+SHA256: 32092084a18e2c34f29551e3d8ab48c331fb68221157839e55c2d458ca957e1f
+Lines: 1-219
+
+1: package p;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes4.dex */
+4: public final class eyo1 {
+5:     public final p.ysn1 a;
+6:     public p.scy0 b;
+7:     public long c;
+8:     public final p.zxn0 d;
+9:     public boolean e;
+10:     public p.m1i f;
+11:     public final p.fod1 g;
+12: 
+13:     public eyo1(p.fod1 r1, p.ysn1 r2) {
+14:             r0 = this;
+15:             r0.<init>()
+16:             r0.g = r1
+17:             r0.a = r2
+18:             p.scy0 r1 = p.scy0.Z0
+19:             r0.b = r1
+20:             p.zxn0 r1 = p.ayn0.a()
+21:             r0.d = r1
+22:             return
+23:     }
+24: 
+25:     public static final /* synthetic */ p.zxn0 d(p.eyo1 r0) {
+26:             p.zxn0 r0 = r0.d
+27:             return r0
+28:     }
+29: 
+30:     public static final /* synthetic */ p.scy0 e(p.eyo1 r0) {
+31:             p.scy0 r0 = r0.b
+32:             return r0
+33:     }
+34: 
+35:     public static final /* synthetic */ void f(p.eyo1 r0, p.scy0 r1) {
+36:             r0.b = r1
+37:             return
+38:     }
+39: 
+40:     public static final java.lang.Object g(p.eyo1 r6, p.ssm r7) {
+41:             boolean r0 = r7 instanceof p.mwo1
+42:             if (r0 == 0) goto L13
+43:             r0 = r7
+44:             p.mwo1 r0 = (p.mwo1) r0
+45:             int r1 = r0.c
+46:             r2 = -2147483648(0xffffffff80000000, float:-0.0)
+47:             r3 = r1 & r2
+48:             if (r3 == 0) goto L13
+49:             int r1 = r1 - r2
+50:             r0.c = r1
+51:             goto L18
+52:         L13:
+53:             p.mwo1 r0 = new p.mwo1
+54:             r0.<init>(r6, r7)
+55:         L18:
+56:             java.lang.Object r7 = r0.a
+57:             int r1 = r0.c
+58:             r2 = 0
+59:             r3 = 1
+60:             if (r1 == 0) goto L2c
+61:             if (r1 != r3) goto L26
+62:             p.po5.Q(r7)
+63:             return r7
+64:         L26:
+65:             java.lang.String r6 = "call to 'resume' before 'invoke' with coroutine"
+66:             p.eg.m(r6)
+67:             return r2
+68:         L2c:
+69:             p.po5.Q(r7)
+70:             r7 = 0
+71:             r7 = r7 | 2
+72:             byte r7 = (byte) r7
+73:             long r4 = r6.c
+74:             r7 = r7 | r3
+75:             byte r7 = (byte) r7
+76:             r1 = 3
+77:             if (r7 == r1) goto L5f
+78:             java.lang.StringBuilder r6 = new java.lang.StringBuilder
+79:             r6.<init>()
+80:             r0 = r7 & 1
+81:             if (r0 != 0) goto L48
+82:             java.lang.String r0 = " cloudProjectNumber"
+83:             r6.append(r0)
+84:         L48:
+85:             r7 = r7 & 2
+86:             if (r7 != 0) goto L51
+87:             java.lang.String r7 = " webViewRequestMode"
+88:             r6.append(r7)
+89:         L51:
+90:             java.lang.String r6 = r6.toString()
+91:             java.lang.String r7 = "Missing required properties:"
+92:             java.lang.String r6 = r7.concat(r6)
+93:             p.eg.m(r6)
+94:             return r2
+95:         L5f:
+96:             p.sun1 r7 = new p.sun1
+97:             r7.<init>(r4)
+98:             p.ysn1 r6 = r6.a
+99:             p.u2q1 r6 = r6.a(r7)
+100:             p.m1i r6 = p.gkp1.B(r6)
+101:             r0.c = r3
+102:             java.lang.Object r6 = r6.Q(r0)
+103:             p.men r7 = p.men.a
+104:             if (r6 != r7) goto L79
+105:             return r7
+106:         L79:
+107:             return r6
+108:     }
+109: 
+110:     public static final /* synthetic */ java.lang.Object h(p.eyo1 r0, java.lang.String r1, p.tao r2) {
+111:             java.lang.Object r0 = r0.j(r1, r2)
+112:             return r0
+113:     }
+114: 
+115:     public static final /* synthetic */ p.fod1 i(p.eyo1 r0) {
+116:             p.fod1 r0 = r0.g
+117:             return r0
+118:     }
+119: 
+120:     public final p.m1i a() {
+121:             r0 = this;
+122:             p.m1i r0 = r0.f
+123:             if (r0 == 0) goto L5
+124:             return r0
+125:         L5:
+126:             r0 = 0
+127:             return r0
+128:     }
+129: 
+130:     public final void b(long r1) {
+131:             r0 = this;
+132:             r0.c = r1
+133:             return
+134:     }
+135: 
+136:     public final p.fkp1 c() {
+137:             r3 = this;
+138:             p.e83 r0 = new p.e83
+139:             r1 = 0
+140:             r2 = 4
+141:             r0.<init>(r3, r1, r2)
+142:             p.fkp1 r3 = new p.fkp1
+143:             r3.<init>(r0)
+144:             return r3
+145:     }
+146: 
+147:     public final java.lang.Object j(java.lang.String r7, p.ssm r8) {
+148:             r6 = this;
+149:             boolean r0 = r8 instanceof p.exo1
+150:             if (r0 == 0) goto L13
+151:             r0 = r8
+152:             p.exo1 r0 = (p.exo1) r0
+153:             int r1 = r0.c
+154:             r2 = -2147483648(0xffffffff80000000, float:-0.0)
+155:             r3 = r1 & r2
+156:             if (r3 == 0) goto L13
+157:             int r1 = r1 - r2
+158:             r0.c = r1
+159:             goto L18
+160:         L13:
+161:             p.exo1 r0 = new p.exo1
+162:             r0.<init>(r6, r8)
+163:         L18:
+164:             java.lang.Object r8 = r0.a
+165:             int r1 = r0.c
+166:             r2 = 0
+167:             r3 = 2
+168:             r4 = 1
+169:             p.men r5 = p.men.a
+170:             if (r1 == 0) goto L37
+171:             if (r1 == r4) goto L31
+172:             if (r1 != r3) goto L2b
+173:             p.po5.Q(r8)
+174:             goto L68
+175:         L2b:
+176:             java.lang.String r6 = "call to 'resume' before 'invoke' with coroutine"
+177:             p.eg.m(r6)
+178:             return r2
+179:         L31:
+180:             java.lang.String r7 = r0.d
+181:             p.po5.Q(r8)
+182:             goto L4a
+183:         L37:
+184:             p.po5.Q(r8)
+185:             p.m1i r6 = r6.f
+186:             if (r6 == 0) goto L3f
+187:             goto L40
+188:         L3f:
+189:             r6 = r2
+190:         L40:
+191:             r0.d = r7
+192:             r0.c = r4
+193:             java.lang.Object r8 = r6.Q(r0)
+194:             if (r8 == r5) goto L73
+195:         L4a:
+196:             p.ntn1 r8 = (p.ntn1) r8
+197:             p.usn1 r6 = p.usn1.X
+198:             if (r6 == 0) goto L6d
+199:             p.wun1 r1 = new p.wun1
+200:             r1.<init>(r7, r6)
+201:             p.u2q1 r6 = r8.a(r1)
+202:             p.m1i r6 = p.gkp1.B(r6)
+203:             r0.d = r2
+204:             r0.c = r3
+205:             java.lang.Object r8 = r6.Q(r0)
+206:             if (r8 != r5) goto L68
+207:             goto L73
+208:         L68:
+209:             p.mtn1 r8 = (p.mtn1) r8
+210:             java.lang.String r6 = r8.a
+211:             return r6
+212:         L6d:
+213:             java.lang.String r6 = "Null verdictOptOut"
+214:             p.dyn0.i(r6)
+215:             return r2
+216:         L73:
+217:             return r5
+218:     }
+219: }

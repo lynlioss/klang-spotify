@@ -1,0 +1,11 @@
+
+logging_params.protospotify.player.proto"stream_reporting_attribution.proto"¥
+LoggingParams4
+command_initiated_time (RcommandInitiatedTime2
+command_received_time (RcommandReceivedTime*
+page_instance_ids (	RpageInstanceIds'
+interaction_ids (	RinteractionIds+
+device_identifier (	RdeviceIdentifier
+
+command_id (	R	commandIdˆ
+stream_reporting_attribution (2F.spotify.stream_reporting_attribution.proto.StreamReportingAttributionRstreamReportingAttributionBH

@@ -1,0 +1,17 @@
+
+include/ListPlayerEvent.protospotify.event_sender.proto"ï
+ListPlayerEvent
+event (	Revent
+list_uri (	RlistUri
+list_ref (RlistRef(
+list_instance_id (	RlistInstanceId&
+number_of_items (RnumberOfItems%
+transformer_id (	RtransformerId)
+transform_reason (	RtransformReason
+	changeset (	R	changeset)
+unfiltered_count	 (RunfilteredCountb
+filter_counts
+ (2=.spotify.event_sender.proto.ListPlayerEvent.FilterCountsEntryRfilterCounts?
+FilterCountsEntry
+key (	Rkey
+value (Rvalue:8BH

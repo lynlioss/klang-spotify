@@ -1,0 +1,30 @@
+// Recovered descriptor. Original file: es_websocket_event.proto
+syntax = "proto3";
+package spotify.connectivity.websocket.esperanto.proto;
+enum WebSocketError {
+  kSuccess = 0;
+  kWsUpgradeUnauthorized = 1;
+  kTransportFailure = 2;
+  kInvalidUri = 3;
+  kSslCacertBadfile = 4;
+}
+message WebSocketEvent {
+  oneof _Connected {
+    bool Connected = 1;
+  }
+  oneof _Error {
+    .spotify.connectivity.websocket.esperanto.proto.WebSocketError Error = 2;
+  }
+  oneof _TextPayload {
+    string TextPayload = 3;
+  }
+  oneof _BinaryPayload {
+    bytes BinaryPayload = 4;
+  }
+  oneof _Disconnected {
+    bool Disconnected = 5;
+  }
+  oneof _SocketReceivedTimestampMs {
+    int64 SocketReceivedTimestampMs = 6;
+  }
+}

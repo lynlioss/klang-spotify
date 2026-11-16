@@ -1,0 +1,22 @@
+
+include/ConductorEvent.protospotify.event_sender.proto"õ
+ConductorEvent
+list_uri (	RlistUri
+list_ref (RlistRef(
+list_instance_id (	RlistInstanceId
+item_uri (	RitemUri
+item_uid (	RitemUid(
+item_instance_id (	RitemInstanceId
+clip_uri (	RclipUri
+clip_uid (	RclipUid
+event	 (	Revent
+reason
+ (	Rreason-
+feature_identifier (	RfeatureIdentifier#
+seek_position (RseekPosition
+paused (Rpaused2
+seek_creator_position (RseekCreatorPosition%
+playback_speed (RplaybackSpeed(
+clip_slice_begin (RclipSliceBegin$
+clip_slice_end (RclipSliceEnd(
+clip_playback_id (RclipPlaybackIdBH

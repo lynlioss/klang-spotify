@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/ledger.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1;
+import "google/protobuf/timestamp.proto";
+import "spotify/playback_platform/context/v1/ledger_entry.proto";
+message Ledger {
+  .google.protobuf.Timestamp create_time = 1;
+  repeated .spotify.playback_platform.context.v1.LedgerEntry entries = 2;
+}

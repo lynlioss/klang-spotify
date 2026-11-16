@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: es_auth_storage_result.proto
+syntax = "proto3";
+package spotify.connectivity.auth.storage.esperanto.proto;
+message AuthStorageResult {
+  enum Result {
+    success = 0;
+    userNotFound = 1;
+    userAlreadyExists = 2;
+  }
+  .spotify.connectivity.auth.storage.esperanto.proto.AuthStorageResult.Result result = 1;
+}

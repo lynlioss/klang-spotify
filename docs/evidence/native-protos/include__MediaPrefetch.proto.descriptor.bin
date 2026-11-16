@@ -1,0 +1,12 @@
+
+include/MediaPrefetch.protospotify.event_sender.proto"Ñ
+MediaPrefetch
+
+feature_id (	R	featureId
+file_id (RfileId
+resource_id (	R
+resourceId#
+resource_type (	RresourceType
+
+error_code (R	errorCode#
+error_details (	RerrorDetailsBH

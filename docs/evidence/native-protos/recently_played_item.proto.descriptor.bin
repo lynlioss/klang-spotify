@@ -1,0 +1,55 @@
+
+recently_played_item.proto'spotify.recently_played_esperanto.proto(collection/artist_collection_state.proto'collection/album_collection_state.proto'collection/track_collection_state.proto&collection/show_collection_state.protosync/artist_sync_state.protosync/album_sync_state.protosync/track_sync_state.protometadata/artist_metadata.protometadata/album_metadata.protometadata/track_metadata.protometadata/show_metadata.protometadata/episode_metadata.proto%played_state/track_played_state.proto$played_state/show_played_state.proto'played_state/episode_played_state.protoplaylist_playlist_state.proto"ö
+RecentlyPlayedArtistR
+artist_metadata (2).spotify.cosmos_util.proto.ArtistMetadataRartistMetadatah
+artist_collection_state (20.spotify.cosmos_util.proto.ArtistCollectionStateRartistCollectionStateV
+artist_sync_state (2*.spotify.cosmos_util.proto.ArtistSyncStateRartistSyncState
+type (Rtype
+add_time (RaddTime
+type_str (	RtypeStr"È
+RecentlyPlayedAlbumO
+album_metadata (2(.spotify.cosmos_util.proto.AlbumMetadataRalbumMetadataS
+album_sync_state (2).spotify.cosmos_util.proto.AlbumSyncStateRalbumSyncState#
+in_collection (RinCollection
+type (Rtype
+add_time (RaddTime
+type_str (	RtypeStrJRalbum_collection_state"Ç
+RecentlyPlayedTrackO
+track_metadata (2(.spotify.cosmos_util.proto.TrackMetadataRtrackMetadatae
+track_collection_state (2/.spotify.cosmos_util.proto.TrackCollectionStateRtrackCollectionState
+type (Rtype
+add_time (RaddTime
+type_str (	RtypeStrJJRtrack_play_stateRtrack_sync_state"§
+RecentlyPlayedShowL
+show_metadata (2'.spotify.cosmos_util.proto.ShowMetadataRshowMetadatab
+show_collection_state (2..spotify.cosmos_util.proto.ShowCollectionStateRshowCollectionState
+type (Rtype
+add_time (RaddTime
+type_str (	RtypeStrJRshow_play_state"í
+RecentlyPlayedEpisodeU
+episode_metadata (2*.spotify.cosmos_util.proto.EpisodeMetadataRepisodeMetadataY
+episode_play_state (2+.spotify.cosmos_util.proto.EpisodePlayStateRepisodePlayState
+type (Rtype
+add_time (RaddTimeL
+show_metadata (2'.spotify.cosmos_util.proto.ShowMetadataRshowMetadata
+type_str (	RtypeStrJJ"Ë
+RecentlyPlayedProfile
+link (	Rlink
+name (	Rname
+	image_uri (	RimageUri#
+offline_state (RofflineState
+type (Rtype
+add_time (RaddTime
+type_str (	RtypeStr"š
+RecentlyPlayedPlaylist\
+playlist_metadata (2/.spotify.playlist.cosmos.proto.PlaylistMetadataRplaylistMetadata
+type (Rtype
+add_time (RaddTime
+type_str (	RtypeStrX
+offline_state (23.spotify.playlist.cosmos.proto.PlaylistOfflineStateRofflineState"~
+RecentlyPlayedCollectionTracks
+link (	Rlink
+type (Rtype
+add_time (RaddTime
+type_str (	RtypeStrB7
++com.spotify.recently_played_esperanto.protoHP¢ESPbproto3

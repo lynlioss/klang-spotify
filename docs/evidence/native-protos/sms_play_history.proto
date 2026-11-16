@@ -1,0 +1,38 @@
+// Recovered descriptor. Original file: sms_play_history.proto
+syntax = "proto3";
+package spotify.enhancedplaylistlens;
+message HistoryItem {
+  string uri = 1;
+  bytes item_id = 2;
+  oneof _start_timestamp {
+    int64 start_timestamp = 3;
+  }
+  oneof _time_played_ms {
+    int64 time_played_ms = 4;
+  }
+  oneof _track_length_ms {
+    int64 track_length_ms = 5;
+  }
+}
+message CurrentItem {
+  string uri = 1;
+  bytes item_id = 2;
+  oneof _start_timestamp {
+    int64 start_timestamp = 3;
+  }
+  oneof _time_played_ms {
+    int64 time_played_ms = 4;
+  }
+  oneof _track_length_ms {
+    int64 track_length_ms = 5;
+  }
+}
+message PlayHistory {
+  repeated .spotify.enhancedplaylistlens.HistoryItem history = 2;
+  oneof _current {
+    .spotify.enhancedplaylistlens.CurrentItem current = 1;
+  }
+}
+message SignalPayload {
+  .spotify.enhancedplaylistlens.PlayHistory play_history = 1;
+}

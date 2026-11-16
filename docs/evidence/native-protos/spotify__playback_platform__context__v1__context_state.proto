@@ -1,0 +1,18 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/context_state.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1;
+import "spotify/playback_platform/context/v1/sequence_start.proto";
+message ContextState {
+  oneof _cookie {
+    bytes cookie = 1;
+  }
+  oneof _shuffle_seed {
+    string shuffle_seed = 2;
+  }
+  oneof _context_id {
+    string context_id = 3;
+  }
+  oneof _start {
+    .spotify.playback_platform.context.v1.SequenceStart start = 5;
+  }
+}

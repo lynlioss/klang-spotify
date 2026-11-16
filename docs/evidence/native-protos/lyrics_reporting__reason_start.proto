@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: lyrics_reporting/reason_start.proto
+syntax = "proto3";
+package spotify.lyrics_reporting_esperanto.proto;
+enum ReasonStart {
+  INVALID_REASON_START = 0;
+  REASON_START_OPEN = 1;
+}

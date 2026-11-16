@@ -1,0 +1,523 @@
+[
+  {
+    "className": "com.spotify.authentication.login5.Login5Configuration",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5/Login5Configuration.java",
+    "sha256": "d104606bf4d7d3b2f740049942182bac3ea9fb240890d5d26107598b37d05937",
+    "excerpt": "source/jadx-primary__com__spotify__authentication__login5__Login5Configuration.java.txt",
+    "firstLine": 1,
+    "lastLine": 56
+  },
+  {
+    "className": "com.spotify.authentication.login5setupimpl.NativeLogin5SetupImpl",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5setupimpl/NativeLogin5SetupImpl.java",
+    "sha256": "5e86f805fead45e2f7ad5fdf56deb1e535aa5959d6297a0b77942088f4150e4a",
+    "excerpt": "source/jadx-primary__com__spotify__authentication__login5setupimpl__NativeLogin5SetupImpl.java.txt",
+    "firstLine": 1,
+    "lastLine": 35
+  },
+  {
+    "className": "com.spotify.connectivity.connectivitysdkcredentialsstorage.PrefsCredentialsStorage",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/connectivity/connectivitysdkcredentialsstorage/PrefsCredentialsStorage.java",
+    "sha256": "2b139c1e523076bed35258b2036b7d79ab3e6955bfd414fb3a38c6c6411966ca",
+    "excerpt": "source/jadx-primary__com__spotify__connectivity__connectivitysdkcredentialsstorage__PrefsCredentialsStorage.java.txt",
+    "firstLine": 1,
+    "lastLine": 22
+  },
+  {
+    "className": "p.v7c",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/p/v7c.java",
+    "sha256": "6b9d058ed99d1dae67bdb22f92919c6ecfb0e9bc56e5068cacc1dcdcbe3a791a",
+    "excerpt": "source/jadx-primary__p__v7c.java.txt",
+    "firstLine": 1,
+    "lastLine": 283
+  },
+  {
+    "className": "p.mog",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/p/mog.java",
+    "sha256": "53a3406514411f2f3efed1f8c781b74e94c219ef4b96f16786b7e24c8a6def24",
+    "excerpt": "source/jadx-primary__p__mog.java.txt",
+    "firstLine": 1,
+    "lastLine": 258
+  },
+  {
+    "className": "p.u731",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/p/u731.java",
+    "sha256": "c22766d93ffaaef96ccff3a99725d42ee537c2de1faf6bd6a91cf400ba7739fb",
+    "excerpt": "source/jadx-primary__p__u731.java.txt",
+    "firstLine": 1,
+    "lastLine": 180
+  },
+  {
+    "className": "p.h111",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/p/h111.java",
+    "sha256": "d8206065f9a83bc59c34bc417e766cc2e5965b6e42880b778239327e81c31ce1",
+    "excerpt": "source/jadx-primary__p__h111.java.txt",
+    "firstLine": 1,
+    "lastLine": 37
+  },
+  {
+    "className": "p.xwi1",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/p/xwi1.java",
+    "sha256": "efa7b16aa4f0e5bb7a1584920d3b229d8f6b10d3a5631fa020a79275f201c41b",
+    "excerpt": "source/jadx-primary__p__xwi1.java.txt",
+    "firstLine": 1,
+    "lastLine": 9
+  },
+  {
+    "className": "p.wwi1",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/p/wwi1.java",
+    "sha256": "506b02a2bcba09bacf519b9ea2c5d0e92cde2240d09f1d3d7fddd63a1c17465d",
+    "excerpt": "source/jadx-primary__p__wwi1.java.txt",
+    "firstLine": 1,
+    "lastLine": 17
+  },
+  {
+    "className": "p.we70",
+    "dex": "classes2.dex",
+    "originalPath": "analysis/spotify/jadx-dex2/sources/p/we70.java",
+    "sha256": "34466c2fdd45b9afc4e3a313aa67835af1d94dc1ea862b9a7fa1b0ce70bb89de",
+    "excerpt": "source/jadx-dex2__p__we70.java.txt",
+    "firstLine": 1,
+    "lastLine": 620
+  },
+  {
+    "className": "p.dmt0",
+    "dex": "classes2.dex",
+    "originalPath": "analysis/spotify/jadx-dex2/sources/p/dmt0.java",
+    "sha256": "5a24142144d343acf0011970210d3ab2b861dcd644c28dbf70ebcdcb5e123aaa",
+    "excerpt": "source/jadx-dex2__p__dmt0.java.txt",
+    "firstLine": 1,
+    "lastLine": 9
+  },
+  {
+    "className": "p.brj1",
+    "dex": "classes2.dex",
+    "originalPath": "analysis/spotify/jadx-dex2/sources/p/brj1.java",
+    "sha256": "c6058c75f0383b4dd504609fee72f81d7fd199cd8a8cba71270930c4bd1c0a87",
+    "excerpt": "source/jadx-dex2__p__brj1.java.txt",
+    "firstLine": 1,
+    "lastLine": 172
+  },
+  {
+    "className": "com.spotify.integrity.integrityimpl.proto.VerifyRequest",
+    "dex": "classes2.dex",
+    "originalPath": "analysis/spotify/jadx-dex2/sources/com/spotify/integrity/integrityimpl/proto/VerifyRequest.java",
+    "sha256": "0c98434a37096811f5f97e97c40e60439d938b9e1f36f5ed5ba287c00af6056c",
+    "excerpt": "source/jadx-dex2__com__spotify__integrity__integrityimpl__proto__VerifyRequest.java.txt",
+    "firstLine": 1,
+    "lastLine": 149
+  },
+  {
+    "className": "com.spotify.integrity.integrityimpl.proto.VerifyResponse",
+    "dex": "classes2.dex",
+    "originalPath": "analysis/spotify/jadx-dex2/sources/com/spotify/integrity/integrityimpl/proto/VerifyResponse.java",
+    "sha256": "b3e5b4e377cb8590f0cc025a41f555443e28fc1b179056bdffbfb65787ecdcd3",
+    "excerpt": "source/jadx-dex2__com__spotify__integrity__integrityimpl__proto__VerifyResponse.java.txt",
+    "firstLine": 1,
+    "lastLine": 125
+  },
+  {
+    "className": "com.ravelin.core.util.security.RootCheckerNative",
+    "dex": "classes3.dex",
+    "originalPath": "analysis/spotify/jadx-dex3/sources/com/ravelin/core/util/security/RootCheckerNative.java",
+    "sha256": "e99f5adf08911c3456c7bf10c8d203a079050299d7b2567dd5d551974e576088",
+    "excerpt": "source/jadx-dex3__com__ravelin__core__util__security__RootCheckerNative.java.txt",
+    "firstLine": 1,
+    "lastLine": 56
+  },
+  {
+    "className": "p.cun1",
+    "dex": "classes3.dex",
+    "originalPath": "analysis/spotify/jadx-dex3/sources/p/cun1.java",
+    "sha256": "63843cf69dbaa7725c634d3163b627c48655ffd428d96a5a112ec37f7c9f4ee9",
+    "excerpt": "source/jadx-dex3__p__cun1.java.txt",
+    "firstLine": 1,
+    "lastLine": 611
+  },
+  {
+    "className": "p.eyo1",
+    "dex": "classes4.dex",
+    "originalPath": "analysis/spotify/jadx-dex4/sources/p/eyo1.java",
+    "sha256": "32092084a18e2c34f29551e3d8ab48c331fb68221157839e55c2d458ca957e1f",
+    "excerpt": "source/jadx-dex4__p__eyo1.java.txt",
+    "firstLine": 1,
+    "lastLine": 219
+  },
+  {
+    "className": "p.mts0",
+    "dex": "classes9.dex",
+    "originalPath": "analysis/spotify/jadx-dex9/sources/p/mts0.java",
+    "sha256": "a8dd8df5fadbbda33509c34a0d1fc70e534e45cf04a7b9e71fbf09380138417d",
+    "excerpt": "source/jadx-dex9__p__mts0.java.txt",
+    "firstLine": 1046,
+    "lastLine": 1110
+  },
+  {
+    "className": "com.spotify.metadata.classic.proto.Metadata$Episode",
+    "dex": "classes9.dex",
+    "originalPath": "analysis/spotify/jadx-dex9/sources/com/spotify/metadata/classic/proto/Metadata$Episode.java",
+    "sha256": "b2e191b47893870191cb4ff81489fb889d7c38541569d1d38be336a54cbeb1cb",
+    "excerpt": "source/jadx-dex9__com__spotify__metadata__classic__proto__Metadata$Episode.java.txt",
+    "firstLine": 1,
+    "lastLine": 90
+  },
+  {
+    "className": "com.spotify.metadata.classic.proto.Metadata$Show",
+    "dex": "classes9.dex",
+    "originalPath": "analysis/spotify/jadx-dex9/sources/com/spotify/metadata/classic/proto/Metadata$Show.java",
+    "sha256": "036ae826adbbb5c2376df11b29f0d873b8fbb2e67c1d12014e0a3bb2d28f3622",
+    "excerpt": "source/jadx-dex9__com__spotify__metadata__classic__proto__Metadata$Show.java.txt",
+    "firstLine": 1,
+    "lastLine": 90
+  },
+  {
+    "className": "p.jx51",
+    "dex": "classes11.dex",
+    "originalPath": "analysis/spotify/jadx-dex11/sources/p/jx51.java",
+    "sha256": "e2b6c7e6cf60fdb1c339117f543821984dcc9a02662ace33594164b637a7554f",
+    "excerpt": "source/jadx-dex11__p__jx51.java.txt",
+    "firstLine": 1,
+    "lastLine": 25
+  },
+  {
+    "className": "p.m0b1",
+    "dex": "classes11.dex",
+    "originalPath": "analysis/spotify/jadx-dex11/sources/p/m0b1.java",
+    "sha256": "abc3e6a2e813aa6acb85bd647c05559455b44e1e1a25dd79dc3eda60f8fc1de0",
+    "excerpt": "source/jadx-dex11__p__m0b1.java.txt",
+    "firstLine": 1,
+    "lastLine": 9
+  },
+  {
+    "className": "p.mq51",
+    "dex": "classes11.dex",
+    "originalPath": "analysis/spotify/jadx-dex11/sources/p/mq51.java",
+    "sha256": "7c7573fd11bfb8a4046fff11dcee9ab34aa6771d32e8780c870d8af4b5b3454c",
+    "excerpt": "source/jadx-dex11__p__mq51.java.txt",
+    "firstLine": 1,
+    "lastLine": 20
+  },
+  {
+    "className": "p.el4",
+    "dex": "classes11.dex",
+    "originalPath": "analysis/spotify/jadx-dex11/sources/p/el4.java",
+    "sha256": "48cf3c8f4386939aa0217e11b2c2dba34cb863be211850882a0dbf700212022a",
+    "excerpt": "source/jadx-dex11__p__el4.java.txt",
+    "firstLine": 1,
+    "lastLine": 166
+  },
+  {
+    "className": "p.hc11",
+    "dex": "classes11.dex",
+    "originalPath": "analysis/spotify/jadx-dex11/sources/p/hc11.java",
+    "sha256": "622d6237011154a62943d437a7dd3977885d667825b43f5bd91ca09009d2547a",
+    "excerpt": "source/jadx-dex11__p__hc11.java.txt",
+    "firstLine": 1468,
+    "lastLine": 1565
+  },
+  {
+    "className": "p.gg51",
+    "dex": "classes11.dex",
+    "originalPath": "analysis/spotify/jadx-dex11/sources/p/gg51.java",
+    "sha256": "462724d1a58bca62f8a21480ffd5327ddf03847ea99d70ca7770e4d01cdec96d",
+    "excerpt": "source/jadx-dex11__p__gg51.java.txt",
+    "firstLine": 1,
+    "lastLine": 52
+  },
+  {
+    "className": "com.spotify.searchview.proto.MainViewResponse",
+    "dex": "classes11.dex",
+    "originalPath": "analysis/spotify/jadx-dex11/sources/com/spotify/searchview/proto/MainViewResponse.java",
+    "sha256": "e1b7da58a3c60567439a0884360cf6dec7a4d05dce5fe8f94bbee411c1dc8875",
+    "excerpt": "source/jadx-dex11__com__spotify__searchview__proto__MainViewResponse.java.txt",
+    "firstLine": 1,
+    "lastLine": 231
+  },
+  {
+    "className": "com.spotify.searchview.proto.AutocompleteViewResponse",
+    "dex": "classes11.dex",
+    "originalPath": "analysis/spotify/jadx-dex11/sources/com/spotify/searchview/proto/AutocompleteViewResponse.java",
+    "sha256": "56038eb11aec6c97a80fe6484dfc990a9c645e308a36d3337377b8d3aafefa67",
+    "excerpt": "source/jadx-dex11__com__spotify__searchview__proto__AutocompleteViewResponse.java.txt",
+    "firstLine": 1,
+    "lastLine": 147
+  },
+  {
+    "className": "com.spotify.searchview.proto.NativeViewResponse",
+    "dex": "classes11.dex",
+    "originalPath": "analysis/spotify/jadx-dex11/sources/com/spotify/searchview/proto/NativeViewResponse.java",
+    "sha256": "f118fbf4d5772e6903f928b1c635be1dccce7f8e6c3cc976729ae0b1c3297f44",
+    "excerpt": "source/jadx-dex11__com__spotify__searchview__proto__NativeViewResponse.java.txt",
+    "firstLine": 1,
+    "lastLine": 437
+  },
+  {
+    "className": "com.spotify.kidsgraduation.v1.ValidateGraduationResponse",
+    "dex": "classes11.dex",
+    "originalPath": "analysis/spotify/jadx-dex11/sources/com/spotify/kidsgraduation/v1/ValidateGraduationResponse.java",
+    "sha256": "f31c025df3d8246400b92bcc6899a6c9d4ec36da3712ec5ae635991e7360915e",
+    "excerpt": "source/jadx-dex11__com__spotify__kidsgraduation__v1__ValidateGraduationResponse.java.txt",
+    "firstLine": 1,
+    "lastLine": 90
+  },
+  {
+    "className": "EsAuthenticateCredentials$AppleSignInCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$AppleSignInCredentials.java",
+    "sha256": "eda8f76140017ce301646b0f79f629b102e83a0afca5318fdbd38328195d994e",
+    "fieldConstants": [
+      "public static final int AUTH_CODE_FIELD_NUMBER = 1;",
+      "public static final int BUNDLE_ID_FIELD_NUMBER = 3;",
+      "public static final int REDIRECT_URI_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$EmailAddress",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$EmailAddress.java",
+    "sha256": "9a4ad9a01c6cd5437b31d3d30080e5512d031dd3ed88a4e8c01c98cb16626166",
+    "fieldConstants": [
+      "public static final int EMAILADDRESS_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$FacebookAccessToken",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$FacebookAccessToken.java",
+    "sha256": "7ad93a07a33b5a0f861f70d6eb45b934e2c035dccbea4fc4d784bf30c2026390",
+    "fieldConstants": [
+      "public static final int ACCESSTOKEN_FIELD_NUMBER = 2;",
+      "public static final int FBUID_FIELD_NUMBER = 1;",
+      "public static final int IDTOKEN_FIELD_NUMBER = 3;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$GoogleSignInCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$GoogleSignInCredentials.java",
+    "sha256": "d051b52510cf6d4333b57c9f820a5cbdf91035c2b2aec0d11c0b109cf7f25540",
+    "fieldConstants": [
+      "public static final int AUTHCODE_FIELD_NUMBER = 1;",
+      "public static final int IDTOKEN_FIELD_NUMBER = 3;",
+      "public static final int REDIRECTURI_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$NativePassword",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$NativePassword.java",
+    "sha256": "6de84af3496c957adbef74fe1cb5b674bd43a8d6c70731f965bb611526eea4e8",
+    "fieldConstants": [
+      "public static final int ID_FIELD_NUMBER = 1;",
+      "public static final int PASSWORD_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$OneTimeToken",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$OneTimeToken.java",
+    "sha256": "eb63e3a36d3355e693574df22404c2d5cb5e15564c7adef78d4faab2994f2148",
+    "fieldConstants": [
+      "public static final int TOKEN_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$NaverSignInCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$NaverSignInCredentials.java",
+    "sha256": "618631a64da31a68caed2b4af5b254d15a899f9552f98f69b9fe57ef046b05a8",
+    "fieldConstants": [
+      "public static final int AUTHCODE_FIELD_NUMBER = 1;",
+      "public static final int REDIRECTURI_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$Password",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$Password.java",
+    "sha256": "4ef55603838d99db237ea0cb3a227e71ea72cb4b8cb018eae50bc97c0a9a70ae",
+    "fieldConstants": [
+      "public static final int HINT_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$PhoneNumber",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$PhoneNumber.java",
+    "sha256": "e7f967d323317c3b25434ede475d6fa00f9469def0ca3fd67e5c8d64123be308",
+    "fieldConstants": [
+      "public static final int COUNTRYCALLINGCODE_FIELD_NUMBER = 3;",
+      "public static final int ISOCOUNTRYCODE_FIELD_NUMBER = 2;",
+      "public static final int NUMBER_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$SamsungSignInCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$SamsungSignInCredentials.java",
+    "sha256": "96f46e524f0c353b6ca9c679fbc6b3e4334a3221d319356b4bf56791c4609d12",
+    "fieldConstants": [
+      "public static final int AUTHCODE_FIELD_NUMBER = 1;",
+      "public static final int REDIRECTURI_FIELD_NUMBER = 2;",
+      "public static final int TOKENENDPOINTURL_FIELD_NUMBER = 3;"
+    ]
+  },
+  {
+    "className": "EsCodeRequired$CodeRequired",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsCodeRequired$CodeRequired.java",
+    "sha256": "9b24b0dca84fba9d091e11dab578c21d17b3b39db58a9dd3ab3060f807a5b280",
+    "fieldConstants": [
+      "public static final int CHALLENGECODE_FIELD_NUMBER = 2;",
+      "public static final int CONTEXT_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsInteractionRequired$InteractionRequired",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsInteractionRequired$InteractionRequired.java",
+    "sha256": "911ba88588b9045a804c46ef700f13c7967038ef00e880f9c9d69d4e79810864",
+    "fieldConstants": [
+      "public static final int CONTEXT_FIELD_NUMBER = 1;",
+      "public static final int FINISH_URL_FIELD_NUMBER = 3;",
+      "public static final int INTERACTION_URL_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsRecaptchaInfo$RecaptchaInfo",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsRecaptchaInfo$RecaptchaInfo.java",
+    "sha256": "154a4f293a3d24ee39614d62ecab33dc66f9aed2a0dd3c9cd3c93fb901ac5c04",
+    "fieldConstants": [
+      "public static final int SITE_KEY_FIELD_NUMBER = 1;",
+      "public static final int TOKEN_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateResult$AuthenticateFailure",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateResult$AuthenticateFailure.java",
+    "sha256": "5f2ace7e75db31f9b6edff57e03dbbc2d493f753be2718022611e155c58a718b",
+    "fieldConstants": [
+      "public static final int FAILURE_FIELD_NUMBER = 1;",
+      "public static final int UNKNOWNFAILURE_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsSignupRequired$SignupRequired",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsSignupRequired$SignupRequired.java",
+    "sha256": "9cd9a0624811bd8b16d280742e6d12a9783965883ab1df694b4aba5bc61b12a7",
+    "fieldConstants": [
+      "public static final int BIRTHDATE_FIELD_NUMBER = 4;",
+      "public static final int EMAILALREADYREGISTERED_FIELD_NUMBER = 8;",
+      "public static final int EMAIL_FIELD_NUMBER = 2;",
+      "public static final int GENDER_FIELD_NUMBER = 5;",
+      "public static final int IDENTIFIERTOKEN_FIELD_NUMBER = 9;",
+      "public static final int ISEMAILVERIFIED_FIELD_NUMBER = 3;",
+      "public static final int ISPHONENUMBERVERIFIED_FIELD_NUMBER = 7;",
+      "public static final int NAME_FIELD_NUMBER = 1;",
+      "public static final int PHONENUMBER_FIELD_NUMBER = 6;"
+    ]
+  },
+  {
+    "className": "EsAccessToken$AccessToken",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAccessToken$AccessToken.java",
+    "sha256": "ce2ae0ede77340f136693efe622782aef8912644c950fdd247911d4114ae68c3",
+    "fieldConstants": [
+      "public static final int EXPIRESAT_FIELD_NUMBER = 3;",
+      "public static final int TOKEN_FIELD_NUMBER = 1;",
+      "public static final int TYPE_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$LegacyV3Password",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$LegacyV3Password.java",
+    "sha256": "4bb46ba393792993f8a8ee4c52dd48cfd607dc9b203d3de7c88314f1428feddb",
+    "fieldConstants": [
+      "public static final int ID_FIELD_NUMBER = 1;",
+      "public static final int PASSWORD_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$ParentChildCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$ParentChildCredentials.java",
+    "sha256": "708e13074dd384ec589921c0bdebd8f4671504f2efe03333e5321b19b2d3873a",
+    "fieldConstants": [
+      "public static final int CHILDID_FIELD_NUMBER = 1;",
+      "public static final int UNENCRYPTEDPARENTCREDENTIALS_FIELD_NUMBER = 2;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateResult$AuthenticateSuccess",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateResult$AuthenticateSuccess.java",
+    "sha256": "84469ffbe18c831f584310f7000c8fc55e86d6afeb705de455b3ef139fe88e03",
+    "fieldConstants": [
+      "public static final int ACCESSTOKEN_FIELD_NUMBER = 2;",
+      "public static final int AUTHBLOB_FIELD_NUMBER = 3;",
+      "public static final int USERNAME_FIELD_NUMBER = 1;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateCredentials$AuthenticateCredentials",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateCredentials$AuthenticateCredentials.java",
+    "sha256": "b494e19f04f8aad925dc39671ee4bfc04e3ab3dbe07e59960a634691e604f4e4",
+    "fieldConstants": [
+      "public static final int APPLESIGNINCREDENTIALS_FIELD_NUMBER = 8;",
+      "public static final int AUTHNPLATFORMCREDENTIAL_FIELD_NUMBER = 14;",
+      "public static final int EMAILADDRESS_FIELD_NUMBER = 13;",
+      "public static final int FACEBOOKACCESSTOKEN_FIELD_NUMBER = 9;",
+      "public static final int GOOGLESIGNINCREDENTIALS_FIELD_NUMBER = 7;",
+      "public static final int LEGACYV3PASSWORD_FIELD_NUMBER = 10;",
+      "public static final int NATIVEPASSWORD_FIELD_NUMBER = 11;",
+      "public static final int NAVERSIGNINCREDENTIALS_FIELD_NUMBER = 12;",
+      "public static final int ONETIMETOKEN_FIELD_NUMBER = 2;",
+      "public static final int PARENTCHILDCREDENTIALS_FIELD_NUMBER = 6;",
+      "public static final int PASSWORD_FIELD_NUMBER = 1;",
+      "public static final int PHONENUMBER_FIELD_NUMBER = 3;",
+      "public static final int SAMSUNGSIGNINCREDENTIALS_FIELD_NUMBER = 5;",
+      "public static final int UNENCRYPTEDSTOREDCREDENTIALS_FIELD_NUMBER = 4;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateRequest$AuthenticateRequest",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateRequest$AuthenticateRequest.java",
+    "sha256": "af1fba777a3908e0f978067d4940bdf02d8db481549f0de9af39810cfd36cfab",
+    "fieldConstants": [
+      "public static final int CREDENTIALS_FIELD_NUMBER = 1;",
+      "public static final int FLOW_ID_FIELD_NUMBER = 5;",
+      "public static final int INTERACTION_CALLBACK_URI_FIELD_NUMBER = 2;",
+      "public static final int RECAPTCHA_INFO_FIELD_NUMBER = 4;",
+      "public static final int UI_LOCALE_FIELD_NUMBER = 3;"
+    ]
+  },
+  {
+    "className": "EsAuthenticateResult$AuthenticateResult",
+    "dex": "classes.dex",
+    "originalPath": "analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5esperanto/EsAuthenticateResult$AuthenticateResult.java",
+    "sha256": "a90aaa70b8c5f7f86474ddf065ef7657fbac2534d3e824477b21c5f5a957f1a9",
+    "fieldConstants": [
+      "public static final int AUTHNPLATFORMREQUIRED_FIELD_NUMBER = 6;",
+      "public static final int CODEREQUIRED_FIELD_NUMBER = 3;",
+      "public static final int FAILURE_FIELD_NUMBER = 2;",
+      "public static final int INTERACTIONREQUIRED_FIELD_NUMBER = 5;",
+      "public static final int SIGNUPREQUIRED_FIELD_NUMBER = 4;",
+      "public static final int SUCCESS_FIELD_NUMBER = 1;"
+    ]
+  }
+]

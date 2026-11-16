@@ -1,0 +1,10 @@
+
+tags_data.protospotify.your_library_tags.proto"3
+TagsData'
+expiration_date (RexpirationDate"m
+
+Assignment
+tag_uri (	RtagUri
+
+entity_uri (	R	entityUri'
+relevance_score (RrelevanceScoreBHbproto3

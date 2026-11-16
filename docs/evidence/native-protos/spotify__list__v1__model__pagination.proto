@@ -1,0 +1,19 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/pagination.proto
+syntax = "proto3";
+package spotify.list.v1.model;
+message Pagination {
+  oneof _length {
+    int32 length = 1;
+  }
+  oneof _continuation_token {
+    bytes continuation_token = 2;
+  }
+  oneof _offset {
+    int32 offset = 3;
+  }
+}
+message PaginationResponse {
+  oneof _next_offset {
+    int32 next_offset = 2;
+  }
+}

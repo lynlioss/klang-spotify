@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/parameters.proto
+syntax = "proto3";
+package spotify.list.v1.model;
+message Parameters {
+  oneof _play_history {
+    bytes play_history = 1;
+  }
+}

@@ -1,0 +1,12 @@
+
+include/ConnectionInfo.protospotify.event_sender.proto"º
+ConnectionInfo
+ap (	Rap
+proxy (	Rproxy.
+user_initated_login (RuserInitatedLogin+
+reachability_type (	RreachabilityType5
+web_installer_unique_id (	RwebInstallerUniqueId*
+ap_resolve_source (	RapResolveSource!
+address_type (	RaddressType
+ipv6_failed (R
+ipv6FailedBH

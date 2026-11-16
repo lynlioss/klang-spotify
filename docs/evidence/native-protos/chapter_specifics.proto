@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: chapter_specifics.proto
+syntax = "proto3";
+package spotify.chapterspecifics;
+import "google/protobuf/duration.proto";
+message ChapterSpecifics {
+  .google.protobuf.Duration cumulative_duration = 1;
+}
+message EpisodeMetadata {
+  .google.protobuf.Duration cumulative_duration = 1;
+}

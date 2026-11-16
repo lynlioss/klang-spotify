@@ -1,0 +1,16 @@
+// Recovered descriptor. Original file: podcastextensions.proto
+syntax = "proto3";
+package spotify.podcast.extensions;
+message PodcastTopics {
+  repeated .spotify.podcast.extensions.PodcastTopic topics = 1;
+}
+message PodcastTopic {
+  string uri = 1;
+  string title = 2;
+}
+message PodcastHtmlDescription {
+  message Header {
+  }
+  .spotify.podcast.extensions.PodcastHtmlDescription.Header header = 1;
+  string html_description = 2;
+}

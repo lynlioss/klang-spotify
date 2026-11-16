@@ -1,0 +1,14 @@
+// Recovered descriptor. Original file: es_prepare_play.proto
+syntax = "proto3";
+package spotify.player.esperanto.proto;
+import "es_context.proto";
+import "es_play_origin.proto";
+import "es_prepare_play_options.proto";
+message PreparePlayRequest {
+  .spotify.player.esperanto.proto.Context context = 1;
+  .spotify.player.esperanto.proto.PreparePlayOptions options = 2;
+  .spotify.player.esperanto.proto.PlayOrigin play_origin = 3;
+  oneof _logical_playback_identifier {
+    string logical_playback_identifier = 4;
+  }
+}

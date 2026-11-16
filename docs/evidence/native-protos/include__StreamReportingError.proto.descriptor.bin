@@ -1,0 +1,16 @@
+
+"include/StreamReportingError.protospotify.event_sender.proto"„
+StreamReportingError
+playback_id (R
+playbackId
+
+error_type (	R	errorType!
+error_reason (	RerrorReason!
+request_type (	RrequestType%
+playback_stack (	RplaybackStack!
+core_version (RcoreVersion
+	stream_id (RstreamId#
+error_message (	RerrorMessage)
+client_timestamp	 (	RclientTimestamp/
+orchestration_stack
+ (	RorchestrationStackBH

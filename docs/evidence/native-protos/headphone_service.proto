@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: headphone_service.proto
+syntax = "proto3";
+package spotify.headphone_service.proto;
+import "google/protobuf/empty.proto";
+import "esperanto_options.proto";
+message HeadphoneStatus {
+  bool are_connected = 1;
+}
+service HeadphoneService {
+  rpc SubscribeToHeadphoneStatus (.google.protobuf.Empty) returns (stream .spotify.headphone_service.proto.HeadphoneStatus);
+  rpc GetHeadphoneStatus (.google.protobuf.Empty) returns (.spotify.headphone_service.proto.HeadphoneStatus);
+}

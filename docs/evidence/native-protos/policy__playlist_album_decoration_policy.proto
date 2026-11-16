@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: policy/playlist_album_decoration_policy.proto
+syntax = "proto3";
+package spotify.playlist.cosmos.proto;
+import "policy/album_decoration_policy.proto";
+import "policy/artist_decoration_policy.proto";
+message PlaylistAlbumDecorationPolicy {
+  .spotify.cosmos_util.proto.AlbumDecorationPolicy album = 1;
+  .spotify.cosmos_util.proto.ArtistDecorationPolicy artist = 2;
+}

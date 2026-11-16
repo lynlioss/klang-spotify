@@ -1,0 +1,7 @@
+
+es_skip_next.protospotify.player.esperanto.protoes_command_options.protoes_logging_params.protoes_context_track.proto"õ
+SkipNextRequestH
+options (2..spotify.player.esperanto.proto.CommandOptionsRoptionsT
+logging_params (2-.spotify.player.esperanto.proto.LoggingParamsRloggingParamsB
+track (2,.spotify.player.esperanto.proto.ContextTrackRtrackB,
+"com.spotify.player.esperanto.protoH¢ESPbproto3

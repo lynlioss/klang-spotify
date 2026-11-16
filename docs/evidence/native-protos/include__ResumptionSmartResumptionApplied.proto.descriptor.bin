@@ -1,0 +1,11 @@
+
+.include/ResumptionSmartResumptionApplied.protospotify.event_sender.proto"¤
+ ResumptionSmartResumptionApplied
+item_uri (	RitemUri0
+original_position_ms (RoriginalPositionMs0
+adjusted_position_ms (RadjustedPositionMs'
+adjustment_mode (	RadjustmentMode7
+resume_point_age_seconds	 (RresumePointAgeSeconds
+playback_id
+ (	R
+playbackIdBH

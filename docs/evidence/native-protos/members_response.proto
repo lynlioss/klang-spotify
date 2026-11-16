@@ -1,0 +1,25 @@
+// Recovered descriptor. Original file: members_response.proto
+syntax = "proto2";
+package spotify.playlist.cosmos.proto;
+import "playlist_permission.proto";
+import "playlist_user_state.proto";
+enum FollowState {
+  NONE = 0;
+  CAN_BE_FOLLOWED = 1;
+  CAN_BE_UNFOLLOWED = 2;
+}
+message Member {
+  optional .spotify.playlist.cosmos.proto.User user = 1;
+  optional bool is_owner = 2;
+  optional uint32 num_tracks = 3;
+  optional uint32 num_episodes = 4;
+  optional .spotify.playlist.cosmos.proto.FollowState follow_state = 5;
+  optional .spotify.playlist_permission.proto.PermissionLevel permission_level = 6;
+}
+message PlaylistMembersResponse {
+  optional string title = 1;
+  optional uint32 num_total_members = 2;
+  optional .spotify.playlist_permission.proto.Capabilities capabilities = 3;
+  optional .spotify.playlist_permission.proto.PermissionLevel base_permission_level = 4;
+  repeated .spotify.playlist.cosmos.proto.Member members = 5;
+}

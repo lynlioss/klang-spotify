@@ -1,0 +1,15 @@
+
+get_artist_playlists.protospotify.your_library.proto":
+GetArtistPlaylistsRequest
+
+artist_uri (	R	artistUri"T
+ArtistPlaylist!
+playlist_uri (	RplaylistUri
+track_count (R
+trackCount"›
+GetArtistPlaylistsResponseF
+playlist (2*.spotify.your_library.proto.ArtistPlaylistRplaylist
+status_codeb (R
+statusCode
+errorc (	RerrorB*
+$spotify.your_library.esperanto.protoHPbproto3

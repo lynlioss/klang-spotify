@@ -1,0 +1,15 @@
+
+metadata/album_metadata.protospotify.cosmos_util.protometadata/image_group.proto"=
+AlbumArtistMetadata
+link (	Rlink
+name (	Rname"È
+AlbumMetadataH
+artists (2..spotify.cosmos_util.proto.AlbumArtistMetadataRartists
+link (	Rlink
+name (	Rname=
+covers (2%.spotify.cosmos_util.proto.ImageGroupRcovers
+year (RyearJJJ	J	
+J
+JR	copyrightR	num_discsR
+num_tracksRplayabilityRis_premium_onlyRcontent_accessB#
+com.spotify.cosmos.util.protoHP

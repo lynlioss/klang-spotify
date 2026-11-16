@@ -1,0 +1,25 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/sequences.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1;
+import "spotify/playback_platform/context/v1/sequence_child.proto";
+message Sequence {
+  repeated .spotify.playback_platform.context.v1.SequenceChild children = 1;
+}
+message PagedSequence {
+  repeated .spotify.playback_platform.context.v1.SequencePage pages = 1;
+}
+message ChainSequence {
+  .spotify.playback_platform.context.v1.SequencePage page = 1;
+  oneof _prev_page_id {
+    bytes prev_page_id = 2;
+  }
+  oneof _next_page_id {
+    bytes next_page_id = 3;
+  }
+}
+message SequencePage {
+  repeated .spotify.playback_platform.context.v1.SequenceChild children = 2;
+  oneof _page_id {
+    bytes page_id = 1;
+  }
+}

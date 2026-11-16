@@ -1,0 +1,14 @@
+
+!include/ConductorErrorEvent.protospotify.event_sender.proto"Î
+ConductorErrorEvent
+list_uri (	RlistUri
+list_ref (RlistRef(
+list_instance_id (	RlistInstanceId
+item_uri (	RitemUri
+item_uid (	RitemUid(
+item_instance_id (	RitemInstanceId
+clip_uri (	RclipUri
+clip_uid (	RclipUid
+error	 (	Rerror+
+error_description
+ (	RerrorDescriptionBH

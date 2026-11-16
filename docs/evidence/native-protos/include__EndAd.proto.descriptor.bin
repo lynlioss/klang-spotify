@@ -1,0 +1,38 @@
+
+include/EndAd.protospotify.event_sender.proto"Ž
+EndAd
+file_id (RfileId
+playback_id (R
+playbackId
+song_id (RsongId!
+source_start (	RsourceStart!
+reason_start (	RreasonStart
+
+source_end (	R	sourceEnd
+
+reason_end (	R	reasonEnd!
+bytes_played (RbytesPlayed"
+bytes_in_song	 (RbytesInSong
+	ms_played
+ (RmsPlayed 
+ms_total_est (R
+msTotalEst$
+ms_rcv_latency (RmsRcvLatency
+
+n_seekback (R	nSeekback
+ms_seekback (R
+msSeekback
+	n_seekfwd (RnSeekfwd
+
+ms_seekfwd (R	msSeekfwd
+
+ms_latency (R	msLatency
+	n_stutter (RnStutter
+p_lowbuffer (R
+pLowbuffer
+skipped (Rskipped
+
+ad_clicked (R	adClicked
+token (	Rtoken&
+client_ad_count (RclientAdCount2
+client_campaign_count (RclientCampaignCountBH

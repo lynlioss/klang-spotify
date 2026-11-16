@@ -1,0 +1,10 @@
+
+settingsapi.protospotify.settingsapi.v1"(
+SettingEnumValue
+value (	Rvalue"1
+SettingValue!
+string_value (	RstringValue"ˆ
+UpdateSettingRequest-
+setting_identifier (	RsettingIdentifierA
+	new_value (2$.spotify.settingsapi.v1.SettingValueRnewValue"
+UpdateSettingResponseBHbproto3

@@ -1,0 +1,46 @@
+
+collection_item.protospotify.collection_cosmos.protometadata/album_metadata.protometadata/artist_metadata.protometadata/track_metadata.protometadata/show_metadata.protometadata/episode_metadata.proto(collection/artist_collection_state.proto'collection/album_collection_state.proto'collection/track_collection_state.proto&collection/show_collection_state.proto)collection/episode_collection_state.protosync/artist_sync_state.protosync/album_sync_state.protosync/track_sync_state.protosync/episode_sync_state.proto%played_state/track_played_state.proto$played_state/show_played_state.proto'played_state/episode_played_state.proto"ž
+CollectionTrack
+index (Rindex
+add_time (RaddTimeO
+track_metadata (2(.spotify.cosmos_util.proto.TrackMetadataRtrackMetadatae
+track_collection_state (2/.spotify.cosmos_util.proto.TrackCollectionStateRtrackCollectionStateS
+track_play_state (2).spotify.cosmos_util.proto.TrackPlayStateRtrackPlayStateS
+track_sync_state (2).spotify.cosmos_util.proto.TrackSyncStateRtrackSyncState
+	decorated (R	decoratedF
+album (20.spotify.collection_cosmos.proto.CollectionAlbumRalbum
+cover	 (	Rcover
+link
+ (	Rlinkh
+artist_collection_state (20.spotify.cosmos_util.proto.ArtistCollectionStateRartistCollectionState"Ò
+CollectionAlbum
+add_time (RaddTimeO
+album_metadata (2(.spotify.cosmos_util.proto.AlbumMetadataRalbumMetadatae
+album_collection_state (2/.spotify.cosmos_util.proto.AlbumCollectionStateRalbumCollectionStateS
+album_sync_state (2).spotify.cosmos_util.proto.AlbumSyncStateRalbumSyncState
+	decorated (R	decorated
+
+album_type (	R	albumTypeF
+track (20.spotify.collection_cosmos.proto.CollectionTrackRtrack
+link (	Rlink"¢
+CollectionArtistR
+artist_metadata (2).spotify.cosmos_util.proto.ArtistMetadataRartistMetadatah
+artist_collection_state (20.spotify.cosmos_util.proto.ArtistCollectionStateRartistCollectionStateV
+artist_sync_state (2*.spotify.cosmos_util.proto.ArtistSyncStateRartistSyncState
+	decorated (R	decoratedF
+album (20.spotify.collection_cosmos.proto.CollectionAlbumRalbum
+link (	Rlink"Ã
+CollectionShowL
+show_metadata (2'.spotify.cosmos_util.proto.ShowMetadataRshowMetadatab
+show_collection_state (2..spotify.cosmos_util.proto.ShowCollectionStateRshowCollectionStateP
+show_play_state (2(.spotify.cosmos_util.proto.ShowPlayStateRshowPlayState
+add_time (RaddTime
+link (	Rlink"ì
+CollectionEpisodeU
+episode_metadata (2*.spotify.cosmos_util.proto.EpisodeMetadataRepisodeMetadatak
+episode_collection_state (21.spotify.cosmos_util.proto.EpisodeCollectionStateRepisodeCollectionState_
+episode_offline_state (2+.spotify.cosmos_util.proto.EpisodeSyncStateRepisodeOfflineStateY
+episode_play_state (2+.spotify.cosmos_util.proto.EpisodePlayStateRepisodePlayStateC
+show (2/.spotify.collection_cosmos.proto.CollectionShowRshow
+link (	RlinkB.
+"spotify.collection.esperanto.protoHP¢ESPbproto3

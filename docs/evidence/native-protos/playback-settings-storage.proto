@@ -1,0 +1,20 @@
+// Recovered descriptor. Original file: playback-settings-storage.proto
+syntax = "proto3";
+package spotify.playbacksettingsinternal;
+import "playback-settings.proto";
+import "google/protobuf/empty.proto";
+message ScopeKey {
+  oneof scope {
+    .google.protobuf.Empty user_scope = 1;
+    string content_id = 2;
+    string device_id = 3;
+  }
+}
+message CacheEntry {
+  .spotify.playbacksettingsinternal.ScopeKey setting_scope_key = 1;
+  .spotify.playbacksettings.FieldId setting_id = 2;
+  .spotify.playbacksettings.FieldValue setting_value = 3;
+}
+message CacheFile {
+  repeated .spotify.playbacksettingsinternal.CacheEntry entries = 1;
+}

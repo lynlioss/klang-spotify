@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: status_code.proto
+syntax = "proto3";
+package spotify.stream_reporting_esperanto.proto;
+enum StatusCode {
+  INVALID_STATUS_CODE = 0;
+  SUCCESS = 1;
+  EVENT_SENDER_ERROR = 2;
+  INVALID_STREAM_HANDLE = 3;
+  PENDING_EVENTS_ERROR = 4;
+  IGNORED = 5;
+}

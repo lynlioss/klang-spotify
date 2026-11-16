@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/attributes/format_list_attributes.proto
+syntax = "proto3";
+package spotify.list.v1.model.attributes;
+message FormatListAttributes {
+  message AttributesEntry {
+    string key = 1;
+    string value = 2;
+  }
+  repeated .spotify.list.v1.model.attributes.FormatListAttributes.AttributesEntry attributes = 1;
+}

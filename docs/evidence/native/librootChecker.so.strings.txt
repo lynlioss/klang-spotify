@@ -1,0 +1,60 @@
+    244 Android
+    250 r28c
+    290 13676358
+    595 __cxa_finalize
+    5a4 __cxa_atexit
+    5b1 Java_com_ravelin_core_util_security_RootCheckerNative_setLogDebugMessages
+    5fb __stack_chk_fail
+    60c exists
+    613 fopen
+    619 __android_log_print
+    62d fclose
+    634 Java_com_ravelin_core_util_security_RootCheckerNative_checkForRoot
+    677 Java_com_ravelin_core_util_security_RootCheckerNative_isMagiskPresent
+    6bd fseek
+    6c3 ftell
+    6c9 calloc
+    6d0 fread
+    6d6 strstr
+    6dd free
+    6e2 libc.so
+    6ea LIBC
+    6ef libandroid.so
+    6fd liblog.so
+    707 libm.so
+    70f libdl.so
+    718 librootChecker.so
+    898 RootCheck
+    8a2 DetectMagiskNative
+    8b5 core/img
+    8be core/mirror
+    8ca LOOKING FOR BINARY: %s Absent :(
+    8eb Opening Mount file size: %ld
+    908 Checking Mount Path  :%s
+    921 magisk
+    928 Found Mount Path :%s
+    93d LOOKING FOR BINARY: %s PRESENT!!!
+    95f /proc/self/mounts
+   12e1 Android (13624864, +pgo, +bolt, +lto, +mlgo, based on r530567e) clang version 19.0.1 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)
+   1399 Linker: LLD 19.0.1
+   13ad .fini_array
+   13b9 .text
+   13bf .comment
+   13c8 .note.android.ident
+   13dc .got.plt
+   13e5 .rela.plt
+   13ef .bss
+   13f4 .dynstr
+   13fc .eh_frame_hdr
+   140a .gnu.version_r
+   1419 .data.rel.ro
+   1426 .rela.dyn
+   1430 .gnu.version
+   143d .dynsym
+   1445 .gnu.hash
+   144f .relro_padding
+   145e .eh_frame
+   1468 .note.gnu.build-id
+   147b .dynamic
+   1484 .shstrtab
+   148e .rodata

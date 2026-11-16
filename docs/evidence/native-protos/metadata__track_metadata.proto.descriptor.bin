@@ -1,0 +1,46 @@
+
+metadata/track_metadata.protospotify.cosmos_util.protometadata/extension.protometadata/image_group.proto"B
+TrackAlbumArtistMetadata
+link (	Rlink
+name (	Rname"È
+TrackAlbumMetadataK
+artist (23.spotify.cosmos_util.proto.TrackAlbumArtistMetadataRartist
+link (	Rlink
+name (	Rname=
+covers (2%.spotify.cosmos_util.proto.ImageGroupRcovers"‚
+TrackArtistMetadata
+link (	Rlink
+name (	RnameC
+	portraits (2%.spotify.cosmos_util.proto.ImageGroupR	portraits"=
+TrackDescriptor
+name (	Rname
+weight (Rweight"”
+TrackMetadataC
+album (2-.spotify.cosmos_util.proto.TrackAlbumMetadataRalbumF
+artist (2..spotify.cosmos_util.proto.TrackArtistMetadataRartist
+link (	Rlink
+name (	Rname
+length (Rlength
+playable (Rplayable
+disc_number (R
+discNumber!
+track_number (RtrackNumber
+is_explicit	 (R
+isExplicit
+
+preview_id
+ (	R	previewId
+is_local (RisLocal0
+playable_local_track (RplayableLocalTrack
+
+has_lyrics (R	hasLyrics&
+is_premium_only (RisPremiumOnly)
+locally_playable (RlocallyPlayable.
+playable_track_link (	RplayableTrackLink%
+is_19_plus_only (Ris19PlusOnlyW
+track_descriptors (2*.spotify.cosmos_util.proto.TrackDescriptorRtrackDescriptorsB
+	extension (2$.spotify.cosmos_util.proto.ExtensionR	extension
+
+is_curated (R	isCurated(
+to_be_obfuscated (RtoBeObfuscatedJJRcontent_accessB#
+com.spotify.cosmos.util.protoHP

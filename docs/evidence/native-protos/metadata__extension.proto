@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: metadata/extension.proto
+syntax = "proto2";
+package spotify.cosmos_util.proto;
+import "extension_kind.proto";
+message Extension {
+  optional .spotify.extendedmetadata.ExtensionKind extension_kind = 1;
+  optional bytes data = 2;
+}

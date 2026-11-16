@@ -1,0 +1,19 @@
+
+%include/ConnectDeviceDiscovered.protospotify.event_sender.proto"€
+ConnectDeviceDiscovered
+	device_id (	RdeviceId'
+discover_method (	RdiscoverMethod0
+discovered_device_id (	RdiscoveredDeviceId4
+discovered_device_type (	RdiscoveredDeviceType<
+discovered_library_version (	RdiscoveredLibraryVersionA
+discovered_brand_display_name (	RdiscoveredBrandDisplayNameA
+discovered_model_display_name (	RdiscoveredModelDisplayName0
+discovered_client_id (	RdiscoveredClientId2
+discovered_product_id	 (	RdiscoveredProductIdD
+discovered_device_availablilty
+ (	RdiscoveredDeviceAvailablilty?
+discovered_device_public_key (	RdiscoveredDevicePublicKey3
+capabilities_resolved (RcapabilitiesResolved
+
+local_time (	R	localTime2
+discovered_token_type (	RdiscoveredTokenTypeBH

@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/behavior/disable.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1.behavior;
+import "spotify/playback_platform/common/v1/restriction.proto";
+message Disable {
+  repeated .spotify.playback_platform.common.v1.Restriction restrictions = 1;
+}

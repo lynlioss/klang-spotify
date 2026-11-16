@@ -1,0 +1,11 @@
+
+autoplay_node.protospotify.player.protologging_params.proto"Í
+AutoplayNodeS
+filler_node (22.spotify.player.proto.AutoplayNode.FillerNodeEntryR
+fillerNode*
+is_playing_filler (RisPlayingFillerJ
+logging_params (2#.spotify.player.proto.LoggingParamsRloggingParams1
+called_play_on_filler (RcalledPlayOnFiller=
+FillerNodeEntry
+key (	Rkey
+value (Rvalue:8BH

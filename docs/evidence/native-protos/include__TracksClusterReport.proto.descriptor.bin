@@ -1,0 +1,15 @@
+
+!include/TracksClusterReport.protospotify.event_sender.proto"Ï
+TracksClusterReport
+
+num_tracks (R	numTracks%
+num_dimensions (RnumDimensions%
+num_iterations (RnumIterations
+	converged (R	converged!
+num_clusters (RnumClusters
+
+total_time (R	totalTime
+num_batches (R
+numBatches
+tracks (	Rtracks2
+total_processing_time	 (RtotalProcessingTimeBH

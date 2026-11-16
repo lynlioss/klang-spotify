@@ -1,0 +1,13 @@
+
+es_playability.proto#spotify.playability.esperanto.proto"/
+GetLocallyPlayableRequest
+uris (	Ruris"N
+LocallyPlayable
+uri (	Ruri)
+locally_playable (RlocallyPlayable"h
+GetLocallyPlayableResponseJ
+items (24.spotify.playability.esperanto.proto.LocallyPlayableRitems2Å
+Playability•
+GetLocallyPlayable>.spotify.playability.esperanto.proto.GetLocallyPlayableRequest?.spotify.playability.esperanto.proto.GetLocallyPlayableResponse
+SubscribeLocallyPlayable>.spotify.playability.esperanto.proto.GetLocallyPlayableRequest?.spotify.playability.esperanto.proto.GetLocallyPlayableResponse0B1
+'com.spotify.playability.esperanto.protoH¢ESPbproto3

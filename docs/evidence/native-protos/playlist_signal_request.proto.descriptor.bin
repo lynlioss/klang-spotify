@@ -1,0 +1,38 @@
+
+playlist_signal_request.proto spotify.playlist_esperanto.protoresponse_status.proto"§
+Signal
+
+identifier (	R
+identifier
+signal_data (R
+signalData%
+client_payload (RclientPayload
+force (Rforce
+instance_id (	R
+instanceId"“
+PlaylistMultiSignalRequest
+list_uri (	RlistUriB
+signals (2(.spotify.playlist_esperanto.proto.SignalRsignals
+lenses (	Rlenses"˜
+PlaylistMultiItemSignalRequest
+item_id (	RitemId
+list_uri (	RlistUriB
+signals (2(.spotify.playlist_esperanto.proto.SignalRsignals"ƒ
+SignalStatusResult
+status_code (R
+statusCode%
+status_details (	RstatusDetails%
+status_payload (RstatusPayload"Ö
+PlaylistItemSignalResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatusv
+signal_results (2O.spotify.playlist_esperanto.proto.PlaylistItemSignalResponse.SignalResultsEntryRsignalResultsv
+SignalResultsEntry
+key (	RkeyJ
+value (24.spotify.playlist_esperanto.proto.SignalStatusResultRvalue:8"Î
+PlaylistSignalResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatusr
+signal_results (2K.spotify.playlist_esperanto.proto.PlaylistSignalResponse.SignalResultsEntryRsignalResultsv
+SignalResultsEntry
+key (	RkeyJ
+value (24.spotify.playlist_esperanto.proto.SignalStatusResultRvalue:8B,
+ spotify.playlist.esperanto.protoHP¢ESPbproto3

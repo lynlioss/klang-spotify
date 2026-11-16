@@ -1,0 +1,496 @@
+ 33e20e Failed finding field 'appNativeLogin5SetupLifecycle'
+ 33e282 byBearer
+ 33e2ca spotify.login5.v3.UserInfo.birthdate
+ 33e2ef spotify.login5.v4.credentials.ParentChildCredential.child_id
+ 33e32c spotify.authentication.login5.impl.proto.AccessToken.type
+ 33e366 (Lcom/spotify/authentication/login5/Login5Configuration;Lcom/spotify/concurrency/async/NativeTimerManagerThread;Lcom/spotify/authentication/login5setup/NativeLogin5Setup;Lcom/spotify/authentication/oauth/AccessToken;Lcom/spotify/authentication/credentials/UnencryptedCredentials;Lcom/spotify/cosmos/cosmosimpl/NativeRouter;Lcom/spotify/connectivity/NativeApplicationScopeAPI;Lcom/spotify/authentication/oauthsetupimpl/Login5BackoffConfig;ZZ)Lcom/spotify/authentication/oauthsetupimpl/NativeOAuthSetupImpl;
+ 33e94f Stored credentials request failed: could not parse response
+ 3408d5 login5_timeout
+ 3408e4 INVALID_CLIENTTOKEN
+ 34106d include/Login5PermanentErrorNonAuth.proto
+ 341f0f spotify.login5.v3.challenges.CodeChallenge.canonical_phone_number
+ 341f51 spotify.login5.v3.credentials.FacebookAccessToken.access_token
+ 341f90 spotify.login5.v4.challenges.Finish.nonce
+ 344af3 login5_unsupported_authentication_method
+ 344b1c login5_too_many_attempts
+ 344b35 login5_try_again_later
+ 345143 include/Login5TaskNonAuth.proto
+ 345d93 spotify.login5.v3.credentials.SamsungSignInCredential.redirect_uri
+ 345dd6 com/spotify/authentication/login5setup/NativeLogin5Setup
+ 345e0f spotify.authentication.login5.impl.proto.GoogleSignInCredentials.authCode
+ 345e59 Login5OAuthClient::Impl::loadTokenFromNetwork: Got Login5 reply.
+ 34627d Stored credentials request failed: empty stored credential in response
+ 34977f spotify.login5.v3.credentials.Password.id
+ 3497a9 spotify.login5.v3.UserInfo.email
+ 3497ca spotify.login5.v4.credentials.AppleSignInCredential.redirect_uri
+ 34980b spotify.login5.v4.credentials.NaverSignInCredential.redirect_uri
+ 349872 spotify.authentication.login5.impl.proto.NativePassword.password
+ 3498b3 spotify.authentication.login5.impl.proto.SignupRequired.name
+ 349dec Stored credentials request failed: network error, error: %s
+ 34d6cb encryptedPersistedClientToken
+ 34d873 Failed to load class Login5Configuration
+ 34d8b3 spotify.login5.v3.LoginOk.access_token
+ 34d8da spotify.login5.v4.credentials.StoredCredential.username
+ 34d912 spotify.login5.v4.credentials.GoogleSignInCredential.auth_code
+ 34d951 spotify.login5.v4.identifiers.PhoneNumber.number
+ 34d982 spotify.login5.v4.Interaction.Hint.ui_locales
+ 34d9b0 spotify.authentication.login5.impl.proto.CodeRequiredCode.emailAddress
+ 34d9f7 Login5OAuthClient: Failed authenticating: %s
+ 34da24 NativeOAuthSetup: failed to encrypt rotated stored credential
+ 34da62 NativeOAuthSetup: persisted rotated stored credential, result %d
+ 35109c spotify.login5.v4.challenges.CodeChallenge.email_address
+ 3510d5 spotify.login5.v4.credentials.SamsungSignInCredential.redirect_uri
+ 351118 spotify.login5.v4.Recaptcha.token
+ 35113a auth.login5.token_request
+ 351154 Login5OAuthClient: Successful authentication
+ 351926 Stored credentials request failed with HTTP status %d
+ 352726 no stored credentials for device
+ 353da1 login5_invalid_arguments
+ 35501d (Lcom/spotify/authentication/login5/Login5Configuration;Lcom/spotify/concurrency/async/NativeTimerManagerThread;Lcom/spotify/connectivity/NativeApplicationScopeAPI;)Lcom/spotify/authentication/login5setupimpl/NativeLogin5SetupImpl;
+ 355111 spotify.login5.v3.credentials.StoredCredential.username
+ 355149 spotify.login5.v4.credentials.AppleSignInCredential.bundle_id
+ 355187 spotify.login5.v4.credentials.SamsungSignInCredential.token_endpoint_url
+ 3551d0 spotify.login5.v4.Recaptcha.site_key
+ 358a98 spotify.login5.v3.ClientInfo.device_id
+ 358abf spotify.login5.v3.credentials.OneTimeToken.token
+ 358af0 spotify.login5.v3.credentials.SamsungSignInCredential.auth_code
+ 358b30 spotify.login5.v4.LoginOk.access_token
+ 358b57 spotify.authentication.login5.impl.proto.AuthenticateContext.ID
+ 358b97 spotify.authentication.login5.impl.proto.NaverSignInCredentials.redirectUri
+ 358be3 spotify.authentication.login5.impl.proto.SignupRequired.email
+ 35b887 login5_unsupported_login_protocol
+ 35cc33 Login5: Non-successful HTTP status while authenticating: %d
+ 35cc77 spotify.login5.v3.ClientInfo.client_id
+ 35cc9e spotify.login5.v3.LoginOk.username
+ 35ccc1 spotify.login5.v4.challenges.CodeSolution.code
+ 35ccf0 spotify.login5.v4.credentials.GoogleSignInCredential.redirect_uri
+ 35cd32 spotify.authentication.login5.impl.proto.ParentChildCredentials.childId
+ 35cd85 NativeOAuthSetup: application scope gone, not persisting rotated stored credential
+ 360b8e spotify.login5.v4.credentials.AppleSignInCredential.auth_code
+ 360bcc spotify.login5.v4.ClientInfo.client_id
+ 360bf3 spotify.authentication.login5.impl.proto.LegacyV3Password.password
+ 360c36 Login5OAuthClient::Impl::loadToken: Token not cached, or expired.
+ 360c8b TokenExchanger error kAborted due to Login5 error: 
+ 3653f0 spotify.login5.v3.identifiers.PhoneNumber.country_calling_code
+ 36542f spotify.login5.v4.UserInfo.phone_number
+ 365483 spotify.authentication.login5.impl.proto.SignupRequired.identifierToken
+ 368c19 spotify.login5.v3.credentials.Password.password
+ 368c49 spotify.login5.v3.identifiers.PhoneNumber.iso_country_code
+ 368c84 spotify.login5.v4.ClientInfo.device_id
+ 368cc5 spotify.authentication.login5.impl.proto.Login5
+ 368cf5 spotify.authentication.login5.impl.proto.EmailAddress.emailAddress
+ 368d38 spotify.authentication.login5.impl.proto.AuthenticateRequest.flow_id
+ 368d7d spotify.authentication.login5.impl.proto.InteractionRequiredProceedRequest.server_hash
+ 36b025 login5_invalid_credentials
+ 36b040 login5_invalid_phone_number
+ 36c7bc spotify.login5.v4.identifiers.EmailAddress.email_address
+ 36c7f5 spotify.authentication.login5.impl.proto.FacebookAccessToken.idToken
+ 36c83a spotify.authentication.login5.impl.proto.AuthenticateRequest.interaction_callback_uri
+ 36c890 Login5OAuthClient: Stored credential changed
+ 36c8bd NativeOAuthSetup: no stored record for the session user, not persisting rotated stored credential
+ 36f059 EXPIRED_CLIENTTOKEN
+ 3701e5 enableClientToken
+ 37023b spotify.login5.v4.credentials.FacebookAccessToken.fb_uid
+ 370274 spotify.login5.v4.LoginOk.username
+ 370297 spotify.authentication.login5.impl.proto.RecaptchaInfo.token
+ 3702d4 Login5OAuthClient::Impl::loadToken: Loading token from network.
+ 37230f login5_bad_request
+ 37329c spotify.login5.v4.identifiers.PhoneNumber.country_calling_code
+ 3732db spotify.authentication.login5.impl.proto.OneTimeToken.token
+ 376d7c https://accounts.spotify.com/oauth2/device/authorize
+ 376db1 com/spotify/authentication/login5setupimpl/NativeLogin5SetupImpl
+ 376df2 spotify.login5.v4.UserInfo.birthdate
+ 376e17 spotify.authentication.login5.impl.proto.FacebookAccessToken.accessToken
+ 376e60 spotify.authentication.login5.impl.proto.GoogleSignInCredentials.idToken
+ 376ea9 spotify.authentication.login5.impl.proto.AppleSignInCredentials.auth_code
+ 376ef3 spotify.authentication.login5.impl.proto.SignupRequired.birthdate
+ 37a61f spotify.login5.v3.credentials.GoogleSignInCredential.auth_code
+ 37a65e spotify.login5.v4.credentials.GoogleSignInCredential.id_token
+ 37a69c spotify.login5.v4.LoginRequest.flow_id
+ 37a6cc spotify.authentication.login5.impl.proto.SamsungSignInCredentials.redirectUri
+ 37a71a spotify.authentication.login5.impl.proto.CodeRequiredProceedRequest.code
+ 37c007 getDefaultConnectCredentials - Failed to get stored credentials
+ 37c7d2 invalid_login5_error_
+ 37e27c cpp-authentication-login5_setup_jni_impl
+ 37e2be spotify.login5.v3.challenges.CodeSolution.code
+ 37e2ed spotify.login5.v3.identifiers.PhoneNumber.number
+ 37e31e spotify.login5.v4.challenges.Redirect.interaction_url
+ 37e354 spotify.authentication.login5.impl.proto.Password.hint
+ 37e38b spotify.authentication.login5.impl.proto.PhoneNumber.countryCallingCode
+ 37e3d3 spotify.authentication.login5.impl.proto.AuthenticateFailure.UnknownReason.message
+ 38075c MISSING_CLIENTTOKEN
+ 381a04 com/spotify/authentication/login5/Login5Configuration
+ 381d83 Stored credentials request succeeded
+ 383c6d login5_non_successful_response
+ 384ee4 spotify.login5.v3.UserInfo.phone_number
+ 384f0c spotify.login5.v4.credentials.FacebookAccessToken.access_token
+ 384f4b spotify.login5.v4.credentials.SamsungSignInCredential.auth_code
+ 384f8b spotify.login5.v4.Interaction.Finish.uri
+ 384fce spotify.authentication.login5.impl.proto.NaverSignInCredentials.authCode
+ 385017 spotify.authentication.login5.impl.proto.InteractionRequired.interaction_url
+ 388afb ConnectionQuality: processing bucket with %zu bearer(s), timer_error=%lldms
+ 388b47 ConnectionQuality: bearer=%d -> %s (max_concurrent=%u, bytes_sent=%zu, bytes_received=%zu, p90_receipt=%lldms, p90_event_time=%lldms, latency_samples=%u, timeouts=%u)
+ 388c98 spotify.login5.v3.LoginResponse.identifier_token
+ 388d07 spotify.authentication.login5.impl.proto.InteractionRequiredProceedRequest.interaction_ref
+ 388d62 Login5OAuthClient: Operation aborted
+ 388e8e auto spotify::connectivity::impl::WebgateSetupImpl::WebgateSetupImpl(http::ConnectionBuilder &&, connectivity::webgate::Configuration &&, const std::shared_ptr<pubsub::ConnectionIdProvider> &, const std::shared_ptr<auth::client_token::ClientTokenAcquirer> &, const std::shared_ptr<authentication::oauth::Client> &)::(anonymous class)::operator()() const
+ 389160 Login5OAuthClient: Product state changed, force renew.
+ 38b6dd login5_not_allowed
+ 38cb70 spotify.authentication.login5.impl.proto.GoogleSignInCredentials.redirectUri
+ 38cbbd spotify.authentication.login5.impl.proto.NativePassword.id
+ 39080b spotify.login5.v4.challenges.InteractionSolution.interact_ref
+ 390849 spotify.login5.v4.UserInfo.email
+ 39086a spotify.authentication.login5.impl.proto.ErrorResponse.GenericError.error_message
+ 390f05 Stored credentials request failed, falling back
+ 394995 spotify.login5.v3.credentials.GoogleSignInCredential.redirect_uri
+ 3949d7 spotify.login5.v4.credentials.FacebookAccessToken.id_token
+ 394a12 spotify.authentication.login5.impl.proto.PhoneNumber.number
+ 394a4e spotify.authentication.login5.impl.proto.AuthenticateSuccess.username
+ 394a94 Login5OAuthClient::Impl::loadTokenFromNetwork: Backing off for %lldms.
+ 394c15 es_traffic_bearer.proto
+ 396cb2 login5_unsupported_response
+ 396cce login5_unknown_identifier
+ 398074 spotify.login5.v3.credentials.ParentChildCredential.child_id
+ 3980b1 spotify.login5.v3.UserInfo.name
+ 3980d1 spotify.authentication.login5.impl.proto.SamsungSignInCredentials.authCode
+ 39bbab HashCash
+ 39bbb4 spotify.login5.v3.credentials.AppleSignInCredential.auth_code
+ 39bbf2 spotify.login5.v3.credentials.SamsungSignInCredential.token_endpoint_url
+ 39bc3b spotify.login5.v4.credentials.NativePassword.password
+ 39bc71 spotify.authentication.login5.impl.proto.RecaptchaInfo.site_key
+ 39bcb1 spotify.authentication.login5.impl.proto.SignupRequired.phoneNumber
+ 39f45b spotify.login5.v3.credentials.AppleSignInCredential.bundle_id
+ 39f499 spotify.login5.v4.credentials.SamsungSignInCredential.id_token
+ 39f4d8 spotify.authentication.login5.impl.proto.AppleSignInCredentials.redirect_uri
+ 39f53f https://accounts.spotify.com
+ 3a1cec login5_hash_mishmatch
+ 3a2df9 spotify.authentication.token_exchange.proto.SessionTransferTokenRequest.url
+ 3a3064 spotify.login5.v4.credentials.OneTimeToken.token
+ 3a3095 spotify.authentication.login5.impl.proto.AccessTokenClient
+ 3a30d0 spotify.authentication.login5.impl.proto.AccessToken.token
+ 3a310b spotify.authentication.login5.impl.proto.SamsungSignInCredentials.tokenEndpointUrl
+ 3a315e spotify.authentication.login5.impl.proto.CodeRequiredCode.canonicalPhoneNumber
+ 3a66f6 spotify.login5.v4.identifiers.PhoneNumber.iso_country_code
+ 3a6731 spotify.authentication.login5.impl.proto.FacebookAccessToken.fbUID
+ 3aa009 Bearer
+ 3aa010 spotify.login5.v4.challenges.CodeChallenge.canonical_phone_number
+ 3aa052 spotify.login5.v4.credentials.Password.login_hint
+ 3aa084 spotify.login5.v4.credentials.NativePassword.id
+ 3aa0b4 spotify.login5.v4.UserInfo.name
+ 3aa0d4 spotify.authentication.login5.impl.proto.PhoneNumber.isoCountryCode
+ 3aa118 Login5OAuthClient: Unexpected callback
+ 3aa1ca getNativeLogin5Transport
+ 3ac4af login5
+ 3ac4b6 login5_unknown_backend_error
+ 3ad827 Autologin
+ 3ad84e spotify.login5.v3.credentials.FacebookAccessToken.fb_uid
+ 3ad887 spotify.login5.v4.credentials.NaverSignInCredential.auth_code
+ 3ad8c5 spotify.login5.v4.Interaction.Finish.nonce
+ 3ad8f0 spotify.authentication.login5.impl.proto.LegacyV3Password.id
+ 3ad92d spotify.authentication.login5.impl.proto.AuthenticateRequest.ui_locale
+ 3ad97e spotify.connectivity.auth.client_token.esperanto.proto.ClientTokenProvider
+ 3b0220 login5_aborted
+ 3b180d appNativeLogin5SetupLifecycle
+ 3b19c3 Login5: HTTP transport error while authenticating: %s
+ 3b19f9 spotify.login5.v3.credentials.AppleSignInCredential.redirect_uri
+ 3b1a3a spotify.login5.v4.LoginResponse.identifier_token
+ 3b1a6b spotify.authentication.login5.impl.proto.AppleSignInCredentials.bundle_id
+ 3b1ab5 spotify.authentication.login5.impl.proto.InteractionRequired.finish_url
+ 3b3db7 login5_http_transport_error
+ 3bf194 autologin.username
+ 3bf1a7 autologin.saved_credentials
+ 3bf1c3 autologin.canonical_username
+ 3bf1e0 autologin.blob
+ 3bf1ef autologin.enabled
+ 3bf698 https://clienttoken.spotify.com/v1/clienttoken
+ 3bfb2e accounts.spotify.com
+ 3bfbb2 https://accounts.spotify.com/api/token
+ 3bfbfb https://accounts.spotify.com/api/token
+ 3bfc65 https://accounts.spotify.com/api/token
+ 3bfcae https://login5.spotify.com/v3/login
+ 3bfcf8 https://login5.spotify.com/v4/login
+ 3c0080 sessiontransfer/v1/token
+ 3c00d9 https://accounts.spotify.com/login/ott/v2#token=
+ 3e75f2 use_sessiontransfer_for_connect_default
+ 3e761a sessiontransfer/v1/connect-stored-credentials
+ 3e769c https://accounts.spotify.com/api/token
+ 3e77a6 https://accounts.spotify.com/oauth2/v2/auth
+ 3e77f1 https://accounts.spotify.com/api/token
+ 59bfb1 $spotify.clienttoken.serialization.v0"%
+ 59c002 ClientToken
+ 59c098 21.spotify.clienttoken.serialization.v0.TokenDomainR
+ 59c0d7 $spotify.clienttoken.serialization.v0H
+ 59c3fa spotify.clienttoken.data.v0"
+ 59c44d 21.spotify.clienttoken.data.v0.PlatformSpecificDataR
+ 59c4d6 24.spotify.clienttoken.data.v0.ApplicationSpecificDataR
+ 59c596 2..spotify.clienttoken.data.v0.NativeAndroidDataH
+ 59c5de 2*.spotify.clienttoken.data.v0.NativeIOSDataH
+ 59c61e 23.spotify.clienttoken.data.v0.NativeDesktopMacOSDataH
+ 59c667 25.spotify.clienttoken.data.v0.NativeDesktopWindowsDataH
+ 59c6b4 23.spotify.clienttoken.data.v0.NativeDesktopLinuxDataH
+ 59c700 2+.spotify.clienttoken.data.v0.NativeTVOSDataH
+ 59c746 2..spotify.clienttoken.data.v0.NativeWatchOSDataH
+ 59c7ba 22.spotify.clienttoken.data.v0.NativeCoreSpeakerDataH
+ 59c836 2*.spotify.clienttoken.data.v0.AndroidScreenR
+ 59d34c spotify.clienttoken.data.v0H
+ 59d62f spotify.clienttoken.http.v0
+ 59d663 ClientTokenRequest
+ 59d68b 23.spotify.clienttoken.http.v0.ClientTokenRequestTypeR
+ 59d6e2 2..spotify.clienttoken.http.v0.ClientDataRequestH
+ 59d73b 24.spotify.clienttoken.http.v0.ChallengeAnswersRequestH
+ 59d8eb 20.spotify.clienttoken.data.v0.ConnectivitySdkDataH
+ 59d9ed 2,.spotify.clienttoken.http.v0.ChallengeAnswerR
+ 59da29 ClientTokenResponse
+ 59da53 24.spotify.clienttoken.http.v0.ClientTokenResponseTypeR
+ 59daae 21.spotify.clienttoken.http.v0.GrantedTokenResponseH
+ 59db05 2/.spotify.clienttoken.http.v0.ChallengesResponseH
+ 59dc1f 2(.spotify.clienttoken.http.v0.TokenDomainR
+ 59dc92 2&.spotify.clienttoken.http.v0.ChallengeR
+ 59dd42 HashCashParameters
+ 59dda0 2*.spotify.clienttoken.http.v0.ChallengeTypeR
+ 59ddf4 23.spotify.clienttoken.http.v0.ClientSecretParametersH
+ 59de63 21.spotify.clienttoken.http.v0.EvaluateJSParametersH
+ 59deb2 evaluate_hashcash_parameters
+ 59ded4 2/.spotify.clienttoken.http.v0.HashCashParametersH
+ 59df09 evaluateHashcashParametersB
+ 59df8f HashCashAnswer
+ 59dfe0 2*.spotify.clienttoken.http.v0.ChallengeTypeR
+ 59e032 23.spotify.clienttoken.http.v0.ClientSecretHMACAnswerH
+ 59e08c 2-.spotify.clienttoken.http.v0.EvaluateJSAnswerH
+ 59e0dc 2+.spotify.clienttoken.http.v0.HashCashAnswerH
+ 59e10d hashCashB
+ 59e123 ClientTokenBadRequest
+ 59e156 ClientTokenRequestType
+ 59e1cd ClientTokenResponseType
+ 59e2c3 spotify.clienttoken.http.v0H
+ 59f95c 2C.spotify.connectivity.auth.client_token.esperanto.proto.ClientTokenH
+ 59fa5d ClientToken
+ 59fb2a EncryptedClientToken
+ 59fb69 9com.spotify.connectivity.auth.clienttoken.esperanto.protoH
+ 5a1a51 bearer
+ 5a1a5d 2'.spotify.connectivity.http.proto.BearerR
+ 5a1a88 bearerB
+ 5a1cd7 Bearer
+ 5a1ce1 BEARER_UNKNOWN
+ 5a1cf5 BEARER_CELLULAR
+ 5a1d0a BEARER_WIFI
+ 5a363a es_traffic_bearer.proto"^
+ 5a3667 bearer
+ 5a3673 24.spotify.connectivity.traffic.esperanto.proto.BearerR
+ 5a36ab bearerB4
+ 5a36fa es_traffic_bearer.proto
+ 5a3743 Bearer
+ 5a374d BEARER_WIFI
+ 5a375e BEARER_CELLULAR
+ 5a3773 BEARER_UNKNOWN
+ 5a421f es_traffic_bearer.proto"
+ 5a449a bearer
+ 5a44a6 24.spotify.connectivity.traffic.esperanto.proto.BearerR
+ 5a44de bearer
+ 65ae38 bearer
+ 65ae46 bearerB
+ 65c089 )include/Login5PermanentErrorNonAuth.proto
+ 65c0d3 Login5PermanentErrorNonAuth
+ 65c19a include/Login5TaskNonAuth.proto
+ 65c1da Login5TaskNonAuth
+ 65c26a login5_response
+ 65c281 login5Response
+16a6548 spotify.authentication.token_exchange.proto.SessionTransferTokenRequest
+16ab7a8 spotify.login5.v3.challenges.CodeChallenge
+16ab818 spotify.login5.v3.challenges.CodeSolution
+16ab908 spotify.login5.v3.challenges.HashcashChallenge
+16ab978 spotify.login5.v3.challenges.HashcashSolution
+16aba28 spotify.login5.v3.ClientInfo
+16abc88 spotify.login5.v3.credentials.StoredCredential
+16abcf8 spotify.login5.v3.credentials.Password
+16abd60 spotify.login5.v3.credentials.FacebookAccessToken
+16abdd8 spotify.login5.v3.credentials.OneTimeToken
+16abe48 spotify.login5.v3.credentials.ParentChildCredential
+16abec0 spotify.login5.v3.credentials.AppleSignInCredential
+16abf38 spotify.login5.v3.credentials.SamsungSignInCredential
+16abfb0 spotify.login5.v3.credentials.GoogleSignInCredential
+16ac068 spotify.login5.v3.identifiers.PhoneNumber
+16ac298 spotify.login5.v3.Challenges
+16ac2f8 spotify.login5.v3.Challenge
+16ac358 spotify.login5.v3.ChallengeSolutions
+16ac3c0 spotify.login5.v3.ChallengeSolution
+16ac428 spotify.login5.v3.LoginRequest
+16ac488 spotify.login5.v3.LoginOk
+16ac4e8 spotify.login5.v3.LoginResponse
+16ac678 spotify.login5.v3.UserInfo
+16ac758 spotify.login5.v4.challenges.AuthnPlatformChallenge
+16ac7d0 spotify.login5.v4.challenges.AuthnPlatformSolution
+16ac8c8 spotify.login5.v4.challenges.CodeChallenge
+16ac938 spotify.login5.v4.challenges.CodeSolution
+16aca28 spotify.login5.v4.challenges.HashcashChallenge
+16aca98 spotify.login5.v4.challenges.HashcashSolution
+16acc08 spotify.login5.v4.challenges.InteractionChallenge
+16acc80 spotify.login5.v4.challenges.Redirect
+16acce8 spotify.login5.v4.challenges.Finish
+16acd50 spotify.login5.v4.challenges.InteractionSolution
+16ad088 spotify.login5.v4.credentials.StoredCredential
+16ad0f8 spotify.login5.v4.credentials.Password
+16ad160 spotify.login5.v4.credentials.FacebookAccessToken
+16ad1d8 spotify.login5.v4.credentials.OneTimeToken
+16ad248 spotify.login5.v4.credentials.ParentChildCredential
+16ad2c0 spotify.login5.v4.credentials.AppleSignInCredential
+16ad338 spotify.login5.v4.credentials.SamsungSignInCredential
+16ad3b0 spotify.login5.v4.credentials.GoogleSignInCredential
+16ad428 spotify.login5.v4.credentials.NaverSignInCredential
+16ad4a0 spotify.login5.v4.credentials.NativePassword
+16ad510 spotify.login5.v4.credentials.AuthnPlatformCredential
+16ad608 spotify.login5.v4.identifiers.EmailAddress
+16ad678 spotify.login5.v4.identifiers.PhoneNumber
+16ad9e8 spotify.login5.v4.Challenges
+16ada48 spotify.login5.v4.Challenge
+16adaa8 spotify.login5.v4.ChallengeSolutions
+16adb10 spotify.login5.v4.ChallengeSolution
+16adb78 spotify.login5.v4.Interaction.Finish
+16adbe0 spotify.login5.v4.Interaction.Hint
+16adc48 spotify.login5.v4.Interaction
+16adca8 spotify.login5.v4.ClientInfo
+16add08 spotify.login5.v4.Recaptcha
+16add68 spotify.login5.v4.LoginRequest
+16addc8 spotify.login5.v4.LoginOk
+16ade28 spotify.login5.v4.LoginResponse
+16adfb8 spotify.login5.v4.UserInfo
+16ae0f8 spotify.authentication.login5.impl.proto.AccessToken
+16ae270 spotify.authentication.login5.impl.proto.ErrorResponse.GenericError
+16ae2f8 spotify.authentication.login5.impl.proto.ErrorResponse
+16ae370 spotify.authentication.login5.impl.proto.AccessTokenResponse
+16ae3f0 spotify.authentication.login5.impl.proto.GetTokenRequest
+16ae4b0 spotify.authentication.login5.impl.proto.AuthenticateContext
+16ae8b0 spotify.authentication.login5.impl.proto.Password
+16ae928 spotify.authentication.login5.impl.proto.OneTimeToken
+16ae9a0 spotify.authentication.login5.impl.proto.FacebookAccessToken
+16aea20 spotify.authentication.login5.impl.proto.PhoneNumber
+16aea98 spotify.authentication.login5.impl.proto.SamsungSignInCredentials
+16aeb20 spotify.authentication.login5.impl.proto.ParentChildCredentials
+16aeba0 spotify.authentication.login5.impl.proto.GoogleSignInCredentials
+16aec28 spotify.authentication.login5.impl.proto.NaverSignInCredentials
+16aeca8 spotify.authentication.login5.impl.proto.AppleSignInCredentials
+16aed28 spotify.authentication.login5.impl.proto.LegacyV3Password
+16aeda8 spotify.authentication.login5.impl.proto.NativePassword
+16aee20 spotify.authentication.login5.impl.proto.EmailAddress
+16aee98 spotify.authentication.login5.impl.proto.AuthnPlatformCredential
+16aef20 spotify.authentication.login5.impl.proto.AuthenticateCredentials
+16aefe8 spotify.authentication.login5.impl.proto.AuthenticateRequest
+16af168 spotify.authentication.login5.impl.proto.AuthenticateSuccess
+16af1e8 spotify.authentication.login5.impl.proto.AuthenticateFailure.UnknownReason
+16af278 spotify.authentication.login5.impl.proto.AuthenticateFailure
+16af2f8 spotify.authentication.login5.impl.proto.AuthenticateResult
+16af4b8 spotify.authentication.login5.impl.proto.AuthnPlatformRequired
+16af538 spotify.authentication.login5.impl.proto.AuthnPlatformRequiredProceedRequest
+16af5c8 spotify.authentication.login5.impl.proto.AuthnPlatformRequiredProceedSuccess
+16af658 spotify.authentication.login5.impl.proto.AuthnPlatformRequiredProceedError
+16af6e8 spotify.authentication.login5.impl.proto.AuthnPlatformRequiredProceedResult
+16af9f8 spotify.authentication.login5.impl.proto.CodeRequiredCode
+16afa78 spotify.authentication.login5.impl.proto.CodeRequired
+16afaf0 spotify.authentication.login5.impl.proto.CodeRequiredProceedRequest
+16afb78 spotify.authentication.login5.impl.proto.CodeRequiredProceedSuccess
+16afc00 spotify.authentication.login5.impl.proto.CodeRequiredProceedError
+16afc88 spotify.authentication.login5.impl.proto.CodeRequiredProceedResult
+16afd10 spotify.authentication.login5.impl.proto.CodeRequiredResendRequest
+16afd98 spotify.authentication.login5.impl.proto.CodeRequiredResendSuccess
+16afe20 spotify.authentication.login5.impl.proto.CodeRequiredResendError
+16afea8 spotify.authentication.login5.impl.proto.CodeRequiredResendResult
+16b0070 spotify.authentication.login5.impl.proto.InteractionRequired
+16b00f0 spotify.authentication.login5.impl.proto.InteractionRequiredProceedRequest
+16b0180 spotify.authentication.login5.impl.proto.InteractionRequiredProceedSuccess
+16b0210 spotify.authentication.login5.impl.proto.InteractionRequiredProceedError
+16b02a0 spotify.authentication.login5.impl.proto.InteractionRequiredProceedResult
+16b0370 spotify.authentication.login5.impl.proto.RecaptchaInfo
+16b0428 spotify.authentication.login5.impl.proto.SignupRequired
+17631a8 spotify.authentication.token_exchange.proto.SessionTransferTokenRequesturl
+17646d0 spotify.clienttoken.serialization.v0.TokenDomaindomain
+1764830 spotify.clienttoken.serialization.v0.ClientTokentoken
+1765010 spotify.clienttoken.data.v0.NativeAndroidDataos_versionnamemodelbrandmanufacturerdevice_data_extinstaller_name
+176535c spotify.clienttoken.data.v0.NativeIOSDatahw_machinesystem_versionsimulator_model_identifierdevice_data_ext
+176555c spotify.clienttoken.data.v0.NativeDesktopMacOSDatasystem_versionhw_modelcompiled_cpu_type
+1765814 spotify.clienttoken.data.v0.NativeDesktopWindowsDatawine_version
+1765974 spotify.clienttoken.data.v0.NativeDesktopLinuxDatasystem_namesystem_releasesystem_versionhardware
+1765b40 spotify.clienttoken.data.v0.NativeTVOSDatahw_machinesystem_versionsimulator_model_identifier
+1765cbc spotify.clienttoken.data.v0.NativeWatchOSDatahw_machinesystem_versionsimulator_model_identifier
+1765e94 spotify.clienttoken.data.v0.NativeCoreSpeakerDatabrand_namemodel_namedevice_manufacturerplatform_namesystems_integratorsdk_version
+1766518 spotify.clienttoken.http.v0.ClientDataRequestclient_versionclient_idcurrent_token
+1766660 spotify.clienttoken.http.v0.ChallengeAnswersRequeststate
+1766858 spotify.clienttoken.http.v0.TokenDomaindomain
+17669b0 spotify.clienttoken.http.v0.GrantedTokenResponsetoken
+1766ad8 spotify.clienttoken.http.v0.ChallengesResponsestate
+1766bd8 spotify.clienttoken.http.v0.ClientSecretParameterssalt
+1766cf4 spotify.clienttoken.http.v0.EvaluateJSParameterscodelibraries
+1766e1c spotify.clienttoken.http.v0.HashCashParametersprefix
+1767028 spotify.clienttoken.http.v0.ClientSecretHMACAnswerhmac
+1767128 spotify.clienttoken.http.v0.EvaluateJSAnswerresult
+1767228 spotify.clienttoken.http.v0.HashCashAnswersuffix
+1767430 spotify.clienttoken.http.v0.ClientTokenBadRequestmessage
+1767590 spotify.clienttoken.data.v0.ConnectivitySdkDatadevice_iddeveloper_api_key
+1768edc spotify.login5.v3.credentials.StoredCredentialusername
+1768fc0 spotify.login5.v3.credentials.Passwordidpassword
+1769074 spotify.login5.v3.credentials.FacebookAccessTokenfb_uidaccess_token
+1769160 spotify.login5.v3.identifiers.PhoneNumbernumberiso_country_codecountry_calling_code
+1769218 spotify.login5.v3.credentials.OneTimeTokentoken
+17692d0 spotify.login5.v3.credentials.ParentChildCredentialchild_id
+17693b8 spotify.login5.v3.credentials.AppleSignInCredentialauth_coderedirect_uribundle_id
+17694b8 spotify.login5.v3.credentials.SamsungSignInCredentialauth_coderedirect_uritoken_endpoint_url
+1769594 spotify.login5.v3.credentials.GoogleSignInCredentialauth_coderedirect_uri
+176980c spotify.login5.v3.LoginOkusernameaccess_token
+1769930 spotify.login5.v3.LoginResponseidentifier_token
+1769a14 spotify.login5.v3.challenges.CodeChallengecanonical_phone_number
+1769ab8 spotify.login5.v3.challenges.CodeSolutioncode
+1769c64 spotify.login5.v3.ClientInfoclient_iddevice_id
+1769dc4 spotify.login5.v3.UserInfonameemailbirthdatephone_number
+1769f30 spotify.login5.v4.challenges.Redirectinteraction_url
+1769fc8 spotify.login5.v4.challenges.Finishnonce
+176a5c0 spotify.login5.v4.challenges.CodeChallengecanonical_phone_numberemail_address
+176a8f8 spotify.login5.v4.challenges.CodeSolutioncode
+176a988 spotify.login5.v4.challenges.InteractionSolutioninteract_ref
+176ab84 spotify.login5.v4.Interaction.Finishurinonce
+176ac18 spotify.login5.v4.Interaction.Hintui_locales
+176ad7c spotify.login5.v4.ClientInfoclient_iddevice_id
+176ae2c spotify.login5.v4.Recaptchasite_keytoken
+176aed4 spotify.login5.v4.credentials.StoredCredentialusername
+176af70 spotify.login5.v4.credentials.Passwordlogin_hint
+176b050 spotify.login5.v4.credentials.FacebookAccessTokenfb_uidaccess_tokenid_token
+176b148 spotify.login5.v4.identifiers.PhoneNumbernumberiso_country_codecountry_calling_code
+176b200 spotify.login5.v4.credentials.OneTimeTokentoken
+176b2b8 spotify.login5.v4.credentials.ParentChildCredentialchild_id
+176b3a0 spotify.login5.v4.credentials.AppleSignInCredentialauth_coderedirect_uribundle_id
+176b4ac spotify.login5.v4.credentials.SamsungSignInCredentialauth_coderedirect_uriid_tokentoken_endpoint_url
+176b5c0 spotify.login5.v4.credentials.GoogleSignInCredentialauth_coderedirect_uriid_token
+176b6c0 spotify.login5.v4.credentials.NativePasswordidpassword
+176b774 spotify.login5.v4.credentials.NaverSignInCredentialauth_coderedirect_uri
+176b820 spotify.login5.v4.identifiers.EmailAddressemail_address
+176baf8 spotify.login5.v4.LoginRequestflow_id
+176bbd4 spotify.login5.v4.LoginOkusernameaccess_token
+176bcf8 spotify.login5.v4.LoginResponseidentifier_token
+176be54 spotify.login5.v4.UserInfonameemailbirthdatephone_number
+176bfc4 spotify.authentication.login5.impl.proto.ErrorResponse.GenericErrorerror_message
+176c3d8 spotify.authentication.login5.impl.proto.Passwordhint
+176c470 spotify.authentication.login5.impl.proto.OneTimeTokentoken
+176c558 spotify.authentication.login5.impl.proto.FacebookAccessTokenfbUIDaccessTokenidToken
+176c658 spotify.authentication.login5.impl.proto.PhoneNumbernumberisoCountryCodecountryCallingCode
+176c760 spotify.authentication.login5.impl.proto.SamsungSignInCredentialsauthCoderedirectUritokenEndpointUrl
+176c850 spotify.authentication.login5.impl.proto.ParentChildCredentialschildId
+176c940 spotify.authentication.login5.impl.proto.GoogleSignInCredentialsauthCoderedirectUriidToken
+176ca1c spotify.authentication.login5.impl.proto.NaverSignInCredentialsauthCoderedirectUri
+176cb18 spotify.authentication.login5.impl.proto.AppleSignInCredentialsauth_coderedirect_uribundle_id
+176cbf4 spotify.authentication.login5.impl.proto.LegacyV3Passwordidpassword
+176ccb4 spotify.authentication.login5.impl.proto.NativePasswordidpassword
+176cd58 spotify.authentication.login5.impl.proto.EmailAddressemailAddress
+176cf40 spotify.authentication.login5.impl.proto.AuthenticateRequestinteraction_callback_uriui_localeflow_id
+176d270 spotify.authentication.login5.impl.proto.AuthenticateSuccessusername
+176d334 spotify.authentication.login5.impl.proto.AuthenticateFailure.UnknownReasonmessage
+176d580 spotify.authentication.login5.impl.proto.AccessTokentokentype
+176db30 spotify.authentication.login5.impl.proto.CodeRequiredCodecanonicalPhoneNumberemailAddress
+176dcd8 spotify.authentication.login5.impl.proto.CodeRequiredProceedRequestcode
+176e150 spotify.authentication.login5.impl.proto.InteractionRequiredinteraction_urlfinish_url
+176e258 spotify.authentication.login5.impl.proto.InteractionRequiredProceedRequestinteraction_refserver_hash
+176e450 spotify.authentication.login5.impl.proto.AuthenticateContextID
+176e50c spotify.authentication.login5.impl.proto.RecaptchaInfosite_keytoken
+176e750 spotify.authentication.login5.impl.proto.SignupRequirednameemailbirthdatephoneNumberidentifierToken
+176ec50 spotify.connectivity.auth.client_token.esperanto.proto.ClientTokentokenclient_data_hashdomains
+176ed78 spotify.connectivity.auth.client_token.esperanto.proto.EncryptedClientTokenencryptedToken
+1844b24 spotify.event_sender.proto.ConnectionQualitySpeedTestEventscored_quality_at_triggeroutcomeprotocolbearer
+1846920 spotify.event_sender.proto.Login5PermanentErrorNonAutherror_message
+1846b9c spotify.event_sender.proto.Login5TaskNonAuthcredentials_typeprotocol_versionlogin5_responseclient_error

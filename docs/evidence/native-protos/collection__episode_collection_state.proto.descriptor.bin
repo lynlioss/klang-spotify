@@ -1,0 +1,7 @@
+
+)collection/episode_collection_state.protospotify.cosmos_util.proto"ˆ
+EpisodeCollectionState*
+is_following_show (RisFollowingShow
+is_new (RisNew+
+is_in_listen_later (RisInListenLaterB3
+com.spotify.cosmos.util.protoHP¢SPTCosmosUtil

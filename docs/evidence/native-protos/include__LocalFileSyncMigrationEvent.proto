@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: include/LocalFileSyncMigrationEvent.proto
+syntax = "proto2";
+package spotify.event_sender.proto;
+message LocalFileSyncMigrationEvent {
+  optional string event = 1;
+  optional int32 num_moved_files = 2;
+  optional string error_message = 3;
+  optional string uri = 4;
+}

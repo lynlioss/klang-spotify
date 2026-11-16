@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: reactions.proto
+syntax = "proto3";
+package spotify.reactions.v1;
+enum ReactionType {
+  LIKE = 0;
+}
+message SingleReactionMetadata {
+  .spotify.reactions.v1.ReactionType reaction_type = 1;
+  int64 count = 2;
+  bool has_reacted = 3;
+}
+message ReactionsMetadata {
+  repeated .spotify.reactions.v1.SingleReactionMetadata reaction_metadata = 1;
+  bool is_podcast_short = 2;
+}

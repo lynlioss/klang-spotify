@@ -1,0 +1,19 @@
+
+storylines.protospotify.storylines.v1"T
+Artist
+uri (	Ruri
+name (	Rname$
+avatar_cdn_url (	RavatarCdnUrl"~
+Card
+id (	Rid"
+image_cdn_url (	RimageCdnUrl
+image_width (R
+imageWidth!
+image_height (RimageHeight"¤
+	Storyline
+id (	Rid
+
+entity_uri (	R	entityUri5
+artist (2.spotify.storylines.v1.ArtistRartist1
+cards (2.spotify.storylines.v1.CardRcardsBB
++com.spotify.storylines.v1.extended_metadataBStorylinesProtoHPbproto3

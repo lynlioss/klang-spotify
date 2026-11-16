@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: karaoke_get_vocal_volume_request.proto
+syntax = "proto3";
+package spotify.karaoke_esperanto.proto;
+message KaraokeGetVocalVolumeRequest {
+}
+message KaraokeGetVocalVolumeResponse {
+  float volume = 1;
+}

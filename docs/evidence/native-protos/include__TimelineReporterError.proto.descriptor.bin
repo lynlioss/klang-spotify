@@ -1,0 +1,22 @@
+
+#include/TimelineReporterError.protospotify.event_sender.proto"ö
+TimelineReporterError
+list_uri (	RlistUri
+list_ref (RlistRef(
+list_instance_id (	RlistInstanceId
+item_uri (	RitemUri
+item_uid (	RitemUid(
+item_instance_id (	RitemInstanceId
+clip_uid (	RclipUid2
+playback_rendering_id (RplaybackRenderingId
+	stream_id	 (RstreamId,
+stream_playback_id
+ (RstreamPlaybackId#
+current_state (	RcurrentState%
+incoming_event (	RincomingEvent
+content_uri (	R
+contentUri%
+playback_stack (	RplaybackStack!
+core_version (RcoreVersion)
+client_timestamp (	RclientTimestamp!
+error_reason (	RerrorReasonBH

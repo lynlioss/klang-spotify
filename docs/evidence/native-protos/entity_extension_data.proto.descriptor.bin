@@ -1,0 +1,23 @@
+
+entity_extension_data.protospotify.extendedmetadatagoogle/protobuf/any.proto"Œ
+EntityExtensionDataHeader
+status_code (R
+statusCode
+etag (	Retag
+locale (	Rlocale/
+cache_ttl_in_seconds (RcacheTtlInSeconds3
+offline_ttl_in_seconds (RofflineTtlInSeconds"æ
+EntityExtensionDataK
+header (23.spotify.extendedmetadata.EntityExtensionDataHeaderRheader
+
+entity_uri (	R	entityUri;
+extension_data (2.google.protobuf.AnyRextensionData"/
+PlainListAssoc
+
+entity_uri (	R	entityUri"
+AssocHeader"è
+Assoc=
+header (2%.spotify.extendedmetadata.AssocHeaderRheaderG
+
+plain_list (2(.spotify.extendedmetadata.PlainListAssocR	plainListB+
+"com.spotify.extendedmetadata.protoHP¯bproto3

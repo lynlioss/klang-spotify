@@ -1,0 +1,13 @@
+
+scrobble.proto spotify.scrobble.esperanto.proto"
+GetIncognitoModeRequest"A
+GetIncognitoModeResponse%
+incognito_mode (RincognitoMode"@
+PutIncognitoModeRequest%
+incognito_mode (RincognitoMode"
+SubIncognitoModeRequest2°
+Scrobble‰
+GetIncognitoMode9.spotify.scrobble.esperanto.proto.GetIncognitoModeRequest:.spotify.scrobble.esperanto.proto.GetIncognitoModeResponse‰
+PutIncognitoMode9.spotify.scrobble.esperanto.proto.PutIncognitoModeRequest:.spotify.scrobble.esperanto.proto.GetIncognitoModeResponse‹
+SubIncognitoMode9.spotify.scrobble.esperanto.proto.SubIncognitoModeRequest:.spotify.scrobble.esperanto.proto.GetIncognitoModeResponse0B0
+$com.spotify.scrobble.esperanto.protoHP¢ESPbproto3

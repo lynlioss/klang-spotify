@@ -1,0 +1,9 @@
+
+*include/AudioStreamingSettingsReport.protospotify.event_sender.proto"‡
+AudioStreamingSettingsReportJ
+"default_play_bitrate_product_state (	RdefaultPlayBitrateProductStateL
+#user_selected_play_bitrate_cellular (RuserSelectedPlayBitrateCellularD
+user_selected_play_bitrate_wifi (RuserSelectedPlayBitrateWifi2
+play_bitrate_cellular (RplayBitrateCellular*
+play_bitrate_wifi (RplayBitrateWifi'
+allow_downgrade (RallowDowngradeBH

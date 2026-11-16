@@ -1,0 +1,17 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/sequence_options.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1;
+message SequenceOptions {
+  oneof _shuffling_sequence {
+    bool shuffling_sequence = 1;
+  }
+  oneof _enhancing_sequence {
+    bool enhancing_sequence = 2;
+  }
+  oneof _repeating_sequence {
+    bool repeating_sequence = 3;
+  }
+  oneof _repeating_timeline {
+    bool repeating_timeline = 4;
+  }
+}

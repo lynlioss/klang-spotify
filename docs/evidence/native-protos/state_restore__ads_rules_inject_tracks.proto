@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: state_restore/ads_rules_inject_tracks.proto
+syntax = "proto2";
+package spotify.player.proto.state_restore;
+import "state_restore/provided_track.proto";
+message AdsRulesInjectTracks {
+  repeated .spotify.player.proto.state_restore.ProvidedTrack ads = 1;
+  optional bool is_playing_slot = 2;
+}

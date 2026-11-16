@@ -1,0 +1,24 @@
+// Recovered descriptor. Original file: automix_mode.proto
+syntax = "proto3";
+package spotify.automix.proto;
+enum AutomixStyle {
+  NONE = 0;
+  DEFAULT = 1;
+  REGULAR = 2;
+  AIRBAG = 3;
+  RADIO_AIRBAG = 4;
+  SLEEP = 5;
+  MIXED = 6;
+  CUSTOM = 7;
+  HEURISTIC = 8;
+  BACKEND = 9;
+  PRO = 10;
+  CUT = 11;
+  CROSSFADE = 12;
+  EXPLICIT_NONE = 13;
+  RADIO = 14;
+  AUTO = 15;
+}
+message AutomixMode {
+  .spotify.automix.proto.AutomixStyle style = 1;
+}

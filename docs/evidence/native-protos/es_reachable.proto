@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: es_reachable.proto
+syntax = "proto3";
+package spotify.connectivity.reachability.esperanto.proto;
+import "es_network_capabilities.proto";
+message LegacyReachable {
+  repeated .spotify.connectivity.reachability.esperanto.proto.NetworkCapability capabilities = 1;
+}

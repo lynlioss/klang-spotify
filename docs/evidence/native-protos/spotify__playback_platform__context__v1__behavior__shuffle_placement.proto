@@ -1,0 +1,42 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/behavior/shuffle_placement.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1.behavior;
+message ShufflePlacement {
+  message Uniform {
+    float a = 1;
+    float b = 2;
+  }
+  message Normal {
+    float mu = 1;
+    float sd = 2;
+  }
+  message Dirac {
+    float x = 1;
+  }
+  enum Layout {
+    LAYOUT_UNSPECIFIED = 0;
+    LAYOUT_FORWARD = 1;
+    LAYOUT_SHUFFLE = 2;
+    LAYOUT_REVERSE = 3;
+  }
+  oneof distribution {
+    .spotify.playback_platform.context.v1.behavior.ShufflePlacement.Uniform uniform = 8;
+    .spotify.playback_platform.context.v1.behavior.ShufflePlacement.Uniform uniform_strict = 9;
+    .spotify.playback_platform.context.v1.behavior.ShufflePlacement.Normal normal = 10;
+    .spotify.playback_platform.context.v1.behavior.ShufflePlacement.Normal normal_strict = 11;
+    .spotify.playback_platform.context.v1.behavior.ShufflePlacement.Dirac dirac = 12;
+    .spotify.playback_platform.context.v1.behavior.ShufflePlacement.Dirac dirac_strict = 13;
+  }
+  oneof _partition_number {
+    uint32 partition_number = 1;
+  }
+  oneof _partition_layout {
+    .spotify.playback_platform.context.v1.behavior.ShufflePlacement.Layout partition_layout = 2;
+  }
+  oneof _group_number {
+    uint64 group_number = 3;
+  }
+  oneof _group_layout {
+    .spotify.playback_platform.context.v1.behavior.ShufflePlacement.Layout group_layout = 4;
+  }
+}

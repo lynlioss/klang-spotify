@@ -1,0 +1,20 @@
+
+'include/ConnectStateRestoreResult.protospotify.event_sender.proto"Ê
+ConnectStateRestoreResult
+result (	Rresult
+reason (	Rreason3
+new_track_uri_category (	RnewTrackUriCategory,
+time_since_startup (RtimeSinceStartupD
+time_since_last_connection_lost (RtimeSinceLastConnectionLost4
+restores_since_startup (RrestoresSinceStartup?
+time_since_foreground_online (RtimeSinceForegroundOnline
+
+command_id (	R	commandId
+playback_id	 (R
+playbackId=
+is_initial_restore_sequence
+ (RisInitialRestoreSequence9
+before_track_uri_category (	RbeforeTrackUriCategoryE
+synchronous_restore_duration_ms (RsynchronousRestoreDurationMs2
+time_to_playback_id_ms (RtimeToPlaybackIdMs(
+did_change_track (RdidChangeTrackBH

@@ -1,0 +1,21 @@
+
+!collection_decorate_request.protospotify.collection_cosmos.proto"collection_decoration_policy.protocollection_item.protostatus.proto"ú
+CollectionDecorateRequest
+uri (	Ruri
+context_uri (	R
+contextUri+
+update_throttling (RupdateThrottlingf
+artist_policy (2A.spotify.collection_cosmos.proto.CollectionArtistDecorationPolicyRartistPolicyc
+album_policy (2@.spotify.collection_cosmos.proto.CollectionAlbumDecorationPolicyRalbumPolicyc
+track_policy (2@.spotify.collection_cosmos.proto.CollectionTrackDecorationPolicyRtrackPolicy`
+show_policy (2?.spotify.collection_cosmos.proto.CollectionShowDecorationPolicyR
+showPolicyi
+episode_policy (2B.spotify.collection_cosmos.proto.CollectionEpisodeDecorationPolicyRepisodePolicy"Ë
+CollectionDecorateResponse?
+status (2'.spotify.collection_cosmos.proto.StatusRstatusC
+show (2/.spotify.collection_cosmos.proto.CollectionShowRshowL
+episode (22.spotify.collection_cosmos.proto.CollectionEpisodeRepisodeF
+album (20.spotify.collection_cosmos.proto.CollectionAlbumRalbumI
+artist (21.spotify.collection_cosmos.proto.CollectionArtistRartistF
+track (20.spotify.collection_cosmos.proto.CollectionTrackRtrackB.
+"spotify.collection.esperanto.protoHP¢ESPbproto3

@@ -1,0 +1,12 @@
+
+!collection_contains_request.protospotify.collection_cosmos.protostatus.proto"{
+CollectionContainsRequest+
+update_throttling (RupdateThrottling
+uri (	Ruri
+context_uri (	R
+contextUri"ê
+CollectionContainsResponse?
+status (2'.spotify.collection_cosmos.proto.StatusRstatus
+found (Rfound
+	ban_found (RbanFoundB.
+"spotify.collection.esperanto.protoHP¢ESPbproto3

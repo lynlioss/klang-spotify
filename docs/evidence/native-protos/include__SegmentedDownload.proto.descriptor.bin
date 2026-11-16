@@ -1,0 +1,22 @@
+
+include/SegmentedDownload.protospotify.event_sender.proto"»
+SegmentedDownload
+playback_id (R
+playbackId/
+total_bytes_from_cdn (RtotalBytesFromCdn3
+total_bytes_from_cache (RtotalBytesFromCache!
+content_type (	RcontentType.
+cdn_initial_latency (RcdnInitialLatency
+
+cdn_avg_bw (RcdnAvgBw,
+bytes_from_carrier (RbytesFromCarrier,
+bytes_from_unknown (RbytesFromUnknown&
+bytes_from_wifi	 (RbytesFromWifi!
+request_type
+ (	RrequestType
+
+total_time (R	totalTime,
+initial_disk_state (	RinitialDiskState
+	media_url (	RmediaUrl
+
+session_id (	R	sessionIdBH

@@ -1,0 +1,23 @@
+
+ad_state.protospotify.ads.esperanto.protogoogle/protobuf/empty.proto">
+AdStateValue
+value (	Rvalue
+changed (Rchanged"
+StateRequest"Á
+StateResponseK
+state (25.spotify.ads.esperanto.proto.StateResponse.StateEntryRstatec
+
+StateEntry
+key (	Rkey?
+value (2).spotify.ads.esperanto.proto.AdStateValueRvalue:8"š
+PutStateRequestM
+state (27.spotify.ads.esperanto.proto.PutStateRequest.StateEntryRstate8
+
+StateEntry
+key (	Rkey
+value (	Rvalue:82¡
+Statea
+GetState).spotify.ads.esperanto.proto.StateRequest*.spotify.ads.esperanto.proto.StateResponsec
+SubState).spotify.ads.esperanto.proto.StateRequest*.spotify.ads.esperanto.proto.StateResponse0P
+PutState,.spotify.ads.esperanto.proto.PutStateRequest.google.protobuf.EmptyB+
+com.spotify.ads.esperanto.protoHP¢ESPbproto3

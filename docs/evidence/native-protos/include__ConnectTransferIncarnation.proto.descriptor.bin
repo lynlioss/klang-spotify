@@ -1,0 +1,9 @@
+
+(include/ConnectTransferIncarnation.protospotify.event_sender.proto"Ø
+ConnectTransferIncarnation,
+transfer_intent_id (	RtransferIntentId2
+incarnation_client_id (	RincarnationClientId2
+incarnation_device_id (	RincarnationDeviceId.
+incarnation_is_cast (RincarnationIsCast8
+incarnation_is_preferred (RincarnationIsPreferred:
+preferred_protocol_reason (	RpreferredProtocolReasonBH

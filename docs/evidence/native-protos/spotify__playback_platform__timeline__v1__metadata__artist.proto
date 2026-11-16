@@ -1,0 +1,18 @@
+// Recovered descriptor. Original file: spotify/playback_platform/timeline/v1/metadata/artist.proto
+syntax = "proto3";
+package spotify.playback_platform.timeline.v1.metadata;
+enum ArtistRole {
+  ARTIST_ROLE_UNSPECIFIED = 0;
+  ARTIST_ROLE_MAIN_ARTIST = 1;
+  ARTIST_ROLE_FEATURED_ARTIST = 2;
+  ARTIST_ROLE_REMIXER = 3;
+  ARTIST_ROLE_ACTOR = 4;
+  ARTIST_ROLE_COMPOSER = 5;
+  ARTIST_ROLE_CONDUCTOR = 6;
+  ARTIST_ROLE_ORCHESTRA = 7;
+}
+message Artist {
+  string uri = 1;
+  string name = 2;
+  .spotify.playback_platform.timeline.v1.metadata.ArtistRole role = 3;
+}

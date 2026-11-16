@@ -1,0 +1,16 @@
+
+include/RawLyrics.protospotify.event_sender.proto"ê
+	RawLyrics&
+lyrics_event_id (RlyricsEventId
+content_uri (	R
+contentUri
+playback_id (	R
+playbackId'
+character_count (RcharacterCount!
+core_version (RcoreVersion
+provider (	Rprovider,
+provider_lyrics_id	 (	RproviderLyricsId
+	sync_type
+ (	RsyncType#
+surface_types (	RsurfaceTypes
+	ms_played (RmsPlayedBH

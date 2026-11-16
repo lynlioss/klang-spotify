@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: es_remote_config_dummy.proto
+syntax = "proto3";
+package spotify.remote_config.esperanto.proto;
+message ResolveDummyRequest {
+}
+message ResolveDummyResponse {
+  string value = 1;
+}
+service RemoteConfigDummyResolve {
+  rpc ResolveDummyProperty (.spotify.remote_config.esperanto.proto.ResolveDummyRequest) returns (.spotify.remote_config.esperanto.proto.ResolveDummyResponse);
+}

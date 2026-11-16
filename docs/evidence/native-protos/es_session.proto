@@ -1,0 +1,31 @@
+// Recovered descriptor. Original file: es_session.proto
+syntax = "proto3";
+package spotify.connectivity.auth.esperanto.proto;
+import "google/protobuf/empty.proto";
+message ProductStateMap {
+  message ProductStateMapEntry {
+    string key = 1;
+    string value = 2;
+  }
+  repeated .spotify.connectivity.auth.esperanto.proto.ProductStateMap.ProductStateMapEntry product_state_map = 1;
+}
+message APPermanentErrorResult {
+  message GenericError {
+    int32 error_code = 1;
+    string error_message = 2;
+  }
+  enum APPermanentError {
+    BAD_CREDENTIALS = 0;
+    REGION_MISMATCH = 1;
+    PASSWORD_CHANGED = 2;
+  }
+  oneof error {
+    .spotify.connectivity.auth.esperanto.proto.APPermanentErrorResult.APPermanentError code = 1;
+    .spotify.connectivity.auth.esperanto.proto.APPermanentErrorResult.GenericError generic_error = 2;
+  }
+}
+service Session {
+  rpc writeProductStateToLegacyStorage (.spotify.connectivity.auth.esperanto.proto.ProductStateMap) returns (.google.protobuf.Empty);
+  rpc willLogoutAndForgetCurrentUser (.google.protobuf.Empty) returns (stream .google.protobuf.Empty);
+  rpc apPermanentError (.google.protobuf.Empty) returns (stream .spotify.connectivity.auth.esperanto.proto.APPermanentErrorResult);
+}

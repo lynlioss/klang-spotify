@@ -1,0 +1,15 @@
+// Recovered descriptor. Original file: es_traffic_http_method.proto
+syntax = "proto3";
+package spotify.connectivity.traffic.esperanto.proto;
+enum HttpMethod {
+  HTTP_METHOD_UNSPECIFIED = 0;
+  HTTP_METHOD_GET = 1;
+  HTTP_METHOD_POST = 2;
+  HTTP_METHOD_PUT = 3;
+  HTTP_METHOD_PATCH = 4;
+  HTTP_METHOD_DELETE = 5;
+  HTTP_METHOD_HEAD = 6;
+  HTTP_METHOD_CONNECT = 7;
+  HTTP_METHOD_OPTIONS = 8;
+  HTTP_METHOD_TRACE = 9;
+}

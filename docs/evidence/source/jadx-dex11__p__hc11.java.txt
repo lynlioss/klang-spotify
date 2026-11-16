@@ -1,0 +1,102 @@
+Source: analysis/spotify/jadx-dex11/sources/p/hc11.java
+SHA256: 622d6237011154a62943d437a7dd3977885d667825b43f5bd91ca09009d2547a
+Lines: 1468-1565
+
+1468:             java.lang.String r0 = "page_token"
+1469:             java.lang.Object r0 = r4.get(r0)
+1470:             java.lang.String r1 = ""
+1471:             boolean r0 = p.sk90.m(r0, r1)
+1472:             if (r0 == 0) goto L1d
+1473:             java.lang.Object r0 = r3.e
+1474:             p.cw51 r0 = (p.cw51) r0
+1475:             p.hz31 r1 = new p.hz31
+1476:             r2 = 4
+1477:             r1.<init>(r3, r4, r5, r2)
+1478:             io.reactivex.rxjava3.core.Single r4 = p.nep1.u(r0, r1)
+1479:             goto L36
+1480:         L1d:
+1481:             java.lang.Object r0 = r3.f
+1482:             p.ok4 r0 = (p.ok4) r0
+1483:             int r0 = r0.Y()
+1484:             r1 = 10
+1485:             if (r0 <= r1) goto L2e
+1486:             java.lang.Object r0 = r3.c
+1487:             p.jx51 r0 = (p.jx51) r0
+1488:             goto L32
+1489:         L2e:
+1490:             java.lang.Object r0 = r3.b
+1491:             p.jx51 r0 = (p.jx51) r0
+1492:         L32:
+1493:             io.reactivex.rxjava3.core.Single r4 = r0.a(r4, r5)
+1494:         L36:
+1495:             java.lang.Object r3 = r3.d
+1496:             p.ds51 r3 = (p.ds51) r3
+1497:             p.hg51 r5 = new p.hg51
+1498:             r0 = 0
+1499:             r5.<init>(r3, r0)
+1500:             io.reactivex.rxjava3.core.Single r3 = r4.map(r5)
+1501:             return r3
+1502:     }
+1503: 
+1504:     public java.lang.Object Q(java.util.Map r6, java.util.Map r7, p.ssm r8) {
+1505:             r5 = this;
+1506:             boolean r0 = r8 instanceof p.ig51
+1507:             if (r0 == 0) goto L13
+1508:             r0 = r8
+1509:             p.ig51 r0 = (p.ig51) r0
+1510:             int r1 = r0.d
+1511:             r2 = -2147483648(0xffffffff80000000, float:-0.0)
+1512:             r3 = r1 & r2
+1513:             if (r3 == 0) goto L13
+1514:             int r1 = r1 - r2
+1515:             r0.d = r1
+1516:             goto L18
+1517:         L13:
+1518:             p.ig51 r0 = new p.ig51
+1519:             r0.<init>(r5, r8)
+1520:         L18:
+1521:             java.lang.Object r8 = r0.b
+1522:             int r1 = r0.d
+1523:             r2 = 1
+1524:             if (r1 == 0) goto L2e
+1525:             if (r1 != r2) goto L27
+1526:             p.ds51 r5 = r0.a
+1527:             p.po5.Q(r8)
+1528:             goto L5a
+1529:         L27:
+1530:             java.lang.String r5 = "call to 'resume' before 'invoke' with coroutine"
+1531:             p.eg.m(r5)
+1532:             r5 = 0
+1533:             return r5
+1534:         L2e:
+1535:             p.po5.Q(r8)
+1536:             java.lang.Object r8 = r5.d
+1537:             p.ds51 r8 = (p.ds51) r8
+1538:             java.lang.Object r1 = r5.f
+1539:             p.ok4 r1 = (p.ok4) r1
+1540:             int r1 = r1.Y()
+1541:             r3 = 10
+1542:             if (r1 <= r3) goto L46
+1543:             java.lang.Object r5 = r5.c
+1544:             p.jx51 r5 = (p.jx51) r5
+1545:             goto L4a
+1546:         L46:
+1547:             java.lang.Object r5 = r5.b
+1548:             p.jx51 r5 = (p.jx51) r5
+1549:         L4a:
+1550:             r0.a = r8
+1551:             r0.d = r2
+1552:             java.lang.Object r5 = r5.d(r6, r7, r0)
+1553:             p.men r6 = p.men.a
+1554:             if (r5 != r6) goto L57
+1555:             return r6
+1556:         L57:
+1557:             r4 = r8
+1558:             r8 = r5
+1559:             r5 = r4
+1560:         L5a:
+1561:             com.spotify.searchview.proto.MainViewResponse r8 = (com.spotify.searchview.proto.MainViewResponse) r8
+1562:             p.dhg0 r5 = r5.b(r8)
+1563:             return r5
+1564:     }
+1565: 

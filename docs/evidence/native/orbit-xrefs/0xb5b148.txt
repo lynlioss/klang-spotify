@@ -1,0 +1,43 @@
+
+analysis/spotify/native/liborbit-jni-spotify.so:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+0000000000b3fa00 <_ZN5boost6detail18core_typeid_lib_idEv>:
+  b5b128: aa1503e2     	mov	x2, x21
+  b5b12c: a9414ff4     	ldp	x20, x19, [sp, #0x10]
+  b5b130: a8c257fe     	ldp	x30, x21, [sp], #0x20
+  b5b134: 142cf3f7     	b	0x1698110 <__cxa_atexit@plt>
+  b5b138: a9be57fe     	stp	x30, x21, [sp, #-0x20]!
+  b5b13c: a9014ff4     	stp	x20, x19, [sp, #0x10]
+  b5b140: 90006b13     	adrp	x19, 0x18bb000 <_ZN4asio6detail30execution_context_service_baseINS0_13epoll_reactorEE2idE+0x186bb>
+  b5b144: 911ee273     	add	x19, x19, #0x7b8
+  b5b148: 90ffc1c1     	adrp	x1, 0x393000
+  b5b14c: 910c5c21     	add	x1, x1, #0x317
+  b5b150: aa1303e0     	mov	x0, x19
+  b5b154: 97ff9183     	bl	0xb3f760 <JNI_OnUnload+0xe0c>
+  b5b158: 91006274     	add	x20, x19, #0x18
+  b5b15c: 90ffc001     	adrp	x1, 0x35b000
+  b5b160: 91207c21     	add	x1, x1, #0x81f
+  b5b164: aa1403e0     	mov	x0, x20
+  b5b168: 97ff917e     	bl	0xb3f760 <JNI_OnUnload+0xe0c>
+  b5b16c: 90006b14     	adrp	x20, 0x18bb000 <_ZN4asio6detail30execution_context_service_baseINS0_13epoll_reactorEE2idE+0x186bb>
+  b5b170: 911fa294     	add	x20, x20, #0x7e8
+  b5b174: 90ffc001     	adrp	x1, 0x35b000
+  b5b178: 91207c21     	add	x1, x1, #0x81f
+  b5b17c: aa1403e0     	mov	x0, x20
+  b5b180: 97ff9178     	bl	0xb3f760 <JNI_OnUnload+0xe0c>
+  b5b184: 90004180     	adrp	x0, 0x138b000 <_ZN4asio6detail16service_registry6createINS0_22deadline_timer_serviceINS0_18chrono_time_traitsINSt6__ndk16chrono12steady_clockENS_11wait_traitsIS7_EEEEEENS_10io_contextEEEPNS_17execution_context7serviceEPv+0x344600>
+  b5b188: 911b9000     	add	x0, x0, #0x6e4
+  b5b18c: b0005a02     	adrp	x2, 0x169c000
+  b5b190: 91000042     	add	x2, x2, #0x0
+  b5b194: aa1303e1     	mov	x1, x19
+  b5b198: 942cf3de     	bl	0x1698110 <__cxa_atexit@plt>
+  b5b19c: f0ffc0a1     	adrp	x1, 0x372000
+  b5b1a0: 910aa021     	add	x1, x1, #0x2a8
+  b5b1a4: 91012260     	add	x0, x19, #0x48
+  b5b1a8: 97ff916e     	bl	0xb3f760 <JNI_OnUnload+0xe0c>
+  b5b1ac: 91018273     	add	x19, x19, #0x60
+wss://dealer.g2.spotify.com:443
+Candidate instruction reference. Review surrounding data flow before assigning function semantics.
+

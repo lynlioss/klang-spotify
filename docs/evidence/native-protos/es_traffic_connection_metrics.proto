@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: es_traffic_connection_metrics.proto
+syntax = "proto3";
+package spotify.connectivity.traffic.esperanto.proto;
+import "es_traffic_transaction_metrics.proto";
+message ConnectionMetrics {
+  double duration_seconds = 1;
+  uint32 redirect_count = 2;
+  int64 connection_task_start_timestamp = 3;
+  int64 connection_task_end_timestamp = 4;
+  repeated .spotify.connectivity.traffic.esperanto.proto.TransactionMetrics transactions = 5;
+}

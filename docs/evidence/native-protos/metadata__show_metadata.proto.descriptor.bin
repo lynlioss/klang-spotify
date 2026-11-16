@@ -1,0 +1,30 @@
+
+metadata/show_metadata.protospotify.cosmos_util.protometadata/extension.protometadata/image_group.proto";
+ShowListAttribute
+key (	Rkey
+value (	Rvalue"ã
+ShowMetadata
+link (	Rlink
+name (	Rname 
+description (	Rdescription
+
+popularity (R
+popularity
+	publisher (	R	publisher
+language (	Rlanguage
+is_explicit (R
+isExplicit=
+covers (2%.spotify.cosmos_util.proto.ImageGroupRcovers!
+num_episodes	 (RnumEpisodes+
+consumption_order
+ (	RconsumptionOrder&
+media_type_enum (RmediaTypeEnum
+	copyright (	R	copyright
+trailer_uri (	R
+trailerUri)
+is_music_and_talk (RisMusicAndTalkB
+	extension (2$.spotify.cosmos_util.proto.ExtensionR	extension
+is_book (RisBook,
+is_creator_channel (RisCreatorChannelb
+format_list_attributes (2,.spotify.cosmos_util.proto.ShowListAttributeRformatListAttributesB#
+com.spotify.cosmos.util.protoHP

@@ -1,0 +1,12 @@
+
+include/Prefetch.protospotify.event_sender.proto"ô
+Prefetch
+
+strategies (R
+strategies
+strategy (Rstrategy
+file_id (RfileId
+track (	Rtrack%
+prefetch_index (RprefetchIndex.
+current_window_size (RcurrentWindowSize&
+max_window_size (RmaxWindowSizeBH

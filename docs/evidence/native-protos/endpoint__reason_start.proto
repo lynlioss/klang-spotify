@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: endpoint/reason_start.proto
+syntax = "proto3";
+package spotify.read_reporting_esperanto.proto;
+enum ReasonStart {
+  INVALID_REASON_START = 0;
+  REASON_START_OPEN = 1;
+  REASON_START_PAGE_TURN = 2;
+}

@@ -1,0 +1,11 @@
+
+2state_restore/mft_rules_inject_filler_tracks.proto"spotify.player.proto.state_restorecontext_track.proto!state_restore/random_source.proto"ˆ
+MftRandomTrackInjectionU
+random_source (20.spotify.player.proto.state_restore.RandomSourceRrandomSource
+offset (Roffset"–
+MftRulesInjectFillerTracksK
+fallback_tracks (2".spotify.player.proto.ContextTrackRfallbackTrackss
+padding_track_injection (2;.spotify.player.proto.state_restore.MftRandomTrackInjectionRpaddingTrackInjectionU
+random_source (20.spotify.player.proto.state_restore.RandomSourceRrandomSource6
+filter_explicit_content (RfilterExplicitContent'
+feature_classes (	RfeatureClassesBH

@@ -1,0 +1,33 @@
+
+include/AdDetectionResult.protospotify.event_sender.proto"œ
+
+AdDetectionResult
+episode_uri (	R
+episodeUri
+	audio_uri (	RaudioUri
+playback_id (R
+playbackId/
+user_audio_length_ms (RuserAudioLengthMsC
+low_precision_ad_break_start_ms (RlowPrecisionAdBreakStartMsI
+"low_precision_ad_break_duration_ms (RlowPrecisionAdBreakDurationMsE
+ high_precision_ad_break_start_ms (RhighPrecisionAdBreakStartMsK
+#high_precision_ad_break_duration_ms (RhighPrecisionAdBreakDurationMsD
+has_variable_bitrate_toc_header	 (RhasVariableBitrateTocHeader&
+cbr_in_disguise
+ (RcbrInDisguise*
+used_r2_threshold (RusedR2Threshold.
+calculated_r2_value (RcalculatedR2Value:
+cache_fingerprinted_audio (RcacheFingerprintedAudio4
+cache_detection_result (RcacheDetectionResult
+has_aborted (R
+hasAborted!
+abort_reason (RabortReason/
+has_missing_ad_break (RhasMissingAdBreak=
+detection_is_high_precision (RdetectionIsHighPrecision(
+content_uses_dai (RcontentUsesDai2
+detection_used_search (RdetectionUsedSearch*
+loaded_from_cache (RloadedFromCache;
+quick_detection_latency_ms (RquickDetectionLatencyMs9
+full_detection_latency_ms (RfullDetectionLatencyMs0
+resync_adjustment_ms (RresyncAdjustmentMs/
+detection_algorithm (	RdetectionAlgorithmBH

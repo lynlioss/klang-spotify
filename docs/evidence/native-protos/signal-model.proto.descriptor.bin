@@ -1,0 +1,17 @@
+
+signal-model.protospotify.playlist.signal.proto"„
+Signal
+
+identifier (	R
+identifier
+data (Rdata%
+client_payload (RclientPayload
+instance_id (	R
+instanceId"‰
+
+SignalData'
+lens_identifier (	RlensIdentifier
+uri (	Ruri
+item_id (RitemId'
+additional_data (RadditionalDataB=
+'com.spotify.playlist_signal.model.protoBSignalModelProtoHbproto3

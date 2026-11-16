@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/attributes/item_id_algorithm.proto
+syntax = "proto3";
+package spotify.list.v1.model.attributes;
+enum ItemIdAlgorithm {
+  ALGORITHM_UNSPECIFIED = 0;
+  ALGORITHM_TRUNCATED_SHA1 = 1;
+}

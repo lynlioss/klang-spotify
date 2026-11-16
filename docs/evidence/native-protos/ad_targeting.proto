@@ -1,0 +1,31 @@
+// Recovered descriptor. Original file: ad_targeting.proto
+syntax = "proto3";
+package spotify.ads.esperanto.proto;
+message TargetingResponse {
+  message TargetingMapEntry {
+    string key = 1;
+    string value = 2;
+  }
+  repeated .spotify.ads.esperanto.proto.TargetingResponse.TargetingMapEntry targeting_map = 1;
+}
+message GetTargetingRequest {
+  repeated string targeting_keys = 1;
+}
+message GetAllTargetingRequest {
+}
+message PutTargetingRequest {
+  message TargetingMapEntry {
+    string key = 1;
+    string value = 2;
+  }
+  repeated .spotify.ads.esperanto.proto.PutTargetingRequest.TargetingMapEntry targeting_map = 1;
+}
+message DeleteTargetingRequest {
+  repeated string targeting_keys = 1;
+}
+service Targeting {
+  rpc GetTargeting (.spotify.ads.esperanto.proto.GetTargetingRequest) returns (.spotify.ads.esperanto.proto.TargetingResponse);
+  rpc GetAllTargeting (.spotify.ads.esperanto.proto.GetAllTargetingRequest) returns (.spotify.ads.esperanto.proto.TargetingResponse);
+  rpc PutTargeting (.spotify.ads.esperanto.proto.PutTargetingRequest) returns (.spotify.ads.esperanto.proto.TargetingResponse);
+  rpc DeleteTargeting (.spotify.ads.esperanto.proto.DeleteTargetingRequest) returns (.spotify.ads.esperanto.proto.TargetingResponse);
+}

@@ -1,0 +1,12 @@
+
+(state_restore/player_session_queue.proto"spotify.player.proto.state_restore"state_restore/player_session.proto"ì
+QueuedSessionS
+trigger (29.spotify.player.proto.state_restore.QueuedSession.TriggerRtriggerK
+session (21.spotify.player.proto.state_restore.PlayerSessionRsession"9
+Trigger
+DID_GO_PAST_TRACK
+DID_GO_PAST_CONTEXT"õ
+PlayerSessionQueueI
+active (21.spotify.player.proto.state_restore.PlayerSessionRactiveI
+pushed (21.spotify.player.proto.state_restore.PlayerSessionRpushedI
+queued (21.spotify.player.proto.state_restore.QueuedSessionRqueuedBH

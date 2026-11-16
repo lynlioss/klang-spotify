@@ -1,0 +1,6 @@
+
+include/OfflineEvent.protospotify.event_sender.proto"S
+OfflineEvent
+event (	Revent
+data (	Rdata
+cache_id (	RcacheIdBH

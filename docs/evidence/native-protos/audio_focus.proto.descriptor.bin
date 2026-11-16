@@ -1,0 +1,8 @@
+
+audio_focus.proto,spotify.timeline_conductor.audio_focus.proto"5
+LoseAudioFocusRequest
+	transient (R	transient"
+AudioRouteLostRequest"Q
+GainAudioFocusRequest8
+automatic_resume_allowed (RautomaticResumeAllowedB;
+/com.spotify.timeline_conductor.audiofocus.protoHP¢ESPbproto3

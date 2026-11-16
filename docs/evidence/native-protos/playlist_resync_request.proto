@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: playlist_resync_request.proto
+syntax = "proto3";
+package spotify.playlist_esperanto.proto;
+import "response_status.proto";
+message PlaylistResyncResponse {
+  .spotify.playlist_esperanto.proto.ResponseStatus status = 1;
+}

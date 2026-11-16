@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: es_traffic_fetch_type.proto
+syntax = "proto3";
+package spotify.connectivity.traffic.esperanto.proto;
+enum FetchType {
+  FETCH_TYPE_UNKNOWN = 0;
+  FETCH_TYPE_NETWORK = 1;
+  FETCH_TYPE_LOCAL_CACHE = 2;
+}

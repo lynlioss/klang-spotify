@@ -1,0 +1,30 @@
+// Recovered descriptor. Original file: lyrics_reporting/lyrics_start_request.proto
+syntax = "proto3";
+package spotify.lyrics_reporting_esperanto.proto;
+import "lyrics_reporting/reason_start.proto";
+message LyricsStartRequest {
+  string content_uri = 1;
+  .spotify.lyrics_reporting_esperanto.proto.ReasonStart reason_start = 4;
+  string playback_id = 10;
+  oneof _surface_type {
+    string surface_type = 6;
+  }
+  oneof _is_snippet {
+    bool is_snippet = 7;
+  }
+  oneof _sync_type {
+    string sync_type = 8;
+  }
+  oneof _provider_lyrics_id {
+    string provider_lyrics_id = 9;
+  }
+  oneof _provider {
+    string provider = 11;
+  }
+  oneof _is_visible {
+    bool is_visible = 12;
+  }
+  oneof _is_background {
+    bool is_background = 13;
+  }
+}

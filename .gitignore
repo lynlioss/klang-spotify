@@ -1,0 +1,12 @@
+analysis/
+.gradle/
+.kotlin/
+.idea/
+**/build/
+local.properties
+.env
+*.jks
+*.keystore
+*.log
+__pycache__/
+artifacts/

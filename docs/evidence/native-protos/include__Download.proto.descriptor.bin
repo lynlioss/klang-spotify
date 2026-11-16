@@ -1,0 +1,58 @@
+
+include/Download.protospotify.event_sender.proto"ý
+Download
+file_id (RfileId
+playback_id (R
+playbackId"
+bytes_from_ap (RbytesFromAp"
+waste_from_ap (RwasteFromAp 
+reqs_from_ap (R
+reqsFromAp"
+error_from_ap (RerrorFromAp$
+bytes_from_cdn (RbytesFromCdn$
+waste_from_cdn (RwasteFromCdn(
+bytes_from_cache	 (RbytesFromCache!
+content_size
+ (RcontentSize!
+content_type (	RcontentType,
+ap_initial_latency (RapInitialLatency$
+ap_max_latency (RapMaxLatency$
+ap_min_latency (RapMinLatency$
+ap_avg_latency (RapAvgLatency*
+ap_median_latency (RapMedianLatency
+	ap_avg_bw (RapAvgBw.
+cdn_initial_latency (RcdnInitialLatency&
+cdn_max_latency (RcdnMaxLatency&
+cdn_min_latency (RcdnMinLatency&
+cdn_avg_latency (RcdnAvgLatency,
+cdn_median_latency (RcdnMedianLatency5
+cdn_64k_initial_latency (Rcdn64kInitialLatency-
+cdn_64k_max_latency (Rcdn64kMaxLatency-
+cdn_64k_min_latency (Rcdn64kMinLatency-
+cdn_64k_avg_latency (Rcdn64kAvgLatency3
+cdn_64k_median_latency (Rcdn64kMedianLatency
+
+cdn_avg_bw (RcdnAvgBw5
+cdn_initial_bw_estimate (RcdnInitialBwEstimate$
+cdn_uri_scheme (	RcdnUriScheme
+
+cdn_domain (	R	cdnDomain(
+cdn_socket_reuse  (	RcdnSocketReuse!
+cdn_protocol. (	RcdnProtocol&
+num_cache_error! (RnumCacheError,
+bytes_from_carrier" (RbytesFromCarrier,
+bytes_from_unknown# (RbytesFromUnknown&
+bytes_from_wifi$ (RbytesFromWifi.
+bytes_from_ethernet% (RbytesFromEthernet!
+request_type& (	RrequestType
+
+total_time' (R	totalTime
+bitrate( (Rbitrate"
+reqs_from_cdn) (RreqsFromCdn$
+error_from_cdn* (RerrorFromCdn
+file_origin+ (	R
+fileOrigin,
+initial_disk_state, (	RinitialDiskState
+locked- (Rlocked6
+storage_resolve_latency/ (RstorageResolveLatency.
+original_cdn_domain0 (	RoriginalCdnDomainBH

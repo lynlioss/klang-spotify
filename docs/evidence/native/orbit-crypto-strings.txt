@@ -1,0 +1,98 @@
+ 33e366 (Lcom/spotify/authentication/login5/Login5Configuration;Lcom/spotify/concurrency/async/NativeTimerManagerThread;Lcom/spotify/authentication/login5setup/NativeLogin5Setup;Lcom/spotify/authentication/oauth/AccessToken;Lcom/spotify/authentication/credentials/UnencryptedCredentials;Lcom/spotify/cosmos/cosmosimpl/NativeRouter;Lcom/spotify/connectivity/NativeApplicationScopeAPI;Lcom/spotify/authentication/oauthsetupimpl/Login5BackoffConfig;ZZ)Lcom/spotify/authentication/oauthsetupimpl/NativeOAuthSetupImpl;
+ 341277 encryption
+ 343331 ClientEncrypt-main
+ 3433ef video decrypt failed: %s
+ 344b4c encryption_key_denied
+ 34cb30 encryption_indices
+ 34d6cb encryptedPersistedClientToken
+ 34da24 NativeOAuthSetup: failed to encrypt rotated stored credential
+ 3509c1 Invalid encryption metadata
+ 351350 (Lcom/spotify/concurrency/async/NativeTimerManagerThread;Lcom/spotify/connectivity/NativeApplicationScope;Lcom/spotify/authentication/credentials/UnencryptedCredentials;Lcom/spotify/authentication/oauthsetup/NativeOAuthSetup;Ljava/util/Map;Ljava/lang/String;)Lcom/spotify/connectivity/auth/NativeSession;
+ 3516bd AppIntegrityLoggerSetupImpl
+ 35276a ServerEncrypt-main
+ 35540a cpp-app_integrity-app_integrity_logger_setup_impl
+ 357613 invalid_encryption_key_token
+ 358462 Decryption failed
+ 359eee sample decryption failed: %s
+ 35bbb3 MP3 160 kbps (encrypted)
+ 360070 encryption_scheme
+ 36403a decryption_error
+ 364fb4 Waiting for decryptor
+ 365457 Failed to load class UnencryptedCredentials
+ 36ae77 chachaEncrypt
+ 36cbee app_integrity_delayed_request
+ 36f8e0 encryption_infos
+ 36f919 invalid encryption scheme: %d
+ 37104f OPC: rejecting remapped track %s: playable %s resolved to %s, which is not cached (file=%d, cached_key=%d)
+ 3714c1 Encrypted data 64k-latency: %d ms. Play latency: %d ms
+ 379243 encryption_key
+ 37aeef sync_error_offline_key_store_file_not_found
+ 382432 Encryption type is invalid, must be one of: aes, none
+ 382a62 OPC: %llu tracks found in batch %d in %lld ms, (%llu played, %llu missing file, %llu missing key, %llu missing metadata, %llu expired but in use, %llu missing in audio index)
+ 38604c finish: encrypted data not found in SeqNo 5 response
+ 388cc9 com/spotify/authentication/credentials/UnencryptedCredentials
+ 389119 es_unencrypted_stored_credentials.proto
+ 38a0f1 Pair-Setup-Encrypt-Salt
+ 38b5a5 kAppIntegrityLogger
+ 38ced3 es_encrypted_stored_credentials.proto
+ 38cf26 Failed to decrypt data
+ 38ed13 encryptDefaultCredentials - Credentials blob is empty
+ 3953a4 EstimateDownloadSize: no supported video presentation for %s (presentations=%d, spotify=%zu, adapter_failures=%zu, without_video_profiles=%zu, profile_selection_failures=%zu, rejected_encryption_packagings=%zu)
+ 395b42 Pair-Verify-Encrypt-Salt
+ 3964fa encryptDefaultCredentials - Device '%s' has an invalid public key '%s'
+ 399103 video decrypt: no key set
+ 39c3d8 Prefetch: Key prefetch error %s for file %s
+ 39ce03 OPC: downloaded item accepted: uri=%s cached_file=%s cached_bitrate=%d downloaded_file=%s downloaded_bitrate=%d same_file=%d persisted_cached_key=%d
+ 3a082e finish: decrypted TLV parsing failed
+ 3a37d4 Prefetch: key prefetched for track: %s (file: %s)
+ 3a8bd2 chachaDecrypt
+ 3a91c5 RuntimeConsumptionTable: failed to decrypt data
+ 3ab124 OPC: %llu tracks found in a total of %lld batches in %lld ms, (%llu missing file, %llu missing key, %llu missing metadata, %llu expired but in use, %llu missing in audio index, scan mode: %s)
+ 3ab232 Pair-Verify-Encrypt-Info
+ 3b2ca4 Pair-Setup-Encrypt-Info
+ 3ef6b6 ignore_head_files_when_pruning_cached_keys
+ 3f0701 encryption
+ 59fb2a EncryptedClientToken
+ 59fb42 encryptedToken
+ 59fb58 encryptedTokenB=
+ 5a26bb %es_encrypted_stored_credentials.proto
+ 5a26e2 'es_unencrypted_stored_credentials.proto"
+ 5a2732 2L.spotify.connectivity.auth.common.esperanto.proto.EncryptedStoredCredentialsH
+ 5a279a unencryptedStoredCredentials
+ 5a27bc 2N.spotify.connectivity.auth.common.esperanto.proto.UnencryptedStoredCredentialsR
+ 5a280e unencryptedStoredCredentialsB
+ 5a28b5 %es_encrypted_stored_credentials.proto
+ 5a2911 EncryptedStoredCredentials
+ 5a29fd 'es_unencrypted_stored_credentials.proto
+ 5a2a5b UnencryptedStoredCredentials
+ 5b162f supported_encryption_schemes
+ 5b1651 22.spotify.prefetch_esperanto.proto.EncryptionSchemeR
+ 5b1687 supportedEncryptionSchemes
+ 5b1759 EncryptionScheme
+ 5b176d ENCRYPTION_SCHEME_UNKNOWN
+ 5b178c ENCRYPTION_SCHEME_CBCS
+ 5b17a8 ENCRYPTION_SCHEME_CTR
+ 5d0e4b CDEBUG_TRACE_POINT_PENDING_EVENTS_IMPL_COMMIT_EVENT_DECRYPTION_ERROR
+ 5d1f25 FORMAT_MP3_160_ENCRYPTED
+ 5e8e40 DECRYPTION_ERROR
+ 5efce1 encryption
+ 5efcf1 2,.spotify.media_manifest.proto.EncryptionTypeR
+ 5efd21 encryption
+ 5efded EncryptionType
+ 675ed7 encryption_infos
+ 675eed 2*.spotify.contentagnostic.v2.EncryptionInfoR
+ 675f1b encryptionInfos"
+ 676a78 encryption_info
+ 676a91 encryptionInfo
+ 676aa6 _encryption_info"
+ 676abb EncryptionInfo
+ 676ad9 2,.spotify.contentagnostic.v2.EncryptionSchemeR
+ 676e69 EncryptionScheme
+ 676e7d ENCRYPTION_SCHEME_UNSPECIFIED
+ 676ea0 ENCRYPTION_SCHEME_CENC_CTR
+ 676ec0 ENCRYPTION_SCHEME_CENC_CBCS
+ 67885c WAV_PCM_UNENCRYPTED
+ 678875 OGG_VORBIS_160000_UNENCRYPTED
+176ed78 spotify.connectivity.auth.client_token.esperanto.proto.EncryptedClientTokenencryptedToken
+1772348 spotify.connectivity.auth.common.esperanto.proto.EncryptedStoredCredentialsusernamedevice_id
+17724e4 spotify.connectivity.auth.common.esperanto.proto.UnencryptedStoredCredentialsusername

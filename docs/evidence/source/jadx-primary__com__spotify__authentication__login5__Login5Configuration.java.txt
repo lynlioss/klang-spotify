@@ -1,0 +1,60 @@
+Source: analysis/spotify/jadx-primary/sources/com/spotify/authentication/login5/Login5Configuration.java
+SHA256: d104606bf4d7d3b2f740049942182bac3ea9fb240890d5d26107598b37d05937
+Lines: 1-56
+
+1: package com.spotify.authentication.login5;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes.dex */
+4: @kotlin.Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\b\n\u0002\u0010\b\n\u0002\b\u0005\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\u0007\"\u0004\b\f\u0010\tR\u001a\u0010\r\u001a\u00020\u000eX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012¨\u0006\u0013"}, d2 = {"Lcom/spotify/authentication/login5/Login5Configuration;", "", "<init>", "()V", "clientId", "", "getClientId", "()Ljava/lang/String;", "setClientId", "(Ljava/lang/String;)V", "deviceId", "getDeviceId", "setDeviceId", "protocolVersion", "", "getProtocolVersion", "()I", "setProtocolVersion", "(I)V", "src_main_java_com_spotify_authentication_login5-login5"}, k = 1, mv = {2, 3, 0}, xi = 48)
+5: public final class Login5Configuration {
+6:     private java.lang.String clientId;
+7:     private java.lang.String deviceId;
+8:     private int protocolVersion;
+9: 
+10:     public Login5Configuration() {
+11:             r1 = this;
+12:             r1.<init>()
+13:             java.lang.String r0 = ""
+14:             r1.clientId = r0
+15:             r1.deviceId = r0
+16:             r0 = 3
+17:             r1.protocolVersion = r0
+18:             return
+19:     }
+20: 
+21:     public final java.lang.String getClientId() {
+22:             r0 = this;
+23:             java.lang.String r0 = r0.clientId
+24:             return r0
+25:     }
+26: 
+27:     public final java.lang.String getDeviceId() {
+28:             r0 = this;
+29:             java.lang.String r0 = r0.deviceId
+30:             return r0
+31:     }
+32: 
+33:     public final int getProtocolVersion() {
+34:             r0 = this;
+35:             int r0 = r0.protocolVersion
+36:             return r0
+37:     }
+38: 
+39:     public final void setClientId(java.lang.String r1) {
+40:             r0 = this;
+41:             r0.clientId = r1
+42:             return
+43:     }
+44: 
+45:     public final void setDeviceId(java.lang.String r1) {
+46:             r0 = this;
+47:             r0.deviceId = r1
+48:             return
+49:     }
+50: 
+51:     public final void setProtocolVersion(int r1) {
+52:             r0 = this;
+53:             r0.protocolVersion = r1
+54:             return
+55:     }
+56: }

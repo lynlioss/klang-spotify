@@ -1,0 +1,12 @@
+// Recovered descriptor. Original file: es_websocket_send_request.proto
+syntax = "proto3";
+package spotify.connectivity.websocket.esperanto.proto;
+message WebSocketSendTextRequest {
+  string Payload = 1;
+}
+message WebSocketSendBinaryRequest {
+  bytes Payload = 1;
+}
+message WebSocketSendResponse {
+  bool Success = 1;
+}

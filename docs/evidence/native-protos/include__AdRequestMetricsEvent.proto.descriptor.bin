@@ -1,0 +1,33 @@
+
+#include/AdRequestMetricsEvent.protospotify.event_sender.proto"†
+AdRequestMetricsEvent
+
+request_id (	R	requestId
+slots (	Rslots
+
+bytes_sent (R	bytesSent%
+bytes_received (RbytesReceived'
+response_status (RresponseStatus
+is_cellular (R
+isCellular.
+is_proxy_connection (RisProxyConnection0
+is_reused_connection (RisReusedConnection
+
+fetch_type	 (	R	fetchType.
+request_create_time
+ (RrequestCreateTime,
+connect_start_time (RconnectStartTime(
+connect_end_time (RconnectEndTime,
+request_start_time (RrequestStartTime(
+request_end_time (RrequestEndTime.
+response_start_time (RresponseStartTime*
+response_end_time (RresponseEndTime.
+callback_start_time (RcallbackStartTimei
+decorator_times (2@.spotify.event_sender.proto.AdRequestMetricsEvent.DecoratorTimesRdecoratorTimes!
+request_kind (	RrequestKind,
+scheduler_hop_mode (	RschedulerHopMode
+DecoratorTimes
+	decorator (	R	decorator
+start (Rstart
+end (Rend'
+processing_type (	RprocessingTypeBH

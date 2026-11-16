@@ -1,0 +1,10 @@
+
+track_instance.protospotify.player.protocontext_index.protocontext_track.protoseek_to_position.proto"ë
+TrackInstance8
+track (2".spotify.player.proto.ContextTrackRtrack
+id (RidN
+seek_to_position (2$.spotify.player.proto.SeekToPositionRseekToPosition)
+initially_paused (RinitiallyPaused8
+index (2".spotify.player.proto.ContextIndexRindex
+provider (	Rprovider9
+seek_to_creator_timestamp	 (	RseekToCreatorTimestampJBH

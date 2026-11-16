@@ -1,0 +1,10 @@
+
+=spotify/list/v1/model/attributes/format_list_attributes.proto spotify.list.v1.model.attributes"½
+FormatListAttributesf
+
+attributes (2F.spotify.list.v1.model.attributes.FormatListAttributes.AttributesEntryR
+attributes=
+AttributesEntry
+key (	Rkey
+value (	Rvalue:8BE
+$com.spotify.list.v1.model.attributesBFormatListAttributesProtoHPbproto3

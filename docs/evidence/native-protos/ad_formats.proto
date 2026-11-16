@@ -1,0 +1,13 @@
+// Recovered descriptor. Original file: ad_formats.proto
+syntax = "proto3";
+package spotify.ads.esperanto.proto;
+import "ad_common.proto";
+message SubFormatRequest {
+  .spotify.ads.esperanto.proto.AdFormat format = 1;
+}
+message SubFormatResponse {
+  .spotify.ads.esperanto.proto.AdSlotEvent ad_slot_event = 1;
+}
+service Formats {
+  rpc SubFormat (.spotify.ads.esperanto.proto.SubFormatRequest) returns (stream .spotify.ads.esperanto.proto.SubFormatResponse);
+}

@@ -1,0 +1,5 @@
+
+entity_popularity.protospotify.contentpopularity.v1"=
+EntityPopularity)
+popularity_score (RpopularityScoreB&
+ com.spotify.contentpopularity.v1HPbproto3

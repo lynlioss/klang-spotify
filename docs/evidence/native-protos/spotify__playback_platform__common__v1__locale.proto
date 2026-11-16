@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: spotify/playback_platform/common/v1/locale.proto
+syntax = "proto3";
+package spotify.playback_platform.common.v1;
+message Locale {
+  string language_tag = 1;
+  string date_format = 2;
+  string time_format = 3;
+}

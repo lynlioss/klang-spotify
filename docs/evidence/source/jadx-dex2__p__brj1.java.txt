@@ -1,0 +1,176 @@
+Source: analysis/spotify/jadx-dex2/sources/p/brj1.java
+SHA256: c6058c75f0383b4dd504609fee72f81d7fd199cd8a8cba71270930c4bd1c0a87
+Lines: 1-172
+
+1: package p;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes2.dex */
+4: public final class brj1 extends com.google.protobuf.g implements p.qhj0 {
+5:     public final /* bridge */ /* synthetic */ p.nhj0 build() {
+6:             r0 = this;
+7:             com.google.protobuf.h r0 = r0.build()
+8:             return r0
+9:     }
+10: 
+11:     public final /* bridge */ /* synthetic */ p.nhj0 buildPartial() {
+12:             r0 = this;
+13:             com.google.protobuf.h r0 = super.buildPartial()
+14:             return r0
+15:     }
+16: 
+17:     public final /* bridge */ /* synthetic */ p.mhj0 clear() {
+18:             r0 = this;
+19:             com.google.protobuf.g r0 = r0.clear()
+20:             return r0
+21:     }
+22: 
+23:     public final /* bridge */ /* synthetic */ java.lang.Object clone() {
+24:             r0 = this;
+25:             com.google.protobuf.g r0 = super.clone()
+26:             return r0
+27:     }
+28: 
+29:     /* JADX INFO: renamed from: clone, reason: collision with other method in class */
+30:     public final /* bridge */ /* synthetic */ p.mhj0 m103clone() {
+31:             r0 = this;
+32:             com.google.protobuf.g r0 = super.clone()
+33:             return r0
+34:     }
+35: 
+36:     /* JADX INFO: renamed from: clone, reason: collision with other method in class */
+37:     public final /* bridge */ /* synthetic */ p.r8 m104clone() {
+38:             r0 = this;
+39:             com.google.protobuf.g r0 = super.clone()
+40:             return r0
+41:     }
+42: 
+43:     public final /* bridge */ /* synthetic */ p.nhj0 getDefaultInstanceForType() {
+44:             r0 = this;
+45:             com.google.protobuf.h r0 = super.getDefaultInstanceForType()
+46:             return r0
+47:     }
+48: 
+49:     public final /* bridge */ /* synthetic */ p.r8 internalMergeFrom(p.s8 r1) {
+50:             r0 = this;
+51:             com.google.protobuf.h r1 = (com.google.protobuf.h) r1
+52:             com.google.protobuf.g r0 = super.internalMergeFrom(r1)
+53:             return r0
+54:     }
+55: 
+56:     public final /* bridge */ /* synthetic */ p.mhj0 mergeFrom(java.io.InputStream r1) {
+57:             r0 = this;
+58:             p.r8 r0 = super/*p.r8*/.mergeFrom(r1)
+59:             return r0
+60:     }
+61: 
+62:     public final /* bridge */ /* synthetic */ p.mhj0 mergeFrom(java.io.InputStream r1, p.f910 r2) {
+63:             r0 = this;
+64:             p.r8 r0 = super/*p.r8*/.mergeFrom(r1, r2)
+65:             return r0
+66:     }
+67: 
+68:     public final /* bridge */ /* synthetic */ p.mhj0 mergeFrom(p.jjc r1) {
+69:             r0 = this;
+70:             p.r8 r0 = super/*p.r8*/.mergeFrom(r1)
+71:             return r0
+72:     }
+73: 
+74:     public final /* bridge */ /* synthetic */ p.mhj0 mergeFrom(p.jjc r1, p.f910 r2) {
+75:             r0 = this;
+76:             p.r8 r0 = super/*p.r8*/.mergeFrom(r1, r2)
+77:             return r0
+78:     }
+79: 
+80:     public final /* bridge */ /* synthetic */ p.mhj0 mergeFrom(p.nhj0 r1) {
+81:             r0 = this;
+82:             p.r8 r0 = super/*p.r8*/.mergeFrom(r1)
+83:             return r0
+84:     }
+85: 
+86:     public final /* bridge */ /* synthetic */ p.mhj0 mergeFrom(p.szg r1) {
+87:             r0 = this;
+88:             p.r8 r0 = super/*p.r8*/.mergeFrom(r1)
+89:             return r0
+90:     }
+91: 
+92:     public final /* bridge */ /* synthetic */ p.mhj0 mergeFrom(p.szg r1, p.f910 r2) {
+93:             r0 = this;
+94:             com.google.protobuf.g r0 = super.mergeFrom(r1, r2)
+95:             return r0
+96:     }
+97: 
+98:     public final /* bridge */ /* synthetic */ p.mhj0 mergeFrom(byte[] r1) {
+99:             r0 = this;
+100:             p.r8 r0 = super/*p.r8*/.mergeFrom(r1)
+101:             return r0
+102:     }
+103: 
+104:     public final /* bridge */ /* synthetic */ p.mhj0 mergeFrom(byte[] r1, int r2, int r3) {
+105:             r0 = this;
+106:             com.google.protobuf.g r0 = super.mergeFrom(r1, r2, r3)
+107:             return r0
+108:     }
+109: 
+110:     public final /* bridge */ /* synthetic */ p.mhj0 mergeFrom(byte[] r1, int r2, int r3, p.f910 r4) {
+111:             r0 = this;
+112:             com.google.protobuf.g r0 = super.mergeFrom(r1, r2, r3, r4)
+113:             return r0
+114:     }
+115: 
+116:     public final /* bridge */ /* synthetic */ p.mhj0 mergeFrom(byte[] r1, p.f910 r2) {
+117:             r0 = this;
+118:             p.r8 r0 = super/*p.r8*/.mergeFrom(r1, r2)
+119:             return r0
+120:     }
+121: 
+122:     /* JADX INFO: renamed from: mergeFrom, reason: collision with other method in class */
+123:     public final /* bridge */ /* synthetic */ p.r8 m105mergeFrom(p.szg r1, p.f910 r2) {
+124:             r0 = this;
+125:             com.google.protobuf.g r0 = super.mergeFrom(r1, r2)
+126:             return r0
+127:     }
+128: 
+129:     /* JADX INFO: renamed from: mergeFrom, reason: collision with other method in class */
+130:     public final /* bridge */ /* synthetic */ p.r8 m106mergeFrom(byte[] r1, int r2, int r3) {
+131:             r0 = this;
+132:             com.google.protobuf.g r0 = super.mergeFrom(r1, r2, r3)
+133:             return r0
+134:     }
+135: 
+136:     /* JADX INFO: renamed from: mergeFrom, reason: collision with other method in class */
+137:     public final /* bridge */ /* synthetic */ p.r8 m107mergeFrom(byte[] r1, int r2, int r3, p.f910 r4) {
+138:             r0 = this;
+139:             com.google.protobuf.g r0 = super.mergeFrom(r1, r2, r3, r4)
+140:             return r0
+141:     }
+142: 
+143:     public final void n(java.lang.String r2) {
+144:             r1 = this;
+145:             r1.copyOnWrite()
+146:             com.google.protobuf.h r1 = r1.instance
+147:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r1 = (com.spotify.integrity.integrityimpl.proto.VerifyRequest) r1
+148:             int r0 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.TOKEN_FIELD_NUMBER
+149:             r1.o(r2)
+150:             return
+151:     }
+152: 
+153:     public final void q(java.lang.String r2) {
+154:             r1 = this;
+155:             r1.copyOnWrite()
+156:             com.google.protobuf.h r1 = r1.instance
+157:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r1 = (com.spotify.integrity.integrityimpl.proto.VerifyRequest) r1
+158:             int r0 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.TOKEN_FIELD_NUMBER
+159:             r1.p(r2)
+160:             return
+161:     }
+162: 
+163:     public final void r(java.lang.String r2) {
+164:             r1 = this;
+165:             r1.copyOnWrite()
+166:             com.google.protobuf.h r1 = r1.instance
+167:             com.spotify.integrity.integrityimpl.proto.VerifyRequest r1 = (com.spotify.integrity.integrityimpl.proto.VerifyRequest) r1
+168:             int r0 = com.spotify.integrity.integrityimpl.proto.VerifyRequest.TOKEN_FIELD_NUMBER
+169:             r1.q(r2)
+170:             return
+171:     }
+172: }

@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: player_sequence/player/state/context_stack_entry.proto
+syntax = "proto3";
+package spotify.player.sequence.proto;
+message ContextStackEntry {
+  oneof _selected_child_uid {
+    string selected_child_uid = 1;
+  }
+}

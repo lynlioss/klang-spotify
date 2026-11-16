@@ -1,0 +1,19 @@
+
+(display_segments_esperanto_request.proto+spotify.display_segments_esperanto.proto.v1$policy/album_decoration_policy.proto%policy/artist_decoration_policy.proto&policy/episode_decoration_policy.proto$policy/track_decoration_policy.proto#policy/show_decoration_policy.proto"™
+SegmentsRequest!
+episode_uris (	RepisodeUrisz
+track_decoration_policy (2B.spotify.display_segments_esperanto.proto.v1.TrackDecorationPolicyRtrackDecorationPolicyd
+segments_policy (2;.spotify.display_segments_esperanto.proto.v1.SegmentsPolicyRsegmentsPolicy€
+episode_decoration_policy (2D.spotify.display_segments_esperanto.proto.v1.EpisodeDecorationPolicyRepisodeDecorationPolicy"þ
+TrackDecorationPolicyS
+track_policy (20.spotify.cosmos_util.proto.TrackDecorationPolicyRtrackPolicyX
+artists_policy (21.spotify.cosmos_util.proto.ArtistDecorationPolicyRartistsPolicyS
+album_policy (20.spotify.cosmos_util.proto.AlbumDecorationPolicyRalbumPolicya
+album_artist_policy (21.spotify.cosmos_util.proto.ArtistDecorationPolicyRalbumArtistPolicy"H
+SegmentsPolicy
+playback (Rplayback
+embedded (Rembedded"Û
+EpisodeDecorationPolicyY
+episode_policy (22.spotify.cosmos_util.proto.EpisodeDecorationPolicyRepisodePolicye
+show_decoration_policy (2/.spotify.cosmos_util.proto.ShowDecorationPolicyRshowDecorationPolicyB8
+,com.spotify.display_segments_esperanto.protoHP¢ESPbproto3

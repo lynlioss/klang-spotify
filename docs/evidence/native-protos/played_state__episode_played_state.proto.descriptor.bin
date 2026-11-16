@@ -1,0 +1,10 @@
+
+'played_state/episode_played_state.protospotify.cosmos_util.proto*played_state/playability_restriction.proto"ˆ
+EpisodePlayState
+	time_left (RtimeLeft
+is_playable (R
+isPlayable
+	is_played (RisPlayed$
+last_played_at (RlastPlayedAts
+playability_restriction (21.spotify.cosmos_util.proto.PlayabilityRestriction:UNKNOWNRplayabilityRestrictionB#
+com.spotify.cosmos.util.protoHP

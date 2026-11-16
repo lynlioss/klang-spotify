@@ -1,0 +1,11 @@
+
+es_set_queue_request.protospotify.player.esperanto.protoes_command_options.protoes_provided_track.protoes_logging_params.proto"ø
+SetQueueRequestN
+next_tracks (2-.spotify.player.esperanto.proto.ProvidedTrackR
+nextTracksN
+prev_tracks (2-.spotify.player.esperanto.proto.ProvidedTrackR
+prevTracks%
+queue_revision (RqueueRevisionH
+options (2..spotify.player.esperanto.proto.CommandOptionsRoptionsT
+logging_params (2-.spotify.player.esperanto.proto.LoggingParamsRloggingParamsB,
+"com.spotify.player.esperanto.protoH¢ESPbproto3

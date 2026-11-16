@@ -1,0 +1,12 @@
+
+global_node.protospotify.player.protocontext_player_options.protopause_resume_origin.protoplayer_license.proto"¤
+
+GlobalNodeD
+options (2*.spotify.player.proto.ContextPlayerOptionsRoptions=
+license (2#.spotify.player.proto.PlayerLicenseRlicenseY
+configuration (23.spotify.player.proto.GlobalNode.ConfigurationEntryRconfigurationW
+pause_resume_origin (2'.spotify.player.proto.PauseResumeOriginRpauseResumeOrigin
+	is_paused (RisPaused@
+ConfigurationEntry
+key (	Rkey
+value (	Rvalue:8BH

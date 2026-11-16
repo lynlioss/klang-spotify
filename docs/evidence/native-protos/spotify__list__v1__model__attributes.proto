@@ -1,0 +1,113 @@
+// Recovered descriptor. Original file: spotify/list/v1/model/attributes.proto
+syntax = "proto3";
+package spotify.list.v1.model;
+import "google/protobuf/descriptor.proto";
+import "google/protobuf/timestamp.proto";
+import "spotify/list/v1/model/attribute_extension.proto";
+import "spotify/list/v1/model/attributes/ai_curation.proto";
+import "spotify/list/v1/model/attributes/capabilities.proto";
+import "spotify/list/v1/model/attributes/format_list_attributes.proto";
+import "spotify/list/v1/model/attributes/geoblock.proto";
+import "spotify/list/v1/model/attributes/item_id_algorithm.proto";
+import "spotify/list/v1/model/attributes/picture_size.proto";
+import "spotify/list/v1/model/attributes/recommendation_info.proto";
+import "spotify/list/v1/model/attributes/signals_list.proto";
+import "spotify/list/v1/model/lenses.proto";
+message Attributes {
+  oneof _uri {
+    string uri = 1;
+  }
+  oneof _name {
+    string name = 3;
+  }
+  oneof _description {
+    string description = 4;
+  }
+  oneof _updated_at {
+    .google.protobuf.Timestamp updated_at = 5;
+  }
+  oneof _added_by_username {
+    string added_by_username = 6;
+  }
+  oneof _owner_username {
+    string owner_username = 7;
+  }
+  oneof _created_at {
+    .google.protobuf.Timestamp created_at = 8;
+  }
+  oneof _capabilities {
+    .spotify.list.v1.model.attributes.Capabilities capabilities = 9;
+  }
+  oneof _geoblock {
+    .spotify.list.v1.model.attributes.Geoblock geoblock = 10;
+  }
+  oneof _seen_at {
+    .google.protobuf.Timestamp seen_at = 11;
+  }
+  oneof _abuse_reporting_enabled {
+    bool abuse_reporting_enabled = 12;
+  }
+  oneof _approximate_length {
+    int64 approximate_length = 13;
+  }
+  oneof _available_signals {
+    .spotify.list.v1.model.attributes.SignalsList available_signals = 14;
+  }
+  oneof _published_to_profile {
+    bool published_to_profile = 15;
+  }
+  oneof _recommendation_info {
+    .spotify.list.v1.model.attributes.RecommendationInfo recommendation_info = 16;
+  }
+  oneof _ai_curation {
+    .spotify.list.v1.model.attributes.AiCuration ai_curation = 17;
+  }
+  oneof _added_at {
+    .google.protobuf.Timestamp added_at = 18;
+  }
+  oneof _deleted_by_owner {
+    bool deleted_by_owner = 19;
+  }
+  oneof _picture_file_id {
+    bytes picture_file_id = 20;
+  }
+  oneof _picture_sizes {
+    .spotify.list.v1.model.attributes.PictureSizes picture_sizes = 21;
+  }
+  oneof _client_id {
+    string client_id = 22;
+  }
+  oneof _format {
+    string format = 23;
+  }
+  oneof _format_list_attributes {
+    .spotify.list.v1.model.attributes.FormatListAttributes format_list_attributes = 24;
+  }
+  oneof _item_id_algorithm {
+    .spotify.list.v1.model.attributes.ItemIdAlgorithm item_id_algorithm = 25;
+  }
+  oneof _recoverable {
+    bool recoverable = 26;
+  }
+  oneof _source_lens {
+    .spotify.list.v1.model.Lens source_lens = 27;
+  }
+  oneof _is_user_created {
+    bool is_user_created = 29;
+  }
+  oneof _resolve_prompt_format_attributes {
+    bool resolve_prompt_format_attributes = 30;
+  }
+  oneof _tag_manifest {
+    bytes tag_manifest = 31;
+  }
+  oneof _tags {
+    bytes tags = 32;
+  }
+  oneof _sort_manifest {
+    bytes sort_manifest = 33;
+  }
+  oneof _sort_values {
+    bytes sort_values = 34;
+  }
+}

@@ -1,0 +1,10 @@
+
+include/AudioDriverInfo.protospotify.event_sender.proto"‰
+AudioDriverInfo
+driver_name (	R
+driverName,
+output_device_name (	RoutputDeviceName4
+output_device_category (	RoutputDeviceCategory
+reason (	Rreason'
+failed_attempts (RfailedAttempts0
+recovery_duration_ms (RrecoveryDurationMsBH

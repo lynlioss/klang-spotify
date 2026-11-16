@@ -1,0 +1,17 @@
+
+include/AutoTransition.protospotify.event_sender.proto"¾
+AutoTransition
+playback_id (R
+playbackId(
+prev_playback_id (RprevPlaybackId 
+beatmatched (Rbeatmatched#
+initial_speed (RinitialSpeed"
+fade_in_start (RfadeInStart$
+fade_out_start (RfadeOutStart(
+fade_in_duration (RfadeInDuration*
+fade_out_duration (RfadeOutDuration
+stored	 (Rstored$
+auto_preset_id
+ (RautoPresetId
+arm_id (	RarmId%
+transition_uri (	RtransitionUriBH

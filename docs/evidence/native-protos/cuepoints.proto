@@ -1,0 +1,19 @@
+// Recovered descriptor. Original file: cuepoints.proto
+syntax = "proto3";
+package spotify.automix.proto;
+enum Origin {
+  HUMAN = 0;
+  ML = 1;
+}
+message Cuepoint {
+  int64 position_ms = 1;
+  float tempo_bpm = 2;
+  .spotify.automix.proto.Origin origin = 3;
+  double confidence = 4;
+}
+message Cuepoints {
+  .spotify.automix.proto.Cuepoint best_fade_in_cuepoint = 1;
+  .spotify.automix.proto.Cuepoint best_fade_out_cuepoint = 2;
+  repeated .spotify.automix.proto.Cuepoint fade_in_cuepoints = 3;
+  repeated .spotify.automix.proto.Cuepoint fade_out_cuepoints = 4;
+}

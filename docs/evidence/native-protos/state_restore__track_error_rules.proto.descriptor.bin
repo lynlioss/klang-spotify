@@ -1,0 +1,6 @@
+
+%state_restore/track_error_rules.proto"spotify.player.proto.state_restore"‰
+TrackErrorRules
+reasons (	Rreasons0
+num_attempted_tracks (RnumAttemptedTracks*
+num_failed_tracks (RnumFailedTracksBH

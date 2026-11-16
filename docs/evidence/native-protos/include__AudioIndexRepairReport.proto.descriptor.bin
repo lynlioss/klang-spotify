@@ -1,0 +1,14 @@
+
+$include/AudioIndexRepairReport.protospotify.event_sender.proto"Ä
+AudioIndexRepairReport3
+tracks_num_added_audio (RtracksNumAddedAudio-
+tracks_num_in_mdata (RtracksNumInMdata3
+tracks_num_parse_error (RtracksNumParseError<
+tracks_num_missing_audio_id (RtracksNumMissingAudioId3
+tracks_num_write_error (RtracksNumWriteError7
+episodes_num_added_audio (RepisodesNumAddedAudio1
+episodes_num_in_mdata (RepisodesNumInMdata7
+episodes_num_parse_error (RepisodesNumParseError@
+episodes_num_missing_audio_id	 (RepisodesNumMissingAudioId7
+episodes_num_write_error
+ (RepisodesNumWriteErrorBH

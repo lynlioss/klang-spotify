@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: es_connection_availability.proto
+syntax = "proto3";
+package spotify.connectivity.reachability.esperanto.proto;
+message ConnectionAvailability {
+  bool is_cellular_enabled = 1;
+  bool is_wifi_enabled = 2;
+}

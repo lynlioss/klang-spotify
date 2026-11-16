@@ -1,0 +1,60 @@
+// Recovered descriptor. Original file: proto/connection_metrics.proto
+syntax = "proto3";
+package spotify.connectivity.http.proto;
+enum FetchType {
+  UNKNOWN = 0;
+  NETWORK = 1;
+  LOCALCACHE = 2;
+}
+enum Bearer {
+  BEARER_UNKNOWN = 0;
+  BEARER_CELLULAR = 1;
+  BEARER_WIFI = 2;
+}
+message TransactionMetrics {
+  int64 byteSent = 1;
+  int64 byteReceived = 2;
+  bool isProxyConnection = 12;
+  bool isReusedConnection = 13;
+  .spotify.connectivity.http.proto.FetchType fetchType = 14;
+  .spotify.connectivity.http.proto.Bearer bearer = 15;
+  oneof _requestURL {
+    string requestURL = 3;
+  }
+  oneof _responseStatus {
+    int32 responseStatus = 4;
+  }
+  oneof _protocol {
+    string protocol = 5;
+  }
+  oneof _connectStart {
+    int64 connectStart = 6;
+  }
+  oneof _connectEnd {
+    int64 connectEnd = 7;
+  }
+  oneof _requestStart {
+    int64 requestStart = 8;
+  }
+  oneof _requestEnd {
+    int64 requestEnd = 9;
+  }
+  oneof _responseStart {
+    int64 responseStart = 10;
+  }
+  oneof _responseEnd {
+    int64 responseEnd = 11;
+  }
+}
+message ConnectionMetrics {
+  double duration = 1;
+  int64 connectionTaskStart = 3;
+  int64 connectionTaskEnd = 4;
+  repeated .spotify.connectivity.http.proto.TransactionMetrics transactionMetrics = 5;
+  oneof _redirectCount {
+    int32 redirectCount = 2;
+  }
+  oneof _additionalContext {
+    string additionalContext = 6;
+  }
+}

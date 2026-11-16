@@ -1,0 +1,13 @@
+
+include/AudioRateLimit.protospotify.event_sender.proto"Ý
+AudioRateLimit
+driver_name (	R
+driverName,
+output_device_name (	RoutputDeviceName4
+output_device_category (	RoutputDeviceCategory
+max_size (RmaxSize6
+refill_per_milliseconds (RrefillPerMilliseconds)
+frames_requested (RframesRequested'
+frames_acquired (RframesAcquired
+playback_id (R
+playbackIdBH

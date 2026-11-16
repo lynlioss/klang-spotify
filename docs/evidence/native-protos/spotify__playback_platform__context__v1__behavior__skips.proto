@@ -1,0 +1,11 @@
+// Recovered descriptor. Original file: spotify/playback_platform/context/v1/behavior/skips.proto
+syntax = "proto3";
+package spotify.playback_platform.context.v1.behavior;
+import "spotify/playback_platform/context/v1/sequence_query.proto";
+message Skips {
+  .spotify.playback_platform.context.v1.SequenceQuery skip_to_prev = 2;
+  .spotify.playback_platform.context.v1.SequenceQuery skip_to_next = 3;
+  oneof _allow {
+    bool allow = 1;
+  }
+}

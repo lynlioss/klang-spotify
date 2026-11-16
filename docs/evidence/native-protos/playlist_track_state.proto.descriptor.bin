@@ -1,0 +1,10 @@
+
+playlist_track_state.protospotify.playlist.cosmos.proto"©
+TrackCollectionState(
+is_in_collection (RisInCollection1
+can_add_to_collection (RcanAddToCollection
+	is_banned (RisBanned
+can_ban (RcanBan"-
+TrackOfflineState
+offline (	RofflineB.
+com.spotify.playlist.protoHP¢SPTPlaylist

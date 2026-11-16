@@ -1,0 +1,16 @@
+// Recovered descriptor. Original file: playback-settings-pubsub.proto
+syntax = "proto3";
+package spotify.playbacksettings.pubsub;
+import "playback-settings.proto";
+message DeviceSettingsFieldsChangedEvent {
+  string device_id = 2;
+  string device_name = 3;
+  repeated .spotify.playbacksettings.Field changed_fields = 4;
+}
+message ContentSettingsChangedEvent {
+  string content_id = 2;
+  repeated .spotify.playbacksettings.Field changed_fields = 3;
+}
+message UserSettingsChangedEvent {
+  repeated .spotify.playbacksettings.Field changed_fields = 2;
+}

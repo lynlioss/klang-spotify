@@ -1,0 +1,10 @@
+// Recovered descriptor. Original file: set_member_permission_request.proto
+syntax = "proto2";
+package spotify.playlist.cosmos.proto;
+import "playlist_permission.proto";
+message SetMemberPermissionRequest {
+  optional string playlist_uri = 1;
+  optional string username = 2;
+  optional .spotify.playlist_permission.proto.PermissionLevel permission_level = 3;
+  optional uint32 timeout_ms = 4;
+}

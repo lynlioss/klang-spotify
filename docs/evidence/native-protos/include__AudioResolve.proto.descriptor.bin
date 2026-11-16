@@ -1,0 +1,11 @@
+
+include/AudioResolve.protospotify.event_sender.proto"¶
+AudioResolve
+playback_id (R
+playbackId
+
+latency_ms (R	latencyMs
+
+entity_uri (	R	entityUri
+audio_id (RaudioId,
+generated_audio_id (RgeneratedAudioIdBH

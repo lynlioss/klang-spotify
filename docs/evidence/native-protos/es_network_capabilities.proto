@@ -1,0 +1,9 @@
+// Recovered descriptor. Original file: es_network_capabilities.proto
+syntax = "proto3";
+package spotify.connectivity.reachability.esperanto.proto;
+enum NetworkCapability {
+  UNMETERED = 0;
+  CELLULAR = 1;
+  EXPENSIVE = 2;
+  CONSTRAINED = 3;
+}

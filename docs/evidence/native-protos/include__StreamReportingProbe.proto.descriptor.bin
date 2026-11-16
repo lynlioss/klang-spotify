@@ -1,0 +1,10 @@
+
+"include/StreamReportingProbe.protospotify.event_sender.proto"Ê
+StreamReportingProbe
+	stream_id (RstreamId!
+core_version (RcoreVersion
+type (	Rtype
+content (	Rcontent#
+config_params (	RconfigParams
+playback_id (R
+playbackIdBH

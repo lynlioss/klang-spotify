@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: playlist_invalidate_revisions_request.proto
+syntax = "proto3";
+package spotify.playlist_esperanto.proto;
+import "response_status.proto";
+message PlaylistInvalidateRevisionsResponse {
+  .spotify.playlist_esperanto.proto.ResponseStatus status = 1;
+}

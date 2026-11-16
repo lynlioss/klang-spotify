@@ -1,0 +1,16 @@
+// Recovered descriptor. Original file: item_reporting_context.proto
+syntax = "proto3";
+package spotify.timeline_reporter.proto;
+import "stream_reporting_attribution.proto";
+message ItemReportingContext {
+  string content_uri = 1;
+  string provider = 7;
+  string referrer = 8;
+  string decision_id = 9;
+  string custom_reporting_attribution = 10;
+  string connect_controller_device_id = 11;
+  string interaction_id = 17;
+  string page_instance_id = 18;
+  string play_context = 19;
+  .spotify.stream_reporting_attribution.proto.StreamReportingAttribution attribution = 20;
+}

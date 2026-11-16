@@ -1,0 +1,8 @@
+// Recovered descriptor. Original file: response_status.proto
+syntax = "proto3";
+package spotify.playlist_esperanto.proto;
+message ResponseStatus {
+  int32 status_code = 1;
+  string reason = 2;
+  repeated string reasons = 3;
+}

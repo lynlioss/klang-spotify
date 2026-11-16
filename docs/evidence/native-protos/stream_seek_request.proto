@@ -1,0 +1,14 @@
+// Recovered descriptor. Original file: stream_seek_request.proto
+syntax = "proto3";
+package spotify.stream_reporting_esperanto.proto;
+import "google/protobuf/timestamp.proto";
+import "stream_handle.proto";
+message StreamSeekRequest {
+  .spotify.stream_reporting_esperanto.proto.StreamHandle stream_handle = 1;
+  uint64 from_position = 3;
+  uint64 to_position = 4;
+  .google.protobuf.Timestamp client_timestamp = 5;
+  oneof _is_system_initiated {
+    bool is_system_initiated = 6;
+  }
+}

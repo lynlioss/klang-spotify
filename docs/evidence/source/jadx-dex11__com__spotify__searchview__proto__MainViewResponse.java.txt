@@ -1,0 +1,235 @@
+Source: analysis/spotify/jadx-dex11/sources/com/spotify/searchview/proto/MainViewResponse.java
+SHA256: e1b7da58a3c60567439a0884360cf6dec7a4d05dce5fe8f94bbee411c1dc8875
+Lines: 1-231
+
+1: package com.spotify.searchview.proto;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes11.dex */
+4: public final class MainViewResponse extends com.google.protobuf.h implements p.qhj0 {
+5:     public static final int BANNER_CONTENT_FIELD_NUMBER = 5;
+6:     private static final com.spotify.searchview.proto.MainViewResponse DEFAULT_INSTANCE = null;
+7:     public static final int FILTER_CATALOG_FIELD_NUMBER = 12;
+8:     public static final int FLAT_FILTERS_FIELD_NUMBER = 10;
+9:     public static final int HITS_FIELD_NUMBER = 1;
+10:     public static final int NEXT_PAGE_TOKEN_FIELD_NUMBER = 4;
+11:     private static volatile p.whs0 PARSER = null;
+12:     public static final int RECOMMENDATIONS_FIELD_NUMBER = 2;
+13:     private com.spotify.searchview.proto.BannerContent bannerContent_;
+14:     private int bitField0_;
+15:     private com.spotify.searchview.proto.FilterCatalog filterCatalog_;
+16:     private com.spotify.searchview.proto.Filters flatFilters_;
+17:     private p.he90 hits_;
+18:     private java.lang.String nextPageToken_;
+19:     private com.spotify.searchview.proto.Recommendations recommendations_;
+20: 
+21:     static {
+22:             com.spotify.searchview.proto.MainViewResponse r0 = new com.spotify.searchview.proto.MainViewResponse
+23:             r0.<init>()
+24:             com.spotify.searchview.proto.MainViewResponse.DEFAULT_INSTANCE = r0
+25:             java.lang.Class<com.spotify.searchview.proto.MainViewResponse> r1 = com.spotify.searchview.proto.MainViewResponse.class
+26:             com.google.protobuf.h.registerDefaultInstance(r1, r0)
+27:             return
+28:     }
+29: 
+30:     private MainViewResponse() {
+31:             r1 = this;
+32:             r1.<init>()
+33:             p.he90 r0 = com.google.protobuf.h.emptyProtobufList()
+34:             r1.hits_ = r0
+35:             java.lang.String r0 = ""
+36:             r1.nextPageToken_ = r0
+37:             return
+38:     }
+39: 
+40:     public static p.whs0 parser() {
+41:             com.spotify.searchview.proto.MainViewResponse r0 = com.spotify.searchview.proto.MainViewResponse.DEFAULT_INSTANCE
+42:             p.whs0 r0 = r0.getParserForType()
+43:             return r0
+44:     }
+45: 
+46:     public final java.lang.Object dynamicMethod(p.lp40 r9, java.lang.Object r10, java.lang.Object r11) {
+47:             r8 = this;
+48:             int r8 = r9.ordinal()
+49:             if (r8 == 0) goto L62
+50:             r9 = 2
+51:             if (r8 == r9) goto L45
+52:             r10 = 3
+53:             if (r8 == r10) goto L3f
+54:             r10 = 4
+55:             if (r8 == r10) goto L37
+56:             r9 = 5
+57:             if (r8 == r9) goto L34
+58:             r9 = 6
+59:             if (r8 != r9) goto L32
+60:             p.whs0 r8 = com.spotify.searchview.proto.MainViewResponse.PARSER
+61:             if (r8 != 0) goto L31
+62:             java.lang.Class<com.spotify.searchview.proto.MainViewResponse> r9 = com.spotify.searchview.proto.MainViewResponse.class
+63:             monitor-enter(r9)
+64:             p.whs0 r8 = com.spotify.searchview.proto.MainViewResponse.PARSER     // Catch: java.lang.Throwable -> L2a
+65:             if (r8 != 0) goto L2d
+66:             p.dp40 r8 = new p.dp40     // Catch: java.lang.Throwable -> L2a
+67:             com.spotify.searchview.proto.MainViewResponse r10 = com.spotify.searchview.proto.MainViewResponse.DEFAULT_INSTANCE     // Catch: java.lang.Throwable -> L2a
+68:             r8.<init>(r10)     // Catch: java.lang.Throwable -> L2a
+69:             com.spotify.searchview.proto.MainViewResponse.PARSER = r8     // Catch: java.lang.Throwable -> L2a
+70:             goto L2d
+71:         L2a:
+72:             r0 = move-exception
+73:             r8 = r0
+74:             goto L2f
+75:         L2d:
+76:             monitor-exit(r9)     // Catch: java.lang.Throwable -> L2a
+77:             return r8
+78:         L2f:
+79:             monitor-exit(r9)     // Catch: java.lang.Throwable -> L2a
+80:             throw r8
+81:         L31:
+82:             return r8
+83:         L32:
+84:             r8 = 0
+85:             throw r8
+86:         L34:
+87:             com.spotify.searchview.proto.MainViewResponse r8 = com.spotify.searchview.proto.MainViewResponse.DEFAULT_INSTANCE
+88:             return r8
+89:         L37:
+90:             p.o8g0 r8 = new p.o8g0
+91:             com.spotify.searchview.proto.MainViewResponse r10 = com.spotify.searchview.proto.MainViewResponse.DEFAULT_INSTANCE
+92:             r8.<init>(r10, r9)
+93:             return r8
+94:         L3f:
+95:             com.spotify.searchview.proto.MainViewResponse r8 = new com.spotify.searchview.proto.MainViewResponse
+96:             r8.<init>()
+97:             return r8
+98:         L45:
+99:             java.lang.String r0 = "bitField0_"
+100:             java.lang.String r1 = "hits_"
+101:             java.lang.Class<com.spotify.searchview.proto.Entity> r2 = com.spotify.searchview.proto.Entity.class
+102:             java.lang.String r3 = "recommendations_"
+103:             java.lang.String r4 = "nextPageToken_"
+104:             java.lang.String r5 = "bannerContent_"
+105:             java.lang.String r6 = "flatFilters_"
+106:             java.lang.String r7 = "filterCatalog_"
+107:             java.lang.Object[] r8 = new java.lang.Object[]{r0, r1, r2, r3, r4, r5, r6, r7}
+108:             java.lang.String r9 = "\u0000\u0006\u0000\u0001\u0001\f\u0006\u0000\u0001\u0000\u0001\u001b\u0002ဉ\u0000\u0004Ȉ\u0005ဉ\u0001\nဉ\u0002\fဉ\u0003"
+109:             com.spotify.searchview.proto.MainViewResponse r10 = com.spotify.searchview.proto.MainViewResponse.DEFAULT_INSTANCE
+110:             java.lang.Object r8 = com.google.protobuf.h.newMessageInfo(r10, r9, r8)
+111:             return r8
+112:         L62:
+113:             r8 = 1
+114:             java.lang.Byte r8 = java.lang.Byte.valueOf(r8)
+115:             return r8
+116:     }
+117: 
+118:     public final /* bridge */ /* synthetic */ p.nhj0 getDefaultInstanceForType() {
+119:             r0 = this;
+120:             com.google.protobuf.h r0 = r0.getDefaultInstanceForType()
+121:             return r0
+122:     }
+123: 
+124:     public final java.lang.String getNextPageToken() {
+125:             r0 = this;
+126:             java.lang.String r0 = r0.nextPageToken_
+127:             return r0
+128:     }
+129: 
+130:     public final com.spotify.searchview.proto.BannerContent n() {
+131:             r0 = this;
+132:             com.spotify.searchview.proto.BannerContent r0 = r0.bannerContent_
+133:             if (r0 != 0) goto L8
+134:             com.spotify.searchview.proto.BannerContent r0 = com.spotify.searchview.proto.BannerContent.o()
+135:         L8:
+136:             return r0
+137:     }
+138: 
+139:     public final /* bridge */ /* synthetic */ p.mhj0 newBuilderForType() {
+140:             r0 = this;
+141:             com.google.protobuf.g r0 = r0.newBuilderForType()
+142:             return r0
+143:     }
+144: 
+145:     public final com.spotify.searchview.proto.FilterCatalog o() {
+146:             r0 = this;
+147:             com.spotify.searchview.proto.FilterCatalog r0 = r0.filterCatalog_
+148:             if (r0 != 0) goto L8
+149:             com.spotify.searchview.proto.FilterCatalog r0 = com.spotify.searchview.proto.FilterCatalog.n()
+150:         L8:
+151:             return r0
+152:     }
+153: 
+154:     public final com.spotify.searchview.proto.Filters p() {
+155:             r0 = this;
+156:             com.spotify.searchview.proto.Filters r0 = r0.flatFilters_
+157:             if (r0 != 0) goto L8
+158:             com.spotify.searchview.proto.Filters r0 = com.spotify.searchview.proto.Filters.n()
+159:         L8:
+160:             return r0
+161:     }
+162: 
+163:     public final p.he90 q() {
+164:             r0 = this;
+165:             p.he90 r0 = r0.hits_
+166:             return r0
+167:     }
+168: 
+169:     public final com.spotify.searchview.proto.Recommendations r() {
+170:             r0 = this;
+171:             com.spotify.searchview.proto.Recommendations r0 = r0.recommendations_
+172:             if (r0 != 0) goto L8
+173:             com.spotify.searchview.proto.Recommendations r0 = com.spotify.searchview.proto.Recommendations.n()
+174:         L8:
+175:             return r0
+176:     }
+177: 
+178:     public final boolean s() {
+179:             r0 = this;
+180:             int r0 = r0.bitField0_
+181:             r0 = r0 & 2
+182:             if (r0 == 0) goto L8
+183:             r0 = 1
+184:             return r0
+185:         L8:
+186:             r0 = 0
+187:             return r0
+188:     }
+189: 
+190:     public final boolean t() {
+191:             r0 = this;
+192:             int r0 = r0.bitField0_
+193:             r0 = r0 & 8
+194:             if (r0 == 0) goto L8
+195:             r0 = 1
+196:             return r0
+197:         L8:
+198:             r0 = 0
+199:             return r0
+200:     }
+201: 
+202:     public final /* bridge */ /* synthetic */ p.mhj0 toBuilder() {
+203:             r0 = this;
+204:             com.google.protobuf.g r0 = r0.toBuilder()
+205:             return r0
+206:     }
+207: 
+208:     public final boolean u() {
+209:             r0 = this;
+210:             int r0 = r0.bitField0_
+211:             r0 = r0 & 4
+212:             if (r0 == 0) goto L8
+213:             r0 = 1
+214:             return r0
+215:         L8:
+216:             r0 = 0
+217:             return r0
+218:     }
+219: 
+220:     public final boolean v() {
+221:             r1 = this;
+222:             int r1 = r1.bitField0_
+223:             r0 = 1
+224:             r1 = r1 & r0
+225:             if (r1 == 0) goto L7
+226:             return r0
+227:         L7:
+228:             r1 = 0
+229:             return r1
+230:     }
+231: }

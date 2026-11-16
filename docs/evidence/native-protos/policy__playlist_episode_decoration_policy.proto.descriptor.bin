@@ -1,0 +1,18 @@
+
+/policy/playlist_episode_decoration_policy.protospotify.playlist.cosmos.proto&policy/episode_decoration_policy.proto#policy/show_decoration_policy.proto#policy/user_decoration_policy.proto"¿
+PlaylistEpisodeDecorationPolicyL
+episode (22.spotify.cosmos_util.proto.EpisodeDecorationPolicyRepisode
+row_id (RrowId
+add_time (RaddTime4
+format_list_attributes (RformatListAttributes\
+
+collection (2<.spotify.cosmos_util.proto.EpisodeCollectionDecorationPolicyR
+collectionJ
+sync (26.spotify.cosmos_util.proto.EpisodeSyncDecorationPolicyRsync`
+played_state (2=.spotify.cosmos_util.proto.EpisodePlayedStateDecorationPolicyRplayedStateN
+added_by (23.spotify.playlist.cosmos.proto.UserDecorationPolicyRaddedByC
+show	 (2/.spotify.cosmos_util.proto.ShowDecorationPolicyRshow
+signals
+ (Rsignals+
+is_recommendation (RisRecommendationB'
+!com.spotify.playlist.policy.protoHPbproto3

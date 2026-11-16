@@ -1,0 +1,41 @@
+
+identity.protospotify.identity.v3 google/protobuf/field_mask.protogoogle/protobuf/wrappers.proto"U
+Image
+	max_width (RmaxWidth
+
+max_height (R	maxHeight
+url (	Rurl"²
+
+UserProfile8
+username (2.google.protobuf.StringValueRusername0
+name (2.google.protobuf.StringValueRname2
+images (2.spotify.identity.v3.ImageRimages6
+verified (2.google.protobuf.BoolValueRverifiedN
+edit_profile_disabled (2.google.protobuf.BoolValueReditProfileDisabledN
+report_abuse_disabled (2.google.protobuf.BoolValueRreportAbuseDisabledJ
+abuse_reported_name (2.google.protobuf.BoolValueRabuseReportedNameL
+abuse_reported_image (2.google.protobuf.BoolValueRabuseReportedImageD
+has_spotify_name	 (2.google.protobuf.BoolValueRhasSpotifyNameF
+has_spotify_image
+ (2.google.protobuf.BoolValueRhasSpotifyImage1
+color (2.google.protobuf.Int32ValueRcolor9
+
+is_private (2.google.protobuf.BoolValueR	isPrivate.
+bio (2.google.protobuf.StringValueRbioH
+abuse_reported_bio (2.google.protobuf.BoolValueRabuseReportedBioH
+edit_name_disabled (2.google.protobuf.BoolValueReditNameDisabledJ
+edit_image_disabled (2.google.protobuf.BoolValueReditImageDisabledF
+edit_bio_disabled (2.google.protobuf.BoolValueReditBioDisabled1
+is_kid (2.google.protobuf.BoolValueRisKidA
+social_handle (2.google.protobuf.StringValueRsocialHandle;
+
+account_id (2.google.protobuf.StringValueR	accountIdJJ"¹
+UserProfileUpdateRequest.
+mask (2.google.protobuf.FieldMaskRmaskC
+user_profile (2 .spotify.identity.v3.UserProfileRuserProfile(
+skip_emit_events (RskipEmitEvents"v
+UserProfileChangedEvent
+userid (	RuseridC
+user_profile (2 .spotify.identity.v3.UserProfileRuserProfileB-
+com.spotify.identity.proto.v3B
+IdentityV3Hbproto3

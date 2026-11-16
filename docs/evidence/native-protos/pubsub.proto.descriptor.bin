@@ -1,0 +1,36 @@
+
+pubsub.protospotify.playlist4.protogoogle/protobuf/timestamp.protoplaylist_api.proto"&
+SubscribeRequest
+uris (Ruris"(
+UnsubscribeRequest
+uris (Ruris"å
+PlaylistModificationInfo
+uri (Ruri!
+new_revision (RnewRevision'
+parent_revision (RparentRevision-
+ops (2.spotify.playlist4.proto.OpRops;
+modified_at (2.google.protobuf.TimestampR
+modifiedAt#
+server_domain (	RserverDomain#
+truncated_ops (RtruncatedOps5
+skip_publish_to_clients (RskipPublishToClients"œ
+RootlistModificationInfo!
+new_revision (RnewRevision'
+parent_revision (RparentRevision-
+ops (2.spotify.playlist4.proto.OpRops;
+modified_at (2.google.protobuf.TimestampR
+modifiedAt#
+server_domain (	RserverDomain#
+truncated_ops (RtruncatedOps"
+FollowerUpdate
+uri (	Ruri
+username (	Rusername!
+is_following (RisFollowing
+	timestamp (R	timestamp"á
+PlaylistCreationInfo"
+owner_user_id (RownerUserId%
+owner_username (	RownerUsername!
+new_revision (RnewRevision6
+deltas (2.spotify.playlist4.proto.DeltaRdeltas#
+truncated_ops (RtruncatedOpsB5
+com.spotify.playlist4.protoBPlaylist4PubSubProtoH

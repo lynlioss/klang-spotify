@@ -1,0 +1,21 @@
+
+,include/StreamReportingDebugTracerTest.protospotify.event_sender.proto"»
+StreamReportingDebugTracerTest0
+event_schema_version (ReventSchemaVersion'
+message_version (RmessageVersion
+playback_id (R
+playbackId!
+core_version (RcoreVersion
+sequence (Rsequence
+reason_send (	R
+reasonSend%
+send_iteration (RsendIteration
+
+total_send (R	totalSend#
+stream_handle	 (RstreamHandle5
+stream_data_holder_size
+ (RstreamDataHolderSize
+	timestamp (R	timestamp+
+initial_timestamp (RinitialTimestamp*
+core_version_tiny (RcoreVersionTiny$
+configuration (	RconfigurationBH

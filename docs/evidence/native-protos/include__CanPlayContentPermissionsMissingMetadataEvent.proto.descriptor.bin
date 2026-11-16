@@ -1,0 +1,8 @@
+
+;include/CanPlayContentPermissionsMissingMetadataEvent.protospotify.event_sender.proto"Î
+-CanPlayContentPermissionsMissingMetadataEvent!
+content_uris (	RcontentUris>
+number_of_total_content_uris (RnumberOfTotalContentUris#
+caller_source (	RcallerSource:
+requested_extension_kinds (	RrequestedExtensionKindsY
+*is_consumption_exp_trait_migration_enabled (R%isConsumptionExpTraitMigrationEnabledBH

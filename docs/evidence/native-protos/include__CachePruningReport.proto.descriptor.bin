@@ -1,0 +1,19 @@
+
+ include/CachePruningReport.protospotify.event_sender.proto"ë
+CachePruningReport
+cache_id (RcacheId1
+time_spent_pruning_ms (RtimeSpentPruningMs/
+size_before_prune_kb (RsizeBeforePruneKb-
+size_after_prune_kb (RsizeAfterPruneKb,
+num_entries_pruned (RnumEntriesPruned;
+num_entries_pruned_expired (RnumEntriesPrunedExpiredB
+size_entries_pruned_expired_kb (RsizeEntriesPrunedExpiredKb7
+num_entries_pruned_limit (RnumEntriesPrunedLimit/
+size_pruned_limit_kb	 (RsizePrunedLimitKb@
+num_entries_pruned_never_used
+ (RnumEntriesPrunedNeverUsed8
+size_pruned_never_used_kb (RsizePrunedNeverUsedKbG
+!num_entries_pruned_max_realm_size (RnumEntriesPrunedMaxRealmSize?
+size_pruned_max_realm_size_kb (RsizePrunedMaxRealmSizeKbG
+!num_entries_pruned_min_free_space (RnumEntriesPrunedMinFreeSpace?
+size_pruned_min_free_space_kb (RsizePrunedMinFreeSpaceKbBH

@@ -1,0 +1,6 @@
+
+)state_restore/circuit_breaker_rules.proto"spotify.player.proto.state_restore"§
+CircuitBreakerRules0
+discarded_track_uids (	RdiscardedTrackUids,
+num_errored_tracks (RnumErroredTracks0
+context_track_played (RcontextTrackPlayedBH

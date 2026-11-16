@@ -1,0 +1,9 @@
+
+es_websocket_send_request.proto.spotify.connectivity.websocket.esperanto.proto"4
+WebSocketSendTextRequest
+Payload (	RPayload"6
+WebSocketSendBinaryRequest
+Payload (RPayload"1
+WebSocketSendResponse
+Success (RSuccessB6
+2com.spotify.connectivity.websocket.esperanto.protoHbproto3

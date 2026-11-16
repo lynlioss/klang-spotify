@@ -1,0 +1,10 @@
+
+/include/PendingEventsInternalErrorNonAuth.protospotify.event_sender.proto"Ö
+!PendingEventsInternalErrorNonAuth
+	operation (	R	operation
+
+error_type (	R	errorType)
+underlying_error (	RunderlyingError
+
+event_type (	R	eventType*
+event_sequence_no (ReventSequenceNoBH

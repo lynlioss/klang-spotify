@@ -1,0 +1,9 @@
+
+ state_restore/play_history.proto"spotify.player.proto.state_restorecontext_track.proto"I
+PlayHistory:
+tracks (2".spotify.player.proto.ContextTrackRtracks"Ã
+PlayHistoryV1Q
+entries (27.spotify.player.proto.state_restore.PlayHistoryV1.EntryRentries_
+Entry
+	timestamp (R	timestamp8
+track (2".spotify.player.proto.ContextTrackRtrackBH

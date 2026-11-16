@@ -1,0 +1,9 @@
+
+#playlist_modification_request.proto spotify.playlist_esperanto.protomodification_request.protoresponse_status.proto"}
+PlaylistModificationRequest
+uri (	RuriL
+request (22.spotify.playlist.cosmos.proto.ModificationRequestRrequest"Œ
+PlaylistModificationResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatus"
+added_row_ids (	RaddedRowIdsB,
+ spotify.playlist.esperanto.protoHP¢ESPbproto3

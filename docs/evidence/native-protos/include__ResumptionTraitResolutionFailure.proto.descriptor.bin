@@ -1,0 +1,8 @@
+
+.include/ResumptionTraitResolutionFailure.protospotify.event_sender.proto"ù
+ ResumptionTraitResolutionFailure
+item_uri (	RitemUri
+
+trait_name (	R	traitName%
+failure_reason (	RfailureReason
+context (	RcontextBH

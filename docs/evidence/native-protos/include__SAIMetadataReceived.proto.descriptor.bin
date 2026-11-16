@@ -1,0 +1,10 @@
+
+!include/SAIMetadataReceived.protospotify.event_sender.proto"ˆ
+SAIMetadataReceived.
+metadata_request_id (	RmetadataRequestId
+	track_uri (	RtrackUri
+source (	Rsource(
+http_status_code (RhttpStatusCode
+	is_online (RisOnline
+is_stale (RisStale*
+fetch_duration_ms (RfetchDurationMsBH

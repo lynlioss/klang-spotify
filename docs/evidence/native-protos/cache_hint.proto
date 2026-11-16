@@ -1,0 +1,7 @@
+// Recovered descriptor. Original file: cache_hint.proto
+syntax = "proto3";
+package spotify.playlist.messages;
+import "google/protobuf/duration.proto";
+message CacheHint {
+  .google.protobuf.Duration next_expected_content_update = 1;
+}

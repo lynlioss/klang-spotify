@@ -1,0 +1,42 @@
+
+$policy/track_decoration_policy.protospotify.cosmos_util.protoextension_kind.proto"²
+TrackDecorationPolicy
+
+has_lyrics (R	hasLyrics
+link (Rlink
+name (Rname
+length (Rlength
+playable (RplayableJ
+"is_available_in_metadata_catalogue (RisAvailableInMetadataCatalogue)
+locally_playable (RlocallyPlayable0
+playable_local_track (RplayableLocalTrack
+disc_number	 (R
+discNumber!
+track_number
+ (RtrackNumber
+is_explicit (R
+isExplicit
+
+preview_id (R	previewId
+is_local (RisLocal&
+is_premium_only (RisPremiumOnly.
+playable_track_link (RplayableTrackLink%
+is_19_plus_only (Ris19PlusOnly+
+track_descriptors (RtrackDescriptorsE
+	extension (2'.spotify.extendedmetadata.ExtensionKindR	extension
+
+is_curated (R	isCurated(
+to_be_obfuscated (RtoBeObfuscatedJJRcontent_access"«
+ TrackPlayedStateDecorationPolicy
+playable (Rplayable2
+is_currently_playable (RisCurrentlyPlayable7
+playability_restriction (RplayabilityRestriction"´
+TrackCollectionDecorationPolicy(
+is_in_collection (RisInCollection1
+can_add_to_collection (RcanAddToCollection
+	is_banned (RisBanned
+can_ban (RcanBan"e
+TrackSyncDecorationPolicy#
+offline_state (RofflineState#
+sync_progress (RsyncProgressB*
+$com.spotify.cosmos.util.policy.protoHPbproto3

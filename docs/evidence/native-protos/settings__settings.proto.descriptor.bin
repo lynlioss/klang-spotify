@@ -1,0 +1,62 @@
+
+settings/settings.proto spotify.settings.esperanto.protogoogle/protobuf/empty.protogoogle/protobuf/wrappers.proto"È
+SettingsState!
+offline_mode (RofflineMode2
+play_explicit_content (RplayExplicitContent'
+private_session (RprivateSession(
+download_over_3g (RdownloadOver3g)
+download_quality (RdownloadQuality%
+stream_quality (RstreamQuality;
+stream_non_metered_quality (RstreamNonMeteredQualityA
+allow_audio_quality_downgrade (RallowAudioQualityDowngrade
+gapless (Rgapless
+automix (Rautomix
+	normalize (R	normalize1
+loudness_environment (RloudnessEnvironment
+	crossfade (R	crossfade4
+crossfade_time_seconds (RcrossfadeTimeSeconds6
+show_unavailable_tracks (RshowUnavailableTracks,
+local_devices_only (RlocalDevicesOnly
+webgate_url (	R
+webgateUrlG
+ download_preferred_resource_type (RdownloadPreferredResourceType!
+trim_silence (RtrimSilence
+downmix (Rdownmix
+otfn (Rotfn%
+playback_speed (RplaybackSpeed
+parrot (Rparrot!
+shuffle_mode (	RshuffleMode
+	crossfeed (R	crossfeed/
+crossfeed_intensity (RcrossfeedIntensityJ
+JJ2‚
+SettingsU
+GetState.google.protobuf.Empty/.spotify.settings.esperanto.proto.SettingsState0D
+SetOfflineMode.google.protobuf.BoolValue.google.protobuf.EmptyL
+SetPlayExplicitContext.google.protobuf.BoolValue.google.protobuf.EmptyG
+SetPrivateSession.google.protobuf.BoolValue.google.protobuf.EmptyG
+SetDownloadOver3G.google.protobuf.BoolValue.google.protobuf.EmptyI
+SetDownloadQuality.google.protobuf.Int32Value.google.protobuf.EmptyG
+SetStreamQuality.google.protobuf.Int32Value.google.protobuf.EmptyQ
+SetStreamNonMeteredQuality.google.protobuf.Int32Value.google.protobuf.EmptyS
+SetAllowAudioQualityDowngrade.google.protobuf.BoolValue.google.protobuf.Empty=
+SetAp.google.protobuf.StringValue.google.protobuf.Empty@
+
+SetGapless.google.protobuf.BoolValue.google.protobuf.Empty@
+
+SetAutomix.google.protobuf.BoolValue.google.protobuf.EmptyB
+SetNormalize.google.protobuf.BoolValue.google.protobuf.EmptyM
+SetLoudnessEnvironment.google.protobuf.Int32Value.google.protobuf.EmptyB
+SetCrossfade.google.protobuf.BoolValue.google.protobuf.EmptyN
+SetCrossfadeTimeSeconds.google.protobuf.Int32Value.google.protobuf.EmptyN
+SetShowUnavailableTracks.google.protobuf.BoolValue.google.protobuf.EmptyE
+SetWebgateUrl.google.protobuf.StringValue.google.protobuf.EmptyW
+ SetDownloadPreferredResourceType.google.protobuf.Int32Value.google.protobuf.Empty@
+
+SetDownmix.google.protobuf.BoolValue.google.protobuf.Empty=
+SetOtfn.google.protobuf.BoolValue.google.protobuf.EmptyG
+SetPlaybackSpeed.google.protobuf.Int32Value.google.protobuf.Empty?
+	SetParrot.google.protobuf.BoolValue.google.protobuf.EmptyF
+SetShuffleMode.google.protobuf.StringValue.google.protobuf.EmptyB
+SetCrossfeed.google.protobuf.BoolValue.google.protobuf.EmptyL
+SetCrossfeedIntensity.google.protobuf.Int32Value.google.protobuf.EmptyB.
+$com.spotify.settings.esperanto.protoH¢ESPbproto3

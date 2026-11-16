@@ -1,0 +1,151 @@
+Source: analysis/spotify/jadx-dex11/sources/com/spotify/searchview/proto/AutocompleteViewResponse.java
+SHA256: 56038eb11aec6c97a80fe6484dfc990a9c645e308a36d3337377b8d3aafefa67
+Lines: 1-147
+
+1: package com.spotify.searchview.proto;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes11.dex */
+4: public final class AutocompleteViewResponse extends com.google.protobuf.h implements p.qhj0 {
+5:     public static final int BANNER_CONTENT_FIELD_NUMBER = 2;
+6:     private static final com.spotify.searchview.proto.AutocompleteViewResponse DEFAULT_INSTANCE = null;
+7:     public static final int HITS_FIELD_NUMBER = 1;
+8:     private static volatile p.whs0 PARSER;
+9:     private com.spotify.searchview.proto.BannerContent bannerContent_;
+10:     private int bitField0_;
+11:     private p.he90 hits_;
+12: 
+13:     static {
+14:             com.spotify.searchview.proto.AutocompleteViewResponse r0 = new com.spotify.searchview.proto.AutocompleteViewResponse
+15:             r0.<init>()
+16:             com.spotify.searchview.proto.AutocompleteViewResponse.DEFAULT_INSTANCE = r0
+17:             java.lang.Class<com.spotify.searchview.proto.AutocompleteViewResponse> r1 = com.spotify.searchview.proto.AutocompleteViewResponse.class
+18:             com.google.protobuf.h.registerDefaultInstance(r1, r0)
+19:             return
+20:     }
+21: 
+22:     private AutocompleteViewResponse() {
+23:             r1 = this;
+24:             r1.<init>()
+25:             p.he90 r0 = com.google.protobuf.h.emptyProtobufList()
+26:             r1.hits_ = r0
+27:             return
+28:     }
+29: 
+30:     public static p.whs0 parser() {
+31:             com.spotify.searchview.proto.AutocompleteViewResponse r0 = com.spotify.searchview.proto.AutocompleteViewResponse.DEFAULT_INSTANCE
+32:             p.whs0 r0 = r0.getParserForType()
+33:             return r0
+34:     }
+35: 
+36:     public final java.lang.Object dynamicMethod(p.lp40 r1, java.lang.Object r2, java.lang.Object r3) {
+37:             r0 = this;
+38:             int r0 = r1.ordinal()
+39:             if (r0 == 0) goto L59
+40:             r1 = 2
+41:             if (r0 == r1) goto L44
+42:             r1 = 3
+43:             if (r0 == r1) goto L3e
+44:             r1 = 4
+45:             r2 = 6
+46:             if (r0 == r1) goto L36
+47:             r1 = 5
+48:             if (r0 == r1) goto L33
+49:             if (r0 != r2) goto L31
+50:             p.whs0 r0 = com.spotify.searchview.proto.AutocompleteViewResponse.PARSER
+51:             if (r0 != 0) goto L30
+52:             java.lang.Class<com.spotify.searchview.proto.AutocompleteViewResponse> r1 = com.spotify.searchview.proto.AutocompleteViewResponse.class
+53:             monitor-enter(r1)
+54:             p.whs0 r0 = com.spotify.searchview.proto.AutocompleteViewResponse.PARSER     // Catch: java.lang.Throwable -> L2a
+55:             if (r0 != 0) goto L2c
+56:             p.dp40 r0 = new p.dp40     // Catch: java.lang.Throwable -> L2a
+57:             com.spotify.searchview.proto.AutocompleteViewResponse r2 = com.spotify.searchview.proto.AutocompleteViewResponse.DEFAULT_INSTANCE     // Catch: java.lang.Throwable -> L2a
+58:             r0.<init>(r2)     // Catch: java.lang.Throwable -> L2a
+59:             com.spotify.searchview.proto.AutocompleteViewResponse.PARSER = r0     // Catch: java.lang.Throwable -> L2a
+60:             goto L2c
+61:         L2a:
+62:             r0 = move-exception
+63:             goto L2e
+64:         L2c:
+65:             monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+66:             return r0
+67:         L2e:
+68:             monitor-exit(r1)     // Catch: java.lang.Throwable -> L2a
+69:             throw r0
+70:         L30:
+71:             return r0
+72:         L31:
+73:             r0 = 0
+74:             throw r0
+75:         L33:
+76:             com.spotify.searchview.proto.AutocompleteViewResponse r0 = com.spotify.searchview.proto.AutocompleteViewResponse.DEFAULT_INSTANCE
+77:             return r0
+78:         L36:
+79:             p.pg8 r0 = new p.pg8
+80:             com.spotify.searchview.proto.AutocompleteViewResponse r1 = com.spotify.searchview.proto.AutocompleteViewResponse.DEFAULT_INSTANCE
+81:             r0.<init>(r1, r2)
+82:             return r0
+83:         L3e:
+84:             com.spotify.searchview.proto.AutocompleteViewResponse r0 = new com.spotify.searchview.proto.AutocompleteViewResponse
+85:             r0.<init>()
+86:             return r0
+87:         L44:
+88:             java.lang.String r0 = "bitField0_"
+89:             java.lang.String r1 = "hits_"
+90:             java.lang.Class<com.spotify.searchview.proto.Entity> r2 = com.spotify.searchview.proto.Entity.class
+91:             java.lang.String r3 = "bannerContent_"
+92:             java.lang.Object[] r0 = new java.lang.Object[]{r0, r1, r2, r3}
+93:             java.lang.String r1 = "\u0000\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0001\u0000\u0001\u001b\u0002ဉ\u0000"
+94:             com.spotify.searchview.proto.AutocompleteViewResponse r2 = com.spotify.searchview.proto.AutocompleteViewResponse.DEFAULT_INSTANCE
+95:             java.lang.Object r0 = com.google.protobuf.h.newMessageInfo(r2, r1, r0)
+96:             return r0
+97:         L59:
+98:             r0 = 1
+99:             java.lang.Byte r0 = java.lang.Byte.valueOf(r0)
+100:             return r0
+101:     }
+102: 
+103:     public final /* bridge */ /* synthetic */ p.nhj0 getDefaultInstanceForType() {
+104:             r0 = this;
+105:             com.google.protobuf.h r0 = r0.getDefaultInstanceForType()
+106:             return r0
+107:     }
+108: 
+109:     public final com.spotify.searchview.proto.BannerContent n() {
+110:             r0 = this;
+111:             com.spotify.searchview.proto.BannerContent r0 = r0.bannerContent_
+112:             if (r0 != 0) goto L8
+113:             com.spotify.searchview.proto.BannerContent r0 = com.spotify.searchview.proto.BannerContent.o()
+114:         L8:
+115:             return r0
+116:     }
+117: 
+118:     public final /* bridge */ /* synthetic */ p.mhj0 newBuilderForType() {
+119:             r0 = this;
+120:             com.google.protobuf.g r0 = r0.newBuilderForType()
+121:             return r0
+122:     }
+123: 
+124:     public final p.he90 o() {
+125:             r0 = this;
+126:             p.he90 r0 = r0.hits_
+127:             return r0
+128:     }
+129: 
+130:     public final boolean p() {
+131:             r1 = this;
+132:             int r1 = r1.bitField0_
+133:             r0 = 1
+134:             r1 = r1 & r0
+135:             if (r1 == 0) goto L7
+136:             return r0
+137:         L7:
+138:             r1 = 0
+139:             return r1
+140:     }
+141: 
+142:     public final /* bridge */ /* synthetic */ p.mhj0 toBuilder() {
+143:             r0 = this;
+144:             com.google.protobuf.g r0 = r0.toBuilder()
+145:             return r0
+146:     }
+147: }

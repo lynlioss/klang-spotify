@@ -1,0 +1,21 @@
+// Recovered descriptor. Original file: rec_pool_loader.proto
+syntax = "proto3";
+package spotify.list_player.impl.proto;
+message RecPoolLoaderState {
+  message Rec {
+    string item_uri = 1;
+    string album_uri = 2;
+    string uid = 3;
+    string artist_uri = 4;
+  }
+  message RecPool {
+    repeated .spotify.list_player.impl.proto.RecPoolLoaderState.Rec recs = 1;
+  }
+  string list_uri = 1;
+  oneof _next_page_url {
+    string next_page_url = 2;
+  }
+  oneof _rec_pool {
+    .spotify.list_player.impl.proto.RecPoolLoaderState.RecPool rec_pool = 3;
+  }
+}

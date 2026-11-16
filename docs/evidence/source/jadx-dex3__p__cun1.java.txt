@@ -1,0 +1,615 @@
+Source: analysis/spotify/jadx-dex3/sources/p/cun1.java
+SHA256: 63843cf69dbaa7725c634d3163b627c48655ffd428d96a5a112ec37f7c9f4ee9
+Lines: 1-611
+
+1: package p;
+2: 
+3: /* JADX INFO: loaded from: /root/klang-spotify/analysis/spotify/dex/classes3.dex */
+4: public final class cun1 implements p.tyg {
+5:     public static final java.lang.String c = null;
+6:     public final android.app.Application a;
+7:     public final p.f0c0 b;
+8: 
+9:     static {
+10:             java.lang.Class<p.cun1> r0 = p.cun1.class
+11:             java.lang.String r1 = r0.getCanonicalName()
+12:             if (r1 != 0) goto Lc
+13:             java.lang.String r1 = r0.getSimpleName()
+14:         Lc:
+15:             p.cun1.c = r1
+16:             return
+17:     }
+18: 
+19:     public cun1(android.app.Application r1, p.f0c0 r2) {
+20:             r0 = this;
+21:             r0.<init>()
+22:             r0.a = r1
+23:             r0.b = r2
+24:             return
+25:     }
+26: 
+27:     public static boolean a(java.lang.String r6) {
+28:             java.util.List r0 = p.pvp0.a()
+29:             java.util.Iterator r0 = r0.iterator()
+30:             r1 = 0
+31:             r2 = r1
+32:         La:
+33:             boolean r3 = r0.hasNext()
+34:             if (r3 == 0) goto L43
+35:             java.lang.Object r3 = r0.next()
+36:             java.lang.String r3 = (java.lang.String) r3
+37:             java.lang.String r4 = p.ihj1.e(r3, r6)
+38:             java.io.File r5 = new java.io.File
+39:             r5.<init>(r3, r6)
+40:             boolean r3 = r5.exists()
+41:             java.lang.Boolean r5 = java.lang.Boolean.valueOf(r3)
+42:             if (r3 == 0) goto L2a
+43:             goto L2b
+44:         L2a:
+45:             r5 = 0
+46:         L2b:
+47:             if (r5 == 0) goto La
+48:             java.lang.String r2 = "file "
+49:             java.lang.String r3 = " detected in PATH"
+50:             java.lang.String r2 = p.ihj1.f(r2, r4, r3)
+51:             p.bfq0 r3 = p.v6f1.a
+52:             java.lang.String r4 = p.cun1.c
+53:             r3.A(r4)
+54:             java.lang.Object[] r4 = new java.lang.Object[r1]
+55:             r3.s(r2, r4)
+56:             r2 = 1
+57:             goto La
+58:         L43:
+59:             return r2
+60:     }
+61: 
+62:     public final boolean b(java.lang.String r10, java.util.List r11, java.lang.String r12, java.lang.String r13) {
+63:             r9 = this;
+64:             java.lang.String r0 = ": "
+65:             java.lang.String r1 = p.cun1.c
+66:             android.app.Application r9 = r9.a
+67:             android.content.Context r9 = r9.getApplicationContext()
+68:             android.content.pm.PackageManager r9 = r9.getPackageManager()
+69:             java.util.Iterator r11 = r11.iterator()
+70:             r2 = 0
+71:             r3 = r2
+72:         L14:
+73:             boolean r4 = r11.hasNext()
+74:             if (r4 == 0) goto L84
+75:             java.lang.Object r4 = r11.next()
+76:             java.lang.String r4 = (java.lang.String) r4
+77:             java.lang.StringBuilder r5 = new java.lang.StringBuilder     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+78:             r5.<init>()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+79:             r5.append(r10)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+80:             java.lang.String r6 = " "
+81:             r5.append(r6)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+82:             r5.append(r4)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+83:             java.lang.String r5 = r5.toString()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+84:             p.bfq0 r6 = p.v6f1.a     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+85:             r6.A(r1)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+86:             java.lang.Object[] r7 = new java.lang.Object[r2]     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+87:             r6.s(r5, r7)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+88:             int r5 = android.os.Build.VERSION.SDK_INT     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+89:             r7 = 33
+90:             if (r5 < r7) goto L50
+91:             r7 = 0
+92:             android.content.pm.PackageManager$PackageInfoFlags r5 = android.content.pm.PackageManager.PackageInfoFlags.of(r7)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+93:             r9.getPackageInfo(r4, r5)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+94:             goto L53
+95:         L4e:
+96:             r5 = move-exception
+97:             goto L6f
+98:         L50:
+99:             r9.getPackageInfo(r4, r2)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+100:         L53:
+101:             java.lang.StringBuilder r5 = new java.lang.StringBuilder     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+102:             r5.<init>()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+103:             r5.append(r12)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+104:             r5.append(r0)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+105:             r5.append(r4)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+106:             java.lang.String r5 = r5.toString()     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+107:             r6.A(r1)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+108:             java.lang.Object[] r7 = new java.lang.Object[r2]     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+109:             r6.s(r5, r7)     // Catch: android.content.pm.PackageManager.NameNotFoundException -> L4e
+110:             r3 = 1
+111:             goto L14
+112:         L6f:
+113:             java.lang.String r5 = r5.getMessage()
+114:             java.lang.String r6 = ", more information: "
+115:             java.lang.String r4 = p.no50.p(r13, r0, r4, r6, r5)
+116:             p.bfq0 r5 = p.v6f1.a
+117:             r5.A(r1)
+118:             java.lang.Object[] r6 = new java.lang.Object[r2]
+119:             r5.s(r4, r6)
+120:             goto L14
+121:         L84:
+122:             return r3
+123:     }
+124: 
+125:     public final boolean c(boolean r19) {
+126:             r18 = this;
+127:             r1 = r18
+128:             java.lang.String r2 = ""
+129:             java.lang.String r3 = "\n"
+130:             java.lang.String r4 = "\\A"
+131:             java.lang.String r5 = p.cun1.c
+132:             java.util.List r0 = p.pvp0.a
+133:             java.lang.String r6 = "ROOT management application detected"
+134:             java.lang.String r7 = "ROOT management application not found"
+135:             java.lang.String r8 = "checking ROOT management application existence"
+136:             boolean r0 = r1.b(r8, r0, r6, r7)
+137:             r6 = 1
+138:             if (r0 != 0) goto L3e2
+139:             java.util.List r0 = p.pvp0.b
+140:             java.lang.String r7 = "ROOT dangerous application detected"
+141:             java.lang.String r8 = "ROOT dangerous application not found"
+142:             java.lang.String r9 = "checking ROOT dangerous application existence"
+143:             boolean r0 = r1.b(r9, r0, r7, r8)
+144:             if (r0 != 0) goto L3e2
+145:             java.lang.String r7 = "su"
+146:             boolean r0 = a(r7)
+147:             if (r0 != 0) goto L3e2
+148:             java.util.List r0 = p.pvp0.g
+149:             java.util.LinkedHashMap r8 = new java.util.LinkedHashMap
+150:             r8.<init>()
+151:             java.util.Iterator r0 = r0.iterator()
+152:         L3a:
+153:             boolean r9 = r0.hasNext()
+154:             if (r9 == 0) goto L4e
+155:             java.lang.Object r9 = r0.next()
+156:             p.j4s0 r9 = (p.j4s0) r9
+157:             java.lang.Object r10 = r9.a
+158:             java.lang.Object r9 = r9.b
+159:             r8.put(r10, r9)
+160:             goto L3a
+161:         L4e:
+162:             java.lang.String r0 = "getprop"
+163:             r9 = 6
+164:             r10 = 2
+165:             r11 = 0
+166:             java.lang.Runtime r13 = java.lang.Runtime.getRuntime()     // Catch: java.lang.Exception -> Lc5
+167:             java.lang.Process r0 = r13.exec(r0)     // Catch: java.lang.Exception -> Lc5
+168:             java.io.InputStream r0 = r0.getInputStream()     // Catch: java.lang.Exception -> Lc5
+169:             if (r0 == 0) goto Ldf
+170:             java.util.Scanner r13 = new java.util.Scanner     // Catch: java.lang.Exception -> Lc5
+171:             r13.<init>(r0)     // Catch: java.lang.Exception -> Lc5
+172:             java.util.Scanner r0 = r13.useDelimiter(r4)     // Catch: java.lang.Exception -> Lc5
+173:             java.lang.String r0 = r0.next()     // Catch: java.lang.Exception -> Lc5
+174:             java.lang.String[] r13 = new java.lang.String[]{r3}     // Catch: java.lang.Exception -> Lc5
+175:             java.util.List r0 = p.n3d1.a1(r0, r13, r11, r9)     // Catch: java.lang.Exception -> Lc5
+176:             r13 = 10
+177:             int r13 = p.xah.H(r0, r13)     // Catch: java.lang.Exception -> Lc5
+178:             int r13 = p.pbp1.t(r13)     // Catch: java.lang.Exception -> Lc5
+179:             r14 = 16
+180:             if (r13 >= r14) goto L85
+181:             r13 = r14
+182:         L85:
+183:             java.util.LinkedHashMap r14 = new java.util.LinkedHashMap     // Catch: java.lang.Exception -> Lc5
+184:             r14.<init>(r13)     // Catch: java.lang.Exception -> Lc5
+185:             java.util.Iterator r0 = r0.iterator()     // Catch: java.lang.Exception -> Lc5
+186:         L8e:
+187:             boolean r13 = r0.hasNext()     // Catch: java.lang.Exception -> Lc5
+188:             if (r13 == 0) goto Ldc
+189:             java.lang.Object r13 = r0.next()     // Catch: java.lang.Exception -> Lc5
+190:             java.lang.String r13 = (java.lang.String) r13     // Catch: java.lang.Exception -> Lc5
+191:             java.lang.String r15 = ":"
+192:             java.lang.String[] r15 = new java.lang.String[]{r15}     // Catch: java.lang.Exception -> Lc5
+193:             java.util.List r13 = p.n3d1.a1(r13, r15, r11, r9)     // Catch: java.lang.Exception -> Lc5
+194:             int r15 = r13.size()     // Catch: java.lang.Exception -> Lc5
+195:             java.lang.Integer r16 = java.lang.Integer.valueOf(r15)     // Catch: java.lang.Exception -> Lc5
+196:             if (r15 != r10) goto Laf
+197:             goto Lb1
+198:         Laf:
+199:             r16 = 0
+200:         Lb1:
+201:             if (r16 == 0) goto Lc9
+202:             p.j4s0 r15 = new p.j4s0     // Catch: java.lang.Exception -> Lc5
+203:             r16 = 0
+204:             java.lang.Object r12 = r13.get(r11)     // Catch: java.lang.Exception -> Lc3
+205:             java.lang.Object r13 = r13.get(r6)     // Catch: java.lang.Exception -> Lc3
+206:             r15.<init>(r12, r13)     // Catch: java.lang.Exception -> Lc3
+207:             goto Ld4
+208:         Lc3:
+209:             r0 = move-exception
+210:             goto Le4
+211:         Lc5:
+212:             r0 = move-exception
+213:             r16 = 0
+214:             goto Le4
+215:         Lc9:
+216:             r16 = 0
+217:             p.j4s0 r15 = new p.j4s0     // Catch: java.lang.Exception -> Lc3
+218:             java.lang.Object r12 = r13.get(r11)     // Catch: java.lang.Exception -> Lc3
+219:             r15.<init>(r12, r2)     // Catch: java.lang.Exception -> Lc3
+220:         Ld4:
+221:             java.lang.Object r12 = r15.a     // Catch: java.lang.Exception -> Lc3
+222:             java.lang.Object r13 = r15.b     // Catch: java.lang.Exception -> Lc3
+223:             r14.put(r12, r13)     // Catch: java.lang.Exception -> Lc3
+224:             goto L8e
+225:         Ldc:
+226:             r16 = 0
+227:             goto Lf9
+228:         Ldf:
+229:             r16 = 0
+230:         Le1:
+231:             r14 = r16
+232:             goto Lf9
+233:         Le4:
+234:             java.lang.String r0 = r0.getMessage()
+235:             java.lang.String r12 = "Failed to read system properties: "
+236:             java.lang.String r0 = p.k3d.m(r12, r0)
+237:             p.bfq0 r12 = p.v6f1.a
+238:             r12.A(r5)
+239:             java.lang.Object[] r13 = new java.lang.Object[r11]
+240:             r12.s(r0, r13)
+241:             goto Le1
+242:         Lf9:
+243:             java.util.Set r0 = r8.entrySet()
+244:             java.util.Iterator r0 = r0.iterator()
+245:             r8 = r11
+246:         L102:
+247:             boolean r12 = r0.hasNext()
+248:             if (r12 == 0) goto L171
+249:             java.lang.Object r12 = r0.next()
+250:             java.util.Map$Entry r12 = (java.util.Map.Entry) r12
+251:             if (r14 == 0) goto L16e
+252:             java.util.Set r13 = r14.entrySet()
+253:             if (r13 == 0) goto L16e
+254:             java.util.Iterator r13 = r13.iterator()
+255:         L11a:
+256:             boolean r15 = r13.hasNext()
+257:             if (r15 == 0) goto L102
+258:             java.lang.Object r15 = r13.next()
+259:             java.util.Map$Entry r15 = (java.util.Map.Entry) r15
+260:             java.lang.Object r6 = r15.getKey()
+261:             java.lang.Object r10 = r12.getKey()
+262:             boolean r6 = p.sk90.m(r6, r10)
+263:             if (r6 == 0) goto L144
+264:             java.lang.Object r6 = r15.getValue()
+265:             java.lang.Object r10 = r12.getValue()
+266:             boolean r6 = p.sk90.m(r6, r10)
+267:             if (r6 == 0) goto L144
+268:             r6 = 1
+269:             goto L145
+270:         L144:
+271:             r6 = r11
+272:         L145:
+273:             java.lang.Boolean r10 = java.lang.Boolean.valueOf(r6)
+274:             if (r6 == 0) goto L14c
+275:             goto L14e
+276:         L14c:
+277:             r10 = r16
+278:         L14e:
+279:             if (r10 == 0) goto L16c
+280:             java.lang.StringBuilder r6 = new java.lang.StringBuilder
+281:             java.lang.String r8 = "Dangerous property found: "
+282:             r6.<init>(r8)
+283:             r6.append(r12)
+284:             java.lang.String r6 = r6.toString()
+285:             p.bfq0 r8 = p.v6f1.a
+286:             r8.A(r5)
+287:             java.lang.Object[] r10 = new java.lang.Object[r11]
+288:             r8.s(r6, r10)
+289:             r6 = 1
+290:             r8 = 1
+291:         L16a:
+292:             r10 = 2
+293:             goto L11a
+294:         L16c:
+295:             r6 = 1
+296:             goto L16a
+297:         L16e:
+298:             r6 = 1
+299:             r10 = 2
+300:             goto L102
+301:         L171:
+302:             if (r8 != 0) goto L382
+303:             java.lang.String r0 = "mount"
+304:             java.lang.Runtime r6 = java.lang.Runtime.getRuntime()     // Catch: java.lang.Exception -> L199
+305:             java.lang.Process r0 = r6.exec(r0)     // Catch: java.lang.Exception -> L199
+306:             java.io.InputStream r0 = r0.getInputStream()     // Catch: java.lang.Exception -> L199
+307:             if (r0 == 0) goto L19b
+308:             java.util.Scanner r6 = new java.util.Scanner     // Catch: java.lang.Exception -> L199
+309:             r6.<init>(r0)     // Catch: java.lang.Exception -> L199
+310:             java.util.Scanner r0 = r6.useDelimiter(r4)     // Catch: java.lang.Exception -> L199
+311:             java.lang.String r0 = r0.next()     // Catch: java.lang.Exception -> L199
+312:             java.lang.String[] r3 = new java.lang.String[]{r3}     // Catch: java.lang.Exception -> L199
+313:             java.util.List r0 = p.n3d1.a1(r0, r3, r11, r9)     // Catch: java.lang.Exception -> L199
+314:             goto L1b3
+315:         L199:
+316:             r0 = move-exception
+317:             goto L19e
+318:         L19b:
+319:             r0 = r16
+320:             goto L1b3
+321:         L19e:
+322:             java.lang.String r0 = r0.getMessage()
+323:             java.lang.String r3 = "Failed to read mount directories: "
+324:             java.lang.String r0 = p.k3d.m(r3, r0)
+325:             p.bfq0 r3 = p.v6f1.a
+326:             r3.A(r5)
+327:             java.lang.Object[] r4 = new java.lang.Object[r11]
+328:             r3.s(r0, r4)
+329:             goto L19b
+330:         L1b3:
+331:             if (r0 == 0) goto L261
+332:             java.util.Iterator r0 = r0.iterator()
+333:             r3 = r11
+334:         L1ba:
+335:             boolean r4 = r0.hasNext()
+336:             if (r4 == 0) goto L262
+337:             java.lang.Object r4 = r0.next()
+338:             java.lang.String r4 = (java.lang.String) r4
+339:             java.lang.String r6 = " "
+340:             java.lang.String[] r6 = new java.lang.String[]{r6}
+341:             java.util.List r6 = p.n3d1.a1(r4, r6, r11, r9)
+342:             int r8 = r6.size()
+343:             if (r8 >= r9) goto L1e9
+344:             java.lang.String r6 = "mount directory "
+345:             java.lang.String r8 = " wrong format"
+346:             java.lang.String r4 = p.ihj1.f(r6, r4, r8)
+347:             p.bfq0 r6 = p.v6f1.a
+348:             r6.A(r5)
+349:             java.lang.Object[] r8 = new java.lang.Object[r11]
+350:             r6.s(r4, r8)
+351:             goto L1ba
+352:         L1e9:
+353:             r3 = 2
+354:             java.lang.Object r4 = r6.get(r3)
+355:             java.lang.String r4 = (java.lang.String) r4
+356:             r8 = 5
+357:             java.lang.Object r6 = r6.get(r8)
+358:             java.lang.String r6 = (java.lang.String) r6
+359:             java.lang.String r8 = "("
+360:             java.lang.String r6 = p.s3d1.g0(r6, r8, r2)
+361:             java.lang.String r8 = ")"
+362:             java.lang.String r6 = p.s3d1.g0(r6, r8, r2)
+363:             if (r4 == 0) goto L25b
+364:             java.util.List r8 = p.pvp0.e
+365:             boolean r8 = r8.contains(r4)
+366:             java.lang.Boolean r10 = java.lang.Boolean.valueOf(r8)
+367:             if (r8 == 0) goto L212
+368:             goto L214
+369:         L212:
+370:             r10 = r16
+371:         L214:
+372:             if (r10 == 0) goto L257
+373:             java.lang.String r8 = ","
+374:             java.lang.String[] r8 = new java.lang.String[]{r8}
+375:             java.util.List r6 = p.n3d1.a1(r6, r8, r11, r9)
+376:             java.util.Iterator r6 = r6.iterator()
+377:             r8 = r11
+378:         L225:
+379:             boolean r10 = r6.hasNext()
+380:             if (r10 == 0) goto L258
+381:             java.lang.Object r10 = r6.next()
+382:             java.lang.String r10 = (java.lang.String) r10
+383:             java.lang.String r12 = "rw"
+384:             r13 = 1
+385:             boolean r10 = p.s3d1.c0(r10, r12, r13)
+386:             java.lang.Boolean r12 = java.lang.Boolean.valueOf(r10)
+387:             if (r10 == 0) goto L23f
+388:             goto L241
+389:         L23f:
+390:             r12 = r16
+391:         L241:
+392:             if (r12 == 0) goto L225
+393:             java.lang.String r8 = "path "
+394:             java.lang.String r10 = " with rw permissions"
+395:             java.lang.String r8 = p.ihj1.f(r8, r4, r10)
+396:             p.bfq0 r10 = p.v6f1.a
+397:             r10.A(r5)
+398:             java.lang.Object[] r12 = new java.lang.Object[r11]
+399:             r10.s(r8, r12)
+400:             r8 = 1
+401:             goto L225
+402:         L257:
+403:             r8 = r11
+404:         L258:
+405:             r3 = r8
+406:             goto L1ba
+407:         L25b:
+408:             java.lang.String r0 = "mountPoint"
+409:             p.sk90.E(r0)
+410:             throw r16
+411:         L261:
+412:             r3 = r11
+413:         L262:
+414:             if (r3 != 0) goto L382
+415:             java.lang.String r0 = android.os.Build.TAGS
+416:             if (r0 == 0) goto L274
+417:             java.lang.String r2 = "test-keys"
+418:             r13 = 1
+419:             boolean r0 = p.n3d1.r0(r0, r2, r13)
+420:             java.lang.Boolean r0 = java.lang.Boolean.valueOf(r0)
+421:             goto L276
+422:         L274:
+423:             r0 = r16
+424:         L276:
+425:             java.lang.Boolean r2 = java.lang.Boolean.TRUE
+426:             boolean r0 = p.sk90.m(r0, r2)
+427:             if (r0 != 0) goto L382
+428:             java.lang.String r2 = "Error checking for su binary: "
+429:             java.lang.Runtime r0 = java.lang.Runtime.getRuntime()     // Catch: java.lang.Throwable -> L2ba java.lang.Exception -> L2bf
+430:             java.lang.String r3 = "which"
+431:             java.lang.String[] r3 = new java.lang.String[]{r3, r7}     // Catch: java.lang.Throwable -> L2ba java.lang.Exception -> L2bf
+432:             java.lang.Process r3 = r0.exec(r3)     // Catch: java.lang.Throwable -> L2ba java.lang.Exception -> L2bf
+433:             java.io.BufferedReader r0 = new java.io.BufferedReader     // Catch: java.lang.Throwable -> L299 java.lang.Exception -> L29d
+434:             java.io.InputStreamReader r4 = new java.io.InputStreamReader     // Catch: java.lang.Throwable -> L299 java.lang.Exception -> L29d
+435:             if (r3 == 0) goto L29f
+436:             java.io.InputStream r6 = r3.getInputStream()     // Catch: java.lang.Throwable -> L299 java.lang.Exception -> L29d
+437:             goto L2a1
+438:         L299:
+439:             r0 = move-exception
+440:             r12 = r3
+441:             goto L3dc
+442:         L29d:
+443:             r0 = move-exception
+444:             goto L2c2
+445:         L29f:
+446:             r6 = r16
+447:         L2a1:
+448:             r4.<init>(r6)     // Catch: java.lang.Throwable -> L299 java.lang.Exception -> L29d
+449:             r0.<init>(r4)     // Catch: java.lang.Throwable -> L299 java.lang.Exception -> L29d
+450:             java.lang.String r0 = r0.readLine()     // Catch: java.lang.Throwable -> L299 java.lang.Exception -> L29d
+451:             int r0 = r0.length()     // Catch: java.lang.Throwable -> L299 java.lang.Exception -> L29d
+452:             if (r0 <= 0) goto L2b3
+453:             r0 = 1
+454:             goto L2b4
+455:         L2b3:
+456:             r0 = r11
+457:         L2b4:
+458:             if (r3 == 0) goto L2e2
+459:             r3.destroy()
+460:             goto L2e2
+461:         L2ba:
+462:             r0 = move-exception
+463:             r12 = r16
+464:             goto L3dc
+465:         L2bf:
+466:             r0 = move-exception
+467:             r3 = r16
+468:         L2c2:
+469:             java.lang.String r0 = r0.getMessage()     // Catch: java.lang.Throwable -> L299
+470:             java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L299
+471:             r4.<init>(r2)     // Catch: java.lang.Throwable -> L299
+472:             r4.append(r0)     // Catch: java.lang.Throwable -> L299
+473:             java.lang.String r0 = r4.toString()     // Catch: java.lang.Throwable -> L299
+474:             p.bfq0 r2 = p.v6f1.a     // Catch: java.lang.Throwable -> L299
+475:             r2.A(r5)     // Catch: java.lang.Throwable -> L299
+476:             java.lang.Object[] r4 = new java.lang.Object[r11]     // Catch: java.lang.Throwable -> L299
+477:             r2.s(r0, r4)     // Catch: java.lang.Throwable -> L299
+478:             if (r3 == 0) goto L2e1
+479:             r3.destroy()
+480:         L2e1:
+481:             r0 = r11
+482:         L2e2:
+483:             if (r0 != 0) goto L382
+484:             r2 = r19
+485:             r13 = 1
+486:             if (r2 != r13) goto L385
+487:             p.f0c0 r0 = r1.b
+488:             java.lang.Object r0 = r0.get()
+489:             com.ravelin.core.util.security.RootCheckerNative r0 = (com.ravelin.core.util.security.RootCheckerNative) r0
+490:             boolean r2 = r0.a
+491:             java.lang.Boolean r3 = java.lang.Boolean.valueOf(r2)
+492:             if (r2 != 0) goto L2fb
+493:             r12 = r3
+494:             goto L2fd
+495:         L2fb:
+496:             r12 = r16
+497:         L2fd:
+498:             if (r12 == 0) goto L30d
+499:             p.bfq0 r0 = p.v6f1.a
+500:             r0.A(r5)
+501:             java.lang.Object[] r2 = new java.lang.Object[r11]
+502:             java.lang.String r3 = "Native library failed to load, diagnosis of rooting Natively is not possible"
+503:             r0.s(r3, r2)
+504:         L30b:
+505:             r0 = r11
+506:             goto L378
+507:         L30d:
+508:             java.util.ArrayList r2 = new java.util.ArrayList
+509:             r2.<init>()
+510:             java.util.List r3 = p.pvp0.a()
+511:             java.util.Iterator r3 = r3.iterator()
+512:         L31a:
+513:             boolean r4 = r3.hasNext()
+514:             if (r4 == 0) goto L339
+515:             java.lang.Object r4 = r3.next()
+516:             java.lang.String r4 = (java.lang.String) r4
+517:             java.lang.StringBuilder r6 = new java.lang.StringBuilder
+518:             r6.<init>()
+519:             r6.append(r4)
+520:             r6.append(r7)
+521:             java.lang.String r4 = r6.toString()
+522:             r2.add(r4)
+523:             goto L31a
+524:         L339:
+525:             r0.a()     // Catch: java.lang.UnsatisfiedLinkError -> L362
+526:             java.lang.Object[] r3 = new java.lang.Object[r11]     // Catch: java.lang.UnsatisfiedLinkError -> L362
+527:             java.lang.Object[] r2 = r2.toArray(r3)     // Catch: java.lang.UnsatisfiedLinkError -> L362
+528:             boolean r0 = r0.b(r2)     // Catch: java.lang.UnsatisfiedLinkError -> L362
+529:             java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch: java.lang.UnsatisfiedLinkError -> L362
+530:             r2.<init>()     // Catch: java.lang.UnsatisfiedLinkError -> L362
+531:             java.lang.String r3 = "native rooting check = "
+532:             r2.append(r3)     // Catch: java.lang.UnsatisfiedLinkError -> L362
+533:             r2.append(r0)     // Catch: java.lang.UnsatisfiedLinkError -> L362
+534:             java.lang.String r2 = r2.toString()     // Catch: java.lang.UnsatisfiedLinkError -> L362
+535:             p.bfq0 r3 = p.v6f1.a     // Catch: java.lang.UnsatisfiedLinkError -> L362
+536:             r3.A(r5)     // Catch: java.lang.UnsatisfiedLinkError -> L362
+537:             java.lang.Object[] r4 = new java.lang.Object[r11]     // Catch: java.lang.UnsatisfiedLinkError -> L362
+538:             r3.s(r2, r4)     // Catch: java.lang.UnsatisfiedLinkError -> L362
+539:             goto L378
+540:         L362:
+541:             r0 = move-exception
+542:             java.lang.String r0 = r0.getMessage()
+543:             java.lang.String r2 = "Failed to link native lib with message: "
+544:             java.lang.String r0 = p.k3d.m(r2, r0)
+545:             p.bfq0 r2 = p.v6f1.a
+546:             r2.A(r5)
+547:             java.lang.Object[] r3 = new java.lang.Object[r11]
+548:             r2.s(r0, r3)
+549:             goto L30b
+550:         L378:
+551:             if (r0 != 0) goto L382
+552:             java.lang.String r0 = "magisk"
+553:             boolean r0 = a(r0)
+554:             if (r0 == 0) goto L385
+555:         L382:
+556:             r17 = 1
+557:             goto L3e4
+558:         L385:
+559:             android.app.Application r0 = r1.a
+560:             android.content.Context r0 = r0.getApplicationContext()
+561:             java.lang.String r1 = "activity"
+562:             java.lang.Object r0 = r0.getSystemService(r1)     // Catch: java.lang.RuntimeException -> L3c2
+563:             android.app.ActivityManager r0 = (android.app.ActivityManager) r0     // Catch: java.lang.RuntimeException -> L3c2
+564:             java.util.List r0 = r0.getRunningAppProcesses()     // Catch: java.lang.RuntimeException -> L3c2
+565:             r0.getClass()     // Catch: java.lang.RuntimeException -> L3c2
+566:             java.util.Iterator r0 = r0.iterator()     // Catch: java.lang.RuntimeException -> L3c2
+567:         L39e:
+568:             r13 = 1
+569:         L39f:
+570:             boolean r1 = r0.hasNext()     // Catch: java.lang.RuntimeException -> L3c2
+571:             if (r1 == 0) goto L3d8
+572:             java.lang.Object r1 = r0.next()     // Catch: java.lang.RuntimeException -> L3c2
+573:             android.app.ActivityManager$RunningAppProcessInfo r1 = (android.app.ActivityManager.RunningAppProcessInfo) r1     // Catch: java.lang.RuntimeException -> L3c2
+574:             java.lang.String r2 = r1.processName     // Catch: java.lang.RuntimeException -> L3c2
+575:             java.lang.String r3 = "superuser"
+576:             boolean r2 = p.n3d1.r0(r2, r3, r11)     // Catch: java.lang.RuntimeException -> L3c2
+577:             if (r2 != 0) goto L39e
+578:             java.lang.String r1 = r1.processName     // Catch: java.lang.RuntimeException -> L3c2
+579:             java.lang.String r2 = "supersu"
+580:             boolean r1 = p.n3d1.r0(r1, r2, r11)     // Catch: java.lang.RuntimeException -> L3c2
+581:             if (r1 == 0) goto L3c0
+582:             goto L39e
+583:         L3c0:
+584:             r13 = r11
+585:             goto L39f
+586:         L3c2:
+587:             r0 = move-exception
+588:             java.lang.String r0 = r0.getMessage()
+589:             java.lang.String r1 = "Error checking for root in running services: "
+590:             java.lang.String r0 = p.k3d.m(r1, r0)
+591:             p.bfq0 r1 = p.v6f1.a
+592:             r1.A(r5)
+593:             java.lang.Object[] r2 = new java.lang.Object[r11]
+594:             r1.s(r0, r2)
+595:             r13 = r11
+596:         L3d8:
+597:             if (r13 == 0) goto L3db
+598:             goto L382
+599:         L3db:
+600:             return r11
+601:         L3dc:
+602:             if (r12 == 0) goto L3e1
+603:             r12.destroy()
+604:         L3e1:
+605:             throw r0
+606:         L3e2:
+607:             r17 = r6
+608:         L3e4:
+609:             return r17
+610:     }
+611: }

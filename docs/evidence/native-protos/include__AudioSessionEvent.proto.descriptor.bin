@@ -1,0 +1,18 @@
+
+include/AudioSessionEvent.protospotify.event_sender.proto"‘
+AudioSessionEvent
+event (	Revent
+context (	Rcontext
+	json_data (	RjsonData
+playback_id (R
+playbackId
+reason (	Rreason-
+feature_identifier (	RfeatureIdentifier#
+seek_position (RseekPosition
+paused (Rpaused
+speed	 (Rspeed.
+fade_start_position
+ (RfadeStartPosition2
+seek_creator_position (RseekCreatorPosition@
+ad_detection_error_on_failure (RadDetectionErrorOnFailureN
+$ad_detection_fallback_start_position (R adDetectionFallbackStartPositionBH

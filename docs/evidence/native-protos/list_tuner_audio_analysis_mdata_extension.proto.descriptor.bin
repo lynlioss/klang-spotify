@@ -1,0 +1,6 @@
+
+/list_tuner_audio_analysis_mdata_extension.proto spotify.playlist.tuner.extension"l
+ListTunerAudioAnalysis
+start_ms (RstartMs
+	period_ms (RperiodMs
+loudness (RloudnessBHbproto3

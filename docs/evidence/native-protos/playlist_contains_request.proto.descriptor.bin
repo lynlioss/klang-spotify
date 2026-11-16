@@ -1,0 +1,9 @@
+
+playlist_contains_request.proto spotify.playlist_esperanto.protocontains_request.protoresponse_status.proto"u
+PlaylistContainsRequest
+uri (	RuriH
+request (2..spotify.playlist.cosmos.proto.ContainsRequestRrequest"±
+PlaylistContainsResponseH
+status (20.spotify.playlist_esperanto.proto.ResponseStatusRstatusK
+response (2/.spotify.playlist.cosmos.proto.ContainsResponseRresponseB,
+ spotify.playlist.esperanto.protoHP¢ESPbproto3
