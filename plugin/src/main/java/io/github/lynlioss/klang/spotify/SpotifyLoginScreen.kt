@@ -106,7 +106,7 @@ internal fun SpotifyLoginScreen(busy: Boolean, back: () -> Unit, closed: () -> U
 }
 
 /** Reuses YumaPlayer's full-size container, browser UA and sign-in popup approach. */
-private class SpotifyLoginBrowser(context: Context, private val background: Int,
+private class SpotifyLoginBrowser(context: Context, private val browserBackground: Int,
     private val started: () -> Unit, private val changed: (Int) -> Unit,
     private val finished: () -> Unit, private val failed: (String) -> Unit,
     private val canSubmit: () -> Boolean, private val connected: (String, String) -> Unit) : FrameLayout(context) {
@@ -149,7 +149,7 @@ private class SpotifyLoginBrowser(context: Context, private val background: Int,
     @SuppressLint("SetJavaScriptEnabled")
     private fun createWebView(): WebView = WebView(context).apply {
         layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT)
-        setBackgroundColor(background)
+        setBackgroundColor(browserBackground)
         settings.apply {
             javaScriptEnabled = true
             domStorageEnabled = true
