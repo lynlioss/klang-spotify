@@ -10,3 +10,13 @@ local.properties
 *.log
 __pycache__/
 artifacts/
+.private-signing/
+keystore.properties
+*.apk
+*.pyc
+/.gradle/
+/.kotlin/
+**/build/
+/local.properties
+*.jks
+*.keystore

@@ -1,0 +1,83 @@
+name: Release
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: release
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Require passing Checks for main
+        uses: actions/github-script@v7
+        with:
+          script: |
+            if (context.ref !== 'refs/heads/main') return core.setFailed('Run Release from main.');
+            const { data: main } = await github.rest.repos.getBranch({ ...context.repo, branch: 'main' });
+            if (main.commit.sha !== context.sha) return core.setFailed('main advanced. Run Release after its Checks pass.');
+            const runs = await github.paginate(github.rest.actions.listWorkflowRuns, {
+              ...context.repo, workflow_id: 'checks.yml', head_sha: context.sha, per_page: 100,
+            });
+            const check = runs.find(run => run.head_sha === context.sha && (run.event === 'push' || run.event === 'workflow_dispatch'));
+            if (!check || check.status !== 'completed' || check.conclusion !== 'success') {
+              core.setFailed('Checks must pass for this main commit before releasing.');
+            }
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: 'platforms;android-37.2 build-tools;37.0.0'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Restore signing key
+        env:
+          PLUGIN_KEYSTORE_B64: ${{ secrets.PLUGIN_KEYSTORE_B64 }}
+          PLUGIN_KEYSTORE_PASSWORD: ${{ secrets.PLUGIN_KEYSTORE_PASSWORD }}
+        run: |
+          test -n "$PLUGIN_KEYSTORE_B64" && test -n "$PLUGIN_KEYSTORE_PASSWORD"
+          printf '%s' "$PLUGIN_KEYSTORE_B64" | base64 --decode > "$RUNNER_TEMP/plugin.jks"
+          chmod 600 "$RUNNER_TEMP/plugin.jks"
+          echo "PLUGIN_KEYSTORE_FILE=$RUNNER_TEMP/plugin.jks" >> "$GITHUB_ENV"
+      - name: Build signed release
+        env:
+          PLUGIN_KEYSTORE_PASSWORD: ${{ secrets.PLUGIN_KEYSTORE_PASSWORD }}
+          PLUGIN_REQUIRE_RELEASE_SIGNING: 'true'
+        run: |
+          python3 scripts/check-plugin.py
+          ./gradlew :plugin:assembleRelease :plugin:lintRelease --no-daemon
+          python3 scripts/verify-import-packaging.py plugin/build/outputs/apk/release/plugin-release.apk --mapping plugin/build/outputs/mapping/release/mapping.txt
+      - name: Package release
+        run: |
+          cp plugin/build/outputs/apk/release/plugin-release.apk plugin.apk
+          sha256sum plugin.apk > plugin.apk.sha256
+          sha256sum plugin.json > plugin.json.sha256
+          version=$(python3 -c 'import json; print(json.load(open("plugin.json"))["version"])')
+          echo "PLUGIN_TAG=v$version" >> "$GITHUB_ENV"
+          git archive HEAD -o plugin-source.tar
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.PLUGIN_TAG }}
+          target_commitish: ${{ github.sha }}
+          name: Spotify Integration ${{ env.PLUGIN_TAG }}
+          fail_on_unmatched_files: true
+          files: |
+            plugin.apk
+            plugin.json
+            plugin.apk.sha256
+            plugin.json.sha256
+            plugin-source.tar
+          generate_release_notes: true
+          body: |
+            Install from Klang → Settings → Plugins → Recommended → Spotify Integration.
+            Requires a Klang build with the API 1 music source extension and Android 16 / ARM64.
+
+            Spotify provides the account, metadata and playlists. Audio is matched on YouTube Music or your connected Qobuz account. No Spotify Premium check is required for YouTube playback.
+
+            Account login, playback and offline downloads still need authenticated device verification. Qobuz requires your account and its matching app credentials. This is an independent integration.

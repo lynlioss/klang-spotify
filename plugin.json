@@ -1,0 +1,68 @@
+{
+  "apiVersion": 1,
+  "id": "spotify",
+  "name": "Spotify Integration",
+  "version": "1.0.0",
+  "type": "musicSource",
+  "author": "lynlioss",
+  "repository": "https://github.com/lynlioss/klang-spotify",
+  "summary": "Your Spotify library, with YouTube Music and Qobuz playback.",
+  "description": "Search Spotify songs, albums, artists and playlists, manage your library and playlists, and listen in Klang. Matches recordings on YouTube Music or your Qobuz account. Download matched recordings for offline listening. Install and update this plugin separately from Klang.",
+  "privacy": "Spotify login is stored encrypted in the plugin using AES-256-GCM and Android Keystore. Library requests go to Spotify; recording searches go to YouTube Music or Qobuz. Klang receives metadata, temporary stream locations and downloaded audio. Credentials stay in the plugin.",
+  "features": [
+    "Spotify search and library",
+    "Albums, artists and playlists",
+    "Create, edit and reorder playlists",
+    "Likes and playlist sharing",
+    "YouTube Music and Qobuz streaming",
+    "Offline downloads"
+  ],
+  "buttons": [
+    {
+      "label": "Source",
+      "url": "https://github.com/lynlioss/klang-spotify",
+      "icon": "source"
+    }
+  ],
+  "settings": [],
+  "defaultEnabled": false,
+  "musicSource": {
+    "package": "io.github.lynlioss.klang.spotify",
+    "service": "io.github.lynlioss.klang.spotify.SpotifySourceService",
+    "settingsActivity": "io.github.lynlioss.klang.spotify.SourceSettingsActivity",
+    "badge": "spotify",
+    "linkLabel": "Spotify",
+    "capabilities": [
+      "catalog.home",
+      "catalog.search",
+      "catalog.library",
+      "catalog.lookup",
+      "library.write",
+      "playlist.create",
+      "playlist.edit",
+      "playlist.items",
+      "playlist.follow",
+      "playlist.collaboration",
+      "playlist.cover",
+      "stream.resolve",
+      "offline.download",
+      "accounts"
+    ],
+    "hosts": [
+      "open.spotify.com"
+    ],
+    "schemes": [
+      "spotify"
+    ]
+  },
+  "musicImport": {
+    "package": "io.github.lynlioss.klang.spotify",
+    "service": "io.github.lynlioss.klang.spotify.SpotifySourceService",
+    "hosts": [
+      "open.spotify.com"
+    ],
+    "schemes": [
+      "spotify"
+    ]
+  }
+}
