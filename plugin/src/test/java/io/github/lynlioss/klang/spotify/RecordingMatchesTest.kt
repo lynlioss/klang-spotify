@@ -44,10 +44,10 @@ class RecordingMatchesTest {
         val file = directory.newFile("matches.json")
         val cache = RecordingMatches(file, capacity = 2, now = { now })
         cache.put(song, "a", recording())
-        cache.put(song.copy(id = "b"), "a", recording())
+        cache.put(song.copy(sourceId = "b"), "a", recording())
         cache.get(song, "a")
-        cache.put(song.copy(id = "c"), "a", recording())
-        assertNull(cache.get(song.copy(id = "b"), "a"))
+        cache.put(song.copy(sourceId = "c"), "a", recording())
+        assertNull(cache.get(song.copy(sourceId = "b"), "a"))
         assertNotNull(RecordingMatches(file, now = { now }).get(song, "a"))
         now += 31L * 24 * 60 * 60 * 1000
         assertNull(cache.get(song, "a"))

@@ -69,7 +69,7 @@ internal class RecordingMatches(private val file: File, private val capacity: In
     }
 
     private fun key(song: ImportSong, account: String): String {
-        val input = JSONArray(listOf(account, song.id, song.title, song.artist, song.album, song.durationMs, song.explicit)).toString()
+        val input = JSONArray(listOf(account, song.sourceId, song.title, song.artist, song.album, song.durationMs, song.explicit)).toString()
         return MessageDigest.getInstance("SHA-256").digest(input.toByteArray()).joinToString("") { "%02x".format(it) }
     }
 
