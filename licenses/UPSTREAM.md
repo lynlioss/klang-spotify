@@ -5,3 +5,5 @@ YumaPlayer / ArchiveTune Spotify core: https://github.com/MuwMx/YumaPlayer, comm
 Klang Music Import: https://github.com/lynlioss/music-import-klang, GPL-3.0. Metadata, recording matching, original-format selection and downloader helpers reused in plugin/src/main/java/app/lynli/klang/importing. Runtime dependency license/source notices are in music-import.
 
 No Spotify APK code or binary is included in the plugin.
+
+Spotify mark: reused from Klang, originally from Simple Icons (CC0). https://simpleicons.org/ and https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md.

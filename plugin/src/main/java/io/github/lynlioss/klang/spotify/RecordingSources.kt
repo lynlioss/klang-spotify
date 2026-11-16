@@ -14,7 +14,7 @@ import java.net.URI
 import java.util.UUID
 import java.util.concurrent.ConcurrentHashMap
 
-internal class RecordingSources(private val context: Context) {
+internal class RecordingSources private constructor(private val context: Context) {
     private val streams = ConcurrentHashMap<String, JSONObject>()
     private val locks = Array(16) { Mutex() }
     private val prefs get() = context.getSharedPreferences("source_preferences", Context.MODE_PRIVATE)
@@ -22,12 +22,13 @@ internal class RecordingSources(private val context: Context) {
         require(item.optBoolean("available", true) && !item.optBoolean("local")) { "This Spotify item isn't available for matching." }
         val vault = AccountVault.get(context)
         val account = vault.revision("spotify") to vault.revision("qobuz")
-        val key = item.getString("id") + ":" + prefs.getString("source", "auto") + ":" + prefs.getInt("qobuzFormat", 27) +
+        val preference = prefs.getString("source", "auto")
+        val format = prefs.getInt("qobuzFormat", 27)
+        val key = item.getString("id") + ":" + preference + ":" + format +
             ":" + account.first + ":" + account.second
         streams[key]?.takeIf { it.optLong("expiresAt") > System.currentTimeMillis() + 60_000 }?.let { return@withLock JSONObject(it.toString()) }
-        val preference = prefs.getString("source", "auto")
         val qobuz = if (preference != "youtube") try {
-            QobuzSource(context).resolve(JSONObject(item.toString()).put("qobuzFormat", prefs.getInt("qobuzFormat", 27)))
+            QobuzSource(context).resolve(JSONObject(item.toString()).put("qobuzFormat", format))
         } catch (cancelled: CancellationException) { throw cancelled } catch (e: Exception) {
             if (preference == "qobuz") throw e else null
         } else null
@@ -104,5 +105,10 @@ internal class RecordingSources(private val context: Context) {
             return JSONObject().put("extension", file.extension).put("song", CatalogCodec.importJson(item))
                 .put("audioFormat", stream.optString("format")).put("recording", info.optString("webpage_url"))
         } finally { directory.deleteRecursively() }
+    }
+    companion object {
+        // Klang unbinds after each RPC. Keep temporary stream URLs for subsequent seeks.
+        private var instance: RecordingSources? = null
+        @Synchronized fun get(context: Context) = instance ?: RecordingSources(context.applicationContext).also { instance = it }
     }
 }

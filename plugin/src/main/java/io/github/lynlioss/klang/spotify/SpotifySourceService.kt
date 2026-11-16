@@ -52,7 +52,7 @@ class SpotifySourceService : Service() {
             jobs[key] = job; job.start()
         }
     })
-    override fun onCreate() { super.onCreate(); catalog = SpotifyCatalog(this); sources = RecordingSources(this) }
+    override fun onCreate() { super.onCreate(); catalog = SpotifyCatalog(this); sources = RecordingSources.get(this) }
     override fun onBind(intent: Intent?): IBinder = messenger.binder
     override fun onDestroy() { jobs.keys.forEach(ImportEngine::stop); scope.cancel(); super.onDestroy() }
     private fun send(reply: Messenger, code: Int, token: String, json: String) {
