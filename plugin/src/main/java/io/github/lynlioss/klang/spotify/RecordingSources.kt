@@ -15,6 +15,10 @@ import java.util.UUID
 import java.util.concurrent.ConcurrentHashMap
 
 internal class RecordingSources private constructor(private val context: Context) {
+    // Accounts/catalog bind this service before a song is tapped. Unpack the fallback runtime then.
+    private val runtime = CoroutineScope(SupervisorJob() + Dispatchers.IO).async {
+        runInterruptible { ImportEngine.initializePlayback(context) }
+    }
     private val streams = ConcurrentHashMap<String, JSONObject>()
     private val locks = Array(16) { Mutex() }
     private val prefs get() = context.getSharedPreferences("source_preferences", Context.MODE_PRIVATE)
@@ -38,17 +42,15 @@ internal class RecordingSources private constructor(private val context: Context
         streams[key] = JSONObject(result.toString())
         result
     }
-    private suspend fun youtube(item: JSONObject, processId: String): JSONObject = supervisorScope {
+    private suspend fun youtube(item: JSONObject, processId: String): JSONObject {
         val song = CatalogCodec.importSong(item)
-        // Initialize the bundled runtime alongside catalog search; never update it during playback.
-        val initialization = async { runInterruptible { ImportEngine.initializePlayback(context) } }
         val catalog = YouTubeCatalog.searchOrEmpty(song)
         val info = withTimeout(300_000) {
             findRecording(song, catalog, searchVideos = {
-                initialization.await()
+                runtime.await()
                 runInterruptible { ImportEngine.info("ytsearch10:${song.artist} ${song.title} official audio", processId, flat = true)
                     .optJSONArray("entries")?.let { array -> (0 until array.length()).mapNotNull(array::optJSONObject) }.orEmpty() }
-            }, extract = { url -> fastExtract(url, initialization, processId) })
+            }, extract = { url -> fastExtract(url, processId) })
         }
         val audio = selectOriginalAudio(info)
         val formats = info.getJSONArray("formats")
@@ -61,18 +63,18 @@ internal class RecordingSources private constructor(private val context: Context
         // Account cookies and auth headers are only used in the plugin, never exported as playback credentials.
         val safeHeaders = JSONObject()
         listOf("User-Agent", "Referer", "Origin").forEach { name -> headers.optString(name).takeIf { it.isNotBlank() }?.let { safeHeaders.put(name, it) } }
-        JSONObject().put("url", url).put("headers", safeHeaders).put("source", "youtube")
+        return JSONObject().put("url", url).put("headers", safeHeaders).put("source", "youtube")
             .put("format", audio.description).put("expiresAt", expire).put("info", info)
             .put("recordingMetadata", JSONObject().put("id", info.getString("id")).put("title", info.optString("track", info.optString("title")))
                 .put("artist", info.optString("artist")).put("durationMs", (info.optDouble("duration", 0.0) * 1000).toLong()))
     }
     /** Native HTTPS audio can resolve before a Python process starts. Both paths keep recording checks. */
-    private suspend fun fastExtract(url: String, initialization: Deferred<Unit>, processId: String): JSONObject = supervisorScope {
+    private suspend fun fastExtract(url: String, processId: String): JSONObject = supervisorScope {
         val direct = async { runCatching { withTimeout(2_500) { YouTubeAudio.info(url.substringAfter("v=")) } } }
         val fallback = async {
             runCatching {
                 delay(200)
-                initialization.await()
+                runtime.await()
                 runInterruptible { ImportEngine.info(url, processId) }
             }
         }

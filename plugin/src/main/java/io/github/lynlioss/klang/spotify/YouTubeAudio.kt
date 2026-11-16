@@ -1,7 +1,6 @@
 package io.github.lynlioss.klang.spotify
 
 import app.lynli.klang.importing.ImportHttp
-import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.suspendCancellableCoroutine
 import okhttp3.*
 import org.json.JSONArray
@@ -21,7 +20,9 @@ internal object YouTubeAudio {
             .put("clientName", "ANDROID_VR").put("clientVersion", "1.37").put("hl", "en").put("gl", "US")
             .put("osName", "Android").put("osVersion", "12").put("deviceMake", "Oculus").put("deviceModel", "Quest 3")
             .put("androidSdkVersion", 32).put("userAgent", AGENT)))
-        val response = JSONObject(ImportHttp.postJson("https://www.youtube.com/youtubei/v1/player?prettyPrint=false", body.toString(), http))
+        val response = JSONObject(ImportHttp.postJson("https://www.youtube.com/youtubei/v1/player?prettyPrint=false", body.toString(), http,
+            headers = mapOf("User-Agent" to AGENT, "X-YouTube-Client-Name" to "28", "X-YouTube-Client-Version" to "1.37",
+                "Origin" to "https://www.youtube.com", "Referer" to "https://www.youtube.com/")))
         val info = parse(id, response)
         val formats = info.getJSONArray("formats")
         // A direct URL is useful only if the CDN actually permits this client to open it.

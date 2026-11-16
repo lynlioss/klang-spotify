@@ -31,9 +31,10 @@ internal object ImportHttp {
         return execute(request, httpClient)
     }
 
-    suspend fun postJson(url: String, json: String, httpClient: OkHttpClient = client): String = execute(
+    suspend fun postJson(url: String, json: String, httpClient: OkHttpClient = client, headers: Map<String, String> = emptyMap()): String = execute(
         Request.Builder().url(url).header("User-Agent", "Mozilla/5.0")
             .header("Origin", "https://music.youtube.com")
+            .apply { headers.forEach { (key, value) -> header(key, value) } }
             .post(json.toRequestBody("application/json; charset=utf-8".toMediaType())).build(), httpClient,
     )
 
