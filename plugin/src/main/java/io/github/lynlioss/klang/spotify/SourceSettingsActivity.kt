@@ -1,9 +1,13 @@
 @file:OptIn(androidx.compose.material3.ExperimentalMaterial3ExpressiveApi::class)
 package io.github.lynlioss.klang.spotify
 
+import android.content.res.Configuration
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.webkit.*
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -13,26 +17,30 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.viewinterop.AndroidView
 import kotlinx.coroutines.*
-import moe.rukamori.archivetune.spotify.SpotifyAuth
-import java.net.URI
 import kotlin.coroutines.resume
 
 /** Opened from the mod's detail settings. The browser and secrets live in this APK. */
 class SourceSettingsActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         val preferences = getSharedPreferences("source_preferences", MODE_PRIVATE)
         if (intent.hasExtra("klang.theme")) preferences.edit()
             .putString("theme", intent.getStringExtra("klang.theme"))
             .putBoolean("dynamicColor", intent.getBooleanExtra("klang.dynamicColor", false)).apply()
+        val theme = preferences.getString("theme", "system") ?: "system"
+        val dark = theme == "dark" || theme == "system" &&
+            (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+        val systemBars = SystemBarStyle.auto(Color.TRANSPARENT, Color.TRANSPARENT) { dark }
+        enableEdgeToEdge(statusBarStyle = systemBars, navigationBarStyle = systemBars)
         setContent {
-            SourceTheme(this, preferences.getString("theme", "system")!!, preferences.getBoolean("dynamicColor", false)) {
-                SettingsContent()
+            SourceTheme(this, theme, preferences.getBoolean("dynamicColor", false)) {
+                val background = MaterialTheme.colorScheme.surface.toArgb()
+                SideEffect { window.setBackgroundDrawable(ColorDrawable(background)) }
+                Surface(Modifier.fillMaxSize()) { SettingsContent() }
             }
         }
     }
@@ -60,7 +68,7 @@ class SourceSettingsActivity : ComponentActivity() {
         }
         BackHandler(login) { login = false }
         if (login) {
-            SpotifyLogin(busy, { login = false }) { dc, key ->
+            SpotifyLoginScreen(busy, { login = false }, ::clearBrowserData) { dc, key ->
                 if (!busy) {
                     busy = true; error = null
                     scope.launch {
@@ -142,46 +150,6 @@ class SourceSettingsActivity : ComponentActivity() {
         }
     }
 
-    @Composable private fun SpotifyLogin(busy: Boolean, back: () -> Unit, connected: (String, String) -> Unit) {
-        var browser by remember { mutableStateOf<WebView?>(null) }
-        DisposableEffect(Unit) { onDispose {
-            browser?.let { it.stopLoading(); it.clearCache(true); it.clearHistory(); it.destroy() }; browser = null
-            clearBrowserData()
-        } }
-        Column(Modifier.fillMaxSize().systemBarsPadding()) {
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                TextButton(back) { Text("Back") }
-                TextButton({ browser?.let { readCookies(it.url, connected) } }, enabled = !busy) { Text("Finish login") }
-            }
-            if (busy) LinearWavyProgressIndicator(Modifier.fillMaxWidth())
-            AndroidView(factory = { context ->
-                WebView(context).apply {
-                    browser = this
-                    settings.javaScriptEnabled = true; settings.domStorageEnabled = true
-                    settings.allowFileAccess = false; settings.allowContentAccess = false
-                    settings.mixedContentMode = WebSettings.MIXED_CONTENT_NEVER_ALLOW
-                    CookieManager.getInstance().setAcceptCookie(true)
-                    CookieManager.getInstance().setAcceptThirdPartyCookies(this, false)
-                    webViewClient = object : WebViewClient() {
-                        override fun shouldOverrideUrlLoading(view: WebView, request: WebResourceRequest): Boolean =
-                            request.isForMainFrame && URI(request.url.toString()).let {
-                                it.scheme != "https" || it.host !in setOf("accounts.spotify.com", "open.spotify.com", "www.spotify.com", "spotify.com")
-                            }
-                        override fun onPageFinished(view: WebView, url: String) { readCookies(url, connected) }
-                    }
-                    loadUrl(SpotifyAuth.LOGIN_URL)
-                }
-            }, modifier = Modifier.weight(1f).fillMaxWidth())
-        }
-    }
-    private fun readCookies(url: String?, connected: (String, String) -> Unit) {
-        if (url == null || runCatching { URI(url).host }.getOrNull() != "open.spotify.com") return
-        val cookieManager = CookieManager.getInstance()
-        val cookies = cookieManager.getCookie("https://open.spotify.com").orEmpty().split(';').mapNotNull {
-            val parts = it.trim().split('=', limit = 2); if (parts.size == 2) parts[0] to parts[1] else null
-        }.toMap()
-        cookies["sp_dc"]?.takeIf { it.isNotBlank() }?.let { connected(it, cookies["sp_key"].orEmpty()) }
-    }
     private fun clearBrowserData() {
         CookieManager.getInstance().removeAllCookies { CookieManager.getInstance().flush() }
         WebStorage.getInstance().deleteAllData()

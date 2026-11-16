@@ -2,7 +2,7 @@
   "apiVersion": 1,
   "id": "spotify",
   "name": "Spotify Integration",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "musicSource",
   "author": "lynlioss",
   "repository": "https://github.com/lynlioss/klang-spotify",

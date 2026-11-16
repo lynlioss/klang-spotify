@@ -26,6 +26,8 @@ Use a Klang build containing the API 1 music source extension. Both APKs target 
 
 For Qobuz, enter your email/password and your app ID with its matching secret. Passwords are used to obtain a session token and are not saved. The app pair and token are encrypted; no shared account/token pool is included. Spotify browser cookies and local browser storage are cleared when the login screen closes; only the verified session is retained in the encrypted vault.
 
+Spotify login uses a full-screen browser inside the plugin, including sign-in popups. The header follows Klang's theme, page loading shows progress, and connection failures offer Retry. After signing in, the plugin captures the Spotify session automatically; **Finish login** checks it again if needed.
+
 Tap a song's download button to keep the matched recording on device. Downloads use the source's existing codec and apply Spotify catalog tags and artwork. Available offline songs play from Klang's MediaStore file, including after restarting Klang. The Spotify link remains available from the song menu.
 
 The stable [GitHub release](https://github.com/lynlioss/klang-spotify/releases/latest) supplies `plugin.apk`, `plugin.json` and their SHA-256 files. Android verifies signing continuity when updating. CI artifacts are validation builds; install the signed release for normal use.
