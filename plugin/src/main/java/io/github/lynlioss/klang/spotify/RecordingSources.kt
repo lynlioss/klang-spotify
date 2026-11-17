@@ -17,50 +17,54 @@ internal class RecordingSources private constructor(private val context: Context
         runInterruptible { ImportEngine.initializePlayback(context) }
     }
     private val streams = LinkedHashMap<String, JSONObject>(16, .75f, true)
-    private val matches = RecordingMatches(File(context.filesDir, "playback/recording-matches.json"))
+    private val matches = RecordingDatabase.get(context)
     private val locks = RecordingLocks()
     private val prefs get() = context.getSharedPreferences("source_preferences", Context.MODE_PRIVATE)
     suspend fun resolve(item: JSONObject, processId: String, refresh: Boolean = false): JSONObject {
-        require(item.optBoolean("available", true) && !item.optBoolean("local")) { "This Spotify item isn't available for matching." }
-        val vault = AccountVault.get(context)
-        val account = vault.revision("spotify") to vault.revision("qobuz")
-        val preference = playbackPreference(prefs.getString("source", null), vault.get("qobuz_token") != null)
-        val format = prefs.getInt("qobuzFormat", 27)
-        val key = item.getString("id") + ":" + preference + ":" + format +
-            ":" + account.first + ":" + account.second
-        return locks.withRecording(key) {
-            synchronized(streams) {
-                if (refresh) streams.remove(key)
-                streams[key]?.takeIf { it.optLong("expiresAt") > System.currentTimeMillis() + 60_000 }
-                    ?.let { return@withRecording JSONObject(it.toString()) }
+        BackgroundMatches.playbackStarted()
+        try {
+            require(item.optBoolean("available", true) && !item.optBoolean("local")) { "This Spotify item isn't available for matching." }
+            val vault = AccountVault.get(context)
+            val account = vault.revision("spotify") to vault.revision("qobuz")
+            val preference = playbackPreference(prefs.getString("source", null), vault.get("qobuz_token") != null)
+            val format = prefs.getInt("qobuzFormat", 27)
+            val key = item.getString("id") + ":" + preference + ":" + format +
+                ":" + account.first + ":" + account.second
+            return locks.withRecording(key) {
+                synchronized(streams) {
+                    if (refresh) streams.remove(key)
+                    streams[key]?.takeIf { it.optLong("expiresAt") > System.currentTimeMillis() + 60_000 }
+                        ?.let { return@withRecording JSONObject(it.toString()) }
+                }
+                val result = withTimeout(45_000) {
+                    val qobuz = if (preference != "youtube") try {
+                        QobuzSource(context).resolve(JSONObject(item.toString()).put("qobuzFormat", format))
+                    } catch (cancelled: CancellationException) { throw cancelled } catch (e: Exception) {
+                        if (preference == "qobuz") throw e else null
+                    } else null
+                    qobuz ?: if (preference == "qobuz") error("Qobuz has no accessible matching recording for this song.")
+                        else youtube(item, processId, account.first)
+                }
+                require(account == (vault.revision("spotify") to vault.revision("qobuz"))) { "The playback account changed. Retry this song." }
+                synchronized(streams) {
+                    streams[key] = JSONObject(result.toString())
+                    while (streams.size > 128) streams.remove(streams.keys.first())
+                }
+                result
             }
-            val result = withTimeout(45_000) {
-                val qobuz = if (preference != "youtube") try {
-                    QobuzSource(context).resolve(JSONObject(item.toString()).put("qobuzFormat", format))
-                } catch (cancelled: CancellationException) { throw cancelled } catch (e: Exception) {
-                    if (preference == "qobuz") throw e else null
-                } else null
-                qobuz ?: if (preference == "qobuz") error("Qobuz has no accessible matching recording for this song.")
-                    else youtube(item, processId, account.first)
-            }
-            require(account == (vault.revision("spotify") to vault.revision("qobuz"))) { "The playback account changed. Retry this song." }
-            synchronized(streams) {
-                streams[key] = JSONObject(result.toString())
-                while (streams.size > 128) streams.remove(streams.keys.first())
-            }
-            result
-        }
+        } finally { BackgroundMatches.playbackFinished() }
     }
     private suspend fun youtube(item: JSONObject, processId: String, account: String): JSONObject {
         val song = CatalogCodec.importSong(item)
         var info: JSONObject? = null
-        val saved = matches.get(song, account)
-        if (saved != null) {
+        val generation = matches.generation
+        val saved = runCatching { matches.candidates(song, account) }.getOrDefault(emptyList())
+        if (saved.isNotEmpty()) {
             try {
-                info = findRecording(song, listOf(saved), searchVideos = { emptyList() },
+                info = findRecording(song, saved, searchVideos = { emptyList() },
                     extract = { url -> fastExtract(url, processId) })
             } catch (cancelled: CancellationException) { throw cancelled }
-            catch (_: Exception) { matches.remove(song, account) }
+            catch (_: Exception) { runCatching { matches.reject(song, account) } }
         }
         if (info == null) {
             val catalog = try { withTimeout(5_000) { YouTubeCatalog.searchOrEmpty(song) } }
@@ -72,7 +76,7 @@ internal class RecordingSources private constructor(private val context: Context
             }, extract = { url -> fastExtract(url, processId) })
         }
         val recording = requireNotNull(info)
-        matches.put(song, account, recording)
+        runCatching { matches.saveVerified(item, account, recording, generation) }
         val audio = selectOriginalAudio(recording)
         val formats = recording.getJSONArray("formats")
         val selected = (0 until formats.length()).map(formats::getJSONObject).first { it.optString("format_id") == audio.id }
@@ -118,6 +122,7 @@ internal class RecordingSources private constructor(private val context: Context
         }
         finally { ImportEngine.stop(processId) }
     }
+    fun clearCache() { synchronized(streams) { streams.clear() } }
     suspend fun download(item: JSONObject, output: ParcelFileDescriptor, processId: String,
         progress: (JSONObject) -> Unit): JSONObject {
         val directory = File(context.cacheDir, "source-downloads/${UUID.randomUUID()}").apply { mkdirs() }

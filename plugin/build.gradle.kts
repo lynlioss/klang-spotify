@@ -7,12 +7,13 @@ android {
     compileSdk = 37
     compileSdkMinor = 2
     buildToolsVersion = "37.0.0"
+    testOptions { unitTests.isIncludeAndroidResources = true }
     defaultConfig {
         applicationId = "io.github.lynlioss.klang.spotify"
         minSdk = 36
         targetSdk = 36
-        versionCode = 5
-        versionName = "1.1.1"
+        versionCode = 6
+        versionName = "1.1.2"
         ndk { abiFilters += "arm64-v8a" }
     }
     signingConfigs { create("release") {
@@ -37,6 +38,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
     implementation("androidx.core:core-ktx:1.18.0")
+    implementation("androidx.work:work-runtime-ktx:2.11.0")
     implementation("com.squareup.okhttp3:okhttp:4.12.1")
     implementation("com.google.crypto.tink:tink-android:1.18.0")
     implementation("io.github.junkfood02.youtubedl-android:library:0.18.1")
@@ -48,6 +50,7 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     implementation("com.materialkolor:material-kolor:4.1.1")
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.robolectric:robolectric:4.18")
     testImplementation("org.json:json:20250517")
     testImplementation("com.squareup.okhttp3:mockwebserver:4.12.1")
 }

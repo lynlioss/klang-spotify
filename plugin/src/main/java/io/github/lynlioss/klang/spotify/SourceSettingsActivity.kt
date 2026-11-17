@@ -5,6 +5,7 @@ import android.content.res.Configuration
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.text.format.Formatter
 import android.webkit.*
 import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
@@ -67,6 +68,10 @@ class SourceSettingsActivity : ComponentActivity() {
         var appSecret by remember { mutableStateOf("") }
         var email by remember { mutableStateOf("") }
         var password by remember { mutableStateOf("") }
+        val cacheSettings = remember { PlaybackCacheSettings(this@SourceSettingsActivity, intent.getStringExtra("klang.cacheBridge")) }
+        var cache by remember { mutableStateOf<PlaybackCacheStats?>(null) }
+        var clearingCache by remember { mutableStateOf(false) }
+        var cacheMessage by remember { mutableStateOf<String?>(null) }
         suspend fun refresh() = withContext(Dispatchers.IO) {
             val vault = AccountVault.get(this@SourceSettingsActivity)
             Triple(vault.get("spotify_profile"), vault.get("qobuz_profile"), vault.get("qobuz_app_id").orEmpty())
@@ -78,6 +83,14 @@ class SourceSettingsActivity : ComponentActivity() {
                 prefs.edit().putString("source", source).apply()
             }
             catch (_: Exception) { error = "Couldn't open the encrypted account store. Reinstall the plugin to reset it." }
+        }
+        LaunchedEffect(login) {
+            if (!login) while (isActive) {
+                try { cache = withContext(Dispatchers.IO) { cacheSettings.stats() } }
+                catch (cancelled: CancellationException) { throw cancelled }
+                catch (_: Exception) { cacheMessage = "Couldn't read cache storage. Try again." }
+                delay(5_000)
+            }
         }
         BackHandler(login) { login = false }
         if (login) {
@@ -215,6 +228,48 @@ class SourceSettingsActivity : ComponentActivity() {
                         }
                         }
                         }
+                    }
+                }
+                Text("Playback cache", style = MaterialTheme.typography.titleLargeEmphasized)
+                Surface(shape = MaterialTheme.shapes.large, color = MaterialTheme.colorScheme.surfaceContainerLow) {
+                    Column(Modifier.fillMaxWidth().padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(Icons.Rounded.Storage, null, Modifier.size(28.dp))
+                            Column(Modifier.weight(1f).padding(start = 16.dp)) {
+                                Text(cache?.let { Formatter.formatFileSize(this@SourceSettingsActivity, it.totalBytes) } ?: "Checking storage…",
+                                    style = MaterialTheme.typography.headlineSmallEmphasized)
+                                Text("Recording links and buffered audio", style = MaterialTheme.typography.bodyMedium,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            }
+                        }
+                        cache?.let { stats ->
+                            Text("${stats.matching.matched} songs linked · ${stats.matching.pending} waiting",
+                                style = MaterialTheme.typography.titleMediumEmphasized)
+                            Text("${stats.matching.verified} recordings verified · ${stats.matching.songs} songs in the database",
+                                style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            HorizontalDivider()
+                            Text("Recording database: ${Formatter.formatFileSize(this@SourceSettingsActivity, stats.matching.bytes)}",
+                                style = MaterialTheme.typography.bodyMedium)
+                            Text(stats.audioBytes?.let { "Buffered audio: ${Formatter.formatFileSize(this@SourceSettingsActivity, it)} · ${stats.audioSongs} songs" }
+                                ?: "Update Klang to see and clear its buffered audio.", style = MaterialTheme.typography.bodyMedium)
+                        }
+                        Text("Liked songs and search results link in the background. Nearby queue songs also buffer ahead for faster playback.",
+                            style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        FilledTonalButton({
+                            clearingCache = true; cacheMessage = null
+                            scope.launch {
+                                try {
+                                    cache = withContext(Dispatchers.IO) { cacheSettings.clear() }
+                                    cacheMessage = "Playback cache cleared. Your downloads and account are kept."
+                                } catch (cancelled: CancellationException) { throw cancelled }
+                                catch (_: Exception) { cacheMessage = "Couldn't clear all cached audio. Try again." }
+                                finally { clearingCache = false }
+                            }
+                        }, Modifier.fillMaxWidth(), enabled = !clearingCache && cache != null) {
+                            if (clearingCache) LoadingIndicator(Modifier.size(24.dp)) else Icon(Icons.Rounded.DeleteSweep, null)
+                            Spacer(Modifier.width(8.dp)); Text(if (clearingCache) "Clearing cache…" else "Clear playback cache")
+                        }
+                        cacheMessage?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
                     }
                 }
                 if (busy) LoadingIndicator()

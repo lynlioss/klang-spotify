@@ -157,7 +157,11 @@ internal class SpotifyCatalog(private val context: Context) {
                     JSONObject().put("ok", true)
                 }
                 else -> error("Unsupported catalog operation")
-            }.put("accountRevision", vault.revision("spotify"))
+            }.put("accountRevision", vault.revision("spotify")).also { result ->
+                if (operation in setOf("library", "search", "lookup")) runCatching {
+                    BackgroundMatches.observe(context, result, if (operation == "search") 1 else 0)
+                }
+            }
         }
     }
     private suspend fun lookup(uri: String, offset: Int, limit: Int): JSONObject = when {
