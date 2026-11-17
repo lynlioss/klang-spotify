@@ -3,7 +3,7 @@ package io.github.lynlioss.klang.spotify
 import android.content.Context
 import android.net.Uri
 
-internal data class PlaybackCacheStats(val matching: MatchStats, val audioBytes: Long?, val audioSongs: Int?) {
+internal data class PlaybackCacheStats(val matching: MatchStats, val audioBytes: Long?, val audioSongs: Int?, val scanning: Boolean = false) {
     val totalBytes get() = matching.bytes + (audioBytes ?: 0)
 }
 
@@ -16,9 +16,10 @@ internal class PlaybackCacheSettings(private val context: Context, bridge: Strin
         val account = AccountVault.get(context).revision("spotify")
         val local = RecordingDatabase.get(context).stats(account)
         val host = uri?.let { runCatching { context.contentResolver.call(it, "cache.stats", "spotify", null) }.getOrNull() }
-        return PlaybackCacheStats(local, host?.getLong("audioBytes"), host?.getInt("audioSongs"))
+        return PlaybackCacheStats(local, host?.getLong("audioBytes"), host?.getInt("audioSongs"), RecordingDatabase.get(context).libraryPending(account))
     }
     fun clear(): PlaybackCacheStats {
+        BackgroundLibrary.cancel(context)
         BackgroundMatches.cancel(context)
         RecordingDatabase.get(context).clear()
         RecordingSources.get(context).clearCache()

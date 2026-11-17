@@ -5,6 +5,21 @@ import org.junit.Assert.*
 import org.junit.Test
 
 class BackgroundMatchesTest {
+    @Test fun simultaneousMatchingRequestsYieldTogetherToPlayback() = runBlocking {
+        val started = (0 until 4).map { CompletableDeferred<Unit>() }
+        val requests = started.map { gate -> async {
+            try {
+                BackgroundMatches.catalogWork { gate.complete(Unit); awaitCancellation() }
+                false
+            } catch (_: BackgroundMatches.PreparationYielded) { true }
+        } }
+        try {
+            withTimeout(2_000) { started.forEach { it.await() } }
+            BackgroundMatches.playbackStarted()
+            try { withTimeout(2_000) { assertTrue(requests.awaitAll().all { it }) } }
+            finally { BackgroundMatches.playbackFinished() }
+        } finally { requests.forEach { it.cancel() } }
+    }
     @Test fun foregroundPlaybackCancelsSpeculativeCatalogSearch() = runBlocking {
         val started = CompletableDeferred<Unit>()
         val canceled = CompletableDeferred<Unit>()

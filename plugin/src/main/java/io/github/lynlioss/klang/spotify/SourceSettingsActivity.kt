@@ -15,6 +15,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -26,7 +29,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.*
@@ -57,7 +61,9 @@ class SourceSettingsActivity : ComponentActivity() {
         val prefs = remember { getSharedPreferences("source_preferences", MODE_PRIVATE) }
         val scope = rememberCoroutineScope()
         var profile by remember { mutableStateOf<String?>(null) }
+        var avatar by remember { mutableStateOf<String?>(null) }
         var qobuzProfile by remember { mutableStateOf<String?>(null) }
+        var qobuzReady by remember { mutableStateOf(false) }
         var login by remember { mutableStateOf(false) }
         var busy by remember { mutableStateOf(false) }
         var error by remember { mutableStateOf<String?>(null) }
@@ -66,6 +72,7 @@ class SourceSettingsActivity : ComponentActivity() {
         var quality by remember { mutableIntStateOf(prefs.getInt("qobuzFormat", 27)) }
         var appId by remember { mutableStateOf("") }
         var appSecret by remember { mutableStateOf("") }
+        var savedAppSecret by remember { mutableStateOf(false) }
         var email by remember { mutableStateOf("") }
         var password by remember { mutableStateOf("") }
         val cacheSettings = remember { PlaybackCacheSettings(this@SourceSettingsActivity, intent.getStringExtra("klang.cacheBridge")) }
@@ -74,22 +81,37 @@ class SourceSettingsActivity : ComponentActivity() {
         var cacheMessage by remember { mutableStateOf<String?>(null) }
         suspend fun refresh() = withContext(Dispatchers.IO) {
             val vault = AccountVault.get(this@SourceSettingsActivity)
-            Triple(vault.get("spotify_profile"), vault.get("qobuz_profile"), vault.get("qobuz_app_id").orEmpty())
+            vault.snapshot(listOf("spotify_profile", "spotify_avatar", "qobuz_profile", "qobuz_app_id", "qobuz_app_secret", "qobuz_token"))
+        }
+        suspend fun loadAccounts() {
+            val stored = refresh()
+            profile = stored["spotify_profile"]; avatar = stored["spotify_avatar"]
+            qobuzProfile = stored["qobuz_profile"]; appId = stored["qobuz_app_id"].orEmpty()
+            qobuzReady = listOf("qobuz_app_id", "qobuz_app_secret", "qobuz_token").all { !stored[it].isNullOrBlank() }
+            savedAppSecret = !stored["qobuz_app_secret"].isNullOrBlank()
+            source = playbackPreference(prefs.getString("source", null), qobuzReady)
+            prefs.edit().putString("source", source).apply()
         }
         LaunchedEffect(Unit) {
             try {
-                val stored = refresh(); profile = stored.first; qobuzProfile = stored.second; appId = stored.third
-                source = playbackPreference(prefs.getString("source", null), qobuzProfile != null)
-                prefs.edit().putString("source", source).apply()
+                loadAccounts()
+                BackgroundLibrary.schedule(this@SourceSettingsActivity)
             }
+            catch (cancelled: CancellationException) { throw cancelled }
             catch (_: Exception) { error = "Couldn't open the encrypted account store. Reinstall the plugin to reset it." }
+            if (profile != null) try {
+                withContext(Dispatchers.IO) { withTimeout(10_000) { SpotifySession.refreshProfile(this@SourceSettingsActivity) } }
+                val stored = refresh()
+                profile = stored["spotify_profile"]; avatar = stored["spotify_avatar"]
+            } catch (cancelled: CancellationException) { currentCoroutineContext().ensureActive() }
+            catch (_: Exception) { /* Stored account information remains available offline. */ }
         }
         LaunchedEffect(login) {
             if (!login) while (isActive) {
                 try { cache = withContext(Dispatchers.IO) { cacheSettings.stats() } }
                 catch (cancelled: CancellationException) { throw cancelled }
                 catch (_: Exception) { cacheMessage = "Couldn't read cache storage. Try again." }
-                delay(5_000)
+                delay(2_000)
             }
         }
         BackHandler(login) { login = false }
@@ -100,7 +122,7 @@ class SourceSettingsActivity : ComponentActivity() {
                     scope.launch {
                         try {
                             withContext(Dispatchers.IO) { SpotifySession.connect(this@SourceSettingsActivity, dc, key) }
-                            profile = refresh().first; login = false
+                            loadAccounts(); login = false
                         } catch (_: CancellationException) { throw CancellationException() }
                         catch (_: Exception) { error = "Spotify couldn't verify this login. Finish signing in, then try again."; login = false }
                         finally { clearBrowserData(); busy = false }
@@ -113,185 +135,180 @@ class SourceSettingsActivity : ComponentActivity() {
             TopAppBar(title = { Text("Spotify Sync", style = MaterialTheme.typography.titleLargeEmphasized) },
                 navigationIcon = { IconButton({ finish() }) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back to Klang") } })
         }) { padding ->
-            Column(Modifier.fillMaxSize().padding(padding).navigationBarsPadding().imePadding().verticalScroll(rememberScrollState())
-                .widthIn(max = 720.dp).padding(horizontal = 24.dp, vertical = 16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-                Text("Your music,\ntogether.", style = MaterialTheme.typography.displaySmallEmphasized)
-                Text("Connect once. Your songs, albums and playlists appear throughout Klang.",
-                    style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                Surface(shape = MaterialTheme.shapes.large, color = MaterialTheme.colorScheme.surfaceContainerLow) {
-                    Column(Modifier.fillMaxWidth().padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            Surface(shape = RoundedCornerShape(16.dp), color = MaterialTheme.colorScheme.primaryContainer) {
-                                Icon(painterResource(R.drawable.spotify), null, Modifier.padding(12.dp).size(28.dp),
-                                    tint = MaterialTheme.colorScheme.onPrimaryContainer)
-                            }
-                            Column(Modifier.weight(1f).padding(start = 16.dp)) {
-                                Text("Spotify", style = MaterialTheme.typography.titleLargeEmphasized)
-                                Text(profile?.let { "Connected as $it" } ?: "Ready to connect", style = MaterialTheme.typography.bodyMedium,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant)
-                            }
-                            if (profile != null) Icon(Icons.Rounded.CheckCircle, "Connected", tint = MaterialTheme.colorScheme.primary)
-                        }
-                        Button({ busy = true; error = null; scope.launch {
-                            try { clearCookies(); login = true }
-                            catch (cancelled: CancellationException) { throw cancelled }
-                            catch (_: Exception) { error = "Couldn't open Spotify login. Try again." }
-                            finally { busy = false }
-                        } }, Modifier.fillMaxWidth().heightIn(min = 56.dp), shape = MaterialTheme.shapes.medium, enabled = !busy) {
-                            Icon(painterResource(R.drawable.spotify), null, Modifier.size(20.dp)); Spacer(Modifier.width(8.dp))
-                            Text(if (profile == null) "Connect Spotify" else "Switch account")
-                        }
-                        if (profile != null) TextButton({ scope.launch {
-                            busy = true
-                            try {
-                                withContext(Dispatchers.IO) { AccountVault.get(this@SourceSettingsActivity).spotifyLogout() }
-                                clearBrowserData(); profile = null
-                            } catch (cancelled: CancellationException) { throw cancelled }
-                            catch (_: Exception) { error = "Couldn't disconnect Spotify. Try again." }
-                            finally { busy = false }
-                        } }, enabled = !busy) { Icon(Icons.Rounded.Logout, null); Spacer(Modifier.width(8.dp)); Text("Disconnect") }
-                    }
-                }
-                Text("Playback source", style = MaterialTheme.typography.titleLargeEmphasized)
-                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                    PlaybackChoice("YouTube Music", "Ready to play · no account needed", Icons.Rounded.PlayCircle,
-                        source == "youtube", !busy) { source = "youtube"; prefs.edit().putString("source", source).apply() }
-                    PlaybackChoice("Qobuz", qobuzProfile?.let { "Connected as $it" } ?: "Connect an account for lossless audio",
-                        Icons.Rounded.GraphicEq, source != "youtube", !busy) {
-                        if (qobuzProfile == null) qobuzExpanded = true
-                        else { source = "auto"; prefs.edit().putString("source", source).apply() }
-                    }
-                }
-                if (source != "youtube" && qobuzProfile != null) Surface(shape = MaterialTheme.shapes.medium,
-                    color = MaterialTheme.colorScheme.surfaceContainerLow) {
-                    Row(Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
-                        Column(Modifier.weight(1f)) {
-                            Text("YouTube Music fallback", style = MaterialTheme.typography.titleMediumEmphasized)
-                            Text("Use it when Qobuz has no matching song", style = MaterialTheme.typography.bodySmall)
-                        }
-                        Switch(source == "auto", { source = if (it) "auto" else "qobuz"; prefs.edit().putString("source", source).apply() })
-                    }
-                }
-                Surface(shape = MaterialTheme.shapes.large, color = MaterialTheme.colorScheme.surfaceContainerLow) {
-                    Column(Modifier.fillMaxWidth().padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            Icon(Icons.Rounded.GraphicEq, null, Modifier.size(28.dp))
-                            Column(Modifier.weight(1f).padding(start = 16.dp)) {
-                                Text("Qobuz account", style = MaterialTheme.typography.titleMediumEmphasized)
-                                Text(qobuzProfile ?: "Optional · account access required", style = MaterialTheme.typography.bodySmall,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant)
-                            }
-                            IconButton({ qobuzExpanded = !qobuzExpanded }) {
-                                Icon(if (qobuzExpanded) Icons.Rounded.ExpandLess else Icons.Rounded.ExpandMore,
-                                    if (qobuzExpanded) "Hide Qobuz settings" else "Show Qobuz settings")
-                            }
-                        }
-                        AnimatedVisibility(qobuzExpanded) {
-                        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                        Text("Use your Qobuz account and its matching app credentials.", style = MaterialTheme.typography.bodyMedium)
-                        OutlinedTextField(appId, { appId = it }, label = { Text("Qobuz app ID") }, singleLine = true, modifier = Modifier.fillMaxWidth())
-                        OutlinedTextField(appSecret, { appSecret = it }, label = { Text("Matching app secret") }, singleLine = true,
-                            visualTransformation = PasswordVisualTransformation(), modifier = Modifier.fillMaxWidth())
-                        OutlinedTextField(email, { email = it }, label = { Text("Qobuz email") }, singleLine = true, modifier = Modifier.fillMaxWidth())
-                        OutlinedTextField(password, { password = it }, label = { Text("Qobuz password") }, singleLine = true,
-                            visualTransformation = PasswordVisualTransformation(), modifier = Modifier.fillMaxWidth())
-                        Button({ busy = true; error = null; scope.launch {
-                            try {
-                                withContext(Dispatchers.IO) {
-                                    val vault = AccountVault.get(this@SourceSettingsActivity)
-                                    val secret = appSecret.trim().ifBlank {
-                                        require(vault.get("qobuz_app_id") == appId.trim()) { "Enter the secret matching the new app ID." }
-                                        vault.get("qobuz_app_secret").orEmpty()
-                                    }
-                                    QobuzSource(this@SourceSettingsActivity).login(email.trim(), password, appId.trim(), secret)
+            Box(Modifier.fillMaxSize().padding(padding).consumeWindowInsets(padding).imePadding(), contentAlignment = Alignment.TopCenter) {
+                Column(Modifier.widthIn(max = 720.dp).fillMaxWidth().verticalScroll(rememberScrollState())
+                    .padding(horizontal = 24.dp, vertical = 16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
+                    Surface(shape = MaterialTheme.shapes.large, color = MaterialTheme.colorScheme.surfaceContainerLow) {
+                        Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                SpotifyAvatar(avatar)
+                                Column(Modifier.weight(1f).padding(start = 16.dp)) {
+                                    Text(profile ?: "Spotify", style = MaterialTheme.typography.titleMediumEmphasized,
+                                        maxLines = 1, overflow = TextOverflow.Ellipsis)
+                                    Text(if (profile != null) "Spotify connected" else "Connect your account", style = MaterialTheme.typography.bodyMedium,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant)
                                 }
-                                password = ""; appSecret = ""; qobuzProfile = refresh().second
-                                source = "auto"; prefs.edit().putString("source", source).apply(); qobuzExpanded = false
-                            } catch (e: CancellationException) { throw e } catch (e: Exception) { error = e.message?.take(200) }
-                            finally { busy = false }
-                        } }, Modifier.fillMaxWidth().heightIn(min = 56.dp), enabled = !busy && appId.isNotBlank() && email.isNotBlank() && password.isNotBlank()) {
-                            Icon(Icons.Rounded.Login, null); Spacer(Modifier.width(8.dp)); Text("Connect Qobuz")
-                        }
-                        if (qobuzProfile != null) TextButton({ scope.launch {
-                            busy = true
-                            try {
-                                withContext(Dispatchers.IO) { AccountVault.get(this@SourceSettingsActivity).qobuzLogout() }
-                                qobuzProfile = null; source = "youtube"; prefs.edit().putString("source", source).apply()
-                            } catch (cancelled: CancellationException) { throw cancelled }
-                            catch (_: Exception) { error = "Couldn't disconnect Qobuz. Try again." }
-                            finally { busy = false }
-                        } }, enabled = !busy) { Icon(Icons.Rounded.Logout, null); Spacer(Modifier.width(8.dp)); Text("Disconnect Qobuz") }
-                        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                            listOf(6 to "CD quality", 7 to "24-bit / 96 kHz", 27 to "24-bit / 192 kHz").forEach { (value, label) ->
-                                FilterChip(quality == value, { quality = value; prefs.edit().putInt("qobuzFormat", value).apply() }, label = { Text(label) })
+                                if (profile != null) Icon(Icons.Rounded.CheckCircle, "Connected", tint = MaterialTheme.colorScheme.primary)
                             }
-                        }
-                        }
+                            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
+                                Button({ busy = true; error = null; scope.launch {
+                                    try { clearCookies(); login = true }
+                                    catch (cancelled: CancellationException) { throw cancelled }
+                                    catch (_: Exception) { error = "Couldn't open Spotify login. Try again." }
+                                    finally { busy = false }
+                                } }, Modifier.weight(1f).heightIn(min = 48.dp), shapes = ButtonDefaults.shapes(), enabled = !busy) {
+                                    Icon(if (profile == null) Icons.Rounded.Login else Icons.Rounded.SwitchAccount, null, Modifier.size(20.dp)); Spacer(Modifier.width(8.dp))
+                                    Text(if (profile == null) "Connect Spotify" else "Switch account")
+                                }
+                                if (profile != null) FilledTonalIconButton({ scope.launch {
+                                    busy = true
+                                    try {
+                                        withContext(Dispatchers.IO) { AccountVault.get(this@SourceSettingsActivity).spotifyLogout() }
+                                        clearBrowserData(); profile = null; avatar = null
+                                    } catch (cancelled: CancellationException) { throw cancelled }
+                                    catch (_: Exception) { error = "Couldn't disconnect Spotify. Try again." }
+                                    finally { busy = false }
+                                } }, enabled = !busy) { Icon(Icons.Rounded.Logout, "Disconnect Spotify") }
+                            }
                         }
                     }
-                }
-                Text("Playback cache", style = MaterialTheme.typography.titleLargeEmphasized)
-                Surface(shape = MaterialTheme.shapes.large, color = MaterialTheme.colorScheme.surfaceContainerLow) {
-                    Column(Modifier.fillMaxWidth().padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            Icon(Icons.Rounded.Storage, null, Modifier.size(28.dp))
-                            Column(Modifier.weight(1f).padding(start = 16.dp)) {
-                                Text(cache?.let { Formatter.formatFileSize(this@SourceSettingsActivity, it.totalBytes) } ?: "Checking storage…",
-                                    style = MaterialTheme.typography.headlineSmallEmphasized)
-                                Text("Recording links and buffered audio", style = MaterialTheme.typography.bodyMedium,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant)
-                            }
+                    Text("Playback", style = MaterialTheme.typography.titleMediumEmphasized)
+                    Column(Modifier.selectableGroup(), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                        PlaybackChoice("YouTube Music", "No account needed", Icons.Rounded.PlayCircle,
+                            source == "youtube", !busy, RoundedCornerShape(topStart = 20.dp, topEnd = 20.dp, bottomStart = 4.dp, bottomEnd = 4.dp)) {
+                            source = "youtube"; prefs.edit().putString("source", source).apply()
                         }
-                        cache?.let { stats ->
-                            Text("${stats.matching.matched} songs linked · ${stats.matching.pending} waiting",
-                                style = MaterialTheme.typography.titleMediumEmphasized)
-                            Text("${stats.matching.verified} recordings verified · ${stats.matching.songs} songs in the database",
-                                style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                            HorizontalDivider()
-                            Text("Recording database: ${Formatter.formatFileSize(this@SourceSettingsActivity, stats.matching.bytes)}",
-                                style = MaterialTheme.typography.bodyMedium)
-                            Text(stats.audioBytes?.let { "Buffered audio: ${Formatter.formatFileSize(this@SourceSettingsActivity, it)} · ${stats.audioSongs} songs" }
-                                ?: "Update Klang to see and clear its buffered audio.", style = MaterialTheme.typography.bodyMedium)
+                        PlaybackChoice("Qobuz", if (qobuzReady) "Lossless audio" else "Set up an account below",
+                            Icons.Rounded.GraphicEq, source != "youtube" && qobuzReady, !busy && qobuzReady,
+                            RoundedCornerShape(topStart = 4.dp, topEnd = 4.dp, bottomStart = 20.dp, bottomEnd = 20.dp)) {
+                            if (qobuzReady) { source = "auto"; prefs.edit().putString("source", source).apply() }
                         }
-                        Text("Liked songs and search results link in the background. Nearby queue songs also buffer ahead for faster playback.",
-                            style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                        FilledTonalButton({
-                            clearingCache = true; cacheMessage = null
-                            scope.launch {
-                                try {
-                                    cache = withContext(Dispatchers.IO) { cacheSettings.clear() }
-                                    cacheMessage = "Playback cache cleared. Your downloads and account are kept."
-                                } catch (cancelled: CancellationException) { throw cancelled }
-                                catch (_: Exception) { cacheMessage = "Couldn't clear all cached audio. Try again." }
-                                finally { clearingCache = false }
-                            }
-                        }, Modifier.fillMaxWidth(), enabled = !clearingCache && cache != null) {
-                            if (clearingCache) LoadingIndicator(Modifier.size(24.dp)) else Icon(Icons.Rounded.DeleteSweep, null)
-                            Spacer(Modifier.width(8.dp)); Text(if (clearingCache) "Clearing cache…" else "Clear playback cache")
-                        }
-                        cacheMessage?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
                     }
-                }
-                if (busy) LoadingIndicator()
-                error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodyMedium) }
-                Text("Downloads keep the matched recording on your device for offline listening.", style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    if (source != "youtube" && qobuzReady) Surface(shape = MaterialTheme.shapes.medium,
+                        color = MaterialTheme.colorScheme.surfaceContainerLow) {
+                        Row(Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Column(Modifier.weight(1f)) {
+                                Text("YouTube Music fallback", style = MaterialTheme.typography.titleMediumEmphasized)
+                            }
+                            Switch(source == "auto", { source = if (it) "auto" else "qobuz"; prefs.edit().putString("source", source).apply() })
+                        }
+                    }
+                    Surface(shape = MaterialTheme.shapes.large, color = MaterialTheme.colorScheme.surfaceContainerLow) {
+                        Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Icon(Icons.Rounded.GraphicEq, null, Modifier.size(28.dp))
+                                Column(Modifier.weight(1f).padding(start = 16.dp)) {
+                                    Text("Qobuz account", style = MaterialTheme.typography.titleMediumEmphasized)
+                                    Text(if (qobuzReady) qobuzProfile ?: "Connected" else "Setup required", style = MaterialTheme.typography.bodyMedium,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                }
+                                if (!qobuzReady && !qobuzExpanded) FilledTonalButton({ qobuzExpanded = true }, enabled = !busy) { Text("Set up") }
+                                else IconButton({ qobuzExpanded = !qobuzExpanded }, enabled = !busy) {
+                                    Icon(if (qobuzExpanded) Icons.Rounded.ExpandLess else Icons.Rounded.ExpandMore,
+                                        if (qobuzExpanded) "Hide Qobuz settings" else "Show Qobuz settings")
+                                }
+                            }
+                            AnimatedVisibility(qobuzExpanded) {
+                                Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                                    OutlinedTextField(appId, { appId = it }, label = { Text("Qobuz app ID") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                                    OutlinedTextField(appSecret, { appSecret = it }, label = { Text("Matching app secret") }, singleLine = true,
+                                        visualTransformation = PasswordVisualTransformation(), modifier = Modifier.fillMaxWidth())
+                                    OutlinedTextField(email, { email = it }, label = { Text("Qobuz email") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                                    OutlinedTextField(password, { password = it }, label = { Text("Qobuz password") }, singleLine = true,
+                                        visualTransformation = PasswordVisualTransformation(), modifier = Modifier.fillMaxWidth())
+                                    Button({ busy = true; error = null; scope.launch {
+                                        try {
+                                            withContext(Dispatchers.IO) {
+                                                val vault = AccountVault.get(this@SourceSettingsActivity)
+                                                val secret = appSecret.trim().ifBlank {
+                                                    require(vault.get("qobuz_app_id") == appId.trim()) { "Enter the secret matching the new app ID." }
+                                                    vault.get("qobuz_app_secret").orEmpty()
+                                                }
+                                                QobuzSource(this@SourceSettingsActivity).login(email.trim(), password, appId.trim(), secret)
+                                            }
+                                            password = ""; appSecret = ""; loadAccounts(); qobuzExpanded = false
+                                        } catch (e: CancellationException) { throw e } catch (e: Exception) { error = e.message?.take(200) }
+                                        finally { busy = false }
+                                    } }, Modifier.fillMaxWidth().heightIn(min = 48.dp), shapes = ButtonDefaults.shapes(),
+                                        enabled = !busy && appId.isNotBlank() && (appSecret.isNotBlank() || savedAppSecret) && email.isNotBlank() && password.isNotBlank()) {
+                                        Icon(Icons.Rounded.Login, null); Spacer(Modifier.width(8.dp)); Text("Connect Qobuz")
+                                    }
+                                    if (qobuzReady) TextButton({ scope.launch {
+                                        busy = true
+                                        try {
+                                            withContext(Dispatchers.IO) { AccountVault.get(this@SourceSettingsActivity).qobuzLogout() }
+                                            qobuzProfile = null; qobuzReady = false; savedAppSecret = false; source = "youtube"; prefs.edit().putString("source", source).apply()
+                                        } catch (cancelled: CancellationException) { throw cancelled }
+                                        catch (_: Exception) { error = "Couldn't disconnect Qobuz. Try again." }
+                                        finally { busy = false }
+                                    } }, enabled = !busy) { Icon(Icons.Rounded.Logout, null); Spacer(Modifier.width(8.dp)); Text("Disconnect Qobuz") }
+                                    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                        listOf(6 to "CD quality", 7 to "24-bit / 96 kHz", 27 to "24-bit / 192 kHz").forEach { (value, label) ->
+                                            FilterChip(quality == value, { quality = value; prefs.edit().putInt("qobuzFormat", value).apply() }, label = { Text(label) })
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    Text("Playback cache", style = MaterialTheme.typography.titleMediumEmphasized)
+                    Surface(shape = MaterialTheme.shapes.large, color = MaterialTheme.colorScheme.surfaceContainerLow) {
+                        Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Icon(Icons.Rounded.Storage, null, Modifier.size(28.dp))
+                                Column(Modifier.weight(1f).padding(start = 16.dp)) {
+                                    Text(cache?.let { Formatter.formatFileSize(this@SourceSettingsActivity, it.totalBytes) } ?: "Checking storage…",
+                                        style = MaterialTheme.typography.headlineSmallEmphasized)
+                                }
+                            }
+                            cache?.let { stats ->
+                                Text("${stats.matching.matched} linked · ${stats.matching.pending} waiting",
+                                    style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                if (stats.scanning || stats.matching.pending > 0) {
+                                    if (stats.scanning) LinearProgressIndicator(Modifier.fillMaxWidth())
+                                    else LinearProgressIndicator(progress = { stats.matching.matched.toFloat() / stats.matching.songs.coerceAtLeast(1) },
+                                        modifier = Modifier.fillMaxWidth())
+                                }
+                            }
+                            TextButton({
+                                clearingCache = true; cacheMessage = null
+                                scope.launch {
+                                    try {
+                                        cache = withContext(Dispatchers.IO) { cacheSettings.clear() }
+                                        cacheMessage = "Cache cleared"
+                                    } catch (cancelled: CancellationException) { throw cancelled }
+                                    catch (_: Exception) { cacheMessage = "Couldn't clear all cached audio. Try again." }
+                                    finally { clearingCache = false }
+                                }
+                            }, Modifier.align(Alignment.End).heightIn(min = 48.dp), enabled = !clearingCache && !busy && cache != null) {
+                                if (clearingCache) LoadingIndicator(Modifier.size(24.dp)) else Icon(Icons.Rounded.DeleteSweep, null)
+                                Spacer(Modifier.width(8.dp)); Text(if (clearingCache) "Clearing…" else "Clear cache")
+                            }
+                            cacheMessage?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
+                        }
+                    }
+                    if (busy) LoadingIndicator()
+                    error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodyMedium) }
+                    Spacer(Modifier.height(8.dp))
+            }
             }
         }
     }
 
     @Composable private fun PlaybackChoice(title: String, subtitle: String, icon: ImageVector,
-        selected: Boolean, enabled: Boolean, select: () -> Unit) {
-        Surface(onClick = select, enabled = enabled, modifier = Modifier.fillMaxWidth(), shape = MaterialTheme.shapes.medium,
-            color = if (selected) MaterialTheme.colorScheme.secondaryContainer else MaterialTheme.colorScheme.surfaceContainerLow,
-            contentColor = if (selected) MaterialTheme.colorScheme.onSecondaryContainer else MaterialTheme.colorScheme.onSurface) {
+        selected: Boolean, enabled: Boolean, shape: RoundedCornerShape, select: () -> Unit) {
+        val fill by animateColorAsState(if (selected) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceContainerLow,
+            animationSpec = MaterialTheme.motionScheme.fastEffectsSpec(), label = "Playback source")
+        val content = if (selected) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurface
+        Surface(modifier = Modifier.fillMaxWidth().selectable(selected, enabled = enabled, role = Role.RadioButton, onClick = select),
+            shape = shape, color = fill, contentColor = if (enabled) content else content.copy(alpha = .38f)) {
             Row(Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
-                Icon(icon, null, Modifier.size(28.dp))
+                Icon(icon, null, Modifier.size(24.dp))
                 Column(Modifier.weight(1f).padding(horizontal = 16.dp)) {
                     Text(title, style = MaterialTheme.typography.titleMediumEmphasized)
-                    Text(subtitle, style = MaterialTheme.typography.bodySmall)
+                    Text(subtitle, style = MaterialTheme.typography.bodyMedium)
                 }
-                RadioButton(selected, null)
+                RadioButton(selected, null, enabled = enabled)
             }
         }
     }

@@ -26,7 +26,7 @@ internal class RecordingSources private constructor(private val context: Context
             require(item.optBoolean("available", true) && !item.optBoolean("local")) { "This Spotify item isn't available for matching." }
             val vault = AccountVault.get(context)
             val account = vault.revision("spotify") to vault.revision("qobuz")
-            val preference = playbackPreference(prefs.getString("source", null), vault.get("qobuz_token") != null)
+            val preference = playbackPreference(prefs.getString("source", null), vault.qobuzConnected())
             val format = prefs.getInt("qobuzFormat", 27)
             val key = item.getString("id") + ":" + preference + ":" + format +
                 ":" + account.first + ":" + account.second

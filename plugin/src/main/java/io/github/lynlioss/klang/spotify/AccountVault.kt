@@ -33,6 +33,7 @@ internal class AccountVault private constructor(private val context: Context) {
         check(edit.commit()) { "Couldn't save the account on this device" }
     }
     fun revision(service: String) = get("${service}_generation") ?: "anonymous"
+    fun qobuzConnected() = snapshot(listOf("qobuz_token", "qobuz_app_id", "qobuz_app_secret")).values.all { !it.isNullOrBlank() }
     suspend fun spotifyLogout() = SpotifySession.disconnect(context)
     fun qobuzLogout() = putAll(mapOf("qobuz_token" to null, "qobuz_profile" to null,
         "qobuz_app_secret" to null, "qobuz_generation" to UUID.randomUUID().toString()))

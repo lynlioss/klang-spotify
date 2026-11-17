@@ -12,8 +12,8 @@ android {
         applicationId = "io.github.lynlioss.klang.spotify"
         minSdk = 36
         targetSdk = 36
-        versionCode = 6
-        versionName = "1.1.2"
+        versionCode = 7
+        versionName = "1.2.0"
         ndk { abiFilters += "arm64-v8a" }
     }
     signingConfigs { create("release") {

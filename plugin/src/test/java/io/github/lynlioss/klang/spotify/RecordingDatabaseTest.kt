@@ -13,6 +13,7 @@ import org.robolectric.RobolectricTestRunner
 import org.robolectric.RuntimeEnvironment
 import org.robolectric.annotation.Config
 import java.io.File
+import kotlinx.coroutines.*
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [36], manifest = Config.NONE)
@@ -85,5 +86,82 @@ class RecordingDatabaseTest {
         repeat(30) { page -> database.enqueue((0 until 100).map { item("liked-${page * 100 + it}") }, "a") }
         assertEquals(3_000, database.stats("a").songs)
         assertEquals(3_000, database.stats("a").pending)
+    }
+    @Test fun concurrentWorkersClaimDifferentSongsAndReleasedWorkCanResume() = runBlocking {
+        database.enqueue((0 until 8).map { item("song-$it") }, "a")
+        val generation = database.generation
+        val tasks = (0 until 4).map { async(Dispatchers.Default) { database.claimMatches("a", 1, generation).single() } }.awaitAll()
+        assertEquals(4, tasks.map { it.key }.distinct().size)
+        val rest = database.claimMatches("a", 4, generation)
+        assertTrue(rest.none { next -> tasks.any { it.key == next.key } })
+        assertTrue(database.claimMatches("a", 1, generation).isEmpty())
+        database.release(tasks.first(), generation)
+        assertEquals(tasks.first().key, database.claimMatches("a", 1, generation).single().key)
+        assertTrue(database.claimMatches("b", 1, generation).isEmpty())
+    }
+    @Test fun libraryCursorsAndDiscoveredSavedCollectionsSurviveRestarts() {
+        val generation = database.generation
+        database.seedLibrary("a", generation)
+        val liked = database.claimLibrary("a", 1, generation).single()
+        assertEquals("liked", liked.kind)
+        database.saveLibraryPage(liked, listOf(item("first")), 100, generation)
+        database.close(); database = RecordingDatabase(context)
+        val resumed = database.claimLibrary("a", 1, database.generation).single()
+        assertEquals(100, resumed.offset)
+        database.saveLibraryPage(resumed, listOf(item("second")), null, database.generation)
+        val playlists = database.claimLibrary("a", 1, database.generation).single()
+        assertEquals("playlists", playlists.kind)
+        val saved = JSONObject().put("id", "spotify:playlist:saved").put("kind", "playlist")
+        database.saveLibraryPage(playlists, listOf(saved, saved), null, database.generation)
+        val albums = database.claimLibrary("a", 1, database.generation).single()
+        database.saveLibraryPage(albums, listOf(JSONObject().put("id", "spotify:album:saved").put("kind", "album")), null, database.generation)
+        val collections = database.claimLibrary("a", 3, database.generation)
+        assertEquals(setOf("playlist", "album"), collections.map { it.kind }.toSet())
+        assertEquals(2, collections.size)
+        collections.forEach { database.saveLibraryPage(it, listOf(item("first")), null, database.generation) }
+        assertFalse(database.libraryPending("a"))
+        assertEquals(2, database.stats("a").songs)
+        database.seedLibrary("a", database.generation, force = true)
+        assertEquals(0, database.claimLibrary("a", 1, database.generation).single().offset)
+    }
+    @Test fun failedOrClearedLibraryPagesCannotLoseWorkOrRepopulateTheCache() {
+        val generation = database.generation
+        database.seedLibrary("a", generation)
+        val task = database.claimLibrary("a", 1, generation).single()
+        database.failed(task, generation)
+        assertTrue(database.libraryPending("a"))
+        assertEquals("playlists", database.claimLibrary("a", 1, generation).single().kind)
+        database.clear()
+        database.close(); database = RecordingDatabase(context)
+        database.saveLibraryPage(task, listOf(item()), 100, generation)
+        assertFalse(database.libraryPending("a"))
+        assertEquals(0, database.stats("a").songs)
+    }
+    @Test fun finishedPageCannotReleaseTheNextWorkersCursorLease() {
+        database.seedLibrary("a", database.generation)
+        val first = database.claimLibrary("a", 1, database.generation).single()
+        database.saveLibraryPage(first, listOf(item()), 100, database.generation)
+        val next = database.claimLibrary("a", 1, database.generation).single()
+        assertEquals(100, next.offset)
+        database.release(first, database.generation)
+        assertEquals("playlists", database.claimLibrary("a", 1, database.generation).single().kind)
+    }
+    @Test fun upgradingVersionOneRetainsExistingLinksAndAddsResumableLibraryDiscovery() {
+        context.openOrCreateDatabase("recording-links.db", Context.MODE_PRIVATE, null).use { old ->
+            old.execSQL(RecordingDatabase.SCHEMA.replace(", leaseUntil INTEGER NOT NULL DEFAULT 0", ""))
+            old.execSQL("CREATE TABLE migrations (name TEXT PRIMARY KEY)")
+            old.execSQL("INSERT INTO migrations(name) VALUES('json')")
+            old.execSQL("INSERT INTO songs(key,account,item,candidates,verified,matchedAt) VALUES(?,?,?,?,1,?)",
+                arrayOf<Any>(recordingMatchKey(song, "a"), "a", item().toString(), JSONArray().put(recordingCredits(recording())).toString(), System.currentTimeMillis()))
+            old.version = 1
+        }
+        assertEquals(1, database.stats("a").verified)
+        assertEquals("abcdefghijk", database.candidates(song, "a").single().getString("id"))
+        database.seedLibrary("a", database.generation)
+        assertEquals(3, database.claimLibrary("a", 3, database.generation).size)
+    }
+    @Test fun fullLibrariesAreNotTruncatedAtTwentyThousandSongs() {
+        database.enqueue((0 until 20_001).map { item("library-$it") }, "a")
+        assertEquals(20_001, database.stats("a").songs)
     }
 }

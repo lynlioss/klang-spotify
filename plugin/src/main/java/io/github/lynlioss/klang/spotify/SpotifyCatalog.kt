@@ -21,14 +21,14 @@ internal class SpotifyCatalog(private val context: Context) {
     }
     suspend fun call(operation: String, args: JSONObject): JSONObject {
         if (operation == "accounts") return JSONObject().put("spotify", vault.get("sp_dc") != null).put("connected", vault.get("sp_dc") != null)
-            .put("qobuz", vault.get("qobuz_token") != null).put("profile", vault.get("spotify_profile"))
+            .put("qobuz", vault.qobuzConnected()).put("profile", vault.get("spotify_profile"))
             .put("revision", vault.revision("spotify")).put("playbackRevision", buildString {
                 val prefs = context.getSharedPreferences("source_preferences", Context.MODE_PRIVATE)
-                append(vault.revision("qobuz")); append(':'); append(playbackPreference(prefs.getString("source", null), vault.get("qobuz_token") != null))
+                append(vault.revision("qobuz")); append(':'); append(playbackPreference(prefs.getString("source", null), vault.qobuzConnected()))
                 append(':'); append(prefs.getInt("qobuzFormat", 27))
             })
         if (operation == "account.logout") { vault.spotifyLogout(); return JSONObject().put("ok", true) }
-        return SpotifySession.use(context) {
+        return SpotifySession.use(context, mutation = operation.startsWith("playlist.") || operation.startsWith("library.")) {
             if (args.has("accountRevision")) require(args.getString("accountRevision") == vault.revision("spotify")) {
                 "The Spotify account changed. Refresh before editing this library."
             }
@@ -36,7 +36,7 @@ internal class SpotifyCatalog(private val context: Context) {
                 val me = Spotify.me().getOrThrow()
                 vault.putAll(mapOf("spotify_user_id" to me.id, "spotify_profile" to (me.displayName ?: me.id)))
             }
-            val offset = args.optInt("offset").coerceIn(0, 100_000)
+            val offset = args.optInt("offset").coerceAtLeast(0)
             val limit = args.optInt("limit", 50).coerceIn(1, 100)
             when (operation) {
                 "home" -> {
@@ -161,7 +161,32 @@ internal class SpotifyCatalog(private val context: Context) {
                 if (operation in setOf("library", "search", "lookup")) runCatching {
                     BackgroundMatches.observe(context, result, if (operation == "search") 1 else 0)
                 }
+                if (operation == "library" || operation.startsWith("library.") || operation.startsWith("playlist."))
+                    BackgroundLibrary.schedule(context, force = operation != "library")
             }
+        }
+    }
+    /** Library discovery uses one request per page, including followed playlists inside folders. */
+    suspend fun libraryPage(task: LibraryTask): JSONObject = SpotifySession.use(context) {
+        require(vault.revision("spotify") == task.account) { "The Spotify account changed." }
+        val limit = 100
+        when (task.kind) {
+            "liked" -> Spotify.likedSongs(limit, task.offset).getOrThrow().let { page ->
+                CatalogCodec.page("Liked songs", page.items.map { CatalogCodec.track(it.track) }, task.offset, page.total, page.limit)
+            }
+            "playlists" -> Spotify.myPlaylists(limit, task.offset).getOrThrow().let { page ->
+                CatalogCodec.page("Playlists", page.items.map { CatalogCodec.playlist(it, userId) }, task.offset, page.total, page.limit)
+            }
+            "albums" -> SpotifyLibraryQueryApi.myAlbums(limit, task.offset).getOrThrow().let { page ->
+                CatalogCodec.page("Albums", page.items.map(CatalogCodec::album), task.offset, page.total, page.limit)
+            }
+            "playlist" -> Spotify.playlistTracks(id(task.id, "playlist"), limit, task.offset).getOrThrow().let { page ->
+                CatalogCodec.page("Playlist", page.items.mapNotNull { it.track?.let { track -> CatalogCodec.track(track) } }, task.offset, page.total, page.limit)
+            }
+            "album" -> SpotifyAlbumApi.album(id(task.id, "album"), task.offset, limit).getOrThrow().let { album ->
+                CatalogCodec.page(album.name, album.tracks?.items.orEmpty().map { CatalogCodec.track(it) }, task.offset, album.totalTracks, album.tracks?.limit ?: limit)
+            }
+            else -> error("Unsupported library collection")
         }
     }
     private suspend fun lookup(uri: String, offset: Int, limit: Int): JSONObject = when {
