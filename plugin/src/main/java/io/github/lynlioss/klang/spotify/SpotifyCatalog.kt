@@ -28,6 +28,13 @@ internal class SpotifyCatalog(private val context: Context) {
                 append(':'); append(prefs.getInt("qobuzFormat", 27))
             })
         if (operation == "account.logout") { vault.spotifyLogout(); return JSONObject().put("ok", true) }
+        // Song properties ask for the cached link state only; never touch the network or require a session.
+        if (operation == "lookup" && args.optBoolean("statusOnly")) {
+            val item = args.optJSONObject("item") ?: error("Missing song details")
+            val account = vault.revision("spotify")
+            return JSONObject().put("sourceStatus", RecordingDatabase.get(context).status(CatalogCodec.importSong(item), account).toJson(item))
+                .put("accountRevision", account)
+        }
         return SpotifySession.use(context, mutation = operation.startsWith("playlist.") || operation.startsWith("library.")) {
             if (args.has("accountRevision")) require(args.getString("accountRevision") == vault.revision("spotify")) {
                 "The Spotify account changed. Refresh before editing this library."

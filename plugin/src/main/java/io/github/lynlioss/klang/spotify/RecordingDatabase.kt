@@ -23,6 +23,7 @@ internal fun recordingCredits(info: JSONObject): JSONObject = JSONObject().apply
 
 internal data class MatchTask(val key: String, val account: String, val item: JSONObject, val attempts: Int)
 internal data class MatchStats(val songs: Int, val matched: Int, val verified: Int, val pending: Int, val bytes: Long)
+internal data class MatchStatus(val state: String, val verified: Boolean, val retryAt: Long, val candidates: List<JSONObject>)
 internal data class LibraryTask(val key: String, val account: String, val kind: String, val id: String, val offset: Int, val attempts: Int, val leaseUntil: Long = 0)
 
 /** Durable queue and per-song updates avoid rewriting a whole library for each recording match. */
@@ -220,6 +221,27 @@ internal class RecordingDatabase(private val context: Context) : SQLiteOpenHelpe
     }
     @Synchronized fun libraryPending(account: String): Boolean = readableDatabase.rawQuery(
         "SELECT 1 FROM library_pages WHERE account=? AND scannedAt=0 LIMIT 1", arrayOf(account)).use { it.moveToFirst() }
+    /** Per-song link state for song properties; never touches the network or playback URLs. */
+    @Synchronized fun status(song: ImportSong, account: String): MatchStatus {
+        migrate(account)
+        val now = System.currentTimeMillis()
+        return readableDatabase.rawQuery(
+            "SELECT candidates, verified, matchedAt, retryAt, leaseUntil FROM songs WHERE key=? AND account=?",
+            arrayOf(recordingMatchKey(song, account), account)).use { cursor ->
+            if (!cursor.moveToFirst()) return MatchStatus("none", false, 0, emptyList())
+            val list = runCatching { JSONArray(cursor.getString(0)) }.getOrDefault(JSONArray())
+            val candidates = (0 until list.length()).mapNotNull(list::optJSONObject)
+            val verified = cursor.getInt(1) == 1 && cursor.getLong(2) >= now - MAX_AGE
+            val state = when {
+                candidates.isNotEmpty() && cursor.getLong(2) >= now - MAX_AGE -> "linked"
+                cursor.getLong(4) > now -> "matching"
+                cursor.getLong(3) > now -> "waiting"
+                candidates.isNotEmpty() -> "expired"
+                else -> "queued"
+            }
+            MatchStatus(state, verified, cursor.getLong(3), candidates)
+        }
+    }
     @Synchronized fun stats(account: String): MatchStats {
         migrate(account)
         return readableDatabase.rawQuery("SELECT COUNT(*), SUM(candidates!='[]' AND matchedAt>=?), SUM(verified=1 AND matchedAt>=?), SUM(candidates='[]' OR matchedAt<?) FROM songs WHERE account=?",

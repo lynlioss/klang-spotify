@@ -1,6 +1,7 @@
 package app.lynli.klang.importing
 
 import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.CompletableDeferred
 import org.json.JSONArray
 import org.json.JSONObject
 import java.time.LocalDate
@@ -12,12 +13,21 @@ import java.time.format.DateTimeFormatter
  * See docs/music-imports.md for protocol references and upstream limitations.
  */
 internal object YouTubeCatalog {
-    suspend fun search(song: ImportSong): List<JSONObject> {
+    private const val ALBUM_TTL = 10 * 60_000L
+    private const val ALBUM_CAPACITY = 256
+    // Several songs from one album share one search, making full-library matching much faster.
+    private val albumCache = LinkedHashMap<String, Pair<Long, List<JSONObject>>>(16, .75f, true)
+    private val albumInflight = mutableMapOf<String, CompletableDeferred<List<JSONObject>>>()
+    private val albumLock = Any()
+
+    suspend fun search(song: ImportSong): List<JSONObject> = search("${song.artist} ${song.title}")
+
+    private suspend fun search(query: String): List<JSONObject> {
         val date = LocalDate.now(ZoneOffset.UTC).format(DateTimeFormatter.BASIC_ISO_DATE)
         val body = JSONObject().put("context", JSONObject().put("client", JSONObject()
             .put("clientName", "WEB_REMIX").put("clientVersion", "1.$date.01.00")
             .put("hl", "en").put("gl", "US")))
-            .put("query", "${song.artist} ${song.title}")
+            .put("query", query)
             .put("params", "EgWKAQIIAWoKEAkQBRAKEAMQBA%3D%3D")
         return parseSearch(JSONObject(ImportHttp.postJson(
             "https://music.youtube.com/youtubei/v1/search?prettyPrint=false", body.toString(),
@@ -31,6 +41,53 @@ internal object YouTubeCatalog {
     } catch (_: Exception) {
         // A changed catalog API must not disable yt-dlp's independent search fallback.
         emptyList()
+    }
+
+    /** Reuse an album search already made for another track; playback additionally gets a cheap first try. */
+    fun cachedAlbum(song: ImportSong): List<JSONObject> {
+        val key = albumKey(song) ?: return emptyList()
+        synchronized(albumLock) {
+            val entry = albumCache[key] ?: return emptyList()
+            if (System.currentTimeMillis() - entry.first <= ALBUM_TTL) return entry.second
+            albumCache.remove(key)
+            return emptyList()
+        }
+    }
+
+    suspend fun searchAlbumOrEmpty(song: ImportSong): List<JSONObject> {
+        cachedAlbum(song).takeIf { it.isNotEmpty() }?.let { return it }
+        val key = albumKey(song) ?: return emptyList()
+        val (request, owner) = synchronized(albumLock) {
+            val existing = albumInflight[key]
+            if (existing != null) existing to false
+            else CompletableDeferred<List<JSONObject>>().also { albumInflight[key] = it } to true
+        }
+        // Parallel workers searching the same album share one request instead of tripping rate limits.
+        if (!owner) return try { request.await() } catch (cancelled: CancellationException) { throw cancelled }
+            catch (_: Exception) { emptyList() }
+        try {
+            val query = "${song.albumArtist.ifBlank { song.artist }} ${song.album}".trim()
+            val results = try { search(query) } catch (cancelled: CancellationException) {
+                request.cancel(cancelled); throw cancelled
+            } catch (error: Exception) {
+                request.completeExceptionally(error); return emptyList()
+            }
+            if (results.isNotEmpty()) synchronized(albumLock) {
+                albumCache[key] = System.currentTimeMillis() to results
+                while (albumCache.size > ALBUM_CAPACITY) albumCache.remove(albumCache.keys.first())
+            }
+            request.complete(results)
+            return results
+        } finally {
+            synchronized(albumLock) { if (albumInflight[key] === request) albumInflight.remove(key) }
+        }
+    }
+
+    internal fun albumKey(song: ImportSong): String? {
+        val album = song.album.trim().takeIf { it != "null" } ?: return null
+        val artist = song.albumArtist.ifBlank { song.artist }.substringBefore(',').trim().takeIf { it != "null" } ?: return null
+        if (album.length < 2 || artist.isBlank()) return null
+        return "${artist.lowercase(java.util.Locale.ROOT)}|${album.lowercase(java.util.Locale.ROOT)}"
     }
 
     internal fun parseSearch(response: JSONObject): List<JSONObject> {

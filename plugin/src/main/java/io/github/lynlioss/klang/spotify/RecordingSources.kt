@@ -20,8 +20,8 @@ internal class RecordingSources private constructor(private val context: Context
     private val matches = RecordingDatabase.get(context)
     private val locks = RecordingLocks()
     private val prefs get() = context.getSharedPreferences("source_preferences", Context.MODE_PRIVATE)
-    suspend fun resolve(item: JSONObject, processId: String, refresh: Boolean = false): JSONObject {
-        BackgroundMatches.playbackStarted()
+    suspend fun resolve(item: JSONObject, processId: String, refresh: Boolean = false, playback: Boolean = true): JSONObject {
+        if (playback) BackgroundMatches.playbackStarted()
         try {
             require(item.optBoolean("available", true) && !item.optBoolean("local")) { "This Spotify item isn't available for matching." }
             val vault = AccountVault.get(context)
@@ -52,7 +52,7 @@ internal class RecordingSources private constructor(private val context: Context
                 }
                 result
             }
-        } finally { BackgroundMatches.playbackFinished() }
+        } finally { if (playback) BackgroundMatches.playbackFinished() }
     }
     private suspend fun youtube(item: JSONObject, processId: String, account: String): JSONObject {
         val song = CatalogCodec.importSong(item)
@@ -65,6 +65,17 @@ internal class RecordingSources private constructor(private val context: Context
                     extract = { url -> fastExtract(url, processId) })
             } catch (cancelled: CancellationException) { throw cancelled }
             catch (_: Exception) { runCatching { matches.reject(song, account) } }
+        }
+        if (info == null) {
+            // A song from an album the matcher already searched resolves without another catalog request.
+            val cached = YouTubeCatalog.cachedAlbum(song)
+            if (cached.isNotEmpty()) {
+                try {
+                    info = findRecording(song, cached, searchVideos = { emptyList() },
+                        extract = { url -> fastExtract(url, processId) })
+                } catch (cancelled: CancellationException) { throw cancelled }
+                catch (_: Exception) { /* Fall back to a search for this exact song. */ }
+            }
         }
         if (info == null) {
             val catalog = try { withTimeout(5_000) { YouTubeCatalog.searchOrEmpty(song) } }

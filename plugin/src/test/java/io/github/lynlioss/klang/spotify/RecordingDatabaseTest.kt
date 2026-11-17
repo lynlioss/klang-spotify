@@ -164,4 +164,25 @@ class RecordingDatabaseTest {
         database.enqueue((0 until 20_001).map { item("library-$it") }, "a")
         assertEquals(20_001, database.stats("a").songs)
     }
+    @Test fun reportsPerSongLinkStateForSongProperties() {
+        assertEquals("none", database.status(song, "a").state)
+        database.enqueue(listOf(item()), "a")
+        assertEquals("queued", database.status(song, "a").state)
+        val task = requireNotNull(database.next("a"))
+        database.save(task, listOf(recording().put("catalog", true)), false, database.generation)
+        val status = database.status(song, "a")
+        assertEquals("linked", status.state)
+        assertFalse(status.verified)
+        val json = status.toJson(item())
+        assertEquals("https://music.youtube.com/watch?v=abcdefghijk", json.getString("youtube"))
+        assertEquals("https://open.spotify.com/track/example", json.getString("spotify"))
+        assertEquals("Song", json.getJSONObject("recording").getString("title"))
+        assertFalse(json.toString().contains("https://audio.test"))
+        assertFalse(json.toString().contains("private"))
+    }
+    @Test fun waitingStateFollowsTheRetryBackoff() {
+        database.enqueue(listOf(item()), "a")
+        database.failed(requireNotNull(database.next("a")), database.generation)
+        assertEquals("waiting", database.status(song, "a").state)
+    }
 }

@@ -101,10 +101,16 @@ class RecordingMatchWorker(context: Context, params: WorkerParameters) : Corouti
                         val task = database.claimMatches(account, 1, generation).firstOrNull() ?: break
                         try {
                             val song = CatalogCodec.importSong(task.item)
-                            val candidates = BackgroundMatches.catalogWork {
-                                withTimeout(8_000) { YouTubeCatalog.searchOrEmpty(song) }
-                            }.map { it to recordingScore(song, it) }.filter { it.second >= .8 }
-                                .sortedByDescending { it.second }.take(4).map { it.first }
+                            val scored = BackgroundMatches.catalogWork {
+                                // One album search serves every track on it; fall back to the song itself only when the album finds nothing.
+                                val album = withTimeout(8_000) { YouTubeCatalog.searchAlbumOrEmpty(song) }
+                                    .map { it to recordingScore(song, it) }.filter { it.second >= .8 }
+                                album.ifEmpty {
+                                    withTimeout(8_000) { YouTubeCatalog.searchOrEmpty(song) }
+                                        .map { it to recordingScore(song, it) }.filter { it.second >= .8 }
+                                }
+                            }
+                            val candidates = scored.sortedByDescending { it.second }.take(4).map { it.first }
                             if (active()) {
                                 if (candidates.isEmpty()) database.failed(task, generation)
                                 else database.save(task, candidates, verified = false, expectedGeneration = generation)

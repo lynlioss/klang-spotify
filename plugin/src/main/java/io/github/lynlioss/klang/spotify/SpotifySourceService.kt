@@ -11,7 +11,8 @@ import java.util.concurrent.ConcurrentHashMap
 /** API 1 service. Catalog, source matching and downloads execute entirely under this APK's UID. */
 class SpotifySourceService : Service() {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
-    private val jobs = ConcurrentHashMap<String, Job>()
+    private class Task(val job: Job, val speculative: Boolean, val reply: Messenger, val token: String)
+    private val jobs = ConcurrentHashMap<String, Task>()
     private lateinit var catalog: SpotifyCatalog
     private lateinit var sources: RecordingSources
     private val messenger = Messenger(object : Handler(Looper.getMainLooper()) {
@@ -21,31 +22,49 @@ class SpotifySourceService : Service() {
             val reply = message.replyTo ?: run { output?.close(); return }
             val token = message.data.getString("token")?.takeIf { it.length in 1..100 } ?: run { output?.close(); return }
             val key = "${message.sendingUid}:$token"
-            if (message.what == 3) { jobs.remove(key)?.cancel(); ImportEngine.stop(key); output?.close(); return }
-            if (message.what !in listOf(1, 2, 20) || jobs.containsKey(key) || jobs.size >= 12) { output?.close(); return }
+            if (message.what == 3) { jobs.remove(key)?.job?.cancel(); ImportEngine.stop(key); output?.close(); return }
             val command = message.what
+            if (command !in listOf(1, 2, 20)) { output?.close(); return }
             val payload = message.data.getString("json").orEmpty()
             if (payload.length > 400_000) { output?.close(); send(reply, 12, token, "Request is too large"); return }
-            val death = IBinder.DeathRecipient { jobs.remove(key)?.cancel(); ImportEngine.stop(key) }
+            val request = if (command == 20) runCatching { JSONObject(payload) }.getOrNull() else null
+            if (command == 20 && request == null) { output?.close(); send(reply, 12, token, "The source received an invalid request."); return }
+            val operation = request?.optString("operation").orEmpty()
+            val args = request?.optJSONObject("args") ?: JSONObject()
+            // Hosts before the playback flag sent every resolve as foreground; keeping that default is safe.
+            val playback = command == 2 || (command == 20 && operation == "stream.resolve" && args.optBoolean("playback", true))
+            val speculative = command == 20 && operation == "stream.resolve" && !playback
+            if (jobs.containsKey(key)) { output?.close(); return }
+            // Prefetch may be dropped, but a real playback request must never wait behind background work.
+            if (jobs.size >= MAX_JOBS) {
+                if (speculative) { output?.close(); send(reply, 12, token, BUSY); return }
+                jobs.entries.firstOrNull { it.value.speculative }?.let { entry ->
+                    if (jobs.remove(entry.key) != null) {
+                        entry.value.job.cancel(); ImportEngine.stop(entry.key)
+                        // Tell the host promptly instead of leaving its prefetch worker waiting.
+                        send(entry.value.reply, 12, entry.value.token, BUSY)
+                    }
+                }
+                if (jobs.size >= HARD_JOBS) { output?.close(); send(reply, 12, token, BUSY); return }
+            }
+            val death = IBinder.DeathRecipient { jobs.remove(key)?.job?.cancel(); ImportEngine.stop(key) }
             try { reply.binder.linkToDeath(death, 0) } catch (_: RemoteException) { output?.close(); return }
             val job = scope.launch(start = CoroutineStart.LAZY) {
                 try {
                     val result = when (command) {
                         1 -> withTimeout(300_000) { catalog.preview(payload) }
                         2 -> sources.download(JSONObject(payload), requireNotNull(output), key) { progress -> send(reply, 11, token, progress.toString()) }
-                        else -> {
-                            val request = JSONObject(payload)
-                            val operation = request.getString("operation")
-                            val args = request.optJSONObject("args") ?: JSONObject()
-                            if (operation == "stream.prepare") {
+                        else -> when (operation) {
+                            "stream.prepare" -> {
                                 val items = args.getJSONArray("items")
                                 require(items.length() <= 100)
                                 BackgroundMatches.offer(this@SpotifySourceService, (0 until items.length()).map(items::getJSONObject), 2)
                                 JSONObject().put("ok", true)
-                            } else if (operation == "stream.resolve") withTimeout(50_000) {
-                                sources.resolve(args.getJSONObject("item"), key, args.optBoolean("refresh")).also { it.remove("info") }
                             }
-                            else withTimeout(85_000) { catalog.call(operation, args) }
+                            "stream.resolve" -> withTimeout(50_000) {
+                                sources.resolve(args.getJSONObject("item"), key, args.optBoolean("refresh"), playback).also { it.remove("info") }
+                            }
+                            else -> withTimeout(85_000) { catalog.call(operation, args) }
                         }
                     }
                     result(reply, token, result)
@@ -56,7 +75,7 @@ class SpotifySourceService : Service() {
                 catch (e: Exception) { send(reply, 12, token, userError(e)) }
                 finally { output?.close(); jobs.remove(key); runCatching { reply.binder.unlinkToDeath(death, 0) } }
             }
-            jobs[key] = job; job.start()
+            jobs[key] = Task(job, speculative, reply, token); job.start()
         }
     })
     override fun onCreate() { super.onCreate(); catalog = SpotifyCatalog(this); sources = RecordingSources.get(this); BackgroundLibrary.schedule(this) }
@@ -87,5 +106,11 @@ class SpotifySourceService : Service() {
         is IllegalArgumentException, is IllegalStateException -> e.message?.take(300).orEmpty().ifBlank { "The source couldn't complete the request." }
         else -> "The music service couldn't complete the request. Check your connection and retry."
     }
-    companion object { const val HOST = "io.github.lynlioss.klang" }
+    companion object {
+        const val HOST = "io.github.lynlioss.klang"
+        private const val MAX_JOBS = 12
+        // Foreground work may exceed the soft cap so playback can never be starved by prefetch.
+        private const val HARD_JOBS = 20
+        private const val BUSY = "The source is busy finishing other songs. Retry in a moment."
+    }
 }
