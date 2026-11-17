@@ -156,7 +156,7 @@ class SourceSettingsActivity : ComponentActivity() {
                                     catch (cancelled: CancellationException) { throw cancelled }
                                     catch (_: Exception) { error = "Couldn't open Spotify login. Try again." }
                                     finally { busy = false }
-                                } }, Modifier.weight(1f).heightIn(min = 48.dp), shapes = ButtonDefaults.shapes(), enabled = !busy) {
+                                } }, modifier = Modifier.weight(1f).heightIn(min = 48.dp), shapes = ButtonDefaults.shapes(), enabled = !busy) {
                                     Icon(if (profile == null) Icons.Rounded.Login else Icons.Rounded.SwitchAccount, null, Modifier.size(20.dp)); Spacer(Modifier.width(8.dp))
                                     Text(if (profile == null) "Connect Spotify" else "Switch account")
                                 }
@@ -229,7 +229,7 @@ class SourceSettingsActivity : ComponentActivity() {
                                             password = ""; appSecret = ""; loadAccounts(); qobuzExpanded = false
                                         } catch (e: CancellationException) { throw e } catch (e: Exception) { error = e.message?.take(200) }
                                         finally { busy = false }
-                                    } }, Modifier.fillMaxWidth().heightIn(min = 48.dp), shapes = ButtonDefaults.shapes(),
+                                    } }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp), shapes = ButtonDefaults.shapes(),
                                         enabled = !busy && appId.isNotBlank() && (appSecret.isNotBlank() || savedAppSecret) && email.isNotBlank() && password.isNotBlank()) {
                                         Icon(Icons.Rounded.Login, null); Spacer(Modifier.width(8.dp)); Text("Connect Qobuz")
                                     }
