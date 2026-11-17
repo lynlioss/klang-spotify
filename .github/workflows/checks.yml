@@ -18,7 +18,8 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
+          # Android 16's Robolectric runtime requires Java 21; shipped bytecode remains Java 17.
+          java-version: '21'
       - uses: android-actions/setup-android@v3
         with:
           packages: 'platforms;android-37.2 build-tools;37.0.0'

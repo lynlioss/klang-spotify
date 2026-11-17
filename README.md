@@ -34,7 +34,7 @@ The stable [GitHub release](https://github.com/lynlioss/klang-spotify/releases/l
 
 ## Build and release
 
-Builds, tests and lint run in [GitHub CI](https://github.com/lynlioss/klang-spotify/actions/workflows/checks.yml) on commits to `main`. Java 17, Android platform 37.2 and build tools 37.0.0 are required. The core is a separate JVM module.
+Builds, tests and lint run in [GitHub CI](https://github.com/lynlioss/klang-spotify/actions/workflows/checks.yml) on commits to `main`. CI uses Java 21 for Android 16 database regression tests; release builds and bytecode target Java 17. Android platform 37.2 and build tools 37.0.0 are required. The core is a separate JVM module.
 
 ```bash
 python3 scripts/check-plugin.py

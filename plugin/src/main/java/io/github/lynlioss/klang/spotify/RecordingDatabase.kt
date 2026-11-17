@@ -82,7 +82,7 @@ internal class RecordingDatabase(private val context: Context) : SQLiteOpenHelpe
                     }
                     db.insertWithOnConflict("songs", null, values, SQLiteDatabase.CONFLICT_IGNORE)
                     db.execSQL("UPDATE songs SET item=?, priority=MAX(priority,?), touched=? WHERE key=?",
-                        arrayOf(clean.toString(), priority.coerceIn(0, 2), now, key))
+                        arrayOf<Any>(clean.toString(), priority.coerceIn(0, 2), now, key))
                 }
             db.execSQL("DELETE FROM songs WHERE key IN (SELECT key FROM songs ORDER BY touched DESC LIMIT -1 OFFSET 20000)")
             db.setTransactionSuccessful()
@@ -129,7 +129,7 @@ internal class RecordingDatabase(private val context: Context) : SQLiteOpenHelpe
         if (expectedGeneration != generation) return
         val backoff = if (task.attempts == 0) 60_000L else if (task.attempts == 1) 15 * 60_000L else 24 * 60 * 60_000L
         writableDatabase.execSQL("UPDATE songs SET attempts=attempts+1, retryAt=? WHERE key=? AND account=? AND (candidates='[]' OR matchedAt<${System.currentTimeMillis() - MAX_AGE})",
-            arrayOf(System.currentTimeMillis() + backoff, task.key, task.account))
+            arrayOf<Any>(System.currentTimeMillis() + backoff, task.key, task.account))
     }
     @Synchronized fun stats(account: String): MatchStats {
         migrate(account)
